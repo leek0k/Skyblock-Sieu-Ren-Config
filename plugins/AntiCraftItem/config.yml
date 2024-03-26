@@ -1,0 +1,31 @@
+# Danh sách cấm chế tạo
+# Chú thích:
+# <material> [data]
+# [data] = -1: Áp dụng mọi data thuộc material
+# VD:
+# WOOL 0: Áp dụng với wool data 0 (wool trắng)
+# WOOL 1: Áp dụng với wool data 1 (wool cam)
+# WOOL -1: Áp dụng với tất cả wool
+# Permission bypass: anticraft.bypass
+blacklist:
+- 'SPECTRAL_ARROW'
+- 'TIPPED_ARROW -1'
+- 'HOPPER'
+- 'FLINT_AND_STEEL'
+- 'TNT'
+- 'SHIELD -1 HAS_META'
+- 'BOOK_AND_QUILL'
+- 'BOAT'
+- 'IRON_BARDING'
+- 'GOLD_BARDING'
+- 'DIAMOND_BARDING'
+- 'SLIME_BLOCK'
+- 'FIREBALL'
+- 'HOPPER_MINECART'
+- 'EXPLOSIVE_MINECART'
+- 'POWERED_MINECART'
+- 'STORAGE_MINECART'
+- 'ENDER_CHEST'
+- 'MINECART'
+- 'PURPLE_SHULKER_BOX'
+- 'ARMOR_STAND'

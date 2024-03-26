@@ -1,0 +1,71 @@
+name: '&b&lSet &f&lGiáng Sinh &f[&b2&f]'
+material: DIAMOND
+settings:
+  equipped:
+    - '&a&l(!) &aKích hoạt &b&lSet &f&lGiáng Sinh &f[&b2&f]!'
+  unequipped:
+    - '&c&l(!) &cDừng kích hoạt &b&lSet &f&lGiáng Sinh &f[&b2&f]!'
+items:
+  helmet:
+    name: '&b⁕&f⁕&b⁕ &b&lMŨ &f&lGIÁNG &f&lSINH &f[&b2&f] &b⁕&f⁕&b⁕'
+    customModelData: 0
+    itemFlags: []
+    lore:
+      - ''
+      - '&b⁕&f⁕&b⁕ &f&lGIÁNG SINH &f[&b2&f] &b⁕&f⁕&b⁕'
+      - '&f* Giảm 30% damage nhận vào.'
+      - '&f* Làm chậm 30% kẻ địch.'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+    enchants:
+      - "protection:6"
+      - "unbreaking:6"
+      - "respiration:3"
+  chestplate:
+    name: '&b⁕&f⁕&b⁕ &b&lGIÁP &f&lGIÁNG &f&lSINH &f[&b2&f] &b⁕&f⁕&b⁕'
+    customModelData: 0
+    itemFlags: []
+    lore:
+      - ''
+      - '&b⁕&f⁕&b⁕ &f&lGIÁNG SINH &f[&b2&f] &b⁕&f⁕&b⁕'
+      - '&f* Giảm 30% damage nhận vào.'
+      - '&f* Làm chậm 30% kẻ địch.'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+    enchants:
+      - "protection:6"
+      - "unbreaking:6"
+      - "fire_protection:3"
+  leggings:
+    name: '&b⁕&f⁕&b⁕ &b&lQUẦN &f&lGIÁNG &f&lSINH &f[&b2&f] &b⁕&f⁕&b⁕'
+    customModelData: 0
+    itemFlags: []
+    lore:
+      - ''
+      - '&b⁕&f⁕&b⁕ &f&lGIÁNG SINH &f[&b2&f] &b⁕&f⁕&b⁕'
+      - '&f* Giảm 30% damage nhận vào.'
+      - '&f* Làm chậm 30% kẻ địch.'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+    enchants:
+      - "protection:6"
+      - "unbreaking:6"
+      - "blast_protection:3"
+  boots:
+    name: '&b⁕&f⁕&b⁕ &b&lỦNG &f&lGIÁNG &f&lSINH &f[&b2&f] &b⁕&f⁕&b⁕'
+    customModelData: 0
+    itemFlags: []
+    lore:
+      - ''
+      - '&b⁕&f⁕&b⁕ &f&lGIÁNG SINH &f[&b2&f] &b⁕&f⁕&b⁕'
+      - '&f* Giảm 30% damage nhận vào.'
+      - '&f* Làm chậm 30% kẻ địch.'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+    enchants:
+      - "protection:6"
+      - "unbreaking:6"
+      - "projectile_protection:3"
+      - "feather_falling:3"
+events:
+  DEFENSE:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:30'
+      - 'POTION:SLOW:1:120 %attacker%'

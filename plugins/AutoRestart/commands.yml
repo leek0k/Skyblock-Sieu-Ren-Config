@@ -1,0 +1,22 @@
+#░█████╗░░█████╗░███╗░░░███╗███╗░░░███╗░█████╗░███╗░░██╗██████╗░░██████╗
+#██╔══██╗██╔══██╗████╗░████║████╗░████║██╔══██╗████╗░██║██╔══██╗██╔════╝
+#██║░░╚═╝██║░░██║██╔████╔██║██╔████╔██║███████║██╔██╗██║██║░░██║╚█████╗░
+#██║░░██╗██║░░██║██║╚██╔╝██║██║╚██╔╝██║██╔══██║██║╚████║██║░░██║░╚═══██╗
+#╚█████╔╝╚█████╔╝██║░╚═╝░██║██║░╚═╝░██║██║░░██║██║░╚███║██████╔╝██████╔╝
+#░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░╚═════╝░
+
+## Run a list of commands seconds before the restart executes
+## This feature is made for specific type of users, most plugins will execute save functions on disable
+
+## Main branch
+commands:
+    ## Enable or disable commands to execute before the server restarts
+    enabled: true
+    ## The amount of time to give to execute commands
+    seconds: 5
+    ## The list of commands to run
+    list:
+        - 'save-all'
+        - 'lp export %date_csv%'
+## DO NOT TOUCH!!
+version: 2

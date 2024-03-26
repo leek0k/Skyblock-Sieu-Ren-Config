@@ -1,0 +1,25 @@
+requireSet: 'GiangSinhPlus'
+material: DIAMOND_AXE
+customModelData: 0
+itemFlags: []
+name: '&b⁕&f⁕&b⁕ &b&lRÌU &f&lGIÁNG &f&lSINH &f[&b2&f] &b⁕&f⁕&b⁕'
+lore:
+  - ''
+  - '&b⁕&f⁕&b⁕ &f&lGIÁNG SINH &f[&b2&f] &b⁕&f⁕&b⁕'
+  - '&f* Tăng 30% damage.'
+  - '&f* Giảm 10% damage đối thủ.'
+  - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+enchants:
+  - 'sharpness:105'
+  - 'unbreaking:5'
+  - 'fire_aspect:3'
+  - 'looting:3'
+events:
+  ATTACK:
+    chance: 55
+    effects:
+      - 'INCREASE_DAMAGE:30'
+  ATTACK:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:10 %victim%'

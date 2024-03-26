@@ -1,0 +1,12 @@
+location: World:7.5:132.85639:1666.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&c&lReset sau: &b%cwr_remaining_time_khuminezuize%'
+    height: 0.3
+  actions: {}

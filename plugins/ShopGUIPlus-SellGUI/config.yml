@@ -1,0 +1,135 @@
+#
+#     ____  _____ _     _     ____ _   _ ___
+#    / ___|| ____| |   | |   / ___| | | |_ _|
+#    \___ \|  _| | |   | |  | |  _| | | || |
+#     ___) | |___| |___| |__| |_| | |_| || |
+#    |____/|_____|_____|_____\____|\___/|___|
+#           ( By Mackenzie Molloy )
+
+# Support Discord | https://mackenziemolloy.net/discord
+
+#
+# Permissions:
+#   - sellgui.use | Access to /sellgui (opens the sellgui)
+#   - sellgui.reload | Access to /sellgui reload (reloads configuration)
+#   - sellgui.debug | Access to /sellgui dump (dumps server information to a paste)
+#
+
+options:
+  #
+  # 0 - None
+  # 1 - Hover message (Adds "receipt_text" to the end of the message)
+  #
+  receipt_type: 1
+  sell_titles: true
+
+  # Date format of transactions logging (http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html)
+  date_format: yyyy/MM/dd HH:mm:ss
+
+  #
+  # Whether prices should be rounded to 2 decimal places, or not.
+  # This also formats prices with comma separation. IE: 1800 -> 1,800
+  #
+
+  rounded_pricing: false
+
+  #
+  # Whether trailing zero decimals should be removed (28.0, 28.00, etc --> 28)
+  #
+
+  remove_trailing_zeros: false
+
+  #
+  # Sounds that are played during certain events
+  #
+
+  sounds:
+    enabled: true
+    error_notification: true
+    pitch: 1
+    volume: 1
+    events:
+      # If you don't want a certain event to have a sound, just set to an invalid value
+      # NOTE: THESE DEFAULT VALUES ARE FOR 1.13+ AND MUST USE _ (underscore) INSTEAD OF . (dot)
+      open: BLOCK_CHEST_OPEN
+      success: ENTITY_VILLAGER_CELEBRATE
+      failed: ENTITY_VILLAGER_HURT
+
+  #
+  # Action Bar Messages only work on versions 1.9+
+  #
+  action_bar_msgs: true
+
+  #
+  # Only relevent in versions prior to 1.13, basically do you want trialing ":(NUMBER)" on item lists (IE: "STONE:2")
+  #
+
+  show_item_damage: false
+
+  #
+  # How many rows the GUI will have
+  # Min: 1 - Max: 6
+  #
+  rows: 6
+
+  #
+  # Similar to the SGP Item format: (EXAMPLE)
+  # 1:
+  #   type: dummy <--- Not required, but may become applicable in future updates I make
+  #   item:
+  #     material: STONE
+  #     damage: 1 <--- Only use if you're running 1.12 or below
+  #     quantity: 1
+  #     name: "&7Cool name"
+  #     lore:
+  #       - "&7Lore Line 1"
+  #       - "&9Lore line 2"
+  #       ...and so on
+  #     customModelData: 1
+  #   commandsOnClick: (or commandsOnClickConsole)
+  #     - "say %PLAYER%"
+  #   slot: 1
+  #
+
+  decorations: []
+
+
+
+
+messages:
+  no_permission: '&c[!] Bạn không có quyền !'
+  sellgui_title: '&0Thả vật phẩm cần bán vào đây:'
+  reloaded_config: '&a[!] Đã tải lại file cấu hình !'
+  no_items_sold: '&c[!] Bạn không có gì có thể bán được :<'
+  no_items_in_gui: '&c[!] Bạn phải đặt gì đó vào bảng này để bán !'
+  #
+  # {list} - returns a list of sold items
+  # {earning} - returns the total amount made
+  # {amount} - returns amount of items sold
+  #
+  items_sold: '&a[!] &fBạn đã bán &a{list} &fvới giá &2{earning}$'
+  receipt_text: ''
+  receipt_title: |+
+    &f&nBiên nhận để bán
+
+  #
+  # {amount} - returns amount of item
+  # {item} - returns item name
+  # {price} - returns the selling price of the item
+  #
+  receipt_item_layout: '&2[!] &ax{amount}{item} &fvới giá &2{price}$'
+  #
+  # {amount} - returns amount of items sold
+  # {earning} - returns the total amount made
+  #
+  sell_title: '&a&l+{earning}'
+  sell_subtitle: '&a[!] &FBạn đã bán &aThành Công &a[!]'
+  gamemode_not_allowed: '&c[!] &cBạn không được dùng ShopGui ở &4Gamemode {gamemode}'
+  inventory_full: '&c[!] Túi đồ của bạn đã đầy !!! &7((vì vậy các item dư thừa có
+    thể bị rơi xuống đất !!&7))'
+  #
+  # {amount} - returns amount of items sold
+  # {earning} - returns the total amount made
+  #
+  action_bar_items_sold: '&a[!] &FBạn đã bán &a{amount} &fmặt hàng trong &aĐợt Bán
+    &fnày !'

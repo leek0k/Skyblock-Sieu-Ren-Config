@@ -1,0 +1,453 @@
+menu_title: '&c&lNâng Điểm Skills &7(Đang có: %aureliumskills_xp_formatted_endurance%)'
+open_command: 
+- diemskill
+size: 36
+items:
+  'rsdiem':
+    material: barrier
+    priority: 1
+    hide_attributes: true
+    display_name: '&e&lReset &6&lĐiểm Skill &7((tất cả))'
+    slot: 8
+    lore:
+    - ''
+    - '&7Reset điểm skill levels và trả tất cả'
+    - '&7về con số 0 và nhận lại số điểm skills'
+    - '&7tương tương số điểm đã reset.'
+    - ''
+    - '&e&lYêu cầu:'
+    - ' &fYêu cầu: &c30⛁'
+    - ' &fTổng các level 6 skills:'
+    - '  &a.&2.&a&lThần Nông&2.&a. &7(&a%math_{aureliumskills_farming}[precision:0]%&7)'
+    - '  &b.&3.&b&lThợ Mỏ&b.&3. &7(&a%math_{aureliumskills_mining}[precision:0]%&7)'
+    - '  &c.&e.&c&lTiều Phu&6.&c. &7(&a%math_{aureliumskills_foraging}[precision:0]%&7)'
+    - '  &c.&4.&c&lCung Thuật&4.&c. &7(&a%math_{aureliumskills_archery}[precision:0]%&7)'
+    - '  &d.&5.&d&lPhòng Thủ&5.&d. &7(&a%math_{aureliumskills_defense}[precision:0]%&7)'
+    - '  &6.&e.&6&lKiếm Thuật&6.&e. &7(&a%math_{aureliumskills_fighting}[precision:0]%&7)'
+    - ''
+    - ' &fĐiểm nhận lại khi reset: &b%math_({alonsolevels_level}*5)[precision:0]%'
+    - ''
+    - ' &cLưu ý: &fyêu cầu tối thiểu &aCấp 20'
+    - ''
+    - '&0&o#Item menu'
+    left_click_requirement:
+      requirements:  
+        has_level2:
+          type: '>='
+          input: '%alonsolevels_level_format%'
+          output: '20'
+          deny_commands:
+          - '[message] &f[&4!&f] &cChưa đủ cấp!' 
+        has_level:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '30'
+          deny_commands:
+          - '[message] &f[&4!&f] &cChưa đủ ⛁!' 
+    left_click_commands:
+      - '[console] points take %player_name% 30'
+      - '[console] skills skill reset %player_name% farming'
+      - '[console] skills skill reset %player_name% foraging'
+      - '[console] skills skill reset %player_name% mining'
+      - '[console] skills skill reset %player_name% archery'
+      - '[console] skills skill reset %player_name% defense'
+      - '[console] skills skill reset %player_name% fighting' #endurance
+      - '[console] skills skill reset %player_name% endurance' #endurance
+      - '[console] skills xp add %player_name% endurance %math_({alonsolevels_level}*5)[precision:0]%'
+      - '[message] &f[&4!&f] &c&lReset Thành Công!'
+      - '[message] &c-30⛁'
+      - '[message] &f[&4!&f] &a.&2.&a&lThần Nông&2.&a. &7((Skills)) &c-%math_{aureliumskills_farming}-1%'
+      - '[message] &f[&4!&f] &b.&3.&b&lThợ Mỏ&b.&3. &7((Skills) &c-%math_{aureliumskills_mining}-1%'
+      - '[message] &f[&4!&f] &c.&e.&c&lTiều Phu&6.&c. &7((Skills)) &c-%math_{aureliumskills_foraging}-1%'
+      - '[message] &f[&4!&f] &c.&4.&c&lCung Thuật&4.&c. &7((Skills)) &c-%math_{aureliumskills_archery}-1%'
+      - '[message] &f[&4!&f] &d.&5.&d&lPhòng Thủ&5.&d. &7((Skills)) &c-%math_{aureliumskills_defense}-1%'
+      - '[message] &f[&4!&f] &6.&e.&6&lKiếm Thuật&6.&e. &7((Skills)) &c-%math_{aureliumskills_fighting}-1%'
+      - '[message] &f[&4!&f] &b&LĐiểm Skill Tồn Đọng: &c-%aureliumskills_xp_formatted_endurance%'
+      - '[message] &f[&aMineAhihi&f] &a+%math_({alonsolevels_level}*5)[precision:0]% Điểm Skills'
+      - '[close]'
+
+  'sk':
+    material: DIAMOND_SWORD
+    slot: 0
+    display_name: '&a&lKĩ Năng Của Bạn &7((Skills))'
+    lore:
+      - "&f- Tất cả 6 skills nhân vật của máy chủ."
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true
+    left_click_commands:
+      - '[player] skills'
+  'missions':
+    material: book
+    slot: 27
+    display_name: '&c&lThông Tin Của Bạn &7((nhiệm vụ))'
+    lore:
+      - '&f- Dùng &a/warp nhiemvu &fđể nhận các nhiệm vụ.'
+      - ''
+      - '&e&lThông số:'
+      - ' &7Levels: &a%alonsolevels_level%'
+      - ' &7Xp: &a%alonsolevels_progress%'
+      - ' &7Điểm Skills: &a%aureliumskills_xp_formatted_endurance%'
+      - ' &7Cỏ Ba Lá: &a%aureliumskills_xp_int_agility%'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+  'back':
+    material: arrow
+    slot: 35
+    display_name: '&c&lQuay Lại'
+    lore:
+      - '&f- Quay lại trang nhiệm vụ chính.'
+      - '&7mới có thể nhận nhiệm vụ nào!'
+    left_click_commands:
+      - '[player] checknhiemvu'    
+  '1':
+    material: DIAMOND_HOE
+    slot: 12
+    priority: 2
+    display_name: '&a.&2.&a&lThần Nông&2.&a. &7((+ Điểm Skills))'
+    lore:
+      - ' &fẤn vào đây để lên 1 cấp trong skills này.'
+      - ' &fDùng lệnh &a/warp nhiemvu &fđể làm nhiệm vụ lên'
+      - ' &fcấp để có thể có được điểm này'
+      - ''
+      - '&e&lYêu Cầu:'
+      - ' &a▫ 1 Điểm Skills &7(Hiện có: &a%aureliumskills_xp_formatted_endurance%&7)'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    left_click_requirement:
+      requirements:
+        has_points:
+          type: '>='
+          input: '%aureliumskills_xp_formatted_endurance%'
+          output: '1'
+      deny_commands:
+        - '[message] &cChưa Đủ! &7(Hiện có: &c%aureliumskills_xp_formatted_endurance%&7)'
+    left_click_commands:
+      - '[console] skills xp remove %player_name% endurance 1'
+      - '[console] skills xp add %player_name% farming 10000000'
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+
+  '1a':
+    material: DIAMOND_HOE
+    slot: 12
+    priority: 1
+    display_name: '&a.&2.&a&lThần Nông&2.&a. &7((+ Điểm Skills))'
+    lore:
+      - ' &fẤn vào đây để lên 1 cấp trong skills này.'
+      - ' &fDùng lệnh &a/warp nhiemvu &fđể làm nhiệm vụ lên'
+      - ' &fcấp để có thể có được điểm này'
+      - ''
+      - '&e&lYêu Cầu:'
+      - ' &a▫ Đã max'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true   
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true  
+    view_requirement:
+      requirements:
+        has_points:
+          type: '=='
+          input: '%aureliumskills_farming%'
+          output: '100'
+  
+  '2':
+    material: DIAMOND_PICKAXE
+    slot: 13
+    priority: 2
+    display_name: '&b.&3.&b&lThợ Mỏ&b.&3. &7((+ Điểm Skills))'
+    lore:
+      - ' &fẤn vào đây để lên 1 cấp trong skills này.'
+      - ' &fDùng lệnh &b/warp nhiemvu &fđể làm nhiệm vụ lên'
+      - ' &fcấp để có thể có được điểm này'
+      - ''
+      - '&e&lYêu Cầu:'
+      - ' &b▫ 1 Điểm Skills &7(Hiện có: &b%aureliumskills_xp_formatted_endurance%&7)'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    left_click_requirement:
+      requirements:
+        has_points:
+          type: '>='
+          input: '%aureliumskills_xp_formatted_endurance%'
+          output: '1'
+      deny_commands:
+        - '[message] &cChưa Đủ! &7(Hiện có: &c%aureliumskills_xp_formatted_endurance%&7)'
+    left_click_commands:
+      - '[console] skills xp remove %player_name% endurance 1'
+      - '[console] skills xp add %player_name% mining 10000000'
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+
+  '2a':
+    material: DIAMOND_PICKAXE
+    slot: 13
+    priority: 1
+    display_name: '&b.&3.&b&lThợ Mỏ&b.&3. &7((+ Điểm Skills))'
+    lore:
+      - ' &fẤn vào đây để lên 1 cấp trong skills này.'
+      - ' &fDùng lệnh &b/warp nhiemvu &fđể làm nhiệm vụ lên'
+      - ' &fcấp để có thể có được điểm này'
+      - ''
+      - '&e&lYêu Cầu:'
+      - ' &b▫ Đã max'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true  
+    view_requirement:
+      requirements:
+        has_points:
+          type: '=='
+          input: '%aureliumskills_mining%'
+          output: '100'    
+
+  '3':
+    material: DIAMOND_AXE
+    slot: 14
+    priority: 2
+    display_name: '&c.&e.&c&lTiều Phu&6.&c. &7((+ Điểm Skills))'
+    lore:
+      - ' &fẤn vào đây để lên 1 cấp trong skills này.'
+      - ' &fDùng lệnh &c/warp nhiemvu &fđể làm nhiệm vụ lên'
+      - ' &fcấp để có thể có được điểm này'
+      - ''
+      - '&e&lYêu Cầu:'
+      - ' &c▫ 1 Điểm Skills &7(Hiện có: &c%aureliumskills_xp_formatted_endurance%&7)'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    left_click_requirement:
+      requirements:
+        has_points:
+          type: '>='
+          input: '%aureliumskills_xp_formatted_endurance%'
+          output: '1'
+      deny_commands:
+        - '[message] &cChưa Đủ! &7(Hiện có: &c%aureliumskills_xp_formatted_endurance%&7)'
+    left_click_commands:
+      - '[console] skills xp remove %player_name% endurance 1'
+      - '[console] skills xp add %player_name% foraging 10000000'
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+
+  '3a':
+    material: DIAMOND_AXE
+    slot: 14
+    priority: 1
+    display_name: '&c.&e.&c&lTiều Phu&6.&c. &7((+ Điểm Skills))'
+    lore:
+      - ' &fẤn vào đây để lên 1 cấp trong skills này.'
+      - ' &fDùng lệnh &c/warp nhiemvu &fđể làm nhiệm vụ lên'
+      - ' &fcấp để có thể có được điểm này'
+      - ''
+      - '&e&lYêu Cầu:'
+      - ' &c▫ Đã max'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true   
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true  
+    view_requirement:
+      requirements:
+        has_points:
+          type: '=='
+          input: '%aureliumskills_foraging%'
+          output: '150'    
+
+  '4':
+    material: BOW
+    slot: 21
+    priority: 2
+    display_name: '&c.&4.&c&lCung Thuật&4.&c. &7((+ Điểm Skills))'
+    lore:
+      - ' &fẤn vào đây để lên 1 cấp trong skills này.'
+      - ' &fDùng lệnh &c/warp nhiemvu &fđể làm nhiệm vụ lên'
+      - ' &fcấp để có thể có được điểm này'
+      - ''
+      - '&e&lYêu Cầu:'
+      - ' &c▫ 1 Điểm Skills &7(Hiện có: &c%aureliumskills_xp_formatted_endurance%&7)'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    left_click_requirement:
+      requirements:
+        has_points:
+          type: '>='
+          input: '%aureliumskills_xp_formatted_endurance%'
+          output: '1'
+      deny_commands:
+        - '[message] &cChưa Đủ! &7(Hiện có: &c%aureliumskills_xp_formatted_endurance%&7)'
+    left_click_commands:
+      - '[console] skills xp remove %player_name% endurance 1'
+      - '[console] skills xp add %player_name% archery 10000000' 
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+
+  '4a':
+    material: BOW
+    slot: 21
+    priority: 1
+    display_name: '&c.&4.&c&lCung Thuật&4.&c. &7((+ Điểm Skills))'
+    lore:
+      - ' &fẤn vào đây để lên 1 cấp trong skills này.'
+      - ' &fDùng lệnh &c/warp nhiemvu &fđể làm nhiệm vụ lên'
+      - ' &fcấp để có thể có được điểm này'
+      - ''
+      - '&e&lYêu Cầu:'
+      - ' &c▫ Đã max'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true   
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true  
+    view_requirement:
+      requirements:
+        has_points:
+          type: '=='
+          input: '%aureliumskills_archery%'
+          output: '200'          
+
+  '5':
+    material: DIAMOND_CHESTPLATE
+    slot: 22
+    priority: 2
+    display_name: '&d.&5.&d&lChống Chịu&5.&d. &7((+ Điểm Skills))'
+    lore:
+      - ' &fẤn vào đây để lên 1 cấp trong skills này.'
+      - ' &fDùng lệnh &d/warp nhiemvu &fđể làm nhiệm vụ lên'
+      - ' &fcấp để có thể có được điểm này'
+      - ''
+      - '&e&lYêu Cầu:'
+      - ' &d▫ 1 Điểm Skills &7(Hiện có: &d%aureliumskills_xp_formatted_endurance%&7)'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    left_click_requirement:
+      requirements:
+        has_points:
+          type: '>='
+          input: '%aureliumskills_xp_formatted_endurance%'
+          output: '1'
+      deny_commands:
+        - '[message] &cChưa Đủ! &7(Hiện có: &c%aureliumskills_xp_formatted_endurance%&7)'
+    left_click_commands:
+      - '[console] skills xp remove %player_name% endurance 1'
+      - '[console] skills xp add %player_name% defense 10000000' 
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+
+  '5a':
+    material: DIAMOND_CHESTPLATE
+    slot: 22
+    priority: 1
+    display_name: '&d.&5.&d&lChống Chịu&5.&d. &7((+ Điểm Skills))'
+    lore:
+      - ' &fẤn vào đây để lên 1 cấp trong skills này.'
+      - ' &fDùng lệnh &d/warp nhiemvu &fđể làm nhiệm vụ lên'
+      - ' &fcấp để có thể có được điểm này'
+      - ''
+      - '&e&lYêu Cầu:'
+      - ' &d▫ Đã max'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true  
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true    
+    view_requirement:
+      requirements:
+        has_points:
+          type: '=='
+          input: '%aureliumskills_defense%'
+          output: '100'      
+
+  '6':
+    material: DIAMOND_SWORD
+    slot: 23
+    priority: 2
+    display_name: '&6.&e.&6&lKiếm Thuật&6.&e. &7((+ Điểm Skills))'
+    lore:
+      - ' &fẤn vào đây để lên 1 cấp trong skills này.'
+      - ' &fDùng lệnh &6/warp nhiemvu &fđể làm nhiệm vụ lên'
+      - ' &fcấp để có thể có được điểm này'
+      - ''
+      - '&e&lYêu Cầu:'
+      - ' &6▫ 1 Điểm Skills &7(Hiện có: &6%aureliumskills_xp_formatted_endurance%&7)'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    left_click_requirement:
+      requirements:
+        has_points:
+          type: '>='
+          input: '%aureliumskills_xp_formatted_endurance%'
+          output: '1'
+      deny_commands:
+        - '[message] &cChưa Đủ! &7(Hiện có: &c%aureliumskills_xp_formatted_endurance%&7)'
+    left_click_commands:
+      - '[console] skills xp remove %player_name% endurance 1'
+      - '[console] skills xp add %player_name% fighting 10000000'  
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+
+  '6a':
+    material: DIAMOND_SWORD
+    slot: 23
+    priority: 1
+    display_name: '&6.&e.&6&lKiếm Thuật&6.&e. &7((+ Điểm Skills))'
+    lore:
+      - ' &fẤn vào đây để lên 1 cấp trong skills này.'
+      - ' &fDùng lệnh &6/warp nhiemvu &fđể làm nhiệm vụ lên'
+      - ' &fcấp để có thể có được điểm này'
+      - ''
+      - '&e&lYêu Cầu:'
+      - ' &6▫ Đã max'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true  
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true    
+    view_requirement:
+      requirements:
+        has_points:
+          type: '=='
+          input: '%aureliumskills_fighting%'
+          output: '200'      

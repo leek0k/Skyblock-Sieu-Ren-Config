@@ -1,0 +1,30 @@
+# Thời gian kiểm tra OP không hợp lệ. 20 ticks = 1 second (/reload không cập nhật thông số mới này)
+check-illegal-op-ticks: 10
+
+# Nếu người chơi OP không hợp lệ trong n lần (illegal-op-detect-times) liên tiếp thì kết luận người đó có OP  
+illegal-detect-times: 4
+
+# Thời gian trễ khi thông báo OP hoặc Permission không hợp lệ cho những người được OP hợp lệ
+illegal-notice-delay: 20
+
+# Danh sách OP (có phân biệt viết hoa, viết thường)
+player-op-whitelist:
+- 'Tigerr_VN'
+- 'Sonbun_VN'
+- 'pachiabun'
+- 'AeryaVN'
+- 'rayjacobs'
+player-permission-whitelist:
+- 'Tigerr_VN'
+- 'Sonbun_VN'
+- 'pachiabun'
+- 'AeryaVN'
+- 'rayjacobs'
+# Danh sách các permission bị cấm sử dụng nếu người chơi không thuộc op-whitelist
+permission-blacklist:
+- 'plugman.admin'
+
+# Thực thi command lên người chơi được OP không hợp lệ
+# Đã tự deop sẵn
+command-on-illegal:
+- 'ban %player% &4&lCó hacker xâm nhập hãy báo fanpage, discord hoặc đăng bài lên Group HeroMC. Thời gian %time%'

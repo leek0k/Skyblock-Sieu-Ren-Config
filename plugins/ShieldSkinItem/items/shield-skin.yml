@@ -1,0 +1,525 @@
+# Vật phẩm khiên có sẵn skin
+list:
+  # Khiên có skin và có ability
+  EnderShieldSkin:
+    # Skin áp dụng lên Shield
+    default-skin-name: EnderSkin
+    # Mẫu skin mặc định khi hiển thị vật phẩm
+    default-shield-pattern: ShieldPattern1
+    # Vật phẩm hiển thị
+    item:
+      type: SHIELD
+      display: '&dKhiên thử nghiệm'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 10.0
+  # Khiên có skin nhưng skin không có ability
+  EnderShieldSkin2:
+    # Skin áp dụng lên Shield
+    default-skin-name: EnderSkinWithNoAbility
+    # Mẫu skin mặc định khi hiển thị vật phẩm
+    default-shield-pattern: ShieldPattern1
+    # Vật phẩm hiển thị
+    item:
+      type: SHIELD
+      display: '&dKhiên thử nghiệm 2'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 10.0
+  # Khiên không skin
+  EnderShieldSkin3:
+    # Mẫu skin mặc định khi hiển thị vật phẩm
+    default-shield-pattern: ShieldPattern1
+    # Vật phẩm hiển thị
+    item:
+      type: SHIELD
+      display: '&fKhiên thử nghiệm 3'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 10.0
+  # =================SHIELD DUNGEON========================
+  ShieldHoangDao:
+    # Skin áp dụng lên Shield
+    # default-skin-name: HoangDaoSkin
+    # Mẫu skin mặc định khi hiển thị vật phẩm
+    default-shield-pattern: HoangDao
+    # Vật phẩm hiển thị
+    item:
+      type: SHIELD
+      display: '&E&lKhiên Ma Hải Tặc'
+      lore:
+      - ''
+      - '&e&l◆ ◆ ◆ SHIELD MA HẢI TẶC ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f6 &7tim'
+      - '&7&l* &7Trang bị tăng &f2 &7giáp'
+      - ''
+      - '&e* &e&lSkill: &eKhi có trên 2 quái xung quanh sẽ'
+      - '&ekích hoạt hồi máu và tăng tốc độ chạy.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 12.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 2.0
+  ShieldHoangDao2:
+    # Skin áp dụng lên Shield
+    # default-skin-name: HoangDaoSkin
+    # Mẫu skin mặc định khi hiển thị vật phẩm
+    default-shield-pattern: HoangDao
+    # Vật phẩm hiển thị
+    item:
+      type: SHIELD
+      display: '&E&lKhiên Ma Hải Tặc &e[2♦]'
+      lore:
+      - ''
+      - '&e&l◆ ◆ ◆ SHIELD MA HẢI TẶC ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f8 &7tim'
+      - '&7&l* &7Trang bị tăng &f2 &7giáp'
+      - ''
+      - '&e* &e&lSkill: &eKhi có trên 2 quái xung quanh sẽ'
+      - '&ekích hoạt hồi máu và tăng tốc độ chạy.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 16.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 2.0  
+  ShieldHoangDao3:
+    # Skin áp dụng lên Shield
+    # default-skin-name: HoangDaoSkin
+    # Mẫu skin mặc định khi hiển thị vật phẩm
+    default-shield-pattern: HoangDao
+    # Vật phẩm hiển thị
+    item:
+      type: SHIELD
+      display: '&E&lKhiên Ma Hải Tặc &e[3♦]'
+      lore:
+      - ''
+      - '&e&l◆ ◆ ◆ SHIELD MA HẢI TẶC ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f10 &7tim'
+      - '&7&l* &7Trang bị tăng &f3 &7giáp'
+      - ''
+      - '&e* &e&lSkill: &eKhi có trên 2 quái xung quanh sẽ'
+      - '&ekích hoạt hồi máu và tăng tốc độ chạy.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 20.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 3.0  
+  ShieldYeuTinh:
+    default-shield-pattern: YeuTinh
+    item:
+      type: SHIELD
+      display: '&6&lKhiên Nhện Yêu Tinh'
+      lore:
+      - ''
+      - '&6&l◆ ◆ ◆ SHIELD NHỆN YÊU TINH ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f10 &7tim'
+      - '&7&l* &7Trang bị tăng &f4 &7giáp'
+      - ''
+      - '&6* &6&lSkill: &6Khi kẻ địch tấn công bạn sẽ khiến'
+      - '&6chúng bị hất tung 2 lần và giảm tốc độ'
+      - '&6chạy đồng thời tăng tốc độ của bạn.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 20.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 4.0 
+
+  ShieldYeuTinh2:
+    default-shield-pattern: YeuTinh
+    item:
+      type: SHIELD
+      display: '&6&lKhiên Nhện Yêu Tinh &6[2♦]'
+      lore:
+      - ''
+      - '&6&l◆ ◆ ◆ SHIELD NHỆN YÊU TINH ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f12 &7tim'
+      - '&7&l* &7Trang bị tăng &f4 &7giáp'
+      - ''
+      - '&6* &6&lSkill: &6Khi kẻ địch tấn công bạn sẽ khiến'
+      - '&6chúng bị hất tung 2 lần và giảm tốc độ'
+      - '&6chạy đồng thời tăng tốc độ của bạn.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 24.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 4.0   
+
+  ShieldYeuTinh3:
+    default-shield-pattern: YeuTinh
+    item:
+      type: SHIELD
+      display: '&6&lKhiên Nhện Yêu Tinh &6[3♦]'
+      lore:
+      - ''
+      - '&6&l◆ ◆ ◆ SHIELD NHỆN YÊU TINH ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f14 &7tim'
+      - '&7&l* &7Trang bị tăng &f5 &7giáp'
+      - ''
+      - '&6* &6&lSkill: &6Khi kẻ địch tấn công bạn sẽ khiến'
+      - '&6chúng bị hất tung 2 lần và giảm tốc độ'
+      - '&6chạy đồng thời tăng tốc độ của bạn.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 28.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 5.0  
+
+  ShieldPhuThuy:
+    default-shield-pattern: PhuThuy
+    item:
+      type: SHIELD
+      display: '&5☪&d☪&5☪  &d&lKhiên &5&lPhù Thủy Đen &5☪&d☪&5☪' 
+      lore:
+      - ''
+      - '&5&l◆ ◆ ◆ SHIELD PHÙ THỦY ĐEN ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f14 &7tim'
+      - '&7&l* &7Trang bị tăng &f6 &7giáp'
+      - ''
+      - '&5* &5&lSkill: &5Khi kẻ địch tấn công bạn sẽ khiến chúng'
+      - '&5bị sét đánh, thiêu đốt và giảm tốc độ chạy đồng'
+      - '&5thời tăng tốc độ chạy và hồi lại máu cho bạn.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 28.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 6.0  
+
+  ShieldPhuThuy2:
+    default-shield-pattern: PhuThuy
+    item:
+      type: SHIELD
+      display: '&5☪&d☪&5☪ &d&lKhiên &5&lPhù Thủy Đen &d[2♦] &5☪&d☪&5☪'
+      lore:
+      - ''
+      - '&5&l◆ ◆ ◆ SHIELD PHÙ THỦY ĐEN ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f16 &7tim'
+      - '&7&l* &7Trang bị tăng &f6 &7giáp'
+      - ''
+      - '&5* &5&lSkill: &5Khi kẻ địch tấn công bạn sẽ khiến chúng'
+      - '&5bị sét đánh, thiêu đốt và giảm tốc độ chạy đồng'
+      - '&5thời tăng tốc độ chạy và hồi lại máu cho bạn.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 32.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 6.0  
+
+  ShieldPhuThuy3:
+    default-shield-pattern: PhuThuy
+    item:
+      type: SHIELD
+      display: '&5☪&d☪&5☪ &d&lKhiên &5&lPhù Thủy Đen &d[3♦] &5☪&d☪&5☪'
+      lore:
+      - ''
+      - '&5&l◆ ◆ ◆ SHIELD PHÙ THỦY ĐEN ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f18 &7tim'
+      - '&7&l* &7Trang bị tăng &f7 &7giáp'
+      - ''
+      - '&5* &5&lSkill: &5Khi kẻ địch tấn công bạn sẽ khiến chúng'
+      - '&5bị sét đánh, thiêu đốt và giảm tốc độ chạy đồng'
+      - '&5thời tăng tốc độ chạy và hồi lại máu cho bạn.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 36.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 7.0  
+
+  ShieldDiaNguc:
+    default-shield-pattern: DiaNguc
+    item:
+      type: SHIELD
+      display: '&C&L⊰&4&L⊰&C&L⊰ &4&lKhiên &c&lĐịa Ngục &4&L⊱&C&L⊱&4&L⊱'
+      lore:
+      - ''
+      - '&4&l◆ ◆ ◆ SHIELD ĐỊA NGỤC ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f18 &7tim'
+      - '&7&l* &7Trang bị tăng &f8 &7giáp'
+      - ''
+      - '&4* &4&lSkill: &4Khi kẻ địch tấn công, bạn sẽ được xóa'
+      - '&4bỏ toàn bộ hiệu ứng xấu và hồi máu, đồng thời'
+      - '&4gây lại cho kẻ thù lượng lớn hiệu ứng xấu và'
+      - '&4tăng tốc độ chạy cho bản thân.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 36.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 8.0  
+  ShieldDiaNguc2:
+    default-shield-pattern: DiaNguc
+    item:
+      type: SHIELD
+      display: '&4&L⊱&C&L⊱&4&L⊱ &4&lKhiên &c&lĐịa Ngục &4[2♦] &4&L⊱&C&L⊱&4&L⊱'
+      lore:
+      - ''
+      - '&4&l◆ ◆ ◆ SHIELD ĐỊA NGỤC ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f20 &7tim'
+      - '&7&l* &7Trang bị tăng &f8 &7giáp'
+      - ''
+      - '&4* &4&lSkill: &4Khi kẻ địch tấn công, bạn sẽ được xóa'
+      - '&4bỏ toàn bộ hiệu ứng xấu và hồi máu, đồng thời'
+      - '&4gây lại cho kẻ thù lượng lớn hiệu ứng xấu và'
+      - '&4tăng tốc độ chạy cho bản thân.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 40.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 8.0  
+  ShieldDiaNguc3:
+    default-shield-pattern: DiaNguc
+    item:
+      type: SHIELD
+      display: '&4&L⊱&C&L⊱&4&L⊱ &4&lKhiên &c&lĐịa Ngục &4[3♦] &4&L⊱&C&L⊱&4&L⊱'
+      lore:
+      - ''
+      - '&4&l◆ ◆ ◆ SHIELD ĐỊA NGỤC ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f22 &7tim'
+      - '&7&l* &7Trang bị tăng &f10 &7giáp'
+      - ''
+      - '&4* &4&lSkill: &4Khi kẻ địch tấn công, bạn sẽ được xóa'
+      - '&4bỏ toàn bộ hiệu ứng xấu và hồi máu, đồng thời'
+      - '&4gây lại cho kẻ thù lượng lớn hiệu ứng xấu và'
+      - '&4tăng tốc độ chạy cho bản thân.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 44.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 10.0  
+  ShieldQuyMao:
+    default-shield-pattern: ShieldQuyMao
+    item:
+      type: SHIELD
+      display: '&e&l☪ &6&l☪ &e&l☪ &6&l&nKhiên Quý Mão&r &e&l☪ &6&l☪ &e&l☪ '
+      lore:
+      - ''
+      - '&6&l◆ ◆ ◆ SHIELD QUÝ MÃO ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f12 &7tim'
+      - '&7&l* &7Trang bị tăng &f6 &7giáp'
+      - ''
+      - '&6* &6&lSkill: &6Chặn khiên sẽ hồi lại máu và thức ăn'
+      - '&6cho bản thân, đồng thời móng vuốt mèo sẽ phản '
+      - '&6lại sát thương gây chảy máu trong 2s cho kẻ thù.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 24.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 6.0
+  ShieldThuongMao:
+    default-shield-pattern: ShieldThuongMao
+    item:
+      type: SHIELD
+      display: '&4&l☀ &c&l☀ &4&l☀ &c&l&nKhiên Vương Quý Mão&r &4&l☀ &c&l☀ &4&l☀'
+      lore:
+      - ''
+      - '&4&l◆ ◆ ◆ SHIELD THƯỢNG MÃO ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f20 &7tim'
+      - '&7&l* &7Trang bị tăng &f10 &7giáp'
+      - ''
+      - '&4* &4&lSkill: &4Chặn khiên sẽ hồi lại máu và thức ăn '
+      - '&4đồng thời tăng tốc độ chạy, sau 1s bạn được '
+      - '&4tăng sức mạnh và kẻ địch bị móng vuốt từ'
+      - '&4khiên phản lại chảy máu trong 5s.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 40.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 10.0
+
+  Shieldthienha:
+    default-shield-pattern: khienthienha
+    item:
+      type: SHIELD
+      display: '&3★&d☾&c&l乂&d☽ &b&lKHIÊN THIÊN HÀ &b(&3｡｡&bÂm Nhạc&3｡｡&b) &d☾&c&l乂&d☽&3★'
+      lore:
+      - ''
+      - '&3★&b✮ &d☾&c⦿&d☽ &b&lSHIELD THIÊN HÀ &d☾&c⦿&d☽&b ✮&3★'
+      - '&3&l★ &bTrang bị tăng &f25 &btim'
+      - '&3&l★ &bTrang bị tăng &f14 &bgiáp'
+      - ''
+      - '&3* &3&lSkill: &bChặn khiên sẽ thanh tẩy tất cả'
+      - '&bhiệu ứng xấu và hồi lại máu, chặn đòn đối'
+      - '&bthủ sau đó phản lại sát thương đồng thời'
+      - '&btăng mạnh các chỉ số trong 3 giây.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 50.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 14.0     
+  khiengiangsinh:
+    default-shield-pattern: khiengiangsinh
+    item:
+      type: SHIELD
+      display: '&b★ &b&lKHIÊN GIÁNG SINH 2023 &b★'
+      lore:
+      - ''
+      - '&b✮✮✮ &b&lCHÚC PHÚC GIÁNG SINH &b ✮✮✮'
+      - '&b&l★ &fTrang bị tăng &e30 &fmáu'
+      - '&b&l★ &fTrang bị tăng &e18 &fgiáp'
+      - ''
+      - '&3* &3&lSkill: &bChặn khiên sẽ thanh tẩy tất cả'
+      - '&bhiệu ứng xấu và hồi lại máu, chặn đòn đối'
+      - '&bthủ sau đó phản lại sát thương đồng thời'
+      - '&btăng mạnh các chỉ số trong 3 giây.'
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 60.0
+          '1':
+            Type: 'Armor'
+            Operator: 0
+            Value: 18.0       

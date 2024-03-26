@@ -1,0 +1,5 @@
+name: helper1
+permissions:
+- weight.81
+parents:
+- helper0

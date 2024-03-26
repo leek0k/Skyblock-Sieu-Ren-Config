@@ -1,0 +1,24 @@
+location: MapTet:-0.5:107.5:-33.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&4&l[!] &a&lDUNGEON HẮC LONG &8- &c&lTẾT 2024 &4&l[!]'
+    height: 0.3
+  - content: '&a&l&8&lᚬ&ka&8&lᚯ &0&lᾟắc £ong &8&lᚬ&ka&8&lᚯ &axuất hiện 3h 1 lần.'
+    height: 0.3
+  - content: '&b&l--- &a&lRỚT &b&l---'
+    height: 0.3
+  - content: '&2&lBánh Chưng'
+    height: 0.3
+  - content: '&2&lBánh Tét'
+    height: 0.3
+  - content: '&c&lBao Lì Xì 2024'
+    height: 0.3
+  - content: '&b&l--- &a&lRỚT &b&l---'
+    height: 0.3
+  actions: {}

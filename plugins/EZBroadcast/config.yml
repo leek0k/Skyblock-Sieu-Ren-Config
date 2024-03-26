@@ -1,0 +1,212 @@
+# EZBroadcast Configuration
+# This is the default configuration.
+# Admin permission: ezbc.admin
+Options:
+  #Delay in-between announcements in ticks. For example: 900 ticks = 45 seconds
+  AnnouncementInterval: 900
+  #Help messages
+  Help:
+  - ""
+  - "&b&lEZBroadcast Commands"
+  - ""
+  - "&f/ezbc preview <name>"
+  - "&7Display an announcement just for yourself."
+  - ""
+  - "&f/ezbc reload"
+  - "&7Reload the configuration."
+  - ""
+  - "&f/ezbc display <name>"
+  - "&7Display an announcement server-wide."
+  - ""
+#Announcements section
+Announcements:
+  #Announcement name
+  1:
+  #Sound when the announcement come up
+    Sound:
+      #Enable?
+      enabled: true
+      #Bukkit sounds name, you can find all sounds name here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+      name: NOTE_PIANO
+      #Volume
+      volume: 1.0
+      #Pitch
+      pitch: 1.5
+    #Order of the announcement
+    order: 1
+    #Centered announcement? For example, if it true: '          The announcement should be like this          '
+    #                                                'And what it looks like when centered: false             '
+    centered: true
+    #You can add many lines as you want
+    lines:
+    - ""
+    - "         &8&m----------&c&m-|&8&m-&6 &lMine&f&lAhihi &8&m-&c&m|-&8&m----------"
+    - "&e✔✔ &fBạn gặp vấn đề cần hỗ trợ hãy liên hệ &eFacebook.com/MineAhihiVN"
+    - "&fđể được hỗ trợ nhé! &e✔✔"
+    - "        &8&m----------&c&m-|&8&m-----------&8&m-&c&m|-&8&m----------"
+    - ""
+  2:
+  #Sound when the announcement come up
+    Sound:
+      #Enable?
+      enabled: true
+      #Bukkit sounds name, you can find all sounds name here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+      name: NOTE_PIANO
+      #Volume
+      volume: 1.0
+      #Pitch
+      pitch: 1.5
+    #Order of the announcement
+    order: 1
+    #Centered announcement? For example, if it true: '          The announcement should be like this          '
+    #                                                'And what it looks like when centered: false             '
+    centered: true
+    #You can add many lines as you want
+    lines:
+    - ""
+    - "         &8&m----------&c&m-|&8&m-&6 &lMine&f&lAhihi &8&m-&c&m|-&8&m----------"
+    - "&e✔✔ &c&l/napthe: &fĐể có thể nạp xu trong Game &e&L✔✔"
+    - "        &8&m----------&c&m-|&8&m-----------&8&m-&c&m|-&8&m----------"
+    - ""
+  3:
+  #Sound when the announcement come up
+    Sound:
+      #Enable?
+      enabled: true
+      #Bukkit sounds name, you can find all sounds name here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+      name: NOTE_PIANO
+      #Volume
+      volume: 1.0
+      #Pitch
+      pitch: 1.5
+    #Order of the announcement
+    order: 1
+    #Centered announcement? For example, if it true: '          The announcement should be like this          '
+    #         'And what it looks like when centered: false'
+    centered: true
+    #You can add many lines as you want
+    lines:
+    - ""
+    - "         &8&m----------&c&m-|&8&m-&6 &lMine&f&lAhihi &8&m-&c&m|-&8&m----------"
+    - "&e✔✔ &fChơi 1 mình thì chán lắm! Bạn hãy rủ thêm &ebạn &ebè &fcùng"
+    - "họ lãnh đạo đảo đi lên sẽ rất vui! (Sẵn ủng hộ MineAhihi lun hihi) &e✔✔"
+    - "        &8&m----------&c&m-|&8&m-----------&8&m-&c&m|-&8&m----------"
+    - ""
+  4:
+  #Sound when the announcement come up
+    Sound:
+      #Enable?
+      enabled: true
+      #Bukkit sounds name, you can find all sounds name here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+      name: NOTE_PIANO
+      #Volume
+      volume: 1.0
+      #Pitch
+      pitch: 1.5
+    #Order of the announcement
+    order: 1
+    #Centered announcement? For example, if it true: '          The announcement should be like this          '
+    #         'And what it looks like when centered: false'
+    centered: true
+    #You can add many lines as you want
+    lines:
+    - ""
+    - "         &8&m----------&c&m-|&8&m-&6 &lMine&f&lAhihi &8&m-&c&m|-&8&m----------"
+    - "&e✔✔ &fTham gia &eGroup MineAhihi, Fanpage MineAhihi&f để"
+    - "biết thêm thông tin mỗi khi &6Update! &e✔✔"
+    - "        &8&m----------&c&m-|&8&m-----------&8&m-&c&m|-&8&m----------"
+    - ""
+  5:
+  #Sound when the announcement come up
+    Sound:
+      #Enable?
+      enabled: true
+      #Bukkit sounds name, you can find all sounds name here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+      name: NOTE_PIANO
+      #Volume
+      volume: 1.0
+      #Pitch
+      pitch: 1.5
+    #Order of the announcement
+    order: 1
+    #Centered announcement? For example, if it true: '          The announcement should be like this          '
+    #         'And what it looks like when centered: false'
+    centered: true
+    #You can add many lines as you want
+    lines:
+    - ""
+    - "         &8&m----------&c&m-|&8&m-&6 &lMine&f&lAhihi &8&m-&c&m|-&8&m----------"
+    - "&e✔✔ &6CHỢ ĐEN &e(/ah) &fbạn có thể đăng bán vật phẩm của"
+    - "mình ở đây bằng &bXu: &e/ah sell (giá)p &fnhớ là có chữ &ep &fở sau nha&8! &e✔✔"
+    - "        &8&m----------&c&m-|&8&m-----------&8&m-&c&m|-&8&m----------"
+    - ""
+  6:
+  #Sound when the announcement come up
+    Sound:
+      #Enable?
+      enabled: true
+      #Bukkit sounds name, you can find all sounds name here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+      name: NOTE_PIANO
+      #Volume
+      volume: 1.0
+      #Pitch
+      pitch: 1.5
+    #Order of the announcement
+    order: 1
+    #Centered announcement? For example, if it true: '          The announcement should be like this          '
+    #         'And what it looks like when centered: false'
+    centered: true
+    #You can add many lines as you want
+    lines:
+    - ""
+    - "         &8&m----------&c&m-|&8&m-&6 &lMine&f&lAhihi &8&m-&c&m|-&8&m----------"
+    - "&c&l!! &c&lTrước khi cho ai mượn đồ, &fcác bạn hãy &cquay"
+    - "&cVideo &fdự phòng &6đoạn Chat&f và quá trình &6(/Trade) &fđể làm bằng chứng khi bị lừa đảo &c&l!!"
+    - "        &8&m----------&c&m-|&8&m-----------&8&m-&c&m|-&8&m----------"
+    - ""
+  7:
+  #Sound when the announcement come up
+    Sound:
+      #Enable?
+      enabled: true
+      #Bukkit sounds name, you can find all sounds name here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+      name: NOTE_PIANO
+      #Volume
+      volume: 1.0
+      #Pitch
+      pitch: 1.5
+    #Order of the announcement
+    order: 1
+    #Centered announcement? For example, if it true: '          The announcement should be like this          '
+    #         'And what it looks like when centered: false'
+    centered: true
+    #You can add many lines as you want
+    lines:
+    - ""
+    - "         &8&m----------&c&m-|&8&m-&6 &lMine&f&lAhihi &8&m-&c&m|-&8&m----------"
+    - "&e✔✔ &fXem cách chơi, cày đồ chi tiết bằng lệnh &6/huongdan &fvà &6/warp huongdan! &e✔✔"
+    - "        &8&m----------&c&m-|&8&m-----------&8&m-&c&m|-&8&m----------"
+    - ""
+  discord:
+  #Sound when the announcement come up
+    Sound:
+      #Enable?
+      enabled: true
+      #Bukkit sounds name, you can find all sounds name here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+      name: NOTE_PIANO
+      #Volume
+      volume: 1.0
+      #Pitch
+      pitch: 1.5
+    #Order of the announcement
+    order: 1
+    #Centered announcement? For example, if it true: '          The announcement should be like this          '
+    #         'And what it looks like when centered: false'
+    centered: true
+    #You can add many lines as you want
+    lines:
+    - ""
+    - "         &8&m----------&c&m-|&8&m-&6 &lMine&f&lAhihi &8&m-&c&m|-&8&m----------"
+    - "&e✔✔ &9Tham gia ngay Discord Server tại: &f&ldiscord.gg/mineahihi &e✔✔"
+    - "        &8&m----------&c&m-|&8&m-----------&8&m-&c&m|-&8&m----------"
+    - ""

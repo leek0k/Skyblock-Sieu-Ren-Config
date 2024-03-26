@@ -1,0 +1,317 @@
+################################
+################################
+###                YirouBoss            ####
+###                by Akyrion          ####
+###                   v 0.1                ####
+################################
+################################
+ThanLong:
+  Type: ENDER_DRAGON
+  Display: '&f'
+  Size:
+  Damage: 50
+  Armor: 50
+  DamageModifiers:
+  - BLOCK_EXPLOSION 0
+  - ENTITY_EXPLOSION 0
+  - LIGHTNING 0
+  - FALL 0
+  BossBar:
+    Enabled: true
+    Title: '&b<--==࿏۞&1&l【 ⍟ &f&lTHẦN LONG&1&l ⍟ 】&b۞࿏==-->'
+    Range: 200
+    Color: BLUE
+    Style: SEGMENTED_20
+  Health: 1000
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  AITargetSelectors:
+  - players
+  Drops:
+  - exp 1000000
+  Options:
+    NoDamageTicks: 5
+    MovementSpeed: 0
+    KnockbackResistance: 1
+    PreventSunburn: true 
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    Silent: true
+    Despawn: false
+    PreventSlimeSplit: true
+    Size: 24 #Update
+    Collidable: false
+    FollowRange: 15
+    MaxCombatDistance: 40
+    AttackSpeed: 1
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE 0.02
+  - ENTITY_ATTACK 0.1
+  - CUSTOM 0
+  - MELTING 0
+  - SUFFOCATION 0
+  - EXPLOSION 0
+# ############################
+###        Passive Skills           ###
+############################
+  Skills:
+  - velocity{m=set;x=0;y=0;z=0} @self ~onDamaged
+  - velocity{m=set;x=0;y=0;z=0} @self ~onTimer:1
+  - sound{s=entity.wither.hurt;v=1;p=0.1} @PIR{r=10} ~onDamaged 0.5
+  - sound{s=entity.blaze.hurt;v=1;p=0.1} @PIR{r=10} ~onDamaged 0.5
+  - effect:particles{p=endrod;amount=10;hs=1;vs=1;s=0.001} @self ~onDamaged
+  - effect:particles{p=reddust;color=#04009a;amount=100;hs=0.3;vs=0.4;Size=1;y=1;vd=30} @self ~onDamaged
+  - effect:particles{p=reddust;color=#FFFFFF;amount=100;hs=0.3;vs=0.4;Size=1;y=1;vd=30} @self ~onDamaged
+  - sound{s=block.sand.fall;v=1;p=0.4} @PIR{r=10} ~onDamaged 
+  - effect:particles{p=reddust;amount=20;color=#FF00FF;hs=0.8;vs=0.8;Size=0.5} @target ~onAttack
+  - sound{s=entity.bat.takeoff;v=1;p=0.9} @PIR{r=50} ~onAttack
+  ####
+  - effect:particlesphere{particle=portal;amount=200;radius=3} @self ~onTimer:25
+  - skill{s=EBang} @self ~onTimer:150
+  - skill{s=DemonHealth} @PIR{r=20} ~onCombat =1%-100%
+  - skill{s=DemonAssassin} @target ~onTimer:150
+  - skill{s=DemonDead!} @PIR{r=15} ~onTimer:100
+  - skill{s=DemonDead} @self ~onDeath
+  - damage{a=20;ia=true} @Self ~onSignal:DamageSelf
+  - damage{a=20;ia=true} @PIR{r=20} ~onTimer:100
+  - skill{s=SaoBang} @Self ~onTimer:400
+  - skill{s=light} @Self ~onTimer:300
+  - skill{s=TrieuHoiCrystal} @Self ~onTimer:1200 =20%-100% 
+  - command{c="mm m kill Crystal"} =18%-19% 1
+  - message{m="۞&1&l【 ⍟ &f&lTHẦN LONG&1&l ⍟ 】&b۞ đã giáng thế! &5(/warp theend)"} @server ~onSpawn 1
+  - message{m="۞&1&l【 ⍟ &f&lTHẦN LONG&1&l ⍟ 】&b۞  &6còn sống hãy mau chóng tiêu diệt!"} @Server ~onTimer:1600 
+  - message{m="&۞&1&l【 ⍟ &f&lTHẦN LONG&1&l ⍟ 】&b۞ &cđã bị tiêu diệt bởi &c&l<trigger.name>&c!"} @Server ~onDeath 1
+  - command{c="cr give <target.name> bossthanlong 1"} ~onDeath      
+  - skill{s=thanlong1} @PlayersInRadius{r=16} ~onDeath
+  - skill{s=thanlong2} @PlayersInRadius{r=20;limit=8;sort=RANDOM} ~onDeath     
+  - command{c="give <target.name> dragon_egg 1"} ~onDeath      
+Crystal:
+  Mobtype: WITHER_SKELETON
+  Disguise:
+    Type: ENDER_CRYSTAL
+    # Block: ENDER_CRYSTAL
+    BlockData: 0
+  Display: '&6'
+  Health: 15
+  Damage: 5
+  AIGoalSelectors: 
+  - clear
+  AITargetSelectors:
+  - clear
+  Drops:
+  - exp 1000
+  DamageModifiers:
+  - FALL 0.1
+  - FIRE 0
+  - FIRE_TICK 0
+  - BLOCK_EXPLOSION 0.1
+  - ENTITY_EXPLOSION 0.1
+  Options:
+    NoAI: true
+    FollowRange: 0
+    PreventTeleport: true
+    Silent: true
+    NoGravity: true
+    MovementSpeed: 0
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    Despawn: false
+    Collidable: false
+    AlwaysShowName: false
+  Skills:
+  - signal{s=DamageSelf} @MIR{r=500;t=ThanLong} ~onDeath
+Enderman1:
+  Mobtype: Enderman
+  Display: '&5&lTiểu Quỷ Ender'
+  Health: 200
+  Damage: 40
+  Armor: 40
+  DamageModifiers:
+  - FALL 0.1
+  - BLOCK_EXPLOSION 0.1
+  - ENTITY_EXPLOSION 0.1
+  Drops:
+  - exp 1000
+  Options:
+    FollowRange: 30
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    AlwaysShowName: false
+    MaxCombatDistance: 25
+  Skills:
+  - damage{amount=4;ia=true} ~onDamaged
+  - command{c="itemeditor give manhdanangcap <trigger.name> 2"} @Trigger ~onDeath
+  - command{c="gems add <trigger.name> 5"} @Trigger ~onDeath
+  - potion{type=LEVITATION;duration=20;lvl=3} @Trigger ~onDamaged 1
+  - lightning{d=40} @NearestPlayer{r=5} ~onTimer:600
+DemonArmy:
+  Mobtype: ENDERMAN
+  Display: '&6'
+  Health: 50
+  Damage: 5
+  DamageModifiers:
+  - FALL 0.1
+  - BLOCK_EXPLOSION 0.1
+  - ENTITY_EXPLOSION 0.1
+  Options:
+    FollowRange: 30
+    MovementSpeed: 0.2
+    AlwaysShowName: false
+    MaxCombatDistance: 25
+SuGia:
+  Mobtype: ARMOR_STAND
+  Disguise:
+    Type: BLOCK
+    Block: DRAGON_EGG
+    BlockData: 0
+  Display: '&6&lTrứng Thần Long'
+  Health: 225
+  Damage: 0
+  Skills:
+  - skill{s=saokspawn} @Self ~onSpawn
+  - throw{velocity=90;velocityY=2} @PlayersInRadius{r=105} ~onDamaged 1
+  - message{m="&6&lTrứng Thần Long đã xuất hiện tại The End &5(/warp theend)"} @server ~onSpawn 1  
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.0001
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    Collidable: false
+    AttackSpeed: 1 
+    NoGravity: true
+    Invincible: true
+    Silent: true
+NgocLong:
+  Mobtype: ARMOR_STAND
+  Disguise:
+    Type: BLOCK
+    Block: EMERALD_BLOCk
+    BlockData: 0
+  Display: '&a&lTrứng Ngọc Long'
+  Health: 225
+  Damage: 0
+  Skills:
+  - skill{s=saokspawn} @Self ~onSpawn
+  - throw{velocity=90;velocityY=2} @PlayersInRadius{r=105} ~onDamaged 1
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.0001
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    Collidable: false
+    AttackSpeed: 1 
+    NoGravity: true
+    Invincible: true
+    Silent: true
+SuGia2:
+  Mobtype: ARMOR_STAND
+  Disguise:
+    Type: BLOCK
+    Block: DRAGON_EGG
+    BlockData: 0
+  Display: '&6&lTrứng Thần Long'
+  Health: 225
+  Damage: 0
+  Skills:
+  - activatespawner{spawner=TrungRong}
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.0001
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    Collidable: false
+    AttackSpeed: 1 
+    NoGravity: true
+    Invincible: true
+    Silent: true
+Rong:
+  Type: ENDER_DRAGON
+  Display: '&cRồng Con'
+  Size:
+  Damage: 50
+  Armor: 50
+  DamageModifiers:
+  - BLOCK_EXPLOSION 0
+  - ENTITY_EXPLOSION 0
+  - LIGHTNING 0
+  - FALL 0
+  BossBar:
+    Enabled: true
+    Title: '&cRồng Con'
+    Range: 200
+    Color: RED
+    Style: SEGMENTED_20
+  Health: 200
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  AITargetSelectors:
+  - players
+  Drops:
+  - exp 100000
+  - diamond 64
+  - emerald 64
+  Options:
+    NoDamageTicks: 0
+    MovementSpeed: 0
+    KnockbackResistance: 1
+    PreventSunburn: true 
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    Silent: true
+    Despawn: false
+    PreventSlimeSplit: true
+    Collidable: false
+    FollowRange: 15
+    MaxCombatDistance: 40
+    AttackSpeed: 1
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE 0.1
+  - ENTITY_ATTACK 0.1
+  - CUSTOM 0
+  - MELTING 0
+  - SUFFOCATION 0
+  - EXPLOSION 0

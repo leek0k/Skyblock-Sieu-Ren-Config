@@ -1,0 +1,94 @@
+ai:
+  AILimiter: false
+  spawnerAiLimitBypass: true
+  monsterAiLimitTPS: 15.0
+  monsterAiLimitPlayerCount: 150
+  animalAiLimitTPS: 15.0
+  animalAiLimitPlayerCount: 150
+gameplay:
+  pistonProtectBlocks: true
+  pistonProtectedBlocks:
+  - SUGAR_CANE_BLOCK
+  - MELON_BLOCK
+  - PUMPKIN
+  minimizeParticles: false
+  disableRespawnScreen: false
+  flawlessPrinter: false
+ticking:
+  disableMapTicking: false
+  disablePersistentVillageTick: true
+  doLeafDecay: false
+  delayBetweenBlockStationaryTick: 40
+  delaBetweenBlockFlowingTick: 1
+  delayBetweenBlockMagmaTick: 40
+  delayBetweenBlockGrassTick: 40
+  delayBetweenBlockLongGrassTick: 40
+  delayBetweenBlockLeavesTick: 40
+  delayBetweenBlockSoilTick: 40
+  delayBetweenBlockFireTick: 40
+  entityWaterTickDelay: 40
+  delayPersistentVillageTick: 40
+  disableVillagerTick: true
+  disableWeatherTick: true
+  disableTileEntityTick: true
+  betterTicking: true
+  hopperBetterAlghoritm: true
+security:
+  hideIPAddresses: false
+  packetLimit: 800
+  blockWorldDownloader: true
+  armorStandMovement: false
+  nbtSkipProtector: true
+  bookPayloadSkip: true
+  AntiPortalGodMode: true
+mobs:
+  IronGolemFallDamage: false
+  mobRateLimit: 40
+  maxEntitiesForCollisionsPerChunk: 50
+  disableMobTracking: false
+  mobPickItems: false
+  enabledMobAIFromSpawner: true
+  enabledMobAI: true
+  hostileMobsSpawnAtDay: false
+  hostileMobsBurnAtDay: false
+  mobPerPlayerLimit: false
+spawners:
+  mobSpawnerSpawnCount: 4
+  mobSpawnerRequiredPlayerDistance: 16
+  mobSpawnerSpawnRange: 8
+  mobSpawnerMaxNearbyEntities: 4
+  mobSpawnerSpawnBaby: false
+  mobSpawnerIgnoreLight: false
+optimizations:
+  chunks:
+    disableUnloadingChunks: false
+    linearFormat: false
+    zstdCompression: false
+    playerThreads: 50
+world:
+  alwaysDay: false
+  mergeItems: false
+  movementCache: false
+  alwaysPrettyWeather: false
+  optimizeWorldTime: true
+packets:
+  ghastSound: false
+  playStepSounds: false
+debug:
+  debug: false
+particles:
+  entityWaterParticleSplash: false
+  mobSpawnerParticles: false
+redstone:
+  redstoneTickLimitEnabled: true
+  redstoneTickLimit: 700
+  eigencraft-redstone: true
+async:
+  lighting: true
+  asyncCatcher: true
+  asyncSavePlayerData: true
+pvp:
+  attackCancelSprint: false
+hoppers:
+  hopperSearchDelay: 200
+config-version: 9

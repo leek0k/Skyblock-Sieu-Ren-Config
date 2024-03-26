@@ -1,0 +1,8 @@
+patterns:
+  - type: stat
+    stat: wisdom
+    value: 1
+    pattern:
+      start: 6
+      interval: 2
+levels:

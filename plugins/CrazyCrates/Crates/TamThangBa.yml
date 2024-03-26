@@ -1,0 +1,397 @@
+Crate:
+  CrateType: Cosmic
+  CrateName: '&a&lHòm Quốc Tế Phụ Nữ &c&l2024'
+  StartingKeys: 0
+  InGUI: false
+  Slot: 23
+  OpeningBroadCast: false
+  BroadCast: '%Prefix%&6&l%Player% &7is opening a &7&lBasic Chest&7.'
+  Item: '130'
+  Glowing: false
+  Name: '&a&lHòm Quốc Tế Phụ Nữ &c&l2024'
+  Lore:
+  - '&e/shopxu&7 để mua Chìa Khóa.'
+  - '&r'
+  - '&7 ◆ &nChuột-trái&r &bđể mở Hòm Báu nếu bạn đã mua.'
+  - '&7 ◆ &nChuột-Phải&r &bđể xem qua vật phẩm trong Hòm.'
+  - '&r'
+  - '&7Bạn đang có &c&n%keys%&r &7◆ &b&nHòm Quốc Tế Phụ Nữ&r &7◆.'
+  Preview:
+    Toggle: true
+    ChestLines: 6
+    Glass:
+      #Turn the glass boarder in the preview on and off.
+      Toggle: true
+      #The item that shows in the boarder. Can be glass or any other item.
+      Item: 'IRON_FENCE' 
+  Hologram:
+    Toggle: false
+    Height: 1.5
+    Message:
+    - '&d&lGalactic Chest'
+  PhysicalKey:
+    Name: '&C⁎&4⁎&C⁎ &c&nChìa Khóa&r &a&lQUỐC TẾ PHỤ NỮ &c&l2024&r &C⁎&4⁎&C⁎'
+    Lore:
+    - '&r'
+    - '&7 ◆ &nChuột-trái&r &fđể mở &4&lKho báu &a&lQUỐC TẾ PHỤ NỮ &c&l2024'
+    - '&7 ◆ &nChuột-Phải&r &fđể xem qua vật phẩm trong.'
+    Item: '38:0'
+    Glowing: true
+  Tiers:
+    Basic:
+      Name: '&a&lThường'
+      Color: 103
+      Chance: 50
+      MaxRange: 100
+    UnCommon:
+      Name: '&e&lHiếm'
+      Color: 86
+      Chance: 40
+      MaxRange: 100
+    Rare:
+      Name: '&c&l♦ Xịn ♦'
+      Color: 379
+      Chance: 25
+      MaxRange: 100
+  Prizes:
+    '1':
+      DisplayName: '&a&l2,000,000ṩ'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 80
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - 'eco give %player% 2000000'
+
+    '2':
+      DisplayName: '&a&l3,000,000ṩ'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 80
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - 'eco give %player% 3000000'
+    '3':
+      DisplayName: '&a&l4,000,000ṩ'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 80
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - 'eco give %player% 4000000'   
+    '4':
+      DisplayName: '&a&l1,000,000 &e&lEXP'
+      DisplayItem: '384'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'exp give %player% 1000000'
+    '5':
+      DisplayName: '&a&l2,000,000 &e&lEXP'
+      DisplayItem: '384'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'exp give %player% 2000000'
+
+    '6':
+      DisplayName: '&a&l3,000,000 &e&lEXP'
+      DisplayItem: '384'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'exp give %player% 3000000'
+
+    '7':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&c&lQUỶ&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&c&lQUỶ&8&l>'
+      - 'epicvouchers give %player% quy 1'
+    '8':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&b&lTIÊN&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&b&lTIÊN&8&l>'
+      - 'epicvouchers give %player% tien 1'
+    '9':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l>'
+      - 'epicvouchers give %player% than 1'
+    '10':
+      DisplayName: '&c&l⊰♥ HOA TÌNH YÊU ♥⊱ &6&l[I]'
+      DisplayItem: '38'
+      DisplayAmount: 1
+      Lore:
+      - '&7Hồi lập tức &c10 ♥ &7cho mình và đồng minh'
+      - '&7Phạm vi: &a5 khối'
+      - '&7Thời gian hồi: &e10 giây'
+      - ''
+      - '&7[!] Chuột phải để sử dụng'
+      DisplayEnchantments:
+      - DURABILITY:1
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &c&l⊰♥ HOA TÌNH YÊU ♥⊱ &6&l[I]'
+      - 'epicvouchers give %Player% hoatinhyeu1 1'
+    '11':
+      DisplayName: '&f(Sơn Shield) &c&lQuốc Tế Phụ Nữ'
+      DisplayItem: '0335'
+      DisplayAmount: 1
+      Lore:
+      - '&c&l⊰♥⊱ ⊰♥⊱ ⊰♥⊱ QUỐC TẾ PHỤ NỮ &c&l⊰♥⊱ ⊰♥⊱ ⊰♥⊱'
+      - '&c* Tăng máu (10)'
+      - '&c* Tặng nó cho người phụ nữ bạn yêu quý nhất nào.'
+      - '&7&o((Giữ và thả lên khiêng để sử dụng!))'
+      DisplayEnchantments:
+      - DURABILITY:1
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &f(Sơn Shield) &c&lQuốc Tế Phụ Nữ'
+      - 'shieldskinitem give %Player% skin 8thang3'
+    '12':
+      DisplayName: '&bĐầu rồng'
+      DisplayItem: '397:5'
+      DisplayAmount: 1
+      Lore:
+      - '&7Mở từ &dTrứng Rồng &7tại &a/warp theend'
+      DisplayEnchantments:
+      - LUCK:10
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &bĐầu rồng'
+      - 'ie give daurong %Player% 1'
+    '13':
+      DisplayName: '&fx3 | &d&lSách Truyền thuyết'
+      DisplayItem: '340'
+      DisplayAmount: 3
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &fx3 | &d&lSách Truyền thuyết'
+      - 'ae givercbook HEROIC %player% 3'
+    '14':
+      DisplayName: '&fx2 | &c&lSách Linh Hồn'
+      DisplayItem: '340'
+      DisplayAmount: 3
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &fx2 | &c&lSách Linh Hồn'
+      - 'ae givercbook SOUL %player% 2'
+    '15':
+      DisplayName: '&ax&2｡&a☣&2｡&ax &2๖&a&lTHƯỢNG &2๖&a&lLONG &a(&2｡｡&aMũ Hiệp Sỹ&2｡｡&a)'
+      DisplayItem: SKULL_ITEM:3
+      Player: 'http://textures.minecraft.net/texture/d2cd847530f830cf053a29ee519803d0496c266df229ab5fb3e8ea3c02b3734c'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&a☋&2✗&a☋ &d｡&c｡&d｡&2๖&a&lTHƯỢNG &2๖&a&lLONG&d｡&c｡&d｡ &a☋&2✗&a☋'
+      - '&2♅ &aGiảm 47% damage nhận vào'
+      - '&2♅ &aGiảm 55% damage khi bị tên bắn'
+      - '&2♅ &aĐề kháng'
+      - '&2♅ &a+20 máu &7((Sinh lực))'
+      - '&2♅ &aĐược đúc từ Vảy Rồng ngàn năm              '
+      - '&2♅ &aThanh Trừng những Kẻ Ngoại Lai'
+      - '&7&o(Mặc full Set Thượng Long để kích hoạt.)'
+      - ''
+      - '&a▢ Ô cường hóa: +17'
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:12
+      - THORNS:2
+      - DURABILITY:5
+      MaxRange: 100
+      Chance: 0.1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &ax&2｡&a☣&2｡&ax &2๖&a&lTHƯỢNG &2๖&a&lLONG &a(&2｡｡&aMũ Hiệp Sỹ&2｡｡&a)'
+      - 'ie give muthuonglong %Player% 1'
+    '16':
+      DisplayName: '&ax&2｡&a☣&2｡&ax &2๖&a&lTHƯỢNG &2๖&a&lLONG &a(&2｡｡&aÁo&2｡｡&a) &ax&2｡&a✗&2｡&ax'
+      DisplayItem: LEATHER_CHESTPLATE:85,0,255
+      DisplayAmount: 1
+      Lore:
+      - '&aI&a ☋&2✗&a☋ I'
+      - ''
+      - '&a☋&2✗&a☋ &d｡&c｡&d｡&2๖&a&lTHƯỢNG &2๖&a&lLONG&d｡&c｡&d｡ &a☋&2✗&a☋'
+      - '&2♅ &aGiảm 47% damage nhận vào'
+      - '&2♅ &aGiảm 55% damage khi bị tên bắn'
+      - '&2♅ &aĐề kháng'
+      - '&2♅ &a+8 máu &7((Sinh lực))'
+      - '&2♅ &aĐược đúc từ Vảy Rồng ngàn năm              '
+      - '&2♅ &aThanh Trừng những Kẻ Ngoại Lai'
+      - '&7&o(Mặc full Set Thượng Long để kích hoạt.)'
+      - ''
+      - '&a▢ Ô cường hóa: +16'
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:12
+      - THORNS:2
+      - DURABILITY:5
+      MaxRange: 100
+      Chance: 0.1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &ax&2｡&a☣&2｡&ax &2๖&a&lTHƯỢNG &2๖&a&lLONG &a(&2｡｡&aÁo&2｡｡&a) &ax&2｡&a✗&2｡&ax'
+      - 'ie give aothuonglong %Player% 1'
+    '17':
+      DisplayName: '&ax&2｡&a☣&2｡&ax &2๖&a&lTHƯỢNG &2๖&a&lLONG &a(&2｡｡&aQuần&2｡｡&a) &ax&2｡&a✗&2｡&ax'
+      DisplayItem: LEATHER_LEGGINGS:85,0,255
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&a☋&2✗&a☋ &d｡&c｡&d｡&2๖&a&lTHƯỢNG &2๖&a&lLONG&d｡&c｡&d｡ &a☋&2✗&a☋'
+      - '&2♅ &aGiảm 47% damage nhận vào'
+      - '&2♅ &aGiảm 55% damage khi bị tên bắn'
+      - '&2♅ &aĐề kháng'
+      - '&2♅ &a+8 máu &7((Sinh lực))'
+      - '&2♅ &aĐược đúc từ Vảy Rồng ngàn năm              '
+      - '&2♅ &aThanh Trừng những Kẻ Ngoại Lai'
+      - '&7&o(Mặc full Set Thượng Long để kích hoạt.)'
+      - ''
+      - '&a▢ Ô cường hóa: +17'
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:12
+      - THORNS:2
+      - DURABILITY:5
+      MaxRange: 100
+      Chance: 0.1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &ax&2｡&a☣&2｡&ax &2๖&a&lTHƯỢNG &2๖&a&lLONG &a(&2｡｡&aMũ Hiệp Sỹ&2｡｡&a)'
+      - 'ie give quanthuonglong %Player% 1'
+    '18':
+      DisplayName: '&ax&2｡&a☣&2｡&ax &2๖&a&lTHƯỢNG &2๖&a&lLONG &a(&2｡｡&aGiày&2｡｡&a) &ax&2｡&a✗&2｡&ax'
+      DisplayItem: LEATHER_BOOTS:85,0,255
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&a☋&2✗&a☋ &d｡&c｡&d｡&2๖&a&lTHƯỢNG &2๖&a&lLONG&d｡&c｡&d｡ &a☋&2✗&a☋'
+      - '&2♅ &aGiảm 47% damage nhận vào'
+      - '&2♅ &aGiảm 55% damage khi bị tên bắn'
+      - '&2♅ &aĐề kháng'
+      - '&2♅ &a+8 máu &7((Sinh lực))'
+      - '&2♅ &aĐược đúc từ Vảy Rồng ngàn năm              '
+      - '&2♅ &aThanh Trừng những Kẻ Ngoại Lai'
+      - '&7&o(Mặc full Set Thượng Long để kích hoạt.)'
+      - ''
+      - '&a▢ Ô cường hóa: +17'
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:12
+      - THORNS:2
+      - DURABILITY:5
+      MaxRange: 100
+      Chance: 0.1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &ax&2｡&a☣&2｡&ax &2๖&a&lTHƯỢNG &2๖&a&lLONG &a(&2｡｡&aMũ Hiệp Sỹ&2｡｡&a)'
+      - 'ie give giaythuonglong %Player% 1'

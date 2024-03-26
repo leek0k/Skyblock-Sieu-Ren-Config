@@ -1,0 +1,26 @@
+SuKienYeuTinh-UpdateHealth:
+  Conditions:
+  - score{o=SuKienYeuTinh;value=0} cast SuKienYeuTinh-Reward
+  - score{o=SuKienYeuTinh;value=>0} true
+  Skills:
+  - modifytargetscore{objective=SuKienYeuTinh;action=subtract;value=1} @Self 
+  - CancelEvent
+
+SuKienYeuTinh-Reward:
+  Skills:
+  - message{m="&4&l۞【 &6&lYÊU TINH&4&l 】۞ &cđã bị tiêu diệt bởi &c&l<trigger.name>&c!"} @Server
+  - command{c="exp give <trigger.name> 26682"}
+  - command{c="give <trigger.name> sponge <random.1to5>"}
+  - command{c="points give <trigger.name> 15"} 1 0.15
+  - command{c="crate give to <trigger.name> manhtrungpet5 1 online"} 1 0.2
+  - command{c="crate give to <trigger.name> Spawnerquai3 1 online"} 1 1
+  - command{c="crate give to <trigger.name> ChauBauCuaYeuTinh 1 online"} 1 0.01
+  - remove @Self
+
+SuKienYeuTinh-Throw:
+  Skills:
+  - throw{velocity=15;velocityY=5} 
+  
+SuKienYeuTinh-CurrentLocation:
+  Skills:
+  - message{m="&4&l۞【 &6&lYÊU TINH&4&l 】۞ &ađang đứng tại &7((&cWarp PvP&7)) &aX:<caster.l.x> Y:<caster.l.y> Z:<caster.l.z>&c!"} @Server

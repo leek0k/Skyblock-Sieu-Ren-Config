@@ -1,0 +1,85 @@
+menu-settings:
+  name: '&e&lNẠP THẺ &8&l| &6&lCHỌN MỆNH GIÁ'
+  rows: 1
+  auto-refresh: 5
+Garena-10k:
+  COMMAND: 'donate choose Garena 10000'
+  NAME: '&b&lGarena 10,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGarena 10,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 1
+  POSITION-Y: 1
+Garena-20k:
+  COMMAND: 'donate choose Garena 20000'
+  NAME: '&b&lGarena 20,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGarena 20,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 2
+  POSITION-Y: 1
+Garena-30k:
+  COMMAND: 'donate choose Garena 30000'
+  NAME: '&b&lGarena 30,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGarena 30,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 3
+  POSITION-Y: 1
+Garena-50k:
+  COMMAND: 'donate choose Garena 50000'
+  NAME: '&b&lGarena 50,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGarena 50,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 4
+  POSITION-Y: 1
+Garena-100k:
+  COMMAND: 'donate choose Garena 100000'
+  NAME: '&b&lGarena 100,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGarena 100,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 5
+  POSITION-Y: 1
+Garena-200k:
+  COMMAND: 'donate choose Garena 200000'
+  NAME: '&b&lGarena 200,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGarena 200,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 6
+  POSITION-Y: 1
+Garena-300k:
+  COMMAND: 'donate choose Garena 300000'
+  NAME: '&b&lGarena 300,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGarena 300,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 7
+  POSITION-Y: 1
+Garena-500k:
+  COMMAND: 'donate choose Garena 500000'
+  NAME: '&b&lGarena 500,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGarena 500,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 8
+  POSITION-Y: 1
+Garena-1m:
+  COMMAND: 'donate choose Garena 1000000'
+  NAME: '&b&lGarena 1,000,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGarena 100,000,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 9
+  POSITION-Y: 1

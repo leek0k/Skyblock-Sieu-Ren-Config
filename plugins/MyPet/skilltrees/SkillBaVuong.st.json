@@ -1,0 +1,32 @@
+{
+  "ID": "SkillBaVuong",
+  "Order": 9007199254740991,
+  "Name": "Bá Vương",
+  "MobTypes": [
+    "IronGolem"
+  ],
+  "Skills": {
+    "Damage": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Damage": "+13"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "%1>1<1": {
+          "Health": "+1000",
+          "Timer": "+3"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Health": "+11"
+        }
+      }
+    }
+  }
+}

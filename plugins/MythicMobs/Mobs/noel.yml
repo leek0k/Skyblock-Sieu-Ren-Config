@@ -1,0 +1,70 @@
+phuthuygiangsinh:
+  Type: WITCH
+  Display: '&b&lPhù thuỷ giáng sinh'
+  Health: 1280
+  Damage: 332
+  Armor: 40
+  BossBar:
+    Enabled: true
+    Title: '&b<--==࿏۞&f&l【 ⍟ &b&lPHÙ THUỶ GIÁNG SINH&f&l ⍟ 】&b۞࿏==-->'
+    Range: 200
+    Color: BLUE
+    Style: SEGMENTED_20
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  - gotospawnlocation
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    FollowRange: 30
+    PreventSunburn: true
+    NoDamageTicks: 1
+    NoGravity: false
+    MovementSpeed: 0.6
+    KnockbackResistance: 0.5
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    Persistent: false
+    Silent: false
+  Skills:
+  - skill{s=hoiphuc} ~onDamaged 0.3
+  - skill{s=summonwolf} ~onTimer:120 0.5
+  - skill{s=EBang} ~onTimer:20 1
+  - skill{s=dongbang} ~onTimer:240 1
+  - command{c="crazycrates give Physical noel 1 <target.name>"} ~onDeath 0.1
+  - message{m="&b&lPhù thuỷ giáng sinh &fđã bị tiêu diệt bởi &e&l<trigger.name>&c!"} @Server ~onDeath 1
+  - message{m="&b&lPhù thuỷ giáng sinh &fđã xuất hiện tại &c&lKhu vực Events! &b&o((/warp event))"} @Server ~onSpawn 1
+  - message{m="&b&lPhù thuỷ giáng sinh &fcòn sống hãy mau chóng tiêu diệt!"} @Server ~onTimer:1600 
+soituyet:
+  Type: ZOMBIE
+  Display: '&bSói tuyết'
+  Health: 140
+  Damage: 34
+  Armor: 20
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    FollowRange: 30
+    PreventSunburn: true
+    NoDamageTicks: 1
+    NoGravity: false
+    MovementSpeed: 0.4
+    KnockbackResistance: 0.1
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    Persistent: false
+    Silent: false
+    Disguise: Wolf
+  Skills:
+  #- setname{name=<caster.name>;delay=2} @self ~onDamaged

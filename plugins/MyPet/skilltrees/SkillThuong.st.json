@@ -1,0 +1,37 @@
+{
+  "ID": "SkillThuong",
+  "Order": 9007199254740991,
+  "Name": "Thường",
+  "MobTypes": [
+    "Chicken",
+    "Cow",
+    "Ocelot",
+    "Pig",
+    "Rabbit",
+    "Sheep"
+  ],
+  "Skills": {
+    "Life": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Health": "+5"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "%1>1<1": {
+          "Health": "+50",
+          "Timer": "+3"
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Damage": "+1"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&8&lPack DEMO MineAihi'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 1
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'pack'
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note pling'
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+1:
+  COMMAND: 'tell: https://drive.google.com/file/d/1Ianil61rxV2--yQNu-d7gDY2AoWiUB6g'
+  NAME: ''
+  LORE:      
+    - '&b- &fDùng 1.12.2 Optifine'
+    - '&b- &fVà bật Server Resource Pack = Enables.'
+    - '' 
+    - '&eClick để lấy Link Packs'
+    - ''
+    - '&0&o#Item menu'
+  ID: 283
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 1 
+   
+  

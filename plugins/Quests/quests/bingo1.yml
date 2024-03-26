@@ -1,0 +1,72 @@
+# The name of this file is the quest ID. It must be alphanumeric and unique.
+
+# Everything inside of this section defines tasks the player must complete to progress.
+tasks:
+  # This is the task ID ("mining"). This can share the same name as the quest ID but MUST be unique with all other task IDs in the same quest.
+  log:
+    type: "inventory"
+    # This defines the amount of blocks which need to be broken
+    item: LOG
+    amount: 384
+    data: 2
+    remove-items-when-complete: true  # (OPTIONAL) take the items away from the player on completion - default: false
+    allow-partial-completion: false  
+    worlds:                               # (OPTIONAL) restrict to certain worlds
+     - "SuperiorWorld"   
+     - "khuminezuize"
+     - "Rungxanh"
+     - "world"
+     - "NhiemVu"
+  # You can have multiple tasks for each quest (example further down).
+
+# Everything inside of this section defines the display item.
+display:
+  # This is the name of the item. This allows color codes.
+  name: "&6.&e.&6&lGỗ I&e.&6. &7((Nhiệm Vụ))"
+  # This is the lore of the item if the player has not started the quest. This allows color codes and task/player placeholders.
+  lore-normal:
+    - " &7Bạn phải có 1 số gỗ nhất định trong túi."
+    - ""
+    - "&e&lYêu cầu:"  
+    - " &7Túi: &6x384 Gỗ Bạch Dương"
+    - ""
+    - "&e&lPhần thưởng:"
+    - " &7▫ &f2 &aĐiểm XP Levels."
+    - " &7▫ &a500$"
+    - " &7▫ &65☀"
+  # This lore will be appended to the bottom of the above lore when the player starts their quest.
+  # To get the players progress through a task, use {TASKID:progress}  and replace TASKID with the ID of the task.
+  lore-started:
+    - ""
+    - "&e&lTiến trình hiện tại của bạn:"
+    - " &7▫ &c{log:progress}&7/&a384 &7((gỗ))"
+  # This is the material of the item. It is recommended to stick to bukkit names.
+  type: "LOG:2"
+
+# List all commands to be executed by the server when the player completes the quest. Use {player} to get the players name.
+rewards:
+  - "eco give {player} 500"
+  - "levels addexp {player} 2"
+  - "gems add {player} 5"
+
+# These placeholders are accessible using PlaceholderAPI, for example %quests_tracked_p:description%
+# They are useful for putting information about the players tracked quest on a scoreboard
+# You may want to keep the names of them the same for ALL quests for this use-case
+placeholders:
+  description: "&7Yêu cầu trong túi có:"
+  progress: " &7▫ &c{log:progress}&7/&a384 &7((gỗ))"
+
+# Everything inside this section define quest-specific options
+options:
+  # This is the category for the quest, it will appear under the "examples" category. Categories can be disabled.
+  category: "bingo"
+  # Set if the quest can be repeated after being completed for the first time.
+  repeatable: true
+  # Define the cooldown on quests. The above (repeatable) must be true for this to take effect.
+  cooldown:
+    # If true, players will have to wait between repeating quests.
+    enabled: false
+    # Time (in minutes)
+    time: 5
+  # This is the relative position in the GUI
+  sort-order: 1

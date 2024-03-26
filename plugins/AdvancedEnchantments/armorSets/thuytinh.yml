@@ -1,0 +1,130 @@
+# Advanced Sets
+# These sets are fully creatable, to create your own simply copy this file, rename it and edit it however you want!
+
+# ** Set Materials:
+# * LEATHER (change-able color)
+# * IRON
+# * GOLD
+# * CHAIN
+# * DIAMOND
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for sets.
+
+#  ** Set Events
+#    Change upon what event should sets trigger
+#    - EFFECT_STATIC : Mang lại hiệu ứng thuốc vĩnh viễn (miễn là mặc áo giáp)
+#    - ATTACK : Đặt sự kiện chỉ chạy khi tấn công người chơi khác
+#    - DEFENSE : Đặt sự kiện chỉ chạy khi bị tấn công
+#    - DEFENSE_BOW : Đặt Sự kiện chỉ chạy khi người chơi bị cung tên bắn
+#    - MINING : Cung cấp hiệu ứng khi khối được khai thác
+#    - ATTACK_MOB : Cung cấp hiệu ứng khi người chơi tấn công mob
+#    - KILL_MOB : Hiệu ứng được đưa ra khi mob bị tấn công bị giết
+#    - BOW : Hiệu ứng được đưa ra khi người chơi bị bắn bởi người chơi khác
+#    - KILL_PLAYER : Hiệu ứng được đưa ra khi kẻ tấn công giết người chơi
+#    - DEATH : Chạy khi người chơi chết do người chơi khác.
+#    - RIGHT_CLICK : Chạy khi người chơi nhấp chuột phải vào vật phẩm đang giữ
+#    - BOW_MOB : Hiệu ứng được đưa ra khi mob bị bắn bởi người chơi
+#    - FIRE : Hiệu ứng được đưa ra khi người chơi đang cháy
+#    - EXPLOSION : Hiệu ứng được đưa ra khi người chơi bị trúng vụ nổ
+#    - SWING : Enchant chạy khi người chơi bay
+#    - FALL_DAMAGE : Đặt sự kiện chạy khi người chơi bị ngã thiệt hại
+#    - DEFENSE_MOB : Đặt sự kiện chạy khi mob tấn công người chơi
+#    - SHIFT : Đặt Sự kiện chạy khi người chơi bật/tắt tư thế cúi người (shifts)
+#    - ITEM_BREAK : Đặt Sự kiện chạy khi người chơi bật/tắt tư thế cúi người (shifts)
+#    - CATCH_FISH : Đặt sự kiện chạy khi người chơi bắt được cá
+# Set Events & Enchant types are intercompatible together
+
+# ** Creating set effects, this explains the system
+#events:
+#  <any of the effects from the list>:
+#    chance: <chance of effects activating, 1-100> (Optional)
+#    cooldown: <cooldown period after effects activate, in seconds> (Optional)
+#    effects: <effects are available in enchantments.yml>
+#    # E.g.: - 'INCREASED_DAMAGE:10'
+
+name: '&c&lSET &b&lTHỦY TINH'
+material: LEATHER
+settings:
+  equipped:
+    - '&a&l(!) &e&lKích hoạt SET THỦY TINH!'
+  unequipped:
+    - '&c&l(!) &e&lDừng kịch hoạt SET THỦY TINH!'
+items:
+  helmet:
+    color: 0;153;255
+    name: '&b♫&3☘&b♫ &b&lTHỦY VƯƠNG &b♫&3☘&b♫ (&3｡｡&bMũ&3｡｡&b)'
+    lore:
+      - ''   
+      - '&3★&b✮ &d☾&c⦿&d☽ &b&lTHÁI DƯƠNG HỆ &d☾&c⦿&d☽&b ✮&3★ &b(Sao Thủy)'
+      - '&3&l◉ &bTăng 33% damage'
+      - '&3&l◉ &bGiảm 45% damage nhận vào'
+      - '&3&l◉ &bĐề kháng và Hấp Thụ'
+      - '&3&l◉ &bMột trong ngũ đại hành tinh của vũ trụ'
+      - '&7&o(Mặc full Set Thủy Tinh để kích hoạt.)'      
+      - ''  
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:12"
+      - "unbreaking:5"
+  chestplate:
+    color: 0;153;255
+    name: '&b♫&3☘&b♫ &b&lTHỦY VƯƠNG &b♫&3☘&b♫ (&3｡｡&bGiáp&3｡｡&b)'
+    lore:
+      - ''   
+      - '&3★&b✮ &d☾&c⦿&d☽ &b&lTHÁI DƯƠNG HỆ &d☾&c⦿&d☽&b ✮&3★ &b(Sao Thủy)'
+      - '&3&l◉ &bTăng 33% damage'
+      - '&3&l◉ &bGiảm 45% damage nhận vào'
+      - '&3&l◉ &bĐề kháng và Hấp Thụ'
+      - '&3&l◉ &bMột trong ngũ đại hành tinh của vũ trụ'
+      - '&7&o(Mặc full Set Thủy Tinh để kích hoạt.)'      
+      - ''       
+    enchants: # Supports AdvancedEnchantments CE
+      - "thuytinh:1"
+      - "protection:12"
+      - "unbreaking:5"
+  leggings:
+    color: 0;191;255
+    name: '&b♫&3☘&b♫ &b&lTHỦY VƯƠNG &b♫&3☘&b♫ (&3｡｡&bQuần&3｡｡&b)'
+    lore:
+      - ''   
+      - '&3★&b✮ &d☾&c⦿&d☽ &b&lTHÁI DƯƠNG HỆ &d☾&c⦿&d☽&b ✮&3★ &b(Sao Thủy)'
+      - '&3&l◉ &bTăng 33% damage'
+      - '&3&l◉ &bGiảm 45% damage nhận vào'
+      - '&3&l◉ &bĐề kháng và Hấp Thụ'
+      - '&3&l◉ &bMột trong ngũ đại hành tinh của vũ trụ'
+      - '&7&o(Mặc full Set Thủy Tinh để kích hoạt.)'      
+      - '' 
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:12"
+      - "unbreaking:7"
+  boots:
+    color: 0;153;255
+    name: '&b♫&3☘&b♫ &b&lTHỦY VƯƠNG &b♫&3☘&b♫ (&3｡｡&bGiày&3｡｡&b)'
+    lore:
+      - ''   
+      - '&3★&b✮ &d☾&c⦿&d☽ &b&lTHÁI DƯƠNG HỆ &d☾&c⦿&d☽&b ✮&3★ &b(Sao Thủy)'
+      - '&3&l◉ &bTăng 33% damage'
+      - '&3&l◉ &bGiảm 45% damage nhận vào'
+      - '&3&l◉ &bĐề kháng và Hấp Thụ'
+      - '&3&l◉ &bMột trong ngũ đại hành tinh của vũ trụ'
+      - '&7&o(Mặc full Set Thủy Tinh để kích hoạt.)'      
+      - ''  
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:12"
+      - "unbreaking:7"
+events:
+  DEFENSE:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:45'
+      - 'NEGATE_DAMAGE:22'
+      - 'INCREASE_DAMAGE:33'
+  DEFENSE:
+    chance: 100
+    cooldown: 7
+    effects:
+      - 'CURE:DAMAGE_RESISTANCE'
+      - 'POTION:DAMAGE_RESISTANCE:4:110'
+      - 'WAIT:100'
+      - 'CURE:DAMAGE_RESISTANCE'
+      - 'POTION_OVERRIDE:DAMAGE_RESISTANCE:1:1320' 
+

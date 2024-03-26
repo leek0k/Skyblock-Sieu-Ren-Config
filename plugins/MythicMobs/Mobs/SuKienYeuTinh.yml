@@ -1,0 +1,54 @@
+SuKienYeuTinh:
+  Type: BABY_ZOMBIE
+  Display: '&4&l۞【 &6&lYÊU TINH&4&l 】۞'
+  Health: 100000
+  Damage: 1
+  BossBar:
+    Enabled: true
+    Title: '&4&l۞【 &6&lYÊU TINH&4&l 】۞ &c&l<caster.score.SuKienYeuTinh> ♥'
+    Range: 32
+    Color: BLUE
+    Style: SEGMENTED_20
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  Options:
+    AlwaysShowName: true
+    NoDamageTicks: 5
+    MovementSpeed: 0.25
+    KnockbackResistance: 1
+    PreventSunburn: true 
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    Silent: true
+    Despawn: false
+    Collidable: false
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  - 2 randomstroll
+  Equipment:
+  - SuKienYeuTinhSkull:4
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - CUSTOM 0
+  - MELTING 0
+  - SUFFOCATION 0
+  - EXPLOSION 0
+  Skills:
+  - potion{type=GLOWING;duration=1000000000;level=1} @Self ~onSpawn
+  - modifytargetscore{objective=SuKienYeuTinh;action=set;value=1000} @Self ~onSpawn
+  - message{m="&4&l۞【 &6&lYÊU TINH&4&l 】۞ đã xuất hiện! &5((/warp PvP))"} @Server ~onSpawn
+  - skill{s=SuKienYeuTinh-CurrentLocation} @Server ~onTimer:1600 
+  - skill{s=SuKienYeuTinh-UpdateHealth;sync=true} ~onDamaged
+  - skill{s=SuKienYeuTinh-Throw} @PIR{r=5} ~onDamaged 0.01
+  - sound{s=entity.wither.hurt;v=1;p=0.1} @SelfLocation ~onDamaged
+  

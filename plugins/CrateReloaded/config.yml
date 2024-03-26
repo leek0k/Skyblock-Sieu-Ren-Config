@@ -1,0 +1,127 @@
+# ======================================================= #
+#                                                         #
+#                   CONFIG.YML                            #
+#                   FOR 2.0                               #
+#                                                         #
+# ======================================================= #
+
+#  NOTE:                                                  #
+#  You do not configure rewards here. Please go to        #
+#     plugins/CrateReloaded/crate.yml to do that.         #
+# ======================================================= #
+#
+# Affix placed before the stem of messages
+prefix: '&e&l[!]&e'
+
+# Defines the plugin's language, and region.
+locale: en
+
+# Systematic recording of events
+logger: false
+
+# Decimal format that determines the number of decimals
+# i.e. 3.14 = #.##, 2.5 = #.#
+decimal-format: '#'
+
+# How long a player has to wait between actions
+cooldown: 0.0
+
+# Creative Control
+# Prevents players from duplicating keys with creative gamemode.
+creative-control: true
+
+# Claim
+claim:
+
+  # Menu name
+  menu: 'Nhận thưởng!'
+  # Remind users that they have rewards to claim
+  reminder:
+    join: true
+    # Send a message to the player in an interval
+    timer: true
+    # Interval in seconds
+    period: 900
+  format:
+    item:
+      - '{lore}'
+      - '&7Số lượng: &6{number}'
+      - '&7Nhận vào ngày {date}'
+    item-success: '&a&lĐã nhận!'
+
+# Crate Settings
+crate:
+
+  # Comparison Level
+  # Compares two items and determines if it is a crate
+  # 0 - Basic (Name, Type, Lore)
+  # 1 - Normal (Setting 0 + Enchants, Flags)
+  # 2 - Strict (Setting 1 + Custom NBT) . . . Note: Old keys will not work if this option is selected.
+  compare: 0
+
+  # Display Item
+  # Shown during an animation
+  display: ''
+
+  # Default Menu Name
+  menu: 'Menu'
+
+  # Are players allowed to put crates into crafting containers
+  craft: false
+
+  # Animation Exiting
+  # Allows players to exit animations that have not yet been completed
+  peri-exit: false
+
+  # Length of CSGO animation
+  csgo: 6
+
+  # Length of roulette animation
+  roulette: 5
+
+  # Length of wheel animation
+  wheel: 8
+
+  # Trigger Buttons
+  buttons:
+    enabled: true
+
+    # Next Button
+    # It is used to turn the virtual inventory page
+    next: 'ARROW 1 name:&aTrang_kế'
+
+    # Close Button
+    # It is used to close the inventory
+    close: 'GOLD_RECORD 1 name:&4Đóng! flag:HIDE_POTION_EFFECTS'
+
+    # Next Button
+    back: 'BED 1 name:&4&lTrang_trước'
+
+    # Confirmation Menu Buttons
+    # Each crate may have an individualized button defined in the crate.yml
+    # If no buttons are defined, default buttons will be used
+    accept: 'STAINED_GLASS_PANE:5 1 name:&aYes lore:&fClick_here_to_open_{crate}!'
+    decline: 'STAINED_GLASS_PANE:14 1 name:&4No'
+
+    # CSGO Display Buttons
+    # Used for display only, and does not trigger any actions
+    csgo-top: 'REDSTONE_TORCH_ON 1 name:&6Prize!'
+    csgo-bot: 'REDSTONE_TORCH_ON 1 name:&6Prize!'
+
+  # Pushback Settings
+  pushback:
+    enabled: true
+
+    # Modifier
+    x: 1.0
+    y: 1.0
+    z: 1.0
+
+  # Hologram Settings
+  hologram:
+
+    # Modifier
+    # Holograms are set to be centered, one block above the target location
+    x: 0.0
+    y: 0.0
+    z: 0.0

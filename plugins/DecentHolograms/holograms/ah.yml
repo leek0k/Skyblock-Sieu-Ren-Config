@@ -1,0 +1,22 @@
+location: world:-12.5:133.21821:1644.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e&lĐấu giá'
+    height: 0.3
+  - content: '&fĐây là chợ đen nơi mọi người đăng bán'
+    height: 0.3
+  - content: '&fvật phẩm của mình bằng tiền hoặc xu!'
+    height: 0.3
+  - content: '&fBạn đang cần tìm kiếm gì sao? Có'
+    height: 0.3
+  - content: '&fthể ở đây sẽ có đấy.'
+    height: 0.3
+  - content: '&f&nLệnh:&r &e/ah'
+    height: 0.3
+  actions: {}

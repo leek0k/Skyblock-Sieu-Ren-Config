@@ -1,0 +1,19 @@
+noPermission: '&cBạn không có quyền để làm điều đó!'
+configReloaded: '&aTải lại cấu hình thành công!'
+waitForCooldown: '&cVui lòng đợi &e%cooldown% giây &cđể sử dụng tiếp!'
+
+#Thời gian (bằng giây) hồi enderpearl:
+# * Đây là thời gian mặc định, sẽ được sử dụng với trường hợp
+#player chưa có permission phía dưới.
+EnderpearlCooldown: 10.0
+
+#Permission sẽ được định dạng theo: enderpearl.rank.<ID>
+#Sử dụng permission để giúp thay đổi thời gian hồi enderpearl.
+# * ID không được phép trùng nhau!
+Ranks:
+  #<ID>: <thời gian>
+  vip1: 9.5
+  vip2: 9.0
+  vip3: 8.5
+  vip4: 8.0
+  vip5: 17.0

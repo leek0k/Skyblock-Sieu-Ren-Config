@@ -1,0 +1,81 @@
+name: '&6&lSet &e&lQuý Mão Tối Cao'
+material: DIAMOND
+settings:
+  equipped:
+    - '&a&l(!) &aKích hoạt &b&lSet &6&lQuý Mão!'
+  unequipped:
+    - '&c&l(!) &cDừng kích hoạt &b&lSet &6&lQuý Mão!'
+items:
+  helmet:
+    name: '&c&l⋞ &4&l⋞ &c&l⋞ &4&lMŨ VƯƠNG QUÝ MÃO&r &c&l⋟ &4&l⋟ &c&l⋟'
+    lore:
+      - ''
+      - '&4&l◆ ◆ ◆ TỐI CAO &4(Quý Mão 2023) &4&l◆ ◆ ◆'
+      - '&4* Giảm 34% damage nhận vào.'
+      - '&4* Hiệu ứng vuốt sắc khi giao tranh.'
+      - '&4&oVật phẩm sự kiện Tết Quý Mão 2023'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+      - ''     
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:9"
+      - "unbreaking:5"
+  chestplate:
+    name: '&c&l⋞ &4&l⋞ &c&l⋞ &4&lGIÁP VƯƠNG QUÝ MÃO &c&l⋟ &4&l⋟ &c&l⋟'
+    lore:
+      - ''
+      - '&4&l◆ ◆ ◆ TỐI CAO &4(Quý Mão 2023) &4&l◆ ◆ ◆'
+      - '&4* Giảm 34% damage nhận vào.'
+      - '&4* Hiệu ứng vuốt sắc khi giao tranh.'
+      - '&4&oVật phẩm sự kiện Tết Quý Mão 2023'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+      - ''           
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:9"
+      - "unbreaking:5"
+  leggings:
+    name: '&c&l⋞ &4&l⋞ &c&l⋞ &4&lQUẦN VƯƠNG QUÝ MÃO &c&l⋟ &4&l⋟ &c&l⋟'
+    lore:
+      - ''
+      - '&4&l◆ ◆ ◆ TỐI CAO &4(Quý Mão 2023) &4&l◆ ◆ ◆'
+      - '&4* Giảm 34% damage nhận vào.'
+      - '&4* Hiệu ứng vuốt sắc khi giao tranh.'
+      - '&4&oVật phẩm sự kiện Tết Quý Mão 2023'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+      - ''         
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:9"
+      - "unbreaking:5"
+  boots:
+    name: '&c&l⋞ &4&l⋞ &c&l⋞ &4&lGIÀY VƯƠNG QUÝ MÃO &c&l⋟ &4&l⋟ &c&l⋟'
+    lore:
+      - ''
+      - '&4&l◆ ◆ ◆ TỐI CAO &4(Quý Mão 2023) &4&l◆ ◆ ◆'
+      - '&4* Giảm 34% damage nhận vào.'
+      - '&4* Hiệu ứng vuốt sắc khi giao tranh.'
+      - '&4&oVật phẩm sự kiện Tết Quý Mão 2023'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+      - ''        
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:9"
+      - "unbreaking:5"
+events:
+  DEFENSE:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:34'
+      - 'NEGATE_DAMAGE:20'
+  DEFENSE:
+    chance: 100
+    cooldown: 12
+    effects:
+      - 'MESSAGE:&c&l☀ Vuốt Sắc ☀'
+      - "POTION:SPEED:5:100"
+      - "ADD_HARM:2 %attacker%"
+      - "WAIT:20"
+      - "ADD_HARM:2 %attacker%"
+      - "WAIT:20"
+      - "ADD_HARM:2 %attacker%"
+      - "WAIT:20"
+      - "ADD_HARM:2 %attacker%"
+      - "WAIT:20"
+      - "ADD_HARM:2 %attacker%"

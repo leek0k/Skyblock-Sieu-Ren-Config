@@ -1,0 +1,21 @@
+requireSet: 'SetQuyMaoTruyenThuyet'
+material: DIAMOND_SWORD
+name: '&d&l☾ &5&l☾ &d&l☾ &d&lKIẾM THIÊN QUÝ MÃO &d&l☽ &5&l☽ &d&l☽'
+lore:
+  - ''
+  - '&d&l◆ ◆ ◆ TRUYỀN THUYẾT &d(Quý Mão 2023) &l◆ ◆ ◆'
+  - '&D* Tăng 15% damage gây ra.'
+  - '&D&oVật phẩm sự kiện Tết Quý Mão 2023'
+  - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+  - '' 
+enchants:
+  - 'sharpness:118'
+  - 'unbreaking:5'
+  - 'fireaspect:3'
+  - 'looting:3'
+  - 'mongvuotcuumao:2'
+events:
+  ATTACK:
+    chance: 100
+    effects:
+      - 'INCREASE_DAMAGE:15'

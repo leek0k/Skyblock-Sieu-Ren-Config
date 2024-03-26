@@ -1,0 +1,535 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+  name: '&8&lSHOP TAGS'
+  rows: 6
+  command: 'shoptag;shoptags'
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+
+
+robot:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.44;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG44)'
+  NAME: '&b&lG&3&la&b&lo&0&e&5&k.&c&lS&c&lị&c&lp&0&e&5&k.&d&lH&d&lồ&d&ln&d&lg (¯`♥´¯)'
+  LORE:
+    - ''
+    - '&e&lCái đồ quỷ sứ hà!'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁'    
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 2
+  POSITION-Y: 2
+  POINTS: 29    
+  
+
+vv8:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 1
+vv9:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 1 
+vv10:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 1
+vv11:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 1
+vv12:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 1
+vv13:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 1
+vv14:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 1
+vv15:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 1
+vv16:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 1  
+vv17:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 2
+vv18:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 3
+vv19:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 4
+vv20:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 5
+vv21:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 2
+vv22:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 3
+vv23:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 4
+vv24:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 5
+vv25:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 6
+vv26:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 9
+vv27:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 6
+vv28:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 6
+vv29:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 6
+vv30:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 6
+vv31:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 6
+vv32:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 6
+vv33:
+  NAME: '&c&l*'
+  ID: '321'
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 6
+ 
+
+return-to-main:
+  COMMAND: 'open:main-menu.yml'
+  NAME: '&c&l[arrow_left] [Trở về]'
+  LORE:
+    - '&7Nhấn vào để trở về mục trước'  
+    - ''
+    - '&0&o#Item menu'
+  ID: '175'  
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 6   
+robot1:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.43;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh! (TAG43)'
+  NAME: '☠&b&l&oT&b&l&or&b&l&oộ&b&l&om &e&l&oC&e&l&oh&e&l&oó&f☠ &a&l◤(^,^)◥'
+  LORE:
+    - ''
+    - '&e&lĐi Exciter auto trộm chó!'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 3
+  POSITION-Y: 2
+  POINTS: 29  
+robot2:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.42;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG42)'
+  NAME: '&c&l乂◜&c&lA&c&ls&c&ls&c&la&c&ls&c&ls&c&li&c&ln◝乂'
+  LORE:
+    - ''
+    - '&e&lGiết người hả...tầm thường thôi!'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 4
+  POSITION-Y: 2
+  POINTS: 29
+robot3:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.45;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG45)'
+  NAME: '&e➢&c&l&nI&c&l&nQ&r⇴&b&lV&3&lô&b&lC&3&lự&b&lc&e➣'
+  LORE:
+    - ''
+    - '&e&lGấp đôi IQ để làm gì??'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 5
+  POSITION-Y: 2
+  POINTS: 29
+robot4:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.46;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG46)'
+  NAME: '&e&lツ&6&lS&e&l&nǐ&6&lê&e&lu &6&lS&e&la&6&l&nï&e&lY&6&lä&e&lnツ'
+  LORE:
+    - ''
+    - '&e&lKame hameha!!'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 6
+  POSITION-Y: 2
+  POINTS: 29
+robot5:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.47;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG47)'
+  NAME: '&7&l๖ۣۜ&2&lS&a&la&2&lm&a&lü&2&lr&a&la&2&li&b▬&b▬&b&l[=&b&l=&b&l=&b&l=&b&lﺤ&8&l'
+  LORE:
+    - ''
+    - '&e&lTa là võ sĩ đạo chân chính!!'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁' 
+    - ''
+    - '&0&o#Item menu' 
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 7
+  POSITION-Y: 2
+  POINTS: 29
+robot6:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.48;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG48)'
+  NAME: '&e❀&f&l&nS&f&l&o&ni&f&l&o&nê&f&l&o&nu&c❤&d&l&o&nC&d&l&o&nu&d&l&o&nt&d&l&ne&e❀'
+  LORE:
+    - ''
+    - '&e&lMấy thím thấy e có dễ thương hông?'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 8
+  POSITION-Y: 2
+  POINTS: 29
+
+robot7:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.50;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG50)'
+  NAME: '&f&l&k.&2&l&oT&a&l&oo&2&l&ok&a&l&ou&2&l&od&a&l&oa &d&nI&d&ld&d&lo&d&ll&r&k.'
+  LORE:
+    - ''
+    - '&e&lNhà thí chủ có cháu gái hông??'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 2
+  POSITION-Y: 3
+  POINTS: 29
+robot8:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.49;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG49)'
+  NAME: '&c&l♥&b&l&nB&b&lé&6&lH&6&l&ne&6&lo&3&lM&3&l&nê&d&lH&d&l&nư&d&lờ&d&ln&d&lg&c&l♥'
+  LORE:
+    - ''
+    - '&e&lCó ai thít bé heo hông nà!'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁' 
+    - ''
+    - '&0&o#Item menu' 
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 3
+  POSITION-Y: 3
+  POINTS: 29
+robot9:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.51;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG51)'
+  NAME: '&f&l➴&a&n&lŤ&c&n&lh&e&n&lě&r &3&l†&b&lH&f&lü&b&ln&f&lt&b&le&f&lr&3&l†'
+  LORE:
+    - ''
+    - '&e&lTags này do The_Frean đặt ad làm!'
+    - '&e&lAi hâm mộ tài năng của bạn ý có thể mua nhé^^'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁'
+    - ''
+    - '&0&o#Item menu'   
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 4
+  POSITION-Y: 3
+  POINTS: 29
+robot10:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.52;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG52)'
+  NAME: '&l╭&d&lC&d&lh&d&lị&b&lH&b&lỉ&b&lu&e&lH&e&lô&e&ln&e&lg&f&l(╥﹏╥)'
+  LORE:
+    - ''
+    - '&eE thấy cái túi để trên bàn tự nhiên nó mất. Chị hỉu hông?'
+    - ''
+    - ' -&2&lKhông phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - ' -&2&lChỉ cần 1 cú click là sở hữu!'
+    - ' -/cudinh để đến shop! Khi mua xong /tags để sử dụng'
+    - '&c&lLưu ý:&3Mỗi tuần sẽ thêm 2 tags mới siêu ngầu cho ae lựa chọn!'
+    - '&6&l* &e&lGiá: &b&l29&b⛁ &e&lGiá đang hot nhé!' 
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 5
+  POSITION-Y: 3
+  POINTS: 29
+robot11:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.53;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG53)'
+  NAME: '&b&l•&7&lA&f&ln&7&lh&f&l.&f&lD&7&la&f&l.Đ&7&le&f&ln &b&l(҂`_´)'
+  LORE:
+    - ''
+    - '&e&lAnh da đen xin kính chào các bro!'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁'
+    - ''
+    - '&0&o#Item menu'  
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 6
+  POSITION-Y: 3
+  POINTS: 29
+robot12:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.54;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG54)'
+  NAME: '&f&l♠&e&lK&6&lh&e&lá&f&l_&3&lN&b&lo&b&lo&3&lb&e&l(◠ε◠)'
+  LORE:
+    - ''
+    - '&e&lNgáo ngơ, Ngây thơ vô số tội!'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁'
+    - ''
+    - '&0&o#Item menu'  
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 7
+  POSITION-Y: 3
+  POINTS: 29
+robot13:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.55;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG55)'
+  NAME: '&f☘&b&l₱&f&lo&b&lo&f&lr&f&a&c&l×&6&lK&e&li&6&ld&f☘'
+  LORE:
+    - ''
+    - '&eTag này do 0868103595 đặt!'
+    - '&eAi yêu mến 0868103595 có thể mua nhé!'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 8
+  POSITION-Y: 3
+  POINTS: 29
+robot15:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.57;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!(TAG57)'
+  NAME: '&a&lミ&e&lH&e&li&e&lệ&e&lp&b&lS&b&lĩ&f&lĐ&f&lư&f&lờ&f&l&lng&c&lP&c&lh&c&lố&a&l彡'
+  LORE:
+    - ''
+    - '&e&lRa tay nghĩa hiệp giúp đỡ muôn dân!'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l29&b⛁'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 2
+  POSITION-Y: 4
+  POINTS: 29
+robot16:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.thanhbuliem;console: points give deptraitai 10;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!'
+  NAME: '&a&l&n♡๖ۣۜՇɦáทɦ &b&l&nßú&c&l&n ℒ¡ếℳ♡๖ۣۜ'
+  LORE:
+    - ''
+    - '&f• &7Được đóng góp thiết kế bởi &aDepTraiTai &7Sky I &f•'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l49&b⛁'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 3
+  POSITION-Y: 4
+  POINTS: 49
+robot17:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.sucmanhdongtien;console: points give NPX_KAI 10;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!'
+  NAME: '&e⛁&a&l『&c&l۴Sức̫ Mạnh &9&a&d&0&f♚&b&l Đồng Tiền &a&l』&e⛁'
+  LORE:
+    - ''
+    - '&f• &7Được đóng góp thiết kế bởi &aNPX_KAI &7Sky I &f•'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l49&b⛁'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 4
+  POSITION-Y: 4
+  POINTS: 49
+robot18:
+  COMMAND: 'console: lp user {player} permission set deluxetags.tag.anxinnghethuat;console: points give SuBinss 10;tell: &e&l(&7&l!&e&l)&e&l Mua thành công hãy &f&L./tags &e&lđể sử dụng biệt danh!'
+  NAME: '&6&l『&e♨&6&l』&c&lĂn&d&lXin&a&lNghệ&b&lThuật&6&l『&e♨&6&l』'
+  LORE:
+    - ''
+    - '&f• &7Được đóng góp thiết kế bởi &aSuBinss &7Sky III &f•'
+    - ''
+    - '&7- Không phải quay ngẫu nhiên nên không sợ mở trùng tags cũ!'
+    - '&7- Chỉ cần 1 cú click là sở hữu!'
+    - '&7- &f/shoptags &7để đến shop! &7Khi mua xong &f/tags &7để sử dụng'
+    - ''
+    - '&6&l* &e&lGiá: &b&l49&b⛁'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 175
+  KEEP-OPEN: false  
+  POSITION-X: 5
+  POSITION-Y: 4
+  POINTS: 49

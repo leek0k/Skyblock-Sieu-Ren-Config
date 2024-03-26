@@ -1,0 +1,961 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&lNâng cấp đảo'
+
+pattern:
+  - '$ $ % % & % % $ $'
+  - '$ % ! ^ # * @ % $'
+  - '$ $ $ % & % $ $ $'
+
+items:
+  '$':
+    type: STAINED_GLASS_PANE
+    data: 3
+    name: '&f'
+  '%':
+    type: STAINED_GLASS_PANE
+    data: 9
+    name: '&f'
+  '&':
+    type: STAINED_GLASS_PANE
+    data: 11
+    name: '&f'
+
+sounds:
+  '@':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2
+
+upgrades:
+  hoppers-limit:
+    item: '@'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: HOPPER
+        name: '&d&lNâng cấp Hopper &a(✔)'
+        lore:
+          - '&7'
+          - '&dCấp tiếp theo: &e2'
+          - '&7'
+          - '&7Tăng giới hạn hopper'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&dNâng cấp: &f30 --> 60 Hoppers'
+          - '&dGiá: &f$500,000'
+          - '&7'    
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: HOPPER
+        name: '&d&lNâng cấp Hopper &a(✔)'
+        lore:
+          - '&7'
+          - '&dCấp tiếp theo: &e2'
+          - '&7'
+          - '&7Tăng giới hạn hopper'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&dNâng cấp: &f30 --> 60 Hoppers'
+          - '&dGiá: &f$500,000'
+          - '&7'
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: HOPPER
+        name: '&d&lNâng cấp Hopper &a(✔)'
+        lore:
+          - '&7'
+          - '&dCấp tiếp theo: &e3'
+          - '&7'
+          - '&7Tăng giới hạn hopper'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&dNâng cấp: &f60 --> 90 Hoppers'
+          - '&dGiá: &f$1,000,000'
+          - '&7' 
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: HOPPER
+        name: '&d&lNâng cấp Hopper &a(✔)'
+        lore:
+          - '&7'
+          - '&dCấp tiếp theo: &e3'
+          - '&7'
+          - '&7Tăng giới hạn hopper'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&dNâng cấp: &f60 --> 90 Hoppers'
+          - '&dGiá: &f$1,000,000'
+          - '&7'
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: HOPPER
+        name: '&d&lNâng cấp Hopper &a(✔)'
+        lore:
+          - '&7'
+          - '&dCấp tiếp theo: &e4'
+          - '&7'
+          - '&7Tăng giới hạn hopper'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&dNâng cấp: &f90 --> 120 Hoppers'
+          - '&dGiá: &f$3,000,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: HOPPER
+        name: '&d&lNâng cấp Hopper &a(✔)'
+        lore:
+          - '&7'
+          - '&dCấp tiếp theo: &e4'
+          - '&7'
+          - '&7Tăng giới hạn hopper'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&dNâng cấp: &f90 --> 120 Hoppers'
+          - '&dGiá: &f$3,000,000'
+          - '&7'
+    '4':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: HOPPER
+        name: '&c&lMAX'
+        lore:
+          - '&7Hopper đã được nâng cấp'
+          - '&7tối đa!'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: HOPPER
+        name: '&c&lMAX'
+        lore:
+          - '&7Hopper đã được nâng cấp'
+          - '&7tối đa!'
+  warps-limit:
+    item: '^'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: SIGN
+        name: '&D&lNâng cấp Warp &a(✔)'
+        lore:
+          - '&7'
+          - '&DCấp tiếp theo: &e2'
+          - '&7'
+          - '&7Tăng giới hạn warp'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&DNâng cấp: &f1 --> 2 Warp'
+          - '&DGiá: &f$50,000'
+          - '&7'        
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: SIGN
+        name: '&D&lNâng cấp Warp &a(✔)'
+        lore:
+          - '&7'
+          - '&DCấp tiếp theo: &e2'
+          - '&7'
+          - '&7Tăng giới hạn warp'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&DNâng cấp: &f1 --> 2 Warp'
+          - '&DGiá: &f$50,000'
+          - '&7'
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: SIGN
+        name: '&D&lNâng cấp Warp &a(✔)'
+        lore:
+          - '&7'
+          - '&DCấp tiếp theo: &e3'
+          - '&7'
+          - '&7Tăng giới hạn warp'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&DNâng cấp: &f2 --> 3 Warp'
+          - '&DGiá: &f$100,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: SIGN
+        name: '&D&lNâng cấp Warp &a(✔)'
+        lore:
+          - '&7'
+          - '&DCấp tiếp theo: &e3'
+          - '&7'
+          - '&7Tăng giới hạn warp'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&DNâng cấp: &f2 --> 3 Warp'
+          - '&DGiá: &f$100,000'
+          - '&7'
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: SIGN
+        name: '&D&lNâng cấp Warp &a(✔)'
+        lore:
+          - '&7'
+          - '&DCấp tiếp theo: &e4'
+          - '&7'
+          - '&7Tăng giới hạn warp'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&DNâng cấp: &f3 --> 4 Warp'
+          - '&DGiá: &f$200,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: SIGN
+        name: '&D&lNâng cấp Warp &a(✔)'
+        lore:
+          - '&7'
+          - '&DCấp tiếp theo: &e4'
+          - '&7'
+          - '&7Tăng giới hạn warp'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&DNâng cấp: &f3 --> 4 Warp'
+          - '&DGiá: &f$200,000'
+          - '&7'
+    '4':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: SIGN
+        name: '&D&lNâng cấp Warp &a(✔)'
+        lore:
+          - '&7'
+          - '&DCấp tiếp theo: &e5'
+          - '&7'
+          - '&7Tăng giới hạn warp'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&DNâng cấp: &f4 --> 6 Warp'
+          - '&DGiá: &f$300,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: SIGN
+        name: '&D&lNâng cấp Warp &a(✔)'
+        lore:
+          - '&7'
+          - '&DCấp tiếp theo: &e5'
+          - '&7'
+          - '&7Tăng giới hạn warp'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&DNâng cấp: &f4 --> 6 Warp'
+          - '&DGiá: &f$300,000'
+          - '&7'         
+    '5':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        name: '&c&lMAX'
+        lore:
+          - '&7Warps đã được nâng cấp'
+          - '&7tối đa!'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        name: '&c&lMAX'
+        lore:
+          - '&7Warps đã được nâng cấp'
+          - '&7tối đa!'                   
+  border-size:
+    item: '!'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: GRASS
+        name: '&9&lDiện tích đảo &a(✔)'
+        lore:
+          - '&7'
+          - '&9Cấp tiếp theo: &e2'
+          - '&7'
+          - '&7Tăng giới hạn Diện tích đảo'
+          - '&7'
+          - '&9Diện tích: &f50 --> 100 khối'
+          - '&9Giá: &f$100,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: GRASS
+        name: '&9&lDiện tích đảo &a(✔)'
+        lore:
+          - '&7'
+          - '&9Cấp tiếp theo: &e2'
+          - '&7'
+          - '&7Tăng giới hạn Diện tích đảo'
+          - '&7'
+          - '&9Diện tích: &f50 --> 100 khối'
+          - '&9Giá: &f$100,000'
+          - '&7'
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: GRASS
+        name: '&9&lDiện tích đảo &a(✔)'
+        lore:
+          - '&7'
+          - '&9Cấp tiếp theo: &e3'
+          - '&7'
+          - '&7Tăng giới hạn Diện tích đảo'
+          - '&7'
+          - '&9Diện tích: &f100 --> 200 khối'
+          - '&9Giá: &f$500,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: GRASS
+        name: '&9&lDiện tích đảo &a(✔)'
+        lore:
+          - '&7'
+          - '&9Cấp tiếp theo: &e3'
+          - '&7'
+          - '&7Tăng giới hạn Diện tích đảo'
+          - '&7'
+          - '&9Diện tích: &f100 --> 200 khối'
+          - '&9Giá: &f$500,000'
+          - '&7' 
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: GRASS
+        name: '&9&lDiện tích đảo &a(✔)'
+        lore:
+          - '&7'
+          - '&9Cấp tiếp theo: &e4'
+          - '&7'
+          - '&7Tăng giới hạn Diện tích đảo'
+          - '&7'
+          - '&9Diện tích: &f200 --> 300 khối'
+          - '&9Giá: &f$1,000,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: GRASS
+        name: '&9&lDiện tích đảo &a(✔)'
+        lore:
+          - '&7'
+          - '&9Cấp tiếp theo: &e4'
+          - '&7'
+          - '&7Tăng giới hạn Diện tích đảo'
+          - '&7'
+          - '&9Diện tích: &f200 --> 300 khối'
+          - '&9Giá: &f$1,000,000'
+          - '&7'
+    '4':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: GRASS
+        name: '&9&lDiện tích đảo &a(✔)'
+        lore:
+          - '&7'
+          - '&9Cấp tiếp theo: &e5'
+          - '&7'
+          - '&7Tăng giới hạn Diện tích đảo'
+          - '&7'
+          - '&9Diện tích: &f300 --> 400 khối'
+          - '&9Giá: &f$10,000,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: GRASS
+        name: '&9&lDiện tích đảo &a(✔)'
+        lore:
+          - '&7'
+          - '&9Cấp tiếp theo: &e5'
+          - '&7'
+          - '&7Tăng giới hạn Diện tích đảo'
+          - '&7'
+          - '&9Diện tích: &f300 --> 400 khối'
+          - '&9Giá: &f$10,000,000'
+          - '&7'
+    '5':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: GRASS
+        name: '&9&lDiện tích đảo &a(✔)'
+        lore:
+          - '&7'
+          - '&9Cấp tiếp theo: &e6'
+          - '&7'
+          - '&7Tăng giới hạn Diện tích đảo'
+          - '&7'
+          - '&9Diện tích: &f??? --> ??? khối'
+          - '&9Giá: &f$???,???,???'
+          - '&7' 
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: GRASS
+        name: '&9&lDiện tích đảo &a(✔)'
+        lore:
+          - '&7'
+          - '&9Cấp tiếp theo: &e6'
+          - '&7'
+          - '&7Tăng giới hạn Diện tích đảo'
+          - '&7'
+          - '&9Diện tích: &f??? --> ??? khối'
+          - '&9Giá: &f$???,???,???'
+          - '&7' 
+    '6':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        name: '&c&lMAX'
+        lore:
+          - '&7Diện tích đảo đã được nâng cấp'
+          - '&7tối đa! &c(500 khối)'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        name: '&c&lMAX'
+        lore:
+          - '&7Diện tích đảo đã được nâng cấp'
+          - '&7tối đa! &c(500 khối)'
+  spawner-limit:
+    item: '*'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: MOB_SPAWNER
+        name: '&6&lNâng cấp Spawner &a(✔)'
+        lore:
+          - '&7'
+          - '&6Cấp tiếp theo: &e2'
+          - '&7'
+          - '&7Tăng giới hạn Spawner'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&6Nâng cấp: &f200x Spawners'
+          - '&6Giá: &f$100,000'
+          - '&7'        
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: MOB_SPAWNER
+        name: '&6&lNâng cấp Spawner &a(✔)'
+        lore:
+          - '&7'
+          - '&6Cấp tiếp theo: &e2'
+          - '&7'
+          - '&7Tăng giới hạn Spawner'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&6Nâng cấp: &f200x Spawners'
+          - '&6Giá: &f$100,000'
+          - '&7'
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: MOB_SPAWNER
+        name: '&6&lNâng cấp Spawner &a(✔)'
+        lore:
+          - '&7'
+          - '&6Cấp tiếp theo: &e3'
+          - '&7'
+          - '&7Tăng giới hạn Spawner'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&6Nâng cấp: &f500x Spawners'
+          - '&6Giá: &f$300,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: MOB_SPAWNER
+        name: '&6&lNâng cấp Spawner &a(✔)'
+        lore:
+          - '&7'
+          - '&6Cấp tiếp theo: &e3'
+          - '&7'
+          - '&7Tăng giới hạn Spawner'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&6Nâng cấp: &f500x Spawners'
+          - '&6Giá: &f$300,000'
+          - '&7'
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: MOB_SPAWNER
+        name: '&6&lNâng cấp Spawner &a(✔)'
+        lore:
+          - '&7'
+          - '&6Cấp tiếp theo: &e4'
+          - '&7'
+          - '&7Tăng giới hạn Spawner'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&6Nâng cấp: &f1000x Spawners'
+          - '&6Giá: &f$1,000,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: MOB_SPAWNER
+        name: '&6&lNâng cấp Spawner &a(✔)'
+        lore:
+          - '&7'
+          - '&6Cấp tiếp theo: &e4'
+          - '&7'
+          - '&7Tăng giới hạn Spawner'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&6Nâng cấp: &f1000x Spawners'
+          - '&6Giá: &f$1,000,000'
+          - '&7'
+    '4':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: MOB_SPAWNER
+        name: '&6&lNâng cấp Spawner &a(✔)'
+        lore:
+          - '&7'
+          - '&6Cấp tiếp theo: &e5'
+          - '&7'
+          - '&7Tăng giới hạn Spawner'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&6Nâng cấp: &f1500x Spawners'
+          - '&6Giá: &f$2,000,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: MOB_SPAWNER
+        name: '&6&lNâng cấp Spawner &a(✔)'
+        lore:
+          - '&7'
+          - '&6Cấp tiếp theo: &e5'
+          - '&7'
+          - '&7Tăng giới hạn Spawner'
+          - '&7đặt trong đảo.'
+          - '&7'
+          - '&6Nâng cấp: &f1500x Spawners'
+          - '&6Giá: &f$2,000,000'
+          - '&7'         
+    '5':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        name: '&c&lMAX'
+        lore:
+          - '&7Spawner đã được nâng cấp'
+          - '&7tối đa!'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        name: '&c&lMAX'
+        lore:
+          - '&7Spawner đã được nâng cấp'
+          - '&7tối đa!'  
+  generator-rates:
+    item: '#'
+    '1':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: GOLD_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e2'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng vàng (tức là 15%)'
+          - '&eGiá: &f$50,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: GOLD_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e2'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng vàng (tức là 15%)'
+          - '&eGiá: &f$50,000'
+          - '&7'  
+    '2':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: GOLD_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e3'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng vàng (tức là 20%)'
+          - '&eGiá: &f$100,000'
+          - '&7' 
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: GOLD_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e3'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng vàng (tức là 20%)'
+          - '&eGiá: &f$100,000'
+          - '&7'
+    '3':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: GOLD_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e4'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng vàng (tức là 25%)'
+          - '&eGiá: &f$200,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: GOLD_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e4'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng vàng (tức là 25%)'
+          - '&eGiá: &f$200,000'
+          - '&7'
+    '4':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: GOLD_BLOCK
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e5'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng vàng (tức là 30%)'
+          - '&eGiá: &f$400,000'
+          - '&7' 
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: GOLD_BLOCK
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e5'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng vàng (tức là 30%)'
+          - '&eGiá: &f$400,000'
+          - '&7'
+    '5':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: IRON_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e6'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng sắt (tức là 23%)'
+          - '&eGiá: &f$200,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: IRON_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e6'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng sắt (tức là 23%)'
+          - '&eGiá: &f$200,000'
+          - '&7'
+    '6':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: IRON_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e7'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng sắt (tức là 28%)'
+          - '&eGiá: &f$250,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: IRON_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e7'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng sắt (tức là 28%)'
+          - '&eGiá: &f$250,000'
+          - '&7'
+    '7':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: IRON_BLOCK
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e8'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng sắt (tức là 33%)'
+          - '&eGiá: &f$450,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: IRON_BLOCK
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e8'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng sắt (tức là 33%)'
+          - '&eGiá: &f$450,000'
+          - '&7'
+    '8':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: DIAMOND_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e9'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng kim cương (tức là 10%)'
+          - '&eGiá: &f$505,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: DIAMOND_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e9'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng kim cương (tức là 10%)'
+          - '&eGiá: &f$505,000'
+          - '&7'
+    '9':
+      has-next-level:
+        sound:
+          type: ENTITY_EXPERIENCE_ORB_PICKUP
+          volume: 0.2
+          pitch: 0.2
+        type: EMERALD_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e10'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng lục bảo (tức là 8%)'
+          - '&eGiá: &f$505,000'
+          - '&7'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: EMERALD_ORE
+        name: '&e&lNâng cấp quặng &a(✔)'
+        lore:
+          - '&7'
+          - '&eCấp tiếp theo: &e10'
+          - '&7'
+          - '&eNâng cấp: &f+5% quặng lục bảo (tức là 8%)'
+          - '&eGiá: &f$505,000'
+          - '&7'      
+    '10':
+      has-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        name: '&c&lMAX'
+        lore:
+          - '&7Nâng cấp quặng đã được nâng cấp'
+          - '&7tối đa!'
+      no-next-level:
+        sound:
+          type: BLOCK_ANVIL_PLACE
+          volume: 0.2
+          pitch: 0.2
+        type: BARRIER
+        name: '&c&lMAX'
+        lore:
+          - '&7Nâng cấp quặng đã được nâng cấp'
+          - '&7tối đa!'                    

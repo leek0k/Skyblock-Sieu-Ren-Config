@@ -1,0 +1,67 @@
+###############################################
+##                                           ##
+##         WildStacker Configuration         ##
+##            Developed by Ome_R             ##
+##                                           ##
+###############################################
+
+# The title of the menu.
+title: 'Tăng/giảm Spawner'
+
+# The pattern of the menu.
+pattern:
+  - '* - + $ @ $ ! % ^'
+
+# The sound that will be played when successfully changing the spawner's amount
+success-sound:
+  type: ENTITY_EXPERIENCE_ORB_PICKUP
+  volume: 0.2
+  pitch: 0.2
+
+# The sound that will be played when failing to change the spawner's amount
+failure-sound: {}
+
+# The items of the menu
+items:
+  '@':
+    type: MOB_SPAWNER
+    data: 1
+    name: '&f'
+  '#':
+    type: STAINED_GLASS_PANE
+    data: 4
+    name: '&f'
+  '&':
+    type: STAINED_GLASS_PANE
+    data: 1
+    name: '&f'
+  '!':
+    type: STAINED_GLASS_PANE
+    data: 5
+    deposit: 1
+    name: '&aThêm +1'
+  '%':
+    type: STAINED_GLASS_PANE
+    data: 5
+    deposit: 16
+    name: '&aThêm +16'
+  '^':
+    type: STAINED_GLASS_PANE
+    data: 5
+    deposit: 64
+    name: '&aThêm +64'
+  '*':
+    type: STAINED_GLASS_PANE
+    data: 14
+    withdraw: 1
+    name: '&cRút -1'
+  '-':
+    type: STAINED_GLASS_PANE
+    data: 14
+    withdraw: 16
+    name: '&cRút -16'
+  '+':
+    type: STAINED_GLASS_PANE
+    data: 14
+    withdraw: 64
+    name: '&cRút -64'

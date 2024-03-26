@@ -1,0 +1,595 @@
+Crate:
+  CrateType: Cosmic
+  CrateName: '&2&lHòm Thượng Cổ'
+  StartingKeys: 0
+  InGUI: false
+  Slot: 23
+  OpeningBroadCast: false
+  BroadCast: '%Prefix%&6&l%Player% &7is opening a &7&lBasic Chest&7.'
+  Item: '130'
+  Glowing: false
+  Name: '&2&lKHO BÁU THƯỢNG CỔ'
+  Lore:
+  - '&e/hombau&7 để mua Hòm Báu.'
+  - '&r'
+  - '&7 ◆ &nChuột-trái&r &bđể mở Hòm Báu nếu bạn đã mua.'
+  - '&7 ◆ &nChuột-Phải&r &bđể xem qua vật phẩm trong Hòm.'
+  - '&r'
+  - '&7Bạn đang có &c&n%keys%&r &7◆ &b&nHòm Kim Cương&r &7◆.'
+  Preview:
+    Toggle: true
+    ChestLines: 6
+    Glass:
+      #Turn the glass boarder in the preview on and off.
+      Toggle: true
+      #The item that shows in the boarder. Can be glass or any other item.
+      Item: 'IRON_FENCE' 
+  PhysicalKey:
+    Name: '&a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&r &a◆&2◆&a◆'
+    Lore:
+    - '&r'
+    - '&7 ◆... &nChuột-trái&r &fđể mở &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘'
+    - '&7 ◆. &nChuột-Phải&r &fđể xem qua vật phẩm trong.'
+    Item: '351:1'
+    Glowing: true
+  Hologram:
+    Toggle: false
+    Height: 1.5
+    Message:
+    - '&d&lGalactic Chest'
+  Tiers:
+    Basic:
+      Name: '&a&lThường'
+      Color: 54
+      Chance: 60
+      MaxRange: 100
+    UnCommon:
+      Name: '&e&lHiếm'
+      Color: 130
+      Chance: 50
+      MaxRange: 100
+    Rare:
+      Name: '&2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+      Color: 120
+      Chance: 30
+      MaxRange: 100
+  Prizes:
+    '4':
+      DisplayName: '&e&lx4 | Skeleton Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 4
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 45
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - 'silkspawners give %player% Skeleton 4'
+      - 'src xuixeo add ThuongCo %player% 1'
+    '5':
+      DisplayName: '&e&lx4 | Creeper Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 4
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 45
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - 'silkspawners give %player% Creeper 4'
+      - 'src xuixeo add ThuongCo %player% 1'
+    '6':
+      DisplayName: '&e&lx4 | Blaze Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 4
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 45
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: false
+      Commands:
+      - 'silkspawners give %player% Blaze 4'
+      - 'src xuixeo add ThuongCo %player% 1'
+    '7':
+      DisplayName: '&6&lx3 | Iron Golem Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 3
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6&lx3 | Iron Golem
+        Spawner &r &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'silkspawners give %player% irongolem 3'
+      - 'src xuixeo add ThuongCo %player% 1'
+    '3':
+      DisplayName: '&e&lx3 | GHAST Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 3
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 35
+      Firework: true
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &a&lx3 | Ghast Spawner&r
+        &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'silkspawners give %player% Ghast 3'
+      - - 'src xuixeo add ThuongCo %player% 1'
+    '12':
+      DisplayName: '&a&lx1 | 500,000ṩ | PHIẾU'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 65
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: true
+      Commands:
+      - 'eco give %player% 500000'
+      - 'src xuixeo add ThuongCo %player% 1'
+    '13':
+      DisplayName: '&a&lx1 | 1,000,000ṩ | PHIẾU'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 45
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'eco give %player% 1000000'
+      - 'src xuixeo add ThuongCo %player% 1'
+    '14':
+      DisplayName: '&a&lx1 | 2,500,000ṩ | PHIẾU'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &a&lx1 | 2,500,000ṩ
+        | PHIẾU&r &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'eco give %player% 2500000'
+      - 'src xuixeo add ThuongCo %player% 1'
+    '21':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&c&lQUỶ&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 12
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&c&lQUỶ&8&l>&r &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'epicvouchers give %player% quy 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '22':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&b&lTIÊN&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&b&lTIÊN&8&l>&r &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'epicvouchers give %player% tien 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '23':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l>&r &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'epicvouchers give %player% than 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '24':
+      DisplayName: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Mũ)&f﹞&E﹞&6﹞&2&l⌘⌘'
+      DisplayItem: '314'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+      - '&2&l⌘&2Giảm 40% damage.&2&l⌘'
+      - '&2&l⌘&2Đề kháng&2&l⌘'
+      - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+      - ''
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:10
+      - DURABILITY:5
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG
+        CỔ &6﹝&E﹝&f﹝&e(Mũ)&f﹞&E﹞&6﹞&2&l⌘⌘ &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'ie give muthuongco %player% 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '25':
+      DisplayName: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Giáp)&f﹞&E﹞&6﹞&2&l⌘⌘'
+      DisplayItem: '315'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+      - '&2&l⌘&2Giảm 40% damage.&2&l⌘'
+      - '&2&l⌘&2Đề kháng&2&l⌘'
+      - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+      - ''
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:10
+      - DURABILITY:5
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG
+        CỔ &6﹝&E﹝&f﹝&e(Giáp)&f﹞&E﹞&6﹞&2&l⌘⌘ &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'ie give giapthuongco %player% 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '26':
+      DisplayName: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Quần)&f﹞&E﹞&6﹞&2&l⌘⌘'
+      DisplayItem: '316'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+      - '&2&l⌘&2Giảm 40% damage.&2&l⌘'
+      - '&2&l⌘&2Đề kháng&2&l⌘'
+      - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+      - ''
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:10
+      - DURABILITY:5
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG
+        CỔ &6﹝&E﹝&f﹝&e(Quần)&f﹞&E﹞&6﹞&2&l⌘⌘ &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'ie give quanthuongco %player% 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '27':
+      DisplayName: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Giày)&f﹞&E﹞&6﹞&2&l⌘⌘'
+      DisplayItem: '317'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+      - '&2&l⌘&2Giảm 40% damage.&2&l⌘'
+      - '&2&l⌘&2Đề kháng&2&l⌘'
+      - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+      - ''
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:10
+      - DURABILITY:5
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG
+        CỔ &6﹝&E﹝&f﹝&e(Giày)&f﹞&E﹞&6﹞&2&l⌘⌘ &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'ie give giaythuongco %player% 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '28':
+      DisplayName: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Kiếm I)&f﹞&E﹞&6﹞&2&l⌘⌘'
+      DisplayItem: '272'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+      - '&2* Tăng 20% damage.'
+      - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+      DisplayEnchantments:
+      - DAMAGE_ALL:140
+      - DAMAGE_UNDEAD:5
+      - DAMAGE_ARTHROPODS:5
+      - FIRE_ASPECT:2
+      - LOOT_BONUS_MOBS:3
+      - DURABILITY:10
+      MaxRange: 100
+      Chance: 6
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG
+        CỔ &6﹝&E﹝&f﹝&e(Kiếm I)&f﹞&E﹞&6﹞&2&l⌘⌘ &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'ie give kiemthuongco1 %player% 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '29':
+      DisplayName: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Kiếm II)&f﹞&E﹞&6﹞&2&l⌘⌘'
+      DisplayItem: '272'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+      - '&2* Tăng 22% damage.'
+      - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+      DisplayEnchantments:
+      - DAMAGE_ALL:145
+      - DAMAGE_UNDEAD:5
+      - DAMAGE_ARTHROPODS:5
+      - FIRE_ASPECT:2
+      - LOOT_BONUS_MOBS:3
+      - DURABILITY:10
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG
+        CỔ &6﹝&E﹝&f﹝&e(Kiếm II)&f﹞&E﹞&6﹞&2&l⌘⌘ &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'ie give kiemthuongco2 %player% 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '30':
+      DisplayName: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Kiếm III)&f﹞&E﹞&6﹞&2&l⌘⌘'
+      DisplayItem: '272'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+      - '&2* Tăng 24% damage.'
+      - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+      DisplayEnchantments:
+      - DAMAGE_ALL:150
+      - DAMAGE_UNDEAD:5
+      - DAMAGE_ARTHROPODS:5
+      - FIRE_ASPECT:2
+      - LOOT_BONUS_MOBS:3
+      - DURABILITY:10
+      MaxRange: 100
+      Chance: 4
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG
+        CỔ &6﹝&E﹝&f﹝&e(Kiếm III)&f﹞&E﹞&6﹞&2&l⌘⌘ &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'ie give kiemthuongco3 %player% 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    'cup1':
+      DisplayName: '&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+      DisplayItem: '278'
+      DisplayAmount: 1
+      Lore:
+      - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+      - '&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+      DisplayEnchantments:
+      - DIG_SPEED:28
+      - DURABILITY:5
+      - LOOT_BONUS_BLOCKS:18
+      MaxRange: 100
+      Chance: 9
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New) &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'ie give cupthuongcotrade1 %player% 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    'cup2':
+      DisplayName: '&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (2♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+      DisplayItem: '278'
+      DisplayAmount: 1
+      Lore:
+      - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+      - '&2&l⌘⌘&6﹝&e﹝&f﹝&a(2♦) &a&lTHƯỢNG CỔ &a(2♦)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+      DisplayEnchantments:
+      - DIG_SPEED:30
+      - DURABILITY:5
+      - LOOT_BONUS_BLOCKS:20
+      MaxRange: 100
+      Chance: 3
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (2♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New) &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'ie give cupthuongcotrade2 %player% 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    'cup3':
+      DisplayName: '&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (3♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+      DisplayItem: '278'
+      DisplayAmount: 1
+      Lore:
+      - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+      - '&2&l⌘⌘&6﹝&e﹝&f﹝&a(3♦) &a&lTHƯỢNG CỔ &a(3♦)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+      DisplayEnchantments:
+      - DIG_SPEED:32
+      - DURABILITY:5
+      - LOOT_BONUS_BLOCKS:22
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (3♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New) &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'ie give cupthuongcotrade3 %player% 1'
+      - 'src xuixeo set ThuongCo %player% 0'
+    'sothuongco':
+      DisplayName: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lSỌ phép từ Trùm Cướp Biển&f﹞&6﹞&d﹞&2&l⌘⌘'
+      Lore:
+      - ''
+      - '&7 &l?? &7Sát Thương'
+      - '&7 &l?? &7Tốc Độ Đánh'
+      - '&7 &l?? &7Tim'
+      - '&7 &l?? &7Giáp'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - ''
+      - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+      - '&2* SỌ phép từ Trùm Cướp Biển'
+      - ''
+      - '&2(Đặt lên Hotbar để kích hoạt!)'
+      DisplayItem: SKULL_ITEM:3
+      DisplayAmount: 1
+      MaxRange: 100
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Chance: 1
+      Player: 'http://textures.minecraft.net/texture/27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e'
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &2&l⌘⌘&6﹝&d﹝&6﹝&a&lSỌ phép từ Trùm Cướp Biển&f﹞&6﹞&d﹞&2&l⌘⌘ &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'cr open %player% sothuongco'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '423':
+      DisplayName: '&e&l◍ &B&l&nx1 Hòm Vũ Khí&R &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG
+        ◍'
+      DisplayItem: '130'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&l◍ &B&l&nx1 Hòm
+        Vũ Khí&R &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG ◍&r &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'cr give to %player% bavuong 1'
+      - 'src xuixeo add ThuongCo %player% 1'
+    '32':
+      DisplayName: '&a&lx1 | &2师傅 &a&lTúy bát tiên quyền &2师傅 IV'
+      DisplayItem: '340'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &a&lx1 | &2师傅 &a&lTúy
+        bát tiên quyền &2师傅 IV &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'ae givebook %player% tuyquyen4 1 1 100 0'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '33':
+      DisplayName: '&Fx3 | &D&LSách Truyền thuyết'
+      DisplayItem: '340'
+      DisplayAmount: 3
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 15
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'ae givercbook HEROIC %player% 3'
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &Fx3 | &D&LSách Truyền
+        thuyết &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '333':
+      DisplayName: '&Fx3 | &C&LSách Linh Hồn'
+      DisplayItem: '340'
+      DisplayAmount: 3
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'ae givercbook SOUL %player% 3'
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &Fx3 | &C&LSách Linh
+        Hồn &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'src xuixeo set ThuongCo %player% 0'
+    '34':
+      DisplayName: '&a&lx1 &2&lCánh Cứng'
+      DisplayItem: '443'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 3
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &a&lx1 &2&lCánh Cứng
+        &f&ltừ &2&l⌘﹝Thượng cổ﹞⌘'
+      - 'ie give canhcung2 %player% 1'
+      - 'src xuixeo add ThuongCo %player% 1'

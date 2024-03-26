@@ -1,0 +1,688 @@
+menu_title: '&c&l-Bảng Nhiệm Vụ-'
+open_command: 
+- checknhiemvu
+- q
+- q c bingo
+- q c boss 
+- q c chatgo 
+- q c de13
+- q c de45
+- q c khaithac
+- q q 
+- quest
+- q help
+- quest help
+- quests help
+size: 45
+items:
+  'kinh':
+    material: IRON_FENCE
+    slots: 
+      - '27-35'
+    display_name: '&F<3'
+  'unbr':
+    material: OBSIDIAN
+    hide_attributes: true
+    display_name: '&f&lMua &c&lThiên Thạch &7((không thể phá))'
+    slot: 42
+    lore:
+    - ''
+    - '&7- Thiên thạch này giúp cho vật phẩm hoặc '
+    - '&7giáp của bạn không bao giờ có thể bị vỡ !'
+    - ''
+    - ' &cLưu ý: &fyêu cầu tối thiểu &aCấp 70'
+    - ''
+    - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true 
+    left_click_commands:
+      - '[player] phuanhkim123123129'
+      - '[close]'    
+  'sk':
+    material: DIAMOND_SWORD
+    slot: 36
+    display_name: '&a&lKĩ Năng Của Bạn &7((Skills))'
+    lore:
+      - "&f- Tất cả 6 skills nhân vật của máy chủ."
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true
+    left_click_commands:
+      - '[player] skills'
+  'book':
+    material: book
+    slot: 38
+    display_name: '§6§k§l..§r §e§lRADOM SÁCH §6§k§l..§r §e§l'
+    lore:
+      - "&f- Radom 2 tiếng 1 lần tại &a/warp nhiemvu &7((thư viện))"
+      - ""
+      - "&e&lYêu cầu:"
+      - " &fTối thiểu: &6400 Cỏ Ba Lá &7(sẽ tăng 20% mỗi cấp, tính từ cấp 40)" 
+      - " &fLưu ý: &cLevel 40 trở lên"
+      - ""
+      - '&0&o#Item menu'
+    hide_attributes: true
+
+  '+diemsk':
+    material: diamond
+    slot: 37
+    display_name: '&5** &dNâng Điểm Skill &5**'
+    lore:
+      - "&f- Khi lên cấp sẽ nhận được 5 điểm skills"
+      - "&f- Hãy vào đây nâng cấp skills nhé!"
+    hide_attributes: true
+    left_click_commands:
+      - '[player] diemskill'    
+  'thongtin':
+    material: beacon
+    slot: 40
+    display_name: '&c&lThông Tin Của Bạn &7((nhiệm vụ))'
+    lore:
+      - '&f- Dùng &a/warp nhiemvu &fđể nhận các nhiệm vụ.'
+      - ''
+      - '&e&lThông số:'
+      - ' &7Levels: &a%alonsolevels_level%'
+      - ' &7Xp: &a%alonsolevels_progress%'
+      - ' &7Điểm Skills: &a%aureliumskills_xp_formatted_endurance%'
+      - ' &7Cỏ Ba Lá: &a%aureliumskills_xp_int_agility%'
+      - ''
+      - ' &f&lMine&6&lAhihi.Com'
+      - ''
+      - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true  
+  
+  'moccay':
+    material: exp_bottle
+    slot: 43
+    display_name: '&e&lMốc Phần Thưởng &7(&aLevel 1 -> 100&7)'
+    lore:
+        - " &aLevel 10: &fx2 hòm hiếm, 1 lồng spawner động vật (ngẫu nhiên)"
+        - " &aLevel 20: &fx1 trâu thánh, 1 lồng spawner động vật (ngẫu nhiên)"
+        - " &aLevel 30: &fx1 cúp hiếm 2, 1 lồng spawner động vật (ngẫu nhiên)"
+        - " &aLevel 40: &fx1 hòm huyền thoại, 1 lồng spawner động vật (ngẫu nhiên)"
+        - " &aLevel 50: &fx3 key cầu vồng, 1 lồng spawner động vật (ngẫu nhiên)"
+        - " &aLevel 60: &fx2 mảnh sharpness +1, 1 lồng spawner quái (ngẫu nhiên)"
+        - " &aLevel 70: &fx5 key cầu vồng, x2 mảnh sharpness +2, x2 mảnh power +2,"
+        - " &f1 lồng spawner quái (ngẫu nhiên)"
+        - " &aLevel 80: &fx1 sách huyền thoại, x2 mảnh sharpness +2, x2 mảnh power +2,"
+        - " &f1 lồng spawner quái (ngẫu nhiên)"
+        - " &aLevel 90: &fx1 sách truyền thuyết, x2 mảnh sharpness +2, x2 mảnh power +2,"
+        - " &f1 lồng spawner quái (ngẫu nhiên)"
+        - " &aLevel 100: &fx2 key phù thủy, x3 mảnh sharpness +2, x3 mảnh power +2,"
+        - " &f1 lồng spawner quái (ngẫu nhiên)"
+        - ''
+        - '&0&o#Item menu'
+    hide_attributes: true
+
+  'back':
+    material: book_and_quill
+    slot: 44
+    display_name: '&e&lCách Làm Nhiệm Vụ &7(&aLevel 1 -> 100&7)'
+    lore:
+        - "&f- Dùng &a/warp nhiemvu &fđể nhận nhiệm vụ."
+        - "&f- Tìm kiếm các anh hùng để nhận nhiệm vụ."
+        - ""
+        - "&e&lHướng dẫn:"
+        - " &7Bạn phải làm nhiệm vụ để lên cấp levels (XP)"
+        - " &7Sau khi lên cấp sẽ được +5 điểm skill ((/skills))"
+        - " &71 Điểm Skill = 1 Cấp Skill (có tất cả 100 cấp skill)"
+        - " &7và 6 hệ skills riêng biệt."
+        - " &7Khi lên 1 số cấp nhất định bạn sẽ được mở khóa các"
+        - " &7nhiệm vụ mới xịn xò hơn và rất nhiều phần thưởng xịn!!"
+        - ""
+        - "&e&lLệnh Cơ Bản:"
+        - " &a/q, checknhiemcu &7-> &fXem bảng nhiệm vụ chính"
+        - " &a/diemskill &7-> &fMở bảng nâng cấp chỉ số"
+        - ''
+        - '&0&o#Item menu'
+    hide_attributes: true
+    left_click_commands:
+      - '[player] q'
+
+  'bingo1':
+    material: log
+    data: 2
+    amount: 1
+    slot: 0
+    display_name: '&6.&e.&6&lGỗ I&e.&6. &7((&aCấp 1&7))'
+    lore:
+      - " &7Bạn phải có 1 số gỗ nhất định trong túi."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &cLưu ý: &fnếu đủ item mà không hoàn thành nhiệm"
+      - " &fvụ thì hãy &a/warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &6&lNông Dân &7((ruộng))"
+      - ""
+      - "&e&lYêu cầu:"  
+      - " &7Túi: &6x384 &7((Gỗ Bạch Dương))"
+      - " &7Tiến trình: &c%quests_quest:bingo1_task:log_progress%&7/&a384"
+      - " &7Trạng thái: %quests_quest:bingo1_started%"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f2 &aĐiểm XP Levels."
+      - " &7▫ &a500$"
+      - " &7▫ &65☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+        
+  'bingo2':
+    material: log
+    data: 2
+    amount: 2
+    slot: 1
+    display_name: '&6.&e.&6&lGỗ II&e.&6. &7((&aCấp 5&7))'
+    lore:
+      - " &7Bạn phải có 1 số gỗ nhất định trong túi."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &cLưu ý: &fnếu đủ item mà không hoàn thành nhiệm"
+      - " &fvụ thì hãy &a/warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &6&lNông Dân &7((ruộng))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &aLevel 5" 
+      - " &7Túi: &6x768 &7((Gỗ Bạch Dương)) "
+      - " &7Tiến trình: &c%quests_quest:bingo2_task:log_progress%&7/&a768"
+      - " &7Trạng thái: %quests_quest:bingo2_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f4 &aĐiểm XP Levels."
+      - " &7▫ &a750$"
+      - " &7▫ &610☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+
+  'go1':
+    material: pumpkin
+    amount: 25
+    data: 0
+    slot: 2
+    display_name: '&a.&2.&a&lBí Ngô I&2.&a. &7((Yêu Cầu Level: 10))'
+    lore:
+      - " &7Bạn phải có 1 số bí ngô nhất định trong túi."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &cLưu ý: &fnếu đủ item mà không hoàn thành nhiệm"
+      - " &fvụ thì hãy &a/warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &a&lTiều Phu &7((nhà cây))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 10 " 
+      - " &7Túi: &6x384 &7((Bí Ngô))"
+      - " &7Tiến trình: &c%quests_quest:go1_task:pumpkin_progress%&7/&a384"
+      - " &7Trạng thái: %quests_quest:go1_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f15 &aĐiểm XP Levels."
+      - " &7▫ &a1500$"
+      - " &7▫ &615☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+
+  'go2':
+    material: pumpkin
+    amount: 50
+    data: 1
+    slot: 3
+    display_name: '&a.&2.&a&lTiều Phu II&2.&a. &7((&aLevel 15&7))'
+    lore:
+       - " &7Bạn phải có 1 số bí ngô nhất định trong túi."
+       - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+       - " &cLưu ý: &fnếu đủ item mà không hoàn thành nhiệm"
+       - " &fvụ thì hãy &a/warp nhiemvu"
+       - " &fBạn phải đi tìm Npc: &a&lTiều Phu &7((nhà cây))"
+       - ""
+       - "&e&lYêu cầu:" 
+       - " &7Hoàn thành: &aLevels 15 " 
+       - " &7Túi: &6x768 &7((Bí Ngô))"
+       - " &7Tiến trình: &c%quests_quest:go2_task:pumpkin_progress%&7/&a768"
+       - " &7Trạng thái: %quests_quest:go2_started%"
+       - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+       - ""
+       - "&e&lPhần thưởng:"
+       - " &7▫ &f30 &aĐiểm XP Levels."
+       - " &7▫ &a3500$"
+       - " &7▫ &620☀"
+       - ''
+       - '&0&o#Item menu'
+    hide_attributes: true 
+  
+  'khaithac1':
+    material: diamond
+    amount: 16
+    slot: 4
+    display_name: '&c.&4.&c&lKim Cương I&4.&c. &7((&aLevel 20&7))'
+    lore:
+      - " &7Bạn phải có 1 số kim cương nhất định trong túi."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &cLưu ý: &fnếu đủ item mà không hoàn thành nhiệm"
+      - " &fvụ thì hãy &a/warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &c&lThợ Mỏ &7((nhà kho))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 20 " 
+      - " &7Túi: &6x384 &7((Kim Cương))"
+      - " &7Tiến trình: &c%quests_quest:khaithac1_task:diamond_progress%&7/&a384"
+      - " &7Trạng thái: %quests_quest:khaithac1_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f150 &aĐiểm XP Levels."
+      - " &7▫ &a10500$"
+      - " &7▫ &625☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+
+  'khaithac2':
+    material: diamond
+    amount: 32
+    slot: 5
+    display_name: '&c.&4.&c&lKim Cương II&4.&c. &7((&aLevel 25&7))'
+    lore:
+      - " &7Bạn phải có 1 số kim cương nhất định trong túi."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &cLưu ý: &fnếu đủ item mà không hoàn thành nhiệm"
+      - " &fvụ thì hãy &a/warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &c&lThợ Mỏ &7((nhà kho))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 25 " 
+      - " &7Túi: &6x768 &7((Kim Cương))"
+      - " &7Tiến trình: &c%quests_quest:khaithac2_task:diamond_progress%&7/&a768"
+      - " &7Trạng thái: %quests_quest:khaithac2_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f300 &aĐiểm XP Levels."
+      - " &7▫ &a15050$"
+      - " &7▫ &630☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true   
+
+  'mahaitaccon':
+    material: wood_sword
+    amount: 50
+    slot: 6
+    display_name: '&4&l๑Kill 50 Ma hải tặc๑ &7((&aLevel 30&7))'
+    lore:
+      - " &fChính tay giết 50 ma hải tặc"
+      - " &ftại &aDungeon 1."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &7&lCha Sứ &7((nhà thờ))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 30 " 
+      - " &7Giết &a50 Ma Hải Tặc  "
+      - " &7Tiến trình: &c%quests_quest:mahaitaccon_task:mythicmobs_progress%&7/&a50"
+      - " &7Trạng thái: %quests_quest:mahaitaccon_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f6000 &aĐiểm XP Levels."
+      - " &7▫ &a10050$"
+      - " &7▫ &640☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+
+  
+  'nhenyeutinhcon':
+    material: stone_sword
+    amount: 50
+    slot: 7
+    display_name: '&d&lKill 50 Nhện Yêu Tinh &7((&aLevel 35&7))'
+    lore:
+      - " &fChính tay giết 50 nhện yêu tinh"
+      - " &ftại &aDungeon 2."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &7&lCha Sứ &7((nhà thờ))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 35 " 
+      - " &7Giết &d50 Nhện Yêu Tinh "
+      - " &7Tiến trình: &c%quests_quest:nhenyeutinhcon_task:mythicmobs_progress%&7/&a50"
+      - " &7Trạng thái: %quests_quest:nhenyeutinhcon_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f9000 &aĐiểm XP Levels."
+      - " &7▫ &a12050$"
+      - " &7▫ &660☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true  
+
+
+  'phuthuydencon':
+    material: iron_sword
+    amount: 50
+    slot: 8
+    display_name: '&7&lKill 50 Phù Thủy Đen &7((&aLevel 40&7))'
+    lore:
+      - " &fChính tay giết 50 phù thủy đen"
+      - " &ftại &aDungeon 3."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &7&lCha Sứ &7((nhà thờ))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 40 " 
+      - " &7Giết &750 Phù Thủy Đen "
+      - " &7Tiến trình: &c%quests_quest:phuthuydencon_task:mythicmobs_progress%&7/&a50"
+      - " &7Trạng thái: %quests_quest:phuthuydencon_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f18000 &aĐiểm XP Levels."
+      - " &7▫ &a14050$"
+      - " &7▫ &680☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true    
+  
+
+  'quanchetchoc':
+    material: leather_chestplate
+    amount: 30
+    slot: 9
+    display_name: '&c&lKill 30 Quân Chết Chóc &7((&aLevel 45&7))'
+    lore:
+      - " &fChính tay giết 30 quân chết chọc"
+      - " &ftại &aDungeon Nether."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &e&lThe&f&lKing &7((tòa thành king))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 45 " 
+      - " &7Giết &730 quân chết chóc "
+      - " &7Tiến trình: &c%quests_quest:quanchetchoc_task:mythicmobs_progress%&7/&a30"
+      - " &7Trạng thái: %quests_quest:quanchetchoc_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f27000 &aĐiểm XP Levels."
+      - " &7▫ &a19050$"
+      - " &7▫ &6100☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true  
+
+  'boxuongkiemsi':
+    material: diamond_sword
+    amount: 30
+    slot: 10
+    display_name: '&c&lKill 30 Bộ Xương Kiếm Sĩ &7((&aLevel 50&7))'
+    lore:
+      - " &fChính tay giết 30 bộ xương kiếm sĩ"
+      - " &ftại &aDungeon Nether."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &e&lThe&f&lKing &7((tòa thành king))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 50 " 
+      - " &7Giết &730 bộ xương kiếm sĩ "
+      - " &7Tiến trình: &c%quests_quest:boxuongkiemsi_task:mythicmobs_progress%&7/&a30"
+      - " &7Trạng thái: %quests_quest:boxuongkiemsi_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f40500 &aĐiểm XP Levels."
+      - " &7▫ &a22050$"
+      - " &7▫ &6120☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true           
+   
+
+  'endercon':
+    material: ender_pearl
+    amount: 50
+    slot: 11
+    display_name: '&5✲&9&lGiết 50 Ender Con&5✲ &7((&aLevel 55&7))'
+    lore:
+      - " &fChính tay giết 55 endercon tại &dThe End."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &e&lThe&f&lKing &7((tòa thành king))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 55 " 
+      - " &7Giết &d50 Ender Con "
+      - " &7Tiến trình: &c%quests_quest:endercon_task:mythicmobs_progress%&7/&a50"
+      - " &7Trạng thái: %quests_quest:endercon_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f60750 &aĐiểm XP Levels."
+      - " &7▫ &a30000$"
+      - " &7▫ &6140☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true     
+
+  'enderme':
+    material: eye_of_ender
+    amount: 50
+    slot: 12
+    display_name: '&5✲&9&lGiết 50 Ender &d&lChúa&5✲ &7((&aLevel 60&7))'
+    lore:
+      - " &fChính tay giết 50 ender chúa tại &dThe End."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &e&lThe&f&lKing &7((tòa thành king))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 60 " 
+      - " &7Giết &d50 Ender Chúa "
+      - " &7Tiến trình: &c%quests_quest:enderme_task:mythicmobs_progress%&7/&a50"
+      - " &7Trạng thái: %quests_quest:enderme_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f91125  &aĐiểm XP Levels."
+      - " &7▫ &a40000$"
+      - " &7▫ &6160☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true
+
+  'mahaitac':
+    material: RED_MUSHROOM
+    amount: 1
+    slot: 13
+    display_name: '&4&l๑Kill BOSS Ma hải tặc๑ &7((&aLevel 65&7))'
+    lore:
+      - " &fChính tay giết &4&l๑BOSS Ma hải tặc๑"
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &f&lQuý &d&lTộc &7((nhà quý tộc))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 65 "  #&f&lQuý &d&lTộc #&e&lThe&f&lKing
+      - " &7Giết &aBoss Ma Hải Tặc  "
+      - " &7Tiến trình: &c%quests_quest:mahaitacthuong_task:mythicmobs_progress%&7/&a1"
+      - " &7Trạng thái: %quests_quest:mahaitacthuong_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f2,733,750 &aĐiểm XP Levels."
+      - " &7▫ &a25050$"
+      - " &7▫ &6300☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true
+
+  'manhenyeutinh':
+    material: SPIDER_EYE
+    amount: 1
+    slot: 14
+    display_name: '&c.&4.&c&lKill Boss Nhện Yêu Tinh&4.&c. &7((&aLevel 70&7))'
+    lore:
+      - " &fChính tay giết nhện yêu tinh tại &aDungeon 2."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &f&lQuý &d&lTộc &7((nhà quý tộc))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 70 " 
+      - " &7Giết &dBoss Nhện Yêu Tinh  "
+      - " &7Tiến trình: &c%quests_quest:nhenyeutinhthuong_task:mythicmobs_progress%&7/&a1"
+      - " &7Trạng thái: %quests_quest:nhenyeutinhthuong_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f4,100,625 &aĐiểm XP Levels."
+      - " &7▫ &a55000$"
+      - " &7▫ &6500☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+
+  'bossphuthuyden':
+    material: BLAZE_ROD
+    amount: 1
+    slot: 15
+    display_name: '&c.&4.&c&lKill Boss Phù Thủy Đen&4.&c. &7((&aLevel 75&7))'
+    lore:
+      - " &fChính tay giết phù thủy đen tại &aDungeon 3."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &f&lQuý &d&lTộc &7((nhà quý tộc))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 75 " 
+      - " &7Giết &7Boss Phù Thủy Đen  "
+      - " &7Tiến trình: &c%quests_quest:phuthuydenthuong_task:mythicmobs_progress%&7/&a1"
+      - " &7Trạng thái: %quests_quest:phuthuydenthuong_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f5,100,625 &aĐiểm XP Levels."
+      - " &7▫ &a75000$"
+      - " &7▫ &6700☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true        
+
+  'jackthuong':
+    material: SKULL_ITEM
+    data: 0
+    amount: 1
+    slot: 16
+    display_name: '&6&l..☣ &e&lKill Jack &6&l☣.. &7((&aLevel 80&7))'
+    lore:
+      - " &fChính tay giết jack tại &cĐịa Ngục."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &f&lQuý &d&lTộc &7((nhà quý tộc))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 80 " 
+      - " &7Giết &6&l..☣ &e&lJack &6&l☣.. "
+      - " &7Tiến trình: &c%quests_quest:jackthuong_task:mythicmobs_progress%&7/&a1"
+      - " &7Trạng thái: %quests_quest:jackthuong_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f6,100,625 &aĐiểm XP Levels."
+      - " &7▫ &a100000$"
+      - " &7▫ &6900☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true
+
+  'jacksonthuong':
+    material: SKULL_ITEM
+    data: 1
+    amount: 1
+    slot: 17
+    display_name: '&6&l..☣ &e&lKill JackSon &6&l☣.. &7((&aLevel 85&7))'
+    lore:
+      - " &fChính tay giết jackson tại &cĐịa Ngục."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &f&lQuý &d&lTộc &7((nhà quý tộc))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 85 " 
+      - " &7Giết &6&l..☣ &e&lJackson &6&l☣.. "
+      - " &7Tiến trình: &c%quests_quest:jacksonthuong_task:mythicmobs_progress%&7/&a1"
+      - " &7Trạng thái: %quests_quest:jacksonthuong_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f7,100,625 &aĐiểm XP Levels."
+      - " &7▫ &a100000$"
+      - " &7▫ &6900☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true  
+
+  'rongthuong':
+    material: SKULL_ITEM
+    data: 5
+    amount: 1
+    slot: 18
+    display_name: '&5★&d☾&c&l乂&d☽ &d&lGIẾT RỒNG KHÔNG GIAN &d☾&c&l乂&d☽&5★ &7((&aLevel 90&7))'
+    lore:
+      - " &fChính tay giết rồng không gian tại &dThe End."
+      - " &7Nhận nhiệm vụ tại /warp nhiemvu"
+      - " &fBạn phải đi tìm Npc: &f&lQuý &d&lTộc &7((nhà quý tộc))"
+      - ""
+      - "&e&lYêu cầu:" 
+      - " &7Hoàn thành: &aLevels 90 " 
+      - " &fGiết &5★&d☾&c&l乂&d☽ &d&lRỒNG KHÔNG GIAN &d☾&c&l乂&d☽&5★ "
+      - " &7Tiến trình: &c%quests_quest:rongenderthuong_task:mythicmobs_progress%&7/&a1"
+      - " &7Trạng thái: %quests_quest:rongenderthuong_started%"
+      - " &fCấp hiện tại: &7(&e%alonsolevels_level_format%&7)"
+      - ""
+      - "&e&lPhần thưởng:"
+      - " &7▫ &f8,100,625 &aĐiểm XP Levels."
+      - " &7▫ &a250000$"
+      - " &7▫ &61200☀"
+      - ''
+      - '&0&o#Item menu'
+    hide_attributes: true
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true  
+     

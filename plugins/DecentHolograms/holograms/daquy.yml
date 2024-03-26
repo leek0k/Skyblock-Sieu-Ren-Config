@@ -1,0 +1,22 @@
+location: world:7.5:134.26460:1659.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e☀&6&lĐá quý'
+    height: 0.3
+  - content: '&fCửa hàng đá quý chỉ có thể dùng đá quý để'
+    height: 0.3
+  - content: '&fmua, nơi đây chứa rất nhiều mặt hàng xịn'
+    height: 0.3
+  - content: '&fsò tôi nghĩ bạn sẽ cần như Cuốc tiên để đua Top,'
+    height: 0.3
+  - content: '&fsách Trâu và Túy quyền để nâng cấp trang bị!'
+    height: 0.3
+  - content: '&f&nLệnh:&r &e/gems shop'
+    height: 0.3
+  actions: {}

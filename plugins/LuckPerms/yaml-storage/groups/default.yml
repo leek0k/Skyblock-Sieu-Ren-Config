@@ -1,0 +1,390 @@
+name: default
+permissions:
+- bosssaiyan.spawn:
+    value: false
+    context:
+      world: world
+- essentials.keepinv:
+    value: true
+    context:
+      world: world
+- essentials.tpahere:
+    value: false
+    context:
+      world: world
+- essentials.keepinv:
+    value: true
+    context:
+      world: survival
+- bosssaiyan.spawn:
+    value: true
+    context:
+      world: superiorworld
+- combatlogx.bypass:
+    value: true
+    context:
+      world: superiorworld
+- essentials.keepinv:
+    value: true
+    context:
+      world: superiorworld
+- petegg.use:
+    value: false
+    context:
+      world: superiorworld
+- essentials.keepinv:
+    value: false
+    context:
+      world: sinhton
+- scyther.autocollect:
+    value: true
+    context:
+      world: sinhton
+- scyther.use:
+    value: true
+    context:
+      world: sinhton
+- dungeon.carrot:
+    value: true
+    context:
+      world: nether1
+- essentials.tpahere:
+    value: false
+    context:
+      world: koth2
+- essentials.fly:
+    value: true
+    context:
+      world: khuminezuize
+- bosssaiyan.spawn:
+    value: false
+    context:
+      world: jail
+- scyther.use:
+    value: false
+    context:
+      world: dungeonquymao
+- dungeon.carrot:
+    value: true
+    context:
+      world: dugeon3
+- matrix.bypass:
+    value: true
+    context:
+      world: dugeon3
+- dungeon.carrot:
+    value: true
+    context:
+      world: dugeon2
+- matrix.bypass:
+    value: true
+    context:
+      world: dugeon2
+- dungeon.carrot:
+    value: true
+    context:
+      world: dugeon1
+- matrix.bypass:
+    value: true
+    context:
+      world: dugeon1
+- essentials.build.place.sugar_cane_block:0:
+    value: false
+    context:
+      world: askyblock
+- bettercaptcha.bypass:
+    value: false
+    context:
+      world: afkcheck
+- bosssaiyan.spawn:
+    value: false
+    context:
+      world: afkcheck
+- essentials.signs.use.*
+- superior.island.stacker.*
+- bukkit.command.*:
+    value: false
+- chestcommands.open.*
+- deluxemenus.menu.*
+- essentials.build.*
+- minecraft.command.*:
+    value: false
+- otu.use.*
+- shopguiplus.shops.*
+- silkspawners.place.*
+- silkspawners.silkdrop.*
+- voidchest.break.*
+- voidchest.place.*
+- mypet.*:
+    value: false
+- -MyPet.extended.equip
+- BeastWithdraw.bxp
+- BeastWithdraw.xp
+- ChestShop.shop.buy
+- ChestShop.shop.sell
+- KOTH.TIMES
+- KOTH.TOP
+- KOTH.VIEWLOOT
+- MyPet.extended.equip:
+    value: false
+- achievement.book:
+    value: false
+- advancedlottery.use
+- alonsolevels.autoclaim
+- animatednames.group.default
+- antidrop.use
+- beastWithdraw.CashNote
+- beastWithdraw.XpBottle
+- bettercaptcha.bypass
+- bukkit.command.tps
+- ce.1
+- chatcontrol.commands.ignore
+- chestcommands.command.open
+- chestcommands.open.*.yml
+- chestcommands.open.catpet.yml
+- chestcommands.open.cay.yml
+- chestcommands.open.cudinh.yml
+- chestcommands.open.diemdanh.yml
+- chestcommands.open.dugeon.yml
+- chestcommands.open.help.yml
+- chestcommands.open.huongdan.yml
+- chestcommands.open.island.yml
+- chestcommands.open.khupvp.yml
+- chestcommands.open.kit.yml
+- chestcommands.open.langtrubien.yml
+- chestcommands.open.main-menu.yml
+- chestcommands.open.quyenloi.yml
+- chestcommands.open.rankup.yml
+- chestcommands.open.shop.yml
+- chestcommands.open.shopdacbiet.yml
+- chestcommands.open.thuongco.yml
+- chestcommands.open.token.yml
+- chestcommands.open.tpa.yml
+- chestcommands.open.trangbi.yml
+- chestcommands.open.xoapv.yml
+- coinflipper.create
+- coinflipper.gui
+- coinflipper.help
+- coinflipper.history
+- coinflipper.remove.self
+- coreprotect.inspect
+- cr.claim
+- deluxetags.gui
+- deluxetags.select
+- ecraft.command.ecraft
+- elementalgems.shop
+- elementalgems.upgrades
+- enderpearl.cooldown
+- enderpearl.use
+- essentials.balance
+- essentials.balance.others
+- essentials.balancetop
+- essentials.exp
+- essentials.help
+- essentials.home
+- essentials.ignore
+- essentials.keepinv
+- essentials.keepxp
+- essentials.kit
+- essentials.kits.nongdan
+- essentials.kits.online123
+- essentials.kits.starter
+- essentials.list
+- essentials.mail
+- essentials.mail.send
+- essentials.msg
+- essentials.realname
+- essentials.rules
+- essentials.sethome
+- essentials.sethome.multiple
+- essentials.sethome.multiple.default
+- essentials.silentjoin
+- essentials.silentquit
+- essentials.spawn
+- essentials.tpa
+- essentials.tpaccept
+- essentials.tpahere
+- essentials.tpdeny
+- essentials.warp
+- essentials.warp.list
+- fastplace.is1
+- fastplace.use
+- finditem.command.lostitem.check
+- finditem.command.lostitem.sos:
+    value: false
+- fpshelper.use
+- giveaway.command.register
+- giveaway.command.unregister
+- gkit.1
+- gkit.10
+- gkit.11
+- gkit.12
+- gkit.13
+- gkit.14
+- gkit.15
+- gkit.2
+- gkit.3
+- gkit.4
+- gkit.5
+- gkit.6
+- gkit.7
+- gkit.8
+- gkit.9
+- goldenapplecontrol.randomperm
+- goldenapplecontrol.randomperm1
+- helpop.use
+- hieuung.1
+- hieuung.10
+- hieuung.11
+- hieuung.12
+- hieuung.13
+- hieuung.14
+- hieuung.15
+- hieuung.16
+- hieuung.17
+- hieuung.18
+- hieuung.19
+- hieuung.2
+- hieuung.20
+- hieuung.21
+- hieuung.22
+- hieuung.23
+- hieuung.24
+- hieuung.25
+- hieuung.3
+- hieuung.4
+- hieuung.5
+- hieuung.6
+- hieuung.7
+- hieuung.8
+- hieuung.9
+- hopper.1
+- inventoryrollback.deathsave:
+    value: false
+- inventoryrollback.joinsave:
+    value: false
+- kiteboard.group.default
+- kitpreview.use
+- litebans.notify.broadcast:
+    value: false
+- mathgame.command.answer
+- minions.admin.bypasslimit
+- minions.place.default
+- minions.player.linkchest
+- morefish.shop
+- multiverse.help:
+    value: false
+- mypet.command.info
+- mypet.command.info.other
+- mypet.command.release
+- mypet.command.respawn
+- mypet.command.store
+- mypet.command.switch
+- mypet.extended.equip:
+    value: false
+- mypet.extended.feed
+- nangcap.hopper2
+- nangcap.ore.1
+- nangcap.ore1
+- nangcap.size2
+- nangcap.spawner2
+- nangcapdao.is1
+- petegg.use
+- petegg.usee
+- playerpoints.pay:
+    value: false
+- playervaults.amount.1
+- playervaults.size.6
+- pm.use
+- quests.command:
+    value: false
+- rank.nongdan
+- rankup.default
+- rdw.use.all
+- recard.napthe
+- resetpv.vault.1
+- scyther.use
+- sellgui.use
+- sellwands.use
+- shopdacbiet.vualidon
+- shopguiplus.shop
+- shopguiplus.shops.alien:
+    value: false
+- shopkeeper.trade
+- shopshop.shop
+- showitem.chat:
+    value: false
+- showitem.command:
+    value: false
+- showitem.command.all
+- showitem.command.player:
+    value: false
+- showitem.command.slot:
+    value: false
+- showitem.helpclick:
+    value: false
+- skin.clear
+- skin.help
+- skin.set
+- skinsrestorer.cmds
+- skinsrestorer.playercmds
+- spawner.1
+- superior.island.accept
+- superior.island.ban
+- superior.island.border
+- superior.island.close
+- superior.island.coop
+- superior.island.create
+- superior.island.delwarp
+- superior.island.demote
+- superior.island.disband
+- superior.island.expel
+- superior.island.help
+- superior.island.invite
+- superior.island.kick
+- superior.island.leave
+- superior.island.members
+- superior.island.name
+- superior.island.open
+- superior.island.pardon
+- superior.island.permissions
+- superior.island.promote
+- superior.island.rankup
+- superior.island.recalc
+- superior.island.setteleport
+- superior.island.settings
+- superior.island.setwarp
+- superior.island.team
+- superior.island.teamchat
+- superior.island.teleport
+- superior.island.toggle
+- superior.island.toggle.blocks
+- superior.island.toggle.border
+- superior.island.toggle.top
+- superior.island.top
+- superior.island.transfer
+- superior.island.uncoop
+- superior.island.upgrade
+- superior.island.value
+- superior.island.visit
+- superior.island.warp
+- superior.island.warps
+- thesieutoc.top
+- tradeplus.trade
+- tradesystem.trade
+- tradesystem.trade.initiate
+- trail.allow
+- unbreakable.all:
+    value: false
+- vanillaenchants.enchant.damage_all.100
+- vip.vip
+- vs.enable
+- weight.0
+- wildstacker.silktouch
+- worldguardaddon.bypass
+- zAuctionHouse.maxsell.1
+- zAuctionHouse.sell
+- zauctionHouse.use
+meta:
+- default:
+    value: 'true'

@@ -1,0 +1,1856 @@
+# +———————————————————————————————————————————————————+ #
+# |——————————     BANITEM CONFIGURATION     ——————————| #
+# |——————————————————      v3.4      —————————————————| #
+# +———————————————————————————————————————————————————+ #
+# |                   Documentation:                  | #
+# |             https://banitem.andross.fr/           | #
+# +———————————————————————————————————————————————————+ #
+# For any bugs/suggestions: Andross#5254
+# +——————————————————————————————————————————————————————————————————————————————————————————————+
+# General Informations:
+#  - The blacklist will block the items.
+#  - The whitelist will allow only the items set.
+#    -> The 'message' key represents the message sent to players if they try to use an item which is not in whitelist
+#    -> The 'ignored' key represents all ignored actions (they will not being by default banned)
+debug:
+  errors: true
+  reload: false
+  colors-console: false
+no-permission: '&cYou do not have permission.'
+prefix: '&c&l[&e&lBanItem&c&l] '
+api:
+  playerbanitemevent: false
+  deletebanneditemevent: false
+check-update: true
+priority: use,consume,click
+actions:
+  enchant:
+    material: BARRIER
+    displayname: '&cBANNED'
+    lore:
+    - '&cYou can not add this'
+    - '&cenchantement.'
+  rename:
+  - /rename
+  transfer:
+    hoppers-block: false
+  wear:
+    region-check: false
+    scanner: true
+  delete:
+    ignored-inventories-titles:
+    - My Cool Gui
+    - Shop
+hooks:
+  worldguard: false
+  advancedenchantments: false
+sound:
+  enabled: true
+  type: ENCHANT_THORNS_HIT
+  volume: 1
+  pitch: 1
+  worldSound: false
+particle:
+  enabled: true
+  type: BARRIER
+  amount: 1
+blacklist:
+  afkcheck:
+    thuongco:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    ender_pearl:
+      swap: {}
+    keyphuthuy1:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keyphuthuy2:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keythuongco1:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    keythuongco2:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    dacuonghoa:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+      Hangingplace:
+        message: '&cKhông được item này vào khung item!' 
+    bavuong:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homvukhinhamdan:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaoht:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaothanh:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    mm:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss1:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss2:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss3:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss4:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss5:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss6:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss7:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss8:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss9:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'                                              
+    boss10:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'      
+  mobarea:
+    thuongco:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    ender_pearl:
+      swap: {}
+    keyphuthuy1:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keyphuthuy2:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keythuongco1:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    keythuongco2:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    dacuonghoa:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+      Hangingplace:
+        message: '&cKhông được item này vào khung item!' 
+    bavuong:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homvukhinhamdan:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaoht:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaothanh:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    mm:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss1:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss2:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss3:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss4:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss5:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss6:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss7:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss8:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss9:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'                                              
+    boss10:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'      
+  world:
+    minecart:
+      place: {}
+      dispense: {}
+      use: {}
+    thuongco:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    ender_pearl:
+      swap: {}
+    keyphuthuy1:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keyphuthuy2:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keythuongco1:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    keythuongco2:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    hopsodianguc1:
+      place:
+        message: '&cKhông được phép đặt hộp sọ!'
+    hopsodianguc2:
+      place:
+        message: '&cKhông được phép đặt hộp sọ!'
+    firework:
+      place: {}
+      use: {}
+    oak_door:
+      place: {}
+      swap: {}
+    spruce_door:
+      place: {}
+      swap: {}
+    birch_door:
+      place: {}
+      swap: {}
+    jungle_door:
+      place: {}
+      swap: {}
+    acacia_door:
+      place: {}
+      swap: {}
+    dark_oak_door:
+      place: {}
+      swap: {}
+    oak_trapdoor:
+      place: {}
+      swap: {}
+    emerald:
+      use: {}
+    dacuonghoa:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+      Hangingplace:
+        message: '&cKhông được item này vào khung item!' 
+    bavuong:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homvukhinhamdan:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaoht:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaothanh:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    mm:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss1:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss2:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss3:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss4:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss5:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss6:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss7:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss8:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss9:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'                                              
+    boss10:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'  
+  SuperiorWorld:
+    RAW_CHICKEN:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    FEATHER:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    COOKED_CHICKEN:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    PORK:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    GRILLED_PORK:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    LEATHER:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    RAW_BEEF:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    COOKED_BEEF:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    STRING:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    SPIDER_EYE:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    ROTTEN_FLESH:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    IRON_INGOT:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    CARROT_ITEM:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    POTATO_ITEM:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    SULPHUR:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    GOLD_RECORD:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    GREEN_RECORD:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    RECORD_3:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    RECORD_4:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    RECORD_6:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    RECORD_7:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    RECORD_8:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    RECORD_9:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    RECORD_10:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    RECORD_11:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    RECORD_12:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    BLAZE_ROD:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    ENDER_PEARL:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    BOOK:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    RED_ROSE:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    EMERALD:
+      dispense: '&cVật phẩm này không dùng trong máy phát được.'
+    homtruyenthuyet1:
+      place:
+        message: '&cKhông được phép cầm &5&L✧&D&L✧&5&l✧ &9&l&nHÒM vật phẩm&r &d&lTRUYỀN
+          THUYẾT &7(Ngẫu nhiên)&5&L✧&D&L✧&5&l✧ &ctay trái!'
+    homtruyenthuyet2:
+      place:
+        message: '&cKhông được phép cầm &5&L✧&D&L✧&5&l✧ &9&l&nHÒM vật phẩm&r &d&lTRUYỀN
+          THUYẾT &7(Ngẫu nhiên)&5&L✧&D&L✧&5&l✧ &ctay trái!'
+    homtruyenthuyet3:
+      place:
+        message: '&cKhông được phép cầm &5&L✧&D&L✧&5&l✧ &9&l&nHÒM vật phẩm&r &d&lTRUYỀN
+          THUYẾT &7(Ngẫu nhiên)&5&L✧&D&L✧&5&l✧ &ctay trái!'
+    homtruyenthuyet4:
+      place:
+        message: '&cKhông được phép cầm &5&L✧&D&L✧&5&l✧ &9&l&nHÒM vật phẩm&r &d&lTRUYỀN
+          THUYẾT &7(Ngẫu nhiên)&5&L✧&D&L✧&5&l✧ &ctay trái!'
+    hopsodianguc1:
+      place:
+        message: '&cKhông được phép đặt hộp sọ!'
+    hopsodianguc2:
+      place:
+        message: '&cKhông được phép đặt hộp sọ!'
+    thuongco:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    ender_pearl:
+      swap: {}
+    keyphuthuy1:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keyphuthuy2:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keythuongco1:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    keythuongco2:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    minecart:
+      place: {}
+      dispense: {}
+      use: {}
+    skull_item:
+      place: {}
+    bedrock:
+      place: {}
+    ink_sack:
+      entityinteract:
+        message: '&cKhông thể nhuộm màu!'
+    dacuonghoa:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+      Hangingplace:
+        message: '&cKhông được item này vào khung item!' 
+    bavuong:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homvukhinhamdan:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaoht:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaothanh:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    mm:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss1:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss2:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss3:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss4:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss5:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss6:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss7:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss8:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss9:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'                                              
+    boss10:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'    
+  Dugeon1:
+    minecart:
+      place: {}
+      dispense: {}
+      use: {}
+    thuongco:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    ender_pearl:
+      swap: {}
+    keyphuthuy1:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keyphuthuy2:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keythuongco1:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    keythuongco2:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    splash_potion:
+      use: {}
+    oak_door:
+      place: {}
+      swap: {}
+    spruce_door:
+      place: {}
+      swap: {}
+    birch_door:
+      place: {}
+      swap: {}
+    jungle_door:
+      place: {}
+      swap: {}
+    acacia_door:
+      place: {}
+      swap: {}
+    dark_oak_door:
+      place: {}
+      swap: {}
+    oak_trapdoor:
+      place: {}
+      swap: {}
+    dacuonghoa:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+      Hangingplace:
+        message: '&cKhông được item này vào khung item!' 
+    bavuong:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homvukhinhamdan:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaoht:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaothanh:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    mm:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss1:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss2:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss3:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss4:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss5:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss6:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss7:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss8:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss9:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'                                              
+    boss10:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'  
+  Dugeon2:
+    minecart:
+      place: {}
+      dispense: {}
+      use: {}
+    thuongco:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    ender_pearl:
+      swap: {}
+    keyphuthuy1:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keyphuthuy2:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keythuongco1:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    keythuongco2:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    splash_potion:
+      use: {}
+    oak_door:
+      place: {}
+      swap: {}
+    spruce_door:
+      place: {}
+      swap: {}
+    birch_door:
+      place: {}
+      swap: {}
+    jungle_door:
+      place: {}
+      swap: {}
+    acacia_door:
+      place: {}
+      swap: {}
+    dark_oak_door:
+      place: {}
+      swap: {}
+    oak_trapdoor:
+      place: {}
+      swap: {}
+    dacuonghoa:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+      Hangingplace:
+        message: '&cKhông được item này vào khung item!' 
+    bavuong:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homvukhinhamdan:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaoht:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaothanh:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    mm:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss1:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss2:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss3:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss4:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss5:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss6:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss7:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss8:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss9:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'                                              
+    boss10:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'  
+  Dugeon3:
+    minecart:
+      place: {}
+      dispense: {}
+      use: {}
+    thuongco:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    ender_pearl:
+      swap: {}
+    keyphuthuy1:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keyphuthuy2:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keythuongco1:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    keythuongco2:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    splash_potion:
+      use: {}
+    oak_door:
+      place: {}
+      swap: {}
+    spruce_door:
+      place: {}
+      swap: {}
+    birch_door:
+      place: {}
+      swap: {}
+    jungle_door:
+      place: {}
+      swap: {}
+    acacia_door:
+      place: {}
+      swap: {}
+    dark_oak_door:
+      place: {}
+      swap: {}
+    oak_trapdoor:
+      place: {}
+      swap: {}
+    dacuonghoa:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+      Hangingplace:
+        message: '&cKhông được item này vào khung item!' 
+    bavuong:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homvukhinhamdan:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaoht:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaothanh:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    mm:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss1:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss2:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss3:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss4:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss5:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss6:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss7:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss8:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss9:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'                                              
+    boss10:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'  
+  jail:
+    minecart:
+      place: {}
+      dispense: {}
+      use: {}
+    thuongco:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    ender_pearl:
+      swap: {}
+    keyphuthuy1:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keyphuthuy2:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keythuongco1:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    keythuongco2:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    oak_door:
+      place: {}
+      swap: {}
+    spruce_door:
+      place: {}
+      swap: {}
+    birch_door:
+      place: {}
+      swap: {}
+    jungle_door:
+      place: {}
+      swap: {}
+    acacia_door:
+      place: {}
+      swap: {}
+    dark_oak_door:
+      place: {}
+      swap: {}
+    oak_trapdoor:
+      place: {}
+      swap: {}
+    dacuonghoa:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+      Hangingplace:
+        message: '&cKhông được item này vào khung item!' 
+    bavuong:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homvukhinhamdan:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaoht:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaothanh:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    mm:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss1:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss2:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss3:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss4:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss5:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss6:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss7:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss8:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss9:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'                                              
+    boss10:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'  
+  Rungxanh:
+    minecart:
+      place: {}
+      dispense: {}
+      use: {}
+    thuongco:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    ender_pearl:
+      swap: {}
+    keyphuthuy1:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keyphuthuy2:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keythuongco1:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    keythuongco2:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    ink_sack:
+      entityinteract:
+        message: '&cKhông thể nhuộm màu!'
+    oak_door:
+      place: {}
+      swap: {}
+    spruce_door:
+      place: {}
+      swap: {}
+    birch_door:
+      place: {}
+      swap: {}
+    jungle_door:
+      place: {}
+      swap: {}
+    acacia_door:
+      place: {}
+      swap: {}
+    dark_oak_door:
+      place: {}
+      swap: {}
+    oak_trapdoor:
+      place: {}
+      swap: {}
+    dacuonghoa:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+      Hangingplace:
+        message: '&cKhông được item này vào khung item!' 
+    bavuong:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homvukhinhamdan:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaoht:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaothanh:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    mm:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss1:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss2:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss3:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss4:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss5:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss6:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss7:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss8:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss9:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'                                              
+    boss10:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'  
+  Nether1:
+    splash_potion:
+      use: {}
+    thuongco:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    thuongco3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy2:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    phuthuy3:
+      inventoryclick:
+        message: '&cKhông được phép!'
+    ender_pearl:
+      swap: {}
+    keyphuthuy1:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keyphuthuy2:
+      swap:
+        message: '&cKhông được phép cầm &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆
+          &ctay trái!'
+    keythuongco1:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    keythuongco2:
+      swap:
+        message: '&cKhông được phép cầm &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng
+          cổ&e﹞&a&l⌘&r &a◆&2◆&a◆ &ctay trái!'
+    oak_door:
+      place: {}
+      swap: {}
+    spruce_door:
+      place: {}
+      swap: {}
+    birch_door:
+      place: {}
+      swap: {}
+    jungle_door:
+      place: {}
+      swap: {}
+    acacia_door:
+      place: {}
+      swap: {}
+    dark_oak_door:
+      place: {}
+      swap: {}
+    oak_trapdoor:
+      place: {}
+      swap: {}
+    dacuonghoa:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+      Hangingplace:
+        message: '&cKhông được item này vào khung item!' 
+    bavuong:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homvukhinhamdan:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaoht:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    homtrangbiquymaothanh:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    mm:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss1:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss2:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss3:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss4:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss5:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss6:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss7:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss8:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!' 
+    boss9:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'                                              
+    boss10:
+      swap:
+        message: '&cKhông được phép cầm item này ở tay trái!'
+      drop:
+        message: '&cKhông được drop item này!' 
+      Dispense:
+        message: '&cKhông được dùng item này ở máy phát!'  
+illegal-stacks: {}

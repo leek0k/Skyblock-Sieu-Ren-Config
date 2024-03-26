@@ -1,0 +1,8 @@
+# Cập nhật đảo (cần restart để áp dụng thay đổi)
+update-interval: 20
+# Max member hiển thị trong menu
+max-members: 10
+# Lore format member trong menu
+member-format: '&6- &e%player%'
+# Menu mặc định
+default-menu: 'visit-menu'

@@ -1,0 +1,13 @@
+name: police2
+permissions:
+- essentials.kits.vip3
+- essentials.kits.vip4
+- essentials.nick
+- essentials.nick.color
+- litebans.group.police2
+- weight.91
+parents:
+- police1
+suffixes:
+- '&e&l★★&r':
+    priority: 8

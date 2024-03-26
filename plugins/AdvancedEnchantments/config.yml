@@ -1,0 +1,711 @@
+# AdvancedEnchantments
+# Made by GC
+commands:
+  enchanter:
+    enabled: true
+    command: /enchanter
+    aliases:
+    - e
+  tinkerer:
+    enabled: true
+    command: /tinkerer
+    aliases:
+    - tinker
+  alchemist:
+    enabled: true
+    command: /alchemist
+    aliases:
+    - mayep
+  withdrawsouls:
+    enabled: false
+    command: /withdrawsouls
+    aliases:
+    - wsouls
+  apply:
+    enabled: true
+    command: apply
+    aliases:
+    - reapply
+  advancedenchantments:
+    permissionMessageEnabled: true
+    permissionMessage:
+    - '&6&lAdvancedEnchantments &cYou do not have permission to use this command.'
+permissions:
+  enchanter:
+    enabled: false
+    perm: ae.enchanter
+  tinkerer:
+    enabled: false
+    perm: ae.tinkerer
+  gkits:
+    enabled: false
+    perm: ae.gkits
+  alchemist:
+    enabled: false
+    perm: ae.alchemist
+disable-enchants:
+  test_world:
+  - test_enchant
+alchemist:
+  settings:
+    combine-books: true
+    combine-dust: true
+  books:
+    add-up-chances: true
+    pre-set-chances:
+      enabled: true
+      success: 50
+      destroy: 50
+  dusts:
+    add-up: true
+  price:
+    exp: true
+    let-plugin-count: true
+    pre-set-pricing:
+      enabled: false
+      price: 250
+    let-plugin-decide: true
+  messages:
+    inv-name: Máy ép
+    item-preview:
+      name: '&e&lXem trước kết quả'
+      lore:
+      - '&7Xem trước kết quả vật phẩm'
+      - '&7sau khi ép, sẽ hiện ở đây.'
+      item:
+        type: STAINED_GLASS_PANE
+        damage: 0
+    item-explanation:
+      name: '&e&lMáy ép'
+      lore:
+      - '&7Máy ép sẽ ép như thế này...'
+      - ''
+      - '&b&l* &f2X Sách cường hóa'
+      - '&7(+2 sách cùng loại và cấp)'
+      - '&d= &f1X Sách cường hóa'
+      - '&7(sẽ ra sách cao cấp hơn)'
+      - ''
+      - '&b&l* &f2X Bụi phép'
+      - '&7(+2 bụi phép cùng tỉ lệ)'
+      - '&d= &f1X Bụi phép'
+      - '&7(sẽ ra bụi tỉ lệ cao hơn)'
+      item:
+        type: STAINED_GLASS_PANE
+        damage: 14
+    item-combine:
+      name: '&b&lNhấp vào đây để bắt đầu ép'
+      lore:
+      - '&c&lGiá &c%price% EXP'
+      - ''
+      - '&7Nhấp vào đây để xác nhận'
+      - '&7ép vật phẩm!'
+      item:
+        type: STAINED_GLASS_PANE
+        damage: 5
+    item-placeholder:
+      name: ' '
+      lore: []
+      item:
+        type: STAINED_GLASS_PANE
+        damage: 15
+    doesnt-accept: '&cMáy ép không thể 2 ép vật phẩm này.'
+    trade-cancelled:
+    - '&cTrade cancelled'
+    exceeds-max-level:
+    - Sách cường hóa này đã đạt cấp cao nhất!.
+magic-dust:
+  lower-destroy: false
+souls:
+  enabled: true
+  lore: '&4&l∴Linh hồn∴ %souls%☿'
+  item:
+    type: PAPER
+    id: 0
+    name: '&b&lPhiếu theo dõi linh hồn'
+    lore:
+    - '&7Sau khi ép vào vũ khí bạn sẽ theo dõi'
+    - '&7được số linh hồn bạn đã thu thập được từ Pvp.'
+    - ''
+    - '&e&oLinh hồn sẽ giúp bạn kích hoạt sức mạnh cường hóa'
+    - '&e&ocủa sách Linh hồn.'
+    - '&e&oCầm phiếu và thả vào vật phẩm muốn ép.'
+    messages: {}
+    force-glow: false
+combining:
+  enabled: true
+  chances:
+    use-chances: true
+    break-item: false
+    upgrade: true
+  messages: {}
+slots:
+  enabled: true
+  max: 8
+  max-increase-of-slots: 17
+  display-in-lore: true
+  display: '&a▢ Ô cường hóa: +%left%'
+applying:
+  cosmetics:
+    applied:
+      particle: HAPPY_VILLAGER
+      sound: LEVEL_UP
+    failed:
+      particle: LAVA_POP
+      sound: ANVIL_BREAK
+enchanter-books:
+  firework-on-open: false
+  cosmetics:
+    particle: HAPPY_VILLAGER
+    sound: LEVEL_UP
+  display-right-click-message: false
+  type: BOOK
+  id: 0
+  force-glow: false
+  name: '%group-color%&lSách cường hóa %group-color%&l%group-name%&l'
+  lore:
+  - '&7(Nhấp chuột phải) để khám phá ngẫu nhiên'
+  - '&7sách cường hóa loại %group-color%%group-name%&7.'
+  custom-model-data: 0
+items:
+  settings:
+    can-apply-to:
+    - ALL_SWORD
+    - ALL_ARMOR
+    - ALL_PICKAXE
+    - ALL_AXE
+    - ALL_SHOVEL
+    - ALL_HOE
+    - BOOK
+    - BOW
+    - SKULL_ITEM
+    - SKULL_ITEM:3
+    - SKULL_ITEM_3
+  transmogscroll:
+    type: PAPER
+    id: 0
+    name: '&c&lPhiếu sắp xếp cường hóa'
+    lore:
+    - '&7Sắp xếp các &e&ncường hóa&7 theo độ hiếm'
+    - '&7trên vật phẩm theo thứ tự.'
+    - ''
+    - '&e&oCầm phiếu và thả vào vật phẩm muốn ép.'
+    enchants-count-formatting: '&d[&b&n%count%&d]'
+  soulgem:
+    type: EMERALD
+    id: 0
+    name: '&c&lNgọc linh hồn &7[&a%count%&7]'
+    lore:
+    - '&7Tăng linh hồn cho vũ khí của bạn.'
+  itemnametag:
+    type: NAME_TAG
+    id: 0
+    name: '&6&l*Thẻ đổi tên vật phẩm*'
+    lore:
+    - '&7Vật phẩm sẽ giúp bạn đổi tên vật phẩm của mình.'
+    - ''
+    - '&7(Chuột phải để sử dụng)'
+    messages:
+      success:
+      - '&a&l(!) &aBạn đã đổi tên thành công vật phẩm thành &e%name%'
+      activated:
+      - '&a&l(!) &aGiờ bạn hãy ghi tên màu bạn thích để bắt đầu đổi tên'
+      air:
+      - '&c&l(!) &cBạn cần phải cầm vật phẩm bạn muốn đổi tên trên tay'
+      renaming-not-enchanted-item:
+      - '&c&l(!) &cBạn chỉ đổi tên được với vật phẩm có ce'
+    settings:
+      colors: true
+      magic: false
+      word-blacklist:
+      - fuck
+      - dick
+      - bitch
+  randomization-scroll:
+    type: GLOWSTONE_DUST
+    id: 0
+    name: '&eBụi tẩy'
+    lore:
+    - '&eBụi tẩy &7sau khi ép sẽ cho bạn ngẫu nhiên'
+    - '&7tăng hoặc giảm tỉ lệ cường hóa thành công và thất bại.'
+    - '&f(Vật phẩm dành cho sách cường hóa)'
+    - ''
+    - '&7&oCầm bụi và thả vào sách cường hóa muốn ép.'
+  black-scroll:
+    type: INK_SACK
+    id: 0
+    name: '&f&lCục thối'
+    lore:
+    - '&7Cục thối sẽ gỡ bỏ 1 sức mạnh'
+    - '&7cường hóa bất kì trên vật phẩm của bạn.'
+    - ''
+    - '&7Kéo và thả cục thối vào sách cường hóa.'
+    success: 95
+    destroy: 5
+    random: true
+    messages:
+      noEnchantments: '&c&l(!)&c This item has &l0&c enchantments!'
+  secret-dust:
+    type: FIREBALL
+    id: 0
+    name: '&dBụi phép %group-color%%group-name%'
+    lore:
+    - '&7Nhận ngẫu nhiên: &bBụi phép tiên &7hoặc &fBụi rác&7.'
+    - '&7(Nhấp chuột phải để dùng)'
+  mystery-dust:
+    type: SULPHUR
+    id: 0
+    name: '&7Bụi rác'
+    lore:
+    - '&7XXX'
+  magic-dust:
+    type: SUGAR
+    id: 0
+    name: '&bBụi tiên %group-color%%group-name%'
+    lore:
+    - '&a+%percent%% tỉ lệ thành công'
+    - '&7Chuột-phải thả vào sách cường hóa'
+    messages:
+      cannotApplyToStacked: '&c&l(!) &cCannot be applied to stacked books'
+  slot-increaser:
+    type: EYE_OF_ENDER
+    id: 0
+    name: '&a&l+1 Ô cường hóa cho TRANG BỊ'
+    lore:
+    - '&7Sẽ tăng thêm ô để bạn ép thêm sách cường hóa: &a+%count%'
+    - '&7Lore: &a▢ Ô cường hóa: +(Đây là số ô mà bạn còn có thể ép được)'
+    messages:
+      success:
+      - '&a&l(!) &aÉp thành công +%count%!'
+  blocktrak:
+    type: SNOW_BALL
+    id: 0
+    name: '&7&l.NGỌC ĐÀO.'
+    lore:
+    - '&7Khi gắn chip này vào dụng cụ, chip sẽ hiển thị'
+    - '&7tổng số khối bạn đã đào được.'
+    - '&7Lore: &eBlockTrak Blocks Broken: &6(Số khối bạn đào được)'
+    - ''
+    - '&7Cầm chip và thả vào cúp.'
+    messages:
+      success:
+      - '&7Gắn chip thành công.'
+    settings:
+      lore-display: '&eBlockTrak Blocks Broken: &6%stats%'
+  stattrak:
+    type: MAGMA_CREAM
+    id: 0
+    name: '&e&l.NGỌC KILL.'
+    lore:
+    - '&7Khi gắn NGỌC này vào vũ khí, NGỌC sẽ hiển thị'
+    - '&7tổng số kill bạn đã giết được trên vũ khí.'
+    - '&7Lore: &e⊰Kill⊱ ⇒ &6(Số khối bạn giết được)'
+    - ''
+    - '&7Cầm chip và thả vào vũ khí.'
+    messages:
+      success:
+      - '&7Gắn chip thành công.'
+    settings:
+      lore-display: '&e&l⊰Kill⊱ ⇒ &6&l%stats%'
+  mobtrak:
+    type: SLIME_BALL
+    id: 0
+    name: '&a&l.NGỌC MOB.'
+    lore:
+    - '&7Khi gắn NGỌC này vào vũ khí, NGỌC sẽ hiển thị'
+    - '&7tổng số kill bạn đã giết được trên dụng cụ.'
+    - '&7Lore: &3&l⊀Mob⊁ ⇒ &b&l(Số khối bạn giết được)'
+    - ''
+    - '&7Cầm chip và thả vào vũ khí.'
+    messages:
+      success:
+      - '&7Gắn chip thành công.'
+    settings:
+      lore-display: '&3&l⊀Mob⊁ ⇒ &b&l%stats%'
+  holywhitescroll:
+    type: PAPER
+    id: 0
+    name: '&6&lMiếng nam châm'
+    lore:
+    - '&7Miếng nam châm sau khi ép sẽ cho bạn (100%)'
+    - '&7giữ lại vật phẩm khi chết.'
+    - '&7Lore: &6&l* NAM CHÂM: &7100% &6&l*'
+    - '&r'
+    - '&bKéo và thả miếng nam châm vào vật phẩm'
+    - '&bbạn không muốn mất nhất.'
+    messages:
+      applied:
+      - '&7Ép thành công.'
+    settings:
+      lore-display: '&6&l* NAM CHÂM: &7100% &6&l*'
+  orb:
+    armor:
+      name: '&6&lArmor Enchantment Orb &6[&a&n%max%&6]'
+      lore:
+      - '&a%success%% Success Rate'
+      - ''
+      - '&6+%new% Enchantment slots'
+      - '&6%max% Max Enchantment Slots'
+      - ''
+      - '&eIncreases the # of enchantment'
+      - '&eslots on a piece of armor by %new%,'
+      - '&eup to a maximum of %max%'
+      - '&7Drag n'''' Drop onto an item to apply.'
+white-scroll:
+  delete: true
+  lore-display: '&f&l* BẢO VỆ *'
+  item:
+    type: EMPTY_MAP
+    id: 0
+    force-glow: false
+    name: '&fGiấy thơm'
+    lore:
+    - '&7Giấy thơm sẽ bảo vệ vật phẩm của bạn không'
+    - '&7bị phá hủy khi cường hóa thất bại.'
+    - '&7Lore: &f&l* BẢO VỆ *'
+    - '&r'
+    - '&7Kéo và thả vào vật phẩm bạn muốn.'
+  messages: {}
+enchanter:
+  open-sound: ENDERDRAGON_WINGS
+  disabled-in-worlds:
+  - bad_world
+  messages:
+    cannot-afford:
+    - '&cBạn không đủ Exp.'
+    - '&7XP của bạn hiện tại: %exp%'
+    inventory-is-full:
+    - '&c&l(!) &cTúi đồ bạn đã Full!'
+    sound: LEVEL_UP
+  right-click-to-view-enchants: true
+  go-back-item:
+    enabled: true
+    item:
+      type: NETHER_STAR
+      id: 0
+      custom-model-data: 0
+    name: '&c&lQuay lại'
+    lore: []
+  keep-open: true
+  inventory:
+    size: 27
+    name: '&8Sách cường hóa'
+    items:
+      '1':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 0
+          force-glow: false
+        enchant-group: SIMPLE
+        price: exp:750
+        sound: ANVIL_LAND
+        name: '&f&lSÁCH CƯỜNG HÓA -CŨ-'
+        lore:
+        - '&7Nhấp vào đây để mua sách cường hóa'
+        - '&7ngẫu nhiên loại &f&lCũ'
+        - '&r'
+        - '&7(&n/celist&r &7để xem all sách cường hóa)'
+        - ''
+        - '&b&lGIÁ: &f%price% EXP &7(Bạn cần thêm %left% EXP nữa)'
+      '2':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 5
+          force-glow: false
+        enchant-group: UNIQUE
+        sound: ANVIL_LAND
+        price: exp:2250
+        name: '&a&lSÁCH CƯỜNG HÓA -HIẾM-'
+        lore:
+        - '&7Nhấp vào đây để mua sách cường hóa'
+        - '&7ngẫu nhiên loại &a&lHiếm'
+        - '&r'
+        - '&7(&n/celist&r &7để xem all sách cường hóa)'
+        - ''
+        - '&b&lGIÁ: &f%price% EXP &7(Bạn cần thêm %left% EXP nữa)'
+      '3':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 3
+          force-glow: false
+        enchant-group: ELITE
+        price: exp:4500
+        sound: ANVIL_LAND
+        name: '&b&lSÁCH CƯỜNG HÓA -CỔ-'
+        lore:
+        - '&7Nhấp vào đây để mua sách cường hóa'
+        - '&7ngẫu nhiên loại &b&lCổ'
+        - '&r'
+        - '&7(&n/celist&r &7để xem all sách cường hóa)'
+        - ''
+        - '&b&lGIÁ: &f%price% EXP &7(Bạn cần thêm %left% EXP nữa)'
+      '4':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 4
+          force-glow: false
+        enchant-group: ULTIMATE
+        price: exp:11250
+        sound: ANVIL_LAND
+        name: '&e&lSÁCH CƯỜNG HÓA -SIÊU CỔ-'
+        lore:
+        - '&7Nhấp vào đây để mua sách cường hóa'
+        - '&7ngẫu nhiên loại &e&lSiêu cổ'
+        - '&r'
+        - '&7(&n/celist&r &7để xem all sách cường hóa)'
+        - ''
+        - '&b&lGIÁ: &f%price% EXP &7(Bạn cần thêm %left% EXP nữa)'
+      '5':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 1
+          custom-model-data: 0
+          force-glow: false
+        enchant-group: LEGENDARY
+        price: exp:250000
+        sound: ANVIL_LAND
+        name: '&6&lSÁCH CƯỜNG HÓA -HUYỀN THOẠI-'
+        lore:
+        - '&7Nhấp vào đây để mua sách cường hóa'
+        - '&7ngẫu nhiên loại &6&lHuyền thoại'
+        - '&r'
+        - '&7(&n/celist&r &7để xem all sách cường hóa)'
+        - ''
+        - '&b&lGIÁ: &f%price% EXP &7(Bạn cần thêm %left% EXP nữa)'
+      '6':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 10
+          custom-model-data: 0
+          force-glow: false
+        enchant-group: HEROIC
+        price: exp:100000000
+        sound: ANVIL_LAND
+        name: '&d&lSÁCH CƯỜNG HÓA -TRUYỀN THUYẾT-'
+        lore:
+        - '&7Nhấp vào đây để mua sách cường hóa'
+        - '&7ngẫu nhiên loại &D&lTruyền Thuyết'
+        - '&r'
+        - '&7(&n/celist&r &7để xem all sách cường hóa)'
+        - ''
+        - '&b&lGIÁ: &f%price% EXP &7(Bạn cần thêm %left% EXP nữa)'
+      '7':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 4
+          force-glow: true
+        sound: ANVIL_LAND
+        name: '&6&l&k..&e&lTRUYỀN THUYẾT MẠ VÀNG&6&l&k..'
+        lore:
+        - '&7Nhấp vào đây để đổi sách &6&l&k..&e&lMạ Vàng&6&l&k..'
+        - '&r'
+        - '&7(&n/celist&r &7để xem all sách cường hóa)'
+        - ''
+        console-command:
+        - dm execute %player% [message] &eĐang tiến hành...
+        - dm execute %player% [player] e
+        - dm execute %player% [openguimenu] mavang1<delay=20>
+      '12':
+        item:
+          type: PRISMARINE_SHARD
+          id: 0
+          force-glow: true
+          custom-model-data: 0
+        name: '&b✦ &bMảnh khảm và sách nâng cấp'
+        lore:
+        - '&7Nhấp vào đây để trade/rèn mảnh &bSharpness,'
+        - '&7&bPower &7và sách tăng máu &d&lTrâu thánh'
+        - ''
+        - '&b&lNhấp vào để mở mục trade/rèn.'
+        console-command:
+        - ecraft open sach %player%
+      '13':
+        item:
+          type: ANVIL
+          id: 0
+          force-glow: false
+        sound: ANVIL_USE
+        player-command:
+        - tinkerer
+        name: '&fMáy tái chế'
+        lore:
+        - '&7Tái chế sách cường hóa thành bụi phép và EXP.'
+        - ''
+        - '&b&lNhấp vào để mở &fMáy tái chế.'
+      '14':
+        item:
+          type: ENDER_PORTAL_FRAME
+          id: 0
+          force-glow: false
+        sound: ARROW_HIT
+        player-command:
+        - alchemist
+        name: '&fMáy ép'
+        lore:
+        - '&7Tăng cấp cho sách cường hóa và bụi phép.'
+        - ''
+        - '&b&lNhấp vào để mở &fMáy ép.'
+      '22':
+        item:
+          type: ARMOR_STAND
+          id: 0
+          force-glow: false
+        sound: ARROW_HIT
+        player-command:
+        - cehelp
+        name: '&fHướng Dẫn Ép Sách'
+        lore:
+        - '&7Tham khảo lối build đồ của server.'
+        - ''
+        - '&b&lNhấp vào để mở &fHướng dẫn.'
+    settings:
+      enchanterBookLevel: ALL
+destroy:
+  enabled: false
+  destroy-item: false
+  sound:
+    enabled: false
+    play: ANVIL_BREAK
+  particles:
+    enabled: false
+    type: FLAME
+chances:
+  random: true
+  success: 92
+  destroy: 8
+  destroy-if-fail:
+    enabled: false
+enchantment-book:
+  item:
+    type: BOOK
+    id: 0
+    force-glow: false
+    custom-model-data: 0
+  name: '&l&n%group-color%%enchant%'
+  lore:
+  - '&e%success%% tỉ lệ thành công'
+  - '&6%destroy%% tỉ lệ thất bại'
+  - '&f%description%'
+  - '&bVật phẩm cường hóa: &b&l%applies%'
+  - ''
+  - '&a&oCầm sách và thả vào vật phẩm để cường hóa'
+  drag-drop-application: true
+messages:
+  command: {}
+  apply:
+    cooldown: '&cYou will be able to use this command in %seconds% seconds.'
+settings:
+  use-legacy-potions-system: false
+  steal-money:
+    message-enabled: false
+  combo-limit: 5
+  trench-autoadd-items: true
+  swing-worldguard-check: true
+  itemnametag-max-name-length: 50
+  trench-do-all-durab: false
+  lower-destroy-with-magic-dust: true
+  enable-combo-for-mobs: false
+  clear-potion-effects-on-quit: true
+  ae-market-enabled: false
+  use-numbers: false
+  enchantment-world-blacklist:
+  - no_enchantments_world
+  trench-blacklist:
+  - AIR
+  - WATER
+  - LAVA
+  - BEDROCK
+  - PORTAL
+  - SPAWNER
+  - STATIONARY_LAVA
+  - STATIONARY_WATER
+  - WOOD
+  - LOG
+  - GRASS
+  - DIRT
+  - OBSIDIAN
+  - LAPIS_ORE
+  holy-whitescrolls-world-blacklist:
+  - no_holywhitescrolls_world
+  open-enchanter-by-right-clicking-enchantment-table: false
+  enchants-debug-mode: false
+  apply-cooldown: 20
+  whitescroll-material-blacklist:
+  - STONE
+  souls-per-kill: 1
+  trench-whitelist: []
+  trench-optimization:
+    automaticallyDetect: true
+  collect-souls-from-mobs: false
+  showFirstLevel: true
+  heal-check: true
+  invalidSettingWarnings: true
+  miningSouls:
+    enabled: false
+    chance: 0
+  organizeEnchantsOnItems: true
+  lore-organize-mode: 2
+  use-experimental-damage: false
+  give-mcmmo-with-custom-block-breaks: true
+  veinmine-whitelist:
+  - COAL_ORE
+  - COPPER_ORE
+  - IRON_ORE
+  - GOLD_ORE
+  - LAPIS_ORE
+  - REDSTONE_ORE
+  - DIAMOND_ORE
+  - EMERALD_ORE
+  - NETHER_QUARTZ_ORE
+  - NETHER_GOLD_ORE
+  - ANCIENT_DEBRIS
+  activate-non-armor-in-armor-slots: false
+  held-check-frequency: 5
+  bow-full-power: true
+  use-worldguard-fly-flag: false
+  custom-drops-from-spawners: false
+  lore-descriptions:
+    enabled: false
+    display: ' %group-color%* &7%description%'
+  held-shift-cross-update: true
+  held-effect-static-cross-update: false
+  custom-enchants-cause-glow: false
+  fortune-works-on-iron-gold: false
+  renametag-enchanted-only: true
+enchantments:
+  group-enchantment-inventory:
+    go-back-item:
+      item:
+        type: NETHER_STAR
+        id: 0
+      name: '&c&lGo Back'
+      lore: []
+confirmation-inventory:
+  name: '&aConfirmation Inventory'
+  enabled: false
+  accept:
+    material: STAINED_GLASS_PANE
+    damage: 5
+    name: '&aAccept Transaction'
+    lore:
+    - '&7Click this to pay %price% with %paymentType%'
+  cancel:
+    material: STAINED_GLASS_PANE
+    damage: 14
+    name: '&cClick to cancel'
+    lore: []
+armor-switching:
+  enabled: true
+  sound: LEVEL_UP
+  armorSkullsSwitching: true
+enchantLimitation:
+  enabled: true
+  lore: '&c&lUnmodifiable'
+  NBT-tag: unmodifiable
+language: en-us
+applies-groups:
+  MISC_HELMETS:
+  - SKULL_ITEM
+  TRIDENT: []
+  CROSSBOW: []
+  SKULL_ITEM:3: []
+  SKULL_ITEM_3: []

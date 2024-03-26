@@ -1,0 +1,18 @@
+# Messages wiki and help can be found at https://gitlab.com/Zenya4/no-chunk-lag/-/blob/master/core/src/main/resources/messages.yml
+# For internal reference only, do not change the messages version
+messages-version: 4
+no-elytra-riptide: '&cKhông được phép dùng cánh cứng khi đang có phù phép sóng dữ!'
+low-tps: '&cVì lí do lag nên bạn không thể phóng đi nhanh (TPS : &4%tps%)!'
+disallowed-in-world: '&cBạn không được dùng trong thế giới này!' #&4%world%'
+cooldowns:
+  elytra-boost: '&fHãy đợi &b%cooldown_elytra%&f giây để dùng tiếp!'
+  trident-riptide: '&cHãy đợi &4%cooldown_trident%&c giây trước khi dùng 1 lần nữa
+    &f[%trident_bar%&f]'
+notifications:
+  admin:
+    tps-low: '&cPhóng nhanh Elytra đã bị chặn do server lag
+      (TPS = &4%tps%)'
+    tps-regular: '&aElytra đã dùng lại bình thường (TPS = &2%tps%)'
+  player:
+    elytra-boost-ready: '&6Bạn có thể phóng nhanh Elytra ngay lúc này'
+    trident-riptide-ready: '&6Bạn có thể dùng sóng dữ'

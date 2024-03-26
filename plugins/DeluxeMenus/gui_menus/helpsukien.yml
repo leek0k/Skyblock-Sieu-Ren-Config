@@ -1,0 +1,238 @@
+file: helpsukien.yml
+menu_title: '&8&lSự Kiện &8&lTết &8&lQuý Mão &8- &8&l2023'
+open_command: 
+# - helpevents
+# - helpsukien
+# - helpevent
+# - huongdansukien
+# - huongdanevent
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 54
+open_requirement: 
+items:
+  'background':
+    material: STAINED_GLASS_PANE
+    data: 1
+    display_name: '&a☘'
+    slots:
+    - '0-9'
+    - '13'
+    - '17-18'
+    - '22'
+    - '26-27'
+    - '31'
+    - '35-36'
+    - '40'
+    - '44-48'
+    - '50-53'
+  'back':
+    material: DOUBLE_PLANT
+    slot: 49
+    display_name: '&c&l⬅ [Trở về]'
+    lore:
+    - "&7Nhấn vào để trở về mục trước"
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[openguimenu] events'
+  'hatnep':
+    material: BEETROOT_SEEDS
+    slot: 10
+    display_name: '&e&lHạt Nếp'
+    lore:
+    - "&eNguyên liệu để trao đổi vật phẩm"
+    - "&esự kiện &cTết &6Quý Mão 2023"
+    - ""
+    - '&7&o((Hãy trồng thật nhiều &e&lLúa&7&o))'
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'dauxanh':
+    material: GLOWSTONE_DUST
+    slot: 11
+    display_name: '&e&lĐậu Xanh'
+    lore:
+    - "&eNguyên liệu để trao đổi vật phẩm"
+    - "&esự kiện &cTết &6Quý Mão 2023"
+    - ""
+    - '&7&o((Hãy trồng thật nhiều &e&lHạt Cacao&7&o))'
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'thitheomuoi':
+    material: GRILLED_PORK
+    slot: 12
+    display_name: '&f&lThịt Heo Muối'
+    lore:
+    - "&eNguyên liệu để trao đổi vật phẩm"
+    - "&esự kiện &cTết &6Quý Mão 2023"
+    - ""
+    - '&7&o((Vật phẩm có được từ việc giết &d&lHeo&7&o))'
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'ladong':
+    material: INK_SACK
+    data: 2
+    slot: 19
+    display_name: '&2&lLá Dong'
+    lore:
+    - "&eNguyên liệu để trao đổi vật phẩm"
+    - "&esự kiện &cTết &6Quý Mão 2023"
+    - ""
+    - '&7&o((Hãy trồng thật nhiều &a&lCây Gỗ Rừng&7&o))'
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'daylac':
+    material: STICK
+    slot: 20
+    display_name: '&6&lDây Lạc'
+    lore:
+    - "&eNguyên liệu để trao đổi vật phẩm"
+    - "&esự kiện &cTết &6Quý Mão 2023"
+    - ""
+    - '&7&o((Hãy trồng thật nhiều &a&lCây Gỗ Rừng&7&o))'
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'cuilua':
+    material: COAL
+    data: 1
+    slot: 21
+    display_name: '&c&lCủi Lửa'
+    lore:
+    - "&eNguyên liệu để trao đổi vật phẩm"
+    - "&esự kiện &cTết &6Quý Mão 2023"
+    - ""
+    - '&7&o((Hãy đào thật nhiều &8&lThan &7&o& &9&lĐất sét&7&o))'
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'banhchung':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjgwNWNhZjNkMDJlMzVlNGFhZGMxOWFmMTVlODI3OTAxNzdmMWNkN2I3OWY0ZjViODhkOTQzYWM2YmUyMDNhMSJ9fX0=
+    slot: 38
+    display_name: '&a&lBánh Chưng'
+    lore:
+    - "&eNguyên liệu để trao đổi vật phẩm"
+    - "&esự kiện &cTết &6Quý Mão 2023"
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'sukien':
+    material: BOOK
+    slot: 29
+    display_name: '&e&l✿ Sự kiện ✿ I'
+    lore:
+    - "&e100% tỉ lệ thành công"
+    - "&60% tỉ lệ thành công"
+    - "&fCường hóa này sẽ giúp bạn"
+    - "&fcày đồ sự kiện mỗi khi"
+    - "&fserver có sự kiện."
+    - "&bVật phẩm cường hóa: &b&lCúp + Rìu"
+    - ""
+    - "&fKhả năng lần này:"
+    - "&7&o((Cho phép bạn đào &2&lDây Leo &7&ovới &b&lRìu"
+    - "&eMềm Mại &7&okèm thêm &eHiệu Suất &7&ođể đào nhanh hơn nhé))"
+    - ""
+    - '&8&l* &e&lGiá&7: &a500.000$'
+    - ''
+    - '&0&o#Item menu'
+    click_requirement:
+      requirements:
+        has_money:
+           type: has money
+           amount: 500000
+      deny_commands:
+        - '[close]'
+        - '[message] &cBạn không có đủ tiền!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:   
+    - '[console] ae givebook %player_name% sukien 1 1 100 0'
+    - '[console] eco take %player_name% 500000'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'manhkhiennguyeu':
+    material: PRISMARINE_SHARD
+    slot: 15
+    display_name: '&e[◆] &e&lMảnh Khiên Ngư Yêu &e[◆]'
+    lore:
+    - '&7Sử dụng để đổi khiên trong sự kiện Tết 2023'
+    - '&eKill Ngư Yêu &7&o((/warp dungeon))'
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'dathivong':
+    material: DIRT
+    slot: 24
+    display_name: '&6[◆] &6&lĐất Hi Vọng &6[◆]'
+    lore:
+    - '&7Sử dụng để đổi khiên trong sự kiện Tết 2023'
+    - '&6Kill Sơn Yêu &7&o((/warp dungeon))'
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'xuongyeutinhquymao':
+    material: BONE
+    slot: 33
+    display_name: '&6[◆] &6&lXương Yêu Tinh Quý Mão &6[◆]'
+    lore:
+    - '&7Sử dụng để đổi khiên trong sự kiện Tết 2023'
+    - '&6Kill BOSS Yêu Tinh Quý Mão &7&o((/warp dungeon))'
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'Dungeon':
+    material: MOB_SPAWNER
+    slot: 42
+    display_name: '&6&lDungeon Quý Mão'
+    lore:
+    - '&7Nhấn vào để dịch chuyển đến &6&lDungeon Quý Mão'
+    - '&b(/warp event)'
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    click_commands:
+    - '[player] warp event'

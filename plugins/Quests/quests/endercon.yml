@@ -1,0 +1,67 @@
+# The name of this file is the quest ID. It must be alphanumeric and unique.
+
+# Everything inside of this section defines tasks the player must complete to progress.
+tasks:
+  # This is the task ID ("mining"). This can share the same name as the quest ID but MUST be unique with all other task IDs in the same quest.
+  mythicmobs:
+    type: "mythicmobs_killing"
+    amount: 50                            # amount of mobs to be killed
+    name: "endercon" 
+    worlds:                               # (OPTIONAL) restrict to certain worlds
+     - "DungeonTheEnd" 
+  # You can have multiple tasks for each quest (example further down).
+
+# Everything inside of this section defines the display item.
+display:
+  # This is the name of the item. This allows color codes.
+  name: "&5✲&9&lGiết 50 Ender Con&5✲ &7((Yêu Cầu Level: 55))"
+  # This is the lore of the item if the player has not started the quest. This allows color codes and task/player placeholders.
+  lore-normal:
+    - " &fChính tay giết 50 endercon tại &dThe End."
+    - " &cLưu ý: &f5 Tiếng hồi nhiệm vụ"
+    - ""
+    - "&e&lYêu cầu:" 
+    - " &7Hoàn thành: &aLevels 55 " 
+    - " &fGiết &d50 Ender Con "
+    - ""
+    - "&e&lPhần thưởng:"
+    - " &7▫ &f60750 &aĐiểm XP Levels."
+    - " &7▫ &a30000$"
+    - " &7▫ &6140☀"
+  # This lore will be appended to the bottom of the above lore when the player starts their quest.
+  # To get the players progress through a task, use {TASKID:progress}  and replace TASKID with the ID of the task.
+  lore-started:
+    - ""
+    - "&e&lTiến trình hiện tại của bạn:"
+    - " &7▫ &c{mythicmobs:progress}&7/&a50 &dEnder Con"
+  # This is the material of the item. It is recommended to stick to bukkit names.
+  type: "ENDER_PEARL"
+
+# List all commands to be executed by the server when the player completes the quest. Use {player} to get the players name.
+rewards:
+  - "eco give {player} 30000"
+  - "levels addexp {player} 60750"
+  - "gems add {player} 140"
+
+# These placeholders are accessible using PlaceholderAPI, for example %quests_tracked_p:description%
+# They are useful for putting information about the players tracked quest on a scoreboard
+# You may want to keep the names of them the same for ALL quests for this use-case
+placeholders:
+  description: "&7Giết Boss theo yêu cầu."
+  progress: " &7▫ &c{mythicmobs:progress}&7/&a50 &dEnder Con"
+
+# Everything inside this section define quest-specific options
+options:
+  # This is the category for the quest, it will appear under the "examples" category. Categories can be disabled.
+  category: "de45"
+  # Set if the quest can be repeated after being completed for the first time.
+  repeatable: true
+  # Define the cooldown on quests. The above (repeatable) must be true for this to take effect.
+  permission-required: true
+  cooldown:
+    # If true, players will have to wait between repeating quests.
+    enabled: false
+    # Time (in minutes)
+    time: 300
+  # This is the relative position in the GUI
+  sort-order: 2

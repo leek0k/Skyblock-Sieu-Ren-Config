@@ -1,0 +1,33 @@
+requireSet: 'Toicao'
+
+# Currently supported are only melee weapons
+material: DIAMOND_SWORD
+
+# Weapon's name
+name: '&C&L⊰&4&L⊰&C&L⊰ &4&LKIẾM &C&LTỐI CAO &4(3♦) &4&L⊱&C&L⊱&4&L⊱'
+
+# Weapon's lore
+lore:
+  - ''
+  - '&4፠ ፠ ፠ &4(3♦) &4&lTỐI CAO &4(3♦) &4፠ ፠ ፠'
+  - '&4* Kiếm Tối Cao (3♦)'   
+  - '&4* Tăng 22% damage.'
+  - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'  
+  - '&0&o#Kiemtoicao3'  
+
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'sharpness:125'
+  - 'unbreaking:7'
+  - 'fireaspect:4'
+  - 'looting:4'
+  - 'baneofarthropods:5'
+  - 'smite:5'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:
+  ATTACK:
+    chance: 100
+    effects:
+      - 'INCREASE_DAMAGE:22'      

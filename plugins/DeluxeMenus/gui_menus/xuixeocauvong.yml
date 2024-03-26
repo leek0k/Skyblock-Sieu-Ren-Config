@@ -1,0 +1,193 @@
+menu_title: '&8&lXui Xẻo &a&lCầu Vòng'
+open_command: 
+  - xuixeocauvong
+size: 54
+update_interval: 1
+items:
+  'Block':
+    material: STAINED_GLASS_PANE
+    data: 5
+    slots:
+    - 0-8
+    - 45-54
+    display_name: '&r&l'
+    lore:
+    - '&r&l'    
+  'Return':
+    material: STAINED_GLASS_PANE
+    data: 14
+    slot: 49
+    display_name: 'Quay Lại'
+    lore:
+    - ''    
+    click_commands:
+    - '[player] xuixeo'
+  'SoVo':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWI3MzhmYTA1YjI3ZjE4ODc0ZTU3ZDk1YjBiNmM5ZmFkZDFiNTU4ODk0ZjgyZTAyNjFiYTE1NDRlNmZiYmYxZCJ9fX0=
+    slot: 9
+    display_name: ''
+    lore:
+    - ''
+    - '&7 &l? &7Sát Thương'
+    - '&7 &l? &7Tốc Độ Đánh'
+    - '&7 &l? &7Tim'
+    - '&7 &l? &7Giáp'
+    - '&7&l (&7Ô lửa&7&l)'
+    - ''
+    - '&7◆ ◆ ◆ &7&lTHƯỜNG ◆ ◆ ◆'
+    - '&7* SỌ phép bị vỡ'
+    - ''
+    - '&7(Đặt lên Hotbar để kích hoạt!)'
+    - ''
+    - '&c• Giá 40 (%sieurencore_xuixeo_CauVong%) &8&lXui Xẻo &a&lCầu Vòng' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_CauVong%'
+                output: '40'
+    click_commands:
+    - '[console] src xuixeo remove CauVong %player_name% 40'
+    - '[console] cr open %player_name% sothuong'
+    - '[close]'
+  'SoHiem':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYxNzg1NWZmMTI2OGQ5NTliZDlmMjM5Mzg0ZmUwNDMxZWJkNzUxYjI2MjQ2MTljNTU1ZTlkNDcxZTk0NDAifX19
+    slot: 10
+    display_name: '&e&lSỌ phép bị nguyền rủa'
+    lore:
+      - ''
+      - '&7 &l? &7Sát Thương'
+      - '&7 &l? &7Tốc Độ Đánh'
+      - '&7 &l? &7Tim'
+      - '&7 &l? &7Giáp'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - ''
+      - '&e◆ ◆ ◆ &e&lHIẾM &e◆ ◆ ◆'
+      - '&e* SỌ phép bị nguyền rủa'
+      - ''
+      - '&e(Đặt lên Hotbar để kích hoạt!)'
+      - ''
+      - '&c• Giá 80 (%sieurencore_xuixeo_CauVong%) &8&lXui Xẻo &a&lCầu Vòng' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_CauVong%'
+                output: '80'
+    click_commands:
+    - '[console] src xuixeo remove CauVong %player_name% 80'
+    - '[console] cr open %player_name% sohiem'
+    - '[close]'
+  'SoHuyenThoai':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM2OGI3NzYyMDAwNTRmN2MzNzIwNjE2NTI0ZDU1MGRkZjkyNDNmNDg5NmNkNzFlNGE2OTJmZGRkNzJjNzFlNSJ9fX0=
+    slot: 11
+    display_name: '&6&lSỌ phép từ Chiến binh'
+    lore:
+    - ''
+    - '&7 &l? &7Sát Thương'
+    - '&7 &l? &7Tốc Độ Đánh'
+    - '&7 &l? &7Tim'
+    - '&7 &l? &7Giáp'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - ''
+    - '&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆'
+    - '&6* SỌ phép từ Chiến binh'
+    - ''
+    - '&6(Đặt lên Hotbar để kích hoạt!)'
+    - ''
+    - '&c• Giá 120 (%sieurencore_xuixeo_CauVong%) &8&lXui Xẻo &a&lCầu Vòng' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_CauVong%'
+                output: '120'
+    click_commands:
+    - '[console] src xuixeo remove CauVong %player_name% 120'
+    - '[console] cr open %player_name% sohuyenthoai'
+    - '[close]'
+  'SoTruyenThuyet':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGIxZTljNzFiZmQ1MWI2MGVhNjA2ZTc5N2QwYjJjMWZkNzc2Y2FjMGEwNTczZmQ5NjAwMjExNTVjYjQwZDY1In19fQ==
+    slot: 12
+    display_name: '&5&l✧&d&l✧&5&l✧ &d&lSỌ phép từ Kiếm sĩ &r&5&l✧&d&l✧&5&l✧'
+    lore:
+    - ''
+    - '&7 &l?? &7Sát Thương'
+    - '&7 &l?? &7Tốc Độ Đánh'
+    - '&7 &l?? &7Tim'
+    - '&7 &l?? &7Giáp'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - ''
+    - '&d◆ ◆ ◆ &d&lTRUYỀN THUYẾT &d◆ ◆ ◆'
+    - '&d* SỌ phép từ Kiếm Sĩ'
+    - ''
+    - '&d(Đặt lên Hotbar để kích hoạt!)'
+    - ''
+    - '&c• Giá 160 (%sieurencore_xuixeo_CauVong%) &8&lXui Xẻo &a&lCầu Vòng' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_CauVong%'
+                output: '160'
+    click_commands:
+    - '[console] src xuixeo remove CauVong %player_name% 160'
+    - '[console] cr open %player_name% sotruyenthuyet'
+    - '[close]'
+  'HomTruyenThuyet':
+    material: ENDER_PORTAL_FRAME
+    slot: 13
+    display_name: '&5&L✧&D&L✧&5&l✧ &9&l&nHòm vật phẩm&r &d&lTRUYỀN THUYẾT &7(Ngẫu nhiên)&5&L✧&D&L✧&5&l✧'
+    lore:
+    - ''
+    - '&c• Giá 40 (%sieurencore_xuixeo_CauVong%) &8&lXui Xẻo &a&lCầu Vòng' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_CauVong%'
+                output: '40'
+    click_commands:
+    - '[console] src xuixeo remove CauVong %player_name% 40'
+    - '[console] cr give to %player_name% truyenthuyet 1'
+    - '[close]'
+  'RankTrum':
+    material: PRISMARINE_SHARD
+    slot: 14
+    display_name: '&e&Lx1 MẢNH | Rank &8&l<&7&lTRÙM&8&l>'
+    lore:
+    - ''
+    - '&c• Giá 60 (%sieurencore_xuixeo_CauVong%) &8&lXui Xẻo &a&lCầu Vòng' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_CauVong%'
+                output: '60'
+    click_commands:
+    - '[console] src xuixeo remove CauVong %player_name% 60'
+    - '[console] epicvouchers give %player_name% trum 1'
+    - '[close]'
+  'CanhCung':
+    material: ELYTRA
+    slot: 15
+    display_name: '&f&lCánh &7&lCứng'
+    lore:
+    - ''
+    - '&c• Giá 40 (%sieurencore_xuixeo_CauVong%) &8&lXui Xẻo &a&lCầu Vòng' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_CauVong%'
+                output: '40'
+    click_commands:
+    - '[console] src xuixeo remove CauVong %player_name% 40'
+    - '[console] give %player_name% elytra 1'
+    - '[close]'

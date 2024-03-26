@@ -1,0 +1,244 @@
+menu_title: '&c&lThợ Săn: &fXin chào! đây là dungeon 2.'
+open_command: 
+- de2khoidau  
+size: 36 #book_and_quill
+items:
+  'kinh':
+    material: 'IRON_FENCE'
+    slots: 
+      - '0-5'
+      - '9'
+      - '14'
+      - '18'
+      - '23'
+      - '27-32'
+    display_name: ''
+    lore:
+      - ''
+  'q1':
+    material: 'arrow'
+    slot: 25
+    priority: 1
+    display_name: '&7.&cQuay về&7.'
+    lore:
+      - '&7- Bạn chưa sẵn sàng cho việc này?'
+      - ''
+      - '&a[!] Ấn vào đây để được hộ tống về sảnh'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[player] spawn'
+      - '[close]'          
+  'q':
+    material: 'book_and_quill'
+    slot: 16
+    priority: 1
+    display_name: '&7..&aNhiệm Vụ&7..'
+    lore:
+      - ' &7.&fTiêu diệt các nhện yêu tinh ở lành yêu tinh&7.'
+      - ' &7Nhận ngay vật phẩm &aMắt nhện yêu tinh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &d&lKill 50 Nhện Yêu Tinh'
+      - ' &7khi đạt đủ 35 levels ((/q)).'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[player] q'
+      - '[close]'      
+  '1':
+    material: 'spider_eye'
+    slot: 10
+    priority: 1
+    display_name: '&7..&aNguyên Liệu Cơ Bản&7..'
+    lore:
+      - ' &7.&fTiêu diệt các nhện yêu tinh ở lành yêu tinh&7.'
+      - ' &7Nhận ngay vật phẩm &aMắt nhện yêu tinh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &d&lKill 50 Nhện Yêu Tinh'
+      - ' &7khi đạt đủ 35 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+    # - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+      - ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open nguyenlieu %player_name%'
+      - '[close]'
+  '1a':
+    material: 'prismarine_shard'
+    slot: 11
+    amount: 1
+    priority: 1
+    display_name: '&7..&b✦ &bMảnh Khảm &b&lSharpness &b✦&7..'
+    lore:
+      - ' &7.&fTiêu diệt các nhện yêu tinh ở lành yêu tinh&7.'
+      - ' &7Nhận ngay vật phẩm &aMắt nhện yêu tinh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &d&lKill 50 Nhện Yêu Tinh'
+      - ' &7khi đạt đủ 35 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+    # - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+      - ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open sach %player_name%'
+      - '[close]' 
+  '1b':
+    material: 'prismarine_shard'
+    slot: 12
+    amount: 2
+    priority: 1
+    display_name: '&7..&b✦ &bMảnh Khảm &b&lPower &b✦&7..'
+    lore:
+      - ' &7.&fTiêu diệt các nhện yêu tinh ở lành yêu tinh&7.'
+      - ' &7Nhận ngay vật phẩm &aMắt nhện yêu tinh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &d&lKill 50 Nhện Yêu Tinh'
+      - ' &7khi đạt đủ 35 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+    # - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+      - ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open sach %player_name%'
+      - '[close]'   
+  '2b':
+    material: 'ender_portal_frame'
+    slot: 13
+    amount: 1
+    priority: 1
+    display_name: '&7..&5&l✧&d&l✧&5&l✧ &9&l&nHÒM&r &d&lTRUYỀN THUYẾT &5&l✧&d&l✧&5&l✧&7..'
+    lore:
+      - ' &7.&fTiêu diệt các nhện yêu tinh ở lành yêu tinh&7.'
+      - ' &7Nhận ngay vật phẩm &aMắt nhện yêu tinh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &d&lKill 50 Nhện Yêu Tinh'
+      - ' &7khi đạt đủ 35 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+    # - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+      - ' &7▫ &2❖ &aHòm &2❖'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true 
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open homvatpham %player_name%'
+      - '[close]'          
+   #enchantments: 
+     #- KNOCKBACK;1
+   #hide_enchantments: true     
+  '2':
+    material: 'stone_sword'
+    slot: 19
+    priority: 1
+    display_name: '&7..&aVũ Khí&7..'
+    lore:
+      - ' &7.&fTiêu diệt các nhện yêu tinh ở lành yêu tinh&7.'
+      - ' &7Nhận ngay vật phẩm &aMắt nhện yêu tinh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &d&lKill 50 Nhện Yêu Tinh'
+      - ' &7khi đạt đủ 35 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+      - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+     #- ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open kiemhuyenthoai %player_name%'
+      - '[close]'   
+
+  '3':
+    material: 'iron_chestplate'
+    slot: 20
+    priority: 1
+    display_name: '&7..&aGiáp&7..'
+    lore:
+      - ' &7.&fTiêu diệt các nhện yêu tinh ở lành yêu tinh&7.'
+      - ' &7Nhận ngay vật phẩm &aMắt nhện yêu tinh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &d&lKill 50 Nhện Yêu Tinh'
+      - ' &7khi đạt đủ 35 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+      - ' &7▫ &4☗ &cGiáp &4☗'
+     #- ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open sethuyenthoai %player_name%' #ender_portal_frame
+      - '[close]' 
+  '4':
+    material: 'bow'
+    slot: 21
+    priority: 1
+    display_name: '&7..&aCung&7..'
+    lore:
+      - ' &7.&fTiêu diệt các nhện yêu tinh ở lành yêu tinh&7.'
+      - ' &7Nhận ngay vật phẩm &aMắt nhện yêu tinh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &d&lKill 50 Nhện Yêu Tinh'
+      - ' &7khi đạt đủ 35 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+      - ' &7▫ &3✬ &bCung &3✬'
+     #- ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open cunghuyenthoai %player_name%'
+      - '[close]'     
+  '4a':
+    material: 'SHIELD'
+    slot: 22
+    priority: 1
+    display_name: '&7..&6&lKhiên Nhện Yêu Tinh&7..'
+    lore:
+      - ' &7.&fTiêu diệt các nhện yêu tinh ở lành yêu tinh&7.'
+      - ' &7Nhận ngay vật phẩm &aMắt nhện yêu tinh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &d&lKill 50 Nhện Yêu Tinh'
+      - ' &7khi đạt đủ 35 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+      - ' &7▫ &8♡ &7Khiên &8♡'
+     #- ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open shield %player_name%'
+      - '[close]'  
+
+  

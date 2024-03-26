@@ -1,0 +1,9 @@
+HWID: ZUHEP-OC5BR-9KGQO-XQSWK-1WZOK
+knockback:
+  x: 0.97
+  y: 0.93
+  z: 0.97
+doLeafDecay: false
+mobAi: true
+ping: true
+light-updates-max-ms-per-tick: 30

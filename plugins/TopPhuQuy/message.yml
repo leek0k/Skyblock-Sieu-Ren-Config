@@ -1,0 +1,32 @@
+command:
+  player-not-found: '&4[&c!&4] &cKhông tìm thấy người chơi %player%!'
+  invalid-point: '&4[&c!&4] &cĐiểm nhập vào là một con số!'
+  public:
+    first-load: '&2[&a!&2] &aĐang cập nhật bảng xếp hạng!'
+  reload: '&2[&a!&2] &aĐã cài lại file cấu hình!'
+  help:
+  - '&2======== Lệnh Top Phú Quý &2========'
+  - '&f/topphuquy &a- Hiển thị top phú quý' # Permission: topphuquy.command.public
+  - '&f/phuquy add <tên người chơi> <điểm> &a- thêm điểm' # Permission: topphuquy.command.add
+  - '&f/phuquy remove <tên người chơi> <điểm> &a- bớt điểm' # Permission: topphuquy.command.remove
+  - '&f/phuquy set <tên người chơi> <điểm> &a- sửa điểm' # Permission: topphuquy.command.set
+  - '&f/phuquy show <tên người chơi> &a- xem điểm' # Permission: topphuquy.command.show
+  - '&f/phuquy reload &a- Cài lại cấu hình' # Permission: topphuquy.command.reload
+  - '&f/phuquy reset player &a- Xóa thông tin người chơi' # Permission: topphuquy.command.reset.player
+  - '&f/phuquy reset all &a- Xóa toàn bộ thông tin' # Permission: topphuquy.command.reset.all
+  - '&f/phuquy update &a- Cập nhật lại bảng top' # Permission: topphuquy.command.update
+  - '&f/phuquy help &a- Xem hướng dẫn' # Permission: topphuquy.command.help
+  add:
+    success: '&2[&a!&2] &aThêm %point% điểm cho người chơi %player%! Số điểm mới %new_point%!'
+  remove:
+    success: '&2[&a!&2] &aXóa %point% điểm cho người chơi %player%! Số điểm mới %new_point%!'
+  set:
+    success: '&2[&a!&2] &aThiết lập %point% điểm cho người chơi %player%! Số điểm mới %new_point%!'
+  show:
+    success: '&2[&a!&2] &aSố điểm hiện tại của %player% là %point%!'
+  reset:
+    player: '&2[&a!&2] &aReset dữ liệu người chơi %player% thành công!'
+    all:
+      confirm: '&2[&a!&2] &aGõ /phuquy reset all confirm để xác nhận reset!'
+      success: '&2[&a!&2] &aReset toàn bộ dữ liệu thành công!'
+  update: '&2[&a!&2] &aCập nhật dữ liệu thành công!'

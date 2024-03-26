@@ -1,0 +1,150 @@
+# Enable this if you would like MySQL support. Only do this if you know what you are doing
+MySQL:
+  enabled: false
+  host: localhost
+  port: 3306
+  database: sky3_gem
+  username: root
+  password: 1sQSi11SuuSb1mT7mes4
+  table: player_data
+
+
+#Customize each message that gets sent from this plugin
+Messages:
+  prefix: ''
+  mainCommands:
+    - '{prefix} &a/Gems &fbalance &7<Player>'
+    - '{prefix} &a/Gems &fwithdraw &7<Amount>'
+    - '{prefix} &a/Gems &fpay &7<Player> <Amount>'
+    - '{prefix} &a/Gems &fshop'
+    - '{prefix} &a/Gems &fupgrade'
+    - '{prefix} &a/Gems &fversion'
+  adminCommands:
+    - '{prefix} &a/Gems &fadd &7<Player> <Amount>'
+    - '{prefix} &a/Gems &fremove &7<Player> <Amount>'
+    - '{prefix} &a/Gems &fset &7<Player> <Amount>'
+    - '{prefix} &a/Gems &fgive &7<Player> <Amount>'
+    - '{prefix} &a/Gems &freload'
+  
+  usageWithdraw: '{prefix} &cIncorrect usage. &eTry /Gems withdraw <Amount>'
+  usageAdd: '{prefix} &cIncorrect usage. &eTry /Gems add <Player> <Amount>'
+  usageRemove: '{prefix} &cIncorrect usage. &eTry /Gems remove <Player> <Amount>'
+  usageSet: '{prefix} &cIncorrect usage. &eTry /Gems set <Player> <Amount>'
+  usageGive: '{prefix} &cIncorrect usage. &eTry /Gems give <Player> <Amount>'
+  usagePay: '{prefix} &cIncorrect usage. &eTry /Gems pay <Player> <Amount>'
+  myBalance: '{prefix} &aGem balance: &f{balance}'
+  otherBalance: '{prefix} &a{player}''s Gem balance: &f{balance}'
+  redeem: '&6+{amount}☀ Đá quý'
+  withdraw: '&c&l-{amount}x &a&lGems'
+  notEnoughToWithdraw: '{prefix} &cYou do not have enough to withdraw this amount!'
+  invalidAmount: '{prefix} &cPlease specify a number greater than 0!'
+  addSender: '{prefix} &7You have &aadded {amount}x Gems &7to &a{player}''s &7account'
+  addOther: '&6+{amount}☀ Đá quý'
+  removeSender: '{prefix} &7You have &cremoved &a{amount}x Gems &7from &a{player}''s &7account'
+  removeOther: '{prefix} &a{player} &7has &cremoved &a{amount}x Gems &7from your account'
+  unableToRemove: '{prefix} &cThe number you have entered is more than the amount of gems &e{player} &chas'
+  setSender: '{prefix} &7You have &bset &a{player}''s &7gem balance to &b{amount}'
+  setOther: '{prefix} &7Your gem balance has been set to &b{amount}'
+  giveSender: '{prefix} &7You have &egiven &a{amount}x Gems &7to &a{player}'
+  giveOther: '{prefix} &7You have &ereceived &a{amount}x Gems &7from &a{player}'
+  paySender: '{prefix} &7You have &asent &7a payment of &a{amount}x Gems &7to &a{player}'
+  payOther: '{prefix} &7You have &areceived &7a payment of &a{amount}x Gems &7from &a{player}'
+  noSelfPayment: '{prefix} &cYou cannot send gem payments to yourself'
+  notEnoughToPay: '{prefix} &cYou do not have enough to send this amount!'
+  configReloaded: '{prefix} &aConfiguration files have been reloaded!'
+  configReloadError: '{prefix} &cAn error has occurred while trying to reload the config files.'
+  console: '{prefix} &cMust be a player to perform this command'
+  playerNotFound: '{prefix} &cPlayer not found.'
+  noPermission: '{prefix} &cYou do not have permission for that'
+  incorrectUsage: '{prefix} &cThat is not the correct usage. &eCheck /Gem help!'
+  successfulPurchase: '{prefix} &aMua thành công {item}&a!'
+  insufficientFunds: '{prefix} &cBạn không đủ ☀Đá quý☀.'
+  successfulUpgrade: '{prefix} &aNâng thành công&a!'
+  alreadyMaxLevel: '{prefix} &cBạn đã nâng max.'
+  charityMessage: '{prefix} &e{player} &ahas earned a gem and has given some free gems to all online players!'
+  invalidShop: '{prefix} &cThis shop category does not exist: &e{category}'
+  shopAccessDenied: '{prefix} &cYou do not have permission to access this shop. Requires: &e{permission}'
+  shopCategoryDisabled: '{prefix} &cThis shop category is currently disabled!'
+  
+
+#This is where you can configure the sounds for certain events.
+Sounds:
+  redeem:
+    sound: 'ORB_PICKUP' #Leave empty if you don't want a sound to be played
+    volume: 1
+    pitch: 1
+  withdraw:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  gemDropped:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  openShops:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  openUpgrades:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  purchase:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  upgrade:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+
+
+#This is where you can customize the gem that is received
+Gem:
+  material: EMERALD
+  damage: 0
+  glow: true
+  displayName: '&6☀ Đá quý ☀'
+  lore:
+  - ''
+  - '&7Chuột-phải để thêm vào ví.'
+
+
+#This is where you may toggle certain features to either enable them or disable them.
+Toggleable:
+  gemDroppedMessage: true #Set to true to allow messages to appear when receiving gems
+  actionBarMessages: false #Set to true send the player a message via action bar rather than spam their chat when they receive a gem
+  charityMessage: true #Set to true to broadcast a message to all online players when someone's Charity Upgrade gets activated
+  giveCharityToFinder: false #Set to true to allow the player who's Charity Upgrade got activated, to also receive gems from it
+  displayNamesInMessages: false #Set to true to have the names display as the player's nick name when using the '/Gem' commands
+  enableGemVillagerTrades: false #Set this to true to allow players to use gems in villager menus
+  canRedeemGems: true #Set to true to allow players to right-click and redeem gems
+  disableGemWithdraw: false #Set to true to prevent players from running the 'gem withdraw' command and receiving physical gems
+  enableDecimalValues: false #Set to true if you wish for numbers like "123.45" to be supported when displaying numbers in this plugin
+  disableGemShop: false #Set to true if you wish to disable the internal gem shop altogether
+
+
+# This is where you can customize how the '/Gems top' players get shown
+Top-10:
+  start: '&7-----[&aTop 10 Gems&7]-----'
+  value: '&a* &f%player%&a: &f%balance%'
+  end: ''
+
+
+# In seconds, set how often the gem data should be saved to the database.yml (1800 = saved every 30 min)
+data-save-interval: 1800
+
+
+# Default amount of gems each NEW player starts with
+starting-gem-balance: 0
+
+
+# Limit the amount of gems a player can withdraw at once
+withdraw-limit: 2304
+
+
+disable-redeem-on-block:
+  - 'SIGN'
+  - 'CHEST'
+
+

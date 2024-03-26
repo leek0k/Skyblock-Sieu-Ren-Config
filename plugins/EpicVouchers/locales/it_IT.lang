@@ -1,0 +1,35 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&8[&6EpicVouchers&8] '
+# Interface Messages
+interface:
+  confirmsettings:
+    title: '&6Conferma'
+    confirmitemname: '&2&lCONFERMA'
+    confirmitemlore: '&aPremi qui se vuoi confermare la tua azione.'
+    cancelitemname: '&4&lANNULLA'
+    cancelitemlore: '&cPremi qui se vuoi annullare la tua azione.'
+# Command Messages
+command:
+  error:
+    noplayer: '&7Quell''utente è inesiste te o offline.'
+    novoucher: '&cQuesto buono non esiste.'
+    notexist: '&7Il comando che hai inserito è inesistente o scritto male.'
+    notnumber: '&7Impossibile usare quel numero in un importo valido.'
+  reload:
+    success: '&7Ricaricati tutti i file di configurazione e i buoni.'
+  give:
+    send: '&7Hai dato al giocatore &6%player% &7il buono &6%voucher% &7(&6x%amount%&7).'
+    receive: '&7Hai ricevuto il buono &6%voucher% &7(&6x%amount%&7).'
+    cancelled: '&cL''evento è stato annullato.'
+  force:
+    send: '&7Hai forzato il giocatore &6%player% &7a ritirare il buono &6%voucher% &7(&6x%amount%&7).'
+  list:
+    list: '&7Lista di tutti i buoni: &6%list%&7.'
+# Event Messages
+event:
+  general:
+    nopermission: '&cNon hai i permessi per farlo.'
+    cooldown: '&7Per favore aspetta &6%time%&7 secondi prima di riscattare un altro buono.'

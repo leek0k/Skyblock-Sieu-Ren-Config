@@ -1,0 +1,178 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&lChọn môi trường'
+
+pattern:
+  - '$ $ $ $ $ $ $ $ $'
+  - '$ ! # % # & # ~ $'
+  - '$ # @ # ^ # * # $'
+  - '$ $ $ $ $ $ $ $ $'
+
+items:
+  '$':
+    type: STAINED_GLASS_PANE
+    data: 15
+    name: '&f'
+  '!':
+    biome: PLAINS
+    required-permission: ''
+    access:
+      type: GRASS
+      name: '&eThời tiết đồng bằng &a(✔)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+    no-access:
+      type: GRASS
+      name: '&eThời tiết đồng bằng &c(✘)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+  '@':
+    biome: JUNGLE
+    required-permission: ''
+    access:
+      type: SAPLING
+      data: 3
+      name: '&eThời tiết rừng già &a(✔)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+    no-access:
+      type: SAPLING
+      data: 3
+      name: '&eThời tiết rừng già &c(✘)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+  '%':
+    biome: TAIGA
+    required-permission: ''
+    access:
+      type: SNOW
+      name: '&eThời tiết băng giá &a(✔)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+    no-access:
+      type: SNOW
+      name: '&eThời tiết băng giá &c(✘)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+  '^':
+    biome: DESERT
+    required-permission: ''
+    access:
+      type: SAND
+      name: '&eThời tiết sa mạc &a(✔)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+    no-access:
+      type: SAND
+      name: '&eThời tiết sa mạc &c(✘)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+  '&':
+    biome: HELL
+    required-permission: ''
+    access:
+      type: SOUL_SAND
+      name: '&eThời tiết Nether &a(✔)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+    no-access:
+      type: SOUL_SAND
+      name: '&eThời tiết Nether &c(✘)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+  '*':
+    biome: SWAMPLAND
+    required-permission: ''
+    access:
+      type: VINE
+      name: '&eThời tiết đầm lầy &a(✔)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+    no-access:
+      type: VINE
+      name: '&eThời tiết đầm lầy &c(✘)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+  '~':
+    biome: MESA
+    required-permission: ''
+    access:
+      type: CLAY
+      name: '&eThời tiết màu mỡ &a(✔)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+    no-access:
+      type: CLAY
+      name: '&eThời tiết màu mỡ &c(✘)'
+      lore:
+        - '&7Thay đổi môi trường thời tiết trong đảo.'
+
+sounds:
+  '!':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '@':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '%':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '^':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '&':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '*':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '~':
+    access:
+      type: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.8
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2

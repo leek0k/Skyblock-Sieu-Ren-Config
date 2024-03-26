@@ -1,0 +1,231 @@
+# Cập nhật vật phẩm có ID
+auto-update-item:
+  # Thời gian cập nhật vật phẩm theo tick (không thể cập nhật bằng reload)
+  tick-interval: 1
+  # Số lượng người chơi sẽ được cập nhật mỗi tick-interval
+  player-per-tick: 5
+
+# Thời gian tối đa một vật phẩm có thể được tìm kiếm
+# 1s 2m 3h 4d ~ 1 giây 2 phút 3 giờ 4 ngày
+# VD: '1d 6h' - 1 ngày 6 giờ
+search-expire-time: 2d
+
+# Thông báo một vài vật phẩm được tìm thấy cho admin khi vào game
+# Yêu cầu có permission finditem.notify
+notify:
+  delay: 60
+
+# Thiết lập lore cho vật phẩm được gán ID lần đầu
+item-lore:
+  enable: true
+  # Placeholder
+  # %id% - Mã ID vật phẩm
+  format:
+    - ""
+    - "&8&o(#%id%)"
+  # Vị trí đặt format
+  # FIRST Đầu lore
+  # LAST Cuối lore
+  position: LAST
+
+# Xem thông tin thống kê vật phẩm
+statistic-info:
+  # Chọn menu hiển thị
+  menu:
+    # Xem thông tin những item sử dụng gần đây của người chơi
+    item-used-by-player: "statistic-1"
+    # Xem thông tin những người chơi sử dụng gần đây của vật phẩm
+    player-used-by-item: "statistic-2"
+    # Xem thông tin các vật phẩm người chơi sử dụng gần đây để hỗ trợ lấy lại vật phẩm nếu thất lạc
+    lost-item-used-by-player: "lost-item"
+
+# Thiết lập kiểm tra dupe vật phẩm theo id
+dupe-item:
+  # Kích hoạt
+  enable: true
+  # Clear item khi phát hiện dupe
+  clear-item: true
+  # Trả lại vật phẩm khi phát hiện dupe
+  return-item: true
+  # Thời gian kiểm tra dupe theo tick (không thể cập nhật bằng reload)
+  tick-interval: 20
+  # Số lần cảnh cáo trước khi phạt
+  warn-times: 1
+  # Reset số lần cảnh báo (theo giây)
+  warn-reset-time: 60
+  warn-command: []
+  warn-kick-enable: false
+  warn-kick-message: "&cNghi vấn dupe"
+  punish-enable: false
+  punish-command:
+    - "ban %player% 3d &cPhát hiện nghi vấn dupe (Sky3)"
+
+# Tùy chỉnh vật phẩm có id
+item-settings:
+  # Chặn drop vật phẩm có id
+  disable-drop-item: true
+
+# Lấy lại đồ thất lạc
+lost-item:
+  enable: false
+  # Các vật phẩm trong khoảng thời gian này sẽ được lấy lại (theo giây) (1728000 = 20 ngày trước)
+  history-time: 20d
+  # Kiểm tra đồ thất lạc có tồn tại trước khi lấy lại
+  exists-checker:
+    zAuctionHouseV2: true
+    zAuctionHouseV3: true
+    PlayerVaults: true
+    PlayerInventory: true
+  # Lệnh cảnh cáo khi thực thi sos với món đồ đã có trong /ah hoặc /pv
+  warn-commands:
+    []
+    #- 'ban %player% 1d &cVật phẩm đã tồn tại trong /ah hoặc /pv (Vui lòng liên hệ admin để được hỗ trợ)'
+  # Số lần được thực thi lệnh lấy lại đồ thất lạc trong ngày
+  max-sos-per-day: 3
+  # Vật phẩm lấy lại cần được sử dụng trong recent-use-time thời gian gần nhất
+  require-recent-use-time: 30d
+
+# Thiết lập cập nhật vật phẩm theo item-filter khi khởi động server
+# Khuyến khích tắt sau khi cập nhật xong để giải phóng tài nguyên
+startup-update-item: false
+
+# Danh sách các vật phẩm sẽ được tự động thêm ID
+item-filter-whitelist:
+  #Test:
+  # Số lượng vật phẩm tối thiểu
+  #amount: 1
+  # Lọc theo loại vật phẩm
+  # 1.12 - <material> [data]
+  # 1.16 - <material>
+  #material:
+  #- 'STONE'
+  # Lọc theo tên vật phẩm (bỏ qua màu)
+  # Loại
+  # CONTAINS - chỉ cần chứa chữ
+  # EQUALS - so sánh chính xác từng chữ
+  #display-type: CONTAINS
+  #display: ''
+  # Vật phẩm cần display
+  #require-display: false
+  # Lọc theo tên vật phẩm (bỏ qua màu)
+  # Loại
+  # ANY_CONTAINS - chỉ cần chứa bất cứ dòng lore nào bên dưới
+  # ANY_EQUALS - chỉ cần chính xác bất cứ dòng lore nào bên dưới
+  # ALL_CONTAINS - phải chứa tất cả dòng lore bên dưới
+  # ALL_EQUALS - phải chứa chính xác tất cả dòng lore bên dưới
+  #lore-type: ANY_CONTAINS
+  #lore:
+  #- '(Max)'
+  # Vật phẩm cần lore
+  #require-lore: false
+  # Lọc theo enchant
+  # Loại
+  # ANY_MATCH - chỉ cần chứa bất cứ enchant nào bên dưới
+  # ALL_MATCH - phải chứa tất cả enchant bên dưới
+  #enchant-type: ANY_MATCH
+  # So sánh level enchant
+  #enchant-compare: '>='
+  #enchant:
+  #  - 'DURABILITY 10'
+  weapon:
+    require-lore: true
+    material:
+      - WOODEN_HOE
+      - ELYTRA
+      - GOLDEN_SWORD
+      - BOW
+      - GOLD_AXE
+      - STONE_SWORD
+      - DIAMOND_BOOTS
+      - DIAMOND_CHESTPLATE
+      - DIAMOND_HELMET
+      - DIAMOND_LEGGINGS
+      - DIAMOND_AXE
+      - DIAMOND_PICKAXE
+      - DIAMOND_SWORD
+      - GOLDEN_SWORD
+      - GOLD_HELMET
+      - GOLD_CHESTPLATE
+      - GOLD_LEGGINGS
+      - GOLD_BOOTS
+      - LEATHER_HELMET
+      - LEATHER_CHESTPLATE
+      - LEATHER_LEGGINGS
+      - LEATHER_BOOTS
+      - SHIELD
+      - CHAINMAIL_HELMET
+      - CHAINMAIL_CHESTPLATE
+      - CHAINMAIL_LEGGINGS
+      - CHAINMAIL_BOOTS
+      - IRON_HELMET
+      - IRON_CHESTPLATE
+      - IRON_LEGGINGS
+      - IRON_BOOTS
+      - IRON_SWORD
+      - IRON_AXE
+      - SKULL_ITEM
+
+# Danh sách các vật phẩm sẽ không được tự động thêm ID
+item-filter-blacklist:
+  helmet-start:
+    display-type: CONTAINS
+    display: MŨ KHỞI ĐẦU (Thường)
+  chestplate-start:
+    display-type: CONTAINS
+    display: ÁO KHỞI ĐẦU (Thường)
+  leggings-start:
+    display-type: CONTAINS
+    display: QUẦN KHỞI ĐẦU (Thường)
+  boots-start:
+    display-type: CONTAINS
+    display: ỦNG KHỞI ĐẦU (Thường)
+  sword-starter:
+    display-type: CONTAINS
+    display: ..Kiếm Khởi Đầu..
+  hopsodianguc:
+    display-type: CONTAINS
+    display: HỘP SỌ
+  banhchung:
+    display-type: CONTAINS
+    display: Bánh Chưng
+  banhtet:
+    display-type: CONTAINS
+    display: Bánh Tét
+  goiquatet:
+    display-type: CONTAINS
+    display: Gói Quà Tết
+  ruonghe:
+    lore-type: ANY_CONTAINS
+    lore:
+    - 'VẬT PHẨM NGŨ HÀNH'
+# Các inventory có title này sẽ không bị chặn bỏ item vào (có check màu)
+item-blacklist-inventory-title-bypass:
+  - "&6.&8Kho &4#1&6."
+  - "&6.&8Kho &4#2&6."
+  - "&6.&8Kho &4#3&6."
+  - "&6.&8Kho &4#4&6."
+  - "&6.&8Kho &4#5&6."
+  - "&6.&8Kho &4#6&6."
+  - "&6.&8Kho &4#7&6."
+  - "&6.&8Kho &4#8&6."
+  - "&6.&8Kho &4#9&6."
+  - "&6.&8Kho &4#10&6."
+  - "&6.&8Kho &4#11&6."
+  - "&6.&8Kho &4#12&6."
+  - "&6.&8Kho &4#13&6."
+  - "&6.&8Kho &4#14&6."
+  - "&6.&8Kho &4#15&6."
+  - "&6.&8Kho &4#16&6."
+  - "&6.&8Kho &4#17&6."
+  - "&6.&8Kho &4#18&6."
+  - "&6.&8Kho &4#19&6."
+  - "&6.&8Kho &4#20&6."
+lost-item:
+  # Ban người chơi mở chest nhưng gõ được lệnh
+  # Chỉ áp dụng các lệnh chứa chữ matdo
+  ban-player-open-chest-enable: true
+  ban-player-open-chest-message: 
+    - '&cSử dụng hack để lấy lại đồ'
+  #ban-player-open-chest-command: [] # <- không sử dụng command
+  ban-player-open-chest-command: 
+    - 'ban %player% Non Liên Hệ Admin RayJacobs để biết thêm chi tiết !!!'

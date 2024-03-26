@@ -1,0 +1,234 @@
+title: '&6&lBảng xếp hạng phú quý'
+row: 6
+
+# Các loại Condition - Hiển thị vật phẩm nếu trả về đúng
+### PERMISSION <permission>
+### - Trả về đúng nếu người chơi có quyền <permission>
+
+# Các loại Execute - Thực thi câu lệnh khi click vật phẩm
+### CLOSE - Đóng menu
+### PLAYER_COMMAND <command> - Người chơi thực hiện câu lệnh
+### CONSOLE_COMMAND <command> - Console thực hiện câu lệnh
+### PLAYER_MESSAGE <message> - Gửi tin nhắn cho người chơi
+### CONSOLE_MESSAGE <message> - Gửi tin nhắn cho Console
+### PLAY_SOUND <sound> - Chơi nhạc
+
+items:
+  phuquy:
+    item:
+      type: GOLD_INGOT
+      display: '&6&l[&eMenu Phú Quý&6&l]'
+      lore:
+      - '&7Nhấn để mở menu phú quý'
+      - ''
+      - '&7&nLệnh tắt&7: &e/phuquy'
+    slot: 46,52
+    execute:
+      true-execute:
+      - 'CONSOLE_COMMAND dm open phuquy %player_name%'
+  # Hiển thị thông tin bản thân
+  me:
+    item:
+      type: SKULL_ITEM
+      damage: 3
+      display: '&d&l%player_name%'
+      lore:
+      - ''
+      - '&6&l* &eTài Sản Cá Nhân: &7%topphuquy_point% &e✮'
+      - '&6&l* &eTài Sản Nhóm: &7%topphuquy_group_total_point_LANDS% &e✮'
+      - ''
+      - '&6Lands: &b%topphuquy_group_name_LANDS%'
+      - '&6Xếp hạng Lands: &b#%topphuquy_group_top_LANDS%'
+      skull-owner: '%player_name%'
+    slot: 49
+  # Hiển thị thông tin người chơi ở vị trí xếp hạng
+  top-1:
+    item:
+      type: SKULL_ITEM
+      damage: 3
+      display: '&c&l%topphuquy_group_top_LANDS_1% &7(#1)'
+      amount: 1
+      lore:
+      - ''
+      - '&6&l* &eTài Sản: &7%topphuquy_group_point_top_LANDS_1% &e✮'
+      - ''
+      - '&6&l* &aVị trí: &e#1'
+      - ''
+      - '&6&l* &aChủ Lands: &e%topphuquy_group_owner_top_LANDS_1%'
+      - ''
+      - '&6&l* &aThành viên:'
+      - '%topphuquy_group_members_top_LANDS_1%'
+      - ''
+      skull-owner: '%topphuquy_group_owner_top_LANDS_1%'
+    slot: 13
+  top-2:
+    item:
+      type: SKULL_ITEM
+      damage: 3
+      display: '&6&l%topphuquy_group_top_LANDS_2% &7(#2)'
+      amount: 2
+      lore:
+      - ''
+      - '&6&l* &eTài Sản: &7%topphuquy_group_point_top_LANDS_2% &e✮'
+      - ''
+      - '&6&l* &aVị trí: &e#2'
+      - ''
+      - '&6&l* &aChủ Lands: &e%topphuquy_group_owner_top_LANDS_2%'
+      - ''
+      - '&6&l* &aThành viên:'
+      - '%topphuquy_group_members_top_LANDS_2%'
+      - ''
+      skull-owner: '%topphuquy_group_owner_top_LANDS_2%'
+    slot: 21
+  top-3:
+    item:
+      type: SKULL_ITEM
+      damage: 3
+      display: '&e&l%topphuquy_group_top_LANDS_3% &7(#3)'
+      amount: 3
+      lore:
+      - ''
+      - '&6&l* &eTài Sản: &7%topphuquy_group_point_top_LANDS_3% &e✮'
+      - ''
+      - '&6&l* &aVị trí: &e#3'
+      - ''
+      - '&6&l* &aChủ Lands: &e%topphuquy_group_owner_top_LANDS_3%'
+      - ''
+      - '&6&l* &aThành viên:'
+      - '%topphuquy_group_members_top_LANDS_3%'
+      - ''
+      skull-owner: '%topphuquy_group_owner_top_LANDS_3%'
+    slot: 22
+  top-4:
+    item:
+      type: SKULL_ITEM
+      damage: 3
+      display: '&a&l%topphuquy_group_top_LANDS_4% &7(#4)'
+      amount: 4
+      lore:
+      - ''
+      - '&6&l* &eTài Sản: &7%topphuquy_group_point_top_LANDS_4% &e✮'
+      - ''
+      - '&6&l* &aVị trí: &e#4'
+      - ''
+      - '&6&l* &aChủ Lands: &e%topphuquy_group_owner_top_LANDS_4%'
+      - ''
+      - '&6&l* &aThành viên:'
+      - '%topphuquy_group_members_top_LANDS_4%'
+      - ''
+      skull-owner: '%topphuquy_group_owner_top_LANDS_4%'
+    slot: 23
+  top-5:
+    item:
+      type: SKULL_ITEM
+      damage: 3
+      display: '&a&l%topphuquy_group_top_LANDS_5% &7(#5)'
+      amount: 5
+      lore:
+      - ''
+      - '&6&l* &eTài Sản: &7%topphuquy_group_point_top_LANDS_5% &e✮'
+      - ''
+      - '&6&l* &aVị trí: &e#5'
+      - ''
+      - '&6&l* &aChủ Lands: &e%topphuquy_group_owner_top_LANDS_5%'
+      - ''
+      - '&6&l* &aThành viên:'
+      - '%topphuquy_group_members_top_LANDS_5%'
+      - ''
+      skull-owner: '%topphuquy_group_owner_top_LANDS_5%'
+    slot: 28
+  top-6:
+    item:
+      type: SKULL_ITEM
+      damage: 3
+      display: '&a&l%topphuquy_group_top_LANDS_6% &7(#6)'
+      amount: 6
+      lore:
+      - ''
+      - '&6&l* &eTài Sản: &7%topphuquy_group_point_top_LANDS_6% &e✮'
+      - ''
+      - '&6&l* &aVị trí: &e#6'
+      - ''
+      - '&6&l* &aChủ Lands: &e%topphuquy_group_owner_top_LANDS_6%'
+      - ''
+      - '&6&l* &aThành viên:'
+      - '%topphuquy_group_members_top_LANDS_6%'
+      - ''
+      skull-owner: '%topphuquy_group_owner_top_LANDS_6%'
+    slot: 29
+  top-7:
+    item:
+      type: SKULL_ITEM
+      damage: 3
+      display: '&a&l%topphuquy_group_top_LANDS_7% &7(#7)'
+      amount: 7
+      lore:
+      - ''
+      - '&6&l* &eTài Sản: &7%topphuquy_group_point_top_LANDS_7% &e✮'
+      - ''
+      - '&6&l* &aVị trí: &e#7'
+      - ''
+      - '&6&l* &aChủ Lands: &e%topphuquy_group_owner_top_LANDS_7%'
+      - ''
+      - '&6&l* &aThành viên:'
+      - '%topphuquy_group_members_top_LANDS_7%'
+      - ''
+      skull-owner: '%topphuquy_group_owner_top_LANDS_7%'
+    slot: 30
+  top-8:
+    item:
+      type: SKULL_ITEM
+      damage: 3
+      display: '&a&l%topphuquy_group_top_LANDS_8% &7(#8)'
+      amount: 8
+      lore:
+      - ''
+      - '&6&l* &eTài Sản: &7%topphuquy_group_point_top_LANDS_8% &e✮'
+      - ''
+      - '&6&l* &aVị trí: &e#8'
+      - ''
+      - '&6&l* &aChủ Lands: &e%topphuquy_group_owner_top_LANDS_8%'
+      - ''
+      - '&6&l* &aThành viên:'
+      - '%topphuquy_group_members_top_LANDS_8%'
+      - ''
+      skull-owner: '%topphuquy_group_owner_top_LANDS_8%'
+    slot: 32
+  top-9:
+    item:
+      type: SKULL_ITEM
+      damage: 3
+      display: '&a&l%topphuquy_group_top_LANDS_9% &7(#9)'
+      amount: 9
+      lore:
+      - ''
+      - '&6&l* &eTài Sản: &7%topphuquy_group_point_top_LANDS_9% &e✮'
+      - ''
+      - '&6&l* &aVị trí: &e#9'
+      - ''
+      - '&6&l* &aChủ Lands: &e%topphuquy_group_owner_top_LANDS_9%'
+      - ''
+      - '&6&l* &aThành viên:'
+      - '%topphuquy_group_members_top_LANDS_9%'
+      - ''
+      skull-owner: '%topphuquy_group_owner_top_LANDS_9%'
+    slot: 33
+  top-10:
+    item:
+      type: SKULL_ITEM
+      damage: 3
+      display: '&a&l%topphuquy_group_top_LANDS_10% &7(#10)'
+      amount: 10
+      lore:
+      - ''
+      - '&6&l* &eTài Sản: &7%topphuquy_group_point_top_LANDS_1% &e✮'
+      - ''
+      - '&6&l* &aVị trí: &e#10'
+      - ''
+      - '&6&l* &aChủ Lands: &e%topphuquy_group_owner_top_LANDS_10%'
+      - ''
+      - '&6&l* &aThành viên:'
+      - '%topphuquy_group_members_top_LANDS_10%'
+      - ''
+      skull-owner: '%topphuquy_group_owner_top_LANDS_10%'
+    slot: 34

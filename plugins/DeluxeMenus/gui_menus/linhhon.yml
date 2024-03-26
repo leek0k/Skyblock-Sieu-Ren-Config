@@ -1,0 +1,45 @@
+file: linhhon.yml
+menu_title: '&8&lTrao Đổi Linh Hồn'
+open_command: 
+- linhhon
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 9
+update_interval: 1    
+items:
+  'soul':
+    material: EMERALD
+    hide_attributes: true
+    display_name: '&c&lTrao Đổi Linh Hồn'
+    slot: 4
+    lore:
+    - ''
+    - '&7Đang có: &6%math_{elementalgems_balance}[precision:0]% Đá Quý'
+    - '&7Trao đổi toàn bộ thành &c&lNgọc Linh Hồn &a&l[&7%math_{elementalgems_balance}/75*50[precision:0]%&a&l] '
+    - ''
+    - '&c&oLưu ý: Số lẻ sẽ được làm tròn xuống'
+    - '&6&lCần &b10 xu &6&l để sử dụng tính năng này!'
+    - ''
+    - '&0&o#Item menu'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        '1':
+          type: '>='
+          input: '%elementalgems_balance%'
+          output: '1'
+        '2':
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '10'
+          deny_commands:
+          - "[message] &cBạn không đủ 10 xu. Số xu còn lại: %playerpoints_points%"
+      deny_commands:
+        - '[message] &cBạn không đủ Đá Quý!'
+        - '[refresh]'
+    click_commands:
+      - '[console] points take %player_name% 10'
+      - '[close]'
+      - '[console] gems remove %player_name% %elementalgems_balance%<delay=20>'
+      - '[console] ae giveitem %player_name% soulgem 1 %math_{elementalgems_balance}/75*50[precision:0]%<delay=20>'
+      - '[message] &6Số xu còn lại: &b%math_{playerpoints_points}-10[precision:0]%'

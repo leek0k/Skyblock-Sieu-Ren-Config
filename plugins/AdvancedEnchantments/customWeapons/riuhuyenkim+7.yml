@@ -1,0 +1,35 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: 'huyenkim'
+
+# Currently supported are only melee weapons
+material: DIAMOND_AXE
+
+# Weapon's name
+name: '&6☀ &e.&6.&e&lRìu &e๖&e&lHuyền Kim&6.&e. &7(+6) &7[GOLD] &6☀'
+
+# Weapon's lore
+lore:
+  - ''
+  - '&e⛂&6⛁ &e｡&6｡&e&lBÁU VẬT&6｡&e｡ &6⛁&e⛂'
+  - '&6♦ &eBáu vật Huyền Kim quý hiếm'
+  - '&6♦ &eTăng 6% damage'
+  - '&7&o(Mặc full Set Huyền Kim để kích hoạt.)'  
+  - '&0&o#Riuhuyenkim7' 
+
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'sharpness:75'
+  - 'unbreaking:4'
+  - 'looting:3'
+  - 'fire_aspect:3'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:
+  ATTACK:
+    chance: 55
+    effects:
+      - 'INCREASE_DAMAGE:7'

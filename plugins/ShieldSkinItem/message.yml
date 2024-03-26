@@ -1,0 +1,53 @@
+command:
+  player-not-found: '&4[&c!&4] &cKhông tìm thấy người chơi %player%!'
+  reload: '&2[&a!&2] &aĐã cài lại file cấu hình!'
+  help:
+  - '&6======== Lệnh ShieldSkinItem &6========'
+  - '&f/shieldskinitem,ssi give <player> <type> <pattern> &e- Lấy vật phẩm đặc biệt' # Permission: shieldskinitem.command.give
+  - '&f/shieldskinitem,ssi save <pattern> &e- Lưu mẫu khiên/cờ hiệu trên tay' # Permission: shieldskinitem.command.save
+  - '&f/shieldskinitem,ssi get <pattern> &e- Lấy mẫu khiên' # Permission: shieldskinitem.command.get
+  - '&f/shieldskinitem reload &a- Cài lại cấu hình' # Permission: shieldskinitem.command.reload
+  - '&f/shieldskinitem help &a- Xem hướng dẫn' # Permission: shieldskinitem.command.help
+  give:
+    invalid-item: '&4[&c!&4] &cVật phẩm không tồn tại!'
+    success: '&2[&a!&2] &aLấy vật phẩm thành công!'
+  save:
+    invalid-item: '&4[&c!&4] &cChỉ có thể lưu khiên hoặc cờ hiệu!'
+    success: '&2[&a!&2] &aLưu khiên/cờ hiệu thành công!'
+  get:
+    invalid-item: '&4[&c!&4] &cKhông tồn tại khiên/cờ hiệu này!'
+    success: '&2[&a!&2] &aLấy khiên/cờ hiệu thành công!'
+item:
+  remove-skin:
+    return-skin-item: 
+      message: 
+      - '&aTách sơn khỏi khiên thành công!'
+      sound: ENTITY_PLAYER_LEVELUP
+    no-return-skin-item: 
+      message: 
+      - '&aTẩy sơn khỏi khiên thành công!'
+      sound: ENTITY_PLAYER_LEVELUP
+    whitelist-skin: 
+      message:
+      - '&cKhông thể tẩy màu sơn khiên này!'
+      sound: BLOCK_ANVIL_PLACE
+    blacklist-skin: 
+      message:
+      - '&cKhông thể tẩy màu sơn khiên này!'
+      sound: BLOCK_ANVIL_PLACE
+    invalid-skin: 
+      message: 
+      - '&cMàu sơn không tồn tại để tẩy!'
+      sound: BLOCK_ANVIL_PLACE
+    no-skin: 
+      message: 
+      - '&cKhiên chưa được sơn để tẩy!'
+      sound: BLOCK_ANVIL_PLACE
+  skin:
+    shield-has-skin: 
+      message: 
+      - '&cChiếc khiên này đã được sơn trước đó!'
+      sound: BLOCK_ANVIL_PLACE
+    success: 
+      message: '&aSơn khiên thành công!'
+      sound: ENTITY_PLAYER_LEVELUP

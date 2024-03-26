@@ -1,0 +1,137 @@
+messages:
+  prefix: '&a&lThế Giới &8»&r'
+  no-permission: '&cBạn không có quyền làm điều này!'
+  help-player:
+  - '&8&m―――――&8<&b&l Cyber&f&lWorldReset &8>&8&m―――――'
+  - '&8➼ &b/cwr about &fThông tin về plugin.'
+  - '&8➼ &b/cwr help &fXem các lệnh của plugin.'
+  - '&8&m―――――――――――――――――――――――――――――――――'
+  help-admin:
+  - '&8&m―――――&8<&b&l Cyber&f&lWorldReset &8>&8&m―――――'
+  - '&8➼ &b/cwr about &fThông tin về plugin.'
+  - '&8➼ &b/cwr help &fXem các lệnh của plugin.'
+  - '&8➼ &b/cwr reload &fĐang tải lại plugin.'
+  - '&8➼ &b/cwr confirm &fXác nhận.'
+  - '&8➼ &b/cwr reset [<world>] &fTái tạo một thế giới.'
+  - '&8➼ &b/cwr save [<save>] &fSao lưu một thế giới.'
+  - '&8➼ &b/cwr create [<world>] &fTạo một thế giới mới. '
+  - '&8➼ &b/cwr info [<world>] &fThông tin về thế giới đó.'
+  - '&8&m―――――――――――――――――――――――――――――――――'
+  - '&8➼ &b/cwr edit <world> <setting> <value> &fChỉnh sửa cài đặt.'
+  - '&7Vui lòng truy cập trang Spigot để biết chi tiết về chỉnh sửa'
+  - '&7thế giới hoặc sử dụng TAB-complete!'
+  - '&8&m―――――――――――――――――――――――――――――――――'
+  
+  # global
+  kick-reason: '&cThế giới "{world}" đang tái tạo! Vui lòng tham gia lại.'
+  still-regenerating: '&cThế giới đang trong quá trình reset. Vui lòng tham gia lại.'
+  cancel-teleport: '&cThế giới "{world}" đang được tái tạo! Bạn không thể dịch chuyển
+    ngay bây giờ.'
+  teleporting-safe-world: '&7Thế giới này đang reset, bạn sẽ được dịch chuyển đến khu
+    vực an toàn...'
+  teleported-safe-world: '&aBạn đã được dịch chuyển đến khu vực an toàn!'
+  teleporting-back: '&7Bạn đã được dịch chuyển lại thế giới "{world}"...'
+  teleported-back: '&aBạn đã được dịch chuyển trở lại thành công!'
+  
+  # admin
+  reloading: '&7Đang tải lại...'
+  reloaded: '&aTải lại thành công!'
+  default-world-fail: '&cThế giới "{world}" là thế giới mặc định trong (server.properties)!
+    Thế giới này không thể reset'
+  world-not-exist: '&cThế giới "{world}" không tồn tại!'
+  same-world-fail: '&cBạn không thể đặt khu vực an toàn ở thế giới đang reset ("{world}")! '
+  unload-failed: '&cThế giới "{world}" không tải được!'
+  already-resetting: '&cThế giới "{world}" đã được reset!'
+  resetting-error: '&cThế giới đang được thiết lập lại. Hành động này không thể thực
+    hiện!'
+  safeworld-not-set: '&cVui lòng đặt khu vực an toàn tại một thế giới nào đó, trước
+    khi bật tùy chọn safe-world (&7/cwr {world} edit setSafeWorld <world>&c).'
+  invalid-safeworld: '&cThe world cannot be reset with the safe world "{safeWorld}"!
+    Please adjust it (&7/cwr {world} edit setSafeWorld <world>&c).'
+  setup-created: '&aThế giới "{world}" đã được tạo! Chỉnh sửa bằng cách &7/cwr edit
+    <world> <setting> <value>&a.'
+  setup-already-exists: '&cThế giới setup "{world}" already exists! Edit it using &a/cwr
+    edit <world> <setting> <value>&7.'
+  no-setups-found: '&cKhông tìm thấy thế giới nào. Tạo thế giới mới bằng cách &7/cwr
+    create [<world>]&c.'
+  create-invalid-world: '&cThe world "{world}" does not exist! Please create it first
+    (you can use Multiverse).'
+  setup-doesnt-exist: '&cThế giới "{world}" không tồn tại!'
+  saving-world: '&aĐang lưu thế giới "{world}".'
+  save-failed: '&cThế giới "{world}" lưu thất bại!'
+  save-success: '&aThế giới "{world}" đã được lưu!'
+  regen-success: '&aThế giới đã hoàn thành tái tạo!'
+  no-saves: '&cThế giới này vẫn chưa được lưu. Lưu nó bằng cách sử dụng &7/cwr save
+    [<world>]&c.'
+  not-enabled: '&cThế giới này vẫn chưa được kích hoạt. Kích hoạt nó bằng cách &7/cwr
+    edit {world} setEnabled true&c.'
+  no-messages-found: '&cKhông tìm thấy tin nhắn nào, vui lòng thêm một tin nhắn.'
+  invalid-index: '&cĐó là chỉ mục không hợp lệ, vui lòng sử dụng một số trong phạm vi
+    {min} - {max}.'
+  file-delete-failed: '&cThế giới "{world}" xóa thất bại!'
+  world-create-failed: '&cThế giới "{world}" không thể lưu'
+  rolling-back-world: '&aTiến hành khôi phục lại thế giới.'
+  rollback-failed: '&cThế giới "{world}" khôi phục thất bại!'
+  rollback-success: '&aLoading...'
+  confirm-regen: '&7Vui lòng xác nhận rằng bạn muốn tạo lại thế giới "{world}" bằng
+    lệnh &a/cwr confirm &7within {time}.'
+  confirmation-needed: '&cBạn đã chạy lệnh này. Hãy sử dụng &7/cwr confirm &cđể tạo
+    lại!'
+  confirmation-expired: '&cXác nhận tạo lại thế giới "{world}" đã hết hạn!'
+  confirmation-not-required: '&cBạn không có gì để xác nhận.'
+  invalid-command: '&cLệnh không hợp lệ!'
+  setting-set-failed: '&cKhông thể ghi cài đặt vào cấu hình thế giới.'
+  setting-set-success: '&aCài đặt đã được cập nhật thành công.'
+  custom-generator-warning: '&6Hãy đảm bảo thêm trình tạo này vào bukkit.yml, nếu không
+    các phần có thể gây lỗi sau khi khởi động lại.'
+  
+  # info strings
+  info-header: '&8&m―――――&8<&b&l {world} &8>&8&m―――――'
+  info-enabled: 'Đã bật: {boolean}'
+  info-last-saved: 'Lần cuối lưu: {boolean}'
+  info-seed: 'Seed: {seed}'
+  info-generator: 'Generator: {generator}'
+  info-environment: 'Môi trường: {environment}'
+  info-headers:
+  - Thông tin cơ bản
+  - Hẹn giờ
+  - Tin nhắn
+  - Thế giới an toàn
+  - Cảnh báo
+  - ' Thời gian'
+  - Lệnh
+  info-list-header: '&b{header}:'
+  info-list-format: '&8  - &f{id}: &7{value}'
+  info-safe-world-enabled: '&f  Đã bật: &7{enabled}'
+  info-safe-world-world: '&f  Thế giới: &7{world}'
+  info-safe-world-delay: '&f  Trì hoãn: &7{delay}'
+  info-safe-world-spawn: '&f  Spawn: &7{spawn}'
+  info-warning: '&f  Đã bật: &7{enabled}'
+  info-title: '&f  Tiêu đề: &7{title}'
+  info-subtitle: '&f  Phụ đề: &7{subtitle}'
+  info-footer: '&8&m―――――――――――――――――――――――――'
+  
+  # world list strings
+  list-header: '&8&m―――――&8<&b&l Thế giới &8>&8&m―――――'
+  list-info: '&8➼ &b{world} &7- Đã bật: &f{enabled}'
+  list-footer: '&8&m―――――――――――――――――――――――――'
+
+time:
+  # time formats
+  days: '&a{time} Ngày'
+  hours: '&a{time} Giờ'
+  minutes: '&a{time} Phút'
+  seconds: '&a{time} Giây'
+  splitter: '&a, '
+
+placeholder-api:
+  reset-status:
+    countdown: '&aReset trong: {formattedTime}'
+    # internal placeholders: {seconds} {formattedTime} {world}
+    no-running-timers: '&cKhông có bộ hẹn giờ nào chạy'
+    initializing: '&6Đang khởi tạo...'
+    starting: '&eBắt đầu...'
+    progress: '&aETA: {formattedTime} ({chunkNumber}/{chunkTotal}) [{percent}%]'
+    # internal placeholders: {seconds} {formattedTime} {percent} {tps} {chunkNumber} {chunkTotal} {world}
+    finishing: '&aHoàn tất...'
+    invalid-world: '&cThế giới không hợp lệ'

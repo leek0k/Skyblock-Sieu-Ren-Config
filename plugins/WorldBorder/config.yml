@@ -1,0 +1,85 @@
+cfg-version: 11
+message: '&cYou have reached the edge of this world.'
+round-border: true
+debug-mode: false
+whoosh-effect: true
+portal-redirection: true
+knock-back-dist: 3.0
+timer-delay-ticks: 5
+remount-delay-ticks: 0
+dynmap-border-enabled: true
+dynmap-border-message: The border of the world.
+player-killed-bad-spawn: false
+deny-enderpearl: true
+fill-autosave-frequency: 30
+bypass-list-uuids: []
+fill-memory-tolerance: 500
+prevent-block-place: false
+prevent-mob-spawn: false
+worlds:
+  dugeon1:
+    x: -287.943883476841
+    z: 1137.7200154798525
+    radiusX: 150
+    radiusZ: 150
+    wrapping: false
+  dugeon2:
+    x: -1331.5642007226888
+    z: -3206.105331082824
+    radiusX: 150
+    radiusZ: 150
+    wrapping: false
+  dugeon3:
+    x: 1180.306012963715
+    z: -282.8201614781802
+    radiusX: 150
+    radiusZ: 150
+    wrapping: false
+  map2:
+    x: 464.4496231336671
+    z: -1111.4799124403892
+    radiusX: 95
+    radiusZ: 95
+    wrapping: false
+  map3:
+    x: 937.6016608123022
+    z: -530.4437402274505
+    radiusX: 55
+    radiusZ: 55
+    wrapping: false
+  survival:
+    x: 221.9389082248708
+    z: 94.84300766646115
+    radiusX: 20
+    radiusZ: 20
+    wrapping: false
+  tp:
+    x: 119.85184214310019
+    z: 215.4734550124842
+    radiusX: 3000
+    radiusZ: 3000
+    wrapping: false
+  sinhton:
+    x: -133.5
+    z: 291.05426940553787
+    radiusX: 3000
+    radiusZ: 3000
+    wrapping: false
+  Rung:
+    x: -1083.312716730997
+    z: -882.2298475438266
+    radiusX: 300
+    radiusZ: 300
+    wrapping: false
+  Rungxanh:
+    x: -1076.4528599678556
+    z: -892.4243188076865
+    radiusX: 300
+    radiusZ: 300
+    wrapping: false
+  Dugeon2:
+    x: -1338.4626808859025
+    z: -3212.914762676053
+    radiusX: 100
+    radiusZ: 100
+    wrapping: false

@@ -1,0 +1,670 @@
+file: congnap.yml
+menu_title: '&8&lĐổi Điểm Phú Quý'
+open_command: 
+- taisan
+- congnap
+- phuquy
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 54
+update_interval: 1
+open_requirement: 
+items:
+  # iron = 15 ; gold = 50 ; diamond = 100 ; emerald = 125 ; sponge = 20000 ; Enderportal = 48000 
+  'background':
+    material: STAINED_GLASS_PANE
+    data: 0
+    display_name: ' '
+    slots:
+    - '0'
+    - '8'
+    - '45'
+    - '53'
+  'background2':
+    material: STAINED_GLASS_PANE
+    data: 5
+    priority: 2
+    display_name: ' '
+    slots:
+    - '1-3'
+    - '5-7'
+    - '9'
+    - '17-18'
+    - '26-27'
+    - '35-36'
+    - '44'
+    - '48'
+    - '46'
+    - '50'
+    - '51'
+    - '47'
+    - '52'
+  'icon':
+    material: WATCH
+    display_name: '&e&lĐổi Điếm Phú Quý Là Gì ?'
+    slot: 4
+    lore:
+    - '&7Đây là hệ thống tính điểm hoàn toàn mới'
+    - '&7cho phép bạn đua top linh hoạt hơn'
+  'exit':
+    material: SIGN
+    display_name: '&6&l[&eXem Bảng Top&6&l]'
+    slot: 49
+    lore:
+    - '&7Nhấn để xem bảng top'
+    - ''
+    - '&7&nLệnh tắt&7: &e/topphuquy'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[close]'
+    - '[message] &2[&a!&2]&a Đang cập nhật top...'
+    - '[player] topphuquy<delay=5>'
+  'Iron':
+    material: IRON_BLOCK
+    slot: 10
+    priority: 2
+    update: true
+    display_name: '&f&lKhối Sắt'
+    lore:
+    - '§7(Chuột trái) để đổi &6x1 &e(+15 điểm)'
+    - '§7(Chuột phải) để đổi &6x64 &e(+960 điểm)'
+    - '§7(Chuột giữa) để đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:iron_block,strict}*15[precision:0]% điểm)'
+    - ''
+    - '&7(&61 Khối Sắt &7= &e15 điểm&7)'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &4[&c!&4] &cKhông đủ &f&lKhối Sắt &cđể đổi!"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+  'Iron1':
+    material: IRON_BLOCK
+    slot: 10
+    priority: 1
+    update: true
+    display_name: '&f&lKhối Sắt'
+    lore:
+    - '§7(Chuột trái) để đổi &6x1 &e(+15 điểm)'
+    - '§7(Chuột phải) để đổi &6x64 &e(+960 điểm)'
+    - '§7(Chuột giữa) để đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:iron_block,strict}*15[precision:0]% điểm)'
+    - ''
+    - '&7(&61 Khối Sắt &7= &e15 điểm&7)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      requirements:
+        '1':
+          type: string equals
+          input: '%checkitem_mat:iron_block,strict%'
+          output: 'yes'
+    left_click_requirement:
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:iron_block,amt:1,strict%'
+          output: '1'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông đủ &6x1 &f&lKhối Sắt &cđể đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    left_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"white","text":" (♦)"}],"color":"red","text":"-1"}'
+    - "[message] &f(♦) &8- &bĐổi thành công! &7(+15 điểm)"
+    - "[console] phuquy add %player_name% 15"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+    right_click_requirement:
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:iron_block,amt:64,strict%'
+          output: '64'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông đủ &6x64 &f&lKhối Sắt &cđể Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    right_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"white","text":" (♦)"}],"color":"red","text":"-64"}'
+    - "[message] &f(♦) &8- &bĐổi thành công! &7(+960 điểm)"
+    - "[console] phuquy add %player_name% 960"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+    middle_click_requirement:
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:iron_block,strict%'
+          output: '1'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông có bất kỳ &f&lKhối Sắt &cnào để Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    middle_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"white","text":" (♦)"}],"color":"red","text":"-%checkitem_amount_mat:iron_block,strict%"}'
+    - "[message] &f(♦) &8- &bĐổi thành công! &7(+%math_{checkitem_amount_mat:iron_block,strict}*15[precision:0]% điểm)"
+    - "[console] phuquy add %player_name% %math_{checkitem_amount_remove_mat:iron_block,strict}*15[precision:0]%"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+  'GOLD':
+    material: GOLD_BLOCK
+    slot: 11
+    priority: 2
+    update: true
+    display_name: '&e&lKhối Vàng'
+    lore:
+    - '§7(Chuột trái) để Đổi &6x1 &e(+50 điểm)'
+    - '§7(Chuột phải) để Đổi &6x64 &e(+3200 điểm)'
+    - '§7(Chuột giữa) để Đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:gold_block,strict}*50[precision:0]% điểm)'
+    - ''
+    - '&7(&61 Khối Vàng &7= &e50 điểm&7)'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &4[&c!&4] &cKhông đủ &e&lKhối Vàng &cđể Đổi!"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+  'GOLD1':
+    material: GOLD_BLOCK
+    slot: 11
+    priority: 1
+    update: true
+    display_name: '&e&lKhối Vàng'
+    lore:
+    - '§7(Chuột trái) để Đổi &6x1 &e(+50 điểm)'
+    - '§7(Chuột phải) để Đổi &6x64 &e(+3200 điểm)'
+    - '§7(Chuột giữa) để Đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:gold_block,strict}*50[precision:0]% điểm)'
+    - ''
+    - '&7(&61 Khối Vàng &7= &e50 điểm&7)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      requirements:
+        '1':
+          type: string equals
+          input: '%checkitem_mat:gold_block,strict%'
+          output: 'yes'
+    left_click_requirement:
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:gold_block,amt:1,strict%'
+          output: '1'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông đủ &6x1 &e&lKhối Vàng &cđể Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    left_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"yellow","text":" (♦)"}],"color":"red","text":"-1"}'
+    - "[message] &e(♦) &8- &bĐổi thành công! &7(+50 điểm)"
+    - "[console] phuquy add %player_name% 50"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+    right_click_requirement:
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:gold_block,amt:64,strict%'
+          output: '64'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông đủ &6x64 &e&lKhối Vàng &cđể Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    right_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"yellow","text":" (♦)"}],"color":"red","text":"-64"}'
+    - "[message] &e(♦) &8- &bĐổi thành công! &7(+3200 điểm)"
+    - "[console] phuquy add %player_name% 3200"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+    middle_click_requirement:
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:gold_block,strict%'
+          output: '1'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông có bất kỳ &e&lKhối Vàng &cnào để Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    middle_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"yellow","text":" (♦)"}],"color":"red","text":"-%checkitem_amount_mat:gold_block,strict%"}'
+    - "[message] &e(♦) &8- &bĐổi thành công! &7(+%math_{checkitem_amount_mat:gold_block,strict}*50[precision:0]% điểm)"
+    - "[console] phuquy add %player_name% %math_{checkitem_amount_remove_mat:gold_block,strict}*50[precision:0]%"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+  'DIAMOND':
+    material: DIAMOND_BLOCK
+    slot: 12
+    priority: 2
+    update: true
+    display_name: '&b&lKhối Kim Cương'
+    lore:
+    - '§7(Chuột trái) để Đổi &6x1 &e(+100 điểm)'
+    - '§7(Chuột phải) để Đổi &6x64 &e(+6400 điểm)'
+    - '§7(Chuột giữa) để Đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:diamond_block,strict}*100[precision:0]% điểm)'
+    - ''
+    - '&7(&61 Khối Kim Cương &7= &e100 điểm&7)'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &4[&c!&4] &cKhông đủ &b&lKhối Kim Cương &cđể Đổi!"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+  'DIAMOND1':
+    material: DIAMOND_BLOCK
+    slot: 12
+    priority: 1
+    update: true
+    display_name: '&b&lKhối Kim Cương'
+    lore:
+    - '§7(Chuột trái) để Đổi &6x1 &e(+100 điểm)'
+    - '§7(Chuột phải) để Đổi &6x64 &e(+6400 điểm)'
+    - '§7(Chuột giữa) để Đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:diamond_block,strict}*100[precision:0]% điểm)'
+    - ''
+    - '&7(&61 Khối Kim Cương &7= &e100 điểm&7)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      requirements:
+        '1':
+          type: string equals
+          input: '%checkitem_mat:diamond_block,strict%'
+          output: 'yes'
+    left_click_requirement:
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_block,amt:1,strict%'
+          output: '1'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông đủ &6x1 &b&lKhối Kim Cương &cđể Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    left_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"aqua","text":" (♦)"}],"color":"red","text":"-1"}'
+    - "[message] &a(♦) &8- &bĐổi thành công! &7(+100 điểm)"
+    - "[console] phuquy add %player_name% 100"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+    right_click_requirement:
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_block,amt:64,strict%'
+          output: '64'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông đủ &6x64 &b&lKhối Kim Cương &cđể Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    right_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"aqua","text":" (♦)"}],"color":"red","text":"-64"}'
+    - "[message] &a(♦) &8- &bCống nạp thành công! &7(+6400 điểm)"
+    - "[console] phuquy add %player_name% 6400"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+    middle_click_requirement:
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_block,strict%'
+          output: '1'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông có bất kỳ &b&lKhối Kim Cương &cnào để Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    middle_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"aqua","text":" (♦)"}],"color":"red","text":"-%checkitem_amount_mat:diamond_block,strict%"}'
+    - "[message] &a(♦) &8- &bĐổi thành công! &7(+%math_{checkitem_amount_mat:diamond_block,strict}*100[precision:0]% điểm)"
+    - "[console] phuquy add %player_name% %math_{checkitem_amount_remove_mat:diamond_block,strict}*100[precision:0]%"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+  'EMERALD':
+    material: EMERALD_BLOCK
+    slot: 13
+    priority: 2
+    update: true
+    display_name: '&a&lKhối Lục Bảo'
+    lore:
+    - '§7(Chuột trái) để Đổi &6x1 &e(+125 điểm)'
+    - '§7(Chuột phải) để Đổi &6x64 &e(+8000 điểm)'
+    - '§7(Chuột giữa) để Đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:emerald_block,strict}*125[precision:0]% điểm)'
+    - ''
+    - '&7(&61 Khối Lục Bảo &7= &e125 điểm&7)'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &4[&c!&4] &cKhông đủ &a&lKhối Lục Bảo &cđể Đổi!"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+  'EMERALD1':
+    material: EMERALD_BLOCK
+    slot: 13
+    priority: 1
+    update: true
+    display_name: '&a&lKhối Lục Bảo'
+    lore:
+    - '§7(Chuột trái) để Đổi &6x1 &e(+125 điểm)'
+    - '§7(Chuột phải) để Đổi &6x64 &e(+8000 điểm)'
+    - '§7(Chuột giữa) để Đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:emerald_block,strict}*125[precision:0]% điểm)'
+    - ''
+    - '&7(&61 Khối Lục Bảo &7= &e125 điểm&7)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      requirements:
+        '1':
+          type: string equals
+          input: '%checkitem_mat:emerald_block,strict%'
+          output: 'yes'
+    left_click_requirement:
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:emerald_block,amt:1,strict%'
+          output: '1'
+      deny_commands:
+      - '[console] title %player_name% actionbar {"extra":[{"color":"green","text":" (♦)"}],"color":"red","text":"-1"}'
+      - "[message] &4[&c!&4] &cKhông đủ &6x1 &a&lKhối Lục Bảo &cđể Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    left_click_commands:
+    - "[message] &a(♦) &8- &bĐổi thành công! &7(+125 điểm)"
+    - "[console] phuquy add %player_name% 125"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+    right_click_requirement:
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:emerald_block,amt:64,strict%'
+          output: '64'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông đủ &6x64 &a&lKhối Lục Bảo &cđể Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    right_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"green","text":" (♦)"}],"color":"red","text":"-64"}'
+    - "[message] &a(♦) &8- &bĐổi thành công! &7(+8000 điểm)"
+    - "[console] phuquy add %player_name% 8000"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+    middle_click_requirement:
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:emerald_block,strict%'
+          output: '1'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông có bất kỳ &a&lKhối Lục Bảo &cnào để Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    middle_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"green","text":" (♦)"}],"color":"red","text":"-%checkitem_amount_mat:emerald_block,strict%"}'
+    - "[message] &a(♦) &8- &bĐổi thành công! &7(+%math_{checkitem_amount_mat:emerald_block,strict}*125[precision:0]% điểm)"
+    - "[console] phuquy add %player_name% %math_{checkitem_amount_remove_mat:emerald_block,strict}*125[precision:0]%"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+  'SPONGE':
+    material: SPONGE
+    slot: 14
+    priority: 2
+    update: true
+    display_name: '&6&lKhối Bọt Biển'
+    lore:
+    - '§7(Chuột trái) để Đổi &6x1 &e(+20000 điểm)'
+    - '§7(Chuột phải) để Đổi &6x64 &e(+1280000 điểm)'
+    - '§7(Chuột giữa) để Đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:sponge,strict}*20000[precision:0]% điểm)'
+    - ''
+    - '&7(&61 Khối Bọt Biển &7= &e20000 điểm&7)'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &4[&c!&4] &cKhông đủ &6&lKhối Bọt Biển &cđể Đổi!"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+  'SPONGE1':
+    material: SPONGE
+    slot: 14
+    priority: 1
+    update: true
+    display_name: '&6&lKhối Bọt Biển'
+    lore:
+    - '§7(Chuột trái) để Đổi &6x1 &e(+20000 điểm)'
+    - '§7(Chuột phải) để Đổi &6x64 &e(+1280000 điểm)'
+    - '§7(Chuột giữa) để Đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:sponge,strict}*20000[precision:0]% điểm)'
+    - ''
+    - '&7(&61 Khối Bọt Biển &7= &e20000 điểm&7)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      requirements:
+        '1':
+          type: string equals
+          input: '%checkitem_mat:sponge,strict%'
+          output: 'yes'
+    left_click_requirement:
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:sponge,amt:1,strict%'
+          output: '1'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông đủ &6x1 &6&lKhối Bọt Biển &cđể Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    left_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"gold","text":" (♦)"}],"color":"red","text":"-1"}'
+    - "[message] &6(♦) &8- &bĐổi thành công! &7(+20000 điểm)"
+    - "[console] phuquy add %player_name% 20000"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+    right_click_requirement:
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:sponge,amt:64,strict%'
+          output: '64'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông đủ &6x64 &6&lKhối Bọt Biển &cđể Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    right_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"gold","text":" (♦)"}],"color":"red","text":"-64"}'
+    - "[message] &6(♦) &8- &bĐổi thành công! &7(+1280000 điểm)"
+    - "[console] phuquy add %player_name% 1280000"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+    middle_click_requirement:
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:sponge,strict%'
+          output: '1'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông có bất kỳ &6&lKhối Bọt Biển &cnào để Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    middle_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"gold","text":" (♦)"}],"color":"red","text":"-%checkitem_amount_mat:sponge,strict%"}'
+    - "[message] &6(♦) &8- &bĐổi thành công! &7(+%math_{checkitem_amount_mat:sponge,strict}*20000[precision:0]% điểm)"
+    - "[console] phuquy add %player_name% %math_{checkitem_amount_remove_mat:sponge,strict}*20000[precision:0]%"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+  'ENDER_PORTAL_FRAME':
+    material: ENDER_PORTAL_FRAME
+    slot: 15
+    priority: 2
+    update: true
+    display_name: '&2&lCổng Kết Thúc'
+    lore:
+    - '§7(Chuột trái) để Đổi &6x1 &e(+48000 điểm)'
+    - '§7(Chuột phải) để Đổi &6x64 &e(+3072000 điểm)'
+    - '§7(Chuột giữa) để Đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:ender_portal_frame,strict}*48000[precision:0]% điểm)'
+    - ''
+    - '&7(&61 Cổng Kết Thúc &7= &e48000 điểm&7)'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &4[&c!&4] &cKhông đủ &2&lCổng Kết Thúc &cđể Đổi!"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+  'ENDER_PORTAL_FRAME1':
+    material: ENDER_PORTAL_FRAME
+    slot: 15
+    priority: 1
+    update: true
+    display_name: '&2&lCổng Kết Thúc'
+    lore:
+    - '§7(Chuột trái) để Đổi &6x1 &e(+48000 điểm)'
+    - '§7(Chuột phải) để Đổi &6x64 &e(+3072000 điểm)'
+    - '§7(Chuột giữa) để Đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:ender_portal_frame,strict}*48000[precision:0]% điểm)'
+    - ''
+    - '&7(&61 Cổng Kết Thúc &7= &e48000 điểm&7)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      requirements:
+        '1':
+          type: string equals
+          input: '%checkitem_mat:ender_portal_frame,strict%'
+          output: 'yes'
+    left_click_requirement:
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:ender_portal_frame,amt:1,strict%'
+          output: '1'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông đủ &6x1 &2&lCổng Kết Thúc &cđể Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    left_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"dark_green","text":" (♦)"}],"color":"red","text":"-1"}'
+    - "[message] &2(♦) &8- &bĐổi thành công! &7(+48000 điểm)"
+    - "[console] phuquy add %player_name% 48000"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+    right_click_requirement:
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:ender_portal_frame,amt:64,strict%'
+          output: '64'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông đủ &6x64 &2&lCổng Kết Thúc &cđể Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    right_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"dark_green","text":" (♦)"}],"color":"red","text":"-64"}'
+    - "[message] &2(♦) &8- &bĐổi thành công! &7(+3072000 điểm)"
+    - "[console] phuquy add %player_name% 3072000"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+    middle_click_requirement:
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:ender_portal_frame,strict%'
+          output: '1'
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông có bất kỳ &2&lCổng Kết Thúc &cnào để Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    middle_click_commands:
+    - '[console] title %player_name% actionbar {"extra":[{"color":"dark_green","text":" (♦)"}],"color":"red","text":"-%checkitem_amount_mat:ender_portal_frame,strict%"}'
+    - "[message] &2(♦) &8- &bĐổi thành công! &7(+%math_{checkitem_amount_mat:ender_portal_frame,strict}*48000[precision:0]% điểm)"
+    - "[console] phuquy add %player_name% %math_{checkitem_amount_remove_mat:ender_portal_frame,strict}*48000[precision:0]%"
+    - "[refresh]"
+    - "[refresh]<delay=1>"
+  "all":
+    material: BUCKET
+    slot: 37
+    priority: 2
+    update: true
+    display_name: '&4&l[Đổi Điểm Phú Quý Toàn Bộ]'
+    lore:
+    - '§7Nhấn vào để Đổi toàn bộ khối khoáng sản'
+    - '&7(&61 Khối Sắt &7= &e15 điểm&7)'
+    - '&7(&61 Khối Vàng &7= &e50 điểm&7)'
+    - '&7(&61 Khối Kim Cương &7= &e100 điểm&7)'
+    - '&7(&61 Khối Lục Bảo &7= &e125 điểm&7)'
+    - ''
+    - '§7(Nhấn) để Đổi &6Toàn bộ &e(+0 điểm)'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[refresh]'
+  "all2":
+    material: BUCKET
+    slot: 37
+    priority: 1
+    update: true
+    display_name: '&4&l[Đổi Điểm Phú Quý Toàn Bộ]'
+    lore:
+    - '§7Nhấn vào để Đổi toàn bộ khối khoáng sản'
+    - '&7(&61 Khối Sắt &7= &e15 điểm&7)'
+    - '&7(&61 Khối Vàng &7= &e50 điểm&7)'
+    - '&7(&61 Khối Kim Cương &7= &e100 điểm&7)'
+    - '&7(&61 Khối Lục Bảo &7= &e125 điểm&7)'
+    - ''
+    - '§7(Nhấn) để Đổi &6Toàn bộ &e(+%math_{checkitem_amount_mat:iron_block,strict}*15+{checkitem_amount_mat:gold_block,strict}*50+{checkitem_amount_mat:diamond_block,strict}*100+{checkitem_amount_mat:emerald_block,strict}*125[precision:0]% điểm)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        '1':
+          type: string equals
+          input: '%checkitem_mat:iron_block,strict%'
+          output: 'yes'
+          optional: true
+        '2':
+          type: string equals
+          input: '%checkitem_mat:gold_block,strict%'
+          output: 'yes'
+          optional: true
+        '3':
+          type: string equals
+          input: '%checkitem_mat:diamond_block,strict%'
+          output: 'yes'
+          optional: true
+        '4':
+          type: string equals
+          input: '%checkitem_mat:emerald_block,strict%'
+          output: 'yes'
+          optional: true
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        '1':
+          type: string equals
+          input: '%checkitem_mat:iron_block,strict%'
+          output: 'yes'
+          optional: true
+        '2':
+          type: string equals
+          input: '%checkitem_mat:gold_block,strict%'
+          output: 'yes'
+          optional: true
+        '3':
+          type: string equals
+          input: '%checkitem_mat:diamond_block,strict%'
+          output: 'yes'
+          optional: true
+        '4':
+          type: string equals
+          input: '%checkitem_mat:emerald_block,strict%'
+          output: 'yes'
+          optional: true
+      deny_commands:
+      - "[message] &4[&c!&4] &cKhông có bất kỳ khối khoáng sản nào để Đổi!"
+      - "[refresh]"
+      - "[refresh]<delay=1>"
+    click_commands:
+    - "[message] &4(♦) &8- &bĐổi thành công! &7(+%math_{checkitem_amount_mat:iron_block,strict}*15+{checkitem_amount_mat:gold_block,strict}*50+{checkitem_amount_mat:diamond_block,strict}*100+{checkitem_amount_mat:emerald_block,strict}*125[precision:0]% điểm)"
+    - "[message] &f%checkitem_amount_mat:iron_block,strict% (♦) &7, &e%checkitem_amount_mat:gold_block,strict% (♦) &7, &b%checkitem_amount_mat:diamond_block,strict% (♦) &7, &a%checkitem_amount_mat:emerald_block,strict% (♦)"
+    - "[console] phuquy add %player_name% %math_{checkitem_amount_remove_mat:iron_block,strict}*15+{checkitem_amount_remove_mat:gold_block,strict}*50+{checkitem_amount_remove_mat:diamond_block,strict}*100+{checkitem_amount_remove_mat:emerald_block,strict}*125[precision:0]%"
+    - "[refresh]"
+    - "[refresh]<delay=1>"

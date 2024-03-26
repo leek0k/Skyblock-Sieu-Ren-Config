@@ -1,0 +1,730 @@
+#########################################################################################
+#                                                                                       #
+# Scyther, a premium resource by Norska#1933 [ID: 253886847690866688]                   #
+#                                                                                       #
+# Wiki: https://norska.dev/docs/welcome                                                 #
+# Support: https://norska.dev/discord                                                   #
+#                                                                                       #
+# You are editing the messages.yml file of Scyther.                                     #
+#                                                                                       #
+#########################################################################################
+
+#########################################################################################
+#                                                                                       #
+# NOTE: PLEASE READ BEFORE CONFIGURING!                                                 #
+#                                                                                       #
+# If PlaceholderAPI is installed you can use any placeholder inside Scyther's messages, #
+# make sure to properly install any extension using /papi ecloud.                       #
+#                                                                                       #
+# Placeholders that are inside {} (e.g {0}, {1}) are local placeholders from Scyther.   #
+# To use PAPI's placeholders, use them normally, like %player_gamemode%, etc.           #
+#                                                                                       #
+# Scopes:                                                                               #
+# 1) Global -> All online players will get the message.                                 #
+# 2) User -> User that executed commands/triggered event will get the message.          #
+# 3) Limited -> Only users/systems with specific perms will get the message.            #
+#                                                                                       #
+# Note: Scopes are per message and cannot be manually altered.                          #                                                       
+#                                                                                       #
+#########################################################################################
+
+messages:
+
+   # Note: Use {PREFIX} in any message to add the below prefix!
+   prefix: "&r"
+   
+   EVENT_HOE_AUTOSELL:
+   # Placeholders: 
+   # {0} = money
+   # {1} = boosted money
+   # {2} = boost percentage
+   # {3} = taxed money
+   # {4} = tax percentage
+   # {5} = amount
+   # {6} = experience
+   # {7} = experience to level
+   # {8} = uses
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - 'Would keep disabled because it can get too spammy!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '&f» +&a${0} &7- &fSố lượng bán: &ax{5} &7- &fSố lượng dùng còn: &a{8}'
+      titles:
+         enabled: false
+         titleContent: 'Read below' 
+         subtitleContent: 'Would keep disabled because it can get too spammy!'
+         
+   EVENT_HOE_AUTOCOLLECT:
+   # Placeholders: 
+   # {0} = amount
+   # {1} = experience
+   # {2} = experience to level
+   # {3} = uses
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - 'Would keep disabled because it can get too spammy!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '&f» &fThu thập: &a+{0} &7- &fSố lượng dùng còn: &a{3}'
+      titles:
+         enabled: false
+         titleContent: 'Read below' 
+         subtitleContent: 'Would keep disabled because it can get too spammy!'
+
+   EVENT_HOE_LEVELUP:
+   # Placeholders: {0} = level
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - '{PREFIX} &f» &fYour harvester hoe just reached &aLevel {0}&f!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '&f» &7[&e&l↑&7] &fCuốc tiên của bạn đã đạt &aLevel {0}&f!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fYour harvester hoe just reached &aLevel {0}&f!'
+         
+   EVENT_HOE_BREAK:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - '&f» &fBạn đã hết số lần sử dụng Cuốc tiên!'
+         - ''
+      actionbar:
+         enabled: false
+         content: '&f» &fBạn đã hết số lần sử dụng Cuốc tiên!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fYour harvester hoe broke!'
+  
+   EVENT_SELL_BINDING_NOT_OWNER:
+   # Placeholders: {0} = owner
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fYou do not own this harvester and cannot use it!'
+         - ''
+      actionbar:
+         enabled: true
+         content: "&f» &fĐây là cuốc tiên của &c{0}. Bạn không thể dùng!" 
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fThis is not your harvester, you cannot use it!'
+        
+   EVENT_HOE_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - '{PREFIX} &f» &fYou do not have permission to use harvester hoes!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '&f» &fKhông có quyền!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fNo permission to use harvester hoes!'
+         
+   EVENT_HOE_NOPERMISSION_AUTOCOLLECT:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - '{PREFIX} &f» &fYou do not have permission to use autocollect!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '&f» &fKhông có quyền!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fNo permission to use autocollect!'
+         
+   EVENT_HOE_NOPERMISSION_AUTOSELL:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - '{PREFIX} &f» &fYou do not have permission to use autosell!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '&f» &fKhông có quyền!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fNo permission to use autosell!'
+         
+   EVENT_HOE_NOPERMISSION_DIRTDIGGER:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - '{PREFIX} &f» &fYou do not have permission to use dirt digger!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '{PREFIX} &f» &fYou do not have permission to use dirt digger!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fNo permission to use dirt digger!'
+         
+   EVENT_HOE_NOHARVEST_DIRTDIGGER:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - '{PREFIX} &f» &fYou cannot harvest crops while in this mode!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '{PREFIX} &f» &fYou cannot harvest crops while in this mode!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fYou cannot harvest crops while in this mode!'
+         
+   EVENT_HOE_CROP_NOT_HARVESTABLE:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - '{PREFIX} &f» &fYou cannot use harvesters on this crop!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '{PREFIX} &f» &fCuốc tiên không thể dùng cho nông sản này!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fYou cannot use harvesters on this crop!'
+         
+   EVENT_HOE_CROP_NOT_RIPE:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - '{PREFIX} &f» &fThis crop is not ripe yet!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '{PREFIX} &f» &fCây này chưa chín!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fThis crop is not ripe yet!'
+         
+   EVENT_HOE_HARVEST_NO_CROP:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - '{PREFIX} &f» &fYou cannot use the harvester hoe on this block!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '{PREFIX} &f» &fBạn không thể dùng cuốc tiên vào khối này!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fYou cannot use the harvester hoe on this block!'
+
+   ###############################
+
+   EVENT_FULL_INVENTORY:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - '{PREFIX} &f» &fYour inventory is full!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '&f» &fTúi bạn đã full!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fYour inventory is full!'
+
+   ###############################
+   
+   EVENT_HOE_DROPCONFIRM:
+   # Placeholders: {0} = time
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - '{PREFIX} &f» &fDrop your item again within &a{0}s &fto confirm the drop!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '&f» &fDrop cuốc tiên của bạn lần nữa để xác nhận drop nó!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fDrop again to confirm!'
+         
+   EVENT_HOE_DROPSUCCESS:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - '{PREFIX} &f» &fYou successfully dropped your harvester!'
+         - ''
+      actionbar:
+         enabled: true
+         content: '{PREFIX} &f» &fDrop thành công!'
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fDropped your harvester!'
+         
+   ###############################
+
+   COMMAND_HOE_SENDER_SUCCESS:
+   # Placeholders: {0} = player, {1} = amount, {2} = uses, {3} = sell mult., {4} = drop mult.
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fYou gave &a{1} harvester hoe(s) &fto &a{0}&f!'
+         - ''
+         - '  &aHarvester Hoe Details:'
+         - '  &2• &aSell Mult.: &fx{3}'
+         - '  &2• &aDrop Mult.: &fx{4}'
+         - '  &2• &aUses: &f{2}'
+         - ''
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fGave &a{1} harvester hoe(s) &fto &a{0}&f!"
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fGave &a{1} harvester hoe(s) &fto &a{0}&f!'         
+         
+   COMMAND_HOE_SENDER_SUCCESS_SILENT:
+   # Placeholders: {0} = player, {1} = amount, {2} = uses, {3} = sell mult., {4} = drop mult.
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' &7[Silent] {PREFIX} &f» &fYou gave &a{1} harvester hoe(s) &fto &a{0}&f!'
+         - ''
+         - '  &aHarvester Hoe Details:'
+         - '  &2• &aSell Mult.: &fx{3}'
+         - '  &2• &aDrop Mult.: &fx{4}'
+         - '  &2• &aUses: &f{2}'
+         - ''
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[S] &fGave &a{1} harvester hoe(s) &fto &a{0}&f!"
+      titles:
+         enabled: false
+         titleContent: '{PREFIX} &7(Silent)' 
+         subtitleContent: '&fGave &a{1} harvester hoe(s) &fto &a{0}&f!'    
+         
+   COMMAND_HOE_SENDER_SUCCESS_ALL:
+   # Placeholders: {0} = amount, {1} = uses, {2} = sell mult., {3} = drop mult.
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fYou gave &a{0} harvester hoe(s) &fto everyone online!'
+         - ''
+         - '  &aHarvester Hoe Details:'
+         - '  &2• &aSell Mult.: &fx{2}'
+         - '  &2• &aDrop Mult.: &fx{3}'
+         - '  &2• &aUses: &f{1}'
+         - ''
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fGave &a{0} harvester hoe(s) &fto everyone online!"
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fGave &a{0} harvester hoe(s) &fto everyone online!'  
+         
+   COMMAND_HOE_SENDER_SUCCESS_ALL_SILENT:
+   # Placeholders: {0} = amount, {1} = uses, {2} = sell mult., {3} = drop mult.
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' &7[Silent] {PREFIX} &f» &fYou gave &a{0} harvester hoe(s) &fto everyone online!'
+         - ''
+         - '  &aHarvester Hoe Details:'
+         - '  &2• &aSell Mult.: &fx{2}'
+         - '  &2• &aDrop Mult.: &fx{3}'
+         - '  &2• &aUses: &f{1}'
+         - ''
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &7[S]&fGave &a{0} harvester hoe(s) &fto everyone online!"
+      titles:
+         enabled: false
+         titleContent: '{PREFIX} &7(Silent)' 
+         subtitleContent: '&fGave &a{0} harvester hoe(s) &fto everyone online!'  
+          
+   COMMAND_HOE_RECEIVER_SUCCESS:
+   # Placeholders: {0} = from, {1} = amount, {2} = uses, {3} = sell mult., {4} = drop mult.
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - '&f» &fNhận thành công &a{1} cuốc tiên!'
+         - ''
+         - '  &aThông tin cuốc:'
+         - '  &2• &aSell Boost.: &fx{3}'
+         - '  &2• &aDrop Boost.: &fx{4}'
+         - '  &2• &aSố lượng dùng: &f{2}'
+         - ''
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fReceived &a{1} harvester hoe(s) &ffrom &a{0}&f!" 
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fReceived harvester hoe(s)!'    
+         
+   COMMAND_HOE_WRONGAMOUNT:
+   # Placeholders: {0} = input
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fCould not give harvester because your amount argument is faulty!'
+         - ''
+         - '  &aDetails:'
+         - '  &2• &aYour argument: &f{0}'
+         - '  &2• &eExpected argument: &fPositive Integer (e.g 1)'
+         - ''
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fCould not give harvester because your amount argument is faulty!" 
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fYour command arguments are faulty!'    
+         
+   COMMAND_HOE_WRONGSELLMULTIPLIER:
+   # Placeholders: {0} = input
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fCould not give harvester because your sell mult. argument is faulty!'
+         - ''
+         - '  &aDetails:'
+         - '  &2• &aYour argument: &f{0}'
+         - '  &2• &aExpected argument: &fPositive Double (e.g 2.5)'
+         - ''
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fCould not give harvester because your sell mult. argument is faulty!" 
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fYour command arguments are faulty!'  
+         
+   COMMAND_HOE_WRONGDROPMULTIPLIER:
+   # Placeholders: {0} = input
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fCould not give harvester because your drop mult. argument is faulty!'
+         - ''
+         - '  &aDetails:'
+         - '  &2• &aYour argument: &f{0}'
+         - '  &2• &aExpected argument: &fPositive Integer (e.g 1)'
+         - ''
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fCould not give harvester because your drop mult. argument is faulty!" 
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fYour command arguments are faulty!'
+         
+   COMMAND_HOE_WRONGUSES:
+   # Placeholders: {0} = input
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fCould not give harvester because your uses argument is faulty!'
+         - ''
+         - '  &aDetails:'
+         - '  &2• &aYour argument: &f{0}'
+         - '  &2• &aExpected argument: &fPositive Integer (e.g 100) or "Infinite"'
+         - ''
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fCould not give harvester because your uses argument is faulty!" 
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fYour command arguments are faulty!'  
+         
+   COMMAND_HOE_NOTONLINE:
+   # Placeholders: {0} = player
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fCould not give harvester because &a{0} &fis offline!'
+         - ''
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fCould not give harvester because &a{0} &fis offline!" 
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fThe player is offline!'  
+
+   ###############################
+         
+   PATCHES_CANE_PLACEMENT:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fPlease wait for the sugarcane/bamboo to grow on its own!'
+         - ''
+      actionbar:
+         enabled: true
+         content: "{PREFIX} &f» &fHãy chờ cây lớn!"
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fPlease wait for the sugarcane/bamboo to grow on its own!'
+         
+   PATCHES_OFF_HAND_USE:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fCannot user harvester with 2nd item in hand!'
+         - ''
+      actionbar:
+         enabled: true
+         content: "{PREFIX} &f» &fBạn không thể dùng cuốc tay này!"
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fCannot use harvester with 2nd item in hand!'
+         
+   PATCHES_DISPENSER_NEARBY:
+   # Placeholders: None
+   # Scope: User
+      chatMessage:
+         enabled: false
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fCannot use harvester while a dispenser is nearby!'
+         - ''
+      actionbar:
+         enabled: true
+         content: "{PREFIX} &f» &fBạn không thể dùng khi có máy dispenser ở gần!"
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fCannot use harvester while a dispenser is nearby!'
+         
+   ###############################  
+   
+   PERIODICAL_PAYOUT_SUMMARY:
+   # Placeholders: {0} = money, {1} = time in seconds
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &7&oThu hoạch:'
+         - ''
+         - ' &a• &f+ &a${0} &f(Delay &a{1} giây)&f!'
+         - ''
+      actionbar:
+         enabled: false
+         content: "&7[&e&lScyther Payouts&7] &fPayout earned you &a${0}&f!"
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fPayout earned you &a${0}&f!'
+         
+   ###############################  
+   
+   HOOKS_MCMMO_PAYOUT_SUMMARY:
+   # Placeholders: {0} = exp, {1} = time in seconds
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &7&oMCMMO Experience Summary:'
+         - ''
+         - ' &a• &fYou gained &e{0} exp &fin the last &e{1}sec&f!'
+         - ''
+      actionbar:
+         enabled: false
+         content: "&7[&e&lScyther MCMMO&7] &fPayout earned you &e{0} exp&f!"
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fPayout earned you &e{0} exp&f!'
+         
+   HOOKS_AURELIUMSKILLS_PAYOUT_SUMMARY:
+   # Placeholders: {0} = exp, {1} = time in seconds
+   # Scope: User
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - ''
+         - ' {PREFIX} &f» &7&oAureliumSkills Experience Summary:'
+         - ''
+         - ' &a• &fYou gained &e{0} exp &fin the last &e{1}sec&f!'
+         - ''
+      actionbar:
+         enabled: false
+         content: "&7[&d&lScyther AureliumSkills&7] &fPayout earned you &e{0} exp&f!"
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fPayout earned you &e{0} exp&f!'
+         
+   HOOKS_IRIDIUMSKYBLOCK_NOPERMISSION:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         centered: false
+         content: 
+         - '<GRADIENT:09C6F9>&lIridiumSkyblock</GRADIENT:045DE9> &8» &7You cannot use harvester hoes on this island.'
+      actionbar:
+         enabled: false
+         content: '<GRADIENT:09C6F9>&lIridiumSkyblock</GRADIENT:045DE9> &8» &7You cannot use harvester hoes on this island.' 
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fYou cannot use harvester hoes on this island.'  
+         
+   ############################### 
+         
+   COMMAND_RELOAD:
+   # Placeholders: {0} = ms
+      chatMessage:
+         enabled: true
+         content: 
+         - ""
+         - " {PREFIX} &f» &fReloaded Scyther's configuration files. &7(&f{0}ms&7)"
+         - ""
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fReloaded Scyther's configuration files. &7(&f{0}ms&7)" 
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fReloaded Scyther configuration files.'  
+         
+   COMMAND_NOPERMISSION:
+   # Placeholders: None
+      chatMessage:
+         enabled: true
+         content: 
+         - ''
+         - ' {PREFIX} &f» &fYou do not have permission to run this command!'
+         - ''
+      actionbar:
+         enabled: false
+         content: "{PREFIX} &f» &fYou do not have permission to run this command!"     
+      titles:
+         enabled: false
+         titleContent: '{PREFIX}' 
+         subtitleContent: '&fYou do not have permission!'       

@@ -1,0 +1,17 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+# Should missions be enabled on your server?
+enabled: true
+
+# Settings related to mission categories.
+# A tutorial about configuring missions can be found here:
+# https://wiki.bg-software.com/superiorskyblock/missions
+categories:
+  island:
+    name: 'island'
+    slot: 22

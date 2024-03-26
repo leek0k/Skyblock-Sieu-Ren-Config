@@ -1,0 +1,734 @@
+
+#==============================O==============================#
+# I---------------------------------------------------------I #
+# |   Advanced Achievements 6.2.1 configuration - Readme   | #
+# 1---------------------------------------------------------1 #
+#==============================o==============================#
+# Only spaces, NO tabs. Don't forget the indents (2 spaces per indentation level).
+# To check syntax errors in your file, use: https://yaml-online-parser.appspot.com
+# Default config: https://github.com/PyvesB/advanced-achievements/blob/master/advanced-achievements-plugin/src/main/resources/config.yml
+# If you want to help the project, feel free to check our GitHub: https://github.com/PyvesB/advanced-achievements
+# Visit the wiki for some valuable additional documentation: https://github.com/PyvesB/advanced-achievements/wiki
+# For donations use: https://www.paypal.com/cgi-bin/webscr?hosted_button_id=7KTQYC4YT52NQ&cmd=_s-xclick
+#=============================O=O=============================#
+# II-------------------------------------------------------II #
+# |                    General  settings                    | #
+# 2---------------------------------------------------------2 #
+#=============================o=o=============================#
+# Time in seconds between each /aach book (unless user has permission achievement.*).
+TimeBook: 900
+
+# Check for update on plugin launch and notify when an OP joins the game.
+CheckForUpdate: false
+
+# Set to true to activate firework effects when a player receives an achievement.
+Firework: true
+
+# Choose ball_large, ball, burst, creeper, star or random.
+FireworkStyle: ball_large
+
+# Set to true to activate simpler effects and a calm sound when a player receives an achievement.
+# Ignored if Firework setting is set to true.
+SimplifiedReception: false
+
+# Number of players displayed in /aach top, week and month commands.
+TopList: 5
+
+# Set to true to activate particle effects when performing /aach book, /aach stats with all achievements and
+# /aach top, week or month when ranked in the top list.
+AdditionalEffects: false
+
+# Set to true to activate sounds when performing /aach book, /aach stats with all achievements and /aach top, 
+# week or month when ranked in the top list.
+Sound: true
+
+# For /aach book. Possible values: github.com/PyvesB/advanced-achievements/wiki/Sound-names
+SoundBook: entity_player_levelup
+
+# For /aach stats with all achievements. Possible values: github.com/PyvesB/advanced-achievements/wiki/Sound-names
+SoundStats: entity_firework_rocket_blast
+
+# For /aach top, week, month when ranked in the top list. Possible values: github.com/PyvesB/advanced-achievements/wiki/Sound-names
+SoundRanking: entity_firework_rocket_blast
+
+# Set the icon of the plugin (default: shamrock, \u2618).
+Icon: \u2618
+
+# Set the color of the plugin (default: 5, dark purple).
+Color: 5
+
+# Notify other connected players when an achievement is received.
+# This defines the default behaviour, a player can override what he sees by using /aach toggle.
+NotifyOtherPlayers: false
+
+# When NotifyOtherPlayers is enabled, notifications are done using action bars when ActionBarNotify is true.
+# When ActionBarNotify is false, chat messages are used.
+ActionBarNotify: true
+
+# Display achievement DisplayName and Message as screen titles. Ignored if using Minecraft 1.7.9 or 1.7.10.
+TitleScreen: true
+
+# Display chat messages when a player receives an achievement.
+ReceiverChatMessages: true
+
+# When a player receives an achievement, the DisplayName, Message and rewards of the achievement are displayed in
+# the chat. If HoverableReceiverChatText is true, a single hoverable text will be displayed to the receiver.
+# Otherwise texts will be displayed one after the other.
+HoverableReceiverChatText: false
+
+# Separator between name, description and date on a book page.
+BookSeparator: ''
+
+# Set the format of the achievement name in /aach list (default: "%ICON% %NAME% %ICON%").
+ListAchievementFormat: '%ICON% %NAME% %ICON%'
+
+# Set the format of the header used for most chat messages (default: "§7[%ICON%§7]").
+ChatHeader: §7[%ICON%§7]
+
+# Stop all stats from increasing when player in creative mode, including PlayedTime.
+# Connection achievements will only be handled once a player switches to a non-creative mode.
+RestrictCreative: false
+
+# Stop all stats from increasing when player in spectator mode, including PlayedTime.
+# Connection achievements will only be handled once a player switches to a non-spectator mode.
+# No effect if using Minecraft 1.7.9 or 1.7.10.
+RestrictSpectator: true
+
+# Stop all stats from increasing when player in adventure mode, including PlayedTime.
+# Connection achievements will only be handled once a player switches to a non-adventure mode.
+RestrictAdventure: false
+
+# Stop all stats from increasing when player in a specific world, including PlayedTime (delete the [] before adding values).
+# Connection achievements will only be handled once a player enters a non-excluded world.
+ExcludedWorlds: []
+
+#  - yourWorld1
+#  - yourWorld2
+# Ignore vertical dimension (Y axis) when calculating distance statistics.
+IgnoreVerticalDistance: false
+
+# Don't show these categories in the achievement GUI or in the stats output.
+# Also prevent obtaining achievements for these categories and prevent stats from increasing.
+DisabledCategories:
+- AdvancementsCompleted
+- Connections
+- Deaths
+- Arrows
+- Snowballs
+- Eggs
+- Fish
+- Treasures
+- ItemBreaks
+- Shear
+- Milk
+- LavaBuckets
+- WaterBuckets
+- Trades
+- Beds
+- ConsumedPotions
+- ItemDrops
+- ItemPickups
+- HoePlowings
+- Fertilising
+- Taming
+- Fireworks
+- MusicDiscs
+- EnderPearls
+- PetMasterGive
+- PetMasterReceive
+- DistancePig
+- DistanceHorse
+- DistanceMinecart
+- DistanceBoat
+- DistanceGliding
+- DistanceLlama
+- RaidsWon
+- Riptides
+- Breeding
+- Places
+- TargetsShot
+- PlayerCommands
+- EatenItems
+- AnvilsUsed
+- Enchantments
+- Brewing
+- MaxLevel
+- PlayedTime
+- Custom
+- Commands
+
+# Obfuscate achievements that have not yet been received in /aach list.
+ObfuscateNotReceived: false
+
+# For categories with a series of related achievements where the only thing changing is the number of times
+# the event has occurred, show achievements that have been obtained and show the next obtainable achievement,
+# but obfuscate the additional achievements. For example, under Places, stone, the first achievement could have a
+# target of 100 stone, the second 500 stone, and the third 1000 stone.  When ObfuscateProgressiveAchievements
+# is true, initially only the 100 stone achievement will be readable in the GUI.  Once 100 stone have been placed,
+# the 500 stone achievement will become legible.
+ObfuscateProgressiveAchievements: false
+
+# Similar to ObfuscateProgressiveAchievements, but displays not received achievements as locked in /aach list.
+HideProgressiveAchievements: false
+
+# Hide categories for which a player has not yet received achievements by displaying them as locked in /aach list.
+HideNotReceivedCategories: false
+
+# Completely hide categories for which the player does not have the corresponding count permissions.
+HideNoPermissionCategories: false
+
+# Hide the reward display in /aach list.
+HideRewardDisplayInList: false
+
+# Display precise statistic information in the /aach list progress bars.
+EnrichedListProgressBars: true
+
+# Annotate each achievement displayed in a /aach list category with a number.
+NumberedItemsInList: false
+
+# Color used for not yet received achievements in /aach list.
+ListColorNotReceived: 8
+
+# Italicise not yet received achievements in /aach list. Obfuscated achievements are not affected.
+ListItaliciseNotReceived: true
+
+# Sort pages of the book in chronological order (false for reverse chronological order).
+BookChronologicalOrder: true
+
+# Do not take into account items broken with Silk Touch for the Breaks achievements.
+DisableSilkTouchBreaks: false
+
+# Do not take into account ores broken with Silk Touch for the Breaks achievements.
+# DisableSilkTouchBreaks takes precedence over this. Not applicable to iron or gold ores.
+DisableSilkTouchOreBreaks: false
+
+# Language file to use. Available: lang.yml, lang-BP.yml, lang-CN.yml, lang-CZ.yml, lang-DE.yml, lang-ES.yml, lang-FI.yml
+# lang-FR.yml, lang-HU.yml, lang-IT.yml, lang-PL.yml, lang-RO.yml, lang-RU.yml, lang-SE.yml, lang-TR.yml, lang-TW.yml, lang-VN.yml
+LanguageFileName: lang.yml
+
+# Time in seconds between each statistic count. Only the listed categories are currently supported.
+StatisticCooldown:
+  LavaBuckets: 10
+  WaterBuckets: 10
+  Milk: 10
+  Beds: 30
+  Brewing: 5
+  MusicDiscs: 30
+
+# Display action bar message when player performs an action while in the cooldown period.
+# No effect if using Minecraft 1.7.9 or 1.7.10.
+CooldownActionBar: true
+
+# Locale used to format dates in /aach book and /aach list. You must select an ISO 639 language code.
+# The list of possible language codes can be found at www.loc.gov/standards/iso639-2/php/code_list.php
+DateLocale: en
+
+# Display reception time of achievements in /aach book and /aach list in addition to the date. For achievements
+# received in plugin versions prior to 3.0, the precise time information is not available and will be displayed as midnight.
+DateDisplayTime: true
+
+# Register advancements with a description corresponding to the Goal parameter of each achievement.
+# If changed, run /aach generate to regenerate advancements with the new parameter value taken into account.
+# No effect if using Minecraft versions prior to 1.12.
+RegisterAdvancementDescriptions: true
+
+# If true, hide advancements from the advancement GUI. Advancement notifications will still appear when receiving achievements.
+# No effect if using Minecraft versions prior to 1.12.
+HideAdvancements: false
+
+# If true, PlayedTime will no longer increase when the player is AFK. Requires Essentials to work.
+IgnoreAFKPlayedTime: false
+
+# Awarded when a player has received all the achievements. Use the same reward pattern as with achievements.
+# See https://github.com/PyvesB/advanced-achievements/wiki/Rewards
+AllAchievementsReceivedRewards:
+  IncreaseMaxOxygen: 30
+  Experience: 100
+
+# Title shown on the root advancement.
+RootAdvancementTitle: Advanced Achievements
+
+# Background shown on the Advanced Achievements advancement tab.
+# Must be a resource location to any image in a resource pack.
+AdvancementsBackground: minecraft:textures/item/book.png
+
+#=============================OOO=============================#
+# III-----------------------------------------------------III #
+# |                    Database settings                    | #
+# 3---------------------------------------------------------3 #
+#=============================ooo=============================#
+# Make a daily backup of your local database (if sqlite or h2).
+DatabaseBackup: true
+
+# Database type, sqlite, h2, postgresql or mysql. Do a full server restart for this to take effect.
+DatabaseType: h2
+
+# Prefix added to the tables in the database. If you switch from the default tables names (no prefix),
+# the plugin will attempt an automatic renaming. Otherwise you have to rename your tables manually.
+# Do a full server restart for this to take effect.
+TablePrefix: ''
+
+# Specify additional options when opening a connection to a MySQL/PostgreSQL database. Start each option with &,
+# for instance "&useUnicode=yes&characterEncoding=UTF-8". Make sure the key-value pairs themselves are URL encoded.
+AdditionalConnectionOptions: ''
+
+# Settings to connect to your MySQL/PostgreSQL database (ignored if sqlite).
+# A PostgreSQL database address will be similar to jdbc:postgresql://localhost:5432/minecraft
+DatabaseAddress: jdbc:mysql://localhost:3306/minecraft
+DatabaseUser: root
+DatabasePassword: root
+
+#============================OO=OO============================#
+# IV-------------------------------------------------------IV #
+# |                  Performance settings                   | #
+# |        Change only if you are an experienced user       | #
+# 4---------------------------------------------------------4 #
+#============================oo=oo============================#
+# Frequency of play time checks for players (seconds). Smaller values give more precision but more CPU usage.
+PlaytimeTaskInterval: 60
+
+# Calculates distance traveled by players (seconds). Smaller values give more precision but more CPU usage.
+DistanceTaskInterval: 5
+
+# Frequency of some statistics writes to the database (seconds). Do a full server restart, and not just /aach reload.
+PooledRequestsTaskInterval: 10
+
+#============================OOOOO============================#
+# V---------------------------------------------------------V #
+# |              Multiple action achievements               | #
+# |       These require sub-categories and thresholds       | #
+# 5---------------------------------------------------------5 #
+#============================ooooo============================#
+# When a specific block is placed (available names: github.com/PyvesB/advanced-achievements/wiki/Material-names).
+# When a specific block is broken (available names: github.com/PyvesB/advanced-achievements/wiki/Material-names).
+# You can use notations such as sand:1 for pre-1.13 versions, which means sand item with metadata 1 (red sand).
+Breaks:
+  cobblestone:
+    '100':
+      Goal: Đào 100 đá cuội.
+      Message: Bạn đã hoàn thành thành tựu đào 100 đã cuội!
+      Name: Đào_100_stone
+      DisplayName: Ngày đầu khai hoang 1!
+      Reward:
+        Money: 1000
+    '500':
+      Goal: Đào 500 đá cuội.
+      Message: Bạn đã hoàn thành thành tựu đào 500 đã cuội!
+      Name: Đào_500_stone
+      DisplayName: Ngày đầu khai hoang 2!
+      Reward:
+        Money: 5500
+    '1000':
+      Goal: Đào 1000 đá cuội.
+      Message: Bạn đã hoàn thành thành tựu đào 1000 đã cuội!
+      Name: Đào_1000_stone
+      DisplayName: Ngày đầu khai hoang 3!
+      Reward:
+        Money: 11000
+  iron_ore:
+    '100':
+      Goal: Đào 100 quặng sắt.
+      Message: Bạn đã hoàn thành thành tựu đào 100 quặng sắt!
+      Name: Đào_100_quặng_sắt
+      DisplayName: Thợ mỏ sắt 1!
+      Reward:
+        Money: 2000
+    '500':
+      Goal: Đào 500 quặng sắt.
+      Message: Bạn đã hoàn thành thành tựu đào 100 quặng sắt!
+      Name: Đào_500_quặng_sắt
+      DisplayName: Thợ mỏ sắt 2!
+      Reward:
+        Money: 10500
+    '1000':
+      Goal: Đào 1000 quặng sắt.
+      Message: Bạn đã hoàn thành thành tựu đào 100 quặng sắt!
+      Name: Đào_1000_quặng_sắt
+      DisplayName: Thợ mỏ sắt 3!
+      Reward:
+        Money: 22000
+  gold_ore:
+    '100':
+      Goal: Đào 100 quặng vàng.
+      Message: Bạn đã hoàn thành thành tựu đào 100 quặng vàng!
+      Name: Đào_100_quặng_vàng
+      DisplayName: Thợ mỏ vàng 1!
+      Reward:
+        Money: 2500
+    '500':
+      Goal: Đào 500 quặng vàng.
+      Message: Bạn đã hoàn thành thành tựu đào 500 quặng vàng!
+      Name: Đào_500_quặng_vàng
+      DisplayName: Thợ mỏ vàng 2!
+      Reward:
+        Money: 13500
+    '1000':
+      Goal: Đào 1000 quặng vàng.
+      Message: Bạn đã hoàn thành thành tựu đào 1000 quặng vàng!
+      Name: Đào_1000_quặng_vàng
+      DisplayName: Thợ mỏ vàng 3!
+      Reward:
+        Money: 28000
+  diamond_ore:
+    '100':
+      Goal: Đào 100 quặng kim cương.
+      Message: Bạn đã hoàn thành thành tựu đào 100 quặng kim cương!
+      Name: Đào_100_quặng_kim_cương
+      DisplayName: Thợ mỏ kim cương 1!
+      Reward:
+        Money: 3000
+    '500':
+      Goal: Đào 500 quặng kim cương.
+      Message: Bạn đã hoàn thành thành tựu đào 500 quặng kim cương!
+      Name: Đào_500_quặng_kim_cương
+      DisplayName: Thợ mỏ kim cương 2!
+      Reward:
+        Money: 15500
+    '1000':
+      Goal: Đào 1000 quặng kim cương.
+      Message: Bạn đã hoàn thành thành tựu đào 1000 quặng kim cương!
+      Name: Đào_1000_quặng_kim_cương
+      DisplayName: Thợ mỏ kim cương 3!
+      Reward:
+        Money: 32000
+  emerald_ore:
+    '100':
+      Goal: Đào 100 quặng lục bảo.
+      Message: Bạn đã hoàn thành thành tựu đào 100 quặng lục bảo!
+      Name: Đào_100_quặng_lục_bảo
+      DisplayName: Thợ mỏ lục bảo 1!
+      Reward:
+        Money: 3000
+    '500':
+      Goal: Đào 500 quặng lục bảo.
+      Message: Bạn đã hoàn thành thành tựu đào 500 quặng lục bảo!
+      Name: Đào_500_quặng_lục_bảo
+      DisplayName: Thợ mỏ lục bảo 2!
+      Reward:
+        Money: 15500
+    '1000':
+      Goal: Đào 1000 quặng lục bảo.
+      Message: Bạn đã hoàn thành thành tựu đào 1000 quặng lục bảo!
+      Name: Đào_1000_quặng_lục_bảo
+      DisplayName: Thợ mỏ lục bảo 3!
+      Reward:
+        Money: 32000
+  log:
+    '100':
+      Goal: Chặt 100 khối gỗ.
+      Message: Bạn đã hoàn thành thành tựu chặt 100 khối gỗ!
+      Name: Chặt_100_khối_gỗ
+      DisplayName: Tiều phu 1!
+      Reward:
+        Money: 3000
+    '500':
+      Goal: Chặt 500 khối gỗ.
+      Message: Bạn đã hoàn thành thành tựu chặt 500 khối gỗ!
+      Name: Chặt_500_khối_gỗ
+      DisplayName: Tiều phu 2!
+      Reward:
+        Money: 15500
+    '1000':
+      Goal: Chặt 1000 khối gỗ.
+      Message: Bạn đã hoàn thành thành tựu chặt 1000 khối gỗ!
+      Name: Chặt_1000_khối_gỗ
+      DisplayName: Tiều phu 3!
+      Reward:
+        Money: 32000 
+        Commands:
+          Execute: ae givercbook legendary PLAYER 1           
+
+# When "something" is killed. You can use any of the following:
+# - an entity type (available names: github.com/PyvesB/advanced-achievements/wiki/Entity-names).
+# - poweredcreeper.
+# - a mob's custom name (name tag/plugins such as Mythic Mobs) for Minecraft 1.8 or more recent.
+# - player to track player kills as a whole.
+# - specificplayer- followed by player UUID to track how many times a specific player has been killed.
+Kills:
+  pig_zombie:
+    '20':
+      Goal: Kill 20 Ma hải tặc.
+      Message: Bạn đã hoàn thành thành tựu Kill 20 Ma hải tặc!
+      Name: kill_20_ma_hải_tặc
+      DisplayName: Săn Quái Ma hải tặc 1 (/warp dungeon)!
+      Reward:
+        Money: 2500
+    '100':
+      Goal: Kill 100 Ma hải tặc.
+      Message: Bạn đã hoàn thành thành tựu Kill 100 Ma hải tặc!
+      Name: kill_100_ma_hải_tặc
+      DisplayName: Săn Quái Ma hải tặc 2 (/warp dungeon)!
+      Reward:
+        Money: 13000
+    '300':
+      Goal: Kill 300 Ma hải tặc.
+      Message: Bạn đã hoàn thành thành tựu Kill 300 Ma hải tặc!
+      Name: kill_300_ma_hải_tặc
+      DisplayName: Săn Quái Ma hải tặc 3 (/warp dungeon)!
+      Reward:
+        Money: 40000
+        Experience: 2500
+  cave_spider:
+    '20':
+      Goal: Kill 20 Nhện yêu tinh.
+      Message: Bạn đã hoàn thành thành tựu Kill 20 Nhện yêu tinh!
+      Name: kill_20_Nhện_yêu_tinh
+      DisplayName: Săn Quái Nhện yêu tinh 1 (/warp dungeon)!
+      Reward:
+        Money: 4500
+    '100':
+      Goal: Kill 100 Nhện yêu tinh.
+      Message: Bạn đã hoàn thành thành tựu Kill 100 Nhện yêu tinh!
+      Name: kill_100_Nhện_yêu_tinh
+      DisplayName: Săn Quái Nhện yêu tinh 2 (/warp dungeon)!
+      Reward:
+        Money: 23000
+    '300':
+      Goal: Kill 300 Nhện yêu tinh.
+      Message: Bạn đã hoàn thành thành tựu Kill 300 Nhện yêu tinh!
+      Name: kill_300_Nhện_yêu_tinh
+      DisplayName: Săn Quái Nhện yêu tinh 3 (/warp dungeon)!
+      Reward:
+        Money: 80000
+        Experience: 5000        
+  witch:
+    '20':
+      Goal: Kill 20 Phù thủy đen.
+      Message: Bạn đã hoàn thành thành tựu Kill 20 Phù thủy đen!
+      Name: kill_20_Phù_thủy_đen
+      DisplayName: Săn Quái Phù thủy đen 1 (/warp dungeon)!
+      Reward:
+        Money: 8500
+    '100':
+      Goal: Kill 100 Phù thủy đen.
+      Message: Bạn đã hoàn thành thành tựu Kill 100 Phù thủy đen!
+      Name: kill_100_Phù_thủy_đen
+      DisplayName: Săn Quái Phù thủy đen 2 (/warp dungeon)!
+      Reward:
+        Money: 53000
+    '300':
+      Goal: Kill 300 Phù thủy đen.
+      Message: Bạn đã hoàn thành thành tựu Kill 300 Phù thủy đen!
+      Name: kill_300_Phù_thủy_đen
+      DisplayName: Săn Quái Phù thủy đen 3 (/warp dungeon)!
+      Reward:
+        Money: 200000
+        Experience: 10000          
+
+# When a specific item is crafted (available names: github.com/PyvesB/advanced-achievements/wiki/Material-names).
+Crafts:
+  diamond_block:
+    '10':
+      Goal: Craft 10 khối kim cương.
+      Message: Bạn đã hoàn thành thành tựu Craft 10 khối kim cương!
+      Name: craft_10_khối_kim_cương
+      DisplayName: Chế tạo khối kim cương 1
+      Reward:
+        Money: 2500
+    '100':
+      Goal: Craft 100 khối kim cương.
+      Message: Bạn đã hoàn thành thành tựu Craft 100 khối kim cương!
+      Name: craft_100_khối_kim_cương
+      DisplayName: Chế tạo khối kim cương 2
+      Reward:
+        Money: 25000
+        Commands:
+          Execute: give PLAYER 322 16      
+  emerald_block:
+    '10':
+      Goal: Craft 10 khối lục bảo.
+      Message: Bạn đã hoàn thành thành tựu Craft 10 khối lục bảo!
+      Name: craft_10_khối_lục_bảo
+      DisplayName: Chế tạo khối lục bảo 1
+      Reward:
+        Money: 2500
+    '100':
+      Goal: Craft 100 khối lục bảo.
+      Message: Bạn đã hoàn thành thành tựu Craft 100 khối lục bảo!
+      Name: craft_100_khối_lục_bảo
+      DisplayName: Chế tạo khối lục bảo 2
+      Reward:
+        Money: 25000
+        Commands:
+          Execute: give PLAYER 322 16           
+
+# When a distance is traveled by foot.
+DistanceFoot:
+  '1000':
+    Goal: Di chuyển 1000 khối.
+    Message: Bạn đã hoàn thành thành tựu di chuyển 1000 khối!
+    Name: Di_chuyển_1000
+    DisplayName: Chạy bộ 1
+    Reward:
+      Money: 2000
+  '5000':
+    Goal: Di chuyển 5000 khối.
+    Message: Bạn đã hoàn thành thành tựu chuyển 5000 khối!
+    Name: Di_chuyển_5000
+    DisplayName: Chạy bộ 2
+    Reward:
+      Money: 10000
+  '10000':
+    Goal: Di chuyển 10000 khối.
+    Message: Bạn đã hoàn thành thành tựu chuyển 10000 khối!
+    Name: Di_chuyển_10000
+    DisplayName: Chạy bộ 3
+    Reward:
+      Money: 22000
+      Commands:
+        Execute: crazycrates give physical cauvong 1 PLAYER       
+
+# When an item is smelt in a furnace.
+Smelting:
+  '250':
+    Goal: Nung 250 vật phẩm.
+    Message: Bạn đã hoàn thành thành tựu nung 250 vật phẩm!
+    Name: Nung_250_vật_phẩm
+    DisplayName: Lò nung
+    Reward:
+      Money: 4500
+      Commands:
+        Execute: give PLAYER 297 16           
+
+#==========================OOOO=OOOO==========================#
+# VIII-------------------------0-------------------------VIII #
+# |  Parameters in future plugin versions will appear here  | #
+# 8----------------------------0----------------------------8 #
+#==========================oooo=oooo==========================#
+#When a player connects during the day; statistic increases at most once per day.
+Connections: {}
+
+#When the player dies.
+Deaths: {}
+
+#When an arrow is shot.
+Arrows: {}
+
+#When a snowball is thrown.
+Snowballs: {}
+
+#When an egg is thrown.
+Eggs: {}
+
+#When a fish is caught.
+Fish: {}
+
+#When a treasure is caught with a fishing rod.
+Treasures: {}
+
+#When a tool/armor/weapon is broken.
+ItemBreaks: {}
+
+#When a sheep is sheared.
+Shear: {}
+
+#When a cow is milked.
+Milk: {}
+
+#When a bucket is filled with lava.
+LavaBuckets: {}
+
+#When a bucket is filled with water.
+WaterBuckets: {}
+
+#When a trade with a villager is made.
+Trades: {}
+
+#When a bed is entered.
+Beds: {}
+
+#When a potion is consumed.
+ConsumedPotions: {}
+
+#When an item is dropped on the ground.
+ItemDrops: {}
+
+#When an item is picked up from the ground.
+ItemPickups: {}
+
+#When soil is plowed with a hoe.
+HoePlowings: {}
+
+#When bone meal is used to fertilise plants.
+Fertilising: {}
+
+#When an animal is tamed.
+Taming: {}
+
+#When a firework is launched.
+Fireworks: {}
+
+#When a music disc is played.
+MusicDiscs: {}
+
+#When a player teleports with an enderpearl.
+EnderPearls: {}
+
+#When a player gives a pet to another player (requires PetMaster plugin version 1.3 or above).
+PetMasterGive: {}
+
+#When a player receives a pet from another player (requires PetMaster plugin version 1.3 or above).
+PetMasterReceive: {}
+
+#When a distance is traveled on a pig.
+DistancePig: {}
+
+#When a distance is traveled on a horse.
+DistanceHorse: {}
+
+#When a distance is traveled in a minecart.
+DistanceMinecart: {}
+
+#When a distance is traveled in a boat.
+DistanceBoat: {}
+
+#When a distance is traveled with elytra.
+DistanceGliding: {}
+
+#When a distance is traveled on a llama.
+DistanceLlama: {}
+
+#When a raid is won.
+RaidsWon: {}
+
+#When riptide is used with a trident
+Riptides: {}
+
+#When a certain number of advancements have been completed.
+AdvancementsCompleted: {}
+
+#When animals breed (specify an entity name, lower case).
+Breeding: {}
+
+#When a specific block is placed (specify material name, lower case).
+Places: {}
+
+#When a specific target is shot (but not necessarily killed) with a projectile (specify an entity or block name, lower case).
+TargetsShot: {}
+
+#When a player enters a specific command (specify command prefixes in lower case without spaces).
+PlayerCommands: {}
+
+#When an item is eaten (excludes potions and milk).
+EatenItems: {}
+
+#When an anvil is used.
+AnvilsUsed: {}
+
+#When an enchantment is performed.
+Enchantments: {}
+
+#When a potion is brewed.
+Brewing: {}
+
+#Maximum level reached.
+MaxLevel: {}
+
+#Amount of time played on the server (in hours, use integers).
+PlayedTime: {}
+
+#When the command /aach add is called for this category.
+Custom: {}
+
+#/aach give yourAch1 PLAYER can be used to give the yourAch1 achievement to PLAYER.
+Commands: {}

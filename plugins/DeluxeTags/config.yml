@@ -1,0 +1,365 @@
+# DeluxeTags version: 1.7.1 Main Configuration
+# 
+# Create your tags using the following format:
+# 
+# deluxetags:
+#   VIP: 
+#     order: 1
+#     tag: '&7[&eVIP&7]'
+#     description: 'This tag is awarded by getting VIP'
+# 
+# Placeholders for your DeluxeChat formats config:
+# 
+# %deluxetags_identifier% - display the players active tag identifier
+# %deluxetags_tag% - display the players active tag
+# %deluxetags_description% - display the players active tag description
+# %deluxetags_amount% - display the amount of tags a player has access to
+# 
+# Placeholders for your essentials/chat handling formats config:
+# 
+# {deluxetags_identifier} - display the players active tag identifier
+# {deluxetags_tag} - display the players active tag
+# {deluxetags_description} - display the players active tag description
+# {deluxetags_amount} - display the amount of tags a player has access to
+force_tags: false
+check_updates: false
+deluxe_chat: false
+format_chat:
+  enabled: false
+  format: '{deluxetags_tag} <%1$s> %2$s'
+gui:
+  name: '&8&lBiệt danh hiện có&f: &8{deluxetags_amount}'
+  tag_select_item:
+    material: NAME_TAG
+    data: 0
+    displayname: '&6Tag&f: &6{deluxetags_identifier}'
+    lore:
+    - '{deluxetags_tag}'
+    - '{deluxetags_description}'
+  divider_item:
+    material: STAINED_GLASS_PANE
+    data: 15
+    displayname: ''
+    lore: []
+  has_tag_item:
+    material: SKULL_ITEM
+    data: 3
+    displayname: '&eBiệt danh hiện tại&f: &6{deluxetags_identifier}'
+    lore:
+    - '{deluxetags_tag}'
+    - ''
+    - '&c[!] Nhấp vào đây để tắt hiển thị biệt danh'
+  no_tag_item:
+    material: SKULL_ITEM
+    data: 3
+    displayname: '&cBạn đang không hiển thị biệt danh nào!'
+    lore:
+    - '&7Hãy chọn cho mình 1 biệt danh có sẵn!'
+  exit_item:
+    material: IRON_DOOR
+    data: 0
+    displayname: '&cBấm vào đây để tắt bảng biệt danh'
+    lore:
+    - '&7Bấm vào đây để tắt bảng biệt danh'
+deluxetags:
+  '1':
+    order: 1
+    tag: '&8&l[&fTui F.Aᴖᴥᴖ&r&8&l]'
+    description: '&eBạn đang giống admin sever nên hãy tự hào lên!'
+  '2':
+    order: 2
+    tag: '&8&l[&c&lTrùm trường(¬‿¬)&r&8&l]'
+    description: '&eChỉ được Hổ báo trường Mẫu giáo thôi!'
+  '3':
+    order: 3
+    tag: '&8&l[&4&lĐ&c&lẠ&4&LI &c&lC&4&lA&c(∪ ◡ ∪)&r&8&l]'
+    description: '&eMọi người xung quanh khiếp sợ!'
+  '4':
+    order: 4
+    tag: '&8&l[&b&lXinh &f&lgái&b˘◡˘&r&8&l]'
+    description: '&eDễ thương cute phô mai que!'
+  '5':
+    order: 5
+    tag: '&8&l[&e&lRICH KID&6(▰˘◡˘▰)&r&8&l]'
+    description: '&eMua thẻ này chứng tỏ bạn là con nhà có điều kiện!'
+  '6':
+    order: 6
+    tag: '&8&l[&FĐ&BẸ&FP &BZ&FA&BI&E*∩_∩*&8&l]'
+    description: '&eĐẹp trai y như pé Lê Zăn Đạt!'
+  '7':
+    order: 7
+    tag: '&8&l[&AMÊ GÁI &a&lಠoಠ&8&l]'
+    description: '&eMê mẫn sắc đẹp của gái hạ giới!'
+  '8':
+    order: 8
+    tag: '&8&l[&eDân chơi(¬‿¬)&8&l]'
+    description: '&eCó khả năng tương tự như dân bay Khá Bảnh!'
+  '9':
+    order: 9
+    tag: '&8&l[&D&LIQ 2&B&L0&D&L0&3(ᵕ.ᵕ)&8&l]'
+    description: '&eChứng minh trí tuệ siêu phàm trong đầu bạn!'
+  '10':
+    order: 0
+    tag: '&8&l[&7&LSợ vợ⊙﹏⊙&8&l]'
+    description: '&eCó vợ rồi hẳn mua!'
+  '11':
+    order: 11
+    tag: '&8&l[&3&LTÒMÒ&b◕‿◕&8&l]'
+    description: '&eTìm tòi học hỏi tiếp thu!'
+  '12':
+    order: 12
+    tag: '&8&l[&7ĐỘI TRƯỞNG╚(•⌂•)╝&8&l]'
+    description: '&eChứng tỏ bản lĩnh đứng đầu!'
+  '13':
+    order: 13
+    tag: '&8&l[&D&LBÁNH BÈO&b(●´ω｀●)&8&l]'
+    description: '&eHãy chứng minh bạn là bánh bèo có hữu dụng!'
+  '14':
+    order: 14
+    tag: '&8&l[&b&LTỐT BỤNG(◠‿◠)&8&l]'
+    description: '&eThân thiện,hòa đồng với mọi người'
+  '15':
+    order: 15
+    tag: '&8&l[&2&l*&a&lC&2&lh&a&lă&2&lm &a&lc&2&lh&a&lỉ*&8&l]'
+    description: '&eChứng minh bạn là người siêng năng trong sever'
+  '16':
+    order: 16
+    tag: '&8&l[&b&lT&7&lr&b&lư&7&lở&b&ln&7&lg&b&l L&7&lã&b&lo&8&l]'
+    description: '&eĐạt thành tựu chơi lâu trong sever!'
+  '17':
+    order: 17
+    tag: '&8&l[&4&l⚡&c&lS&4&lá&c&lt &4&lT&c&lh&4&lủ&4&l⚡&8&l]'
+    description: '&eĐạt thành tựu kill nhiều người trong sever!'
+  '18':
+    order: 18
+    tag: '&8&l[&f&l✎&e&lH&b&lọ&e&lc &b&lS&e&li&b&ln&e&lh &b&lG&e&li&b&lỏ&e&li&f&l✍&8&l]'
+    description: '&eChụp bằng khen liên hệ staff để được nhận'
+  '19':
+    order: 19
+    tag: '&8&l[&6&lThợ Mỏ&8&l]'
+    description: '&eChăm chỉ cày cuốc trong sever'
+  '20':
+    order: 20
+    tag: '&8&l[&2&lL&a&lí&2&ln&a&lh &2&lĐ&a&lá&2&ln&a&lh &2&lT&a&lh&2&lu&a&lê&8&l]'
+    description: '&eBạn là 1 người chuyên đánh thuê để kiếm tiền'
+  '21':
+    order: 21
+    tag: '&8&l[&9&lT&3&lr&9&lu&3&ln&9&lg &3&lT&9&lh&3&lự&9&lc&8&l]'
+    description: '&eChấp hết mọi cắm dỗ của xã hội'
+  '22':
+    order: 22
+    tag: '&8&l[&f&lT&7&li&f&lề&7&ln &f&lB&7&lố&f&li&8&l]'
+    description: '&eBạn là có nhiều kinh nghiệm trong sever'
+  '23':
+    order: 23
+    tag: '&8&l[&6&lH&e&li&6&lệ&e&lp &6&lS&e&lĩ&8&l]'
+    description: '&eChuyên giúp đỡ mọi người trong sever'
+  '24':
+    order: 24
+    tag: '&8&l[&6&lT&c&lh&6&lợ &c&lS&6&lă&c&ln&8&l]'
+    description: '&eTrùm săn xác sống'
+  '25':
+    order: 25
+    tag: '&8&l[&f&lB&eá &f&lC&eh&f&lủ&b&l✰‿✰&8&l]'
+    description: '&eKhá lắm các chàng trai trẻ'
+  '26':
+    order: 26
+    tag: '&8&l[&b&k:&r&b&l๖V&3&li &3&lƇ&b&lá&b&k:&r&8&l]'
+    description: '&eAnh di cá...Chém!!!'
+  '27':
+    order: 27
+    tag: '&8&l[&b&k:&r&3&lß&b&lào &3&lƝ&b&lgư&b&k:&r&8&l]'
+    description: '&eChị hai trong chợ cá'
+  '28':
+    order: 28
+    tag: '&8&l[&7&k:&r&7&lƘ&8&lh&7&lô &7&lℳ&8&lự&7&lc&7&k:&r&8&l]'
+    description: '&eTrả bào ngư cho taooo!'
+  '29':
+    order: 29
+    tag: '&8&l[&e&k:&r&6&lƁảy &e&lƓà&e&k:&r&8&l]'
+    description: '&eCho xin tí huyết về nấu cháo gà!!!'
+  '30':
+    order: 30
+    tag: '&8&l[&9&k:&r&9&lƇá Ҥeo&9&k:&r&8&l]'
+    description: '&eCho xin tí huyết về nấu cháo gà!!!'
+  '31':
+    order: 31
+    tag: '&8&l[&a&k:&2&lŌ&a&ln&2&lg &a&lŞ&2&ló&a&li&a&k:&r&8&l]'
+    description: '&eTa sẽ đưa chợ cũ lên ngôi!!!'
+  '32':
+    order: 32
+    tag: '&8&l[&c&k:&r&4&lȾhập Ⱦam Ɱuội&c&k:&r&8&l]'
+    description: '&eBà mệ nó!!!'
+  '33':
+    order: 33
+    tag: '&8&l[&7&k:&r&7&lĂn ✘in ④.⓪&7&k:&r&8&l]'
+    description: '&eChỉ nhận tiền qua cách quẹt thẻ'
+  '34':
+    order: 34
+    tag: '&8&l[&e&k:&e&lĄ Ƈhề&e&k:&r&8&l]'
+    description: '&eKhông có chề đâu à nha'
+  '35':
+    order: 35
+    tag: '&8&l[&d&k:&5&lŁ&d&lắc &5&lƘ&d&liu&d&k:&r&8&l]'
+    description: '&eAe sống chết có nhau'
+  '36':
+    order: 36
+    tag: '&8&l[&4&lLì &f&lxì &4&lcho &f&lcháu &e&l$$&8&l]'
+    description: '&eChỉ nhận tiền qua cách quẹt thẻ'
+  '37':
+    order: 37
+    tag: '&8&l[&b&l☆&3&lĐ&b&lẢ&3&lO &b&lP&3&lR&b&lO&b&l☆&8&l]'
+    description: '&fThành tựu'
+  '38':
+    order: 38
+    tag: '&8&l[&e&l❃&6&LĐẢO &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG&e&l❃&8&l]'
+    description: '&fThành tựu'
+  '39':
+    order: 39
+    tag: '&8&l[&6&lÔNG &e&lCHỦ &2&lSỞ &a&lTHÚ &f&lᴖᴥᴖ&8&l]'
+    description: '&fThành tựu'
+  '40':
+    order: 40
+    tag: '&8&l[&8&lV&7&lUA &8&lHO&7&lPP&8&lER&8&l]'
+    description: '&fThành tựu'
+  '41':
+    order: 41
+    tag: '&8&l[&4&lN&c&lH&4&lÀ &c&lĐ&4&lÔ&c&lN&4&lG &f&lAE&8&l]'
+    description: '&fThành tựu'
+  '42':
+    order: 42
+    tag: '&8&l[&c&l乂◜&c&lA&c&ls&c&ls&c&la&c&ls&c&ls&c&li&c&ln◝乂&8&l]'
+    description: '&eGiết người hả...tầm thường thôi!!'
+  '43':
+    order: 43
+    tag: '&8&l[&f☠&b&l&oT&b&l&or&b&l&oộ&b&l&om &e&l&oC&e&l&oh&e&l&oó&f☠ &a&l◤(^,^)◥&8&l]'
+    description: '&eĐi Exciter auto trộm chó!'
+  '44':
+    order: 44
+    tag: '&8&l[&b&lG&3&la&b&lo&0&e&k.&c&lS&c&lị&c&lp&0&e&k.&d&lH&d&lồ&d&ln&d&lg (¯`♥´¯)&8&l]'
+    description: '&eChúng mày là cái đồ quỷ sứ!'
+  '45':
+    order: 45
+    tag: '&8&l[&e➢&c&l&nI&c&l&nQ&r⇴&b&lV&3&lô&b&lC&3&lự&b&lc&e➣&8&l]'
+    description: '&eGấp đôi IQ để làm gì??'
+  '46':
+    order: 46
+    tag: '&8&l[&e&lツ&6&lS&e&l&nǐ&6&lê&e&lu &6&lS&e&la&6&l&nï&e&lY&6&lä&e&lnツ&8&l]'
+    description: '&eKamehameha!!'
+  '47':
+    order: 47
+    tag: '&8&l[&7&l๖ۣۜ&2&lS&a&la&2&lm&a&lü&2&lr&a&la&2&li&b▬&b▬&b&l[=&b&l=&b&l=&b&l=&b&lﺤ&8&l]'
+    description: '&eTa là võ sĩ đạo chân chính!!'
+  '48':
+    order: 48
+    tag: '&8&l[&e❀&f&l&nS&f&l&o&ni&f&l&o&nê&f&l&o&nu&c❤&d&l&o&nC&d&l&o&nu&d&l&o&nt&d&l&ne&e❀&8&l]'
+    description: '&eMấy thím thấy e có dễ thương hông?'
+  '49':
+    order: 49
+    tag: '&8&l[&c&l♥&b&l&nB&b&lé&6&lH&6&l&ne&6&lo&3&lM&3&l&nê&d&lH&d&l&nư&d&lờ&d&ln&d&lg&c&l♥&8&l]'
+    description: '&eTags do TruongVH đặt ai yêu mến thì có thể mua nha^^'
+  '50':
+    order: 50
+    tag: '&8&l[&f&l&k.&2&l&oT&a&l&oo&2&l&ok&a&l&ou&2&l&od&a&l&oa &d&nI&d&ld&d&lo&d&ll&r&k.&8&l]'
+    description: '&eNhà thí chủ có cháu gái hông??'
+  '51':
+    order: 51
+    tag: '&8&l[&f&l➴&a&n&lŤ&c&n&lh&e&n&lě&r &3&l†&b&lH&f&lü&b&ln&f&lt&b&le&f&lr&3&l†&8&l]'
+    description: '&eAi sỡ hữu tags này chắc hẳn đang rất yêu mến The_Frean!'
+  '52':
+    order: 52
+    tag: '&8&l[&l╭&d&lC&d&lh&d&lị&b&lH&b&lỉ&b&lu&e&lH&e&lô&e&ln&e&lg&f&l(╥﹏╥)&8&l]'
+    description: '&eE thấy cái túi để trên bàn tự nhiên nó mất. Chị hỉu hông?'
+  '53':
+    order: 53
+    tag: '&8&l[&b&l•&7&lA&f&ln&7&lh&f&l.&f&lD&7&la&f&l.Đ&7&le&f&ln &b&l(҂`_´)&8&l]'
+    description: '&e&lAnh da đen xin kính chào các bro!'
+  '54':
+    order: 54
+    tag: '&8&l[&f&l♠&e&lK&6&lh&e&lá&f&l_&3&lN&b&lo&b&lo&3&lb&e&l(◠ε◠)&8&l]'
+    description: '&e&lNgáo ngơ, Ngây thơ vô số tội!'
+  '55':
+    order: 55
+    tag: '&8&l[&f☘&b&l₱&f&lo&b&lo&f&lr&f&a&c&l×&6&lK&e&li&6&ld&f☘&8&l]'
+    description: '&e&lTag này do 0868103595 đặt!'
+  '56':
+    order: 56
+    tag: '&8&l[&f✪&b&lC&f&lô&b&ln&f&lg&e•&b&lA&f&ln&e•&b&lP&f&lh&b&lư&f&lờ&b&ln&b&lg&f✪&8&l]'
+    description: '&e&lLộn xộn cho bốc lịch giờ! (Không lạm dụng tag lừa đảo !!)'
+  '57':
+    order: 57
+    tag: '&8&l[&a&lミ&e&lH&e&li&e&lệ&e&lp&b&lS&b&lĩ&f&lĐ&f&lư&f&lờ&f&l&lng&c&lP&c&lh&c&lố&a&l彡&8&l]'
+    description: '&e&lRa tay nghĩa hiệp giúp đỡ muôn dân! (Không lạm dụng tag lừa
+      đảo !!)'
+  '58':
+    order: 58
+    tag: '&8&l[&a&l♢&b&l♦&c&l◊&f︵&b&lJ&b&lö&f&lk&e&lë&e&lr&f︵&c&l◊&b&l♦&a&l♢&8&l]'
+    description: '&cSự kiện Halloween 2019'
+  '59':
+    order: 59
+    tag: '&8&l[&e&l✞&c&lH&d&lä&c&ll&c&ll&d&lö&c&lw&d&lee&c&ln&e&l✞&b➋⓿➊➒&8&l]'
+    description: '&cSự kiện Halloween 2019'
+  '60':
+    order: 60
+    tag: '&8&l[&d&l✎﹏&b&lŤ&b&lh&f&lầ&f&ly&b︵&f&lG&f&li&b&lá&b&lǫ &b&l&c&l╮&a&l╰&e&l➂&a&l╯&c&l╭&8&l]'
+    description: '&fSự kiện 20/11'
+  '61':
+    order: 61
+    tag: '&8&l[&e&l⚠&b&lḨ&a&lọ&b&lc&c♪&b&lŞ&a&li&b&ln&a&lh&c♪&b&lƇ&a&lá&c♪&b&lẞ&a&li&b&lệ&a&lt&e&l⚠&8&l]'
+    description: '&fSự kiện 20/11'
+  '62':
+    order: 62
+    tag: '&8&l[&a&l☘&f︵&e❷&e⓿&f/&b❶&b❶&f︵&a&l☘&8&l]'
+    description: '&fSự kiện 20/11'
+  '63':
+    order: 63
+    tag: '&8&l[&a⊹Nông dân chính hiệu⊹&8&l]'
+    description: '&f/is missions'
+  '64':
+    order: 64
+    tag: '&8&l[&2⊹Tiều phu chính hiệu⊹&8&l]'
+    description: '&f/is missions'
+  '65':
+    order: 65
+    tag: '&8&l[&c⊹Thợ săn chính hiệu⊹&8&l]'
+    description: '&f/is missions'
+  '66':
+    order: 66
+    tag: '&8&l[&d⊹Đầu bếp chính hiệu⊹&8&l]'
+    description: '&f/is missions'
+  '67':
+    order: 67
+    tag: '&8&l[&7⊹Thợ mỏ chính hiệu⊹&8&l]'
+    description: '&f/is missions'
+  '68':
+    order: 68
+    tag: '&9&l✔ &b&lCẢNH SÁT NGẦM'
+    description: '&bĐã đến lúc hành động rồi'
+  '69':
+    order: 69
+    tag: '&7(&c&l▀Ĺ▀-&7)&4&lV&c&lUA &4L&c&lÌ &4&lĐ&c&lÒN'
+    description: '&bTao xin tự giới thiệu tao là vua lì đòn!'
+  '70':
+    order: 70
+    tag: '&e๖&6&lKing &f⊰⊰&b&lSkyBlock&f⊱⊱'
+    description: '&fThành tựu'
+  nghi_boss:
+    order: 71
+    tag: '&e&l &k:)&e&l trùm mạ vàng &e&k&l:)'
+    description: '&f'
+  nghi_boss2:
+    order: 72
+    tag: '[<<<&9&lcảnh sát nằm vùng&f>>>]'
+    description: '&f'
+  thanhbuliem:
+    order: 73
+    tag: '&a&l&n♡๖ۣۜՇɦáทɦ &b&l&nßú&c&l&n ℒ¡ếℳ♡๖ۣۜ'
+    description: '&f• &7Được đóng góp thiết kế bởi &aDepTraiTai &7Sky I &f•'
+  sucmanhdongtien:
+    order: 74
+    tag: '&e⛁&a&l『&c&l۴Sức̫ Mạnh &9&a&d&0&f♚&b&l Đồng Tiền &a&l』&e⛁'
+    description: '&f• &7Được đóng góp thiết kế bởi &aNPX_KAI &7Sky I &f•'
+  anxinnghethuat:
+    order: 75
+    tag: '&6&l『&e♨&6&l』&c&lĂn&d&lXin&a&lNghệ&b&lThuật&6&l『&e♨&6&l』'
+    description: '&f• &7Được đóng góp thiết kế bởi &aSuBinss &7Sky III &f•'

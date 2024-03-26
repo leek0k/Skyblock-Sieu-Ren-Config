@@ -1,0 +1,8 @@
+cannot-open-vault: '&cKhông thể mở pv khi đang mở kho đồ khác!'
+command:
+  help:
+    - '&2======== &aLệnh PlayerVaultsAddon &2========'
+    - '&2Lệnh thay thế: &aplayervaultsaddon, pvaddon'
+    - '&f/pvaddon reload &a- Cài lại cấu hình' # Permission: playervaultsaddon.command.reload
+    - '&f/pvaddon help &a- Xem hướng dẫn' # Permission: playervaultsaddon.command.help
+  reload: '&2[&a!&2] &aĐã cài lại file cấu hình!'

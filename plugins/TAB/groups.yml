@@ -1,0 +1,105 @@
+default:
+  tabprefix: "&7"
+  tagprefix: "&7" 
+  tabsuffix: "%vault-suffix%"
+  tagsuffix: ""    
+Vip1:
+  tabprefix: "&7&lTRÙM &f"
+  tagprefix: "&7&lTRÙM &f"
+  tabsuffix: "%vault-suffix%"
+  tagsuffix: ""   
+staff:
+  tabprefix: "&d&lSTAFF &d"
+  tagprefix: "&d&lSTAFF &d"
+  tabsuffix: "%vault-suffix%"
+  tagsuffix: ""       
+Vip2:
+  tabprefix: "&6&lVUA &e"
+  tagprefix: "&6&lVUA &e"
+  tabsuffix: "%vault-suffix%"
+  tagsuffix: ""    
+Vip3:
+  tabprefix: "&c&lQUỶ &4"
+  tagprefix: "&c&lQUỶ &4"
+  tabsuffix: "%vault-suffix%"
+  tagsuffix: ""    
+Vip4:
+  tabprefix: "&b&lTIÊN &3"
+  tagprefix: "&b&lTIÊN &3"
+  tabsuffix: "%vault-suffix%"
+  tagsuffix: ""    
+Vip5:
+  tabprefix: "&6&lT&e&lH&6&lẦ&e&lN &e"
+  tagprefix: "&6T&eH&6Ầ&eN &e"
+  tabsuffix: "%vault-suffix%"
+  tagsuffix: ""    
+Vip6:
+  tabprefix: "&e&l⊰⊹&6&l"
+  tagprefix: "&e&l⊰⊹&6&l"   
+  tabsuffix: "%vault-suffix%&e&l⊹⊱"
+  tagsuffix: "&e&l⊹⊱"   
+youtuber:
+  tabprefix: "&f&l(&c&lYT&f&l) &c"
+  tagprefix: "&f&l(&c&lYT&f&l) &c"
+  tabsuffix: ""
+  tagsuffix: ""
+helper0:    
+  tabprefix: "&b&lTrial Helper &b"
+  tagprefix: "&b&lTrial Helper &b"
+  tabsuffix: "%vault-suffix% &b&l✔"
+  tagsuffix: " &b&l✔"    
+helper1:    
+  tabprefix: "&a&l★&b&lHelper &b"
+  tagprefix: "&a&l★&b&lHelper &b"
+  tabsuffix: "%vault-suffix% &b&l✔"
+  tagsuffix: " &b&l✔"  
+helper2:    
+  tabprefix: "&a&l★★&b&lHelper &b"
+  tagprefix: "&a&l★★&b&lHelper &b"
+  tabsuffix: "%vault-suffix% &b&l✔"
+  tagsuffix: " &b&l✔"
+helper3:    
+  tabprefix: "&a&l★★★&b&lHelper &b"
+  tagprefix: "&a&l★★★&b&lHelper &b"
+  tabsuffix: "%vault-suffix% &b&l✔"
+  tagsuffix: " &b&l✔"   
+police1:    
+  tabprefix: "&e&l★&3&lPolice &3"
+  tagprefix: "&e&l★&3&lPolice &3"
+  tabsuffix: " &b&l✔"
+  tagsuffix: " &b&l✔"  
+police2:    
+  tabprefix: "&e&l★★&3&lPolice &3"
+  tagprefix: "&e&l★★&3&lPolice &3"
+  tabsuffix: " &b&l✔"
+  tagsuffix: " &b&l✔"  
+police3:    
+  tabprefix: "&e&l★★★&3&lPolice &3"
+  tagprefix: "&e&l★★★&3&lPolice &3"
+  tabsuffix: " &b&l✔"
+  tagsuffix: " &b&l✔"    
+admin:
+  tabprefix: "&e★★★&c&lADMIN &c"
+  tagprefix: "&e★★★&c&lADMIN &c"
+  tabsuffix: " &b&l✔"
+  tagsuffix: " &b&l✔"  
+owner:
+  tabprefix: "&e✯&4&lOWNER &4"
+  tagprefix: "&e✯&4&lOWNER &4"
+  tabsuffix: " &b&l✔"
+  tagsuffix: " &b&l✔"  
+
+
+ # default settings for all groups, all groups will take properties from this section unless player's primary group overrides a specific setting
+_DEFAULT_:
+  tabprefix: "%vault-prefix%"
+  tagprefix: "%vault-prefix%"
+  customtabname: "%essentials_nickname%"
+  customtagname: "%essentials_nickname%" # don't forget to enable unlimited nametag mode to make this one work
+  tabsuffix: "%vault-suffix%%afk%"
+  tagsuffix: "%vault-suffix%%afk%"
+per-world:
+  world1:
+    Owner:
+      tabprefix: "&0&l[&a&lOwner&0&l] &a"
+      tagprefix: "&2&lOwner &a"

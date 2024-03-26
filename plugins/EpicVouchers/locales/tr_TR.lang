@@ -1,0 +1,38 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&8[&6EpicVouchers&8] '
+interface:
+  confirmsettings:
+
+    # Interface Messages
+    title: '&6Doğrulama'
+    confirmitemname: '&2&lONAYLA'
+    confirmitemlore: '&aEylemini onaylamak için buraya tıkla.'
+    cancelitemname: '&4&lİPTAL'
+    cancelitemlore: '&cEylemini iptal etmek için buraya tıkla.'
+command:
+  error:
+
+    # Command Messages
+    noplayer: '&7Bu kullanıcı bulunmuyor veya şuan çevrimiçi değil.'
+    novoucher: '&cBu kupon bulunmuyor.'
+    notexist: '&7Girdiğin komut doğru değil veya yanlış yazılmış.'
+    notnumber: '&7Yazdığınız numarayı geçerli bir tutara ayrıştırma başarısız oldu.'
+  reload:
+    success: '&7Tüm ayarlar ve kuponlar yenilendi.'
+  give:
+    send: '&6%player% kullanıcısına &6%voucher% &7(&6x%amount%&7) &7verdiniz.'
+    receive: '&6%voucher% &7(&6x%amount%&7) &7kupon aldınız.'
+    cancelled: '&cİşlem iptal edildi.'
+  force:
+    send: '&6%player% &7adlı oyuncuyu &6%voucher% &7(&6x%amount%&7) &7kuponlarını kullanmaya zorladın.'
+  list:
+    list: '&7Kuponların listesi: &6%list%&7.'
+event:
+  general:
+
+    # Event Messages
+    nopermission: '&cBunu yapmaya yetkin yok.'
+    cooldown: '&6%time%&7 saniye sonra diğer kuponunuzu kullanabilirsiniz.'

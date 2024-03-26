@@ -1,0 +1,69 @@
+name: helper0
+permissions:
+- chatsentinel.bypass.*
+- essentials.togglejail.*:
+    value: false
+- animatednames.group.Helper
+- animatednames.group.default:
+    value: false
+- chatcontrol.bypass.dupe.commands
+- chatcontrol.bypass.move
+- chatcontrol.bypass.mute
+- chatcontrol.bypass.spamkick
+- chatcontrol.bypass.time.commands
+- chatsentinel.bypass.flood
+- chatsentinel.bypass.swearing
+- essentials.chat.color:
+    value: false
+- essentials.chat.url
+- essentials.chatcolor
+- essentials.ec
+- essentials.enderchest
+- essentials.feed
+- essentials.fly
+- essentials.hat
+- essentials.heal
+- essentials.invsee
+- essentials.jail:
+    value: false
+- essentials.joinfullserver
+- essentials.kits.god
+- essentials.near
+- essentials.nick:
+    value: false
+- essentials.nick.color
+- essentials.nickcolor
+- essentials.repair
+- essentials.teleport.cooldown.bypass.back
+- essentials.teleport.cooldown.bypass.tpa
+- essentials.teleport.timer.bypass
+- essentials.teleport.timer.bypass.back
+- essentials.teleport.timer.bypass.tpahere
+- essentials.teleport.timer.move
+- essentials.togglejail:
+    value: false
+- essentials.togglejail.offline:
+    value: false
+- essentials.tpo
+- helpop.receive
+- litebans.group.helper
+- litebans.mute
+- litebans.tempmute
+- litebans.unmute
+- litebans.unmute.own
+- mypet.command.name.color
+- nocheatplus.notify
+- noflyzone.bypass
+- permissions.mode
+- permissions.warn
+- playervaults.amount.1
+- playervaults.amount.10
+- playervaults.amount.2
+- playervaults.commands.use
+- pvpmanager.nodisable
+- rankup.default
+- staff.warn
+- unbreakable.armor
+- weight.80
+parents:
+- vip2

@@ -1,0 +1,135 @@
+﻿
+
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&8☀ &8&lMenu &8☀ ʕ•ᴥ•ʔ'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  command: 'menu;ae;ce'
+  open-action: 'sound: BLOCK_CHEST_OPEN, 2.0, 0.5'
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+Viettel111: 
+  COMMAND: 'napthe'
+  KEEP-OPEN: true
+  NAME: '&c&lXu&7⛁&8║&e&nNạp Thẻ&r&8║&7⛁&c&lXu'
+  ENCHANTMENT: 'fire aspect, 1'  
+  LORE:
+    - ''
+    - '&7* &eCảm ơn &fbạn đã ủng hộ CHÚNG MÌNH &7*'
+    - ''
+    - '&0&o#Item menu'
+  ID: 339
+  POSITION-X: 9
+  POSITION-Y: 2
+bedrock1:
+  ENCHANTMENT: 'fire aspect, 1' 
+  COMMAND: ''
+  KEEP-OPEN: true   
+  COMMAND: 'open:xoapv.yml'  
+  NAME: '&4!&c&lDọn pv&4!'  
+  LORE:
+    - ''  
+    - '&7* &bLưu ý trước khi nhấn vào &c(MineAhihi sẽ không chịu trách nhiệm)&b:'   
+    - '&7- &fDọn sạch (/pv 1,2,3...) của bạn'
+    - '&fLấy hết vật phẩm của bạn ra để lại vật'
+    - '&fphẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166 
+  POSITION-X: 4
+  POSITION-Y: 6    
+fix:
+  COMMAND: 'op:fix hand'
+  NAME: '&3&l&nFix&r &8[&bVật Phẩm Đang Cầm&8]'
+  LORE:
+    - ''
+    - '&7* &f&nGiá:&r &e2500$ &7*'
+    - ''
+    - '&0&o#Item menu'
+  PRICE: 2500
+  ID: anvil
+  POSITION-X: 1
+  POSITION-Y: 2    
+shop:
+  COMMAND: 'shopxu' 
+  ENCHANTMENT: 'fire aspect, 1'   
+  NAME: '&e&lCửa Hàng &7&nvật phẩm'  
+  LORE:
+    - ''  
+    - '&7* &fNhững món hàng hấp dẫn đang chờ đợi bạn! &7*' 
+    - ''
+    - '&0&o#Item menu' 
+  ID: 340
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 2  
+  
+quyenloi:
+  COMMAND: 'open:quyenloi.yml'  
+  NAME: '&eNÂNG &6CẤP &3✔'  
+  LORE:  
+    - ' '    
+    - '&7* &fBạn muốn &e&nnâng cấp&r&f? &7*' 
+    - ''
+    - '&0&o#Item menu'  
+  ID: '3:2'
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 2 
+  
+rankup:
+  COMMAND: 'open:rankup.yml'
+  ENCHANTMENT: 'fire aspect, 1'   
+  NAME: '&6[arrow_up] &e&lSHOP &6&nRank&r &6[arrow_up]'
+  LORE:
+    - ''    
+    - '&7* &6&l&nRank&r &esẽ cho bạn rất nhiều quyền lợi!!! &7*'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 285
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 2
+  
+  
+trangbi:
+  COMMAND: 'open:trangbi.yml'     
+  NAME: '&d&l<&3<- &d&lCỬA HÀNG SIÊU TRANG BỊ&r &3&l->&d>'  
+  LORE:
+    - ''
+    - '&f* &e...&EKho &b&LVŨ KHÍ &Etối cao&R&e... &f*'         
+    - ''
+    - '&0&o#Item menu'
+  ID: pumpkin     
+  POSITION-X: 6
+  POSITION-Y: 2    
+
+Trails:  
+  COMMAND: 'open:cudinh.yml' 
+  NAME: '&6&l♪ ♫ Shop biệt danh ♪ ♫'
+  LORE:
+    - ''
+    - '&e* Tự tin thể hiện cá tính!! *'
+    - ''
+    - '&0&o#Item menu'
+  ENCHANTMENT: 'fire aspect, 1'     
+  ID: 399
+  POSITION-X: 7
+  POSITION-Y: 2  
+       

@@ -1,0 +1,85 @@
+menu-settings:
+  name: '&e&lNẠP THẺ &8&l| &6&lCHỌN MỆNH GIÁ'
+  rows: 1
+  auto-refresh: 5
+Zing-10k:
+  COMMAND: 'donate choose Zing 10000'
+  NAME: '&b&lZing 10,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fZing 10,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 1
+  POSITION-Y: 1
+Zing-20k:
+  COMMAND: 'donate choose Zing 20000'
+  NAME: '&b&lZing 20,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fZing 20,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 2
+  POSITION-Y: 1
+Zing-30k:
+  COMMAND: 'donate choose Zing 30000'
+  NAME: '&b&lZing 30,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fZing 30,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 3
+  POSITION-Y: 1
+Zing-50k:
+  COMMAND: 'donate choose Zing 50000'
+  NAME: '&b&lZing 50,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fZing 50,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 4
+  POSITION-Y: 1
+Zing-100k:
+  COMMAND: 'donate choose Zing 100000'
+  NAME: '&b&lZing 100,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fZing 100,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 5
+  POSITION-Y: 1
+Zing-200k:
+  COMMAND: 'donate choose Zing 200000'
+  NAME: '&b&lZing 200,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fZing 200,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 6
+  POSITION-Y: 1
+Zing-300k:
+  COMMAND: 'donate choose Zing 300000'
+  NAME: '&b&lZing 300,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fZing 300,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 7
+  POSITION-Y: 1
+Zing-500k:
+  COMMAND: 'donate choose Zing 500000'
+  NAME: '&b&lZing 500,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fZing 500,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 8
+  POSITION-Y: 1
+Zing-1m:
+  COMMAND: 'donate choose Zing 1000000'
+  NAME: '&b&lZing 1,000,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fZing 100,000,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 9
+  POSITION-Y: 1

@@ -1,0 +1,58 @@
+mission-file: StatisticsMissions
+required-missions:
+- a_islandlevel_b
+island: true
+auto-reward: false
+rewards:
+  commands:
+  - eco give %player% 550000
+  - exp give %player% 30000
+  - cr give to %player% spawnerquai2 1
+  - lp user %player% permission set deluxetags.tag.37
+  - is admin msg %player% &e&l$ | &7Hoàn thành thử thách!
+required-checks:
+  - '%topphuquy_group_total_point_normal_SUPERIORSKYBLOCK2% > 1000000'
+only-show-if-required-completed: false
+required-statistics:
+  '1':
+    statistics:
+      - 'PLAY_ONE_TICK'
+    amount: 1152000
+icons:
+  not-completed:
+    type: EMERALD_BLOCK
+    name: '&6&LTHỬ THÁCH: &a&lSIÊU ĐẢO &6&lMINE&f&lAHIHI &f&l#3'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&e&lTài Sản: &b1.000.000'
+    - '&e&lOnline: &bTrên 16 tiếng'
+    - ''
+    - '&7- &e$550.000 , 30.000 Exp'
+    - '&7- &fx1 &d&lSPAWNER QUÁI &7Random 2'
+    - '&7- &fDanh hiệu &8&l[&b&l☆&3&lĐ&b&lẢ&3&lO &b&lP&3&lR&b&lO&b&l☆&8&l]'
+    - ''
+    - '&c&l ✘ &7Chưa hoàn thành'
+    - ''
+  can-complete:
+    type: EMERALD_BLOCK
+    name: '&6&LTHỬ THÁCH: &a&lSIÊU ĐẢO &6&lMINE&f&lAHIHI &f&l#3'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&e&lTài Sản: &b1.000.000'
+    - '&e&lOnline: &bTrên 16 tiếng'
+    - ''
+    - '&7- &e$550.000 , 30.000 Exp'
+    - '&7- &fx1 &d&lSPAWNER QUÁI &7Random 2'
+    - '&7- &fDanh hiệu &8&l[&b&l☆&3&lĐ&b&lẢ&3&lO &b&lP&3&lR&b&lO&b&l☆&8&l]'
+    - ''
+    - '&a&l ✔ &7Bạn đã có đủ điều kiện Click vào đây.'
+    enchants:
+      DURABILITY: 1
+    flags:
+    - HIDE_ENCHANTS
+  completed:
+    type: MAP
+    name: '&6&LTHỬ THÁCH: &a&lCẤP ĐẢO &f&l#3'
+    lore:
+    - ''
+    - '&a&l ✔ &7Đã hoàn thành.'

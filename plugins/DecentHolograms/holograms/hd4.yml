@@ -1,0 +1,20 @@
+location: huongdan:-956.5:55.533:1044.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&5&l✶&d⋆&5⋆ &d&lMÁY FARM LỒNG SPAWNER &8⋆&7⋆&8&l✶'
+    height: 0.3
+  - content: ''
+    height: 0.3  
+  - content: '&fTích nhiều &dLồng Spawner &fđể cày &bEXP &fvà &a$$$'
+    height: 0.3 
+  - content: '&fGom &cQuái Vật &flại 1 chỗ và chém chết nhanh hơn!'
+    height: 0.3   
+  - content: '&7((Dùng &a/is upgrade &7để nâng cấp số lượng spawner có thể đặt ra))'
+    height: 0.3     
+  actions: {}

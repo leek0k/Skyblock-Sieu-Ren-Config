@@ -1,0 +1,333 @@
+file: nangcaptrangbithuongco.yml
+menu_title: '&8&lNâng Cấp Vũ Khí'
+open_command: 
+- nangcaptrangbithuongco
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 54
+update_interval: 1
+open_requirement: 
+items:
+  'background':
+    material: STAINED_GLASS_PANE
+    data: 4
+    display_name: ' '
+    slots:
+    - '0'
+    - '8'
+    - '45'
+    - '53'
+    - '11'
+    - '20'
+    - '29'
+    - '38'
+    - '53'
+  'background2':
+    material: STAINED_GLASS_PANE
+    data: 1
+    display_name: ' '
+    slots:
+    - '1-3'
+    - '5-7'
+    - '9'
+    - '17-18'
+    - '26-27'
+    - '36'
+    - '46'
+    - '47'
+    - '51'
+    - '52'
+    - '44'
+    - '35'
+    - '50'
+  'exit':
+    material: DOUBLE_PLANT
+    display_name: '&c&l⬅ [Trở về]'
+    slot: 49
+    lore:
+    - "&7Nhấn vào để trở về mục trước"
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[player] ecraft'
+  'prevpage':
+    material: ARROW
+    display_name: '&e&lTrang Trước'
+    slot: 48
+    click_commands:
+    - '[player] nangcaptrangbitoicao'
+  'icon':
+    material: CLAY_BRICK
+    slot: 4
+    display_name: '&e[♦] &e&lĐá nâng cấp &e[♦]'
+    lore:
+    - '&7Số Lượng: &a%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%'
+    - ''
+    - '&0&o#Item menu'
+  'kiemthuongco':
+    material: GOLD_SWORD
+    display_name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lKiếm Thượng Cổ&6﹞&6﹞&d﹞&2&l⌘⌘'
+    lore:
+    - '&7♦ Trade - Rèn'
+    - ''
+    - '&0&o#Item menu'
+    slot: 10
+    hide_attributes: true
+  'kiemthuongco4a':
+    material: IRON_SWORD
+    slot: 12
+    priority: 2
+    display_name: '§2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm (4♦))§f﹞§6﹞§d﹞§2§l⌘⌘'
+    lore:
+    - §6§l§k..§r §e§lQuỷ dữ §6§l§k..§r §e§l III
+    - ''
+    - §2§l⌘⌘§6﹝§e﹝§6﹝§a(4♦) §a§lTHƯỢNG CỔ §a(4♦)§6﹞§e﹞§6﹞§2§l⌘⌘
+    - §2* Thượng Cổ Kiếm (Max)
+    - §2* Tăng 30% damage.
+    - '&7Yêu cầu:'
+    - '&a+ §2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm)§f﹞§6﹞§d﹞§2§l⌘⌘'
+    - '&a+ §2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm (2♦))§f﹞§6﹞§d﹞§2§l⌘⌘'
+    - '&a+ §2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm (3♦))§f﹞§6﹞§d﹞§2§l⌘⌘'
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DAMAGE_ALL;160
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;3
+    - DURABILITY;10
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu"
+    - "[message] §2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm)§f﹞§6﹞§d﹞§2§l⌘⌘ &fsở hữu: %checkitem_amount_mat:stone_sword,amt:1,lorecontains:* Tăng 20%"
+    - "[message] §2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm (2♦))§f﹞§6﹞§d﹞§2§l⌘⌘ &fsở hữu: %checkitem_amount_mat:stone_sword,amt:1,lorecontains:* Tăng 22%"
+    - "[message] §2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm (3♦))§f﹞§6﹞§d﹞§2§l⌘⌘ &fsở hữu: %checkitem_amount_mat:stone_sword,amt:1,lorecontains:* Tăng 24%"
+    - "[refresh]"
+  'kiemthuongco4':
+    material: IRON_SWORD
+    slot: 12
+    priority: 1
+    display_name: '§2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm (4♦))§f﹞§6﹞§d﹞§2§l⌘⌘'
+    lore:
+    - §6§l§k..§r §e§lQuỷ dữ §6§l§k..§r §e§l III
+    - ''
+    - §2§l⌘⌘§6﹝§e﹝§6﹝§a(4♦) §a§lTHƯỢNG CỔ §a(4♦)§6﹞§e﹞§6﹞§2§l⌘⌘
+    - §2* Thượng Cổ Kiếm (Max)
+    - §2* Tăng 30% damage.
+    - '&7Yêu cầu:'
+    - '&a+ §2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm)§f﹞§6﹞§d﹞§2§l⌘⌘'
+    - '&a+ §2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm (2♦))§f﹞§6﹞§d﹞§2§l⌘⌘'
+    - '&a+ §2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm (3♦))§f﹞§6﹞§d﹞§2§l⌘⌘'
+    - ''
+    - '&0&o#Item menu'
+    enchantments:
+    - DAMAGE_ALL;160
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;3
+    - DURABILITY;10
+    view_requirement:
+      minimum_requirements: 3
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:stone_sword,amt:1,lorecontains:* Tăng 20%'
+          output: '1'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:stone_sword,amt:1,lorecontains:* Tăng 22%'
+          output: '1'
+        '3':
+          type: '>='
+          input: '%checkitem_amount_mat:stone_sword,amt:1,lorecontains:* Tăng 24%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 3
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:stone_sword,amt:1,lorecontains:* Tăng 20%'
+          output: '1'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:stone_sword,amt:1,lorecontains:* Tăng 22%'
+          output: '1'
+        '3':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:stone_sword,amt:1,lorecontains:* Tăng 24%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[message] §2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm)§f﹞§6﹞§d﹞§2§l⌘⌘ &fsở hữu: %checkitem_amount_mat:stone_sword,amt:1,lorecontains:* Tăng 20%"
+      - "[message] §2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm (2♦))§f﹞§6﹞§d﹞§2§l⌘⌘ &fsở hữu: %checkitem_amount_mat:stone_sword,amt:1,lorecontains:* Tăng 22%"
+      - "[message] §2§l⌘⌘§6﹝§d﹝§6﹝§a§lTHƯỢNG CỔ §6﹝§d﹝§6﹝§e(Kiếm (3♦))§f﹞§6﹞§d﹞§2§l⌘⌘ &fsở hữu:     %checkitem_amount_mat:stone_sword,amt:1,lorecontains:* Tăng 24%"
+      - "[close]"
+    click_commands:
+    - "[console] ie give kiemthuongco4 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]" 
+
+  'cupthuongco':
+    material: GOLD_PICKAXE
+    display_name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lCúp Thượng Cổ&6﹞&6﹞&d﹞&2&l⌘⌘'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 19
+    hide_attributes: true   
+
+  'cupthuongco22':
+    material: DIAMOND_PICKAXE
+    slot: 21
+    priority: 1
+    display_name: '&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (2♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    enchantments:
+    - DURABILITY;5
+    - DIG_SPEED;30
+    - LOOT_BONUS_BLOCKS;20
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&2&l⌘⌘&6﹝&e﹝&f﹝&a(2♦) &a&lTHƯỢNG CỔ &a(2♦)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    - '&0&o#Cupthuongco2'
+    - '&a▢ Ô cường hóa: +7'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ &2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New) &f(&eHiện có: &a%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ&f﹞&e﹞&6﹞&2&l⌘⌘,enchantments:DIG_SPEED=28%&f)'
+    - '&a- &7Hiệu suất 28'
+    - '&a+ &fx2 &f&l✦ Đá cường hóa ✦ &f(&eHiện có: &a%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu))%&f)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ&f﹞&e﹞&6﹞&2&l⌘⌘,enchantments:DIG_SPEED=28%'
+          output: '1'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu)),amt:2%'
+          output: '2'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu)),amt:2%'
+          output: '2'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_pickaxe,amt:1,lorecontains:&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ&f﹞&e﹞&6﹞&2&l⌘⌘,enchantments:DIG_SPEED=28%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[close]"
+    click_commands:
+    - "[console] ie give cupthuongcotrade2 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"  
+  
+  'cupthuongco2a':
+    material: DIAMOND_PICKAXE
+    slot: 21
+    priority: 2
+    display_name: '&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (2♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    enchantments:
+    - DURABILITY;5
+    - DIG_SPEED;30
+    - LOOT_BONUS_BLOCKS;20
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&2&l⌘⌘&6﹝&e﹝&f﹝&a(2♦) &a&lTHƯỢNG CỔ &a(2♦)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    - '&0&o#Cupthuongco2'
+    - '&a▢ Ô cường hóa: +7'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ &2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New) &f(&eHiện có: &c%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ&f﹞&e﹞&6﹞&2&l⌘⌘,enchantments:DIG_SPEED=28%&f)'
+    - '&a- &7Hiệu suất 28'
+    - '&a+ &fx2 &f&l✦ Đá cường hóa ✦ &f(&eHiện có: &c%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu))%&f)'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cNguyên liệu không đủ!"
+    - "[message] &2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New) &f(&eHiện có: &c%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ&f﹞&e﹞&6﹞&2&l⌘⌘,enchantments:DIG_SPEED=28%&f)"
+    - "[message] &fx2 &f&l✦ Đá cường hóa ✦ &f(&eHiện có: &c%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu))%&f)"
+    - "[close]"  
+  
+  'cupthuongco3':
+    material: DIAMOND_PICKAXE
+    slot: 22
+    priority: 1
+    display_name: '&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (3♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    enchantments:
+    - DURABILITY;5
+    - DIG_SPEED;32
+    - LOOT_BONUS_BLOCKS;22
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&2&l⌘⌘&6﹝&e﹝&f﹝&a(2♦) &a&lTHƯỢNG CỔ &a(2♦)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    - '&0&o#Cupthuongco3'
+    - '&a▢ Ô cường hóa: +7'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ &2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (2♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New) &f(&eHiện có: &a%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&2&l⌘⌘&6﹝&e﹝&f﹝&a(2♦) &a&lTHƯỢNG CỔ &a(2♦)&f﹞&e﹞&6﹞&2&l⌘⌘,enchantments:DIG_SPEED=30%&f)'
+    - '&a- &7Hiệu suất 30'
+    - '&a+ &fx4 &f&l✦ Đá cường hóa ✦ &f(&eHiện có: &a%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu))%&f)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&2&l⌘⌘&6﹝&e﹝&f﹝&a(2♦) &a&lTHƯỢNG CỔ &a(2♦)&f﹞&e﹞&6﹞&2&l⌘⌘,enchantments:DIG_SPEED=30%'
+          output: '1'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu)),amt:4%'
+          output: '4'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu)),amt:4%'
+          output: '4'
+        '2':
+          type: '==' 
+          input: '%checkitem_amount_remove_mat:diamond_pickaxe,amt:1,lorecontains:&2&l⌘⌘&6﹝&e﹝&f﹝&a(2♦) &a&lTHƯỢNG CỔ &a(2♦)&f﹞&e﹞&6﹞&2&l⌘⌘,enchantments:DIG_SPEED=30%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[close]"
+    click_commands:
+    - "[console] ie give cupthuongcotrade3 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"      
+
+  'cupthuongco3a':
+    material: DIAMOND_PICKAXE
+    slot: 22
+    priority: 2
+    display_name: '&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (3♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    enchantments:
+    - DURABILITY;5
+    - DIG_SPEED;32
+    - LOOT_BONUS_BLOCKS;22
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&2&l⌘⌘&6﹝&e﹝&f﹝&a(2♦) &a&lTHƯỢNG CỔ &a(2♦)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    - '&0&o#Cupthuongco3'
+    - '&a▢ Ô cường hóa: +7'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ &2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (2♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New) &f(&eHiện có: &c%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&2&l⌘⌘&6﹝&e﹝&f﹝&a(2♦) &a&lTHƯỢNG CỔ &a(2♦)&f﹞&e﹞&6﹞&2&l⌘⌘,enchantments:DIG_SPEED=30%&f)'
+    - '&a- &7Hiệu suất 30'
+    - '&a+ &fx4 &f&l✦ Đá cường hóa ✦ &f(&eHiện có: &c%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu))%&f)'  
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cKhông đủ nguyên liệu!"
+    - "[message] &2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (2♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New) &f(&eHiện có: &c%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&2&l⌘⌘&6﹝&e﹝&f﹝&a(2♦) &a&lTHƯỢNG CỔ &a(2♦)&f﹞&e﹞&6﹞&2&l⌘⌘,enchantments:DIG_SPEED=30%&f)"
+    - "[message] &fx4 &f&l✦ Đá cường hóa ✦ &f(&eHiện có: &c%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu))%&f)"
+    - "[close]"  

@@ -1,0 +1,30 @@
+name: vip3
+permissions:
+- animatednames.group.Vip2:
+    value: false
+- animatednames.group.Vip3
+- chatitem.use
+- essentials.enderchest
+- essentials.feed
+- essentials.joinfullserver
+- essentials.kits.vip2:
+    value: false
+- essentials.kits.vip3
+- essentials.pay
+- essentials.ptime
+- essentials.repair
+- essentials.sethome.multiple.vip3
+- essentials.top
+- essentials.workbenchssentials.workbench
+- playervaults.amount.6
+- playervaults.size.6
+- rankup.diamond:
+    value: false
+- rankup.emeral
+- resetpv.vault.6
+- shopguiplus.sell.all
+- showitem.chat
+- weight.3
+- zAuctionHouse.maxsell.6
+parents:
+- vip2

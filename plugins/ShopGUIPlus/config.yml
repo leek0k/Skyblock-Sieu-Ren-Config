@@ -1,0 +1,731 @@
+database:
+ # Database backend type, can be set to mysql or sqlite
+  type: sqlite
+  # MySQL database host
+  mySQLHost: localhost
+  # MySQL connection port number
+  mySQLPort: 3306
+  # MySQL database name
+  mySQLDatabase: db
+  # MySQL database user
+  mySQLUser: root
+  # MySQL user's password
+  mySQLPassword: ""
+  # MySQL table names
+  tableNames:
+    players: "players"
+ 
+#  Type of the economy which will handle all transactions.
+#  Supported economies:
+#  - EXP (default Minecraft experience points)
+#  - VAULT (requires http://dev.bukkit.org/bukkit-plugins/vault/)
+#  - MYSQL_TOKENS (requires https://www.spigotmc.org/resources/mysql-tokens.7535/)
+#  - PLAYER_POINTS (requires https://dev.bukkit.org/projects/playerpoints)
+#  - TOKEN_MANAGER (requires https://www.spigotmc.org/resources/tokenmanager.8610/)
+economyType: VAULT
+# Name of the main GUI
+shopMenuName: "MineAhihi Shop"
+# Size of the main GUI, valid values are 9, 18, 27, 36, 45 and 54
+shopMenuSize: 27
+# Choose an item to fill the empty slots of menu with
+# Define whether selling all with middle mouse button is enabled
+enableSellAll: true
+# Define whether the buy GUI with option to select quantity is enabled
+enableBuyGUI: true
+# Define whether the sell GUI with option to select quantity is enabled
+enableSellGUI: true
+# Define whether sell all button in SellGUI is enabled (enableSellGUI has to be enabled too)
+enableSellGUISellAll: false
+# Define whether after closing/buying/selling the shop GUI should be opened again
+returnToShop: true
+# Define whether the quick buy/sell option should be enabled (amount selection gui will stay open until player closes it)
+quickBuySell: true
+# Define whether lines containing the %buy% placeholder should be hidden for unbuyable items
+hideBuyPriceForUnbuyable: true
+# Define whether lines containing the %sell% placeholder should be hidden for unsellable items
+hideSellPriceForUnsellable: true
+# Define whether buy and sell buttons should be inverted (false - LMB buy, RMB sell / true - LMB sell, RMB buy)
+invertBuySell: false
+# Maximum amount of enchantments players can add to an item, set to -1 for no limit
+maxEnchantments: 3
+# Choose whether players should be able to buy enchantments only 1 level higher than current (eg. player has sword with Sharpness 1, they could buy only Sharpness 2)
+limitEnchantmentLevelDiff: false
+# Define whether the amount selection double click bug fix should be enabled
+enableAmountSelectionFix: true
+# Define whether players should be able to use sell all option to sell all their items (allowAllSellAllStackSizes = true) or only amount multiplied by the original stack size of the shop item (allowAllSellAllStackSizes = false)
+allowAllSellAllStackSizes: true
+# Define whether all prices should be rounded up, down, to the nearest whole number or not rounded (valid values are UP, DOWN, NEAREST and NONE)
+roundPrices: none
+# Define whether main menu (/shop command) should be disabled. The only way to access shops will be to use /shop <id> when you disable it.
+disableMainMenu: false
+# Choose if different messages should be sent when someone buy/sell items for $0 (MSG_ITEM_BOUGHTFREE, MSG_ITEM_SOLDFREE, MSG_ITEM_SOLDALLFREE)
+useDifferentMessagesForFreeItems: true
+# Choose if item names should have first letters of their names capitalized, for instance nether brick would become Nether Brick
+capitalizeItemNames: true
+# Choose the type of price modifiers. (BOTH (permission modifiers have higher priority than command-ones), COMMAND, PERMISSION)
+priceModifiersType: BOTH
+# Choose if the gui shall be closed after using the Sell All feature
+closeGuiAfterSellAll: false
+# Choose if bulk buy/sell guis should be opened immediately after clicking an item (enableBuyGUI and enableSellGUI have to be enabled as well and players need the bulk buy/sell permissions)
+openBulkGuiImmediately: false
+# Choose which items stack size should be capped at 16 inside the amount selection GUI so players can't buy eg. oversized ender pearl stacks
+# Format is same as for regular items in shops.yml
+itemStackSizeCappedAt:
+  1:
+    material: ENDER_PEARL
+    size: 16
+  2:
+    material: SNOW_BALL
+    size: 16
+  3:
+    material: SIGN
+    size: 16
+  4:
+    material: EGG
+    size: 16
+  5:
+    material: BUCKET
+    size: 1
+  6:
+    material: POTION
+    size: 1
+  7:
+    material: POTION
+    damage: 8265
+    size: 1
+  8:
+    material: POTION
+    damage: 8233
+    size: 1
+  9:
+    material: POTION
+    damage: 8258
+    size: 1
+  10:
+    material: POTION
+    damage: 8226
+    size: 1
+  11:
+    material: POTION
+    damage: 8257
+    size: 1
+  12:
+    material: POTION
+    damage: 8225
+    size: 1
+  13:
+    material: POTION
+    damage: 8229
+    size: 1
+  14:
+    material: POTION
+    damage: 8229
+    size: 1
+  15:
+    material: POTION
+    damage: 16421
+    size: 1
+  16:
+    material: POTION
+    damage: 16452
+    size: 1
+  17:
+    material: POTION
+    damage: 16420
+    size: 1
+  18:
+    material: POTION
+    damage: 16458
+    size: 1
+  19:
+    material: POTION
+    damage: 16456
+    size: 1
+  20:
+    material: POTION
+    damage: 8267
+    size: 1
+  21:
+    material: POTION
+    damage: 8235
+    size: 1
+  22:
+    material: POTION
+    damage: 8259
+    size: 1
+  23:
+    material: POTION
+    damage: 8269
+    size: 1
+  24:
+    material: POTION
+    damage: 8262
+    size: 1
+# Choose what gamemodes will prevent players from accessing shops. Valid values: ADVENTURE, CREATIVE, SPECTATOR, SURVIVAL
+disableShopsInGamemodes:
+ - ADVENTURE
+  - CREATIVE
+  - SPECTATOR
+# Choose in which worlds players won't be able to access the shop. Same list format as disableShopsInGamemodes
+disableShopsInWorlds: []
+ 
+# Choose whether price modifiers should be displayed in percents instead of decimals (eg. 10% instead of 0.10), remember you will still have to use the decimal way in commands
+displayPriceModifiersInPercents: true
+ 
+# Choose whether the world-specific permission to access shops should be omitted when player has a shop opened with /shop [player] [shop name]
+disableSudoWorldPermissionCheck: false
+ 
+# Choose whether the shop-specific permission to access shops should be omitted when player has a shop opened with /shop [player] [shop name]
+disableSudoShopPermissionCheck: false
+ 
+# Choose whether free items (with sell price of $0) should be excluded from being sold using /sell hand and /sell all
+sellHandAllExcludeFreeItems: true
+ 
+# Choose predefined settings for all items (will be overriden when set explicitly for an item in shops.yml)
+defaultItemSettings:
+ # Choose whether item meta (name, lore etc.) should be compared when players attempt to sell an item
+  compareMeta: true
+  # Choose whether item meta should be removed from an item when it's purchased by a player from the shop
+  stripItemMeta: false
+ 
+# Format of item lores in shops, %buy% will be replaced with the buy price and %sell% with sell price
+shopItemLoreFormat:
+ # This lore will be applied to items
+  item:
+    - "&6&l* &eGiá mua: &a%buy%"
+    - "&6&l* &eGiá bán: &c%sell%"
+    - "&7"
+    - "&7Nhấn chuột giữa để sell all."
+  # This lore will be applied to items in the buy GUI (when enableBuyGUI is set to true)
+  itemBuyGUI:
+    - "&6&l* &eGiá mua: &a%buy%"
+  # This lore will be applied to items in the sell GUI (when enableSellGUI is set to true)
+  itemSellGUI:
+    - "&6&l* &eGiá bán: &c%sell%"
+  # This lore will be applied to the sell all button in the sell GUI (when enableSellGUI and enableSellGUISellAll are set to true)
+  itemSellGUISellAll:
+    - "&6&l* &eSell all price: &f$%sell%"
+  # This one to permissions
+  permission:
+    - "&6&l* &eGiá mua: &a%buy%"
+  # And this one to enchantments
+  enchantment:
+    - "&6&l* &eGiá mua: &a%buy%"
+  # And the last one to commands
+  command:
+    - "&6&l* &eGiá mua: &a%buy%"
+ 
+# Logging settings
+log:
+ # Define whether transactions will be logged to the console/main server log
+  toConsole: false
+  # Define whether transactions will be logged to a separate log
+  toFile: false
+  # Date format of transactions (http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html)
+  formatDate: "yyyy/MM/dd HH:mm:ss"
+  # Log message for bought items
+  formatBuy: "%player% bought %amount% x %item% for %price%$ from %shop% shop"
+  # Log message for sold items
+  formatSell: "%player% sold %amount% x %item% for %price%$ to %shop% shop"
+  # Log message for sold all items
+  formatSellAll: "%player% sold all %amount% x %item% for %price%$ to %shop% shop"
+ 
+# Sell hand command settings
+sellHand:
+ # When set to true, players will be able to sell any quantity of the item (the price will be calculated from the base price)
+  allowAllQuantites: true
+  # When set to true, /sell hand will work same way as /sell handall does
+  sellsAllItems: true
+ 
+# Sell all command settings
+sellAll:
+ # When set to true, players will get a detailed summary with prices of each item stack sold
+  detailedSummary: false
+ 
+buttons:
+ # "Go back button"
+  goBack:
+    item:
+     # Material name, full list can be found here: http://wiki.brcdev.net/Materials
+      material: DOUBLE_PLANT
+      # Amount of the item
+      amount: 1
+      # (optional) Data value, for example 1 for WOOD:1 means spruce wood planks
+      damage: 0
+      # (optional) Custom name
+      name: "&c&l⬅ [Trở về]"
+      lore:
+      - "&7Nhấn vào để trở về mục trước"
+      # (optional) Lore, can contain multiple lines
+    # Slot in each shop's GUI
+    slot: 31
+  # "Previous page" button
+  previousPage:
+    item:
+      material: MAP
+      quantity: 1
+      name: "&e&lTRANG TƯỚC"
+    slot: 30
+  # "Next page" button
+  nextPage:
+    item:
+      material: MAP
+      quantity: 1
+      name: "&e&lTRANG SAU"
+    slot: 32
+ 
+# Elements of the bulk buy GUI
+amountSelectionGUIBulkBuy:
+ # Size of the GUI, valid values are 9, 18, 27, 36, 45 and 54
+  size: 18
+  # Choose if buttons type should be replaced with the bought item's type
+  replaceButtonsType: true
+  # Buttons
+  buttons:
+   # "Buy 1 stack" button
+    buy1:
+     # When no material is specified it will be the type of the item being bought
+      item:
+        material: CHEST
+        quantity: 1
+        name: "&9&lMUA 1 STACK"
+        lore:
+          - "&6&l* &eGiá mua: &f$%buy%"
+      # Value indicated the amount of stacks
+      value: 1
+      slot: 0
+    # "Buy 2 stacks" button
+    buy2:
+      item:
+        material: CHEST
+        quantity: 2
+        name: "&9&lMUA 2 STACKS"
+        lore:
+          - "&6&l* &eGiá mua: &f$%buy%"
+      value: 2
+      slot: 1
+    # "Buy 3 stacks" button
+    buy3:
+      item:
+        material: CHEST
+        quantity: 3
+        name: "&9&lMUA 3 STACKS"
+        lore:
+          - "&6&l* &eGiá mua: &f$%buy%"
+      value: 3
+      slot: 2
+    # "Buy 4 stacks" button
+    buy4:
+      item:
+        material: CHEST
+        quantity: 4
+        name: "&9&lMUA 4 STACKS"
+        lore:
+          - "&6&l* &eGiá mua: &f$%buy%"
+      value: 4
+      slot: 3
+    # "Buy 5 stacks" button
+    buy5:
+      item:
+        material: CHEST
+        quantity: 5
+        name: "&9&lMUA 5 STACKS"
+        lore:
+          - "&6&l* &eGiá mua: &f$%buy%"
+      value: 5
+      slot: 4
+    # "Buy 6 stacks" button
+    buy6:
+      item:
+        material: CHEST
+        quantity: 6
+        name: "&9&lMUA 6 STACKS"
+        lore:
+          - "&6&l* &eGiá mua: &f$%buy%"
+      value: 6
+      slot: 5
+    # "Buy 7 stacks" button
+    buy7:
+      item:
+        material: CHEST
+        quantity: 7
+        name: "&9&lMUA 7 STACKS"
+        lore:
+          - "&6&l* &eGiá mua: &f$%buy%"
+      value: 7
+      slot: 6
+    # "Buy 8 stacks" button
+    buy8:
+      item:
+        material: CHEST
+        quantity: 8
+        name: "&9&lMUA 8 STACKS"
+        lore:
+          - "&6&l* &eGiá mua: &f$%buy%"
+      value: 8
+      slot: 7
+    # "Buy 9 stacks" button
+    buy9:
+      item:
+        material: CHEST
+        quantity: 9
+        name: "&9&lMUA 9 STACKS"
+        lore:
+          - "&6&l* &eGiá mua: &f$%buy%"
+      value: 9
+      slot: 8
+    # "Cancel" button
+    cancel:
+      item:
+        material: CHEST
+        material: DOUBLE_PLANT
+        quantity: 1
+        damage: 0
+        name: "&c&LGO BACK"
+      slot: 13
+     
+# Elements of the bulk buy GUI
+amountSelectionGUIBulkSell:
+ # Size of the GUI, valid values are 9, 18, 27, 36, 45 and 54
+  size: 18
+  # Choose if buttons type should be replaced with the sold item's type
+  replaceButtonsType: true
+  # Buttons
+  buttons:
+   # "Sell 1 stack" button
+    sell1:
+     # When no material is specified it will be the type of the item being bought
+      item:
+        material: CHEST
+        quantity: 1
+        name: "&9&lBÁN 1 STACK"
+        lore:
+          - "&6&l* &eGiá bán: &f$%sell%"
+      # Value indicated the amount of stacks
+      value: 1
+      slot: 0
+    # "Sell 2 stacks" button
+    sell2:
+      item:
+        material: CHEST
+        quantity: 2
+        name: "&9&lBÁN 2 STACKS"
+        lore:
+          - "&6&l* &eGiá bán: &f$%sell%"
+      value: 2
+      slot: 1
+    # "Sell 3 stacks" button
+    sell3:
+      item:
+        material: CHEST
+        quantity: 3
+        name: "&9&lBÁN 3 STACKS"
+        lore:
+          - "&6&l* &eGiá bán: &f$%sell%"
+      value: 3
+      slot: 2
+    # "Sell 4 stacks" button
+    sell4:
+      item:
+        material: CHEST
+        quantity: 4
+        name: "&9&lBÁN 4 STACKS"
+        lore:
+          - "&6&l* &eGiá bán: &f$%sell%"
+      value: 4
+      slot: 3
+    # "Sell 5 stacks" button
+    sell5:
+      item:
+        material: CHEST
+        quantity: 5
+        name: "&9&lBÁN 5 STACKS"
+        lore:
+          - "&6&l* &eGiá bán: &f$%sell%"
+      value: 5
+      slot: 4
+    # "Sell 6 stacks" button
+    sell6:
+      item:
+        material: CHEST
+        quantity: 6
+        name: "&9&lBÁN 6 STACKS"
+        lore:
+          - "&6&l* &eGiá bán: &f$%sell%"
+      value: 6
+      slot: 5
+    # "Sell 7 stacks" button
+    sell7:
+      item:
+        material: CHEST
+        quantity: 7
+        name: "&9&lBÁN 7 STACKS"
+        lore:
+          - "&6&l* &eGiá bán: &f$%sell%"
+      value: 7
+      slot: 6
+    # "Sell 8 stacks" button
+    sell8:
+      item:
+        material: CHEST
+        quantity: 8
+        name: "&9&lBÁN 8 STACKS"
+        lore:
+          - "&6&l* &eGiá bán: &f$%sell%"
+      value: 8
+      slot: 7
+    # "Sell 9 stacks" button
+    sell9:
+      item:
+        material: CHEST
+        quantity: 9
+        name: "&9&lBÁN 9 STACKS"
+        lore:
+          - "&6&l* &eGiá bán: &f$%sell%"
+      value: 9
+      slot: 8
+    # "Cancel" button
+    cancel:
+      item:
+        material: DOUBLE_PLANT
+        quantity: 1
+        damage: 0
+        name: "&c&LQUAY LẠI MỤC TRƯỚC"
+      slot: 13
+ 
+# Elements of the regular buy/sell GUI
+amountSelectionGUI:
+ # Size of the GUI, valid values are 9, 18, 27, 36, 45 and 54
+  size: 36
+  # Slot of the item being bought/sold
+  itemSlot: 13
+  # Buttons
+  buttons:
+   # "Set to 1" button
+    set1:
+      item:
+        material: STAINED_GLASS_PANE
+        quantity: 1
+        damage: 14
+        name: "&c&lHẠ XUỐNG 1"
+      slot: 9
+    # "Remove 10" button
+    remove10:
+      item:
+        material: STAINED_GLASS_PANE
+        quantity: 10
+        damage: 14
+        name: "&c&l-10"
+      slot: 10
+    # "Remove 1" button
+    remove1:
+      item:
+        material: STAINED_GLASS_PANE
+        quantity: 1
+        damage: 14
+        name: "&c&l-1"
+      slot: 11
+    # "Add 1" button
+    add1:
+      item:
+        material: STAINED_GLASS_PANE
+        quantity: 1
+        damage: 5
+        name: "&a&l+1"
+      slot: 15
+    # "Add 10" button
+    add10:
+      item:
+        material: STAINED_GLASS_PANE
+        quantity: 10
+        damage: 5
+        name: "&a&l+10"
+      slot: 16
+    # "Set to 16" button
+    set16:
+      item:
+        material: STAINED_GLASS_PANE
+        quantity: 16
+        damage: 5
+        name: "&a&lĐẶT THÀNH 16"
+      slot: 17
+    # "Set to 64" button
+    set64:
+      item:
+        material: STAINED_GLASS_PANE
+        quantity: 64
+        damage: 5
+        name: "&a&lĐẶT THÀNH 64"
+      slot: 17
+    # "Confirm" button
+    confirm:
+      item:
+        material: STAINED_GLASS
+        quantity: 1
+        damage: 5
+        name: "&a&lĐỒNG Ý"  
+      slot: 30
+    # "Sell all" button
+    sellAll:
+      item:
+        material: STAINED_GLASS
+        quantity: 1
+        damage: 5
+        name: "&a&lSell all"      
+      slot: 35
+    # "Buy more" button
+    buyMore:
+      item:
+        material: STAINED_GLASS
+        quantity: 64
+        damage: 5
+        name: "&a&lMUA NHIỀU HƠN"      
+      slot: 31
+    # "Sell more" button
+    sellMore:
+      item:
+        material: STAINED_GLASS
+        quantity: 64
+        damage: 5
+        name: "&a&lBÁN NHIỀU HƠN"      
+      slot: 31
+    # "Cancel" button
+    cancel:
+      item:
+        material: STAINED_GLASS
+        quantity: 1
+        damage: 14
+        name: "&c&lHỦY"
+      slot: 32
+     
+shopMenuItems:
+  1:
+    item:
+      material: GRASS
+      quantity: 1
+      name: "&6&lShop chuyên khối"
+      lore:
+       - "&fMua và bán các loại khối tại đây."
+       - "&7"
+       - "&e[Nhấp vào để mở Shop]"
+       - "&7(( /shop khoi ))"
+    shop: "khoi"
+    slot: 2
+  2:
+    item:
+      material: STAINED_GLASS
+      damage: 5
+      quantity: 1
+      name: "&e&lShop chuyên khối màu"
+      lore:
+       - "&fBạn nên xây đảo bằng những khối"
+       - "&fđảo bạn sẽ rất đep."
+       - "&7"      
+       - "&e[Nhấp vào để mở Shop]"
+       - "&7(( /shop khoimau ))"
+    shop: "khoimau"
+    slot: 3
+  3:
+    item:
+      material: WHEAT
+      quantity: 1
+      name: "&a&lThức ăn & nông trại"
+      lore:
+       - "&fMua và bán cây trồng và thực phẩm ở đây."
+       - "&7"
+       - "&e[Nhấp vào để mở Shop]"
+       - "&7(( /shop farm ))"
+    shop: "farm"
+    slot: 4
+  4:
+    item:
+      material: DIAMOND
+      quantity: 1
+      name: "&6&lShop quặng"
+      lore:
+       - "&fMua và bán quặng tại đây."
+       - "&7"
+       - "&e[Nhấp vào để mở Shop]"
+       - "&7(( /shop quang ))"
+    shop: "quang"
+    slot: 5
+  5:
+    item:
+      material: HOPPER
+      quantity: 1
+      name: "&6&lShop linh tinh"
+      lore:
+       - "&fMua và bán đồ linh tinh."
+       - "&7"
+       - "&e[Nhấp vào để mở Shop]"
+       - "&7(( /shop linhtinh ))"
+    shop: "linhtinh"
+    slot: 6
+  6:
+    item:
+      material: BONE
+      quantity: 1
+      name: "&6&lShop đồ quái"
+      lore:
+       - "&fMua và bán đồ quái tại đây."
+       - "&7"
+       - "&e[Nhấp vào để mở Shop]"
+       - "&7(( /shop quai ))"
+    shop: "quai"
+    slot: 12
+  9:
+    item:
+      material: MOB_SPAWNER
+      quantity: 1
+      name: "&6&lSpawners"
+      lore:
+       - "&fMua và bán Spawner tại đây."
+       - "&7"
+       - "&e[Nhấp vào để mở Shop]"
+       - "&7(( /shop Spawners ))"
+    shop: "spawners"
+    slot: 14
+  10:
+    item:
+      material: BOOK 
+      quantity: 1
+      name: "&6&lSHOP MONEY $$"
+      lore:
+       - "&fCửa hàng mua các vật phẩm xịn"
+       - "&7"
+       - "&e[Nhấp vào để mở Shop]"
+       - "&7(( /shop money ))"
+    shop: "money"
+    slot: 13
+  11:
+    item:
+      material: ENDER_PORTAL_FRAME 
+      quantity: 1
+      name: "&e&lCỬA HÀNG CAO CẤP"
+      lore:
+       - "&7Cửa hàng cho &6&l$&e&lV.I.P&6&l$"
+       - "&7"
+       - "&e[Nhấp vào để mở Shop]"
+    shop: "alien"
+    slot: 22
+  12:
+    item:
+      material: LAVA_BUCKET
+      quantity: 1
+      name: "&6&lSell Đồ Cho PE"
+      lore:
+       - "&e* &fCách để có thể sell đồ"
+       - "&fcho pe trên điện thoại"
+       - ""
+       - "&cHãy dùng lệnh: &f/sellgui"
+    slot: 26  
+ 
+ 
+specialElements:
+  balance:
+    item:
+      material: GOLD_INGOT
+      quantity: 1
+      name: "&6&lYour balance"
+      lore:
+       - "&7$%balance%"

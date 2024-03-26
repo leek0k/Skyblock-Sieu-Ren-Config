@@ -1,0 +1,18 @@
+location: huongdan:-949.500:55.758:1029.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&3&l✶&b⋆&3⋆ &b&lMÁY FARM XƯƠNG RỒNG &3⋆&b⋆&3&l✶'
+    height: 0.3
+  - content: ''
+    height: 0.3  
+  - content: '&fMáy farm &btự động &fđể để cày &a$$$ &fsiêu ngon!'
+    height: 0.3 
+  - content: '&7((Dùng &a/shop &7để tham khảo giá và bán đồ))'
+    height: 0.3     
+  actions: {}

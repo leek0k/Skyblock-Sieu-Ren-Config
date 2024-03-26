@@ -1,0 +1,152 @@
+vexkill:
+  Cooldown: 0
+  Skills:
+  - damage{a=1000} @MobsInRadius{r=100;types=vex}
+phapsu1:
+  Skills:
+  - projectile{type=METEOR;onTick=phapsu1_tick;onEnd=phapsu2_end;onHit=phapsu2_end;v=50;i=1;hR=2;vR=1;mr=50;g=2.3;hfs=15;sE=true;sB=true} @RLNTE{amount=4;radius=3;spacing=1;minradius=0}
+phapsu1_tick:
+  Skills:
+  - effect:particles{p=instantSpell;amount=1;speed=0.00011;hS=0.2;vS=0.6} @origin
+  - potion{type=CONFUSION;duration=60;level=1} @PlayersInRadius{r=6}
+
+phapsu2_end:
+  Skills:
+  - damage{a=12;ia=true} @PlayersNearOrigin{r=6}
+  - effect:particles{p=instantSpell;amount=1;speed=0.2;hS=0.1;vS=1} @origin
+  - effect:particles{p=hugeexplosion;amount=1;hSpread=0.1;vSpread=0.1;speed=0.1;yOffset=0.1} @origin
+phapsu2:
+  Skills:
+  - effect:spin{duration=40;velocity=5} @self
+  - delay 30
+  - effect:lightning @Ring{radius=1;points=1}
+  - damage{a=20;ia=true} @PlayersInRadius{r=2}
+  - delay 2
+  - effect:lightning @Ring{radius=2;points=1}
+  - damage{a=20;ia=true} @PlayersInRadius{r=3}
+  - delay 2
+  - effect:lightning @Ring{radius=3;points=2}
+  - damage{a=20;ia=true} @PlayersInRadius{r=4}
+  - delay 2
+  - effect:lightning @Ring{radius=4;points=2}
+  - damage{a=20;ia=true} @PlayersInRadius{r=5}
+hoiphuc:
+  Skills:
+  - effect:particles{particle=heart;a=10;y=1;hs=4;vs=1;s=1} @Self
+  - heal{a=4} @EntitiesInRadius{r=10;ignore=players,animals}
+vungtoi:
+  Skills:
+  - sendtitle{title="&0&l** &8&lVÙNG TỐI &0&l**";subtitle="";d=100} @PlayersInRadius{r=8}
+  - potion{type=WEAKNESS;lvl=1;duration=100} @PlayersInRadius{r=8}
+  - potion{type=SLOW;lvl=4;duration=100} @PlayersInRadius{r=8}
+  - potion{type=BLINDNESS;lvl=1;duration=100} @PlayersInRadius{r=8}
+  - damage{amount=24;ia=true} @PlayersInRadius{r=8}
+  - effect:particles{particle=largesmoke;a=10;y=0.5;hs=2;vs=0.2;s=0.5} @Self
+  - delay 20
+  - damage{amount=15;ia=true} @PlayersInRadius{r=8}
+  - delay 20
+  - damage{amount=15;ia=true} @PlayersInRadius{r=8}
+  - delay 20
+  - damage{amount=15;ia=true} @PlayersInRadius{r=8}
+bossspawn:
+  Skills:
+  - command{c="mm m kill anhemdianguc2"}
+  - delay 100
+  - summon{type=anhemdianguc2} @Self
+hoanggia1:
+  Skills:
+  - potion{type=SLOW;duration=60;level=7} @Self
+  - projectile{onTick=xx-Tick;onHit=xx-Hit;v=5;i=1;hR=1;vR=1;mr=5} @Ring{radius=20;points=4}
+  # - effect:sound{s=entity.blaze.shoot;v=0.8;p=0.01} @self
+xx-Tick:
+  Skills:
+  - effect:particles{p=flame;amount=1;hSpread=0;vSpread=0;speed=0.1;yOffset=0} @origin
+xx-Hit:
+  Skills:
+  - damage{a=24;ia=true} @Target
+  # - effect:sound{s=entity.generic.explode;v=2;p=0.01} @target  
+  # - potion{type=CONFUSION;duration=100;level=4} @target  
+samset:
+    Skills:
+    - message{m="&6&lCHỊU CHẾT ĐI !"} @PlayersInRadius{r=30}
+    - lightning{d=80} @NearestPlayer{r=20}
+    - delay 6
+    - lightning{d=80} @NearestPlayer{r=20}
+    - delay 5
+    - lightning{d=80} @NearestPlayer{r=20}
+    - delay 4
+    - lightning{d=80} @NearestPlayer{r=20}
+    - delay 3
+    - lightning{d=80} @NearestPlayer{r=20}
+    - delay 2
+    - lightning{d=80} @NearestPlayer{r=20}
+trantroi:
+    Skills:
+    - message{m="&e&lANH &7» &c&lTA KHÔNG THỂ THUA ĐƯỢC !"} @PlayersInRadius{r=30}
+    - damage{a=40;ia=true} @PlayersInRadius{r=30}
+trantroi2:
+    Skills:
+    - message{m="&6&lEM &7» &c&lTA KHÔNG THỂ THUA ĐƯỢC !"} @PlayersInRadius{r=30}
+    - sethealth{a=10} @PlayersInRadius{r=30}
+canquet:
+  Skills:
+  # - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5} @self
+  - delay 10
+  # - effect:sound{s=block.dispenser.fail;volume=1.0;pitch=0.5} @target
+  - delay 50
+  - effect:particlering{p=smoke;radius=1;points=51;amount=1;hS=3;vS=3;y=0.1} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=3;points=51;amount=1;hS=3;vS=3;y=0.1} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=5;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=7;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=9;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  - damage{amount=20;ignoreArmor=true} @PlayersInRadius{r=9}
+  - delay 5
+  # - effect:particlering{p=smoke;radius=1;points=51;amount=1;hS=3;vS=3;y=0.1} @self
+  - delay 2
+  - effect:particlering{p=smoke;radius=3;points=51;amount=1;hS=3;vS=3;y=0.1} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=5;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=7;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=9;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  - damage{amount=14;ignoreArmor=true} @PlayersInRadius{r=9}
+  #- effect:particlering{p=smoke;radius=1;points=51;amount=1;hS=3;vS=3;y=0.1} @self
+  - delay 2
+  # - effect:particlering{p=smoke;radius=3;points=51;amount=1;hS=3;vS=3;y=0.1} @self
+  - delay 2
+  - effect:particlering{p=smoke;radius=5;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=7;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=9;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  - damage{amount=20;ignoreArmor=true} @PlayersInRadius{r=9}
+  #- effect:particlering{p=smoke;radius=1;points=51;amount=1;hS=3;vS=3;y=0.1} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=3;points=51;amount=1;hS=3;vS=3;y=0.1} @self
+  - delay 2
+  # - effect:particlering{p=smoke;radius=5;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  - effect:particlering{p=smoke;radius=7;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=9;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  - damage{amount=20;ignoreArmor=true} @PlayersInRadius{r=9}
+  #- effect:particlering{p=smoke;radius=1;points=51;amount=1;hS=3;vS=3;y=0.1} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=3;points=51;amount=1;hS=3;vS=3;y=0.1} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=5;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  #- effect:particlering{p=smoke;radius=7;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  - effect:particlering{p=smoke;radius=9;points=51;amount=1;hS=3;vS=3;y=0.2} @self
+  - delay 2
+  - damage{amount=30;ignoreArmor=true} @PlayersInRadius{r=9}

@@ -1,0 +1,379 @@
+# This is the where you can customize the design of the Gem Shop
+ShopMenu:
+  Size: 45
+  Title: '&8&l☀ Shop đá quý ☀'
+  UseFiller: true
+  Decorations: #Use defined name followed by the slot you want the item in. Example: 'balance:36' will return the item defined as "balance" and will place this item in the 36th slot
+    - 'balance:36'
+    - 'information:44'
+    #- 'testMessage:0'
+  Categories: # This is where you can customize the slot item for each category
+    '22':
+      'spawners': #This is what you will define as the Shop Category when adding a new shop under "Shops"
+        enabled: true
+        subPermission: ''
+        material: 'CHEST'
+        damage: 0
+        amount: 1
+        glow: true
+        displayName: '&a&lSHOP đá quý'
+        lore:
+          - '&7Click để vào mục'
+
+
+
+Shops:
+  Spawners:
+    Size: 54
+    Title: '&8&l☀ Đá quý SHOP ☀'
+    UseFiller: true
+    Decorations:
+      - 'balance:45'
+      - 'menuButton:36'
+      - 'exit:53'
+    Rewards:
+      '14':
+        price: 125
+        giveItem: false
+        material: 'CLAY_BALL'
+        damage: 0
+        amount: 1
+        glow: true
+        displayName: '&b✿&f✿&b✿ &A&nx1 Chìa Khóa&r &d&lCẦU VỒNG&r &b✿&f✿&b✿'
+        lore:
+          - '&6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]crazycrates give p cauvong 1 {player}'
+      '11':
+        price: 5000
+        giveItem: false
+        material: 'BOOK'
+        damage: 0
+        amount: 1
+        glow: true
+        displayName: '&0&l↩ Cô độc ↪ I'
+        lore:
+          - ''
+          - '&fDập tắt sức mạnh hồi máu của Hạnh phúc.'
+          - ''
+          - '&cMấy đứa F.A nhìn đúng chỗ rồi Ad'
+          - '&crất tự hào về mấy đứa <3' 
+          - ''
+          - '&6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]ae givebook {player} codoc 1 1 80 20'
+      '12':
+        price: 2200 
+        giveItem: false
+        material: 'BOOK'
+        damage: 0
+        amount: 1
+        glow: false
+        displayName: '&6&lSách Túy quyền &6(Huyền thoại)'
+        lore:
+          - '&7Sách cường hóa tăng sức mạnh!'
+          - '&7Bổ trợ để nâng cấp &e&lTúy Bát Tiên Quyền'
+          - ''
+          - '&6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]ae givebook {player} drunk 1 1 100 0'
+      '22':
+        price: 4000
+        giveItem: false
+        material: 'BOOK'
+        damage: 0
+        amount: 1
+        glow: true
+        displayName: '&e&Lx1 | *** Túy bát tiên quyền *** I'
+        lore:
+          - '&7Tăng sức tấn công khổng lồ theo cấp'
+          - '&7(Yêu cầu bạn phải ép cường hóa Túy quyền'
+          - '&7sau đó mới ép được cường hóa này)'
+          - ''        
+          - '&6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]ae givebook {player} tancong 1 1 50 50'
+      '23':
+        price: 8000
+        giveItem: false
+        material: 'BOOK'
+        damage: 0
+        amount: 1
+        glow: true
+        displayName: '&e&Lx1 | *** Túy bát tiên quyền *** II'
+        lore:
+          - '&7Tăng sức tấn công khổng lồ theo cấp'
+          - '&7(Yêu cầu bạn phải ép cường hóa Túy quyền'
+          - '&7sau đó mới ép được cường hóa này)'
+          - ''        
+          - '&6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]ae givebook {player} tancong 2 1 50 50'
+      '13':
+        price: 2200
+        giveItem: false
+        material: 'BOOK'
+        damage: 0
+        amount: 1
+        glow: false
+        displayName: '&6&lSách Trâu &6(Huyền thoại)'
+        lore:
+          - '&7Sách cường hóa tăng máu!'
+          - '&7Bổ trợ để nâng cấp &d&lTrâu thánh'
+          - ''
+          - '&6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]ae givebook {player} overload 1 1 50 50'
+      '15':
+        price: 750
+        giveItem: false
+        material: 'LOG'
+        damage: 0
+        amount: 1
+        glow: true
+        displayName: '&a☘ &e&lHÒM RÌU MAY MẮN &7(Ngẫu nhiên X1) &a☘'
+        lore:
+          - '&6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]cr give to {player} hommayman2 1'       
+      '21':
+        price: 250
+        giveItem: false
+        material: 'CARROT_STICK'
+        damage: 0
+        amount: 1
+        glow: true
+        displayName: '&2$ &aGẬY BUÔN &7(Lv.2) &2$'
+        lore:
+          - '&8&m------------------------------------'
+          - ' &7Cầm gậy &fChuột-phải &7vào rương để bán'
+          - '          &7tất cả đồ bên trong.'
+          - '&7'
+          - ' &FGiá $ gậy bán từng vật phẩm &7((/shop))'
+          - '        &7((Gồm cả SHOP VIP))'
+          - '&8&m------------------------------------'
+          - ' &a# +30% $ khi bán bằng gậy #'
+          - '&8&m------------------------------------'
+          - '&2* Sử dụng: &a&l150 &2lần'
+          - ''          
+          - '&6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]tools give {player} sell_wand3 1'
+      '20':
+        price: 75
+        giveItem: false
+        material: 'EMERALD'
+        damage: 0
+        amount: 1
+        glow: true
+        displayName: '&c&lNgọc linh hồn &a&l[&750&a&l]'
+        lore:
+          - '&7Ngọc linh hồn ép vào vũ khí giúp '
+          - '&7kích hoạt cường hóa linh hồn!'
+          - ''          
+          - '&6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]ae giveitem {player} soulgem 1 50'    
+      '30':
+        price: 150
+        giveItem: false
+        material: 'WOOD_HOE'
+        damage: 0
+        amount: 1
+        glow: true
+        displayName: '&aCuốc tiên &7» &7[&eAutosell&7] &f(Boost: &ax{1}&f)'
+        lore:
+          - ''
+          - '&fThông tin:'
+          - ' &e• &7Trạng thái: &eAutosell'
+          - ' &e• &7Boost: &ex1'
+          - ' &e• &7Max: &eVĩnh viễn'
+          - ''
+          - '&7(Chuột-trái lên nông sản để dùng!)'      
+          - '&7(Chuột-phải để đổi trạng thái!)'
+          - ''
+          - '&6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]scyther give {player} 1 infinite 1 1'          
+      '24':
+        price: 10
+        giveItem: false
+        material: 'CARROT_ITEM'
+        damage: 0
+        amount: 1
+        glow: true
+        displayName: '&6&l♈Cà Rốt Sinh Lực♈ &6&l(&6Lvl: 1&6&l)'
+        lore:
+          - ''
+          - '&8● &fHồi lập tức &c8♥'
+          - '&8● &c&lLưu Ý: &cChỉ dùng ở Dungeon!'
+          - ''
+          - '&7[!] Chuột phải để sử dụng'
+          - '&6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]ev give {player} carrot 1'  
+      '29':
+        price: 100
+        giveItem: false
+        material: 'GOLDEN_CARROT'
+        damage: 0
+        amount: 1
+        glow: true
+        displayName: '&d&l♈Cà Rốt Sinh Lực♈ &d&l(&dLv: 2&d&l)'
+        lore:
+          - ''
+          - '&8● &fHồi lập tức &c64♥'
+          - '&8● &c&lLưu Ý: &cChỉ dùng ở Dungeon!'
+          - ''
+          - '&7[!] Chuột phải để sử dụng'
+          - '&6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]ev give {player} carrot2 1'  
+      '31':
+        price: 50
+        giveItem: false
+        material: 'DOUBLE_PLANT'
+        damage: 0
+        amount: 1
+        glow: true
+        displayName: '&f&l50 Cỏ Ba Lá &d&lSách Cường Hóa'
+        lore:
+          - ''
+          - ' &7Dùng để radom sách cường hóa mỗi'
+          - ' &72 tiếng tại thư viện ((/warp nhiemvu))'
+          - ''
+          - ' &cLưu ý: &fYêu cầu tối thiểu cấp 40 để radom!'
+          - ''
+          - ' &6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]skills xp add {player} agility 50' 
+      '32':
+        price: 100
+        giveItem: false
+        material: 'DOUBLE_PLANT'
+        damage: 0
+        amount: 2
+        glow: true
+        displayName: '&f&l100 Cỏ Ba Lá Radom &d&lSách Cường Hóa'
+        lore:
+          - ''
+          - ' &7Dùng để radom sách cường hóa mỗi'
+          - ' &72 tiếng tại thư viện ((/warp nhiemvu))'
+          - ''
+          - ' &cLưu ý: &fYêu cầu tối thiểu cấp 40 để radom!'
+          - ''
+          - ' &6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]skills xp add {player} agility 100'
+      '33':
+        price: 500
+        giveItem: false
+        material: 'DOUBLE_PLANT'
+        damage: 0
+        amount: 3
+        glow: true
+        displayName: '&f&l500 Cỏ Ba Lá &d&lSách Cường Hóa'
+        lore:
+          - ''
+          - ' &7Dùng để radom sách cường hóa mỗi'
+          - ' &72 tiếng tại thư viện ((/warp nhiemvu))'
+          - ''
+          - ' &cLưu ý: &fYêu cầu tối thiểu cấp 40 để radom!'
+          - ''
+          - ' &6&l* &eGiá: &6{price}☀'
+        commands:
+          - '[console]skills xp add {player} agility 500'           
+
+
+
+
+
+
+
+
+
+
+
+
+
+GUIFiller:
+  material: 'STAINED_GLASS_PANE'
+  damage: 15
+  amount: 1
+  glow: false
+  displayName: '&f'
+  lore: []
+
+
+
+Decorations: #These usually have no effect when clicked unless defined otherwise. Use a valid 'action' to turn these items into buttons that do certain things
+  'menuButton':
+    action: ''
+    material: 'BOOK'
+    damage: 0
+    amount: 1
+    displayName: '&f&lCách Farm Đá quý ☀!'
+    lore:
+    - '&7&l&m-----------------------------------'
+    - '&aTiêu diệt các mobs bên dưới'
+    - '&ađể có tỉ lệ rơi ra &6Đá quý ☀'
+    - ''
+    - ' &7* &6Zombie: &f15%'
+    - ' &7* &6Skeletons: &f15%'
+    - ' &7* &6Creeper: &f15%'
+    - ' &7* &6Enderman: &f17%'
+    - ' &7* &6Blaze: &f17%'   
+    - ' &7* &6Quái Dungeon: &f20%'      
+    - '&7&l&m-----------------------------------'
+    - ''
+  'balance':
+    material: 'EMERALD'
+    damage: 0
+    amount: 1
+    glow: false
+    displayName: '&fBạn hiện có &6{balance} &6☀'
+    lore: []
+  'exit':
+    material: 'DOUBLE_PLANT'
+    damage: 0
+    amount: 1
+    glow: false
+    displayName: '&c&l⬅ [Trở về]'
+    lore:
+    - "&7Nhấn vào để trở về mục trước"
+    commands:
+    - '[player]gems shop'  
+  'information':
+    material: 'BOOK'
+    damage: 0
+    amount: 1
+    displayName: '&f&lCách Farm Đá quý ☀!'
+    lore:
+    - '&7&l&m-----------------------------------'
+    - '&aTiêu diệt các mobs bên dưới'
+    - '&ađể có tỉ lệ rơi ra &6Đá quý ☀'
+    - ''
+    - ' &7* &6Zombie: &f15%'
+    - ' &7* &6Skeletons: &f15%'
+    - ' &7* &6Creeper: &f15%'
+    - ' &7* &6Enderman: &f17%'
+    - ' &7* &6Blaze: &f17%'   
+    - ' &7* &6Quái Dungeon: &f20%'    
+    - '&7&l&m-----------------------------------'
+    - ''
+  'testMessage': #This is an example of how to use the decoration commands feature
+    material: 'PAPER'
+    damage: 0
+    amount: 1
+    glow: true
+    displayName: '&e> Click me! <'
+    lore:
+      - '&7Test message!'
+    commands:
+      - '[console]msg {player} &eBuy this amazing plugin at &ahttps://www.mc-market.org/resources/14920/&e! :D'
+
+#Cooldown, in Milliseconds, between how long a player must wait to purchase another item. (Cooldown resets when the server or plugin restarts) (20 milliseconds = 1 second)
+purchase-cooldown: 1
+
+
+

@@ -1,0 +1,78 @@
+name: '&6&lSet &e&lQuý Mão Truyền Thuyết'
+material: DIAMOND
+settings:
+  equipped:
+    - '&a&l(!) &aKích hoạt &b&lSet &6&lQuý Mão!'
+  unequipped:
+    - '&c&l(!) &cDừng kích hoạt &b&lSet &6&lQuý Mão!'
+items:
+  helmet:
+    name: '&d&l☾ &5&l☾ &d&l☾ &d&lMŨ THIÊN QUÝ MÃO &d&l☽ &5&l☽ &d&l☽'
+    lore:
+      - ''
+      - '&d&l◆ ◆ ◆ TRUYỀN THUYẾT &d(Quý Mão 2023) &d&l◆ ◆ ◆'
+      - '&D* Giảm 23% damage nhận vào.'
+      - '&D* Hiệu ứng hấp huyết khi giao tranh.'
+      - '&D&oVật phẩm sự kiện Tết Quý Mão 2023'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+      - ''      
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:7"
+      - "unbreaking:5"
+      - "projectileprotection:2"
+  chestplate:
+    name: '&d&l☾ &5&l☾ &d&l☾ &d&lGIÁP THIÊN QUÝ MÃO &d&l☽ &5&l☽ &d&l☽'
+    lore:
+      - ''
+      - '&d&l◆ ◆ ◆ TRUYỀN THUYẾT &d(Quý Mão 2023) &d&l◆ ◆ ◆'
+      - '&D* Giảm 23% damage nhận vào.'
+      - '&D* Hiệu ứng hấp huyết khi giao tranh.'
+      - '&D&oVật phẩm sự kiện Tết Quý Mão 2023'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+      - ''                
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:7"
+      - "unbreaking:5"
+      - "fireprotection:2"      
+      - "thorns:1"
+  leggings:
+    name: '&d&l☾ &5&l☾ &d&l☾ &d&lQUẦN THIÊN QUÝ MÃO &d&l☽ &5&l☽ &d&l☽'
+    lore:
+      - ''
+      - '&d&l◆ ◆ ◆ TRUYỀN THUYẾT &d(Quý Mão 2023) &d&l◆ ◆ ◆'
+      - '&D* Giảm 23% damage nhận vào.'
+      - '&D* Hiệu ứng hấp huyết khi giao tranh.'
+      - '&D&oVật phẩm sự kiện Tết Quý Mão 2023'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+      - ''                    
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:7"
+      - "unbreaking:5"
+      - "blastprotection:2"
+  boots:
+    name: '&d&l☾ &5&l☾ &d&l☾ &d&lGIÀY THIÊN QUÝ MÃO &d&l☽ &5&l☽ &d&l☽'
+    lore:
+      - ''
+      - '&d&l◆ ◆ ◆ TRUYỀN THUYẾT &d(Quý Mão 2023) &d&l◆ ◆ ◆'
+      - '&D* Giảm 23% damage nhận vào.'
+      - '&D* Hiệu ứng hấp huyết khi giao tranh.'
+      - '&D&oVật phẩm sự kiện Tết Quý Mão 2023'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+      - ''                 
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:7"
+      - "unbreaking:5"
+      - "featherfalling:2"
+events:
+  DEFENSE:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:23'
+      - 'NEGATE_DAMAGE:20'
+  DEFENSE:
+    chance: 100
+    cooldown: 12
+    effects:
+      - 'MESSAGE:&c&l☀ Hấp Huyết ☀'
+      - "ADD_HARM:4 %attacker%"  
+      - 'ADD_HEALTH:4'

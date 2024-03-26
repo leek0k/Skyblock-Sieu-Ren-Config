@@ -1,0 +1,10 @@
+dauend:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §9Open Spawn Egg (Enderman)
+      internal: H4sIAAAAAAAA/01PzU6DQBj8NDFB4mN4JVnKj9mDh8ZGu6Rs5Z/ltoVFoEttWmjLPpcPKN6cucxkZg6jA+jwFO1HKT9P33UrhQb3pIJnZCMblxgZlSWwYbsL08Alrw00g3Num8g2ddDn0VGchlacH0EbxG0YT+KsA8CdBg8pl6OAHzF5qMgbVOWeLCfizj6OkNyS7vhCDum0eyMu6ed8vXQ3E/7XdQaeOZJZXlMcgnHXp2hjhVKsQ7PskwtbkNs2C6YiC1TREcV6MtFV2PgqMGksW9otLX+VINaVinZ/DCWN3/dMMeX3iePHctZfJlPB1c/YtfigDYs8XOfodX4AvwYjl5AcAQAA

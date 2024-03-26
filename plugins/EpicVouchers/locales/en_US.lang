@@ -1,0 +1,32 @@
+general:
+  nametag:
+
+    # New messages for EpicVouchers v2.1.8.
+    prefix: '&e!! '
+interface:
+  confirmsettings:
+    title: '&8Xác nhận!'
+    confirmitemname: '&2&lĐỒNG Ý'
+    confirmitemlore: .
+    cancelitemname: '&4&lHỦY'
+    cancelitemlore: .
+command:
+  error:
+    noplayer: '&7That user either does not exist or is not online'
+    novoucher: '&cThat voucher does not exist.'
+    notexist: '&7The command you entered does not exist or is spelt incorrectly.'
+    notnumber: '&7Failed to parse that number into a valid amount.'
+  reload:
+    success: '&7Reloaded all config files and vouchers.'
+  give:
+    send: '&7You have given &6%player% &7the voucher &6%voucher% &7(&6x%amount%&7).'
+    receive: '&7Nhận thành công &6%voucher% &7(&6x%amount%&7).'
+    cancelled: '&cEvent got cancelled.'
+  force:
+    send: '&7You have forced &6%player% &7to redeem the voucher &6%voucher% &7(&6x%amount%&7).'
+  list:
+    list: '&7List of all vouchers = &6%list%&7.'
+event:
+  general:
+    nopermission: '&cKhông thể dùng.'
+    cooldown: '&7Hãy chờ &6%time%&7 giây nữa để dùng tiếp.'

@@ -1,0 +1,47 @@
+mission-file: ItemsMissions
+island: false
+auto-reward: false
+rewards:
+  commands:
+  - eco give %player% 12000
+  - exp give %player% 1020
+  - is admin msg %player% &e&l$ | &7Hoàn thành thử thách!
+required-items:
+  '1':
+    types:
+    - GRILLED_PORK
+    amount: 640
+icons:
+  not-completed:
+    type: COOKED_FISH
+    name: '&6&LTHỬ THÁCH: &d&lĐẦU BẾP &f&l#1'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l thịt heo nướng &fđể FULL túi'
+    - ''
+    - '&7- &e$12.000 , 1020 Exp'
+    - ''
+    - '&6Thu thập: &7{1}/640'
+    - '&6Tiến trình: &7{0}%'
+    - '&c&l ✘ &7Chưa hoàn thành'
+  can-complete:
+    type: GRILLED_PORK
+    name: '&6&LTHỬ THÁCH: &d&lĐẦU BẾP HEO XÔNG KHÓI'
+    lore:
+    - '&7&l[!] Yêu cầu: &fThu thập 10 STACKS&e&l thịt heo nướng &fđể FULL túi'
+    - ''
+    - '&7- &e$12.000 , 1020 Exp'
+    - ''
+    - '&6Thu thập: &7640/640'
+    - '&6Tiến trình: &7100%'
+    - '&a&l ✔ &7Bạn đã có đủ điều kiện Click vào đây.'
+    enchants:
+      DURABILITY: 1
+    flags:
+    - HIDE_ENCHANTS
+  completed:
+    type: MAP
+    name: '&6&LTHỬ THÁCH: &d&lĐẦU BẾP &f&l#1'
+    lore:
+    - ''
+    - '&a&l ✔ &7Đã hoàn thành.'

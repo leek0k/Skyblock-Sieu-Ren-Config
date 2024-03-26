@@ -1,0 +1,111 @@
+Crate:
+  CrateType: CSGO
+  CrateName: '&e&lQUAY XU MAY MẮN'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 11
+  OpeningBroadCast: false
+  BroadCast: '%Prefix%&a&l%Player% &7is opening a &bSTORM CRATE&7.'
+  Item: '175'
+  Glowing: false
+  Name: '&e&lCHÌA QUAY XU MAY MẮN'
+  Lore: #The lore of the item in the GUI.
+    - '&r'
+    - '&7 ◆ &nChuột-trái&r &bđể mở Hòm Báu nếu bạn đã mua.'
+    - '&7 ◆ &nChuột-Phải&r &bđể xem qua vật phẩm trong Hòm.'
+    - '&r'
+  Preview:
+    #Turn on and off the preview for this crate.
+    Toggle: true
+    #How many lines the previewChest should have. Including Header and Bottom (Between 3 and 6)
+    ChestLines: 1
+    Glass:
+      #Turn the glass boarder in the preview on and off.
+      Toggle: true
+      #The item that shows in the boarder. Can be glass or any other item.
+      Item: 'IRON_FENCE'  
+  PhysicalKey:
+    Name: '&e⛁&6⛁&e⛁ &6&lQUAY XU MAY MẮN&r &e⛁&6⛁&e⛁' #Name of the Key.
+    Lore:
+    - '&r'
+    - '&7⛁ &nChuột-trái&r &fđể mở &e&lQUAY XU MAY MẮN&r&7⛁'
+    - '&7⛁ &nChuột-Phải&r &fđể xem qua vật phẩm trong'
+    Item: '175' #The item the key is.
+    Glowing: true #Makes the key look enchanted.
+  Prizes:
+    1:
+      DisplayName: '&e&l 10⛁'
+      DisplayItem: '175'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 75
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'points give %player% 10'
+    2:
+      DisplayName: '&e&l 20⛁'
+      DisplayItem: '175'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'points give %player% 20'
+    3:
+      DisplayName: '&e&l 50⛁'
+      DisplayItem: '175'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: true
+      Commands:
+        - 'points give %player% 50'
+        - 'bc Chúc mừng %player% đã quay dính &e&l50⛁ &atại &e&lQUAY XU MAY MẮN'
+    4:
+      DisplayName: '&e&l 100⛁'
+      DisplayItem: '175'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: true
+      Commands:
+        - 'points give %player% 100'
+        - 'bc Chúc mừng %player% đã quay dính &e&l100⛁ &atại &e&lQUAY XU MAY MẮN'
+    5:
+      DisplayName: '&e&l 500⛁'
+      DisplayItem: '175'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 2.5
+      Firework: true
+      Glowing: true
+      Commands:
+        - 'points give %player% 500'
+        - 'bc Chúc mừng %player% đã quay dính &e&l500⛁ &atại &e&lQUAY XU MAY MẮN'
+    6:
+      DisplayName: '&e&l 1000⛁'
+      DisplayItem: '175'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Glowing: true
+      Commands:
+        - 'points give %player% 1000'
+        - 'bc Chúc mừng %player% đã quay dính &e&l1000⛁ &atại &e&lQUAY XU MAY MẮN'

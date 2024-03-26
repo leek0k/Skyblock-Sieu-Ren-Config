@@ -1,0 +1,24 @@
+Crystal4:
+  MobName: Crystal
+  World: TheEnd
+  X: -26
+  Y: 129
+  Z: 73
+  Radius: 2
+  UseTimer: true
+  MaxMobs: 1
+  MobLevel: '1'
+  MobsPerSpawn: 2
+  Cooldown: 5
+  CooldownTimer: 0
+  Warmup: 0
+  WarmupTimer: 0
+  CheckForPlayers: true
+  ActivationRange: 15
+  LeashRange: 12
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  ShowFlames: false
+  Breakable: false
+  Conditions: []
+  ActiveMobs: 0

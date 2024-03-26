@@ -1,0 +1,39 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&lBạn chắc chắn không?'
+type: HOPPER
+
+pattern:
+  - '# @ # ^ #'
+
+confirm: '@'
+cancel: '^'
+
+items:
+  '#':
+    type: STAINED_GLASS_PANE
+    data: 15
+    name: '&f'
+  '@':
+    type: WOOL
+    data: 4
+    name: '&eĐồng ý'
+  '^':
+    type: WOOL
+    data: 14
+    name: '&cTừ chối'
+
+sounds:
+  '@':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2
+  '^':
+    type: BLOCK_ANVIL_PLACE
+    volume: 0.2
+    pitch: 0.2

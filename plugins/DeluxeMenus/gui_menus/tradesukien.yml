@@ -1,0 +1,981 @@
+file: tradesukien.yml
+menu_title: '&e&lSự Kiện &c&lTết &6&lNhâm Dần &f- &c&l2022'
+open_command: 
+- tradesukien
+- tradeevent
+- eventtrade
+- sukientrade
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 54
+update_interval: 1
+open_requirement: 
+items:
+  'background':
+    material: STAINED_GLASS_PANE
+    data: 1
+    display_name: '&a☘'
+    slots:
+    - '0-9'
+    - '17-18'
+    - '26-27'
+    - '35-36'
+    - '44-48'
+    - '50-53'
+  'back':
+    material: ARROW
+    slot: 49
+    display_name: '&cTrở về'
+    lore:
+    - '&7Quay về menu trước'
+    click_commands:
+    - '[openguimenu] events'
+  '1a':
+    material: DOUBLE_PLANT
+    slot: 20
+    priority: 1
+    data: 0
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    update: true
+    display_name: '&e&lHoa Mai'
+    lore:
+    - '&7Yêu cầu:'
+    - '&fx64 &e&lVạn Sự'
+    - '&fx256 &f&lKiện Rơm'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:hay_block%'
+          output: '256'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:paper,enchanted,namecontains:&e&lVạn Sự,lorecontains:&eVật phẩm sự kiện &cTết &6Nhâm Dần 2022%'
+          output: '64'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:hay_block,amt:256%'
+            output: '256'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:paper,enchanted,amt:64,namecontains:&e&lVạn Sự,lorecontains:&eVật phẩm sự kiện &cTết &6Nhâm Dần 2022%'
+            output: '64'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!' 
+        - '[sound] ENTITY_VILLAGER_NO'        
+    click_commands:
+     - '[console] ie give hoamai %player_name% 1'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '1b':
+    material: DOUBLE_PLANT
+    slot: 20
+    priority: 2
+    data: 0
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    update: true
+    display_name: '&e&lHoa Mai'
+    lore:
+    - '&7Yêu cầu:'
+    - '&fx64 &e&lVạn Sự'
+    - '&fx256 &f&lKiện Rơm'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!'
+    - '[sound] ENTITY_VILLAGER_NO'
+  '2a':
+    material: DOUBLE_PLANT
+    slot: 21
+    priority: 1
+    data: 5
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    update: true
+    display_name: '&d&lHoa Đào'
+    lore:
+    - '&7Yêu cầu:'
+    - '&fx32 &e&lNhư Ý'
+    - '&fx512 &f&lKhối Xi Măng Hồng'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:concrete,data:6%'
+          output: '512'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:paper,enchanted,namecontains:&e&lNhư Ý,lorecontains:&eVật phẩm sự kiện &cTết &6Nhâm Dần 2022%'
+          output: '32'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:concrete,data:6,amt:512%'
+            output: '512'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:paper,enchanted,amt:32,namecontains:&e&lNhư Ý,lorecontains:&eVật phẩm sự kiện &cTết &6Nhâm Dần 2022%'
+            output: '32'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+     - '[console] ie give hoadao %player_name% 1'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '2b':
+    material: DOUBLE_PLANT
+    slot: 21
+    priority: 2
+    data: 5
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    update: true
+    display_name: '&d&lHoa Đào'
+    lore:
+    - '&7Yêu cầu:'
+    - '&fx32 &e&lNhư Ý'
+    - '&fx512 &f&lKhối Xi Măng Hồng'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!'
+    - '[sound] ENTITY_VILLAGER_NO'
+  '3a':
+    material: DIAMOND_SWORD
+    slot: 22
+    priority: 1
+    display_name: '&6☾&f✗&6☽ &f&lKIẾM &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - DAMAGE_ALL;120
+    - DAMAGE_UNDEAD;4
+    - DAMAGE_ARTHROPODS;4
+    - DURABILITY;5
+    - FIRE_ASPECT;3
+    - LOOT_BONUS_MOBS;5
+    lore:
+    - ''
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - '&6* Tăng 32% damage.'
+    - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx20 &e&lHoa Mai'
+    - '&fx15 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '20'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '15'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:20,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '20'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:15,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '15'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!'   
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+     - '[console] asets weapon %player_name% kiemnhamdan'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '3b':
+    material: DIAMOND_SWORD
+    slot: 22
+    priority: 2
+    display_name: '&6☾&f✗&6☽ &f&lKIẾM &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - DAMAGE_ALL;120
+    - DAMAGE_UNDEAD;4
+    - DAMAGE_ARTHROPODS;4
+    - DURABILITY;5
+    - FIRE_ASPECT;3
+    - LOOT_BONUS_MOBS;5
+    lore:
+    - ''
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - '&6* Tăng 32% damage.'
+    - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx20 &e&lHoa Mai'
+    - '&fx15 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!' 
+    - '[sound] ENTITY_VILLAGER_NO'
+  '4a':
+    material: DIAMOND_AXE
+    slot: 23
+    priority: 1
+    display_name: '&6☾&f✗&6☽ &f&lRÌU &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - DAMAGE_ALL;120
+    - DAMAGE_UNDEAD;4
+    - DAMAGE_ARTHROPODS;4
+    - DURABILITY;5
+    - FIRE_ASPECT;3
+    - LOOT_BONUS_MOBS;5
+    lore:
+    - ''
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - '&6* Tăng 32% damage.'
+    - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx15 &e&lHoa Mai'
+    - '&fx20 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '15'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '20'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:15,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '15'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:20,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '20'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!'   
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+     - '[console] asets weapon %player_name% riunhamdan'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '4b':
+    material: DIAMOND_AXE
+    slot: 23
+    priority: 2
+    display_name: '&6☾&f✗&6☽ &f&lRÌU &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - DAMAGE_ALL;120
+    - DAMAGE_UNDEAD;4
+    - DAMAGE_ARTHROPODS;4
+    - DURABILITY;5
+    - FIRE_ASPECT;3
+    - LOOT_BONUS_MOBS;5
+    lore:
+    - ''
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - '&6* Tăng 32% damage.'
+    - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx15 &e&lHoa Mai'
+    - '&fx20 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!' 
+    - '[sound] ENTITY_VILLAGER_NO'
+  '5a':
+    material: BOW
+    slot: 24
+    priority: 1
+    display_name: '&6☾&f✗&6☽ &f&lRÌU &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - ARROW_DAMAGE;70
+    - DURABILITY;4
+    - ARROW_FIRE;1
+    - ARROW_KNOCKBACK;2
+    - ARROW_INFINITE;1
+    lore:
+    - ''
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx15 &e&lHoa Mai'
+    - '&fx15 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '15'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '15'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:15,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '15'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:15,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '15'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!'   
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+     - '[console] asets weapon %player_name% cungnhamdan'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '5b':
+    material: BOW
+    slot: 24
+    priority: 2
+    display_name: '&6☾&f✗&6☽ &f&lCUNG &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - ARROW_DAMAGE;70
+    - DURABILITY;4
+    - ARROW_FIRE;1
+    - ARROW_KNOCKBACK;2
+    - ARROW_INFINITE;1
+    lore:
+    - ''
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx15 &e&lHoa Mai'
+    - '&fx15 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!' 
+    - '[sound] ENTITY_VILLAGER_NO'
+  '6a':
+    material: LEATHER_HELMET
+    slot: 28
+    priority: 1
+    display_name: '&6☾&f✗&6☽ &f&lMŨ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;7
+    - DURABILITY;10
+    - PROTECTION_PROJECTILE;4
+    - PROTECTION_EXPLOSIONS;3
+    - PROTECTION_FIRE;2
+    lore:
+    - ''   
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - '&6* Giảm 28% damage.'
+    - '&6* Đề kháng & Hấp thụ.'
+    - '&7&o(Mặc full Set Nhâm Dần để kích hoạt.)'  
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx10 &e&lHoa Mai'
+    - '&fx5 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '10'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '5'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:10,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '10'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:5,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '5'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!'   
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+     - '[console] asets givepiece %player_name% Nhamdan HELMET'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '6b':
+    material: LEATHER_HELMET
+    slot: 28
+    priority: 2
+    display_name: '&6☾&f✗&6☽ &f&lMŨ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;7
+    - DURABILITY;10
+    - PROTECTION_PROJECTILE;4
+    - PROTECTION_EXPLOSIONS;3
+    - PROTECTION_FIRE;2
+    lore:
+    - ''   
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - '&6* Giảm 28% damage.'
+    - '&6* Đề kháng & Hấp thụ.'
+    - '&7&o(Mặc full Set Nhâm Dần để kích hoạt.)'  
+    - ''  
+    - '&7Yêu cầu:'
+    - '&fx10 &e&lHoa Mai'
+    - '&fx5 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!' 
+    - '[sound] ENTITY_VILLAGER_NO'
+  '7a':
+    material: LEATHER_CHESTPLATE
+    slot: 29
+    priority: 1
+    display_name: '&6☾&f✗&6☽ &f&lGIÁP &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;7
+    - DURABILITY;10
+    - PROTECTION_PROJECTILE;4
+    - PROTECTION_EXPLOSIONS;3
+    - PROTECTION_FIRE;2
+    lore:
+    - ''   
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - '&6* Giảm 28% damage.'
+    - '&6* Đề kháng & Hấp thụ.'
+    - '&7&o(Mặc full Set Nhâm Dần để kích hoạt.)'  
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx30 &e&lHoa Mai'
+    - '&fx10 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '30'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '10'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:30,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '30'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:10,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '10'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!'   
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+     - '[console] asets givepiece %player_name% Nhamdan CHESTPLATE'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '7b':
+    material: LEATHER_CHESTPLATE
+    slot: 29
+    priority: 2
+    display_name: '&6☾&f✗&6☽ &f&lGIÁP &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;7
+    - DURABILITY;10
+    - PROTECTION_PROJECTILE;4
+    - PROTECTION_EXPLOSIONS;3
+    - PROTECTION_FIRE;2
+    lore:
+    - ''   
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - '&6* Giảm 28% damage.'
+    - '&6* Đề kháng & Hấp thụ.'
+    - '&7&o(Mặc full Set Nhâm Dần để kích hoạt.)'  
+    - ''  
+    - '&7Yêu cầu:'
+    - '&fx30 &e&lHoa Mai'
+    - '&fx10 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!' 
+    - '[sound] ENTITY_VILLAGER_NO'
+  '8a':
+    material: LEATHER_LEGGINGS
+    slot: 30
+    priority: 1
+    display_name: '&6☾&f✗&6☽ &f&lQUẦN &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;7
+    - DURABILITY;10
+    - PROTECTION_PROJECTILE;4
+    - PROTECTION_EXPLOSIONS;3
+    - PROTECTION_FIRE;2
+    lore:
+    - ''   
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - '&6* Giảm 28% damage.'
+    - '&6* Đề kháng & Hấp thụ.'
+    - '&7&o(Mặc full Set Nhâm Dần để kích hoạt.)'  
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx10 &e&lHoa Mai'
+    - '&fx30 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '10'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '30'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:10,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '10'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:30,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '30'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!'   
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+     - '[console] asets givepiece %player_name% Nhamdan LEGGINGS'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '8b':
+    material: LEATHER_LEGGINGS
+    slot: 30
+    priority: 2
+    display_name: '&6☾&f✗&6☽ &f&lQUẦN &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;7
+    - DURABILITY;10
+    - PROTECTION_PROJECTILE;4
+    - PROTECTION_EXPLOSIONS;3
+    - PROTECTION_FIRE;2
+    lore:
+    - ''   
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - '&6* Giảm 28% damage.'
+    - '&6* Đề kháng & Hấp thụ.'
+    - '&7&o(Mặc full Set Nhâm Dần để kích hoạt.)'  
+    - ''  
+    - '&7Yêu cầu:'
+    - '&fx10 &e&lHoa Mai'
+    - '&fx30 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!' 
+    - '[sound] ENTITY_VILLAGER_NO'
+  '9a':
+    material: LEATHER_BOOTS
+    slot: 31
+    priority: 1
+    display_name: '&6☾&f✗&6☽ &f&lỦNG &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;7
+    - DURABILITY;10
+    - PROTECTION_PROJECTILE;4
+    - PROTECTION_EXPLOSIONS;3
+    - PROTECTION_FIRE;2
+    lore:
+    - ''   
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - '&6* Giảm 28% damage.'
+    - '&6* Đề kháng & Hấp thụ.'
+    - '&7&o(Mặc full Set Nhâm Dần để kích hoạt.)'  
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx5 &e&lHoa Mai'
+    - '&fx10 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '5'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '10'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:5,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '5'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:10,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '10'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!'   
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+     - '[console] asets givepiece %player_name% Nhamdan BOOTS'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '9b':
+    material: LEATHER_BOOTS
+    slot: 31
+    priority: 2
+    display_name: '&6☾&f✗&6☽ &f&lỦNG &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;7
+    - DURABILITY;10
+    - PROTECTION_PROJECTILE;4
+    - PROTECTION_EXPLOSIONS;3
+    - PROTECTION_FIRE;2
+    lore:
+    - ''   
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - '&6* Giảm 28% damage.'
+    - '&6* Đề kháng & Hấp thụ.'
+    - '&7&o(Mặc full Set Nhâm Dần để kích hoạt.)'  
+    - ''  
+    - '&7Yêu cầu:'
+    - '&fx5 &e&lHoa Mai'
+    - '&fx10 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!' 
+    - '[sound] ENTITY_VILLAGER_NO'
+  '10a':
+    material: SHIELD
+    slot: 32
+    priority: 1
+    display_name: '&6☾&f✗&6☽ &f&lKHIÊN &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - DURABILITY;10
+    - THORNS;3
+    lore:
+    - ''   
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx8 &e&lHoa Mai'
+    - '&fx8 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '8'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '8'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:8,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '8'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:8,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '8'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!'   
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+     - '[console] ie give khiennhamdan %player_name% 1'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '10b':
+    material: SHIELD
+    slot: 32
+    priority: 2
+    display_name: '&6☾&f✗&6☽ &f&lKHIÊN &6&lNHÂM DẦN &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    - DURABILITY;10
+    - THORNS;3
+    lore:
+    - ''   
+    - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+    - ''  
+    - '&7Yêu cầu:'
+    - '&fx8 &e&lHoa Mai'
+    - '&fx8 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!' 
+    - '[sound] ENTITY_VILLAGER_NO'
+  '11a':
+    material: BOOK
+    slot: 33
+    priority: 1
+    display_name: '&6☾&f✗&6☽ &6&lHổ Đấu &6☾&f✗&6☽'
+    hide_attributes: true
+    lore:
+    - "&fTrạng thái cuồng nộ, lấy đi khả"
+    - "&fnăng hồi máu và hấp thụ của địch,"
+    - "&fđòn đánh gây sát thương chuẩn"
+    - "&bVật phẩm cường hoá: &b&lKiếm + Rìu"
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx8 &e&lHoa Mai'
+    - '&fx4 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '8'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '4'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:8,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '8'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:4,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '4'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!'   
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+     - '[console] ae give %player_name% hodau 1'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '11b':
+    material: BOOK
+    slot: 33
+    priority: 2
+    display_name: '&6☾&f✗&6☽ &6&lHổ Đấu &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    lore:
+    - "&fTrạng thái cuồng nộ, lấy đi khả"
+    - "&fnăng hồi máu và hấp thụ của địch,"
+    - "&fđòn đánh gây sát thương chuẩn"
+    - "&bVật phẩm cường hoá: &b&lKiếm + Rìu"
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx8 &e&lHoa Mai'
+    - '&fx4 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!' 
+    - '[sound] ENTITY_VILLAGER_NO'
+  '12a':
+    material: BOOK
+    slot: 34
+    priority: 1
+    display_name: '&6☾&f✗&6☽ &6&lAn Khang &6☾&f✗&6☽'
+    hide_attributes: true
+    lore:
+    - "&fMiễn nhiễm sát thương trong thời gian ngắn."
+    - "&bVật phẩm cường hoá: &b&lQuần"
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx6 &e&lHoa Mai'
+    - '&fx6 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '6'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:double_plant,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+          output: '6'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:6,data:0,enchanted,namecontains:&e&lHoa Mai,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '6'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:double_plant,amt:6,data:5,enchanted,namecontains:&d&lHoa Đào,lorecontains:&eNguyên liệu để trao đổi vật phẩm%'
+            output: '6'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!'   
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+     - '[console] ae give %player_name% ankhang 1'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '12b':
+    material: BOOK
+    slot: 34
+    priority: 2
+    display_name: '&6☾&f✗&6☽ &6&lAn Khang &6☾&f✗&6☽'
+    hide_attributes: true
+    enchantments:
+    lore:
+    - "&fMiễn nhiễm sát thương trong thời gian ngắn."
+    - "&bVật phẩm cường hoá: &b&lQuần"
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx6 &e&lHoa Mai'
+    - '&fx6 &d&lHoa Đào'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!' 
+    - '[sound] ENTITY_VILLAGER_NO'
+  '13a':
+    material: PAPER
+    slot: 13
+    priority: 1
+    display_name: '&e&lTết Nhâm Dần &6&l2022'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fNhận x48 &e&lHoa Mai &f+ x48 &d&lHoa Đào'
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx1 &e&lTết Nhâm Dần...'
+    - '&fx1 &6&l...2022'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:paper,enchanted,namecontains:&e&lTết Nhâm Dần...,lorecontains:&eVật phẩm sự kiện &cTết &6Nhâm Dần 2022%'
+          output: '1'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:paper,enchanted,namecontains:&6&l...2022,lorecontains:&eVật phẩm sự kiện &cTết &6Nhâm Dần 2022%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:paper,amt:1,enchanted,namecontains:&e&lTết Nhâm Dần...,lorecontains:&eVật phẩm sự kiện &cTết &6Nhâm Dần 2022%'
+            output: '1'
+        item2:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:paper,amt:1,enchanted,namecontains:&6&l...2022,lorecontains:&eVật phẩm sự kiện &cTết &6Nhâm Dần 2022%'
+            output: '1'
+      deny_commands:
+        - '[message] &cBạn không có đủ nguyên liệu!'   
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+     - '[console] ie give hoamai %player_name% 48'
+     - '[console] ie give hoadao %player_name% 48'
+     - '[message] &aTrao đổi thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  '13b':
+    material: PAPER
+    slot: 13
+    priority: 2
+    display_name: '&e&lTết Nhâm Dần &6&l2022'
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    enchantments:
+    lore:
+    - ''
+    - '&fNhận x48 &e&lHoa Mai &f+ x48 &d&lHoa Đào'
+    - ''
+    - '&7Yêu cầu:'
+    - '&fx1 &e&lTết Nhâm Dần...'
+    - '&fx1 &6&l...2022'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn không có đủ nguyên liệu!' 
+    - '[sound] ENTITY_VILLAGER_NO'
+    

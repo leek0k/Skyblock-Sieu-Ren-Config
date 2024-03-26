@@ -1,0 +1,52 @@
+mission-file: ItemsMissions
+required-missions:
+- f_islandminer_d
+island: false
+auto-reward: false
+rewards:
+  commands:
+  - eco give %player% 56000
+  - exp give %player% 6801
+  - is admin msg %player% &e&l$ | &7Hoàn thành thử thách!
+required-items:
+  '1':
+    types:
+    - GOLD_INGOT
+    amount: 640
+icons:
+  not-completed:
+    type: DIAMOND
+    name: '&6&LTHỬ THÁCH: &7&lTHỢ MỎ &f&l#5'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l vàng &fđể FULL túi'
+    - ''
+    - '&7- &e$56.000 , 6801 Exp'
+    - ''
+    - '&6Thu thập: &7{1}/640'
+    - '&6Tiến trình: &7{0}%'
+    - '&c&l ✘ &7Chưa hoàn thành'
+    - ''
+    - '&a&l YÊU CẦU: &aHoàn thành &7&lTHỢ MỎ &f&l#4'
+  can-complete:
+    type: GOLD_INGOT
+    name: '&6&LTHỬ THÁCH: &7&lTHỢ MỎ &f&l#5'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l vàng &fđể FULL túi'
+    - ''
+    - '&7- &e$56.000 , 6801 Exp'
+    - ''
+    - '&6Thu thập: &7640/640'
+    - '&6Tiến trình: &7100%'
+    - '&a&l ✔ &7Bạn đã có đủ điều kiện Click vào đây.'
+    enchants:
+      DURABILITY: 1
+    flags:
+    - HIDE_ENCHANTS
+  completed:
+    type: MAP
+    name: '&6&LTHỬ THÁCH: &7&lTHỢ MỎ &f&l#5'
+    lore:
+    - ''
+    - '&a&l ✔ &7Đã hoàn thành.'

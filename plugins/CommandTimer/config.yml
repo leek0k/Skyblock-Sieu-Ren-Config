@@ -1,0 +1,13 @@
+#GENERAL
+timeonload: true
+command_alias: ct
+
+tasks:
+  world_limited_command:
+    commands:
+      - abc
+    time:
+      - "14:00:00"
+    days:
+      - SUNDAY
+    gender: console

@@ -1,0 +1,6 @@
+#You cannot add/remove any multiplier from this file.
+#If you do it, it will break the plugin.
+Normal:
+  1_30:
+    Min-level: 1
+    Multiplier: 2.0

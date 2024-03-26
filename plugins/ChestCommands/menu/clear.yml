@@ -1,0 +1,37 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&8&lLETS GOO'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 1
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: ''
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+clear:
+  COMMAND: 'op:clear {player};op:warp sinhton {player}'
+  NAME: '&7Click để dịch chuyển'
+  LORE:
+    - ''
+    - '&0&o#Item menu'
+  ID: Boat
+  ENCHANTMENT: 'fire aspect, 1' 
+  KEEP-OPEN: true  
+  POSITION-X: 5
+  POSITION-Y: 1 

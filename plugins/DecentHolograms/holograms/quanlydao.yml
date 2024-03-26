@@ -1,0 +1,20 @@
+location: NewSpawn:-25.515:153.500:-1748.301
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e&lQuản lý đảo'
+    height: 0.3
+  - content: '&fTrong mục này sẽ có 1 số tính năng đảo,'
+    height: 0.3
+  - content: '&fnâng cao có thể giúp bạn quản lý đảo'
+    height: 0.3
+  - content: '&fdễ hơn và chỉnh theo sở thích!'
+    height: 0.3
+  - content: '&f&nLệnh:&r &e/i'
+    height: 0.3
+  actions: {}

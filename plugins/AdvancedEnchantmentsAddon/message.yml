@@ -1,0 +1,21 @@
+command:
+  player-not-found: '&4[&c!&4] &cKhông tìm thấy người chơi %player%!'
+  reload: '&2[&a!&2] &aĐã cài lại file cấu hình!'
+  help:
+  - '&6======== &eLệnh AdvancedEnchantmentsAddon &6========'
+  - '&f/advancedenchantmentsaddon,aea reload &e- Cài lại cấu hình'
+  - '&f/aea give <tên> remove-enchant <loại> &e- Lấy vật phẩm gỡ phù phép'
+  - '&f/aea help &e- Xem hướng dẫn'
+  give:
+    invalid-item: '&4[&c!&4] &cVật phẩm không tồn tại!'
+    success: '&2[&a!&2] &aLấy vật phẩm thành công!'
+item:
+  remove-enchant:
+    success:
+      message:
+      - '&aGỡ sách thành công!'
+      sound: ENTITY_PLAYER_LEVELUP
+    fail:
+      message:
+      - '&cVật phẩm không tồn tại sách phù hợp để gỡ!'
+      sound: ENTITY_PLAYER_LEVELUP

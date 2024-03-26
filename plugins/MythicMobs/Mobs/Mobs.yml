@@ -1,0 +1,654 @@
+Piccolo:
+  Type: ZOMBIE #POLAR_BEAR
+  Display: '&2&lPiccolo'
+  Health: 400
+  Armor: 40
+  Damage: 32
+  Faction: []
+  Options:
+    AlwaysShowName: true
+    NoDamageTicks: 4
+    Despawn: false
+    AttackSpeed: 2.4
+    Collidable: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 20
+    KnockbackResistance: 1
+    MaxCombatDistance: 4
+    MovementSpeed: 0.5
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  # Disguise:
+    # Type: player
+    # Skin: 'Piccolo'
+    # Player: '&2&lPiccolo'
+    setDynamicName: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE -0.01
+  - ENTITY_ATTACK 0.3
+  - CUSTOM 0
+  - MELTING 0
+  - SUFFOCATION 0
+  BossBar:
+    Enabled: true
+    Range: 30
+    Style: SEGMENTED_10
+    Color: GREEN
+    Title: '&2&m---❂---&r &2&lPiccolo &f∻ &c<mob.hp>❤ &2&m---❂---'
+  Skills:
+  - skill{s=killself} @Self ~onSpawn 1
+  - skill{s=killself1} @Self ~onSpawn 1
+
+Frieza:
+  Type: ZOMBIE #POLAR_BEAR
+  Display: '&5&lFrieza'
+  Health: 600
+  Armor: 50
+  Damage: 64
+  Faction: []
+  Options:
+    NoDamageTicks: 4
+    Despawn: false
+    AlwaysShowName: true
+    PreventTeleport: true
+    AttackSpeed: 3
+    Collidable: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 20
+    KnockbackResistance: 1
+    MaxCombatDistance: 4
+    MovementSpeed: 0.5
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  # Disguise:
+    # Type: player
+    # Skin: 'Frieza'
+    # Player: '&5&lFrieza'
+    # setDynamicName: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - CUSTOM 0
+  - FALL 0
+  - PROJECTILE -0.01
+  - ENTITY_ATTACK 0.25
+  - CONTACT 0
+  - MELTING 0
+  - SUFFOCATION 0
+  BossBar:
+    Enabled: true
+    Range: 30
+    Style: SEGMENTED_10
+    Color: PURPLE
+    Title: '&5&m---❂---&r &5&lFrieza &f∻ &c<mob.hp>❤ &5&m---❂---'
+  Skills:
+  - skill{s=killself} @Self ~onSpawn 1
+  - skill{s=killself1} @Self ~onSpawn 1
+   teleportin{vector=0,0,1} @target ~onTimer:20
+FriezaMinion:
+  Type: ENDERMITE
+  Display: '&5&l&k!!!!!'
+  Health: 50
+  Armor: 10
+  Damage: 30
+  Faction: []
+  Options:
+    NoDamageTicks: 5
+    AlwaysShowName: true
+    AttackSpeed: 3
+    Collidable: true
+    Despawn: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 20
+    KnockbackResistance: 1
+    MaxCombatDistance: 4
+    MovementSpeed: 0.5
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players
+  Drops:
+  - exp 10000 1
+  - mcmmo-exp 200 1
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE -0.01
+  - ENTITY_ATTACK 0.3
+  - CONTACT 0
+  - MELTING 0
+  - SUFFOCATION 0
+  Skills:  
+  - potion{type=FIRE_RESISTANCE;duration=100000;level=2} @Self ~onSpawn 1
+  - damage{amount=5;ia=true} @trigger ~onDeath   
+  - potion{type=WEAKNESS;lvl=4;duration=60} @Trigger ~onDeath
+  - potion{type=SLOW;lvl=4;duration=60} @Trigger ~onDeath
+  - skill{s=killself} @Self ~onSpawn 1
+  - skill{s=killself1} @Self ~onSpawn 1
+Mabuu:
+  Type: ZOMBIE #POLAR_BEAR
+  Display: '&b&lMaBuu'
+  Health: 800
+  Armor: 30
+  Damage: 96
+  Faction: []
+  Options:
+    NoDamageTicks: 0
+    Despawn: false
+    AlwaysShowName: true
+    AttackSpeed: 3
+    Collidable: true
+    Despawn: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 20
+    KnockbackResistance: 1
+    MaxCombatDistance: 4
+    MovementSpeed: 0.5
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  # Disguise:
+    # Type: player
+    # Skin: '1ghaze'
+    # Player: '&b&lMaBuu'
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players
+  Drops:
+  - exp 300000 1
+  - mcmmo-exp 3000 1
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE -0.01
+  - ENTITY_ATTACK 0.2
+  - CONTACT 0
+  - MELTING 0
+  - SUFFOCATION 0
+  BossBar:
+    Enabled: true
+    Range: 30
+    Style: SEGMENTED_10
+    Color: BLUE
+    Title: '&b&m---❂---&r &b&lMaBuu &f∻ &c<mob.hp>❤ &b&m---❂---'
+  Skills:  
+  - message{m="&b&lMaBuu &ađã xuất hiện!"} @PIR{r=20} ~onSpawn 1
+  - potion{type=FIRE_RESISTANCE;duration=100000;level=2} @Self ~onSpawn 1
+  - message{m="&b&lMaBuu &cđã bị &c&l<trigger.name> &ckết liễu!"} @PIR{r=20} ~onDeath 1
+  - damage{amount=8;ia=true} @PIR{r=8} ~onTimer:100
+  - skill{s=ChiChi} @Self ~onTimer:150
+  - skill{s=NuotChung} @Self ~onTimer:400
+  - effect:sound{s=entity.pig.hurt;v=1;p=0.01} @self ~onDamaged 1
+  - potion{type=WEAKNESS;lvl=4;duration=100} @PlayersInRadius{r=10} ~onTimer:300
+  - teleport{spreadh=5;spreadv=0} @NearestPlayer{r=8} ~onTimer:150  
+  # - command{c="itemeditor give manhdanangcap <trigger.name> 4"} @Trigger ~onDeath 1
+  # - command{c="itemeditor give manhdanangcap <trigger.name> 2"} @Trigger ~onDeath 0.8
+  # - command{c="itemeditor give manhdanangcap <trigger.name> 2"} @Trigger ~onDeath 0.6
+  # - command{c="itemeditor give manhdanangcap <trigger.name> 2"} @Trigger ~onDeath 0.4
+  # - command{c="itemeditor give manhdanangcap <trigger.name> 2"} @Trigger ~onDeath 0.2
+  # - command{c="ev give <trigger.name> ngocrong3 1"} @Trigger ~onDeath 0.5
+Krilin:
+  Type: ZOMBIE #POLAR_BEAR
+  Display: '&e&lKrilin'
+  Health: 1000
+  Armor: 70
+  Damage: 64
+  Faction: []
+  Options:
+    NoDamageTicks: 4
+    Despawn: false
+    AlwaysShowName: true
+    AttackSpeed: 3
+    Collidable: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 20
+    KnockbackResistance: 1
+    MaxCombatDistance: 4
+    MovementSpeed: 0.6
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  # Disguise:
+    # Type: player
+    # Skin: 'Krilin'
+    # Player: '&e&lKrilin'
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - CUSTOM 0
+  - PROJECTILE -0.01
+  - ENTITY_ATTACK 0.2
+  - CONTACT 0
+  - MELTING 0
+  - SUFFOCATION 0
+  BossBar:
+    Enabled: true
+    Range: 30
+    Style: SEGMENTED_10
+    Color: YELLOW
+    Title: '&e&m---❂---&r &e&lKrilin &f∻ &c<mob.hp>❤ &e&m---❂---'
+  Skills:  
+  - skill{s=killself} @Self ~onSpawn 1
+  - skill{s=killself1} @Self ~onSpawn 1
+Gohan:
+  Type: ZOMBIE #POLAR_BEAR
+  Display: '&f&lGohan'
+  Health: 1400
+  Armor: 80
+  Damage: 96
+  Faction: []
+  Options:
+    NoDamageTicks: 4
+    Despawn: false
+    AlwaysShowName: true
+    AttackSpeed: 3
+    Collidable: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 20
+    KnockbackResistance: 1
+    MaxCombatDistance: 4
+    MovementSpeed: 0.6
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  # Disguise:
+    # Type: player
+    # Skin: 'Hino_00'
+    # Player: '&f&lGohan'
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - CUSTOM 0
+  - PROJECTILE -0.01
+  - ENTITY_ATTACK 0.2
+  - CONTACT 0
+  - MELTING 0
+  - SUFFOCATION 0
+  BossBar:
+    Enabled: true
+    Range: 30
+    Style: SEGMENTED_10
+    Color: WHITE
+    Title: '&f&m---❂---&r &f&lGohan &f∻ &c<mob.hp>❤ &f&m---❂---'
+  Skills:  
+  - skill{s=killself} @Self ~onSpawn 1
+  - skill{s=killself1} @Self ~onSpawn 1
+Vegeta:
+  Type: ZOMBIE #POLAR_BEAR
+  Display: '&9&lVegeta'
+  Health: 1800
+  Armor: 90
+  Damage: 100
+  Faction: []
+  Options:
+    NoDamageTicks: 4
+    Despawn: false
+    AlwaysShowName: true
+    AttackSpeed: 3
+    Collidable: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 20
+    KnockbackResistance: 1
+    MaxCombatDistance: 4
+    MovementSpeed: 0.6
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  # Disguise:
+    # Type: player
+    # Skin: 'rechta'
+    # Player: '&9&lVegeta'
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - CUSTOM 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE -0.01
+  - ENTITY_ATTACK 0.2
+  - CONTACT 0
+  - MELTING 0
+  - SUFFOCATION 0
+  BossBar:
+    Enabled: true
+    Range: 30
+    Style: SEGMENTED_10
+    Color: BLUE
+    Title: '&9&m---❂---&r &9&lVegeta &f∻ &c<mob.hp>❤ &9&m---❂---'
+  Skills:  
+  - skill{s=killself} @Self ~onSpawn 1
+  - skill{s=killself1} @Self ~onSpawn 1
+Songoku:
+  Type: ZOMBIE #POLAR_BEAR
+  Display: '&6&lSongoku'
+  Health: 2000
+  Armor: 100
+  Damage: 120
+  Faction: []
+  Options:
+    NoDamageTicks: 4
+    Despawn: false
+    AlwaysShowName: true
+    AttackSpeed: 3
+    Collidable: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 20
+    KnockbackResistance: 1
+    MaxCombatDistance: 5
+    MovementSpeed: 0.6
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  # Disguise:
+    # Type: player
+    # Skin: 'xMiki'
+    # Player: '&6&lSongoku'
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - CUSTOM 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE -0.01
+  - ENTITY_ATTACK 0.15
+  - CONTACT 0
+  - MELTING 0
+  - LAVA 0
+  - HOT_FLOOR 0
+  - SUFFOCATION 0
+  BossBar:
+    Enabled: true
+    Range: 30
+    Style: SEGMENTED_10
+    Color: RED
+    Title: '&6&m---❂---&r &6&lSongoku &f∻ &c<mob.hp>❤ &6&m---❂---'
+  Skills:  
+  - skill{s=killself} @Self ~onSpawn 1
+  - skill{s=killself1} @Self ~onSpawn 1
+Beerus:
+  Type: BAT
+  Display: '&5&k|&d&k|&5&k|&r &f&lTHẦN HUỶ DIỆT &d&lBEERUS &5&k|&d&k|&5&k|'
+  Health: 2000
+  Armor: 70
+  Damage: 150
+  Faction: []
+  Options:
+    NoDamageTicks: 0
+    Despawn: false
+    AlwaysShowName: true
+    AttackSpeed: 3
+    Collidable: true
+    Despawn: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 20
+    KnockbackResistance: 1
+    MaxCombatDistance: 15
+    MovementSpeed: 0.7
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 opendoors
+  - 2 meleeattack
+  - 3 float
+  - 4 lookatplayers
+  - 5 movetowardstarget
+  - 6 randomfly
+  AITargetSelectors:
+  - players
+  Drops:
+  - exp 1000000 1
+  - mcmmo-exp 10000 1
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - CUSTOM 0
+  - PROJECTILE 0.4
+  - ENTITY_ATTACK 0.2
+  - CONTACT 0
+  - MELTING 0
+  - LAVA 0
+  - HOT_FLOOR 0
+  - SUFFOCATION 0
+  - BLOCK_EXPLOSION -0.1
+  - ENTITY_EXPLOSION -0.1
+  # Disguise:
+    # Type: player
+    # Skin: 'Jurzay'
+    # Player: '&d&lBEERUS'
+    # setDynamicName: true
+  BossBar:
+    Enabled: true
+    Range: 30
+    Style: SEGMENTED_10
+    Color: PINK
+    Title: '&d&l❂&r &5&k|&d&k|&5&k|&r &f&lTHẦN HUỶ DIỆT &d&lBEERUS &5&k|&d&k|&5&k|&r &f∻ &c<mob.hp>❤ &d&l❂'
+  Skills:
+  - skill{s=beerus1} @Target ~onTimer:50 0.7
+  - sound{s=entity.cat.ambient} @self ~onTimer:40
+  - skill{s=beerus2} @PlayersInRadius{r=40} ~onTimer:200
+  - skill{s=beerus3} @Target ~onTimer:50 0.4
+  - skill{s=beerus4} ~onTimer:170 0.4
+  - skill{s=Prison} @Target ~onTimer:300
+  - message{m="&c&k|&r &cChúc mừng &6&l<trigger.name> &cđã hạ gục &f&lTHẦN HUỶ DIỆT &d&lBEERUS&c! &c&k|"} @PIR{r=20} ~onDeath 1
+  - command{c="cr give <trigger.name> bossbeerus 1"} @Trigger ~onDeath 1 
+Test:
+  Type: ARMOR_STAND
+  Display: ''
+  Skills:
+  # - skill{s=Test} @PIR{r=15} ~onTimer:5
+  - skill{s=Kamehameha} @Ring{radius=32;points=8} ~onTimer:60
+Coco:
+  Type: ARMOR_STAND
+  Disguise:
+    Type: player
+    Skin: 'Coconubs'
+    Player: '&d&lBEERUS'
+  Display: '&dCoconubs'
+  # # Health: 100
+  # # Armor: 100
+  # # Damage: 50
+  # Faction: []
+  # Options:
+    # NoDamageTicks: 4
+    # Despawn: false
+    # AlwaysShowName: true
+    # AttackSpeed: 2
+    # Collidable: true
+    # PreventJockeyMounts: true
+    # PreventTransformation: true
+    # FollowRange: 20
+    # KnockbackResistance: 1
+    # MaxCombatDistance: 5
+    # MovementSpeed: 0.4
+    # PreventOtherDrops: true
+    # PreventRandomEquipment: true
+  # # Disguise:
+    # # Type: player
+    # # Skin: 'Coconubs'
+    # # Player: 'Coconubs'
+  # Modules:
+    # ThreatTable: true
+    # ImmunityTable: true
+  # AIGoalSelectors:
+  # - clear
+  # - opendoors
+  # - meleeattack
+  # - float
+  # - lookatplayers
+  # - movetowardstarget
+  # # AITargetSelectors:
+  # # - players
+  # # Equipment:
+  # # - diamond_sword:0
+  # # - diamond_axe:5
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE 0
+  - ENTITY_ATTACK 1
+  - CUSTOM 0
+  - MELTING 0
+  - SUFFOCATION 0
+  Skills:
+  # - damage{amount=10;ia=true} @Target ~onAttack
+  # - pull{v=10;to=false} @PIR{r=20} ~onTimer:5
+  # - skill{s=ShingaTensei} @Self ~onTimer:2
+  # - message{m="&8&LSHINGA TENSEI"} @PIR{r=20} ~onTimer:100
+  - skill{s=Bomvithu} @NearestPlayer{r=15} ~onTimer:200
+  - summon{type=Coco;amount=1;radius=5} ~onDamaged

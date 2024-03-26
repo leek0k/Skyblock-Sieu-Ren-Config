@@ -1,0 +1,27 @@
+Interface:
+
+  Fill Interfaces With Glass: true
+
+Main:
+
+  Cooldown Delay: 0
+
+Database:
+
+  Activate Mysql Support: false
+
+  IP: 127.0.0.1
+
+  Port: 3306
+
+  Database Name: EpicVouchers
+
+  Username: PUT_USERNAME_HERE
+
+  Password: PUT_PASSWORD_HERE
+
+System:
+
+  # The enabled language file.
+  # More language files (if available) can be found in the plugins data folder.
+  Language Mode: en_US

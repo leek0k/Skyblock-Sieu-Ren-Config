@@ -1,0 +1,526 @@
+hiepsichetchoc:
+  Type: HUSK
+  Display: '&c&lQuân Chết Chóc'
+  Health: 300
+  Damage: 13
+  Armor: 30
+  Faction: []
+  Options:
+    NoDamageTicks: 0
+    AlwaysShowName: true
+    AttackSpeed: 2.4
+    Collidable: false
+    Despawn: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 6
+    KnockbackResistance: 0.5
+    MaxCombatDistance: 4
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players
+  Equipment:
+  - stone_sword:0
+  - leather_helmet:4
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE 0.1
+  - ENTITY_ATTACK 0.2
+  - MELTING 0
+  Drops:
+  - EXP 240 1
+  Skills:
+  - damage{amount=2;ia=true} ~onDamaged
+  - command{c="itemeditor give manhdanangcap <trigger.name> 1"} @Trigger ~onDeath
+  - potion{type=HUNGER;duration=20;lvl=1} @Trigger ~onDamaged 1
+  - cmd{c="ie give manhkhiendianguc <trigger.name> 1"} ~onDeath 0.05
+quydianguc:
+  Type: STRAY
+  Display: '&3&lBộ Xương Kiếm Sỹ'
+  Health: 500
+  Damage: 30
+  Armor: 40
+  Faction: []
+  Options:
+    NoDamageTicks: 0
+    AlwaysShowName: true
+    AttackSpeed: 2.4
+    Collidable: false
+    Despawn: false
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 6
+    KnockbackResistance: 0.5
+    MaxCombatDistance: 4
+    MovementSpeed: 0.35
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players
+  Equipment:
+  - iron_sword:0
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE 0.1
+  - ENTITY_ATTACK 0.2
+  - MELTING 0
+  Drops:
+  - EXP 4800 1
+  Skills:
+  - damage{amount=5;ia=true} ~onDamaged
+  - potion{type=WITHER;duration=200;lvl=3} @Trigger ~onDamaged 1
+  - command{c="itemeditor give manhdanangcap <trigger.name> 5"} @Trigger ~onDeath
+  - command{c="itemeditor give hopsodianguc <trigger.name> 1"} @Trigger ~onDeath 0.1
+  - lightning{d=30} @NearestPlayer{r=5} ~onTimer:1200
+  - cmd{c="ie give manhkhiendianguc <trigger.name> 1"} ~onDeath 0.3
+# nguama:
+  # Type: SKELETON_HORSE
+  # Display: []
+  # Health: 500
+  # Armor: 30
+  # Faction: []
+  # Options:
+    # NoDamageTicks: 0
+    # AlwaysShowName: true
+    # HorseArmor: iron
+    # AttackSpeed: 3.6
+    # Collidable: false
+    # Despawn: true
+    # PreventJockeyMounts: true
+    # PreventTransformation: true
+    # FollowRange: 20
+    # KnockbackResistance: 0.5
+    # MaxCombatDistance: 12
+    # MovementSpeed: 0.6
+    # PreventOtherDrops: true
+    # PreventRandomEquipment: true
+  # Modules:
+    # ThreatTable: true
+    # ImmunityTable: true
+  # AIGoalSelectors:
+  # - clear
+  # - opendoors
+  # - meleeattack
+  # - float
+  # - lookatplayers
+  # - movetowardstarget
+  # AITargetSelectors:
+  # - players
+  # Drops:
+  # DamageModifiers:
+  # - LIGHTNING 0
+  # - POISON 0 
+  # - MAGIC 0
+  # - WITHER 0
+  # - THORNS 0
+  # - FIRE_TICK 0
+  # - FIRE 0
+  # - FALL 0
+  # - PROJECTILE 0
+  # - ENTITY_ATTACK 0.2
+  # - MELTING 0
+  # - SUFFOCATION 0
+anhemdianguc:
+  Type: WITHER_SKELETON
+  Display: '&6&l..☣ &e&lJack &6&l☣..'
+  Health: 4400
+  Damage: 150
+  Armor: 150
+  Faction: []
+  Options:
+    NoDamageTicks: 2
+    AlwaysShowName: true
+    AttackSpeed: 8
+    Collidable: false
+    Despawn: false
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 6
+    KnockbackResistance: 1
+    MaxCombatDistance: 4
+    MovementSpeed: 0.5
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: false
+    ImmunityTable: false
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players
+  Drops:
+  Equipment:
+  - diamond_sword:0
+  - diamond_chestplate:3
+  - diamond_leggings:2
+  - diamond_boots:1
+  - bosshoanggiaskull:4
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE 0
+  - ENTITY_ATTACK 0.2
+  - MELTING 0
+  - SUFFOCATION 0
+  - EXPLOSION 0
+  BossBar:
+    Enabled: true
+    Range: 50
+    Style: SEGMENTED_10
+    Color: RED
+    Title: '&4☣ &e&lJack &4☣ &f∻ &c<mob.hp>❤'
+  Skills:
+  - threat{amount=1000} @NearestPlayer ~onTimer:100
+  - skill{s=quydianguc} @PlayersInRadius{r=16} ~onDeath
+  - skill{s=quydianguc2} @PlayersInRadius{r=20;limit=8;sort=RANDOM} ~onDeath     
+  - skill{s=quydianguc3} @PlayersInRadius{r=20;limit=2;sort=RANDOM} ~onDeath 
+  - damage{amount=12;ia=true} ~onDamaged
+  - potion{type=WITHER;duration=100;lvl=4} @PIR{r=10} ~onTimer:100
+  - skill{s=samset} @Self ~onTimer:300
+  - skill{s=hoanggia1} @Self ~onTimer:400
+  - skill{s=canquet} @Self ~onTimer:500
+  - message{m="&4&lJACK ĐỊA NGỤC &cđịa ngục đã bị tiêu diệt bởi &c&l<trigger.name>&c!"} @Server ~onDeath 1
+  - message{m="&6&l..☣ &4&lANH EM ĐỊA NGỤC JACK,JACKSON &6&l☣.. &fđã xuất hiện tại &c&lĐịa Ngục Tối Tăm! &b&o((/warp dianguc))"} @Server ~onSpawn 1
+  - message{m="&6&l..☣ &c&lANH EM ĐỊA NGỤC JACK,JACKSON &6&l☣.. &fcòn sống hãy mau chóng tiêu diệt!"} @Server ~onTimer:1600 
+  - command{c="cr give to <target.name> bossquydianguc 1"} ~onDeath    
+  - skill{s=bossspawn} @Self ~onSpawn 1  
+  - shoot{type=ARROW;velocity=5;damage=100;ia=true;kb=2} @NearestPlayer{r=10} ~onTimer:60
+  - skill{s=manhtrungsieuhiem} @PlayersInRadius{r=8;limit=3;sort=RANDOM} ~onDeath    
+  - skill{s=manhtrunghuyenthoai} @PlayersInRadius{r=8;limit=3;sort=RANDOM} ~onDeath    
+  - cmd{c="ie give xuongdianguc <trigger.name> 1"} ~onDeath 0.5 
+  - damage{amount=20;ia=true} @PIR{r=100} ~onSpawn 1
+  - damage{amount=60;ia=true} @PIR{r=100} ~onTimer:5000 1
+anhemdianguc2:
+  Type: WITHER_SKELETON
+  Display: '&6&l..☣ &e&lJackson &6&l☣..'
+  Health: 4400
+  Damage: 150
+  Armor: 150
+  Faction: []
+  Options:
+    NoDamageTicks: 2
+    AlwaysShowName: true
+    AttackSpeed: 6
+    Collidable: false
+    Despawn: false
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 6
+    KnockbackResistance: 1
+    MaxCombatDistance: 4
+    MovementSpeed: 0.6
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: false
+    ImmunityTable: false
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players
+  Drops:
+  Equipment:
+  - iron_sword:0
+  - iron_chestplate:3
+  - iron_leggings:2
+  - iron_boots:1
+  - bosshoanggiaskull:4
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE 0
+  - ENTITY_ATTACK 0.2
+  - MELTING 0
+  - SUFFOCATION 0
+  - EXPLOSION 0
+  BossBar:
+    Enabled: true
+    Range: 50
+    Style: SEGMENTED_10
+    Color: YELLOW
+    Title: '&4☣ &e&lJackson &4☣ &f∻ &c<mob.hp>❤'
+  Skills:
+  - threat{amount=1000} @NearestPlayer ~onTimer:100
+  - skill{s=quydianguc} @PlayersInRadius{r=16} ~onDeath
+  - skill{s=quydianguc2} @PlayersInRadius{r=20;limit=8;sort=RANDOM} ~onDeath  
+  - skill{s=quydianguc3} @PlayersInRadius{r=20;limit=2;sort=RANDOM} ~onDeath   
+  - damage{amount=12;ia=true} ~onDamaged
+  - potion{type=HUNGER;duration=100;lvl=4} @PIR{r=15} ~onTimer:100
+  - skill{s=phapsu1} @Self ~onTimer:600
+  - skill{s=phapsu2} @Self ~onTimer:400
+  - skill{s=hoiphuc} @Self ~onTimer:500
+  - skill{s=vungtoi} @Self ~onTimer:300
+  - message{m="&4&lJACKSON ĐỊA NGỤC &cđịa ngục đã bị tiêu diệt bởi &c&l<trigger.name>&c!"} @Server ~onDeath 1
+  - command{c="cr give to <target.name> bossquydianguc 1"} ~onDeath    
+  - shoot{type=ARROW;velocity=5;damage=100;ia=true;kb=2} @NearestPlayer{r=10} ~onTimer:40
+  - skill{s=manhtrungsieuhiem} @PlayersInRadius{r=8;limit=3;sort=RANDOM} ~onDeath    
+  - skill{s=manhtrunghuyenthoai} @PlayersInRadius{r=8;limit=3;sort=RANDOM} ~onDeath    
+  - cmd{c="ie give xuongdianguc <trigger.name> 1"} ~onDeath 0.5 
+  - damage{amount=20;ia=true} @PIR{r=100} ~onSpawn 1
+  - damage{amount=60;ia=true} @PIR{r=100} ~onTimer:5000 1
+# thuatsidianguc:
+  # Type: EVOKER
+  # Display: '&5&l๑๑ &4&lThuật Sĩ Địa Ngục &5&l๑๑'
+  # Health: 400
+  # Damage: 100
+  # Armor: 120
+  # Faction: []
+  # Options:
+    # NoDamageTicks: 0
+    # AlwaysShowName: true
+    # AttackSpeed: 3.6
+    # Collidable: false
+    # Despawn: true
+    # PreventJockeyMounts: true
+    # PreventTransformation: true
+    # FollowRange: 20
+    # KnockbackResistance: 1
+    # MaxCombatDistance: 12
+    # MovementSpeed: 0.3
+    # PreventOtherDrops: true
+    # PreventRandomEquipment: true
+  # Modules:
+    # ThreatTable: true
+    # ImmunityTable: true
+  # AIGoalSelectors:
+  # - opendoors
+  # - float
+  # - lookatplayers
+  # - movetowardstarget
+  # - meleeattack
+  # AITargetSelectors:
+  # - players
+  # Drops:
+  # Equipment:
+  # - eye_of_ender:0
+  # DamageModifiers:
+  # - LIGHTNING 0
+  # - POISON 0 
+  # - MAGIC 0
+  # - WITHER 0
+  # - THORNS 0
+  # - FIRE_TICK 0
+  # - FIRE 0
+  # - FALL 0
+  # - PROJECTILE 0.0
+  # - ENTITY_ATTACK 0.1
+  # - MELTING 0
+  # Skills:
+  # - skill{s=vexkill} @Self ~onTimer:250
+  # - skill{s=phapsu1} @Target ~onTimer:100
+  # - skill{s=phapsu2} @Self ~onTimer:250
+  # - skill{s=hoiphuc} @Self ~onTimer:140
+# quydaxoa:
+  # Type: ZOMBIE
+  # Display: '&5&l๑๑ &4&lQuỷ Dạ Xoa &5&l๑๑'
+  # Health: 150
+  # Damage: 120
+  # Armor: 60
+  # Faction: []
+  # Options:
+    # NoDamageTicks: 0
+    # AlwaysShowName: true
+    # AttackSpeed: 5
+    # Collidable: false
+    # Despawn: true
+    # PreventJockeyMounts: true
+    # PreventTransformation: true
+    # FollowRange: 20
+    # KnockbackResistance: 1
+    # MaxCombatDistance: 12
+    # MovementSpeed: 0.7
+    # PreventOtherDrops: true
+    # PreventRandomEquipment: true
+  # Modules:
+    # ThreatTable: true
+    # ImmunityTable: true
+  # AIGoalSelectors:
+  # - opendoors
+  # - float
+  # - lookatplayers
+  # - movetowardstarget
+  # AITargetSelectors:
+  # - players
+  # Drops:
+  # Equipment:
+  # - thivehoanggiachestplate:3
+  # - thivehoanggialeggings:2
+  # - thivehoanggiaboots:1
+  # - iron_sword:0
+  # - thivehoanggiaskull:4
+  # DamageModifiers:
+  # - LIGHTNING 0
+  # - POISON 0 
+  # - MAGIC 0
+  # - WITHER 0
+  # - THORNS 0
+  # - FIRE_TICK 0
+  # - FIRE 0
+  # - FALL 0
+  # - PROJECTILE 0.0
+  # - ENTITY_ATTACK 0.1
+  # - MELTING 0
+  # Skills:
+  # - damage{a=4;ia=true} @Target ~onAttack
+# cungthudianguc:
+  # Type: SKELETON
+  # Display: '&7&l๑๑ &4&lCung Thủ Địa Ngục &7&l๑๑'
+  # Health: 180
+  # Damage: 120
+  # Armor: 60
+  # Faction: []
+  # Options:
+    # NoDamageTicks: 0
+    # AlwaysShowName: true
+    # AttackSpeed: 5
+    # Collidable: false
+    # Despawn: true
+    # PreventJockeyMounts: true
+    # PreventTransformation: true
+    # FollowRange: 20
+    # KnockbackResistance: 1
+    # MaxCombatDistance: 12
+    # MovementSpeed: 0.5
+    # PreventOtherDrops: true
+    # PreventRandomEquipment: true
+  # Modules:
+    # ThreatTable: true
+    # ImmunityTable: true
+  # AIGoalSelectors:
+  # - opendoors
+  # - float
+  # - lookatplayers
+  # - movetowardstarget
+  # AITargetSelectors:
+  # - players
+  # Drops:
+  # Equipment:
+  # - bow:0
+  # - cungthuhoanggiachestplate:3
+  # - cungthuhoanggialeggings:2
+  # - cungthuhoanggiaboots:1
+  # - cungthuhoanggiaskull:4
+  # DamageModifiers:
+  # - LIGHTNING 0
+  # - POISON 0 
+  # - MAGIC 0
+  # - WITHER 0
+  # - THORNS 0
+  # - FIRE_TICK 0
+  # - FIRE 0
+  # - FALL 0
+  # - PROJECTILE 0.0
+  # - ENTITY_ATTACK 0.1
+  # - MELTING 0
+  # Skills:
+  # - shoot{type=ARROW;velocity=5;damage=20;ia=true;kb=2} @NearestPlayer{r=20} ~onTimer:10
+  # - arrowvolley{a=3;s=225;v=40;f=50;rd=200;kb=2;ia=true;damage=20} @Ring{radius=13;points=12} @NearestPlayer{r=20} ~onTimer:100
+# madau:
+  # Type: Vindicator
+  # Display: '&3&l๑๑ &4&lMa Đầu &3&l๑๑'
+  # Health: 400
+  # Damage: 60
+  # Armor: 120
+  # Faction: []
+  # Options:
+    # NoDamageTicks: 0
+    # AlwaysShowName: true
+    # AttackSpeed: 2.4
+    # Collidable: false
+    # Despawn: true
+    # PreventJockeyMounts: true
+    # PreventTransformation: true
+    # FollowRange: 20
+    # KnockbackResistance: 1
+    # MaxCombatDistance: 12
+    # MovementSpeed: 0.2
+    # PreventOtherDrops: true
+    # PreventRandomEquipment: true
+  # Modules:
+    # ThreatTable: true
+    # ImmunityTable: true
+  # AIGoalSelectors:
+  # - opendoors
+  # - float
+  # - lookatplayers
+  # - meleeattack
+  # - movetowardstarget
+  # AITargetSelectors:
+  # - players
+  # Drops:
+  # Equipment:
+  # - diamond_axe:0
+  # - shield:5
+  # DamageModifiers:
+  # - LIGHTNING 0
+  # - POISON 0 
+  # - MAGIC 0
+  # - WITHER 0
+  # - THORNS 0
+  # - FIRE_TICK 0
+  # - FIRE 0
+  # - FALL 0
+  # - PROJECTILE 0.0
+  # - ENTITY_ATTACK 0.1
+  # - MELTING 0
+  # Skills:
+  # - throw{velocity=20;velocityY=9} @PlayersInRadius{r=15} ~onTimer:200
+  # - pull{v=20;to=false} @PIR{r=20} ~onTimer:400

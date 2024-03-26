@@ -1,0 +1,71 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&l.TOP ĐẢO BÁ VƯƠNG.'
+
+pattern:
+  - '@ @ @ @ # @ @ @ @'  
+  - '@ @ @ # # # @ @ @'
+  - '@ # # # @ # # # @'
+
+slots: '#'
+previous-page: '!'
+current-page: '-'
+next-page: '+'
+
+worth-sort: '%'
+level-sort: '*'
+rating-sort: '^'
+players-sort: '&'
+player-island: '$'
+sort-glow-when-selected: true
+
+items:
+  '#':
+    island:
+      type: BEACON
+      data: 3
+      name: '&e&l[!] Island: &6&n{0}&7 (#{1})'
+      lore:
+        - '&7'
+        - '&6&l* &eIsland Level: &7{3} &e✮'
+        - '&7'
+        - '&6&l* &aTop Đảo: &e#{1}'
+        - '&7'
+        - '&6&l* &e&lMembers:'
+        - '{4}:&f  - &7{}'
+        - '&7'
+        - '&7&o((&f&oChuột-trái &7&ođể xem đảo này.))'
+        - '&7&o((&f&oChuột-phải &7&ođể dịch chuyển đến đảo này.))'
+    no-island:
+      type: WEB
+      name: '&c!'
+  '*':
+    type: EMERALD
+    name: '&fSắp xếp theo cấp đảo &e&l✮'
+  '%':
+    type: GOLD_AXE
+    sorting-type: 'WORTH'
+    name: '&fSắp xếp theo cấp đảo &e&l✮'
+  '^':
+    type: HOPPER
+    sorting-type: 'RATING'
+    name: '&aSắp xếp theo lượt Vote &e&l✮'    
+  '~':
+    type: STAINED_GLASS_PANE
+    data: 4
+    name: '&f '
+  '@':
+    type: STAINED_GLASS_PANE
+    data: 15
+    name: '&f '
+
+sounds:
+  '@':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2

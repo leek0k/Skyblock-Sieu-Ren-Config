@@ -1,0 +1,52 @@
+mission-file: ItemsMissions
+required-missions:
+- f_islandminer_b
+island: false
+auto-reward: false
+rewards:
+  commands:
+  - eco give %player% 20000
+  - exp give %player% 801
+  - is admin msg %player% &e&l$ | &7Hoàn thành thử thách!
+required-items:
+  '1':
+    types:
+    - REDSTONE
+    amount: 640
+icons:
+  not-completed:
+    type: DIAMOND
+    name: '&6&LTHỬ THÁCH: &7&lTHỢ MỎ &f&l#3'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l redstone &fđể FULL túi'
+    - ''
+    - '&7- &e$20.000 , 801 Exp'
+    - ''
+    - '&6Thu thập: &7{1}/640'
+    - '&6Tiến trình: &7{0}%'
+    - '&c&l ✘ &7Chưa hoàn thành'
+    - ''
+    - '&a&l YÊU CẦU: &aHoàn thành &7&lTHỢ MỎ &f&l#2'
+  can-complete:
+    type: REDSTONE
+    name: '&6&LTHỬ THÁCH: &7&lTHỢ MỎ &f&l#3'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l redstone &fđể FULL túi'
+    - ''
+    - '&7- &e$20.000 , 801 Exp'
+    - ''
+    - '&6Thu thập: &7640/640'
+    - '&6Tiến trình: &7100%'
+    - '&a&l ✔ &7Bạn đã có đủ điều kiện Click vào đây.'
+    enchants:
+      DURABILITY: 1
+    flags:
+    - HIDE_ENCHANTS
+  completed:
+    type: MAP
+    name: '&6&LTHỬ THÁCH: &7&lTHỢ MỎ &f&l#3'
+    lore:
+    - ''
+    - '&a&l ✔ &7Đã hoàn thành.'

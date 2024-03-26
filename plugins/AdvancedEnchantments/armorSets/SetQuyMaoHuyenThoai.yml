@@ -1,0 +1,83 @@
+name: '&6&lSet &e&lQuý Mão Huyền Thoại'
+material: DIAMOND
+settings:
+  equipped:
+    - '&a&l(!) &aKích hoạt &b&lSet &6&lQuý Mão!'
+  unequipped:
+    - '&c&l(!) &cDừng kích hoạt &b&lSet &6&lQuý Mão!'
+items:
+  helmet:
+    name: '&e&l★ &6&l★ &e&l★ &6&lMŨ THƯỢNG QUÝ MÃO &e&l★ &6&l★ &e&l★'
+    customModelData: 0
+    itemFlags: []
+    lore:
+      - ''
+      - '&6&l◆ ◆ ◆ HUYỀN THOẠI &6(Quý Mão 2023) &6&l◆ ◆ ◆'
+      - '&6* Giảm 10% damage nhận vào.'
+      - '&6* Tăng 30% nhanh nhẹn khi giao tranh '
+      - '&6&oVật phẩm sự kiện Tết Quý Mão 2023'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+      - ''
+    enchants:
+      - "protection:6"
+      - "unbreaking:5"
+      - "respiration:3"
+  chestplate:
+    name: '&e&l★ &6&l★ &e&l★ &6&lGIÁP THƯỢNG QUÝ MÃO &e&l★ &6&l★ &e&l★'
+    customModelData: 0
+    itemFlags: []
+    lore:
+      - ''
+      - '&6&l◆ ◆ ◆ HUYỀN THOẠI &6(Quý Mão 2023) &6&l◆ ◆ ◆'
+      - '&6* Giảm 10% damage nhận vào.'
+      - '&6* Tăng 30% nhanh nhẹn khi giao tranh '
+      - '&6&oVật phẩm sự kiện Tết Quý Mão 2023'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+      - ''
+    enchants:
+      - "protection:6"
+      - "unbreaking:5"
+      - "fire_protection:2"
+  leggings:
+    name: '&e&l★ &6&l★ &e&l★ &6&lQUẦN THƯỢNG QUÝ MÃO &e&l★ &6&l★ &e&l★'
+    customModelData: 0
+    itemFlags: []
+    lore:
+      - ''
+      - '&6&l◆ ◆ ◆ HUYỀN THOẠI &6(Quý Mão 2023) &6&l◆ ◆ ◆'
+      - '&6* Giảm 10% damage nhận vào.'
+      - '&6* Tăng 30% nhanh nhẹn khi giao tranh '
+      - '&6&oVật phẩm sự kiện Tết Quý Mão 2023'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+      - ''
+    enchants:
+      - "protection:6"
+      - "unbreaking:5"
+      - "blast_protection:2"
+  boots:
+    name: '&e&l★ &6&l★ &e&l★ &6&lỦNG THƯỢNG QUÝ MÃO &e&l★ &6&l★ &e&l★'
+    customModelData: 0
+    itemFlags: []
+    lore:
+      - ''
+      - '&6&l◆ ◆ ◆ HUYỀN THOẠI &6(Quý Mão 2023) &6&l◆ ◆ ◆'
+      - '&6* Giảm 10% damage nhận vào.'
+      - '&6* Tăng 30% nhanh nhẹn khi giao tranh '
+      - '&6&oVật phẩm sự kiện Tết Quý Mão 2023'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+      - ''
+    enchants:
+      - "protection:6"
+      - "unbreaking:5"
+      - "projectile_protection:2"
+      - "feather_falling:2"
+events:
+  DEFENSE:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:10'
+      - 'NEGATE_DAMAGE:20'
+  DEFENSE:
+    chance: 20
+    effects:
+      - "POTION:SPEED:4:60"

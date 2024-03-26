@@ -1,0 +1,33 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&8[&6EpicVouchers&8] '
+interface:
+  confirmsettings:
+    title: '&2&lTa''id'
+    confirmitemname: '&2&lTa''id'
+    confirmitemlore: '&aBaraye Ta''id Inja Click Konid.'
+    cancelitemname: '&4&lCANCEL'
+    cancelitemlore: '&cBaraye Cancel Kardan Inja Click Konid.'
+command:
+  error:
+    noplayer: '&&7In Player Online Nist Ya Vojood Nadarad!'
+    novoucher: '&cIn Kopen Vojood Nadarad.'
+    notexist: '&7Commande Vared Shode Eshtebah Ast Va Ya Vojood Nadarad.'
+    notnumber: '&7Voroodiye Shoma Bayad Yek Adad Bashad.'
+  reload:
+    success: '&7Config Reload Shod Va Tamami File Ha Update Shod.'
+  give:
+    send: '&7Shoma Be &6%player%, &7(&6x%amount%&7) Adad Kopene &6%voucher% &7Dadid.'
+    receive: '&7Shoma Tedade (&6x%amount%&7) Adad Kopene &6%voucher% &7Daryaft Kardid.'
+    cancelled: '&cEvent Cancel Shod.'
+  force:
+    send: '&7Shoma Playere &6%player% &7 Ra Majboor Be Redeeme (&6x%amount%&7) Kopene &6%voucher% Kardid.'
+  list:
+    list: '&7Liste Tamami Kopen Ha: &6%list%&7.'
+# Event Messages
+event:
+  general:
+    nopermission: '&cShoma Ejaze Dastresi Be In Command Ra Nadarid!'
+    cooldown: '&7Lotfan &6%time%&7 Saniye Ghabl Az Baz Kardan Kopen Jadid, Sabr Konid.'

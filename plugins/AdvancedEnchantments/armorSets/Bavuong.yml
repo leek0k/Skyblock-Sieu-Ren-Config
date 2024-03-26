@@ -1,0 +1,122 @@
+# Advanced Sets
+# These sets are fully creatable, to create your own simply copy this file, rename it and edit it however you want!
+
+# ** Set Materials:
+# * LEATHER (change-able color)
+# * IRON
+# * GOLD
+# * CHAIN
+# * DIAMOND
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for sets.
+
+#  ** Set Events
+#    Change upon what event should sets trigger
+#    - EFFECT_STATIC : Gives permanent potion effect (as long as armor piece is worn)
+#    - ATTACK : Set Event run only when attacking another player
+#    - DEFENSE : Set Event run only when being attacked
+#    - DEFENSE_BOW : Set Event run only when player gets shot by a bow
+#    - MINING : Gives effects when block is mined
+#    - ATTACK_MOB : Gives effects when player attacks mob
+#    - KILL_MOB : Effects given when attacked mob is killed
+#    - BOW : Effects given when player is shot by another player
+#    - KILL_PLAYER : Effects given when attacker kills a player
+#    - DEATH : Runs when player dies due to another player.
+#    - RIGHT_CLICK : Runs when player right clicks held item
+#    - BOW_MOB : Effects given when mob is shot by player
+#    - FIRE : Effects given when player is on fire
+#    - EXPLOSION : Effects given when player gets hit by explosion
+#    - SWING : Enchant runs when player swings
+#    - FALL_DAMAGE : Set Event runs when player takes fall damage
+#    - DEFENSE_MOB : Set Event runs when mob attacks a player
+#    - SHIFT : Set Event runs when player toggles crouching (shifts)
+#    - ITEM_BREAK : Set Event runs when player toggles crouching (shifts)
+#    - CATCH_FISH : Set Event runs when player catches a fish
+# Set Events & Enchant types are intercompatible together
+
+# ** Creating set effects, this explains the system
+#events:
+#  <any of the effects from the list>:
+#    chance: <chance of effects activating, 1-100> (Optional)
+#    cooldown: <cooldown period after effects activate, in seconds> (Optional)
+#    effects: <effects are available in enchantments.yml>
+#    # E.g.: - 'INCREASED_DAMAGE:10'
+
+name: '&c&lSET &E&lBÁ VƯƠNG'
+material: CHAINMAIL
+settings:
+  equipped:
+    - '&a&l(!) &aKích hoạt &c&lSET &e&lBÁ VƯƠNG!'
+  unequipped:
+    - '&c&l(!) &cDừng kịch hoạt &c&lSET &&e&lBÁ VƯƠNG!'
+items:
+  helmet:
+    name: '&e乄٭乄&6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG&e乄٭乄 &e&l(.Mũ.)'
+    lore:
+      - ''   
+      - '&e乄٭乄٭乄 &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG &7(New) &e乄٭乄٭乄'
+      - '&e⋆ &6Giảm 33% damage.'
+      - '&e⋆ &6+6 máu &7((Sinh lực))'
+      - '&e⋆ &6Đề kháng'
+      - '&7&o(Mặc full Set Bá Vương để kích hoạt.)' 
+      - ''         
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:8"
+      - "unbreaking:5"
+  chestplate:
+    name: '&e乄٭乄&6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG&e乄٭乄 &e&l(.Áo.)'
+    lore:
+      - ''   
+      - '&e乄٭乄٭乄 &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG &7(New) &e乄٭乄٭乄'
+      - '&e⋆ &6Giảm 33% damage.'
+      - '&e⋆ &6+6 máu &7((Sinh lực))'
+      - '&e⋆ &6Đề kháng'
+      - '&7&o(Mặc full Set Bá Vương để kích hoạt.)' 
+      - ''           
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:8"
+      - "unbreaking:5"
+  leggings:
+    name: '&e乄٭乄&6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG&e乄٭乄 &e&l(.Quần.)'
+    lore:
+      - ''   
+      - '&e乄٭乄٭乄 &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG &7(New) &e乄٭乄٭乄'
+      - '&e⋆ &6Giảm 33% damage.'
+      - '&e⋆ &6+6 máu &7((Sinh lực))'
+      - '&e⋆ &6Đề kháng'
+      - '&7&o(Mặc full Set Bá Vương để kích hoạt.)' 
+      - ''      
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:8"
+      - "unbreaking:5"
+  boots:
+    name: '&e乄٭乄&6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG&e乄٭乄 &e&l(.Giày.)'
+    lore:
+      - ''   
+      - '&e乄٭乄٭乄 &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG &7(New) &e乄٭乄٭乄'
+      - '&e⋆ &6Giảm 33% damage.'
+      - '&e⋆ &6+6 máu &7((Sinh lực))'
+      - '&e⋆ &6Đề kháng'
+      - '&7&o(Mặc full Set Bá Vương để kích hoạt.)' 
+      - ''         
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:8"
+      - "unbreaking:5"
+events:
+  DEFENSE:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:33'         
+  DEFENSE:
+    chance: 100
+    cooldown: 10
+    effects:
+      - 'CURE:DAMAGE_RESISTANCE'
+      - 'POTION:DAMAGE_RESISTANCE:2:100'
+      - 'WAIT:110'
+      - 'CURE:DAMAGE_RESISTANCE'
+      - 'POTION_OVERRIDE:DAMAGE_RESISTANCE:0:1200'
+  DEFENSE_BOW:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:33' 

@@ -1,0 +1,12 @@
+giayendercon:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      color:
+        ==: Color
+        RED: 29
+        BLUE: 33
+        GREEN: 29

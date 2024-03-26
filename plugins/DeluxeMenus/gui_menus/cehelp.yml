@@ -1,0 +1,859 @@
+file: cehelp.yml
+menu_title: '&8&lHướng Dẫn Ép Sách &8(&b1&8/&b2&8)'
+open_command: 
+- cehelp
+- helpce
+- e help
+- ehelp
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 54
+open_requirement: 
+items:
+  '2':
+    material: DOUBLE_PLANT
+    display_name: '&c&l⬅ [Trở về]'
+    slot: 49
+    lore:
+    - "&7Nhấn vào để trở về mục trước"
+    click_commands:
+    - '[player] e'
+  'next':
+    material: ARROW
+    display_name: '&e&lTrang kế'
+    slot: 50
+    click_commands:
+    - '[openguimenu] cehelp2'
+  'helmet':
+    material: DIAMOND_HELMET
+    hide_attributes: true
+    display_name: '&6-=-&b&lPhù Phép Cho Mũ&6-=-'
+    lore:
+    - '&7- Gợi ý kết hợp CE dành cho &6&l&nMũ&r'
+    - '&f&lSơ cấp:'
+    - '&a&a▢ Ô cường hóa: +8 &7(Mặc định)'
+    - '&a&lTrung cấp:'
+    - '&a&a▢ Ô cường hóa: +9 &7(Tăng &a1&7 ô)'
+    - '&b&lCao cấp:'
+    - '&a&a▢ Ô cường hóa: +12 &7(Tăng &b4&7 ô)'
+    - '&e&lSiêu Cấp:'
+    - '&a&a▢ Ô cường hóa: +14 &7(Tăng &e6&7 ô)'
+    - '&6&lTRÙM:'
+    - '&a&a▢ Ô cường hóa: +15 &7(Tăng &67&7 ô)'
+    - '&c&lTỐI CAO:'
+    - '&a&a▢ Ô cường hóa: +16 &7(Tăng &c8&7 ô)'
+    - '&6&l&k..&r &e&lMẠ VÀNG &6&l&k..&e:'
+    - '&a&a▢ Ô cường hóa: +16 &7(Tăng &c8&7 ô)'
+    - ''
+    - '&7Mẹo:'
+    - '&f&l| &7Mua &e&l**Túy bát tiên quyền** &7tại /shopxu'
+    - '&f&l| &7hoặc /gems shop.'
+    - '&f&l| &7Nâng cấp &2师傅 &a&lTúy bát tiên quyền &2师傅 &7chỉ'
+    - '&f&l| &7có trong hòm Thượng Cổ /warp ruongbau.'
+    - ''
+    - '&0&o#Item menu'
+    slot: 9
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'helmet1':
+    material: STAINED_GLASS_PANE
+    data: 0
+    hide_attributes: true
+    display_name: '&f&l-=-Sơ Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&bHỏa mù I-VIII'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eBan phước I-III'
+    - '&6Túy quyền I-IV'
+    - ''
+    - '&0&o#Item menu'
+    slot: 11
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'helmet2':
+    material: STAINED_GLASS_PANE
+    data: 5
+    hide_attributes: true
+    display_name: '&a&l-=-Trung Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&bHỏa mù I-VIII'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eBan phước I-III'
+    - '&6Tử thần I-III'
+    - '&e&l**Túy bát tiên quyền** I-III'
+    - ''
+    - '&0&o#Item menu'
+    slot: 12
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'helmet3':
+    material: STAINED_GLASS_PANE
+    data: 3
+    hide_attributes: true
+    display_name: '&b&l-=-Cao Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&bHỏa mù I-VIII'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eBan phước I-III'
+    - '&eNhanh nhẹn I-V'
+    - '&6Tử thần I-III'
+    - '&6Thiên sứ I-III'
+    - '&6Thiết giáp I-IV'
+    - '&e&l**Túy bát tiên quyền** I-III'
+    - ''
+    - '&0&o#Item menu'
+    slot: 13
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'helmet4':
+    material: STAINED_GLASS_PANE
+    data: 4
+    hide_attributes: true
+    display_name: '&e&l-=-Siêu Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&bHỏa mù I-VIII'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eSinh lý mạnh I-V'
+    - '&6Tử thần I-III'
+    - '&dThiên nhiên I-III'
+    - '&dHộ mệnh I-III'
+    - '&dThánh giáp I-IV'
+    - '&dPhanh thay I-III'
+    - '&dCao thủ I-V'
+    - '&e&l**Túy bát tiên quyền** I-III'
+    - ''
+    - '&0&o#Item menu'
+    slot: 14
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'helmet5':
+    material: STAINED_GLASS_PANE
+    data: 1
+    hide_attributes: true
+    display_name: '&6&l-=-TRÙM-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&bHỏa mù I-VIII'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eSinh lý mạnh I-V'
+    - '&6Tử thần I-III'
+    - '&dThiên nhiên I-III'
+    - '&dHộ mệnh I-III'
+    - '&dThánh giáp I-IV'
+    - '&dPhanh thay I-III'
+    - '&dCao thủ I-V'
+    - '&cPhượng hoàng I-III'
+    - '&2师傅 &a&lTúy bát tiên quyền &2师傅 I'
+    - ''
+    - '&0&o#Item menu'
+    slot: 15
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'helmet6':
+    material: STAINED_GLASS_PANE
+    data: 14
+    hide_attributes: true
+    display_name: '&c&l-=-TỐI CAO-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&bHỏa mù I-VIII'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eSinh lý mạnh I-V'
+    - '&6Tử thần I-III'
+    - '&dHộ mệnh I-III'
+    - '&dThánh giáp I-IV'
+    - '&dPhanh thay I-III'
+    - '&dCao thủ I-V'
+    - '&cPhượng hoàng I-III'
+    - '&cQuái băng I-IV'
+    - '&4&l❤ &c&lHạnh phúc &4&l❤ I'
+    - '&2师傅 &a&lTúy bát tiên quyền &2师傅 I'
+    - ''
+    - '&0&o#Item menu'
+    slot: 16
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'helmet7':
+    material: STAINED_GLASS_PANE
+    data: 4
+    enchantments:
+    - DURABILITY;1
+    hide_attributes: true
+    hide_enchantments: true
+    display_name: '&6&l&k..&e&l-=-MẠ VÀNG-=-&6&l&k..'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&bHỏa mù I-VIII'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eSinh lý mạnh I-V'
+    - '&6Tử thần I-III'
+    - '&6&l&k..&r &e&lHộ mệnh &6&l&k..&e I-III'
+    - '&6&l&k..&r &e&lThánh giáp &6&l&k..&e I-IV'
+    - '&6&l&k..&r &e&lPhanh thay &6&l&k..&e I-III'
+    - '&6&l&k..&r &e&lCao thủ &6&l&k..&e I-V'
+    - '&cPhượng hoàng I-III'
+    - '&cQuái băng I-IV'
+    - '&4&l❤ &c&lHạnh phúc &4&l❤ I'
+    - '&2师傅 &a&lTúy bát tiên quyền &2师傅 I'
+    - ''
+    - '&0&o#Item menu'
+    slot: 17
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'chestplate':
+    material: DIAMOND_chestplate
+    hide_attributes: true
+    display_name: '&6-=-&b&lPhù Phép Cho Giáp Ngực&6-=-'
+    lore:
+    - '&7- Gợi ý kết hợp CE dành cho &6&l&nGiáp Ngực&r'
+    - '&f&lSơ cấp:'
+    - '&a&a▢ Ô cường hóa: +8 &7(Mặc định)'
+    - '&a&lTrung cấp:'
+    - '&a&a▢ Ô cường hóa: +9 &7(Tăng &a1&7 ô)'
+    - '&b&lCao cấp:'
+    - '&a&a▢ Ô cường hóa: +12 &7(Tăng &b4&7 ô)'
+    - '&e&lSiêu Cấp:'
+    - '&a&a▢ Ô cường hóa: +14 &7(Tăng &e6&7 ô)'
+    - '&6&lTRÙM:'
+    - '&a&a▢ Ô cường hóa: +15 &7(Tăng &67&7 ô)'
+    - '&c&lTỐI CAO:'
+    - '&a&a▢ Ô cường hóa: +16 &7(Tăng &c8&7 ô)'
+    - '&6&l&k..&r &e&lMẠ VÀNG &6&l&k..&e:'
+    - '&a&a▢ Ô cường hóa: +16 &7(Tăng &c8&7 ô)'
+    - ''
+    - '&7Mẹo:'
+    - '&f&l| &7Kiếm &dTrâu thánh &7tại /shopxu hoặc'
+    - '&f&l| &7hoặc /ecraft.'
+    - '&f&l| &7Phù phép &cLinh Hồn &7chỉ có thể kiếm'
+    - '&f&l| &7từ quay rương báu hoặc /shopxu.'
+    - ''
+    - '&0&o#Item menu'
+    slot: 18
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'chestplate1':
+    material: STAINED_GLASS_PANE
+    data: 0
+    hide_attributes: true
+    display_name: '&f&l-=-Sơ Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aPhù phép I-V'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&6Trâu I-IV'
+    - ''
+    - '&0&o#Item menu'
+    slot: 20
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'chestplate2':
+    material: STAINED_GLASS_PANE
+    data: 5
+    hide_attributes: true
+    display_name: '&a&l-=-Trung Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aPhù phép I-V'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eSinh lý mạnh I-V'
+    - '&dTrâu thánh I-XXIII'
+    - ''
+    - '&0&o#Item menu'
+    slot: 21
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'chestplate3':
+    material: STAINED_GLASS_PANE
+    data: 3
+    hide_attributes: true
+    display_name: '&b&l-=-Cao Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aPhù phép I-V'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eNhanh nhẹn I-V'
+    - '&eSinh lý mạnh I-V'
+    - '&6Thiên sứ I-III'
+    - '&6Thiết giáp I-IV'  
+    - '&dTrâu thánh I-XXIII'
+    - ''
+    - '&0&o#Item menu'
+    slot: 22
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'chestplate4':
+    material: STAINED_GLASS_PANE
+    data: 4
+    hide_attributes: true
+    display_name: '&e&l-=-Siêu Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aPhù phép I-V'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eKháng lửa I'
+    - '&eSinh lý mạnh I-V'
+    - '&dThiên nhiên I-III'
+    - '&dThánh giáp I-IV'
+    - '&dPhanh thay I-III'
+    - '&dCao thủ I-V'
+    - '&dTrâu thánh I-XXIII'
+    - ''
+    - '&0&o#Item menu'
+    slot: 23
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'chestplate5':
+    material: STAINED_GLASS_PANE
+    data: 1
+    hide_attributes: true
+    display_name: '&6&l-=-TRÙM-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aPhù phép I-V'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eKháng lửa I'
+    - '&eSinh lý mạnh I-V'
+    - '&dThiên nhiên I-III'
+    - '&dThánh giáp I-IV'
+    - '&dPhanh thay I-III'
+    - '&dCao thủ I-V'
+    - '&dTrâu thánh I-XXIII'
+    - '&cPhượng hoàng I-III'
+    - ''
+    - '&0&o#Item menu'
+    slot: 24
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'chestplate6':
+    material: STAINED_GLASS_PANE
+    data: 14
+    hide_attributes: true
+    display_name: '&c&l-=-TỐI CAO-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aPhù phép I-V'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eKháng lửa I'
+    - '&eSinh lý mạnh I-V'
+    - '&dThủ phép I-VI'
+    - '&dThánh giáp I-IV'
+    - '&dPhanh thay I-III'
+    - '&dCao thủ I-V'
+    - '&dTrâu thánh I-XXIII'
+    - '&cPhượng hoàng I-III'
+    - '&cQuái băng I-IV'
+    - '&4&l❤ &c&lHạnh phúc &4&l❤ I'
+    - ''
+    - '&0&o#Item menu'
+    slot: 25
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'chestplate7':
+    material: STAINED_GLASS_PANE
+    data: 4
+    enchantments:
+    - DURABILITY;1
+    hide_attributes: true
+    hide_enchantments: true
+    display_name: '&6&l&k..&e&l-=-MẠ VÀNG-=-&6&l&k..'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aPhù phép I-V'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eKháng lửa I'
+    - '&eSinh lý mạnh I-V'
+    - '&dTrâu thánh I-XXIII'
+    - '&6&l&k..&r &e&lThủ phép &6&l&k..&e I-VI'
+    - '&6&l&k..&r &e&lThánh giáp &6&l&k..&e I-IV'
+    - '&6&l&k..&r &e&lPhanh thay &6&l&k..&e I-III'
+    - '&6&l&k..&r &e&lCao thủ &6&l&k..&e I-V'
+    - '&cPhượng hoàng I-III'
+    - '&cQuái băng I-IV'
+    - '&4&l❤ &c&lHạnh phúc &4&l❤ I'
+    - ''
+    - '&0&o#Item menu'
+    slot: 26
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'leggings':
+    material: DIAMOND_leggings
+    hide_attributes: true
+    display_name: '&6-=-&b&lPhù Phép Cho Quần&6-=-'
+    lore:
+    - '&7- Gợi ý kết hợp CE dành cho &6&l&nQuần&r'
+    - '&f&lSơ cấp:'
+    - '&a&a▢ Ô cường hóa: +8 &7(Mặc định)'
+    - '&a&lTrung cấp:'
+    - '&a&a▢ Ô cường hóa: +9 &7(Tăng &a1&7 ô)'
+    - '&b&lCao cấp:'
+    - '&a&a▢ Ô cường hóa: +12 &7(Tăng &b4&7 ô)'
+    - '&e&lSiêu Cấp:'
+    - '&a&a▢ Ô cường hóa: +14 &7(Tăng &e6&7 ô)'
+    - '&6&lTRÙM:'
+    - '&a&a▢ Ô cường hóa: +15 &7(Tăng &67&7 ô)'
+    - '&c&lTỐI CAO:'
+    - '&a&a▢ Ô cường hóa: +16 &7(Tăng &c8&7 ô)'
+    - '&6&l&k..&r &e&lMẠ VÀNG &6&l&k..&e:'
+    - '&a&a▢ Ô cường hóa: +16 &7(Tăng &c8&7 ô)'
+    - ''
+    - '&7Mẹo:'
+    - '&f&l| &7Phù phép &cLinh Hồn &7cần có &b&lphiếu'
+    - '&f&l| &b&ltheo dõi linh hồn &7mua tại /shopxu'
+    - '&f&l| &7và &4&l∴Linh hồn∴ ☿ &7mua tại /gems shop'
+    - '&f&l| &7để kích hoạt.'
+    - ''
+    - '&0&o#Item menu'
+    slot: 27
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'leggings1':
+    material: STAINED_GLASS_PANE
+    data: 0
+    hide_attributes: true
+    display_name: '&f&l-=-Sơ Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKiệt sức I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eSinh lý mạnh I-V'
+    - '&6Thuốc nhỏ mắt I-III'
+    - ''
+    - '&0&o#Item menu'
+    slot: 29
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'leggings2':
+    material: STAINED_GLASS_PANE
+    data: 5
+    hide_attributes: true
+    display_name: '&a&l-=-Trung Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKiệt sức I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eSinh lý mạnh I-V'
+    - '&6Thuốc nhỏ mắt I-III'
+    - '&6Thiên sứ I-III'
+    - ''
+    - '&0&o#Item menu'
+    slot: 30
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'leggings3':
+    material: STAINED_GLASS_PANE
+    data: 3
+    hide_attributes: true
+    display_name: '&b&l-=-Cao Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKiệt sức I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eNhanh nhẹn I-V'
+    - '&eSinh lý mạnh I-V'
+    - '&6Thuốc nhỏ mắt I-III'
+    - '&6Thiên sứ I-III'
+    - '&6Thiết giáp I-IV'  
+    - '&eGiáp chống đạn I-V'  
+    - ''
+    - '&0&o#Item menu'
+    slot: 31
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'leggings4':
+    material: STAINED_GLASS_PANE
+    data: 4
+    hide_attributes: true
+    display_name: '&e&l-=-Siêu Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKiệt sức I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eSinh lý mạnh I-V'
+    - '&6Thuốc nhỏ mắt I-III'
+    - '&dThiên nhiên I-III'
+    - '&dThánh giáp I-IV'
+    - '&dPhanh thay I-III'
+    - '&dCao thủ I-V'
+    - '&eGiáp chống đạn I-V'  
+    - '&eTường lực I-V' 
+    - ''
+    - '&0&o#Item menu' 
+    slot: 32
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'leggings5':
+    material: STAINED_GLASS_PANE
+    data: 1
+    hide_attributes: true
+    display_name: '&6&l-=-TRÙM-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKiệt sức I-V'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eSinh lý mạnh I-V'
+    - '&6Thuốc nhỏ mắt I-III'
+    - '&dThiên nhiên I-III'
+    - '&dThánh giáp I-IV'
+    - '&dPhanh thay I-III'
+    - '&dCao thủ I-V'
+    - '&dTường gió I-V'
+    - '&cPhượng hoàng I-III'
+    - ''
+    - '&0&o#Item menu'
+    slot: 33
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'leggings6':
+    material: STAINED_GLASS_PANE
+    data: 14
+    hide_attributes: true
+    display_name: '&c&l-=-TỐI CAO-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKiệt sức I-V'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eSinh lý mạnh I-V'
+    - '&6Thuốc nhỏ mắt I-III'
+    - '&dThánh giáp I-IV'
+    - '&dPhanh thay I-III'
+    - '&dCao thủ I-V'
+    - '&dTường gió I-V'
+    - '&cPhượng hoàng I-III'
+    - '&cQuái băng I-IV'
+    - '&4&l❤ &c&lHạnh phúc &4&l❤ I'
+    - ''
+    - '&0&o#Item menu'
+    slot: 34
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'leggings7':
+    material: STAINED_GLASS_PANE
+    data: 4
+    enchantments:
+    - DURABILITY;1
+    hide_attributes: true
+    hide_enchantments: true
+    display_name: '&6&l&k..&e&l-=-MẠ VÀNG-=-&6&l&k..'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&bXương rồng I-III'
+    - '&bPhủ tuyết I-V'
+    - '&bHơi độc I-IV'
+    - '&bKiệt sức I-V'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhoẻ I-IV'
+    - '&eSinh lý mạnh I-V'
+    - '&6Thuốc nhỏ mắt I-III'
+    - '&6&l&k..&r &e&lThánh giáp &6&l&k..&e I-IV'
+    - '&6&l&k..&r &e&lPhanh thay &6&l&k..&e I-III'
+    - '&6&l&k..&r &e&lCao thủ &6&l&k..&e I-V'
+    - '&6&l&k..&r &e&lTường gió &6&l&k..&e I-V'
+    - '&cPhượng hoàng I-III'
+    - '&cQuái băng I-IV'
+    - '&4&l❤ &c&lHạnh phúc &4&l❤ I'
+    - ''
+    - '&0&o#Item menu'
+    slot: 35
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'boots':
+    material: DIAMOND_boots
+    hide_attributes: true
+    display_name: '&6-=-&b&lPhù Phép Cho Giày&6-=-'
+    lore:
+    - '&7- Gợi ý kết hợp CE dành cho &6&l&nGiày&r'
+    - '&f&lSơ cấp:'
+    - '&a&a▢ Ô cường hóa: +8 &7(Mặc định)'
+    - '&a&lTrung cấp:'
+    - '&a&a▢ Ô cường hóa: +9 &7(Tăng &a1&7 ô)'
+    - '&b&lCao cấp:'
+    - '&a&a▢ Ô cường hóa: +12 &7(Tăng &b4&7 ô)'
+    - '&e&lSiêu Cấp:'
+    - '&a&a▢ Ô cường hóa: +14 &7(Tăng &e6&7 ô)'
+    - '&6&lTRÙM:'
+    - '&a&a▢ Ô cường hóa: +15 &7(Tăng &67&7 ô)'
+    - '&c&lTỐI CAO:'
+    - '&a&a▢ Ô cường hóa: +16 &7(Tăng &c8&7 ô)'
+    - '&6&l&k..&r &e&lMẠ VÀNG &6&l&k..&e:'
+    - '&a&a▢ Ô cường hóa: +16 &7(Tăng &c8&7 ô)'
+    - ''
+    - '&7Mẹo:'
+    - '&f&l| &7Phù phép đặc biệt như &4&l❤ &c&lHạnh phúc &4&l❤'
+    - '&f&l| &7hay &3&l෴ Thần tốc ෴  &7chỉ có thể mua'
+    - '&f&l| &7tại /shopdacbiet.'
+    - ''
+    - '&0&o#Item menu'
+    slot: 36
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'boots1':
+    material: STAINED_GLASS_PANE
+    data: 0
+    hide_attributes: true
+    display_name: '&f&l-=-Sơ Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bSiêu trọng lực I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhắc nhiễm I-V'
+    - '&eSinh lý mạnh I-V'
+    - '&6Tăng tốc I-IV'
+    - ''
+    - '&0&o#Item menu'
+    slot: 38
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'boots2':
+    material: STAINED_GLASS_PANE
+    data: 5
+    hide_attributes: true
+    display_name: '&a&l-=-Trung Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bSiêu trọng lực I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhắc nhiễm I-V'
+    - '&eSinh lý mạnh I-V'
+    - '&6Tăng tốc I-IV'
+    - '&6Thiên sứ I-III'
+    - ''
+    - '&0&o#Item menu'
+    slot: 39
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'boots3':
+    material: STAINED_GLASS_PANE
+    data: 3
+    hide_attributes: true
+    display_name: '&b&l-=-Cao Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bSiêu trọng lực I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&eThiên thần I-V'
+    - '&eKhắc nhiễm I-V'
+    - '&eSinh lý mạnh I-V'
+    - '&eGiày xịn I-V'
+    - '&eNhanh nhẹn I-IV'
+    - '&6Tăng tốc I-IV'
+    - '&6Thiên sứ I-III'
+    - '&6Thiết giáp I-IV'  
+    - ''
+    - '&0&o#Item menu'
+    slot: 40
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'boots4':
+    material: STAINED_GLASS_PANE
+    data: 4
+    hide_attributes: true
+    display_name: '&e&l-=-Siêu Cấp-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bSiêu trọng lực I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&bKiệt sức I-V'
+    - '&eThiên thần I-V'
+    - '&eKhắc nhiễm I-V'
+    - '&eSinh lý mạnh I-V'
+    - '&eGiày xịn I-V'
+    - '&6Tăng tốc I-IV'
+    - '&dThiên nhiên I-III'
+    - '&dThánh giáp I-IV'
+    - '&dPhanh thay I-III'
+    - '&dCao thủ I-V'
+    - ''
+    - '&0&o#Item menu'
+    slot: 41
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'boots5':
+    material: STAINED_GLASS_PANE
+    data: 1
+    hide_attributes: true
+    display_name: '&6&l-=-TRÙM-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bSiêu trọng lực I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&bKiệt sức I-V'
+    - '&eThiên thần I-V'
+    - '&eKhắc nhiễm I-V'
+    - '&eSinh lý mạnh I-V'
+    - '&eGiày xịn I-V'
+    - '&6Tăng tốc I-IV'
+    - '&dThiên nhiên I-III'
+    - '&dThánh giáp I-IV'
+    - '&dPhanh thay I-III'
+    - '&dCao thủ I-V'
+    - '&cPhượng hoàng I-III'
+    - ''
+    - '&0&o#Item menu'
+    slot: 42
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'boots6':
+    material: STAINED_GLASS_PANE
+    data: 14
+    hide_attributes: true
+    display_name: '&c&l-=-TỐI CAO-=-'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bSiêu trọng lực I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&bKiệt sức I-V'
+    - '&eThiên thần I-V'
+    - '&eKhắc nhiễm I-V'
+    - '&eSinh lý mạnh I-V'
+    - '&eGiày xịn I-V'
+    - '&dThánh giáp I-IV'
+    - '&dPhanh thay I-III'
+    - '&dCao thủ I-V'
+    - '&cPhượng hoàng I-III'
+    - '&cQuái băng I-IV'
+    - '&4&l❤ &c&lHạnh phúc &4&l❤ I'
+    - '&3&l෴ Thần tốc ෴  I'
+    - ''
+    - '&0&o#Item menu'
+    slot: 43
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'boots7':
+    material: STAINED_GLASS_PANE
+    data: 4
+    enchantments:
+    - DURABILITY;1
+    hide_attributes: true
+    hide_enchantments: true
+    display_name: '&6&l&k..&e&l-=-MẠ VÀNG-=-&6&l&k..'
+    lore:
+    - '&7(Tham khảo thêm tại /celist)'
+    - '&aNội tại ẩn I-III'
+    - '&bSiêu trọng lực I-III'
+    - '&bXương rồng I-III'
+    - '&bKhô héo I-V'
+    - '&bKiệt sức I-V'
+    - '&eThiên thần I-V'
+    - '&eKhắc nhiễm I-V'
+    - '&eSinh lý mạnh I-V'
+    - '&eGiày xịn I-V'
+    - '&6&l&k..&r &e&lThánh giáp &6&l&k..&e I-IV'
+    - '&6&l&k..&r &e&lPhanh thay &6&l&k..&e I-III'
+    - '&6&l&k..&r &e&lCao thủ &6&l&k..&e I-V'
+    - '&cPhượng hoàng I-III'
+    - '&cQuái băng I-IV'
+    - '&4&l❤ &c&lHạnh phúc &4&l❤ I'
+    - '&3&l෴ Thần tốc ෴  I'
+    - ''
+    - '&0&o#Item menu'
+    slot: 44
+    click_commands:
+    - '[sound] ENTITY_PLAYER_LEVELUP'

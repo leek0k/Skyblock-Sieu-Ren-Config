@@ -1,0 +1,25 @@
+requireSet: 'Chienthan'
+material: IRON_SWORD
+customModelData: 0
+itemFlags: []
+name: '&e&lKiếm Chiến Thần'
+lore:
+  - ''
+  - '&e|&6&lCHIẾN THẦN&e|'
+  - '&6* &eTăng 35% damage.'
+  - '&6* Thần khí Chiến Thần'
+  - '&e- Tạo một vụ nổ gây sát thương lớn'
+  - '&7&o(Mặc full Set Chiến Thần để kích hoạt.)'
+enchants:
+  - 'sharpness:165'
+  - 'unbreaking:10'
+  - 'fireaspect:2'
+  - 'looting:3'
+  - 'baneofarthropods:5'
+  - 'smite:5'
+  - 'chienthan:1'
+events:
+  ATTACK:
+    chance: 100
+    effects:
+      - "INCREASE_DAMAGE:70"

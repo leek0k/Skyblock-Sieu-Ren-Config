@@ -1,0 +1,58 @@
+mission-file: ItemsMissions
+required-missions:
+- b_islandchef_c
+island: false
+auto-reward: false
+rewards:
+  commands:
+  - eco give %player% 50000
+  - exp give %player% 1320
+  - cr give to %player% Spawnerquai 1
+  - lp user %player% permission set deluxetags.tag.66
+  - is admin msg %player% &e&l$ | &7Hoàn thành thử thách!
+required-items:
+  '1':
+    types:
+    - COOKED_FISH
+    amount: 640
+icons:
+  not-completed:
+    type: COOKED_FISH
+    name: '&6&LTHỬ THÁCH: &d&lĐẦU BẾP &f&l#4'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l thịt cá nướng &fđể FULL túi'
+    - ''
+    - '&7- &e$50.000 , 1320 Exp'
+    - '&7- &fDanh hiệu &d⊹Đầu bếp chính hiệu⊹'
+    - '&7- &fx1 &d&lSPAWNER QUÁI &7Random 3'
+    - ''
+    - '&6Thu thập: &7{1}/640'
+    - '&6Tiến trình: &7{0}%'
+    - '&c&l ✘ &7Chưa hoàn thành'
+    - ''
+    - '&a&l YÊU CẦU: &aHoàn thành &d&lĐẦU BẾP &f&l#4'
+  can-complete:
+    type: COOKED_FISH
+    name: '&6&LTHỬ THÁCH: &d&lĐẦU BẾP &f&l#5'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l thịt cá nướng &fđể FULL túi'
+    - ''
+    - '&7- &e$50.000 , 1320 Exp'
+    - '&7- &fDanh hiệu &d⊹Đầu bếp chính hiệu⊹'
+    - '&7- &fx1 &d&lSPAWNER QUÁI &7Random 3'
+    - ''
+    - '&6Thu thập: &7640/640'
+    - '&6Tiến trình: &7100%'
+    - '&a&l ✔ &7Bạn đã có đủ điều kiện Click vào đây.'
+    enchants:
+      DURABILITY: 1
+    flags:
+    - HIDE_ENCHANTS
+  completed:
+    type: MAP
+    name: '&6&LTHỬ THÁCH: &d&lĐẦU BẾP &f&l#5'
+    lore:
+    - ''
+    - '&a&l ✔ &7Đã hoàn thành.'

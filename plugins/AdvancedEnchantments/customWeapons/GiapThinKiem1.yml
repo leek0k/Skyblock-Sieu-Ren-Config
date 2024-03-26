@@ -1,0 +1,37 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: 'GiapThinKiem1'
+
+# Currently supported are only melee weapons
+material: DIAMOND_SWORD
+
+# Weapon's name
+name: '&6&l∉&e&lᚸ&6&l∌ &6₤&e&lGIÁP&6∄ &6₤&e&lTHÌN&6∄ &e&l2024 &6« Kiếm Đồ Long » &6&l∉&e&lᚸ&6&l∌'
+
+# Weapon's lore
+lore:
+  - ''
+  - '&6&l∉&e&lᚸ&6&l∌ &e&lĐINH £ONG &6&l∉&e&lᚸ&6&l∌'
+  - '&6∉ Kiếm Đồ Long (*) ∌'     
+  - '&6∉ Tăng 18% damage ∌'
+  - '&7&o(Mặc full Set Đinh £ong để kích hoạt.)'  
+  - '&0&o#GiapThinKiem1'   
+
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'sharpness:125'
+  - 'smite:5'
+  - 'unbreaking:8'
+  - 'looting:5'
+  - 'fireaspect:5'
+  - 'longan:1'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:
+  ATTACK:
+    chance: 100
+    effects:
+      - 'INCREASE_DAMAGE:18'

@@ -1,0 +1,41 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&8Kho bưu phẩm &8&lSkywars'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 1
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'nhanhang'
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: BLOCK_NOTE_PLING'
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+pv15:
+  COMMAND: 'op:loadlenh gui'
+  NAME: '&c&lLưu ý: &cKhông để túi bị Full'
+  LORE:
+    - '&7Click để vào kho'
+    - ''
+    - '&0&o#Item menu'
+  ID: 328
+  KEEP-OPEN: true  
+  POSITION-X: 5
+  POSITION-Y: 1 

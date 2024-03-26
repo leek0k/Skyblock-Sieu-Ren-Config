@@ -1,0 +1,32 @@
+{
+  "ID": "SkillHiem",
+  "Order": 9007199254740991,
+  "Name": "Hiếm",
+  "MobTypes": [
+    "Wolf"
+  ],
+  "Skills": {
+    "Heal": {
+      "Upgrades": {
+        "%1>1<1": {
+          "Health": "+3",
+          "Timer": "+100"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Health": "+6"
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Damage": "+3"
+        }
+      }
+    }
+  }
+}

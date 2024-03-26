@@ -1,0 +1,169 @@
+#Placeholder
+#%tst_total% - Xem tổng nạp thẻ
+#%tst_total_today% - Xem tổng nạp thẻ theo ngày (tất cả mã giới thiệu)
+#%tst_total_month% - Xem tổng nạp thẻ theo tháng (tất cả mã giới thiệu)
+#%tst_total_year% - Xem tổng nạp thẻ theo năm (tất cả mã giới thiệu)
+#%tst_total_all_<mã giới thiệu>% - Xem tổng nạp thẻ từ trước đến nay theo mã giới thiệu
+#%tst_total_today_<mã giới thiệu>% - Xem tổng nạp thẻ theo ngày và mã giới thiệu. VD: %tst_total_today_mineahihi%
+#%tst_total_month_<mã giới thiệu>% - Xem tổng nạp thẻ theo tháng và mã giới thiệu
+#%tst_total_year_<mã giới thiệu>% - Xem tổng nạp thẻ theo năm và mã giới thiệu
+#%tst_total_<top>% - Xem top nạp thẻ. VD: %tst_total_1%
+#%tst_total_today_<top>% - Xem top nạp thẻ theo ngày (tất cả mã giới thiệu)
+#%tst_total_month_<top>% - Xem top nạp thẻ theo tháng (tất cả mã giới thiệu)
+#%tst_total_year_<top>% - Xem top nạp thẻ theo năm (tất cả mã giới thiệu)
+#%tst_top_all_<mã giới thiệu>_<top>% - Xem top nạp thẻ từ trước đến nay theo mã giới thiệu. VD: %tst_top_all_mineahihi_1%
+#%tst_top_today_<mã giới thiệu>_<top>% - Xem top nạp thẻ theo ngày và mã giới thiệu.
+#%tst_top_month_<mã giới thiệu>_<top>% - Xem top nạp thẻ theo tháng và mã giới thiệu
+#%tst_top_year_<mã giới thiệu>_<top>% - Xem top nạp thẻ theo năm và mã giới thiệu
+
+#Command
+#/napthe 
+#/napthe <mã giới thiệu>
+#/thesieutoc give <tên người chơi> <mã thẻ>
+#/thesieutoc check <mã giới thiệu> - Kiểm tra tổng nạp thẻ theo mã giới thiệu
+#/thesieutoc top - Lệnh xem top
+#/thesieutoc top total - Xem top nạp thẻ từ trước đến nay
+#/thesieutoc top today - Xem top nạp thẻ theo ngày
+#/thesieutoc top month - Xem top nạp thẻ theo tháng
+#/thesieutoc top year - Xem top nạp thẻ theo năm
+#/thesieutoc top total <mã giới thiệu> - Xem top nạp thẻ từ trước đến nay và mã giới thiệu
+#/thesieutoc top today <mã giới thiệu> - Xem top nạp thẻ theo ngày và mã giới thiệu
+#/thesieutoc top month <mã giới thiệu> - Xem top nạp thẻ theo tháng và mã giới thiệu
+#/thesieutoc top year <mã giới thiệu> - Xem top nạp thẻ theo năm và mã giới thiệu
+#/thesieutoc check - Lệnh kiểm tra nạp thẻ
+#/thesieutoc check total - Kiểm tra nạp thẻ nạp thẻ từ trước đến nay
+#/thesieutoc check today - Kiểm tra nạp thẻ nạp thẻ theo ngày
+#/thesieutoc check month - Kiểm tra nạp thẻ nạp thẻ theo tháng
+#/thesieutoc check year - Kiểm tra nạp thẻ nạp thẻ theo năm
+#/thesieutoc check total <mã giới thiệu> - Kiểm tra nạp thẻ nạp thẻ từ trước đến nay và mã giới thiệu
+#/thesieutoc check today <mã giới thiệu> - Kiểm tra nạp thẻ nạp thẻ theo ngày và mã giới thiệu
+#/thesieutoc check month <mã giới thiệu> - Kiểm tra nạp thẻ nạp thẻ theo tháng và mã giới thiệu
+#/thesieutoc check year <mã giới thiệu> - Kiểm tra nạp thẻ nạp thẻ theo năm và mã giới thiệu
+# Số lần thử lại khi gặp lỗi nạp thẻ, mỗi lần thử lại tốn 5 giây
+# 120 = 10 phút
+retry: 120
+
+#Nhập API để sử dụng plugin
+TheSieuToc-API:
+  key: 'FCtA0fj2OSL5Zv7lzW8MsxqrR'
+  secret: 'uWDTRiyU14FdwnIBK2OLcksEm'
+
+#Mã giới thiệu
+referral-code:
+  #Mã mặc định
+  default: mineahihi
+  #Danh sách mã giới thiệu
+  list:
+  - 'mineahihi'
+  - 'dragonsvn'
+
+#Tắt theo mặc định
+#Nếu không sử dụng MySQL thì dữ liệu sẽ được lưu trên file, cẩn thận khi chuyển đổi vì dữ liệu có sẵn từ trước sẽ không di chuyển theo
+#Lưu ý MySQL chỉ hoạt động sau khi plugin được khởi động, không áp dụng cho lệnh /tst reload
+mysql:
+  enable: true
+  host: 172.18.0.1
+  port: 3306
+  user: thesieutoc
+  password: n3boDg7f9vWxizxs
+  database: chung_playerpoint
+  table: trans_log
+  server: skyblock3
+
+
+#sử dụng menu nạp thẻ
+menu: true
+
+
+#Khi bật tính năng này lên sẽ tắt Menu nạp thẻ, thay vào đó sẽ chạy lệnh được liệt kê ở dưới
+#Dành cho ai muốn sử dụng menu riêng từ DeluxeMenu hoặc ChestCommands nhưng không add lệnh /napthe được
+#
+napthe_override:
+  enable: false
+  command:
+  - 'console: chestcommands open napthe.yml {player}'
+
+
+#Chấp nhận nạp các loại thẻ được liệt kê bên dưới, không muốn member nạp thẻ nào thì xóa cái đó đi
+# Placeholder cho point
+bonus-point-placeholder:
+  # Sử dụng _ thay vì dấu .
+  'x1': '{point}/1000'
+  'x1_5': '{point}/1000*1.5'
+  'x2': '{point}/1000*2'
+card:
+  enable:
+    - Viettel
+    - Vinaphone
+    - Vietnamobile
+    - Mobifone
+    # - Gate
+    # - Garena
+    # - Vcoin
+    - Zing
+  tax:
+    # 0.05 = 5%
+    Viettel: 0.17
+    Vinaphone: 0.135
+    Vietnamobile: 0.145
+    Mobifone: 0.205
+    # Gate: 0.05
+    # Garena: 0.05
+    # Vcoin: 0.05
+    Zing: 0.185
+    Command: 0.17    
+  # Thời gian vòng lặp kiểm tra thẻ nạp trên database và give point cho người chơi (theo tick)
+  check-interval: 100
+
+  #thực hiện các lệnh khi nạp thành công các thẻ có mệnh giá tương đương
+  #
+  #     để trống sẽ thực thi lệnh bằng người chơi với các quyền có sẵn
+  #     [op] sẽ thực thi lệnh bằng người chơi nhưng có OP
+  #     [console] sẽ thực thi lệnh bằng console (server)
+  #placeholder
+  #{player} - người chơi nạp thẻ
+  #{code} - mã giới thiệu
+  #{point_<bonus-id>} - Hiển thị point theo bonus-point-placeholder VD: {point_x2} 2000
+  #{money} - Hiển thị money gốc VD: 2.000.000
+    # +50% giá trị thẻ nạp
+  command:
+    default:
+      - 'console:points give {player} {point_x1_5}'
+      - 'op:broadcast &6&l{player} &avừa ủng hộ &f{money} &nVNĐ&r &a!!!'
+      - 'me vừa ủng hộ server {point_x1_5}k!'  
+    10000:
+      - 'console:points give {player} 10'
+      - 'op:broadcast &6&l{player} &avừa ủng hộ &f10.000 &nVNĐ&r &a!!!'
+      - 'me vừa ủng hộ server 10k!'
+    20000:
+      - 'console:points give {player} 20'
+      - 'op:broadcast &6&l{player} &avừa ủng hộ &f20.000 &nVNĐ&r &a!!!'
+      - 'me vừa ủng hộ server 20k!'
+    30000:
+      - 'console:points give {player} 30'
+      - 'op:broadcast &6&l{player} &avừa ủng hộ &f30.000 &nVNĐ&r &a!!!'
+      - 'me vừa ủng hộ server 30k!'
+    50000:
+      - 'console:points give {player} 50'
+      - 'op:broadcast &6&l{player} &avừa ủng hộ &f50.000 &nVNĐ&r &a!!!'
+      - 'me vừa ủng hộ server 50k!'
+    100000:
+      - 'console:points give {player} 100'
+      - 'op:broadcast &6&l{player} &avừa ủng hộ &f100.000 &nVNĐ&r &a!!!'
+      - 'me vừa ủng hộ server 100k!'
+    200000:
+      - 'console:points give {player} 200'
+      - 'op:broadcast &6&l{player} &avừa ủng hộ &f200.000 &nVNĐ&r &a!!!'
+      - 'me vừa ủng hộ server 200k!'
+    300000:
+      - 'console:points give {player} 300'
+      - 'op:broadcast &6&l{player} &avừa ủng hộ &f300.000 &nVNĐ&r &a!!!'
+      - 'me vừa ủng hộ server 300k!'
+    500000:
+      - 'console:points give {player} 500'
+      - 'op:broadcast &6&l{player} &avừa ủng hộ &f500.000 &nVNĐ&r &a!!!'
+      - 'me vừa ủng hộ server 500k!'
+    1000000:
+      - 'console:points give {player} 1000'
+      - 'op:broadcast &6&l{player} &avừa ủng hộ &d1.000.000 &nVNĐ&r &a!!!'
+      - 'me vừa ủng hộ server 1tr!'

@@ -1,0 +1,35 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&8[&6EpicVouchers&8] '
+# Interface Messages
+interface:
+  confirmsettings:
+    title: '&6Confirmação'
+    confirmitemname: '&2&lCONFIRMAR'
+    confirmitemlore: '&aClique aqui para confirmar sua ação.'
+    cancelitemname: '&4&lCANCELAR'
+    cancelitemlore: '&cClique aqui para cancelar sua ação.'
+# Command Messages
+command:
+  error:
+    noplayer: '&7Esse usuário não existe ou não está online'
+    novoucher: '&cEsse voucher não existe.'
+    notexist: '&7O comando que você digitou não existe ou foi digitado incorretamente.'
+    notnumber: '&7Falha ao analisar esse número em um valor válido.'
+  reload:
+    success: '&7Todos os arquivos de configuração e vouchers foram carregados.'
+  give:
+    send: '&7Você deu ao jogador &6%player% &7o voucher &6%voucher% &7(&6x%amount%&7).'
+    receive: '&7Você recebeu o voucher &6%voucher% &7(&6x%amount%&7).'
+    cancelled: '&cO evento foi cancelado.'
+  force:
+    send: '&7Você forçou &6%player% &7a resgatar o voucher &6%voucher% &7(&6x%amount%&7).'
+  list:
+    list: '&7Lista de todos os vouchers: &6%list%&7.'
+# Event Messages
+event:
+  general:
+    nopermission: '&cVocê não tem permissão para fazer isso.'
+    cooldown: '&7Por favor espere &6%time%&7 segundos antes de resgatar um novo voucher.'

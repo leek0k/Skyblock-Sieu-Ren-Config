@@ -1,0 +1,52 @@
+{
+  "pairs": [
+    {
+      "chance": 100,
+      "items": [
+        {
+          "type": "PRISMARINE_SHARD",
+          "chance": 20,
+          "min": 1,
+          "max": 1,
+          "looting": true
+        }
+      ]
+    },  
+    {
+      "chance": 100,
+      "items": [
+        {
+          "type": "SUGAR_CANE",
+          "chance": 100,
+          "min": 3,
+          "max": 3,
+          "looting": true
+        }
+      ]
+    },
+    {
+      "chance": 100,
+      "items": [
+        {
+          "type": "EMERALD",
+          "chance": 100,
+          "min": 6,
+          "max": 14,
+          "looting": true
+        }
+      ]
+    },	
+    {
+      "chance": 100,
+      "items": [
+        {
+          "type": "DIAMOND",
+          "chance": 40,
+          "min": 5,
+          "max": 12,
+          "looting": true
+        }
+      ]
+    }
+  ]
+}

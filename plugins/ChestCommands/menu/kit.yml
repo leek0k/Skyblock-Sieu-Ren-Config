@@ -1,0 +1,264 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+
+menu-settings:
+  name: '&8&l.KIT RANK.'
+  rows: 2
+  command: 'kit'
+  
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+
+quaden:
+  COMMAND: 'kit nongdan'  
+  NAME: '&7&lKit &a&lONLINE'
+  LORE: 
+    - "" 
+    - "&fFull Set &7- &fVũ khí &7- &fDụng cụ Gamer"
+    - "&fTên &7x32"
+    - "&fBánh mì &7x32"
+    - "&fThan &7x10"
+    - "&fTáo vàng &7x10"    
+    - "" 
+    - "&7&o((Nhận sau mỗi 24h))"    
+    - ''
+    - '&0&o#Item menu' 
+  ID: chest   
+  ENCHANTMENT: 'fire aspect, 1'  
+  KEEP-OPEN: false   
+  POSITION-X: 1
+  POSITION-Y: 1    
+quaden212:
+  COMMAND: 'kit vip1'  
+  NAME: '&7&lKit &8&l<&7&lTRÙM&8&l>'
+  LORE: 
+    - ""   
+    - "&fKim cương &7x32"
+    - "&fNgọc lục bảo &7x32"
+    - "&fTáo vàng &7x3"
+    - "&fThịt bò &7x16"
+    - "&fBình exp &7x64"
+    - "&fThan &7x16"
+    - "&fKhối cỏ &7x32"  
+    - "" 
+    - "&7&o((Nhận sau mỗi 24h))"  
+    - ''
+    - '&0&o#Item menu'      
+  ID: 54 
+  ENCHANTMENT: 'fire aspect, 1'  
+  KEEP-OPEN: false   
+  POSITION-X: 2
+  POSITION-Y: 1    
+quaden2122:
+  COMMAND: 'kit vip2'  
+  NAME: '&7&lKit &8&l<&6&lVUA&8&l>'
+  LORE: 
+    - ""   
+    - "&fKim cương &7x64"
+    - "&fNgọc lục bảo &7x64"
+    - "&fTáo vàng &7x6"
+    - "&fThịt bò &7x32"
+    - "&fBình exp &7x64"
+    - "&fBình exp &7x16"
+    - "&fThan &7x32"
+    - "&fKhối cỏ &7x64" 
+    - "" 
+    - "&7&o((Nhận sau mỗi 24h))"   
+    - ''
+    - '&0&o#Item menu'     
+  ID: 54
+  ENCHANTMENT: 'fire aspect, 1'  
+  KEEP-OPEN: false   
+  POSITION-X: 3
+  POSITION-Y: 1  
+quaden31133:
+  COMMAND: 'kit vip3'  
+  NAME: '&7&lKit &8&l<&c&lQUỶ&8&l>'
+  LORE: 
+    - "" 
+    - "&fKim cương &7x64"
+    - "&fKim cương &7x32"
+    - "&fNgọc lục bảo &7x64"
+    - "&fNgọc lục bảo &7x32"
+    - "&fTáo vàng &7x9"
+    - "&fThịt bò &7x48"
+    - "&fBình exp &7x64"
+    - "&fBình exp &7x32"
+    - "&fThan &7x48"
+    - "&fKhối cỏ &7x64"
+    - "&fKhối cỏ &7x32"   
+    - "" 
+    - "&7&o((Nhận sau mỗi 24h))"   
+    - ''
+    - '&0&o#Item menu'     
+  ID: 54
+  ENCHANTMENT: 'fire aspect, 1'  
+  KEEP-OPEN: false   
+  POSITION-X: 4
+  POSITION-Y: 1  
+quaden23112:
+  COMMAND: 'kit vip4'  
+  NAME: '&7&lKit &8&l<&b&lTIÊN&8&l>'
+  LORE: 
+    - ""   
+    - "&fKim cương &7x64"
+    - "&fKim cương &7x64"
+    - "&fNgọc lục bảo &7x64"
+    - "&fNgọc lục bảo &7x64"
+    - "&fTáo vàng &7x12"
+    - "&fThịt bò &7x64"
+    - "&fThịt bò &7x32"
+    - "&fBình exp &7x64"
+    - "&fBình exp &7x64"
+    - "&fThan &7x64"
+    - "&fKhối cỏ &7x64"
+    - "&fKhối cỏ &7x64"
+    - "&fKhối cỏ &7x64" 
+    - "" 
+    - "&7&o((Nhận sau mỗi 24h))"        
+    - ''
+    - '&0&o#Item menu'
+  ID: 54
+  ENCHANTMENT: 'fire aspect, 1'  
+  KEEP-OPEN: false   
+  POSITION-X: 5
+  POSITION-Y: 1  
+quaden241114:
+  COMMAND: 'kit vip5'  
+  NAME: '&7&lKit &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l>'
+  LORE: 
+    - ""  
+    - "&fKim cương &7x64"
+    - "&fKim cương &7x64"
+    - "&fKim cương &7x64"
+    - "&fNgọc lục bảo &7x64"
+    - "&fNgọc lục bảo &7x64"
+    - "&fNgọc lục bảo &7x64"
+    - "&fBình exp &7x64"
+    - "&fBình exp &7x64"
+    - "&fBình exp &7x64"
+    - "&fĐuốc &7x64"
+    - "&fĐuốc &7x64"
+    - "&fThịt bò &7x64"
+    - "&fThịt bò &7x64"
+    - "&fThịt bò &7x64"
+    - "&fTáo vàng &7x21"
+    - "&fKhối cỏ &7x64"
+    - "&fKhối cỏ &7x64"
+    - "&fKhối cỏ &7x64"
+    - "&fKhối cỏ &7x64 "  
+    - "" 
+    - "&7&o((Nhận sau mỗi 24h))" 
+    - ''
+    - '&0&o#Item menu'       
+  ID: 54 
+  ENCHANTMENT: 'fire aspect, 1'  
+  KEEP-OPEN: false   
+  POSITION-X: 6
+  POSITION-Y: 1    
+batdiet:
+  COMMAND: 'kit batdiet'  
+  NAME: '&7&lKit &e&l⊰⊹ &6&lBất diệt &e&l⊹⊱'
+  LORE: 
+    - ""  
+    - "&fKhối Kim cương &7x64"
+    - "&fKhối Ngọc lục bảo &7x64"
+    - "&fBình exp &7x64"
+    - "&fBình exp &7x64"
+    - "&fBình exp &7x64"
+    - "&fĐuốc &7x64"
+    - "&fĐuốc &7x64"
+    - "&fThịt bò &7x64"
+    - "&fThịt bò &7x64"
+    - "&fThịt bò &7x64"
+    - "&fTáo vàng &7x64"
+    - "&fSiêu táo vàng &7x21"    
+    - "&fKhối cỏ &7x64"
+    - "&fKhối cỏ &7x64"
+    - "&fKhối cỏ &7x64"
+    - "&fKhối cỏ &7x64 "    
+    - "" 
+    - "&7&o((Nhận sau mỗi 2 ngày))"
+    - ''
+    - '&0&o#Item menu'        
+  ID: 130 
+  ENCHANTMENT: 'fire aspect, 1'  
+  KEEP-OPEN: false   
+  POSITION-X: 7
+  POSITION-Y: 1 
+batdiet2:
+  COMMAND: 'kit batdiet2'  
+  NAME: '&7&lKit &e&l⊰⊹ &6&lBất diệt &e&l⊹⊱'
+  LORE: 
+    - ""  
+    - "&dGhast Spawner &9x1"
+    - "&dZombie Spawner &9x1" 
+    - "&dIron Golem Spawner &9x1"
+    - "&dBlaze Spawner &9x1"
+    - "&dSkeleton Spawner &9x1"    
+    - "" 
+    - "&7&o((Nhận sau mỗi 3 ngày))"     
+    - ''
+    - '&0&o#Item menu'   
+  ID: 130 
+  ENCHANTMENT: 'fire aspect, 1'  
+  KEEP-OPEN: false   
+  POSITION-X: 8
+  POSITION-Y: 1   
+batdiet3:
+  COMMAND: 'kit batdiet3'  
+  NAME: '&7&lKit &e&l⊰⊹ &6&lBất diệt &e&l⊹⊱'
+  LORE: 
+    - ""  
+    - "&bChìa khóa Cầu Vồng &3x1"
+    - "&bChìa khóa Phù Thủy &3x1"      
+    - "" 
+    - "&7&o((Nhận sau mỗi 5 ngày))"        
+    - ''
+    - '&0&o#Item menu'
+  ID: 130 
+  ENCHANTMENT: 'fire aspect, 1'  
+  KEEP-OPEN: false   
+  POSITION-X: 9
+  POSITION-Y: 1   
+batdiet4:
+  COMMAND: 'kit batdiet4'  
+  NAME: '&7&lKit &e&l⊰⊹ &6&lBất diệt &e&l⊹⊱'
+  LORE: 
+    - ""  
+    - "&eBụi Tối cao ngẫu nhiên &6x3"
+    - "&eBụi Huyền thoại ngẫu nhiên &6x3"
+    - "&eBụi Truyền thuyết ngẫu nhiên &6x2"   
+    - "&eSách Tối cao ngẫu nhiên &6x1"   
+    - "&aĐậu thần &2x16" 
+    - "" 
+    - "&7&o((Nhận sau mỗi 2 ngày))"   
+    - ''
+    - '&0&o#Item menu'     
+  ID: 130 
+  ENCHANTMENT: 'fire aspect, 1'  
+  KEEP-OPEN: false   
+  POSITION-X: 1
+  POSITION-Y: 2    
+vualidon:
+  COMMAND: 'kit vualidon'  
+  NAME: '&4&lKit &7(&c&l▀Ĺ▀-&7)&4&lV&c&lUA &4L&c&lÌ &4&lĐ&c&lÒN'
+  LORE: 
+    - ""  
+    - "&aĐậu thần &2x16" 
+    - "&7&o((Nhận sau mỗi 2 ngày))"   
+    - ''
+    - '&0&o#Item menu'     
+  ID: 421 
+  KEEP-OPEN: false   
+  POSITION-X: 2
+  POSITION-Y: 2   

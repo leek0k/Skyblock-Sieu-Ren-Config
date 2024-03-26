@@ -1,0 +1,74 @@
+# DeluxeMenus 1.13.3-Release main configuration file
+# 
+# A full wiki on how to use this plugin can be found at:
+# https://github.com/help-chat/DeluxeMenus/wiki
+
+debug: false
+check_updates: false
+gui_menus:
+  congnap:
+    file: congnap.yml
+  quest:
+    file: checknhiemvu.yml
+  shopxu:
+    file: shop.yml
+  mocnapthe:
+    file: mocnapthe.yml
+  cehelp:
+    file: cehelp.yml
+  cehelp2:
+    file: cehelp2.yml
+  scyther_croptop:
+    file: scyther_croptop.yml
+  dieuuocrongthan:
+    file: dieuuocrongthan.yml
+  topnapthe:
+    file: topnapthe.yml
+  quayruongxu:
+    file: moruong20xu.yml
+  mavang1:
+    file: mavang1.yml
+  dendiemskill:
+    file: dendiemskill.yml
+  nangcaptrangbiht:
+    file: nangcaptrangbiht.yml
+  nangcaptrangbithanh:
+    file: nangcaptrangbithanh.yml
+  nangcaptrangbitoicao:
+    file: nangcaptrangbitoicao.yml
+  nangcaptrangbithuongco:
+    file: nangcaptrangbithuongco.yml
+  diemskill:
+    file: diemskill.yml
+  radom:
+    file: radom.yml
+  unbreakble:
+    file: unbreakble.yml
+  dungeon1_khoidau:
+    file: dungeon1_khoidau.yml
+  dungeon1_ketthuc:
+    file: dungeon1_ketthuc.yml
+  dungeon2_khoidau:
+    file: dungeon2_khoidau.yml
+  dungeon2_ketthuc:
+    file: dungeon2_ketthuc.yml
+  dungeon3_khoidau:
+    file: dungeon3_khoidau.yml
+  dungeon3_ketthuc:
+    file: dungeon3_ketthuc.yml
+  dungeon4_khoidau:
+    file: dungeon4_khoidau.yml
+  dungeon4_ketthuc:
+    file: dungeon4_ketthuc.yml
+  dungeon5_khoidau:
+    file: dungeon5_khoidau.yml
+  dungeon5_ketthuc:
+    file: dungeon5_ketthuc.yml
+  xuixeomenu:
+    file: xuixeomenu.yml
+  xuicauvong:
+    file: xuixeocauvong.yml
+  xuixeophuthuy:
+    file: xuixeophuthuy.yml
+  xuixeothuongco:
+    file: xuixeothuongco.yml

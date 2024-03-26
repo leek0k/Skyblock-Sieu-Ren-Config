@@ -1,0 +1,82 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  name: '&8&lCỬA HÀNG NÂNG CẤP'
+  rows: 3
+  command: 'nangcap'
+  auto-refresh: 10
+  
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+ 
+  
+  
+3:
+  AMOUNT: 1    
+  NAME: '&e&lNÂNG CẤP ĐẢO'
+  COMMAND: 'is upgrade'  
+  LORE:
+    - ''
+    - '&7Nhấn vào để mở menu nâng cấp đảo'
+    - '&7&o(( /is upgrade ))'
+    - ''
+    - '&0&o#Item menu'
+  ID: 2
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 2   
+   
+
+un111:
+  COMMAND: 'op: gems upgrade'
+  ENCHANTMENT: 'fire aspect, 1'  
+  NAME: '&6☀ Nâng cấp Đá quý ☀'
+  ID: '388'  
+  LORE:
+    - ''
+    - '&fClick vào để xem chi tiết!' 
+    - ''
+    - '&0&o#Item menu'
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 2
+
+return-to-main:
+  COMMAND: 'open:main-menu.yml'
+  NAME: '&c&l[arrow_left] [Trở về]'
+  LORE:
+    - '&7Nhấn vào để trở về mục trước'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 'arrow'  
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 3
+un11:
+  POINTS: 99
+  COMMAND: 'op: fix hand;op:unbreakable'
+  NAME: '&eTĂNG ĐỘ BỀN &e&lVĨNH CỬU.'
+  LORE:
+    - ''
+    - '&7* &cUnbreakable &7*'
+    - '&4&lLưu ý:&c Có thể add cho tất cả vật phẩm!!'  
+    - ''
+    - '&6&lNhớ là phải cầm vật phẩm đó trên tay'    
+    - '&6&ltrước khi click vào'
+    - ''    
+    - '&6&l* &e&lGiá&7: &b99⛁'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 315
+  ENCHANTMENT: 'fire aspect, 1'    
+  POSITION-X: 3
+  POSITION-Y: 2  

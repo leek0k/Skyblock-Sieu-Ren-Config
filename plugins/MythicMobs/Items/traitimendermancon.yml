@@ -1,0 +1,13 @@
+traitimendermancon:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    type: CHORUS_PLANT
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §5§lTrái Tim §d§lEnderman Con
+      lore:
+      - §fThu thập từ §9Ender Con §ftại §7((/warp theend))
+      - §fDùng để bán tại §c/shop
+      enchants:
+        LUCK: 1

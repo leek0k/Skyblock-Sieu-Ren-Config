@@ -1,0 +1,23 @@
+requireSet: 'SetQuyMaoToiCao'
+material: DIAMOND_SWORD
+name: '&c&l⋞ &4&l⋞ &c&l⋞ &4&lKIẾM VƯƠNG QUÝ MÃO &c&l⋟ &4&l⋟ &c&l⋟'
+lore:
+  - ''
+  - '&4&l◆ ◆ ◆ TỐI CAO &4(Quý Mão 2023) &l◆ ◆ ◆'
+  - '&4* Tăng 24% damage gây ra.'
+  - '&4&oVật phẩm sự kiện Tết Quý Mão 2023'
+  - '&7&o(Mặc full set Quý Mão để kích hoạt.)'
+  - ''
+enchants:
+  - 'sharpness:128'
+  - 'unbreaking:5'
+  - 'fireaspect:2'
+  - 'looting:2'
+  - 'baneofarthropods:5'
+  - 'smite:5'
+  - 'mongvuotcuumao:3'
+events:
+  ATTACK:
+    chance: 100
+    effects:
+      - 'INCREASE_DAMAGE:24'  

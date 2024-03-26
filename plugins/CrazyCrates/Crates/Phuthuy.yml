@@ -1,0 +1,767 @@
+Crate:
+  CrateType: Cosmic
+  CrateName: '&c&lHòm Phù Thủy'
+  StartingKeys: 0
+  InGUI: false
+  Slot: 23
+  OpeningBroadCast: false
+  BroadCast: '%Prefix%&6&l%Player% &7is opening a &7&lBasic Chest&7.'
+  Item: '130'
+  Glowing: false
+  Name: '&4&lKHO BÁU PHÙ THỦY'
+  Lore:
+  - '&e/hombau&7 để mua Hòm Báu.'
+  - '&r'
+  - '&7 ◆ &nChuột-trái&r &bđể mở Hòm Báu nếu bạn đã mua.'
+  - '&7 ◆ &nChuột-Phải&r &bđể xem qua vật phẩm trong Hòm.'
+  - '&r'
+  - '&7Bạn đang có &c&n%keys%&r &7◆ &b&nHòm Kim Cương&r &7◆.'
+  Preview:
+    Toggle: true
+    ChestLines: 6
+    Glass:
+      #Turn the glass boarder in the preview on and off.
+      Toggle: true
+      #The item that shows in the boarder. Can be glass or any other item.
+      Item: 'IRON_FENCE' 
+  Hologram:
+    Toggle: false
+    Height: 1.5
+    Message:
+    - '&d&lGalactic Chest'
+  PhysicalKey:
+    Name: '&C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ THỦY&r &C◆&4◆&C◆'
+    Lore:
+    - '&r'
+    - '&7 ◆... &nChuột-trái&r &fđể mở &7◆&4&lKho báu&r &d&lPHÙ THỦY&r&7◆'
+    - '&7 ◆. &nChuột-Phải&r &fđể xem qua vật phẩm trong.'
+    Item: '351:11'
+    Glowing: true
+  Tiers:
+    Basic:
+      Name: '&a&lThường'
+      Color: 103
+      Chance: 50
+      MaxRange: 100
+    UnCommon:
+      Name: '&e&lHiếm'
+      Color: 86
+      Chance: 40
+      MaxRange: 100
+    Rare:
+      Name: '&c&l♦ Xịn ♦'
+      Color: 379
+      Chance: 30
+      MaxRange: 100
+  Prizes:
+    '1':
+      DisplayName: '&a&lx10 | Pig Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 10
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - 'silkspawners give %player% Pig 10'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '2':
+      DisplayName: '&a&lx8 | Cow Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 8
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - 'silkspawners give %player% Cow 8'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '4':
+      DisplayName: '&e&lx3 | Skeleton Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 3
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: false
+      Commands:
+      - 'silkspawners give %player% Skeleton 2'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '5':
+      DisplayName: '&e&lx3 | Creeper Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 3
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: false
+      Commands:
+      - 'silkspawners give %player% Creeper 3'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '6':
+      DisplayName: '&e&lx3 | Blaze Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 3
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 30
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: false
+      Commands:
+      - 'silkspawners give %player% Blaze 3'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '7':
+      DisplayName: '&6&lx2 | Iron Golem Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 2
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 25
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6&lx2 | Iron Golem
+        Spawner &r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'silkspawners give %player% irongolem 2'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '3':
+      DisplayName: '&e&lx2 | GHAST Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 2
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &a&lx2 | Ghast Spawner&r
+        &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'silkspawners give %player% Ghast 2'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '8':
+      DisplayName: '&2○ ○ &a&l○ &2&lSPAWNER ĐỘNG VẬT &7(Ngẫu nhiên x3)&2&l ○ &a○ ○'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'cr give to %player% spawnerhien 1'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '9':
+      DisplayName: '&D○ ○ &5&l○ &D&lSPAWNER QUÁI &7(Ngẫu nhiên x3)&5&l ○ &D○ ○'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 35
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'cr give to %player% spawnerquai 1'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '11':
+      DisplayName: '&a&lx1 | 250,000ṩ | PHIẾU'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 65
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - 'eco give %player% 250000'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '12':
+      DisplayName: '&a&lx1 | 500,000ṩ | PHIẾU'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 60
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - 'eco give %player% 500000'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '13':
+      DisplayName: '&a&lx1 | 750,000ṩ | PHIẾU'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 55
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - 'eco give %player% 750000'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '14':
+      DisplayName: '&a&lx1 | 1,000,000ṩ | PHIẾU'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &a&lx1 | 1,000,000ṩ
+        | PHIẾU&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'eco give %player% 1000000'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '37':
+      DisplayName: '&a&l100,000 &e&lExp&a&l | x1 BÌNH'
+      DisplayItem: '384'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 45
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'epicvouchers give %player% exp100 1'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '38':
+      DisplayName: '&a&l500,000 &e&lExp&a&l | x1 BÌNH'
+      DisplayItem: '384'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &a&l500,000 &e&lExp&a&l
+        | x1 BÌNH&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'epicvouchers give %player% exp500 1'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '111':
+      DisplayName: '&a&lx1 | &A☘ &E&lHÒM RÌU MAY MẮN &7(Ngẫu nhiên X1) &A☘'
+      DisplayItem: '162'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      - '&8&L[&E&LLEVEL 1-6&8&l]'
+      MaxRange: 100
+      Chance: 25
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &A☘ &E&lHÒM RÌU MAY
+        MẮN &7(Ngẫu nhiên X1) &A☘'
+      - 'cr give to %player% hommayman 1'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '19':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&7&lTRÙM&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 25
+      Firework: true
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&7&lTRÙM&8&l>&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'epicvouchers give %player% trum 1'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '20':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&6&lVUA&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&6&lVUA&8&l>&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'epicvouchers give %player% vua 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    '21':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&c&lQUỶ&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 15
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&c&lQUỶ&8&l>&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'epicvouchers give %player% quy 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    '22':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&b&lTIÊN&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 4
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&b&lTIÊN&8&l>&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'epicvouchers give %player% tien 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    '23':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 2
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l>&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'epicvouchers give %player% than 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    '24':
+      DisplayName: '&e&Lx1 | &5&L✧&D&L✧&5&l✧ &9&l&nHòm vật phẩm&r &d&lTRUYỀN THUYẾT
+        &7(Ngẫu nhiên)&5&L✧&D&L✧&5&l✧'
+      DisplayItem: '120'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 | &5&L✧&D&L✧&5&l✧
+        &9&l&nHòm vật phẩm&r &d&lTRUYỀN THUYẾT &7(Ngẫu nhiên)&5&L✧&D&L✧&5&l✧&r &f&ltừ
+        &4&lKHO BÁU PHÙ THỦY'
+      - 'cr give to %player% truyenthuyet 1'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '26':
+      DisplayName: '&f&L*&b&L✧&f&l* &6&lSÁCH CƯỜNG HÓA &7(Ngẫu nhiên x4) &f&L*&b&L✧&f&l*'
+      DisplayItem: '340'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 35
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &f&L*&b&L✧&f&l* &6&lSÁCH
+        CƯỜNG HÓA &7(Ngẫu nhiên x4) &f&L*&b&L✧&f&l*&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'cr give to %player% book 1'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '28':
+      DisplayName: '&C&L⊰&4&L⊰&C&L⊰ &4&LMŨ &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+      DisplayItem: '310'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+      - '&4* Giảm 32% damage nhận vào.'
+      - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'
+      - ''
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:8
+      - DURABILITY:5
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &C&L⊰&4&L⊰&C&L⊰ &4&LMŨ
+        &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'ie give mutoicao %player% 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    '29':
+      DisplayName: '&C&L⊰&4&L⊰&C&L⊰ &4&LÁO &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+      - '&4* Giảm 32% damage nhận vào.'
+      - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'
+      - ''
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:8
+      - DURABILITY:5
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &C&L⊰&4&L⊰&C&L⊰ &4&LÁO
+        &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'ie give aotoicao %player% 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    '30':
+      DisplayName: '&C&L⊰&4&L⊰&C&L⊰ &4&LQUẦN &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+      DisplayItem: '312'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+      - '&4* Giảm 32% damage nhận vào.'
+      - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'
+      - ''
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:8
+      - DURABILITY:5
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &C&L⊰&4&L⊰&C&L⊰ &4&LQUẦN
+        &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'ie give quantoicao %player% 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    '31':
+      DisplayName: '&C&L⊰&4&L⊰&C&L⊰ &4&LGIÀY &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+      DisplayItem: '313'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+      - '&4* Giảm 32% damage nhận vào.'
+      - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'
+      - ''
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:8
+      - DURABILITY:5
+      MaxRange: 100
+      Chance: 3
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &C&L⊰&4&L⊰&C&L⊰ &4&LGIÀY
+        &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'ie give giaytoicao %player% 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    '32':
+      DisplayName: '&C&L⊰&4&L⊰&C&L⊰ &4&LKIẾM &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+      - '&4* Tăng 14% damage.'
+      - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'
+      - ''
+      DisplayEnchantments:
+      - DAMAGE_ALL:115
+      - DURABILITY:5
+      - FIRE_ASPECT:2
+      - LOOT_BONUS_MOBS:2
+      - DAMAGE_ARTHROPODS:5
+      - DAMAGE_UNDEAD:5
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &C&L⊰&4&L⊰&C&L⊰ &4&LKIẾM
+        &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'ie give kiemtoicao %player% 1'
+    '33':
+      DisplayName: '&C&L⊰&4&L⊰&C&L⊰ &4&LRÌU &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+      DisplayItem: '279'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+      - '&4* Tăng 18% damage.'
+      - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'
+      - ''
+      DisplayEnchantments:
+      - DAMAGE_ALL:105
+      - DURABILITY:5
+      - FIRE_ASPECT:2
+      - LOOT_BONUS_MOBS:2
+      - DAMAGE_ARTHROPODS:5
+      - DAMAGE_UNDEAD:5
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &C&L⊰&4&L⊰&C&L⊰ &4&LRÌU
+        &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'ie give riutoicao %player% 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    '34':
+      DisplayName: '&C&L⊰&4&L⊰&C&L⊰ &4&LCUNG &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+      DisplayItem: '261'
+      DisplayAmount: 1
+      Lore:
+      - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+      DisplayEnchantments:
+      - ARROW_DAMAGE:65
+      - DURABILITY:5
+      - ARROW_FIRE:3
+      - ARROW_KNOCKBACK:2
+      - ARROW_INFINITE:1
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &C&L⊰&4&L⊰&C&L⊰ &4&LCUNG
+        &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'ie give cungtoicao %player% 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    'cup1':
+      DisplayName: '&C&L⊰&4&L⊰&C&L⊰ &4&LCÚP &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱ &4(New)'
+      DisplayItem: '278'
+      DisplayAmount: 1
+      Lore:
+      - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+      - '&4⊚ ⊚ ⊚ &4&lTỐI CAO &4⊚ ⊚ ⊚ &4(New)'
+      DisplayEnchantments:
+      - DIG_SPEED:22
+      - DURABILITY:5
+      - LOOT_BONUS_BLOCKS:10
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &C&L⊰&4&L⊰&C&L⊰ &4&LCÚP &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱ &4(New)&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'ie give cuptoicaotrade1 %player% 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    'cup2':
+      DisplayName: '&C&L⊰&4&L⊰&C&L⊰ &4(2♦) &4&LCÚP &C&LTỐI CAO &4(2♦) &4&L⊱&C&L⊱&4&L⊱ &4(New)'
+      DisplayItem: '278'
+      DisplayAmount: 1
+      Lore:
+      - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+      - '&4⊚ ⊚ ⊚ &4(2♦) &4&lTỐI CAO &4(2♦) &4⊚ ⊚ ⊚ &4(New)'
+      DisplayEnchantments:
+      - DIG_SPEED:24
+      - DURABILITY:5
+      - LOOT_BONUS_BLOCKS:12
+      MaxRange: 100
+      Chance: 2
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &C&L⊰&4&L⊰&C&L⊰ &4(2♦) &4&LCÚP &C&LTỐI CAO &4(2♦) &4&L⊱&C&L⊱&4&L⊱ &4(New)&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'ie give cuptoicaotrade2 %player% 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    'cup3':
+      DisplayName: '&C&L⊰&4&L⊰&C&L⊰ &4(3♦) &4&LCÚP &C&LTỐI CAO &4(3♦) &4&L⊱&C&L⊱&4&L⊱ &4(New)'
+      DisplayItem: '278'
+      DisplayAmount: 1
+      Lore:
+      - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+      - '&4⊚ ⊚ ⊚ &4(3♦) &4&lTỐI CAO &4(3♦) &4⊚ ⊚ ⊚ &4(New)'
+      DisplayEnchantments:
+      - DIG_SPEED:26
+      - DURABILITY:5
+      - LOOT_BONUS_BLOCKS:16
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &C&L⊰&4&L⊰&C&L⊰ &4(3♦) &4&LCÚP &C&LTỐI CAO &4(3♦) &4&L⊱&C&L⊱&4&L⊱ &4(New)&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'ie give cuptoicaotrade3 %player% 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    'sotoicao':
+      DisplayName: '§c§l⊰§4§l⊰§c§l⊰ §4§lSỌ phép Địa ngục §4§l⊱§c§l⊱§4§l⊱'
+      Lore:
+      - ''
+      - '§7 &l??&7 Sát Thương'
+      - '§7 &l??&7 Tốc Độ Đánh'
+      - '§7 &l??&7 Tim'
+      - '§7 &l??&7 Giáp'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - ''
+      - '§4፠ ፠ ፠ §4§lTỐI CAO §4፠ ፠ ፠'
+      - '§4* SỌ phép Địa ngục'
+      - ''
+      - '§4(Đặt lên Hotbar để kích hoạt!)'
+      DisplayItem: SKULL_ITEM:3
+      DisplayAmount: 1
+      MaxRange: 100
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Chance: 10
+      Player: 'http://textures.minecraft.net/texture/bb9e4386e54ac7f6e18fbf5c09fb7031953d0a51b054c5b4d63f618eeb2634a9'
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng §c§l⊰§4§l⊰§c§l⊰ §4§lSỌ phép Địa ngục §4§l⊱§c§l⊱§4§l⊱&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'cr open %player% sotoicao'
+      - 'src xuixeo set PhuThuy %player% 0'
+    '36':
+      DisplayName: '&d&lx20 Bụi phép'
+      DisplayItem: '385'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &d&lx20 Bụi phép&r
+        &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'ae giveitem %player% secret 20 SIMPLE'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '41':
+      DisplayName: '&e&Lx1 | &e()==[:::::::::::::> &3&l&NHÒM TRANG BỊ&R &7(Ngẫu nhiên)
+        &e<:::::::::::::]==()'
+      DisplayItem: '130'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 15
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 | &e()==[:::::::::::::>
+        &3&l&NHÒM TRANG BỊ&R &7(Ngẫu nhiên) &e<:::::::::::::]==()&r &f&ltừ &4&lKHO
+        BÁU PHÙ THỦY'
+      - 'cr give to %player% trangbi 1'
+      - 'src xuixeo add PhuThuy %player% 1'
+    '42':
+      DisplayName: '&e&l◍ &B&l&nx1 Hòm Vũ Khí&R &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG
+        ◍'
+      DisplayItem: '130'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&l◍ &B&l&nx1 Hòm
+        Vũ Khí&R &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG ◍&r &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'cr give to %player% bavuong 1'
+      - 'src xuixeo set PhuThuy %player% 0'
+    '46':
+      DisplayName: '&c&lx1 &4&lCánh Cứng'
+      DisplayItem: '443'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 3
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &c&lx1 &4&lCánh Cứng
+        &f&ltừ &4&lKHO BÁU PHÙ THỦY'
+      - 'ie give canhcung1 %player% 1'
+      - 'src xuixeo add PhuThuy %player% 1'

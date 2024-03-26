@@ -1,0 +1,85 @@
+menu-settings:
+  name: '&e&lNẠP THẺ &8&l| &6&lCHỌN MỆNH GIÁ'
+  rows: 1
+  auto-refresh: 5
+Vietnamobile-10k:
+  COMMAND: 'donate choose Vietnamobile 10000'
+  NAME: '&b&lVietnamobile 10,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVietnamobile 10,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 1
+  POSITION-Y: 1
+Vietnamobile-20k:
+  COMMAND: 'donate choose Vietnamobile 20000'
+  NAME: '&b&lVietnamobile 20,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVietnamobile 20,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 2
+  POSITION-Y: 1
+Vietnamobile-30k:
+  COMMAND: 'donate choose Vietnamobile 30000'
+  NAME: '&b&lVietnamobile 30,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVietnamobile 30,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 3
+  POSITION-Y: 1
+Vietnamobile-50k:
+  COMMAND: 'donate choose Vietnamobile 50000'
+  NAME: '&b&lVietnamobile 50,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVietnamobile 50,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 4
+  POSITION-Y: 1
+Vietnamobile-100k:
+  COMMAND: 'donate choose Vietnamobile 100000'
+  NAME: '&b&lVietnamobile 100,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVietnamobile 100,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 5
+  POSITION-Y: 1
+Vietnamobile-200k:
+  COMMAND: 'donate choose Vietnamobile 200000'
+  NAME: '&b&lVietnamobile 200,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVietnamobile 200,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 6
+  POSITION-Y: 1
+Vietnamobile-300k:
+  COMMAND: 'donate choose Vietnamobile 300000'
+  NAME: '&b&lVietnamobile 300,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVietnamobile 300,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 7
+  POSITION-Y: 1
+Vietnamobile-500k:
+  COMMAND: 'donate choose Vietnamobile 500000'
+  NAME: '&b&lVietnamobile 500,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVietnamobile 500,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 8
+  POSITION-Y: 1
+Vietnamobile-1m:
+  COMMAND: 'donate choose Vietnamobile 1000000'
+  NAME: '&b&lVietnamobile 1,000,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVietnamobile 100,000,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 9
+  POSITION-Y: 1

@@ -1,0 +1,203 @@
+book:
+  material_name: PRISMARINE_SHARD
+  material_data: 0
+  book_name: '&b✦ &bMảnh Khảm &b&l%name% &b✦'
+  book_lore:
+  - '&fEnchant: &7%name%'
+  - '&fThành công: &7+%level%'
+  - '&fThất bại: &7-%decrease%'
+  - '&fTỉ lệ: &7%chance%%'
+  - '&fMaxLevel: &7%maxLevel%'
+  - ''
+  - '&7&o((Cầm thả vào vật phẩm để khảm))'
+message:
+  successfully:
+    message: '&eÉp thành công!'
+    sound: BLOCK_NOTE_BELL
+  decrease:
+    message: '&cÉp thất bại!'
+    sound: BLOCK_ANVIL_PLACE
+  max:
+    message: '&cBạn đã khảm đến Level cao nhất!'
+    sound: ENTITY_VILLAGER_NO
+enchants:
+  PROTECTION_ENVIRONMENTAL:
+    name: PROTECTION_ENVIRONMENTAL
+    level: 4
+    decrease: 0
+    chance: 50
+    active: false
+  PROTECTION_FIRE:
+    name: PROTECTION_FIRE
+    level: 4
+    decrease: 0
+    chance: 50
+    active: false
+  PROTECTION_FALL:
+    name: PROTECTION_FALL
+    level: 4
+    decrease: 0
+    chance: 50
+    active: false
+  PROTECTION_EXPLOSIONS:
+    name: PROTECTION_EXPLOSIONS
+    level: 4
+    decrease: 0
+    chance: 50
+    active: false
+  PROTECTION_PROJECTILE:
+    name: PROTECTION_PROJECTILE
+    level: 4
+    decrease: 0
+    chance: 50
+    active: false
+  OXYGEN:
+    name: OXYGEN
+    level: 3
+    decrease: 0
+    chance: 50
+    active: false
+  WATER_WORKER:
+    name: WATER_WORKER
+    level: 1
+    decrease: 0
+    chance: 50
+    active: false
+  MENDING:
+    name: MENDING
+    level: 1
+    decrease: 0
+    chance: 50
+    active: false
+  THORNS:
+    name: THORNS
+    level: 3
+    decrease: 0
+    chance: 50
+    active: false
+  VANISHING_CURSE:
+    name: VANISHING_CURSE
+    level: 1
+    decrease: 0
+    chance: 50
+    active: false
+  DEPTH_STRIDER:
+    name: DEPTH_STRIDER
+    level: 3
+    decrease: 0
+    chance: 50
+    active: false
+  FROST_WALKER:
+    name: FROST_WALKER
+    level: 2
+    decrease: 0
+    chance: 50
+    active: false
+  BINDING_CURSE:
+    name: BINDING_CURSE
+    level: 1
+    decrease: 0
+    chance: 50
+    active: false
+  DAMAGE_ALL:
+    name: Sharpness
+    level: 100
+    decrease: 0
+    chance: 75
+    active: true
+  DAMAGE_UNDEAD:
+    name: Smite
+    level: 30
+    decrease: 0
+    chance: 60
+    active: true
+  DAMAGE_ARTHROPODS:
+    name: DAMAGE_ARTHROPODS
+    level: 5
+    decrease: 0
+    chance: 50
+    active: false
+  KNOCKBACK:
+    name: KNOCKBACK
+    level: 2
+    decrease: 0
+    chance: 50
+    active: false
+  FIRE_ASPECT:
+    name: FIRE_ASPECT
+    level: 2
+    decrease: 0
+    chance: 50
+    active: false
+  LOOT_BONUS_MOBS:
+    name: LOOT_BONUS_MOBS
+    level: 3
+    decrease: 0
+    chance: 50
+    active: false
+  SWEEPING_EDGE:
+    name: SWEEPING_EDGE
+    level: 3
+    decrease: 0
+    chance: 50
+    active: false
+  DIG_SPEED:
+    name: DIG_SPEED
+    level: 5
+    decrease: 0
+    chance: 50
+    active: false
+  SILK_TOUCH:
+    name: SILK_TOUCH
+    level: 1
+    decrease: 0
+    chance: 50
+    active: false
+  DURABILITY:
+    name: DURABILITY
+    level: 3
+    decrease: 0
+    chance: 50
+    active: false
+  LOOT_BONUS_BLOCKS:
+    name: LOOT_BONUS_BLOCKS
+    level: 3
+    decrease: 0
+    chance: 50
+    active: false
+  ARROW_DAMAGE:
+    name: Power
+    level: 50
+    decrease: 0
+    chance: 75
+    active: true
+  ARROW_KNOCKBACK:
+    name: ARROW_KNOCKBACK
+    level: 2
+    decrease: 0
+    chance: 50
+    active: false
+  ARROW_FIRE:
+    name: ARROW_FIRE
+    level: 1
+    decrease: 0
+    chance: 50
+    active: false
+  ARROW_INFINITE:
+    name: ARROW_INFINITE
+    level: 1
+    decrease: 0
+    chance: 50
+    active: false
+  LUCK:
+    name: LUCK
+    level: 3
+    decrease: 0
+    chance: 50
+    active: false
+  LURE:
+    name: LURE
+    level: 3
+    decrease: 0
+    chance: 50
+    active: false

@@ -1,0 +1,19 @@
+name: admin
+permissions:
+- minecraft.command.*
+- showitem.*
+- bettercaptcha.bypass
+- combatlogx.bypass
+- essentials.keepinv
+- essentials.keepxp
+- finditem.command
+- finditem.command.help
+- finditem.command.lostitem
+- finditem.command.lostitem.check
+- finditem.command.lostitem.checkplayer
+- finditem.command.lostitem.sos
+- finditem.notify
+- showitem.chat
+- weight.100
+parents:
+- default

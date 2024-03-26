@@ -1,0 +1,137 @@
+back-item:
+  notice: '&2[&a!&2] &aBạn có &f%amount% &amón đồ cần nhận! Gõ &f/backdo &ađể nhận'
+  no-item: '&4[&c!&4] &cKhông có món đồ nào để nhận!'
+  no-empty-slot: '&4[&c!&4] &cKhông đủ ô trống trong túi đồ để nhận! Hãy để trống túi đồ và nhận lại!'
+  success: '&2[&a!&2] &aNhận &f%amount% &amón đồ thành công!'
+command:
+  player-not-found: '&4[&c!&4] &cKhông tìm thấy người chơi %player%!'
+  reload: '&2[&a!&2] &aĐã cài lại file cấu hình!'
+  save: '&2[&a!&2] &aLưu dữ liệu thành công!'
+  help:
+    default:
+      - "&6======== &eLệnh FindItem &6========" # finditem.command
+      - "&f/finditem startfinding <id> <time> &e- Bắt đầu tìm kiếm món đồ theo ID với thời gian" # finditem.command.startfinding
+      - "&f/finditem starttaking <id> <time> &e- Bắt đầu tìm kiếm và tịch thu món đồ theo ID với thời gian" # finditem.command.starttaking
+      - "&f/finditem stopfinding <id> &e- Dừng tìm kiếm món đồ theo ID" # finditem.command.stopfinding
+      - "&f/finditem listfinding <trang> &e- Danh sách các món đồ đang tìm" # finditem.command.listfinding
+      - "&f/finditem removefinding <id> &e- Xóa món đồ cần tìm kiếm theo ID" # finditem.command.removefinding
+      - "&f/finditem clearfinding &e- Xóa tất cả món đồ cần tìm kiếm" # finditem.command.clearfiding
+      - "&f/help 2 &eđể xem hướng dẫn trang kế"
+    2:
+      - "&6======== &eLệnh FindItem &6========" # finditem.command
+      - "&f/finditem reload &e- Cài lại cấu hình" # finditem.command.reload
+      - "&f/finditem givefoundid <id> &e- Lấy món đồ theo ID đã tìm kiếm được" # finditem.command.givefoundid
+      - "&f/finditem givenewid <id> &e- Lấy món đồ theo ID và tạo ID mới" # finditem.command.givenewid
+      - "&f/finditem giveoldid <id> &e- Lấy món đồ theo ID" # finditem.command.giveoldid
+      - "&f/finditem givestorage <id> &e- Lấy món đồ trong storage theo ID" # finditem.command.givestorage
+      - "&f/finditem readfinding &e- Xác nhận đã đọc thông báo các vật phẩm được tìm thấy" # finditem.command.readfinding
+      - "&f/finditem readdupe &e- Xác nhận đã đọc thông báo các vật phẩm bị dupe" # finditem.command.readdupe
+      - "&f/finditem help &e- Xem hướng dẫn" # finditem.command.help
+      - "&f/finditem save &e- Lưu dữ liệu" # finditem.command.save
+    3:
+      - "&6======== &eLệnh FindItem &6========" # finditem.command
+      - "&f/finditem addbackitem <player> <id> - Thêm món đồ vào danh sách nhận lại" # finditem.command.addbackitem
+      - "&f/finditem removebackitem <player> <id> - Xóa món đồ khỏi danh sách nhận lại" # finditem.command.removebackitem
+      - "&f/finditem showbackitem <player> - Danh sách món đồ nhận lại" # finditem.command.listbackitem
+      - "&f/finditem checktps &e- Xem tps item" # finditem.command.checktps
+      - "&f/finditem infoplayer <player> &e- Xem tất cả vật phẩm người chơi sử dụng" # finditem.command.info.player
+      - "&f/finditem infoplayer2 <player> &e- Xem tất cả vật phẩm người chơi sử dụng (áp dụng phiên bản cũ)" # finditem.command.info.player2
+      - "&f/finditem infoitem <id> &e- Xem tất cả người chơi sử dụng vật phẩm theo ID" # finditem.command.info.player
+      - "&f/finditem infodupe <id> &e- Kiểm tra vật phẩm theo ID có bị dupe" # finditem.command.info.player
+  read-finding: '&2[&a!&2] &aĐánh dấu đã đọc thông báo các vật phẩm được tìm thấy!'
+  read-dupe: '&2[&a!&2] &aĐánh dấu đã đọc thông báo các vật phẩm bị dupe!'
+  start-finding: '&2[&a!&2] &aBắt đầu tìm kiếm món đồ có ID &e%id% &a...'
+  stop-finding: '&4[&c!&4] &cDừng tìm kiếm món đồ có ID &e%id%&c!'
+  start-taking: '&2[&a!&2] &aBắt đầu tìm kiếm và tịch thu món đồ có ID &e%id% &a...'
+  find-list:
+    empty: '&4[&c!&4] &cKhông tìm thấy trang nào!'
+    invalid: '&2[&a!&2] &aTrang không hợp lệ!'
+    not-found: '&2[&a!&2] &aKhông tìm thấy trang &e%page% &a! Hãy nhập số trang từ %min_page% đến trang %max_page%'
+    header: '&6======== &eDanh sách món đồ đang tìm &f%page%&e/%max_page% &6========'
+    item:
+      found: '&aĐÃ TÌM THẤY &eID %id% &aở tọa độ &e%location% &atừ người chơi &e%player% &alúc &e%time%&a!'
+      found-and-took: '&2ĐÃ TÌM THẤY VÀ TỊCH THU &eID %id% &2ở tọa độ &e%location% &2từ người chơi &e%player% &2lúc &e%time%&2!'
+      not-found: '&eCHƯA TÌM THẤY &eID %id%&e!'
+      expired: '&cKHÔNG TÌM THẤY &eID %id%&c!'
+  dupe-list:
+    empty: '&4[&c!&4] &cKhông tìm thấy trang nào!'
+    invalid: '&2[&a!&2] &aTrang không hợp lệ!'
+    not-found: '&2[&a!&2] &aKhông tìm thấy trang &e%page% &a! Hãy nhập số trang từ %min_page% đến trang %max_page%'
+    header: '&6======== &eDanh sách món đồ dupe &f%page%&e/%max_page% &6========'
+    item: '&aDUPE &eID %id% &a ở tọa độ &e%location% &atừ người chơi &e%player% &alúc &e%time%&a!'
+  remove: '&2[&a!&2] &aĐã xóa tìm kiếm món đồ có ID &e%id% &a!'
+  clear: '&2[&a!&2] &aBạn có chắc chắn muốn xóa tất cả món đồ đang tìm kiếm? &e/finditem findclear confirm'
+  clear-confirm: '&2[&a!&2] &aĐã xóa tất cả món đồ đang tìm kiếm!'
+  give-new-id:
+    not-found: '&4[&c!&4] &cKhông tồn tại món đồ có ID &e%id% &c!'
+    success: '&2[&a!&2] &aLấy món đồ có ID &e%id% thành công&a!'
+  give-old-id:
+    not-found: '&4[&c!&4] &cKhông tồn tại món đồ có ID &e%id% &c!'
+    success: '&2[&a!&2] &aLấy món đồ có ID &e%id% thành công&a!'
+  give-found-id:
+    not-found: '&4[&c!&4] &cChưa tìm thấy món đồ có ID &e%id% &c!'
+    success: '&2[&a!&2] &aLấy món đồ có ID &e%id% thành công&a!'
+  give-storage:
+    not-found: '&4[&c!&4] &cKhông tìm thấy món đồ có ID &e%id% &c!'
+    success: '&2[&a!&2] &aLấy món đồ trong storage và khởi tạo ID thành công&a!'
+  generate:
+    no-item: '&4[&c!&4] &cKhông có món đồ nào trên tay để tạo id!'
+    success: '&2[&a!&2] &aTạo ID cho món đồ trên tay thành công! ID: &e%id%'
+  add-back-item:
+    not-found: '&4[&c!&4] &cKhông tìm thấy món đồ có ID &e%id% &c!'
+    success: '&2[&a!&2] &aĐã thêm món đồ có ID &e%id% &avào storage!'
+    already-exist: '&4[&c!&4] &cMón đồ có ID &e%id% &cđã tồn tại trong storage!'
+  remove-back-item:
+    not-found: '&4[&c!&4] &cKhông tìm thấy món đồ có ID &e%id% &c!'
+    success: '&2[&a!&2] &aĐã xóa món đồ có ID &e%id% &akhỏi storage!'
+  show-back-item:
+    empty: '&4[&c!&4] &cKhông có món đồ nào trong storage!'
+    success: '&2[&a!&2] &aDanh sách món đồ trong storage: %id_list%'
+  info-player:
+    success: '&2[&a!&2] &aXem thông tin vật phẩm người chơi &e%target% &asử dụng gần đây!'
+  info-player2:
+    success: '&2[&a!&2] &aXem thông tin vật phẩm người chơi &e%target% &asử dụng gần đây (Phiên bản cũ)!'
+  info-item:
+    success: '&2[&a!&2] &aXem thông tin vật phẩm có ID &e%id% &agần đây!'
+  info-dupe:
+    dupe: '&4[&c!&4] &cVật phẩm bị dupe!'
+    not-dupe: '&2[&a!&2] &aVật phẩm không bị dupe!'
+  lost-item:
+    help:
+      - '&6======== &eLệnh Mất Đồ &6========' # lostitem.command
+      - '&f/matdo check &e- Xem tất cả vật phẩm sử dụng trong 20 ngày'
+      - '&f/matdo sos <id> &e- Gửi lại vật phẩm bị mất vào kho đồ cá nhân'
+    sos:
+      exists: '&4[&c!&4] &cVật phẩm vẫn còn tồn tại ở /ah hoặc /pv!'
+      not-found: '&4[&c!&4] &cKhông tồn tại món đồ có ID &e%id% &c!'
+      success: '&2[&a!&2] &aĐã gửi lại vật phẩm bị mất vào kho đồ cá nhân&a!'
+      max-sos-per-day: '&4[&c!&4] &cBạn đã yêu cầu lấy lại vật phẩm bị mất quá số lần cho phép trong ngày!'
+      last-seen-by-player: '&4[&c!&4] &cYêu cầu vật phẩm lấy lại có lần cuối được sử dụng bởi chính bạn&a!'
+      recent-use-by-player: '&4[&c!&4] &cYêu cầu vật phẩm lấy lại có lần cuối sử dụng không quá 30 ngày&a!'
+      use-for-other-purposes: '&4[&c!&4] &cKhông thể lấy lại vật phẩm đã sử dụng cho mục đích khác (trao đổi, chế tạo)!'
+    success: '&2[&a!&2] &aMở menu&a!'
+  remove-id:
+    success: '&2[&a!&2] &aĐã xóa ID thành công&a!'
+  staff-mode:
+    enable: '&2[&a!&2] &aBật chế độ staffmode thành công!'
+    disable: '&4[&c!&4] &cTắt chế độ staffmode thành công!'
+finding-notify: # finditem.notify
+  empty:
+    - '&6[&eTimDo&6] &eChưa tìm thấy món đồ nào!'
+  found:
+    - '&2[&aTimDo&2] &aĐã tìm thấy &e%amount% &amón đồ! Hãy kiểm tra bằng lệnh &e/finditem listfinding <trang>&a!'
+    - '&2[&aTimDo&2] &aĐánh dấu đã đọc thông báo bằng lệnh &e/finditem readfinding&a!'
+dupe-notify: # finditem.notify
+  empty:
+    - '&6[&eDupeDo&6] &eChưa có món đồ nào bị dupe nữa!'
+  found:
+    - '&2[&aDupeDo&2] &aĐã tìm thấy &e%amount% &amón đồ bị dupe! Hãy kiểm tra bằng lệnh &e/finditem listdupe <trang>&a!'
+    - '&2[&aDupeDo&2] &aĐánh dấu đã đọc thông báo bằng lệnh &e/finditem readdupe&a!'
+# Thông báo cho vật phẩm đang được tìm kiếm nhưng không tịch thu. Sử dụng '' để không thông báo
+found-item-from-player: ''
+found-and-took-item-from-player: '&4[&c!&4] &cBạn đang chứa món đồ ID &e%id% &cđang được tìm kiếm&c! Tiến hành tịch thu!'
+take-dupe-item: '&4[&c!&4] &cBạn đang chứa món đồ ID &e%id% &ccó nghi vấn dupe&c! Tiến hành tịch thu!'
+item-chest-blacklist: '&4[&c!&4] &cKhông thể thao tác món đồ này khi đang mở kho!'
+item-settings:
+  disable-drop-item: '&4[&c!&4] &cKhông thể drop vật phẩm này!'
+item-frame-blacklist: '&4[&c!&4] &cKhông thể thao tác món đồ này với khung đồ!'

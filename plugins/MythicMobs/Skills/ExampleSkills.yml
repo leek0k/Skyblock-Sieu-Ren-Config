@@ -1,0 +1,351 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+thantai1:
+  Skills:
+  - command{c="points give <target.name> 1"}
+  - command{c="eco give <target.name> 100000"}
+mahaitac1:
+  Skills:
+  - command{c="ie give mahaitac <target.name> 2"}
+  
+hattung:
+ Skills:
+ - throw{velocity=10;velocityY=6} @EIR{r=8}  
+  
+mahaitac32:
+  Skills:
+  - command{c="ie give mahaitac <target.name> 64"}  
+  - command{c="ie give mahaitac <target.name> 64"}    
+  - command{c="exp give <target.name> 2500"}  
+  - command{c="give <target.name> goldingot 20"}  
+  - command{c="crazycrates give physical cauvong 1 <target.name>"}    
+mahaitacx2:
+  Skills: 
+  - command{c="cr give to <target.name> spawnerhien 1"}  
+  - command{c="ie give mahaitac <target.name> 64"}    
+  
+nhen1:
+  Skills:
+  - command{c="ie give matnhen <target.name> 2"}
+  
+nhen32:
+  Skills:
+  - command{c="ie give matnhen <target.name> 64"}  
+  - command{c="ie give matnhen <target.name> 64"}    
+  - command{c="exp give <target.name> 5500"}  
+  - command{c="give <target.name> emeraldblock 5"}  
+  - command{c="crazycrates give physical cauvong 2 <target.name>"}   
+
+nhenx2:
+  Skills:
+  - command{c="cr give to <target.name> spawnerquai2 1"}  
+  - command{c="ie give matnhen <target.name> 64"}  
+  - command{c="ie give matnhen <target.name> 64"}      
+
+phuthuy1:
+  Skills:
+  - command{c="ie give phuthuy <target.name> 2"}
+  
+phuthuy32:
+  Skills:
+  - command{c="ie give phuthuy <target.name> 64"}    
+  - command{c="ie give phuthuy <target.name> 64"}      
+  - command{c="exp give <target.name> 10500"}  
+  - command{c="give <target.name> diamond 20"}  
+  - command{c="crazycrates give physical cauvong 3 <target.name>"} 
+  
+quydianguc:
+  Skills:
+  - command{c="ie give manhnangcap <target.name> 64"}    
+  - command{c="ie give manhnangcap <target.name> 64"}     
+  - command{c="exp give <target.name> 30500"}  
+  - command{c="give <target.name> diamondblock 10"}  
+  - command{c="crazycrates give physical cauvong 9 <target.name>"}    
+  
+quydianguc2:
+  Skills:  
+  - command{c="cr give to <target.name> spawnerquai2 9"}    
+  
+quydianguc3:
+  Skills:  
+  - command{c="cr give to <target.name> tuiluaphep 1"}    
+  
+phuthuyx2:
+  Skills:  
+  - command{c="cr give to <target.name> spawnerquai2 3"}  
+  - command{c="ie give mahaitac <target.name> 64"}    
+  
+baymau:
+  Skills:
+  - delay 2000
+  - damage{a=10000} @Self
+  
+  
+Bossmahaitac:
+  Skills:
+  - projectile{onTick=11-Tick;onHit=11-Hit;v=2;i=1;hR=1;vR=1} @PlayersInRadius{r=30}    
+11-Tick:
+  Skills:
+  - effect:particles{p=splash;amount=3 ;hSpread=0.1;vSpread=0.1;speed=0.1;yOffset=0} @origin
+11-Hit:
+  Skills: 
+  - ignite{ticks=100} @PlayersNearOrigin{r=2}
+  - damage{a=10} @Target   
+  
+  
+Bossnhenden:
+  Skills:
+  - projectile{onTick=22-Tick;onHit=22-Hit;v=2;i=1;hR=1;vR=1} @PlayersInRadius{r=30}    
+22-Tick:
+  Skills:
+  - effect:particles{p=crit;amount=1 ;hSpread=0.1;vSpread=0.1;speed=0.1;yOffset=0} @origin
+22-Hit:
+  Skills: 
+  - ignite{ticks=100} @PlayersNearOrigin{r=2}
+  - damage{a=15} @Target 
+  
+  
+Bossphuthuy:
+  Skills:
+  - projectile{onTick=33-Tick;onHit=33-Hit;v=2;i=1;hR=1;vR=1} @PlayersInRadius{r=30}    
+33-Tick:
+  Skills:
+  - effect:particles{p=spell;amount=1 ;hSpread=0.1;vSpread=0.1;speed=0.1;yOffset=0} @origin
+33-Hit:
+  Skills: 
+  - ignite{ticks=100} @PlayersNearOrigin{r=2}
+  - damage{a=20} @Target 
+  
+Bosstp:
+  Skills:
+  - velocity{m=set;x=0;y=0;z=0} @self ~onDamaged  
+  
+  
+ra1:
+  Skills:
+  - effect:spin{duration=100;velocity=30} @self
+  - potion{type=SLOW;duration=60;level=7} @Self
+  - projectile{onTick=x-Tick;onHit=x-Hit;v=5;i=1;hR=1;vR=1} @Ring{radius=20;points=4}
+  - effect:sound{s=entity.blaze.shoot;v=0.8;p=0.01} @self
+  - delay 20
+  - projectile{onTick=x-Tick;onHit=x-Hit;v=5;i=1;hR=1;vR=1} @Ring{radius=20;points=4}
+  - effect:sound{s=entity.blaze.shoot;v=0.8;p=0.01} @self
+  - delay 20
+  - projectile{onTick=x-Tick;onHit=x-Hit;v=5;i=1;hR=1;vR=1} @Ring{radius=20;points=4}
+  - effect:sound{s=entity.blaze.shoot;v=0.8;p=0.01} @self
+  - delay 20
+  - projectile{onTick=x-Tick;onHit=x-Hit;v=5;i=1;hR=1;vR=1} @Ring{radius=20;points=4}
+  - effect:sound{s=entity.blaze.shoot;v=0.8;p=0.01} @self
+  - delay 20
+  
+x-Tick2:
+  Skills:
+  - effect:particles{p=flame;amount=3;hSpread=0.1;vSpread=0.1;speed=0.1;yOffset=0} @origin
+x-Hit2:
+  Skills:
+  - sendtitle{title="";subtitle="&cLửa Điện Ngục!";d=40} @PlayersNearOrigin{r=2}   
+  - ignite{ticks=100} @PlayersNearOrigin{r=2}   
+  - damage{a=15} @Target
+  
+   
+zeus:
+  Skills:
+  - projectile{onTick=111111-Tick;onHit=111111-Hit;v=7;i=1;hR=1;vR=1} @Ring{radius=15;points=4}
+  - sendtitle{title="";subtitle="&cSự Tức Giận Của QUỶ!";d=20} @PlayersInRadius{r=20}
+  
+111111-Tick:
+  Skills:
+  - effect:lightning @origin
+111111-Hit:
+  Skills: 
+  - effect:particles{p=largesmoke;amount=10;hSpread=0.1;vSpread=0.1;speed=0.1;yOffset=0} @origin  
+  - damage{a=135} @Target  
+
+osiris8:
+  Cooldown: 0
+  Skills:
+  - effect:lightning @Ring{radius=6;points=10}
+  - potion{type=BLINDNESS;duration=50;level=4} @PlayersInRadius{r=6}
+  - potion{type=CONFUSION;duration=100;level=4} @PlayersInRadius{r=6}
+  - delay 70
+  - effect:sound{s=entity.enderdragon.hurt;v=1;p=0.01} @self
+  - delay 62
+  - effect:particlering{p=largeexplode;radius=1;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=2;p=0.01} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=2;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=3;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=2;p=0.01} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=4;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=5;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=6;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - throw{velocity=7;velocityY=1} @PlayersInRadius{r=16}
+  - effect:particlering{p=largeexplode;radius=7;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=8;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=9;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=10;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=11;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=12;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=13;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=14;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=15;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}  @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=16;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=17;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=18;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=19;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=20;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=21;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=22;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=23;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=24;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=25;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=26;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=27;points=51;amount=1;hS=3;vS=3} @self
+  - damage{a=40} @PlayersInRadius{r=27}
+  - sendtitle{title="&cBão táp Địa Ngục";subtitle="";d=40} @PlayersInRadius{r=27}
+  - ignite{ticks=100} @PlayersInRadius{r=27}
+  - throw{velocity=15;velocityY=10} @PlayersInRadius{r=27}
+
+amon4:
+  Skills:
+  - potion{type=SLOW;duration=60;level=7} @Self
+  - projectile{onTick=xx-Tick;onHit=xx-Hit;v=5;i=1;hR=1;vR=1} @Ring{radius=20;points=4}
+  - effect:sound{s=entity.blaze.shoot;v=0.8;p=0.01} @self
+  - delay 20
+  - projectile{onTick=xx-Tick;onHit=xx-Hit;v=5;i=1;hR=1;vR=1} @Ring{radius=20;points=4}
+  - effect:sound{s=entity.blaze.shoot;v=0.8;p=0.01} @self
+  - delay 20
+  - projectile{onTick=xx-Tick;onHit=xx-Hit;v=5;i=1;hR=1;vR=1} @Ring{radius=20;points=4}
+  - effect:sound{s=entity.blaze.shoot;v=0.8;p=0.01} @self
+  - delay 20
+  - projectile{onTick=xx-Tick;onHit=xx-Hit;v=5;i=1;hR=1;vR=1} @Ring{radius=20;points=4}
+  - effect:sound{s=entity.blaze.shoot;v=0.8;p=0.01} @self
+  - delay 20
+  
+xx-Tick:
+  Skills:
+  - effect:particles{p=largeexplode;amount=10;hSpread=0.1;vSpread=0.1;speed=0.1;yOffset=0} @origin
+xx-Hit:
+  Skills:
+  - ignite{ticks=100} @PlayersNearOrigin{r=2}   
+  - damage{a=9} @Target
+  - throw{velocity=18;velocityY=18} @target
+  - effect:sound{s=entity.generic.explode;v=2;p=0.01} @target
+  - effect:sound{s=entity.generic.explode;v=2;p=0.01} @target
+  - effect:sound{s=entity.generic.explode;v=2;p=0.01} @target
+  - effect:sound{s=entity.generic.explode;v=2;p=0.01} @target  
+  - potion{type=CONFUSION;duration=100;level=4} @target  
+
+ChainingThrow:
+  Cooldown: 10
+  Skills:
+  - potion{t=SLOW;d=60;lvl=100} @self
+  - projectile{onTick=ChainingThrow_TICK;onHit=ChainingThrow_HIT;v=12;i=1;hR=1.5;vR=1.5}
+
+ChainingThrow_TICK:
+  Skills:
+  - effect:particles{particle=blockcrack_101_0;amount=10;hs=0.2;vs=0.1;speed=10;repeatInterval=5;repeat=6} @origin
+
+ChainingThrow_HIT:
+  Skills:
+  - damage{a=100}
+  - potion{t=SLOW;d=100;lvl=100}
+  - delay 2
+  - pull{velocity=6} @Target
+  - delay 2
+  - pull{velocity=6} @Target
+  - delay 2
+  - pull{velocity=6} @Target
+  - delay 2
+  - pull{velocity=6} @Target
+  - delay 2
+  - pull{velocity=6} @Target
+  - delay 2
+  - pull{velocity=6} @Target
+
+osiriseff:
+  Cooldown: 0
+  Skills:
+  - effect:particlesphere{p=enchantmenttable;amount=160;hSpread=1;vSpread=0;radius=3;speed=0.1;yOffset=0} @Self
+  - effect:particlering{particle=enchantmenttable;radius=3;points=52;amount=3;hS=1;vS=0;yOffset=1} @Self 
+
+osirisspawn:
+  Cooldown: 0
+  Skills:
+  - effect:particlesphere{p=flame;amount=500;hSpread=1;vSpread=0;radius=20;speed=0.1;yOffset=0} @Self
+  - delay 25
+  - effect:particlesphere{p=enchantmenttable;amount=1000;hSpread=1;vSpread=0;radius=20;speed=0.1;yOffset=0} @Self
+
+summonslave:
+  Cooldown: 0
+  Skills:  
+  - sendetitl{title="";subtitle="&cHãy Đến Với Ta Nào &4Chó Mặt Quỷ!";d=60} @PlayersInRadius{r=20}
+  - delay 20
+  - summon{mob=chomatquy;amount=2;noise=5;r=7} @target 
+  - delay 20
+  - summon{mob=chomatquy;amount=2;noise=5;r=7} @target 
+  - delay 20
+  - summon{mob=chomatquy;amount=2;noise=5;r=7} @target 
+  
+slaveattack:
+  Cooldown: 0
+  Skills:  
+  - damage{a=1} @Target 
+  - delay 350
+  - remove{m=chomatquy} @Self  
+  
+manhtrungthuong:
+  Skills: 
+  - command{c="cr give to <target.name> manhtrungpet1 1"}  
+manhtrunghiem:
+  Skills: 
+  - command{c="cr give to <target.name> manhtrungpet2 1"}  
+manhtrungco:
+  Skills: 
+  - command{c="cr give to <target.name> manhtrungpet3 1"}  
+manhtrungsieuhiem:
+  Skills: 
+  - command{c="cr give to <target.name> manhtrungpet4 1"}  
+manhtrunghuyenthoai:
+  Skills: 
+  - command{c="cr give to <target.name> manhtrungpet5 1"}  
+manhtrungtruyenthuyet:
+  Skills: 
+  - command{c="cr give to <target.name> manhtrungpet6 1"}  

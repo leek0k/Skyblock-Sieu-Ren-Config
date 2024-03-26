@@ -1,0 +1,38 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: 'thuonglong'
+
+# Currently supported are only melee weapons
+material: GOLD_SWORD
+
+# Weapon's name
+name: '&ax&2｡&a☣&2｡&ax &2๖&a&lTHƯỢNG &2๖&a&lLONG &a(&2｡｡&aKiếm Trảm&2｡｡&a) &ax&2｡&a✗&2｡&ax'
+
+# Weapon's lore
+lore:
+  - ''   
+  - '&a☋&2✗&a☋ &d｡&c｡&d｡&2๖&a&lTHƯỢNG &2๖&a&lLONG&d｡&c｡&d｡ &a☋&2✗&a☋'
+  - '&2♅ &aTăng 35% damage'
+  - '&2♅ &aĐược đúc từ Vảy Rồng ngàn năm              '
+  - '&2♅ &aThanh Trừng những Kẻ Ngoại Lai'
+  - '&7&o(Mặc full Set Thượng Long để kích hoạt.)'  
+  - '&0&o#Kiemthuonglong1'  
+
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'sharpness:170'
+  - 'unbreaking:10'
+  - 'fireaspect:5'
+  - 'looting:5'
+  - 'baneofarthropods:5'
+  - 'smite:5'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:
+  ATTACK:
+    chance: 100
+    effects:
+      - 'INCREASE_DAMAGE:35'

@@ -1,0 +1,668 @@
+file: nangcaptrangbiht.yml
+menu_title: '&8&lNâng Cấp Vũ Khí'
+open_command: 
+- nangcaptrangbiht
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 54
+update_interval: 1
+open_requirement: 
+items:
+  'background':
+    material: STAINED_GLASS_PANE
+    data: 4
+    display_name: ' '
+    slots:
+    - '0'
+    - '8'
+    - '45'
+    - '53'
+    - '11'
+    - '20'
+    - '29'
+    - '38'
+    - '53'
+  'background2':
+    material: STAINED_GLASS_PANE
+    data: 1
+    display_name: ' '
+    slots:
+    - '1-3'
+    - '5-7'
+    - '9'
+    - '17-18'
+    - '26-27'
+    - '36'
+    - '46'
+    - '47'
+    - '48'
+    - '51'
+    - '52'
+    - '44'
+    - '35'
+  'exit':
+    material: DOUBLE_PLANT
+    display_name: '&c&l⬅ [Trở về]'
+    slot: 49
+    lore:
+    - "&7Nhấn vào để trở về mục trước"
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[player] ecraft'
+  'prevpage':
+    material: ARROW
+    display_name: '&e&lTrang Sau'
+    slot: 50
+    click_commands:
+    - '[player] nangcaptrangbithanh'
+  'icon':
+    material: CLAY_BRICK
+    slot: 4
+    display_name: '&e[♦] &e&lĐá nâng cấp &e[♦]'
+    lore:
+    - '&7Số Lượng: &a%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%'
+    - ''
+    - '&0&o#Item menu'
+  'cunght':
+    material: BOW
+    display_name: '&6&lCung Huyền Thoại'
+    lore:
+    - '&7♦ Trade - Rèn'
+    - ''
+    - '&0&o#Item menu'
+    slot: 28
+    hide_attributes: true
+  'cunght2a':
+    material: BOW
+    slot: 30
+    priority: 2
+    display_name: '§6§lCung tên của Quỷ Lửa §6(2♦)'
+    enchantments:
+    - DURABILITY;5
+    - ARROW_DAMAGE;55
+    - ARROW_FIRE;2
+    - ARROW_INFINITE;1
+    lore:
+    - '§6◆ ◆ ◆ §6(2♦) §6§lHUYỀN THOẠI §6(2♦) §6◆ ◆ ◆'
+    - '§6* Cung tên của Quỷ Lửa (2♦)'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ §6§lCung tên của Quỷ Lửa'
+    - '&a- &7Sức mạnh 50'
+    - '&a+ &7x2 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu"
+    - "[message] §6§lCung tên của Quỷ Lửa &fsở hữu: %checkitem_amount_mat:bow,amt:1,lorecontains:&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆,enchantments:arrow_damage=50%"
+    - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+    - "[refresh]"
+  'cunght2':
+    material: BOW
+    slot: 30
+    priority: 1
+    display_name: '§6§lCung tên của Quỷ Lửa §6(2♦)'
+    enchantments:
+    - DURABILITY;5
+    - ARROW_DAMAGE;55
+    - ARROW_FIRE;2
+    - ARROW_INFINITE;1
+    lore:
+    - '§6◆ ◆ ◆ §6(2♦) §6§lHUYỀN THOẠI §6(2♦) §6◆ ◆ ◆'
+    - '§6* §6§lCung tên của Quỷ Lửa (2♦)'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ §6§lCung tên của Quỷ Lửa'
+    - '&a- &7Sức mạnh 50'
+    - '&a+ &7x2 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:2%'
+          output: '2'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:bow,amt:1,lorecontains:&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆,enchantments:arrow_damage=50%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:2%'
+          output: '2'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:bow,amt:1,lorecontains:&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆,enchantments:arrow_damage=50%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[message] §6§lCung tên của Quỷ Lửa &fsở hữu: %checkitem_amount_mat:bow,amt:1,lorecontains:&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆,enchantments:arrow_damage=50%"
+      - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+      - "[close]"
+    click_commands:
+    - "[console] ie give cunght2 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"
+  'riuht':
+    material: STONE_AXE
+    display_name: '&6&lRìu Huyền Thoại'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 19
+    hide_attributes: true
+  'riuht2a':
+    material: DIAMOND_AXE
+    slot: 21
+    priority: 2
+    display_name: '§6§lLưỡi Rìu Bóng ma §6(2♦)'
+    enchantments:
+    - DAMAGE_ALL;105
+    - DURABILITY;3
+    lore:
+    - '§6◆ ◆ ◆ §6(2♦) §6§lHUYỀN THOẠI §6(2♦) §6◆ ◆ ◆'
+    - '§6* Lưỡi Rìu Bóng ma (2♦)'
+    - '§6* Tăng 7% damage.'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ §6§lLưỡi Rìu Bóng ma'
+    - '&a- &7Sắc bén 100'
+    - '&a+ &7x2 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu"
+    - "[message] §6§lLưỡi Rìu Bóng ma &fsở hữu: %checkitem_amount_mat:diamond_axe,amt:1,lorecontains:* Tăng 5,enchantments:damage_all=100%"
+    - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+    - "[refresh]"
+  'riuht2':
+    material: DIAMOND_AXE
+    slot: 21
+    priority: 1
+    display_name: '§6§lLưỡi Rìu Bóng ma §6(2♦)'
+    enchantments:
+    - DAMAGE_ALL;105
+    - DURABILITY;3
+    lore:
+    - '§6◆ ◆ ◆ §6(2♦) §6§lHUYỀN THOẠI §6(2♦) §6◆ ◆ ◆'
+    - '§6* Lưỡi Rìu Bóng ma (2♦)'
+    - '§6* Tăng 7% damage.'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ §6§lLưỡi Rìu Bóng ma'
+    - '&a- &7Sắc bén 100'
+    - '&a+ &7x2 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:2%'
+          output: '2'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_axe,amt:1,lorecontains:* Tăng 5,enchantments:damage_all=100%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:2%'
+          output: '2'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_axe,amt:1,lorecontains:* Tăng 5,enchantments:damage_all=100%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[message] §6§lLưỡi Rìu Bóng ma &fsở hữu: %checkitem_amount_mat:diamond_axe,amt:1,lorecontains:* Tăng 5,enchantments:damage_all=100%"
+      - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+      - "[close]"
+    click_commands:
+    - "[console] ie give riuht2 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"
+  'riuht3a':
+    material: DIAMOND_AXE
+    slot: 22
+    priority: 2
+    display_name: '§6§lLưỡi Rìu Bóng ma §6(3♦)'
+    enchantments:
+    - DAMAGE_ALL;110
+    - DURABILITY;3
+    lore:
+    - '§6◆ ◆ ◆ §6(2♦) §6§lHUYỀN THOẠI §6(3♦) §6◆ ◆ ◆'
+    - '§6* Lưỡi Rìu Bóng ma (3♦)'
+    - '§6* Tăng 9% damage.'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ §6§lLưỡi Rìu Bóng ma (2♦)'
+    - '&a- &7Sắc bén 105'
+    - '&a+ &7x4 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu"
+    - "[message] §6§lLưỡi Rìu Bóng ma &fsở hữu: %checkitem_amount_mat:diamond_axe,amt:1,lorecontains:* Tăng 7,enchantments:damage_all=105%"
+    - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+    - "[refresh]"
+  'riuht3':
+    material: DIAMOND_AXE
+    slot: 22
+    priority: 1
+    display_name: '§6§lLưỡi Rìu Bóng ma §6(3♦)'
+    enchantments:
+    - DAMAGE_ALL;110
+    - DURABILITY;3
+    lore:
+    - '§6◆ ◆ ◆ §6(2♦) §6§lHUYỀN THOẠI §6(3♦) §6◆ ◆ ◆'
+    - '§6* Lưỡi Rìu Bóng ma (3♦)'
+    - '§6* Tăng 9% damage.'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ §6§lLưỡi Rìu Bóng ma (2♦)'
+    - '&a- &7Sắc bén 105'
+    - '&a+ &7x4 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:4%'
+          output: '4'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_axe,amt:1,lorecontains:* Tăng 7,enchantments:damage_all=105%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:4%'
+          output: '4'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_axe,amt:1,lorecontains:* Tăng 7,enchantments:damage_all=105%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[message] §6§lLưỡi Rìu Bóng ma &fsở hữu: %checkitem_amount_mat:diamond_axe,amt:1,lorecontains:* Tăng 7,enchantments:damage_all=105%"
+      - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+      - "[close]"
+    click_commands:
+    - "[console] ie give riuht3 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"
+  'kiemht':
+    material: STONE_SWORD
+    display_name: '&6&lKiếm Huyền Thoại'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 10
+    hide_attributes: true
+  'kiemht2a':
+    material: DIAMOND_SWORD
+    slot: 12
+    priority: 2
+    display_name: '§6§lLưỡi đao mẻ Bóng đêm §6(2♦)'
+    enchantments:
+    - DAMAGE_ALL;105
+    - DURABILITY;3
+    lore:
+    - '§6◆ ◆ ◆ §6(2♦) §6§lHUYỀN THOẠI §6(2♦) §6◆ ◆ ◆'
+    - '§6* Lưỡi đao mẻ Bóng đêm (2♦)'
+    - '§6* Tăng 7% damage.'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ §6§lLưỡi đao mẻ Bóng đêm'
+    - '&a- &7Sắc bén 100'
+    - '&a+ &7x2 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu"
+    - "[message] §6§lLưỡi đao mẻ Bóng đêm &fsở hữu: %checkitem_amount_mat:diamond_sword,amt:1,lorecontains:* Tăng 5,enchantments:damage_all=100%"
+    - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+    - "[refresh]"
+  'kiemht2':
+    material: DIAMOND_SWORD
+    slot: 12
+    priority: 1
+    display_name: '§6§lLưỡi đao mẻ Bóng đêm §6(2♦)'
+    enchantments:
+    - DAMAGE_ALL;105
+    - DURABILITY;3
+    lore:
+    - '§6◆ ◆ ◆ §6(2♦) §6§lHUYỀN THOẠI §6(2♦) §6◆ ◆ ◆'
+    - '§6* Lưỡi đao mẻ Bóng đêm (2♦)'
+    - '§6* Tăng 7% damage.'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ §6§lLưỡi đao mẻ Bóng đêm'
+    - '&a- &7Sắc bén 100'
+    - '&a+ &7x2 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:2%'
+          output: '2'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_sword,amt:1,lorecontains:* Tăng 5,enchantments:damage_all=100%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:2%'
+          output: '2'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_sword,amt:1,lorecontains:* Tăng 5,enchantments:damage_all=100%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[message] §6§lLưỡi đao mẻ Bóng đêm &fsở hữu: %checkitem_amount_mat:diamond_sword,amt:1,lorecontains:* Tăng 5,enchantments:damage_all=100%"
+      - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+      - "[close]"
+    click_commands:
+    - "[console] ie give kiemht2 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"
+  'kiemht3a':
+    material: DIAMOND_SWORD
+    slot: 13
+    priority: 2
+    display_name: '§6§lLưỡi đao mẻ Bóng đêm §6(3♦)'
+    enchantments:
+    - DAMAGE_ALL;110
+    - DURABILITY;3
+    lore:
+    - '§6◆ ◆ ◆ §6(2♦) §6§lHUYỀN THOẠI §6(3♦) §6◆ ◆ ◆'
+    - '§6* Lưỡi đao mẻ Bóng đêm (3♦)'
+    - '§6* Tăng 9% damage.'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ §6§lLưỡi đao mẻ Bóng đêm (2♦)'
+    - '&a- &7Sắc bén 105'
+    - '&a+ &7x4 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu"
+    - "[message] §6§lLưỡi đao mẻ Bóng đêm &fsở hữu: %checkitem_amount_mat:diamond_sword,amt:1,lorecontains:* Tăng 7,enchantments:damage_all=105%"
+    - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+    - "[refresh]"
+  'kiemht3':
+    material: DIAMOND_SWORD
+    slot: 13
+    priority: 1
+    display_name: '§6§lLưỡi đao mẻ Bóng đêm §6(3♦)'
+    enchantments:
+    - DAMAGE_ALL;110
+    - DURABILITY;3
+    lore:
+    - '§6◆ ◆ ◆ §6(2♦) §6§lHUYỀN THOẠI §6(3♦) §6◆ ◆ ◆'
+    - '§6* Lưỡi đao mẻ Bóng đêm (3♦)'
+    - '§6* Tăng 9% damage.'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ §6§lLưỡi đao mẻ Bóng đêm (2♦)'
+    - '&a- &7Sắc bén 105'
+    - '&a+ &7x4 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:4%'
+          output: '4'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_sword,amt:1,lorecontains:* Tăng 7,enchantments:damage_all=105%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:4%'
+          output: '4'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_sword,amt:1,lorecontains:* Tăng 7,enchantments:damage_all=105%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[message] §6§lLưỡi đao mẻ Bóng đêm &fsở hữu: %checkitem_amount_mat:diamond_sword,amt:1,lorecontains:* Tăng 7,enchantments:damage_all=105%"
+      - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+      - "[close]"
+    click_commands:
+    - "[console] ie give kiemht3 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"
+
+  'cupht':
+    material: STONE_PICKAXE
+    display_name: '&6&lCúp Huyền Thoại'
+    lore:
+    - '&7♦ Trade - Rèn'
+    - ''
+    - '&0&o#Item menu'
+    slot: 37
+    hide_attributes: true   
+
+  'cuphuyenthoai2':
+    material: DIAMOND_PICKAXE
+    slot: 39
+    priority: 1
+    display_name: '&6&lCúp Huyền Thoại &6(2♦) &6(New)'
+    enchantments:
+    - DURABILITY;3
+    - DIG_SPEED;12
+    - LOOT_BONUS_BLOCKS;6
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '§6◆ ◆ ◆ §6(2♦) §6§lHUYỀN THOẠI §6(2♦) §6◆ ◆ ◆ (New)'
+    - '&0&oCuphuyenthoai2'
+    - '&a▢ Ô cường hóa: +7'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ §6§lCúp Huyền Thoại &6(New) &f(&eHiện có: &a%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆,enchantments:DIG_SPEED=10%&f)'
+    - '&a+ &7x16 &8&lKhối Than Khổng Lồ &f(&eHiện có: &a%checkitem_amount_mat:mat:coal_block,amt:16,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)'
+    - '&a+ &7x8 &f&lKhối Sắt Khổng Lồ &f(&eHiện có: &a%checkitem_amount_mat:mat:iron_block,amt:16,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)'
+    - '&a+ &7x4 &e&lKhối Vàng Khổng Lồ &f(&eHiện có: &a%checkitem_amount_mat:mat:gold_block,amt:16,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 4
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:mat:diamond_pickaxe,amt:1,lorecontains:&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆,enchantments:DIG_SPEED=10%'
+          output: '1'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:coal_block,amt:16,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%'
+          output: '16' 
+        '3':
+          type: '>='
+          input: '%checkitem_amount_mat:iron_block,amt:8,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%'
+          output: '8'    
+        '4':
+          type: '>='
+          input: '%checkitem_amount_mat:gold_block,amt:4,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%'
+          output: '4'   
+    click_requirement:
+      minimum_requirements: 4
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_pickaxe,amt:1,lorecontains:&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆,enchantments:DIG_SPEED=10%'
+          output: '1'  
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:coal_block,amt:16,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%'
+          output: '16' 
+        '3':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:iron_block,amt:8,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%'
+          output: '8'    
+        '4':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:gold_block,amt:4,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%'
+          output: '4'        
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[close]"
+    click_commands:
+    - "[console] ie give cuphttrade2 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"  
+  
+  'cuphuyenthoai2a':
+    material: DIAMOND_PICKAXE
+    slot: 39
+    priority: 2
+    display_name: '&6&lCúp Huyền Thoại &6(2♦) &6(New)'
+    enchantments:
+    - DURABILITY;3
+    - DIG_SPEED;12
+    - LOOT_BONUS_BLOCKS;6
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '§6◆ ◆ ◆ §6(2♦) §6§lHUYỀN THOẠI §6(2♦) §6◆ ◆ ◆ (New)'
+    - '&0&oCuphuyenthoai2'
+    - '&a▢ Ô cường hóa: +7'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ §6§lCúp Huyền Thoại &6(New) &f(&eHiện có: &c%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆,enchantments:DIG_SPEED=10%&f)'
+    - '&a+ &7x16 &8&lKhối Than Khổng Lồ &f(&eHiện có: &c%checkitem_amount_mat:mat:coal_block,amt:16,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)'
+    - '&a+ &7x8 &f&lKhối Sắt Khổng Lồ &f(&eHiện có: &c%checkitem_amount_mat:mat:iron_block,amt:16,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)'
+    - '&a+ &7x4 &e&lKhối Vàng Khổng Lồ &f(&eHiện có: &c%checkitem_amount_mat:mat:gold_block,amt:16,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cKhông đủ nguyên liệu!"
+    - "[message] §6§lCúp Huyền Thoại &6(New) &f(&eHiện có: &c%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆,enchantments:DIG_SPEED=10%&f)"
+    - "[message] &7x16 &8&lKhối Than Khổng Lồ &f(&eHiện có: &c%checkitem_amount_mat:mat:coal_block,amt:16,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)"
+    - "[message] &7x8 &f&lKhối Sắt Khổng Lồ &f(&eHiện có: &c%checkitem_amount_mat:mat:iron_block,amt:16,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)"
+    - "[message] &7x4 &e&lKhối Vàng Khổng Lồ &f(&eHiện có: &c%checkitem_amount_mat:mat:gold_block,amt:16,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)"
+    - "[close]"  
+    
+  'cuphuyenthoai3':
+    material: DIAMOND_PICKAXE
+    slot: 40
+    priority: 1
+    display_name: '&6&lCúp Huyền Thoại &6(3♦) &6(New)'
+    enchantments:
+    - DURABILITY;3
+    - DIG_SPEED;14
+    - LOOT_BONUS_BLOCKS;7
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '§6◆ ◆ ◆ §6(3♦) §6§lHUYỀN THOẠI §6(3♦) §6◆ ◆ ◆ (New)'
+    - '&0&oCuphuyenthoai3'
+    - '&a▢ Ô cường hóa: +7'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ &6&lCúp Huyền Thoại &6(2♦) &6(New) &f(&eHiện có: &a%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&6◆ ◆ ◆ &6(2♦) &6&lHUYỀN THOẠI &6(2♦) &6◆ ◆ ◆,enchantments:DIG_SPEED=12%&f)'
+    - '&a+ &7x24 &8&lKhối Than Khổng Lồ &f(&eHiện có: &a%checkitem_amount_mat:mat:coal_block,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)'
+    - '&a+ &7x12 &f&lKhối Sắt Khổng Lồ &f(&eHiện có: &a%checkitem_amount_mat:mat:iron_block,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)'
+    - '&a+ &7x8 &e&lKhối Vàng Khổng Lồ &f(&eHiện có: &a%checkitem_amount_mat:mat:gold_block,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 4
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:mat:diamond_pickaxe,amt:1,lorecontains:&6◆ ◆ ◆ &6(2♦) &6&lHUYỀN THOẠI &6(2♦) &6◆ ◆ ◆,enchantments:DIG_SPEED=12%'
+          output: '1'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:mat:coal_block,amt:24,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%'
+          output: '24' 
+        '3':
+          type: '>='
+          input: '%checkitem_amount_mat:mat:iron_block,amt:12,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%'
+          output: '12'    
+        '4':
+          type: '>='
+          input: '%checkitem_amount_mat:mat:gold_block,amt:8,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%'
+          output: '8'     
+    click_requirement:
+      minimum_requirements: 4
+      requirements:
+        '1':
+          type: '==' 
+          input: '%checkitem_amount_remove_mat:diamond_pickaxe,amt:1,lorecontains:&6◆ ◆ ◆ &6(2♦) &6&lHUYỀN THOẠI &6(2♦) &6◆ ◆ ◆,enchantments:DIG_SPEED=12%'
+          output: '1'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:coal_block,amt:24,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%'
+          output: '24' 
+        '3':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:iron_block,amt:12,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%'
+          output: '12'    
+        '4':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:gold_block,amt:8,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%'
+          output: '8'    
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[close]"
+    click_commands:
+    - "[console] ie give cuphttrade3 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"    
+  
+  'cuphuyenthoai3a':
+    material: DIAMOND_PICKAXE
+    slot: 40
+    priority: 2
+    display_name: '&6&lCúp Huyền Thoại &6(3♦) &6(New)'
+    enchantments:
+    - DURABILITY;3
+    - DIG_SPEED;14
+    - LOOT_BONUS_BLOCKS;7
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '§6◆ ◆ ◆ §6(3♦) §6§lHUYỀN THOẠI §6(3♦) §6◆ ◆ ◆ (New)'
+    - '&0&oCuphuyenthoai3'
+    - '&a▢ Ô cường hóa: +7'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ &6&lCúp Huyền Thoại &6(2♦) &6(New) &f(&eHiện có: &c%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&6◆ ◆ ◆ &6(2♦) &6&lHUYỀN THOẠI &6(2♦) &6◆ ◆ ◆,enchantments:DIG_SPEED=12%&f)'
+    - '&a+ &7x24 &8&lKhối Than Khổng Lồ &f(&eHiện có: &c%checkitem_amount_mat:mat:coal_block,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)'
+    - '&a+ &7x12 &f&lKhối Sắt Khổng Lồ &f(&eHiện có: &c%checkitem_amount_mat:mat:iron_block,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)'
+    - '&a+ &7x8 &e&lKhối Vàng Khổng Lồ &f(&eHiện có: &c%checkitem_amount_mat:mat:gold_block,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu!"
+    - "[message] &6&lCúp Huyền Thoại &6(2♦) &6(New) &f(&eHiện có: &c%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&6◆ ◆ ◆ &6(2♦) &6&lHUYỀN THOẠI &6(2♦) &6◆ ◆ ◆,enchantments:DIG_SPEED=12%&f)"
+    - "[message] &7x24 &8&lKhối Than Khổng Lồ &f(&eHiện có: &c%checkitem_amount_mat:mat:coal_block,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)"
+    - "[message] &7x12 &f&lKhối Sắt Khổng Lồ &f(&eHiện có: &c%checkitem_amount_mat:mat:iron_block,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)"
+    - "[message] &7x8 &e&lKhối Vàng Khổng Lồ &f(&eHiện có: &c%checkitem_amount_mat:mat:gold_block,lorecontains:&7&o((Dùng để trade nâng cấp tại /ecraft)),enchantments:DURABILITY=10%&f)"
+    - "[close]"  
+    

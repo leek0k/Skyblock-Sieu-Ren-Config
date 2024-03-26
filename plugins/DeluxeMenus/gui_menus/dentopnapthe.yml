@@ -1,0 +1,536 @@
+file: dentopnapthe.yml
+menu_title: '&8&lĐền Top Nạp Thẻ'
+open_command: 
+- nancyy0923615391
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 27
+open_requirement: 
+items:
+  'T':
+    material: arrow
+    data: 0
+    slot: 22
+    display_name: '&c&lQuay Lại'
+    left_click_commands:
+      - '[player] topnapthe'
+      
+  '1':
+    material: STAINED_GLASS
+    data: 0
+    slot: 0
+    priority: 2
+    display_name: '&6&lNHẬN MỐC NẠP &f[&a20,000đ&f]'
+    lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&6♦ &eẤn vào đây để nhận ngay top nạp thẻ.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+    view_requirement:
+      requirements:
+       sotiennap:
+         type: '>='
+         input: '%tst_player_total%'
+         output: '20000'
+    left_click_commands:
+      - '[console] cr give to %player_name% napthe20 1 offline'
+      - '[console] lp user %player_name% permission set dennapthe.20'
+      - '[close]'
+  '11':
+   material: STAINED_GLASS
+   data: 0
+   slot: 0
+   priority: 1
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a20,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&2♦ &aBạn đã nhận mốc này rồi.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+   enchantments:
+   - DURABILITY;1
+   hide_enchantments: true
+   view_requirement:
+     requirements:
+       has_permission:
+         type: has permission
+         permission: dennapthe.20
+       has_permission1:
+         type: has permission
+         permission: dennapthe.20
+  
+
+  '111':
+   material: bedrock
+   data: 0
+   slot: 0
+   priority: 3
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a20,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&4♦ &cBạn chưa hoàn thành mốc này.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'    
+
+    
+  '2':
+    material: STAINED_GLASS
+    data: 5
+    slot: 1
+    priority: 2
+    display_name: '&6&lNHẬN MỐC NẠP &f[&a100,000đ&f]'
+    lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&6♦ &eẤn vào đây để nhận ngay top nạp thẻ.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+    view_requirement:
+      requirements:
+       sotiennap:
+         type: javascript
+         input: '%tst_player_total% >= 10000'
+    left_click_commands:
+      - '[console] cr give to %player_name% napthe100 1 offline'
+      - '[console] lp user %player_name% permission set dennapthe.100'
+      - '[close]'
+  '22':
+   material: STAINED_GLASS
+   data: 5
+   slot: 1
+   priority: 1
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a100,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&2♦ &aBạn đã nhận mốc này rồi.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+   enchantments:
+   - DURABILITY;1
+   hide_enchantments: true
+   view_requirement:
+     requirements:
+       has_permission:
+         type: has permission
+         permission: dennapthe.100
+       has_permission1:
+         type: has permission
+         permission: napthe.100
+  
+
+  '222':
+   material: bedrock
+   data: 5
+   slot: 1
+   priority: 3
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a100,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&4♦ &cBạn chưa hoàn thành mốc này.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+
+  
+  '3':
+    material: STAINED_GLASS
+    data: 3
+    slot: 2
+    priority: 2
+    display_name: '&6&lNHẬN MỐC NẠP &f[&a200,000đ&f]'
+    lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&6♦ &eẤn vào đây để nhận ngay top nạp thẻ.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+    view_requirement:
+      requirements:
+       sotiennap:
+         type: string equals
+         input: '%tst_player_total% >= 10000'
+    left_click_commands:
+      - '[console] cr give to %player_name% napthe200 1 offline'
+      - '[console] lp user %player_name% permission set dennapthe.200'
+      - '[close]'
+  '33':
+   material: STAINED_GLASS
+   data: 3
+   slot: 2
+   priority: 1
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a200,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&2♦ &aBạn đã nhận mốc này rồi.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+   enchantments:
+   - DURABILITY;1
+   hide_enchantments: true
+   view_requirement:
+     requirements:
+       has_permission:
+         type: has permission
+         permission: dennapthe.200
+       has_permission1:
+         type: has permission
+         permission: napthe.200
+
+  '333':
+   material: bedrock
+   data: 3
+   slot: 2
+   priority: 3
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a200,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&4♦ &cBạn chưa hoàn thành mốc này.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+
+
+  '4':
+    material: STAINED_GLASS
+    data: 4
+    slot: 3
+    priority: 2
+    display_name: '&6&lNHẬN MỐC NẠP &f[&a500,000đ&f]'
+    lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&6♦ &eẤn vào đây để nhận ngay top nạp thẻ.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+    view_requirement:
+      requirements:
+       sotiennap:
+         type: '>='
+         input: '%tst_player_total%'
+    left_click_commands:
+      - '[console] cr give to %player_name% napthe500 1 offline'
+      - '[console] lp user %player_name% permission set dennapthe.500'
+      - '[close]'
+  '44':
+   material: STAINED_GLASS
+   data: 4
+   slot: 3
+   priority: 1
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a500,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&2♦ &aBạn đã nhận mốc này rồi.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+   enchantments:
+   - DURABILITY;1
+   hide_enchantments: true
+   view_requirement:
+     requirements:
+       has_permission:
+         type: has permission
+         permission: dennapthe.500
+       has_permissio1n:
+         type: has permission
+         permission: napthe.500   
+
+  '444':
+   material: bedrock
+   data: 4
+   slot: 3
+   priority: 3
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a500,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&4♦ &cBạn chưa hoàn thành mốc này.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+
+
+  '5':
+    material: STAINED_GLASS
+    data: 1
+    slot: 4
+    priority: 2
+    display_name: '&6&lNHẬN MỐC NẠP &f[&a1,000,000đ&f]'
+    lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&6♦ &eẤn vào đây để nhận ngay top nạp thẻ.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+    view_requirement:
+      requirements:
+       sotiennap:
+         type: '>='
+         input: '%tst_player_total%'
+    left_click_commands:
+      - '[console] cr give to %player_name% napthe1000 1 offline'
+      - '[console] lp user %player_name% permission set dennapthe.1000'
+      - '[close]'
+  '55':
+   material: STAINED_GLASS
+   data: 1
+   slot: 4
+   priority: 1
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a1,000,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&2♦ &aBạn đã nhận mốc này rồi.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+   enchantments:
+   - DURABILITY;1
+   hide_enchantments: true
+   view_requirement:
+     requirements:
+       has_permission:
+         type: has permission
+         permission: dennapthe.1000
+       has_permissio1n:
+         type: has permission
+         permission: napthe.1000   
+
+  '55':
+   material: bedrock
+   data: 1
+   slot: 4
+   priority: 3
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a1,000,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&4♦ &cBạn chưa hoàn thành mốc này.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'   
+
+  '6':
+    material: STAINED_GLASS
+    data: 6
+    slot: 5
+    priority: 2
+    display_name: '&6&lNHẬN MỐC NẠP &f[&a2,000,000đ&f]'
+    lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&6♦ &eẤn vào đây để nhận ngay top nạp thẻ.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+    view_requirement:
+      requirements:
+       sotiennap:
+         type: '>='
+         input: '%tst_player_total%'
+    left_click_commands:
+      - '[console] cr give to %player_name% napthe2000 1 offline'
+      - '[console] lp user %player_name% permission set dennapthe.2000'
+      - '[close]'
+  '66':
+   material: STAINED_GLASS
+   data: 6
+   slot: 5
+   priority: 1
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a2,000,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&2♦ &aBạn đã nhận mốc này rồi.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+   enchantments:
+   - DURABILITY;1
+   hide_enchantments: true
+   view_requirement:
+     requirements:
+       has_permission:
+         type: has permission
+         permission: dennapthe.2000
+       has_permissio1n:
+         type: has permission
+         permission: napthe.2000   
+
+  '666':
+   material: bedrock
+   data: 6
+   slot: 5
+   priority: 3
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a2,000,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&4♦ &cBạn chưa hoàn thành mốc này.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦' 
+
+  '7':
+    material: STAINED_GLASS
+    data: 14
+    slot: 6
+    priority: 2
+    display_name: '&6&lNHẬN MỐC NẠP &f[&a5,000,000đ&f]'
+    lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&6♦ &eẤn vào đây để nhận ngay top nạp thẻ.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+    view_requirement:
+      requirements:
+       sotiennap:
+         type: '>='
+         input: '%tst_player_total%'
+    left_click_commands:
+      - '[console] cr give to %player_name% napthe5000 1 offline'
+      - '[console] lp user %player_name% permission set dennapthe.5000'
+      - '[close]'
+  '77':
+   material: STAINED_GLASS
+   data: 14
+   slot: 6
+   priority: 1
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a5,000,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&2♦ &aBạn đã nhận mốc này rồi.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+   enchantments:
+   - DURABILITY;1
+   hide_enchantments: true
+   view_requirement:
+     requirements:
+       has_permission:
+         type: has permission
+         permission: dennapthe.5000
+       has_permissio1n:
+         type: has permission
+         permission: napthe.5000   
+
+  '777':
+   material: bedrock
+   data: 14
+   slot: 6
+   priority: 3
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a5,000,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&4♦ &cBạn chưa hoàn thành mốc này.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'          
+
+  
+  '8':
+    material: STAINED_GLASS
+    data: 10
+    slot: 7
+    priority: 2
+    display_name: '&6&lNHẬN MỐC NẠP &f[&a10,000,000đ&f]'
+    lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&6♦ &eẤn vào đây để nhận ngay top nạp thẻ.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+    view_requirement:
+      requirements:
+       sotiennap:
+         type: '>='
+         input: '%tst_player_total%'
+    left_click_commands:
+      - '[console] cr give to %player_name% napthe10000 1 offline'
+      - '[console] lp user %player_name% permission set dennapthe.10000'
+      - '[close]'
+  '88':
+   material: STAINED_GLASS
+   data: 10
+   slot: 7
+   priority: 1
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a10,000,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&2♦ &aBạn đã nhận mốc này rồi.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'
+   enchantments:
+   - DURABILITY;1
+   hide_enchantments: true
+   view_requirement:
+     requirements:
+       has_permission:
+         type: has permission
+         permission: dennapthe.10000
+       has_permissio1n:
+         type: has permission
+         permission: napthe.10000   
+
+  '888':
+   material: bedrock
+   data: 10
+   slot: 7
+   priority: 3
+   display_name: '&a&lNHẬN MỐC NẠP &f[&a10,000,000đ&f]'
+   lore:
+     - '&f- &eNạp trước khi ra mắt top nạp thẻ'
+     - ''
+     - '&6&lTHÔNG TIN:'
+     - '&4♦ &cBạn chưa hoàn thành mốc này.'
+     - ''
+     - '&6&lSỐ TIỀN ĐÃ NẠP'
+     - '&2♦ &a%tst_player_total% &2♦'   

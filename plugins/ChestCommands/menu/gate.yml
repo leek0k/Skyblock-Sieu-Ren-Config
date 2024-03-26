@@ -1,0 +1,85 @@
+menu-settings:
+  name: '&e&lNẠP THẺ &8&l| &6&lCHỌN MỆNH GIÁ'
+  rows: 1
+  auto-refresh: 5
+Gate-10k:
+  COMMAND: 'donate choose Gate 10000'
+  NAME: '&b&lGate 10,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGate 10,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 1
+  POSITION-Y: 1
+Gate-20k:
+  COMMAND: 'donate choose Gate 20000'
+  NAME: '&b&lGate 20,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGate 20,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 2
+  POSITION-Y: 1
+Gate-30k:
+  COMMAND: 'donate choose Gate 30000'
+  NAME: '&b&lGate 30,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGate 30,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 3
+  POSITION-Y: 1
+Gate-50k:
+  COMMAND: 'donate choose Gate 50000'
+  NAME: '&b&lGate 50,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGate 50,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 4
+  POSITION-Y: 1
+Gate-100k:
+  COMMAND: 'donate choose Gate 100000'
+  NAME: '&b&lGate 100,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGate 100,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 5
+  POSITION-Y: 1
+Gate-200k:
+  COMMAND: 'donate choose Gate 200000'
+  NAME: '&b&lGate 200,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGate 200,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 6
+  POSITION-Y: 1
+Gate-300k:
+  COMMAND: 'donate choose Gate 300000'
+  NAME: '&b&lGate 300,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGate 300,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 7
+  POSITION-Y: 1
+Gate-500k:
+  COMMAND: 'donate choose Gate 500000'
+  NAME: '&b&lGate 500,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGate 500,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 8
+  POSITION-Y: 1
+Gate-1m:
+  COMMAND: 'donate choose Gate 1000000'
+  NAME: '&b&lGate 1,000,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fGate 100,000,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 9
+  POSITION-Y: 1

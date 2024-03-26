@@ -1,0 +1,38 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&8[&6EpicVouchers&8] '
+interface:
+  confirmsettings:
+
+    # Interface Messages
+    title: '&6Confirmação'
+    confirmitemname: '&2&lCONFIRMAR'
+    confirmitemlore: '&aDá click aqui se queres confirmar.'
+    cancelitemname: '&4&lCANCELAR'
+    cancelitemlore: '&cDá click aqui se queres cancelar a tua ação.'
+command:
+  error:
+
+    # Command Messages
+    noplayer: '&7Esse user nao existe ou nao está online'
+    novoucher: '&cEsse voucher nao existe.'
+    notexist: '&7Esse comando nao existe ou está mal escrito.'
+    notnumber: '&7Esse numero nao deu um calculo certo.'
+  reload:
+    success: '&7Fez reload em todos os ficheiros e vouchers.'
+  give:
+    send: '&7Deste ao &6%player% &7o voucher &6%voucher% &7(&6x%amount%&7) vezes.'
+    receive: '&7Recebeste  &7(&6x%amount%&7) de &6%voucher% .'
+    cancelled: '&cCancelado.'
+  force:
+    send: '&7Forçaste &6%player% &7a utilizar o voucher &6%voucher% &7(&6x%amount%&7).'
+  list:
+    list: '&7Lista de todos os vouchers: &6%list%&7.'
+event:
+  general:
+
+    # Event Messages
+    nopermission: '&cNão tens permissao para fazer isso.'
+    cooldown: '&7Por favor espera &6%time%&7 segundos antes de usar outro voucher.'

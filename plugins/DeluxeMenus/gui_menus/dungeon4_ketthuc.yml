@@ -1,0 +1,56 @@
+menu_title: '&a&lNgười dẫn đường: &ftiến đến dungeon 5 . . .'
+open_command: 
+- de4ketthuc  
+size: 27 #book_and_quill
+items:  
+  '1':
+    material: 'emerald'
+    slot: 10
+    priority: 1
+    display_name: '&7..&6Shop Đá Quý ☀&7..'
+    lore:
+      - ' &7.&fMua sắm các vật phẩm từ đá quý&7.'
+      - ' &7Rơi ra khi bạn giết các quái tại đây'
+      - ''
+      - ' &a[!] Ấn vào đây để mở shop đá quý!'
+      - ''
+      - '&0&o#Item menu'
+    left_click_commands:
+      - '[player] gems shop'
+      - '[close]'
+   #enchantments: 
+     #- KNOCKBACK;1
+   #hide_enchantments: true     
+  '2':
+    material: dragon_egg
+    data: 1
+    slot: 13
+    priority: 1
+    display_name: '&7..&5TheEnd xa xôi&7..'
+    lore:
+      - ' &7.&fDungeon cấp 5 tại 1 hành tinh xa xôi&7.'
+      - ''
+      - '&7.&aChế tạo vật phẩm từ ???&7.'
+      - ' &7▫ &f???'
+     #- ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - '&0&o#Item menu'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[player] warp theend'
+      - '[close]'   
+
+  '3':
+    material: 'barrier'
+    slot: 16
+    priority: 1
+    display_name: '&cShop ???'
+    lore:
+      - ''
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[close]'  
+
+
+  

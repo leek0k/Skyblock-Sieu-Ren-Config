@@ -1,0 +1,37 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: 'GiapThinKiem3'
+
+# Currently supported are only melee weapons
+material: IRON_SWORD
+
+# Weapon's name
+name: '&2&l∉&a&lᚸ&2&l∌ &2₤&a&lGIÁP&2∄ &2₤&a&lTHÌN&2∄ &a&l2024 &2« Kiếm Đồ Long » &2&l∉&a&lᚸ&2&l∌'
+
+# Weapon's lore
+lore:
+  - ''
+  - '&2&l∉&a&lᚸ&2&l∌ &a&lCUỒNG £ONG &2&l∉&a&lᚸ&2&l∌'
+  - '&2∉ Kiếm Đồ Long (***) ∌'     
+  - '&2∉ Tăng 32% damage ∌'
+  - '&7&o(Mặc full Set Cuồng £ong để kích hoạt.)'  
+  - '&0&o#GiapThinKiem3'   
+
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'sharpness:170'
+  - 'smite:5'
+  - 'unbreaking:10'
+  - 'looting:5'
+  - 'fireaspect:5'
+  - 'longan:1'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:
+  ATTACK:
+    chance: 100
+    effects:
+      - 'INCREASE_DAMAGE:32'

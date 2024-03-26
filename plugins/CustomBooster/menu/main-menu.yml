@@ -1,0 +1,196 @@
+# Các loại Condition - Hiển thị vật phẩm nếu trả về đúng
+### PERMISSION <permission>
+### - Trả về đúng nếu người chơi có quyền <permission>
+### POINT <amount>
+### - Trả về đúng nếu người chơi còn đủ số lượng point
+### MONEY <amount>
+### - Trả về đúng nếu người chơi còn đủ số lượng money
+### TOKEN <amount>
+### - Trả về đúng nếu người chơi còn đủ số lượng token
+### ACTIVE_BOOSTER <id>
+### - Trả về đúng nếu người chơi đang kích hoạt booster
+### NOT_ACTIVE_BOOSTER <id>
+### - Trả về đúng nếu người chơi đang không kích hoạt booster
+
+# Các loại Execute - Thực thi câu lệnh khi click vật phẩm
+### CLOSE - Đóng menu
+### PLAYER_COMMAND <command> - Người chơi thực hiện câu lệnh
+### CONSOLE_COMMAND <command> - Console thực hiện câu lệnh
+### PLAYER_MESSAGE <message> - Gửi tin nhắn cho người chơi
+### CONSOLE_MESSAGE <message> - Gửi tin nhắn cho Console
+### PLAY_SOUND <sound> - Chơi nhạc
+### SET_MONEY <amount> - Thiết lập money (hoặc POINT, TOKEN)
+### GIVE_MONEY <amount> - Thêm money (hoặc POINT, TOKEN)
+### TAKE_MONEY <amount> - Lấy lại money (hoặc POINT, TOKEN)
+
+title: '&3&lMenu Booster'
+row: 5
+
+items:
+  background1:
+    item:
+      type: STAINED_GLASS_PANE
+      damage: 9
+      display: ' '
+    slot: 0-9,17-18,26-27,35-44
+  background2:
+    item:
+      type: STAINED_GLASS_PANE
+      damage: 0
+      display: ' '
+    slot: 10-16,19,25,28-34
+  xp-booster-not-active:
+    # Kiểm tra điều kiện, nếu đúng thì vật phẩm được hiển thị, nếu sai thì vật phẩm không được hiển thị
+    condition:
+      - 'NOT_ACTIVE_BOOSTER example-booster'
+    item:
+      type: EXP_BOTTLE
+      display: '&3&lBOOSTER &b&lNhân đôi kinh nghiệm'
+      lore:
+        - '&bKhi sử dụng Booster:'
+        - '&f- x2 &3XP'
+        - ''
+        - '&bThời gian hiệu lực: &f1 giờ'
+        - ''
+        - '&bGiá: &e50 xu'
+        - ''
+        - '&a&nNhấp để mua'
+      flags:
+        - 'HIDE_ATTRIBUTES'
+    slot: 20
+    execute:
+      # Kiểm tra điều kiện khi item được click
+      condition:
+        - 'POINT 50'
+      # Nếu điều kiện đúng thì thực thi
+      true-execute:
+        - 'CONSOLE_COMMAND custombooster give %player_name% xp-booster'
+        - 'TAKE_POINT 50'
+        - 'PLAYER_MESSAGE &aMua thành công!'
+        - 'PLAY_SOUND ENTITY_PLAYER_LEVELUP'
+        - 'CLOSE'
+      # Nếu điều kiện sai thì thực thi
+      false-execute:
+        - 'PLAYER_MESSAGE &cKhông đủ point để mua'
+  xp-booster-active:
+    # Kiểm tra điều kiện, nếu đúng thì vật phẩm được hiển thị, nếu sai thì vật phẩm không được hiển thị
+    condition:
+      - 'ACTIVE_BOOSTER xp-booster'
+    item:
+      type: EXP_BOTTLE
+      display: '&3&lBOOSTER &b&lNhân đôi kinh nghiệm'
+      lore:
+        - '&bKhi sử dụng Booster:'
+        - '&f- x2 &3XP'
+        - ''
+        - '&bThời gian hiệu lực: &f1 giờ'
+        - ''
+        - '&bGiá: &e50 xu'
+        - ''
+        - '&bĐang kích hoạt. Còn lại: &f%custombooster_time_left_xp-booster%'
+      flags:
+        - 'HIDE_ATTRIBUTES'
+    slot: 20
+    execute:
+      true-execute:
+        - 'PLAYER_MESSAGE &aBạn đang sử dụng BOOSTER này!'
+  money-booster-not-active:
+    condition:
+      - 'NOT_ACTIVE_BOOSTER money-booster'
+    item:
+      type: EXP_BOTTLE
+      display: '&3&lBOOSTER &b&lNhân đôi tiền bán từ shop'
+      lore:
+        - '&bKhi sử dụng Booster:'
+        - '&f- x2 &3TIỀN'
+        - ''
+        - '&bThời gian hiệu lực: &f1 giờ'
+        - ''
+        - '&bGiá: &e50 xu'
+        - ''
+        - '&a&nNhấp để mua'
+      flags:
+        - 'HIDE_ATTRIBUTES'
+    slot: 21
+    execute:
+      condition:
+        - 'POINT 50'
+      true-execute:
+        - 'CONSOLE_COMMAND custombooster give %player_name% money-booster'
+        - 'TAKE_POINT 50'
+        - 'PLAYER_MESSAGE &aMua thành công!'
+        - 'PLAY_SOUND ENTITY_PLAYER_LEVELUP'
+        - 'CLOSE'
+      false-execute:
+        - 'PLAYER_MESSAGE &cKhông đủ point để mua'
+  money-booster-active:
+    condition:
+      - 'ACTIVE_BOOSTER money-booster'
+    item:
+      type: EXP_BOTTLE
+      display: '&3&lBOOSTER &b&lNhân đôi tiền bán từ shop'
+      lore:
+        - '&bKhi sử dụng Booster:'
+        - '&f- x2 &3TIỀN'
+        - ''
+        - '&bThời gian hiệu lực: &f1 giờ'
+        - ''
+        - '&bGiá: &e50 xu'
+        - ''
+        - '&bĐang kích hoạt. Còn lại: &f%custombooster_time_left_money-booster%'
+      flags:
+        - 'HIDE_ATTRIBUTES'
+    slot: 21
+    execute:
+      true-execute:
+        - 'PLAYER_MESSAGE &aBạn đang sử dụng BOOSTER này!'
+  gem-booster-not-active:
+    condition:
+      - 'NOT_ACTIVE_BOOSTER gem-booster'
+    item:
+      type: EXP_BOTTLE
+      display: '&3&lBOOSTER &b&lNhân đôi đá quý'
+      lore:
+        - '&bKhi sử dụng Booster:'
+        - '&f- x2 &3ĐÁ QUÝ'
+        - ''
+        - '&bThời gian hiệu lực: &f1 giờ'
+        - ''
+        - '&bGiá: &e50 xu'
+        - ''
+        - '&a&nNhấp để mua'
+      flags:
+        - 'HIDE_ATTRIBUTES'
+    slot: 22
+    execute:
+      condition:
+        - 'POINT 50'
+      true-execute:
+        - 'CONSOLE_COMMAND custombooster give %player_name% gem-booster'
+        - 'TAKE_POINT 50'
+        - 'PLAYER_MESSAGE &aMua thành công!'
+        - 'PLAY_SOUND ENTITY_PLAYER_LEVELUP'
+        - 'CLOSE'
+      false-execute:
+        - 'PLAYER_MESSAGE &cKhông đủ point để mua'
+  gem-booster-active:
+    condition:
+      - 'ACTIVE_BOOSTER gem-booster'
+    item:
+      type: EXP_BOTTLE
+      display: '&3&lBOOSTER &b&lNhân đôi đá quý'
+      lore:
+        - '&bKhi sử dụng Booster:'
+        - '&f- x2 &3ĐÁ QUÝ'
+        - ''
+        - '&bThời gian hiệu lực: &f1 giờ'
+        - ''
+        - '&bGiá: &e50 xu'
+        - ''
+        - '&bĐang kích hoạt. Còn lại: &f%custombooster_time_left_gem-booster%'
+      flags:
+        - 'HIDE_ATTRIBUTES'
+    slot: 22
+    execute:
+      true-execute:
+        - 'PLAYER_MESSAGE &aBạn đang sử dụng BOOSTER này!'

@@ -1,0 +1,1535 @@
+#-------------------------------------------------------------------------------------------------------------------#
+#							  MyCommand Commands config file (last update v5.7.2)									#
+#																													#
+#  Plugin Documentation : https://dev.bukkit.org/projects/mycommand/pages/getstarted    							#
+#  Spigot https://www.spigotmc.org/resources/mycommand.22272/  Bukkit : https://dev.bukkit.org/projects/mycommand/	#
+#																													#
+#	How to make a command :	(See an example command below)															#
+#		First, decide your command name placing it in the first row (no duplicates!)  "mycommand:"					#
+#		Now set the "command:" field. This will trigger the command. Don't forget the '/' before your command.		#
+#		Now choose your command type from a predefined list and put it after the "type" field						#
+#	COMMAND TYPE LIST :																								#
+#		TEXT , BROADCAST_TEXT, RAW_TEXT , BROADCAST_RAW_TEXT, ALIAS , RUN_COMMAND , RUN_CONSOLE , RUN_COMMAND_TASK  #
+#       RUN_COMMAND_RANDOM , RUN_CONSOLE_RANDOM , RUN_AS_OPERATOR , ADD_PERMISSION , ADD_COST , WARMUP , COOLDOWN   #
+#       WARMUP_AND_COOLDOWN , BLOCK_PATTERN ,  BAR_API_TEXT , BAR_API_BROADCAST_TEXT , CALL_URL , EXP_BAR			#
+#       ICON_MENU , MERCHANT , SCOREBOARD , BUNGEE_TP , TITLE, BROADCAST_TITLE , ACTION_BAR , BROADCAST_ACTION_BAR	#
+#		HOLOGRAPHIC_TEXT , BROADCAST_HOLOGRAPHIC_TEXT , LIVE_CHAT , BOOK , RAW_BOOK, ANVIL_GUI , SIGN_MENU 			#
+#																													#
+#	If your command is "TEXT" type, you can put multiple line of text below this parameter							#
+#	You can do the same thing with the "RUN_COMMAND" type, but instead of text, puts commands in this list			#
+#	For delayed command(s) add $delay$ before the command in runcmd Example : - $delay$/list						#
+#	Set delay time with delaytimer: 5 (5 = seconds) | 																#
+#   If you are using the Vault plugin, you can put the "cost: 123.0" with this line. 								#
+#	You can customize your permission node by placing "permission-node:" field in a command							#
+#	Change the permission error message with "permission-error:" or create a command without permission required	#
+#   with "permission-required: false". Custom error-message for invalid args, use "error-message:"					#
+#   You can use itemcost : 'ID:AMOUNT' for set a cost with items. 													#
+#   Register REAL commands putting "register: true" below the command. Those are recognized from other plugins.    	#
+#   With register commands you can use the "tab_completer: - Hi - Hello!"											#
+#   For Scripts and more features, find more on the bukkitdev page													#
+#-------------------------------------------------------------------------------------------------------------------#
+# removecebangtoc:
+  # command: /xoacebangtocabcxyz123456
+  # type: RUN_AS_OPERATOR
+  # runcmd:
+  # - /ae unenchant tocsamac
+  # permission-required: false
+# removecesamactoc:
+  # command: /xoacesamactocabcxyz123456
+  # type: RUN_AS_OPERATOR
+  # runcmd:
+  # - /ae unenchant tocbang
+  # permission-required: false
+# lacxingau:
+  # command: /lacxingau
+  # type: RUN_COMMAND_RANDOM
+  # runcmd:
+  # - '/xingau1'
+  # - '/xingau2'
+  # - '/xingau3'
+  # - '/xingau4'
+  # - '/xingau5'
+  # - '/xingau6'
+# xingau1:
+  # command: /xingau1
+  # type: RUN_CONSOLE
+  # runcmd:
+  # - '$broadcasttext$&e&l%player_name% &fđang tung xí ngầu:'
+  # - '$delay$'
+  # - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK:1.0F:1'
+  # - '$broadcasttext$&f&l...'
+  # - '$delay$'
+  # - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK:1.0F:1'
+  # - '$broadcasttext$&f&l...'
+  # - '$delay$'
+  # - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK:1.0F:1'
+  # - '$broadcasttext$&f&l...'
+  # - '$delay$'
+  # - '%PlayerOptions%playSound: ENTITY_EXPERIENCE_ORB_PICKUP:1.0F:1'
+  # - '$broadcasttext$&f&l...'
+  # - '$broadcasttext$&e&l%player_name% &fđã tung ra &a1 nút&f!  
+thongtintop:
+  command: /thongtintop
+  type: RUN_CONSOLE
+  runcmd:
+  - '$text$&6&l&m---------&e&l《TOP ĐẢO THÁNG &7(SkyBlock 2 MineAhihi)&e&l》&6&l&m---------'
+  - '$text$&6&l 1. &e%topphuquy_group_owner_top_SUPERIORSKYBLOCK2_1% &7- %topphuquy_group_point_top_SUPERIORSKYBLOCK2_1% &7(&b600⛁&7)'
+  - '$text$&6&l 2. &e%topphuquy_group_owner_top_SUPERIORSKYBLOCK2_2% &7- %topphuquy_group_point_top_SUPERIORSKYBLOCK2_2% &7(&b550⛁&7)'
+  - '$text$&6&l 3. &e%topphuquy_group_owner_top_SUPERIORSKYBLOCK2_3% &7- %topphuquy_group_point_top_SUPERIORSKYBLOCK2_3% &7(&b500⛁&7)'
+  - '$text$&6&l 4. &e%topphuquy_group_owner_top_SUPERIORSKYBLOCK2_4% &7- %topphuquy_group_point_top_SUPERIORSKYBLOCK2_4% &7(&b450⛁&7)'
+  - '$text$&6&l 5. &e%topphuquy_group_owner_top_SUPERIORSKYBLOCK2_5% &7- %topphuquy_group_point_top_SUPERIORSKYBLOCK2_5% &7(&b400⛁&7)'
+  - '$text$&6&l 6. &e%topphuquy_group_owner_top_SUPERIORSKYBLOCK2_6% &7- %topphuquy_group_point_top_SUPERIORSKYBLOCK2_6% &7(&b350⛁&7)'
+  - '$text$&6&l 7. &e%topphuquy_group_owner_top_SUPERIORSKYBLOCK2_7% &7- %topphuquy_group_point_top_SUPERIORSKYBLOCK2_7% &7(&b300⛁&7)'
+  - '$text$&6&l 8. &e%topphuquy_group_owner_top_SUPERIORSKYBLOCK2_8% &7- %topphuquy_group_point_top_SUPERIORSKYBLOCK2_8% &7(&b250⛁&7)'
+  - '$text$&6&l 9. &e%topphuquy_group_owner_top_SUPERIORSKYBLOCK2_9% &7- %topphuquy_group_point_top_SUPERIORSKYBLOCK2_9% &7(&b200⛁&7)'
+  - '$text$&6&l 10. &e%topphuquy_group_owner_top_SUPERIORSKYBLOCK2_10% &7- %topphuquy_group_point_top_SUPERIORSKYBLOCK2_10%  &7(&b150⛁&7)'
+  - '$text$&7     '
+  - '$text$&6&l&m--------&e&l《&6.&e.&6&lTOP 5 NÔNG SẢN TUẦN &7(SkyBlock 2 MineAhihi)&e.&6.&e&l》&6&l&m--------'
+  - '$text$&6&l1. &e%leaderheads_name_scyther_total_sugarcanes_weekly_1% &7(&dx4 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘ &e+ &dx1 &C◆&d&lPHÙ THỦY&C◆&7)'
+  - '$text$&6&l2. &e%leaderheads_name_scyther_total_sugarcanes_weekly_2% &7(&dx3 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘ &e+ &dx1 &C◆&d&lPHÙ THỦY&C◆&7)'
+  - '$text$&6&l3. &e%leaderheads_name_scyther_total_sugarcanes_weekly_3% &7(&dx2 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘ &e+ &dx1 &C◆&d&lPHÙ THỦY&C◆&7)'
+  - '$text$&6&l4. &e%leaderheads_name_scyther_total_sugarcanes_weekly_4% &7(&dx1 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘ &e+ &dx1 &C◆&d&lPHÙ THỦY&C◆&7)'
+  - '$text$&6&l5. &e%leaderheads_name_scyther_total_sugarcanes_weekly_5% &7(&dx1 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&7)'
+  - '$text$&7     '
+  - '$text$&6&l&m---------&e&l《TOP NẠP THẺ THÁNG &7(SkyBlock 2 MineAhihi)&e&l》&6&l&m---------'
+  - '$text$&6&l 1. &e%tst_top_month_1%'
+  - '$text$&6&l 2. &e%tst_top_month_2%'
+  - '$text$&6&l 3. &e%tst_top_month_3%'
+  - '$text$&6&l 4. &e%tst_top_month_4%'
+  - '$text$&6&l 5. &e%tst_top_month_5%'
+  - '$text$&6&l 6. &e%tst_top_month_6%'
+  - '$text$&6&l 7. &e%tst_top_month_7%'
+  - '$text$&6&l 8. &e%tst_top_month_8%'
+  - '$text$&6&l 9. &e%tst_top_month_9%'
+  - '$text$&6&l 10. &e%tst_top_month_10%'
+  error-message: '&cDùng: /thongtintop'
+  delaytimer: 1
+  delaytimer_format: SECONDS
+  permission-required: true
+  
+
+nhanquatop:
+  command: /nhanquatop
+  type: RUN_AS_OPERATOR
+  runcmd: 
+  - '/src nhanqua'
+  permission-required: false
+  
+dungeontet:
+  command: /dungeon tet
+  type: RUN_AS_OPERATOR
+  runcmd: 
+  - '/warp dungeontet'
+  permission-required: false
+mission:
+  command: /c
+  type: RUN_AS_OPERATOR
+  runcmd: 
+  - '/is missions'
+  permission-required: false
+istop:
+  command: /is top
+  type: RUN_AS_OPERATOR
+  runcmd: 
+  - '/topphuquy'
+  permission-required: false 
+istop2:
+  command: /istop
+  type: RUN_AS_OPERATOR
+  runcmd: 
+  - '/topphuquy'
+  permission-required: false    
+skill:
+  command: /skill
+  type: RUN_AS_OPERATOR
+  runcmd: 
+  - '/mim open main-menu %player_name%'
+  permission-required: false
+
+heal:
+  command: /heal
+  type: ALIAS
+  alias: /eheal
+  permission-required: false
+x2reload:
+  command: /x2reload
+  type: RUN_COMMAND
+  runcmd:
+  - '/tab reload'
+  - '/tst reload'
+  - '/msa reload'
+#xacminhrobot:
+#  command: /kickrobot
+#  type: RUN_COMMAND
+#  runcmd:
+#  - '$text$&8[&4Alert&8]&r'
+#test:
+#  command: /test
+#  type: RUN_COMMAND
+#  runcmd:
+#  - '$text$&6&l&m----------- &e&l《&6&lMINE&f&lAHIHI&f.&f&lCOM&e&l》&6&l&m-----------'
+#  - '$text$&cMời các bạn vào kênh của youtuber &4&l&nDragons VN'
+#  - '$text$&cđể xem livestream Bedwars!!!'
+#  - '$text$&6&l&m-------------------------------------'
+discord:
+  command: /discord
+  type: TEXT
+  text:
+  - '&f&lDiscord: &9https://discord.gg/mineahihi-623505246857068554'
+  permission-required: false
+#opensukien:
+#  command: /opensukien
+#  type: RUN_AS_OPERATOR
+#  runcmd:
+#  - '/ecraft open sukien'
+#  permission-required: false
+quaytrovespawn:
+  command: /quaytrovespawn
+  type: RUN_COMMAND
+  runcmd:
+  - '/spawn'
+  permission-required: false
+help:
+  command: /help
+  type: RUN_COMMAND
+  runcmd:
+  - '$text$&6&l[&e&l!&6&l] &6Xem hướng dẫn cách chơi, cày đồ tại đây &ehttps://youtu.be/z6TIrVCpZwA &6!'
+  - '/chestcommands open huongdan %player_name%'
+  permission-required: false
+ss:
+  command: /ss
+  type: ALIAS
+  alias: /silkspawners
+  permission-required: true
+island:
+  command: /is
+  type: ALIAS
+  alias: /island
+  permission-required: false  
+gamemode_alias:
+  command: /gm
+  type: ALIAS
+  alias: /gamemode
+  permission-required: true
+traofarmtop1:
+  command: /traofarmtop
+  type: RUN_COMMAND
+  runcmd:
+  - '$broadcasttext$&6&l&m--------&e&l《TOP NÔNG SẢN》&6&l&m--------'
+  - '$broadcasttext$&6&lChúc mừng các bạn sau:'
+  - '$broadcasttext$&6&l1. &e$arg1 &7(&dx4 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘ &e+ &dx1 &C◆&d&lPHÙ THỦY&C◆&7)'
+  - '$broadcasttext$&6&l2. &e$arg2 &7(&dx3 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘ &e+ &dx1 &C◆&d&lPHÙ THỦY&C◆&7)'
+  - '$broadcasttext$&6&l3. &e$arg3 &7(&dx2 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘ &e+ &dx1 &C◆&d&lPHÙ THỦY&C◆&7)'
+  - '$broadcasttext$&6&l4. &e$arg4 &7(&dx1 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘ &e+ &dx1 &C◆&d&lPHÙ THỦY&C◆&7)'
+  - '$broadcasttext$&6&l5. &e$arg5 &7(&dx1 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&7)'
+  - '$broadcasttext$&6&l&m--------&e&l《&6&lMINE&f&lAHIHI&f.&f&lCOM&e&l》&6&l&m--------'
+  - '/crazycrates give p Thuongco 4 ThatCorona'
+  - '/crazycrates give p Phuthuy 1 ThatCorona'
+  - '/inv $arg1'
+  - '$delay$'
+  - '/crazycrates give p Thuongco 3 ThatCorona'
+  - '/crazycrates give p Phuthuy 1 ThatCorona'
+  - '/inv $arg2'
+  - '$delay$'
+  - '/crazycrates give p Thuongco 2 ThatCorona'
+  - '/crazycrates give p Phuthuy 1 ThatCorona'
+  - '/inv $arg3'
+  - '$delay$'
+  - '/crazycrates give p Thuongco 1 ThatCorona'
+  - '/crazycrates give p Phuthuy 1 ThatCorona'
+  - '/inv $arg4'
+  - '$delay$'
+  - '/crazycrates give p Thuongco 1 ThatCorona'
+  - '/inv $arg5'
+  error-message: '&cDùng: /traofarmtop &7<top1> <top2> <top3> <top4> <top5>'
+  require_all_arguments: true
+  delaytimer: 6
+  delaytimer_format: SECONDS
+  permission-required: true
+traokothtop1:
+  command: /traokothtop
+  type: RUN_COMMAND
+  runcmd:
+  - '$broadcasttext$&6&l&m---------&e&l《TOP ĐỊA BÀN》&6&l&m---------'
+  - '$broadcasttext$&6&lChúc mừng các bạn sau:'
+  - '$broadcasttext$&6&l1. &e$arg1 &7(&b200⛁&7)'
+  - '$broadcasttext$&6&l2. &e$arg2 &7(&b180⛁&7)'
+  - '$broadcasttext$&6&l3. &e$arg3 &7(&b160⛁&7)'
+  - '$broadcasttext$&6&l4. &e$arg4 &7(&b140⛁&7)'
+  - '$broadcasttext$&6&l5. &e$arg5 &7(&b120⛁&7)'
+  - '$broadcasttext$&6&l&m--------&e&l《&6&lMINE&f&lAHIHI&f.&f&lCOM&e&l》&6&l&m--------'
+  - '/points give $arg1 200'
+  - '/points give $arg2 180'
+  - '/points give $arg3 160'
+  - '/points give $arg4 140'
+  - '/points give $arg5 120'
+  - '$delay$'
+  - '/points look $arg1'
+  - '$delay$'
+  - '/points look $arg2'
+  - '$delay$'
+  - '/points look $arg3'
+  - '$delay$'
+  - '/points look $arg4'
+  - '$delay$'
+  - '/points look $arg5'
+  error-message: '&cDùng: /traokothtop &7<top1> <top2> <top3> <top4> <top5>'
+  require_all_arguments: true
+  delaytimer: 10
+  delaytimer_format: TICKS
+  permission-required: true
+trao75kothtop1:
+  command: /trao75kothtop
+  type: RUN_COMMAND
+  runcmd:
+  - '$broadcasttext$&6&l&m---------&e&l《TOP ĐỊA BÀN》&6&l&m---------'
+  - '$broadcasttext$&6&lChúc mừng các bạn sau:'
+  - '$broadcasttext$&6&l1. &e$arg1 &7(&b150⛁&7) &2(75%)'
+  - '$broadcasttext$&6&l2. &e$arg2 &7(&b135⛁&7) &2(75%)'
+  - '$broadcasttext$&6&l3. &e$arg3 &7(&b120⛁&7) &2(75%)'
+  - '$broadcasttext$&6&l4. &e$arg4 &7(&b105⛁&7) &2(75%)'
+  - '$broadcasttext$&6&l5. &e$arg5 &7(&b90⛁&7) &2(75%)'
+  - '$broadcasttext$&6&l&m--------&e&l《&6&lMINE&f&lAHIHI&f.&f&lCOM&e&l》&6&l&m--------'
+  - '/points give $arg1 150'
+  - '/points give $arg2 135'
+  - '/points give $arg3 120'
+  - '/points give $arg4 105'
+  - '/points give $arg5 90'
+  - '$delay$'
+  - '/points look $arg1'
+  - '$delay$'
+  - '/points look $arg2'
+  - '$delay$'
+  - '/points look $arg3'
+  - '$delay$'
+  - '/points look $arg4'
+  - '$delay$'
+  - '/points look $arg5'
+  error-message: '&cDùng: /trao75kothtop &7<top1> <top2> <top3> <top4> <top5>'
+  require_all_arguments: true
+  delaytimer: 10
+  delaytimer_format: TICKS
+  permission-required: true
+traoislandtop1:
+  command: /traoislandtop
+  type: RUN_COMMAND
+  runcmd:
+  - '$broadcasttext$&6&l&m---------&e&l《TOP ĐẢO》&6&l&m---------'
+  - '$broadcasttext$&6&lChúc mừng các bạn sau:'
+  - '$broadcasttext$&6&l 1. &e$arg1 &7(&b600⛁&7)'
+  - '$broadcasttext$&6&l 2. &e$arg2 &7(&b550⛁&7)'
+  - '$broadcasttext$&6&l 3. &e$arg3 &7(&b500⛁&7)'
+  - '$broadcasttext$&6&l 4. &e$arg4 &7(&b450⛁&7)'
+  - '$broadcasttext$&6&l 5. &e$arg5 &7(&b400⛁&7)'
+  - '$broadcasttext$&6&l 6. &e$arg6 &7(&b350⛁&7)'
+  - '$broadcasttext$&6&l 7. &e$arg7 &7(&b300⛁&7)'
+  - '$broadcasttext$&6&l 8. &e$arg8 &7(&b250⛁&7)'
+  - '$broadcasttext$&6&l 9. &e$arg9 &7(&b200⛁&7)'
+  - '$broadcasttext$&6&l 10. &e$arg10 &7(&b150⛁&7)'
+  - '$broadcasttext$&6&l&m--------&e&l《&6&lMINE&f&lAHIHI&f.&f&lCOM&e&l》&6&l&m--------'
+  - '/points give $arg1 600'
+  - '/points give $arg2 550'
+  - '/points give $arg3 500'
+  - '/points give $arg4 450'
+  - '/points give $arg5 400'
+  - '/points give $arg6 350'
+  - '/points give $arg7 300'
+  - '/points give $arg8 250'
+  - '/points give $arg9 200'
+  - '/points give $arg10 150'
+  - '$delay$'
+  - '$delay$'
+  - '$delay$'
+  - '/points look $arg1'
+  - '$delay$'
+  - '/points look $arg2'
+  - '$delay$'
+  - '/points look $arg3'
+  - '$delay$'
+  - '/points look $arg4'
+  - '$delay$'
+  - '/points look $arg5'
+  - '$delay$'
+  - '/points look $arg6'
+  - '$delay$'
+  - '/points look $arg7'
+  - '$delay$'
+  - '/points look $arg8'
+  - '$delay$'
+  - '/points look $arg9'
+  - '$delay$'
+  - '/points look $arg10'
+  error-message: '&cDùng: /traofactiontop &7<top1> <top2> <top3> <top4> <top5> <top6> <top7> <top8> <top9> <top10>'
+  require_all_arguments: true
+  delaytimer: 10
+  delaytimer_format: TICKS
+  permission-required: true
+simple_dice:
+  command: /dice
+  type: RUN_COMMAND
+  runcmd:
+  - '/bc Chọn số ngẫu nhiên từ 1 - 100. &cKHÔNG SPAM, GHI SỐ 2 LẦN, ĐỔI SỐ &4(PHẠM LUẬT SẼ BỊ LOẠI)&a. Bắt đầu từ bây giờ!'
+  - '$broadcasttext$&f&l10s'
+  - '$delay$'
+  - '$broadcasttext$&f&l5s'
+  - '$delay$'
+  - '$broadcasttext$&7[&6Sổ Xố&7] &eCoconubs đã quay ra số &6&l$rnd100 &a&l$rnd100 &d&l$rnd100 &c&l$rnd100 !' 
+  permission-required: true
+  delaytimer: 5
+  delaytimer_format: SECONDS
+  permission-node: mycommand.cmd.dice
+  permission-error: "&a$player! , &2You can't use this command!"
+simple_dice2:
+  command: /dice2
+  type: RUN_COMMAND
+  runcmd:
+  - '$broadcasttext$&7[&6Sổ Xố&7] &eCoconubs đã quay ra số &6$rnd6 !'   
+  permission-required: true
+  delaytimer: 5
+  delaytimer_format: SECONDS
+  permission-node: mycommand.cmd.dice
+  permission-error: "&a$player! , &2You can't use this command!"  
+# tab_completer:
+  # command: /greets 
+  # type: RUN_COMMAND
+  # runcmd:
+  # - '$broadcasttext$&0[&e$player&0]&r $multiargs'
+  # required_args: 1
+  # register: true
+  # tab_completer:
+  # - Hi
+  # - Hello!
+  # - Well Met!
+  # command_description: "Greets people with a Broadcast"
+# shortcut:
+  # command: /l
+  # type: RUN_COMMAND
+  # runcmd:
+  # - '/list'
+  # cost: 0
+# mycmd_colors:
+  # command: /mycmd-colors
+  # type: TEXT
+  # text:
+  # - "&11 &22 &33 &44 &55 &66 &77 &88 &99 &00 &aa &bb &cc &dd &ee &ff"
+  # - "&nn&r &mm&r &ll&r &oo&r $random_color :D"
+  # permission-required: false
+# shortcut_with_arguments:
+  # command: /t
+  # type: RUN_COMMAND
+  # runcmd:
+  # - '/time $arg1 $arg2'
+  # cost: 0
+  # error-message: '&cType &e/t set day'
+  # require_all_arguments: true
+delay_example:
+  command: /countdown
+  type: RUN_COMMAND
+  runcmd:
+  - '$broadcasttext$&6[&eSổ Xố&6] &eChọn 1 số từ 0 - 200. Chọn 2 lần hoặc spam sẽ bị loại. Phần thưởng: x1 Key Thương Cổ.'
+  - '$delay$$broadcasttext$&6[&e!&6] &b3...'
+  - '$delay$$broadcasttext$&6[&e!&6] &a2...'
+  - '$delay$$broadcasttext$&6[&e!&6] &e1...'
+  - '$delay$$broadcasttext$&6[&e!&6] &fKết quả là: &c59'
+  cost: 0
+  delaytimer: 10
+  delaytimer_format: SECONDS
+# run_by_console:
+  # command: /mycmd-runconsole
+  # type: RUN_CONSOLE
+  # runcmd:
+  # - /say This message is getting performed by the console.
+  # cost: 0
+# warmups_cooldowns_info:
+  # command: /warmupsandcooldowns
+  # type: TEXT
+  # text:
+  # - 'Put your command over /warmupsandcooldowns'
+  # - 'And change type : from text to WARMUP for Warmups and COOLDOWN for Cooldowns'
+  # - 'adjust the warmup and cooldowns time with delaytimer'
+  # delaytimer: 5
+# add_permission:
+  # command: /command-to-override
+  # type: ADD_PERMISSION
+  # text:
+  # - '$6Add an extra permission to another existing command'
+  # permission-node: permission.name
+  # cost: 0
+# some_placeholders:
+  # command: /mycmd-playerinfo
+  # type: TEXT
+  # text:
+  # - '&2Player name : &a$player'
+  # - '&2World : &a$world'
+  # - '&2Health : &a$health &2Food : &a$food'
+  # - '&2Exp : &a$exp &2Level : &a$level'
+  # - '&2Gamemode : &a$gamemode'
+  # - '&2LastDamage : &a$lastdamage'
+# mycmd_list_command:
+  # command: /mycmd-online
+  # type: TEXT
+  # text:
+  # - '&2There are &a$online &2players online.'
+  # - '&a $ponline'
+clear_chat:
+  command: /clearchat
+  type: BROADCAST_TEXT
+  text:
+  - '%Repeat%100% '
+  - '&cĐã Xoá Chat'
+# shortcut_with_multiargs:
+  # command: /mycmd-shortcut
+  # type: RUN_COMMAND
+  # runcmd:
+  # - '/say $multiargs'
+# random_example:
+  # command: /rockpaperscissors
+  # type: RUN_COMMAND_RANDOM
+  # runcmd:
+  # - '/me Rock!'
+  # - '/me Paper!'
+  # - '/me Scissors!'
+# iconmenu_page1:
+  # command: /iconmenu
+  # type: ICON_MENU
+  # text:
+  # - 'POSITION:ITEM_NAME:ITEMDATA:COMMAND/MESSAGE:TITLE:DESCRIPTION;MULTILINES'
+  # - 'ITEM_NAME can also be ITEM_NAME;ENCHANTMENT_NAME;LEVEL'
+  # iconmenu_title: '&cMyCommand &4ItemMenu'
+  # iconmenu_size: 27
+  # iconmenu_commands:
+  # - 0:GOLDEN_APPLE:0:/help:&2Help:&aOpen the help menu
+  # - 1:COMPASS;DAMAGE_ALL;1:0:/mycmd:Menu:MyCommand menu
+  # - 9:EMERALD:0:/list:Player List:&bShow online players
+  # - 10:LEGACY_WATCH:0:/time set 0:Day:Turn day
+  # - 11:PLAYER_HEAD%$player:0:/command:Title:Description
+  # - 26:LEGACY_WOOL:11:%openiconmenu%/iconmenu2:Next Page:&cChange IconMenu Page;&a--------->
+  # cost: 0
+  # delaytimer: 5
+# iconmenu_page2:
+  # command: /iconmenu2
+  # type: ICON_MENU
+  # iconmenu_title: 'Page 2'
+  # iconmenu_size: 9
+  # iconmenu_commands:
+  # - '0:LEGACY_GOLDEN_APPLE:0:Do something:Hello!:=)'
+  # - '8:LEGACY_WOOL:13:%openiconmenu%/iconmenu:Return Back:&cChange IconMenu Page;&a<---------'
+  # cost: 0
+  # delaytimer: 5
+# help_page_0:
+  # command: /mycmd-help
+  # type: TEXT
+  # text:
+  # - '&a ---- &6MyCommand Help &eMain Page &a----'
+  # - '&e This is the Main page of the help '
+  # - '&e Type &6/mycmd-help 2 &efor see the second page'
+# help_page_1:
+  # command: /mycmd-help 2
+  # type: TEXT
+  # text:
+  # - '&a ---- &6MyCommand Help &ePage two &a----'
+  # - '&e And this is the page two of the help'
+# itemcost_example:
+  # command: /itemcostexample
+  # type: TEXT
+  # text:
+  # - '$random_colorYou have spent 5 Cobblestone for see this message.'
+  # itemcost: 'COBBLESTONE:5'
+ 
+# COMMAND TYPE : SCOREBOARD
+# The Scoreboard will get removed after DelayTimer(sec). If 0 don't remove
+# Use $marquee$ as a prefix of the scoreboard name to scroll the text.
+# Use scoreboard_refresh_ticks, to determinate how frequent the plugin have to update the scoreboard.  
+
+# scoreboard_example:
+  # command: /sbexample
+  # type: SCOREBOARD
+  # scoreboard_name: "$marquee$&1M&2y&3C&4o&5m&6m&7a&8n&9d &aS&bc&co&dr&ee&fb&0o&1a&2r&3d &6Example "
+  # scoreboard_text:
+  # - "4;&c&lCoordinates:"
+  # - "3;&6X:&e $locX &6Y:&e $locY &6Z:&e $locZ "
+  # - "2;&c&lPlayer Info:"
+  # - "1;&6Health: &e$health"
+  # - "0;&6Food: &e$food"
+  # scoreboard_refresh_ticks: 5
+  # delaytimer: 10
+  
+# Teleport to another server inside the same network using the following command type (BungeeCord required)
+bungeecord_example:
+  command: /hub
+  type: BUNGEE_TP
+  server_name: lobby1
+  permission-required: false
+  
+# Limit the command execution to only certain worlds :
+# allowed_worlds_example:
+  # command: /onlynether
+  # type: TEXT
+  # text:
+  # - "&cYea,The Nether!"
+  # allowed_worlds:
+  # - world_nether
+# per_world_commands:
+  # command: /perworldcommand
+  # type: RUN_COMMAND
+  # runcmd:
+  # - "$world=%world%/me This command will be performed only if you are in the world"
+  # - "$world=%world_nether%/me And this only if you are in the nether"
+  # permission-required: false
+  
+# # Let run the same command to all the players in the server
+# executefor_example:
+  # command: /executeforall
+  # type: RUN_CONSOLE
+  # executefor: ONLINE_PLAYERS
+  # runcmd:
+  # - "/tp $player 0 64 0"
+  # permission-required: true
+  
+# # Examples using %PlayerOptions% feature
+# ouch:
+  # command: /ouch
+  # type: RUN_COMMAND
+  # runcmd:
+  # - '%PlayerOptions%damage: 1'
+  # - '$text$&c<3'
+  # permission-required: true
+# heal_me:
+  # command: /mycmd-heal
+  # type: RUN_COMMAND
+  # runcmd:
+  # - '%PlayerOptions%setHealth: 20'
+  # - '%PlayerOptions%setFoodLevel: 20'
+  # - '%PlayerOptions%sendMessage: &aHealed!'
+  # permission-required: true
+  
+# # WorldGuard support
+# world_guard_example:
+  # command: /checkregion
+  # type: TEXT
+  # text:
+  # - 'You are in $wgregionname region!'
+  # allowed_wg_regions:
+  # - 'region_name_here'
+  
+# # Cooldown for custom commands.
+# custom_cmd_cooldown:
+  # command: /cooldown-example
+  # type: TEXT
+  # text:
+  # - '&aBla bla bla, type the command again for see the cooldown effect.'
+  # cooldown: 5
+# custom_cmd_warmup:
+  # command: /warmup-example
+  # type: TEXT
+  # text:
+  # - '&aYou have waited 5 second for see this command performed'
+  # warmup: 5
+  
+# # Retrieve data from the web
+# call_url:
+  # command: /call-url
+  # type: CALL_URL
+  # url: 'http://localhost/yourscript.php?variable=$arg1&player=$player'
+  # get_output : true
+  # show_output_ingame : true
+  # save_output_as : httpResponse
+  
+# # Script example
+# script_example_420:
+  # command: /example420
+  # type: RUN_COMMAND
+  # runcmd:
+  # - $Script$%if%$arg1==password
+  # - $text$&eRight!
+  # - $Script$%if%$arg1==420
+  # - $text$&aBLAZE IT
+  # - $Script$%else%
+  # - $text$Password not correct
+  
+# # BossBar example
+# bar_text:
+  # command: /bar_example
+  # type: BAR_API_TEXT
+  # text:
+  # - '&aHello $random_color$player'
+  # bar_seconds: 5
+  # bar_percentage: 8
+  # bar_style: SEGMENTED_20
+  # bar_flag: DARKEN_SKY
+  # bar_color: PINK
+  
+# # Clickable and hoverable text.
+# rawmessage_example:
+  # command: /raw-example
+  # type: RAW_TEXT
+  # text:
+  # - '&aHello &b$player! &aHover your mouse over me!; &dMAGIC'
+  # - '&0[&d*&0]&e Click me; &eClick Here for suggest the command &d/mycmd;/mycmd'
+  # - '$RUN_COMMAND$&0[&e*&0]&c Set the time to day; &eClick for Execute;/time set day'
+  # - '$OPEN_URL$&0[&e*&0]$random_color Open Google.com; &eClick for open;http://www.google.com'
+  
+# # A mix of the feature above
+# lottery_example:
+  # command: /lottery_example
+  # type: RUN_COMMAND
+  # runcmd:
+  # - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK:1.0F:1'
+  # - '$text$&6Welcome to &eMyCommand &6Lottery!'
+  # - '$delay$'
+  # - '$text$&b+------------------------------------'
+  # - '$text$&b| &2Prize of today :'
+  # - '$text$&b| &aCOBBLESTONE, BREAD, APPLE, GOLD_INGOT or DIAMOND! '
+  # - '$text$&b+------------------------------------'
+  # - '$text$&ePlease wait for the results!'
+  # - '$delay$$delay$$delay$'
+  # - '$delay$$text$&0[$random_colorLottery&0] &65...'
+  # - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK:1.0F:1'
+  # - '$delay$$text$&0[$random_colorLottery&0] &64...'
+  # - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK:1.0F:1'
+  # - '$delay$$text$&0[$random_colorLottery&0] &63...'
+  # - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK:1.0F:1'
+  # - '$delay$$text$&0[$random_colorLottery&0] &62...'
+  # - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK:1.0F:1'
+  # - '$delay$$text$&0[$random_colorLottery&0] &61...'
+  # - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK:1.0F:1'
+  # - '$delay$'
+  # - '%PlayerOptions%playSound: ENTITY_EXPERIENCE_ORB_PICKUP:1.0F:1'
+  # - '$Script$%PlayerData%amount_lotteryprize=$randomnumber%3%'
+  # - '$delay$'
+  # - '$text$&b+------------------------------------'
+  # - '$text$&b| &6Chúc mừng : &e $PlayerData%amount_lotteryprize% $PlayerData%lotteryprize%! ' 
+  # - '$text$&b+------------------------------------'
+  # - '%PlayerOptions%addItem: $PlayerData%lotteryprize%:$PlayerData%amount_lotteryprize%'
+  # delaytimer: 1
+# dailybonus:
+  # command: /dailybonus
+  # type: RUN_COMMAND
+  # runcmd:
+  # - "$Script$%if%$todaydate!=$PlayerData%DailyBonus%"
+  # - "$text$&0[&6Daily&eBonus&0]&b Hello $player! Here, your daily reward!"
+  # - "$text$&0[&6Daily&eBonus&0]&b Received &a1 DIAMOND!"
+  # - "%PlayerOptions%addItem: DIAMOND:1"
+  # - "$Script$%PlayerData%DailyBonus=$todaydate"
+  # - "$text$&0[&6Daily&eBonus&0]&b Come back tomorrow!"
+  # - "$Script$%else%"
+  # - "$text$&0[&6Daily&eBonus&0]&b That's enough for today! Come back tomorrow!"
+  # permission-required: false
+
+# broadcast_message_with_perm:
+  # command: /brmsgwithperm
+  # type: BROADCAST_TEXT
+  # text:
+  # - "Only the player with the correct permission can see this message"
+  # broadcast_message_permission_node: permission.for.see.this.message
+
+# dynamiciconmenu:
+  # command: /dynamiciconmenu
+  # type: ICON_MENU
+  # iconmenu_size: 36
+  # iconmenu_mode: DYNAMIC
+  # permission-required: false
+  # iconmenu_commands:
+  # - "0:LIME_WOOL<next>YELLOW_WOOL:5:%stayopen%: : "
+  # - "1:YELLOW_WOOL<next>LIME_WOOL:4:%stayopen%: : "
+  # - "2:LIME_WOOL<next>YELLOW_WOOL:5:%stayopen%: : "
+  # - "3:YELLOW_WOOL<next>LIME_WOOL:4:%stayopen%: : "
+  # - "4:LIME_WOOL<next>YELLOW_WOOL:5:%stayopen%: : "
+  # - "5:YELLOW_WOOL<next>LIME_WOOL:4:%stayopen%: : "
+  # - "6:LIME_WOOL<next>YELLOW_WOOL:5:%stayopen%: : "
+  # - "7:YELLOW_WOOL<next>LIME_WOOL:4:%stayopen%: : "
+  # - "8:LIME_WOOL<next>YELLOW_WOOL:5:%stayopen%: : "
+  # - "9:YELLOW_WOOL<next>LIME_WOOL:4:%stayopen%: : "
+  # - "11:CLOCK:0:%stayopen%:&aServer time - $random_color$time:&bToday Date - &6 $todaydate"
+  # - "13:BEACON:0:/mycmd:&6MyCommand:&eLaunch MyCommand"
+  # - "15:ENDER_PEARL<next>ENDER_EYE<next>AIR:0:%stayopen%:???<next>!!!<next>AIR: "
+  # - "17:YELLOW_WOOL<next>LIME_WOOL:4:/command_example: : "
+  # - "18:LIME_WOOL<next>YELLOW_WOOL:5:/command_example: : "
+  # - "19:BOOK<next>2,BOOK<next>3,BOOK:0:%stayopen%:$random_colorPage 1<next>$random_colorPage 2<next>$random_colorPage 3:1<next>2<next>3"
+  # - "22:1,IRON_CHESTPLATE<next>GOLDEN_CHESTPLATE;PROTECTION_ENVIRONMENTAL;1<next>DIAMOND_CHESTPLATE;PROTECTION_EXPLOSIONS;3:0:/command_example::Description;Line 2..."
+  # - "25:BARRIER:0:%close%:Close this menu:&cClick here;&cto close"
+  # - "26:LIME_WOOL<next>YELLOW_WOOL:5:%stayopen%: : "
+  # - "27:YELLOW_WOOL<next>LIME_WOOL:4:%stayopen%: : "
+  # - "28:LIME_WOOL<next>YELLOW_WOOL:5:%stayopen%: : "
+  # - "29:YELLOW_WOOL<next>LIME_WOOL:4:%stayopen%: : "
+  # - "30:LIME_WOOL<next>YELLOW_WOOL:5:%stayopen%: : "
+  # - "31:YELLOW_WOOL<next>LIME_WOOL:4:%stayopen%: : "
+  # - "32:LIME_WOOL<next>YELLOW_WOOL:5:%stayopen%: : "
+  # - "33:YELLOW_WOOL<next>LIME_WOOL:4:%stayopen%: : "
+  # - "34:LIME_WOOL<next>YELLOW_WOOL:5:%stayopen%: : "
+  # - "35:YELLOW_WOOL<next>LIME_WOOL:4:%stayopen%: : "
+  # delaytimer: 2
+# holographic_example:
+  # command: /holoexample
+  # type: HOLOGRAPHIC_TEXT
+  # text:
+  # - "&eHello $player, how are you?"
+  # - "$random_coloryeah, i'm fineeeee thanks!"
+  # - "&dCurrent time &5$time"
+  # delaytimer: 3
+# merchant_example:
+  # command: /mymerchant
+  # type: MERCHANT
+  # merchant_title: '&3Hello &b$player'
+  # merchant_items:
+  # - STONE_SWORD:1:0:DAMAGE_ALL;1;FIRE_ASPECT;1:&3Old Sword:&bA very old sword<cost>GOLD_INGOT:20<max_uses>2
+  # - STONE_SWORD:1<cost>EMERALD:5<max_uses>4
+  # - IRON_BLOCK:1<cost>EMERALD:1<cost>GOLD_INGOT:1
+  # - GOLD_BLOCK:1<cost>IRON_INGOT:10
+  # - EMERALD_BLOCK:1<cost>GOLD_INGOT:50
+  # - DIAMOND_BLOCK:1<cost>GOLD_INGOT:50<cost>EMERALD:50
+  # - LEVER:1
+  # - COBBLESTONE:1
+# my_custom_logger:
+ # command: /mylog
+ # type: RUN_COMMAND
+ # runcmd:
+  # - "$text$&aThis log file is getting saved in &2/MyCommand/logs/filename.log"
+  # - "$log$[$player] $multiargs"
+ # log_filename: filename.log
+# multi_type_example:
+ # command: /multitype_ex
+ # type:
+ # - TEXT
+ # - RUN_COMMAND
+ # text:
+ # - This is the text part
+ # runcmd:
+ # - /say And here the commands.
+# anvil_gui:
+ # command: /anvil_gui
+ # type: ANVIL_GUI
+ # anvil_title: '&eMyCommand &6ANVIL'
+ # anvil_slot_text: write here
+ # anvil_commands:
+ # - $text$ $player, you typed $output
+ # - /broadcast $output
+ # - '%openiconmenu%/iconmenu $output'
+# celist:
+  # command: /celist
+  # type: RAW_TEXT
+  # permission-required: false
+  # text:
+  # - '&f| &e&l* Sách cường hóa MineAhihi:'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &a&lKiếm;&bNhấn vào để xem các sách cường hóa của &b&l&nKiếm;/celistsword1'
+  # - '$RUN_COMMAND$&f| &a&lRìu;&bNhấn vào để xem các sách cường hóa của &b&l&nRìu;/celistaxe1'
+  # - '$RUN_COMMAND$&f| &a&lCung;&bNhấn vào để xem các sách cường hóa của &b&l&nCung;/celistbow1'
+  # - '$RUN_COMMAND$&f| &a&lDụng cụ;&bNhấn vào để xem các sách cường hóa của &b&l&nDụng Cụ;/celisttool1'
+  # - '$RUN_COMMAND$&f| &a&lMũ;&bNhấn vào để xem các sách cường hóa của &b&l&nMũ;/celisthelmet1'
+  # - '$RUN_COMMAND$&f| &a&lÁo Giáp;&bNhấn vào để xem các sách cường hóa của &b&l&nÁo Giáp;/celistchestplate1'
+  # - '$RUN_COMMAND$&f| &a&lQuần;&bNhấn vào để xem các sách cường hóa của &b&l&nQuần;/celistleggings1'
+  # - '$RUN_COMMAND$&f| &a&lGiày;&bNhấn vào để xem các sách cường hóa của &b&l&nGiày;/celistboots1'
+  # - '$RUN_COMMAND$&f| &a&lFull Set;&bNhấn vào để xem các sách cường hóa của &b&l&nFull Set;/celistarmor1'  
+  # - '$RUN_COMMAND$&f| &8(&6&lCác loại sách cường hóa&8);&bNhấn vào để xem các loại sách cường hóa;/celist2'  
+  # - '&f| '
+  # - '&f| &e&l(!) &eNhấn chuột vào để xem danh sách.'
+  # - ''
+# celist2:
+  # command: /celist2
+  # type: RAW_TEXT
+  # permission-required: false  
+  # text:
+  # - ''  
+  # - '&f| &e&lSách cường hóa MineAhihi:'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &7&lCũ;&bNhấn vào để xem các sách cường hóa &7&l&nCũ;/celistcu1'
+  # - '$RUN_COMMAND$&f| &a&lHiếm;&bNhấn vào để xem các sách cường hóa &a&l&nHiếm;/celisthiem1'
+  # - '$RUN_COMMAND$&f| &b&lCổ;&bNhấn vào để xem các sách cường hóa &b&l&nCổ;/celistco1'
+  # - '$RUN_COMMAND$&f| &e&lSiêu Cổ;&bNhấn vào để xem các sách cường hóa &e&l&nSiêu Cổ;/celistsieuco1'
+  # - '$RUN_COMMAND$&f| &6&lHuyền Thoại;&bNhấn vào để xem các sách cường hóa &6&l&nHuyền Thoại;/celisthuyenthoai1'
+  # - '$RUN_COMMAND$&f| &d&lTruyền Thuyết;&bNhấn vào để xem các sách cường hóa &d&l&nTruyền Thuyết;/celisttruyenthuyet1'
+  # - '$RUN_COMMAND$&f| &c&lLinh Hồn;&bNhấn vào để xem các sách cường hóa &c&l&nLinh Hồn;/celistlinhhon1'
+  # - '$RUN_COMMAND$&f| &d⚔&f&lThách Đấu&d⚔&r;&bNhấn vào để xem các sách cường hóa &d⚔&f&lThách Đấu&d⚔&r;/celistthachdau1'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# celistsword1:
+  # command: /celistsword1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nKiếm&r &b&l(&d&l1&b&l/&d&l4&b&l)'
+  # - '&f| '
+  # - '&f| &7&lSuy Kiệt;&7&l&nSuy Kiệt I-VII<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fSuy kiệt sẽ làm cho đối thủ<newline>&fđi chậm ,đào chậm và buồn nôn.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &a&lChém Nhanh;&a&l&nChém Nhanh I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn sẽ chém nhanh hơn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &a&lHút Exp;&a&l&nHút Exp I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHút Exp của đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lChoáng;&b&l&nChoáng I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChoáng sẽ làm mù đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lTử Hình;&b&l&nTử Hình I-VII<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTử hình sẽ tung đòn chí mạng khi đối<newline>thủ của bạn đang yếu máu.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lTê Liệt;&b&l&nTê Liệt I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐối thủ sẽ bị sét đánh và làm chậm.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lĐộc;&b&l&nĐộc I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐộc sẽ khiến đối thủ<newline>của bạn sẽ bị nhiễm độc.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lPhá Giáp;&b&l&nPhá Giáp I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fPhá giáp sẽ làm độ bền giáp của<newline>đối thủ mất nhiều hơn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lBẫy Titan;&b&l&nBẫy Titan I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBẫy Titan gây hiệu ứng<newline>siêu chậm cho đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lMa Cà Rồng;&b&l&nMa Cà Rồng I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHút máu đối thủ khi chiến đấu.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7- <and>$RUN_COMMAND$&8&l(&bTrang &32&8&l) &d&l»;;/celistsword2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# celistsword2:
+  # command: /celistsword2
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh sách cường hoá dành cho &b&l&nKiếm&r &b&l(&d&l2&b&l/&d&l4&b&l)'
+  # - '&f| '
+  # - '&f| &b&lChặt;&b&l&nChặt I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây sát thương lớn đối với<newline>&fngười chơi đang sử dụng cung.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &b&lMa Hải Tặc (Looting);&b&l&nMa Hải Tặc (Looting) I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng đồ drop<newline>&ftừ Ma hải tặc (Lv1=x2,Lv2=x3,..)!<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &e&lÁm Sát;&e&l&nÁm Sát I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn càng ở gần kẻ thù, bạn càng gây ra nhiều<newline>&fsát thương (lên tới 1,25 lần). Tuy nhiên,nếu<newline>bạn ở cách xa hơn 2 khối, bạn sẽ gây sát thương ÍT hơn bình thường.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &e&lLật Kèo;&e&l&nLật Kèo I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGiảm sát thương đối thương đối phương<newline>&fvà tăng sát thương đòn đánh trong 1 đòn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lGiận Dữ;&e&l&nGiận Dữ I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng thêm sát thương khi máu của bạn thấp.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lBão Tuyết;&e&l&nBão Tuyết I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây ra hiệu ứng chậm<newline>&fchạp lên đối thủ của bạn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lPhá Hoại;&e&l&nPhá Hoại I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTấn công làm giảm độ bền của áo giáp<newline>&fcủa đối thủ với mỗi đòn tấn công.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lThống Trị;&e&l&nThống Trị I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây suy yếu cho đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lNhện Yêu Tinh (Looting);&e&l&nNhện Yêu Tinh (Looting) I-II<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng đồ drop<newline>&ftừ Nhện yêu tinh (Lv1=x2,Lv2=x3,..)!<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lPhù Thuỷ Đen (Looting);&e&l&nPhù Thuỷ Đen (Looting) I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng đồ drop<newline>&ftừ Phù thủy đen (Lv1=x2,Lv2=x3,..)!<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l2&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &31&8&l);;/celistsword1<and>   <and>$RUN_COMMAND$&8&l(&bTrang &33&8&l) &d&l»;;/celistsword3'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# celistsword3:
+  # command: /celistsword3
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh sách cường hoá dành cho &b&l&nKiếm&r &b&l(&d&l3&b&l/&d&l4&b&l)'
+  # - '&f| '
+  # - '&f| &e&lKháng Ma;&e&l&nKháng Ma I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKháng tàng hình khi PvP.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lGấp Bội;&6&l&nGấp Bội I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCộng dồn sát thương mà đối thủ<newline>đã gây lên bạn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lNội Năng;&6&l&nNội Năng I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChặn sát thương<newline>và hồi từ 1 đến 3 máu.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lHút Máu;&6&l&nHút Máu I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHút máu đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lHận Thù;&6&l&nHận Thù I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCombo đối thủ<newline>làm cộng dồn sát thương tấn công.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lThanh Tẩy;&6&l&nThanh Tẩy I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fDập tắt các sức mạnh cường hóa của kẻ thù.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lTrừng Phạt;&6&l&nTrừng Phạt I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCuốn sách của thần Hy Lạp sẽ giúp bạn tăng<newline>sát thương khi chiến đấu với quái vật Địa Ngục.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &d&lHoàng Bào;&d&l&nHoàng Bào I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChặn 1 lượng sát thương lớn<newline>và phản lại đối thủ 1 lượng sát thương lớn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Lật Kèo<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &d&lBẫy Quái Vật;&d&l&nBẫy Quái Vật I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fLàm đối thủ bị chậm chạp 1 thời gian dài.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Bẫy Titan<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &d&lQuỷ Dữ;&d&l&nQuỷ Dữ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn sẽ hút máu vô cùng điên loạn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Hút Máu<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &d&lSát Thủ;&d&l&nSát Thủ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn càng ở gần kẻ thù,<newline>sát thương tăng càng cao.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Ám Sát<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'  
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l3&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &32&8&l);;/celistsword2<and>   <and>$RUN_COMMAND$&8&l(&bTrang &34&8&l) &d&l»;;/celistsword4'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# celistsword4:
+  # command: /celistsword4
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh sách cường hoá dành cho &b&l&nKiếm&r &b&l(&d&l4&b&l/&d&l4&b&l)'
+  # - '&f| '
+  # - '&f| &d&lSát Quỷ;&d&l&nSát Quỷ I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fPhiên bản nâng cấp tăng sát thương nhiều<newline>lần khi chiến đấu với quái vật Địa Ngục.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Trừng Phạt<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &c&lLửa Thần;&c&l&nLửa Thần I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fVũ khí của bạn sẽ thấm nhuần lửa thần,<newline>biến tất cả các đòn tấn công vật lý<newline>của bạn thành phép thuật. Xuất hiện hiệu ứng và<newline>bốc lửa thần lên tất cả kẻ thù<newline>gần đó.<newline>&fYêu cầu linh hồn: 75<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &c&lBẫy Hồn;&c&l&nBẫy Hồn I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fRìu của bạn được thấm nhuần<newline>ma thuật phong ấn và có cơ hội vô<newline>hiệu hóa các cường hóa linh hồn<newline>của đối thủ khi bị tấn công.<newline>&fYêu cầu linh hồn: 2<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&k&l..&r &e&lQuỷ dữ &6&k&l..&r &e&l;&6&k&l..&r &e&lQuỷ dữ &6&k&l..&r &e&l I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn sẽ hút máu vô cùng điên loạn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Quỷ Dữ<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &0&l&8✞ &8Trảm &8✞;&8✞ &8Trảm &8✞ I-II<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCho bạn xác xuất rơi đầu người khác<newline>sau khi tiêu diệt!<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &0&l↩ Cô độc ↪;&0&l↩ Cô độc ↪ I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fDập tắt sức mạnh hồi máu của Hạnh Phúc<newline>trong vài giây với sự cô độc của Quỷ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&l$ &6&lThần tài &e&l$;&e&l$ &6&lThần tài &e&l$ I-II<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTiêu diệt được 1 người chơi<newline>nhận được $$$ theo Level (1=300,2=600,3=950).<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &4&l☾ MA SÓI ☾;&4&l☾ MA SÓI ☾ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&cKhi trăng tròn vào lúc 10h<newline>&ctối người chơi sẽ hóa sói,<newline>&cđược tăng Sức Mạnh đến 3h sáng.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &f&l⁕ Bỏng Lạnh ⁕;&f&l⁕ Bỏng Lạnh ⁕ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây sát thương liên tục kèm theo<newline>&fđóng băng và suy yếu kẻ địch đang bị chậm.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu + Cung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&l☾&f&l✗&6&l☽ &6&lHổ Đấu &6&l☾&f&l✗&6&l☽;&6☾&f✗&6☽ &6&lHổ Đấu &6☾&f✗&6☽ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTrạng thái cuồng nộ, lấy đi khả<newline>&fnăng hồi máu và hấp thụ của địch,<newline>đòn đánh gây sát thương chuẩn<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &c&l❣ &d&lBùa Yêu &c&l❣;&c&l❣ &d&lBùa Yêu &c&l❣ I-II<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKhiến kẻ địch của bạn bị đắm<newline>&fchìm vào mê hoặc và bất động trong thời gian ngắn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu + Cung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l4&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &33&8&l);;/celistsword3'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# ##############################
+# celistaxe1:
+  # command: /celistaxe1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nRìu&r &b&l(&d&l1&b&l/&d&l3&b&l)'
+  # - '&f| '
+  # - '&f| &7&lMa Trận;&7&l&nMa Trận I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fMa trận sẽ khiến đối thủ<newline>&fbuồn nôn.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &a&lCuồng Nộ;&a&l&nCuồng Nộ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCuồng nộ sẽ cho bạn tăng sức tấn công<newline>&fnhưng bạn sẽ bị hiệu ứng chậm.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &a&lHồi Sức;&a&l&nHồi Sức I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHồi nhanh thanh thức ăn khi<newline>&fbạn đang chiến đấu.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lĐộc;&b&l&nĐộc I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐộc sẽ khiến đối thủ<newline>của bạn sẽ bị nhiễm độc.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lChậm Chạp;&b&l&nChậm Chạp I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fLàm chậm đối thủ<newline>trong một thời gian ngắn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lMa Hải Tặc (Looting);&b&l&nMa Hải Tặc (Looting) I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng đồ drop<newline>&ftừ Ma hải tặc (Lv1=x2,Lv2=x3,..)!<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lBảo Hộ;&e&l&nBảo Hộ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fLoại bỏ những hiệu ứng xấu.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &e&lNhiễm Khuẩn;&e&l&nNhiễm Khuẩn I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fNhững loại khuẩn sẽ ăn mòn trong cơ thể<newline>&frút máu kẻ địch trong 1 thời gian ngắn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lBổ Củi;&e&l&nBổ Củi I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương tấn công lớn<newline>&ftrong 1 thời gian ngắn khi Combo.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lKhát Máu;&e&l&nKhát Máu I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương Combo và làm giảm<newline>&ftốc độ di chuyển của đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7- <and>$RUN_COMMAND$&8&l(&bTrang &32&8&l) &d&l»;;/celistaxe2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# celistaxe2:
+  # command: /celistaxe2
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nRìu&r &b&l(&d&l2&b&l/&d&l3&b&l)'
+  # - '&f| '
+  # - '&f| &e&lNhện Yêu Tinh (Looting);&e&l&nNhện Yêu Tinh (Looting) I-II<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng đồ drop<newline>&ftừ Nhện yêu tinh (Lv1=x2,Lv2=x3,..)!<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lPhù Thuỷ Đen (Looting);&e&l&nPhù Thuỷ Đen (Looting) I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng đồ drop<newline>&ftừ Phù thủy đen (Lv1=x2,Lv2=x3,..)!<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lKháng Ma;&e&l&nKháng Ma I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKháng tàng hình khi PvP.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lMan Rợ;&6&l&nMan Rợ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương<newline>khi đối thủ đang cầm rìu.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lHận Thù;&6&l&nHận Thù I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCombo đối thủ<newline>làm cộng dồn sát thương tấn công.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lTự Rèn;&6&l&nTự Rèn I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChữa lành giáp bị hư hại<newline>và giảm sát thương của đối phương.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lCắn Xé;&6&l&nCắn Xé I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCộng dồn sát thương và đau hơn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lDại;&6&l&nDại I-VIII<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fx2 sát thương khi tấn công<newline>đối thủ cầm kiếm.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lTrừng Phạt;&6&l&nTrừng Phạt I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCuốn sách của thần Hy Lạp sẽ giúp bạn tăng<newline>sát thương khi chiến đấu với quái vật Địa Ngục.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &d&lSiêu Rèn;&d&l&nSiêu Rèn I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐộ bền của bạn sẽ được cải thiện<newline>khi chiến đấu và gây ra sát thương cao hơn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Tự Rèn<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l2&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &31&8&l);;/celistaxe1<and>   <and>$RUN_COMMAND$&8&l(&bTrang &33&8&l) &d&l»;;/celistaxe3'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# celistaxe3:
+  # command: /celistaxe3
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nRìu&r &b&l(&d&l3&b&l/&d&l3&b&l)'
+  # - '&f| '
+  # - '&f| &d&lSát Quỷ;&d&l&nSát Quỷ I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fPhiên bản nâng cấp tăng sát thương nhiều<newline>lần khi chiến đấu với quái vật Địa Ngục.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Trừng Phạt<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lĐẫm Máu;&d&l&nĐẫm Máu I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây chậm và tăng lượng sát thương Combo lớn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Khát Máu<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &c&lBẫy Hồn;&c&l&nBẫy Hồn I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fRìu của bạn được thấm nhuần<newline>ma thuật phong ấn và có cơ hội vô<newline>hiệu hóa các cường hóa linh hồn<newline>của đối thủ khi bị tấn công.<newline>&fYêu cầu linh hồn: 2<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &0&l&8✞ &8Trảm &8✞;&8✞ &8Trảm &8✞ I-II<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCho bạn xác xuất rơi đầu người khác<newline>sau khi tiêu diệt!<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &0&l↩ Cô độc ↪;&0&l↩ Cô độc ↪ I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fDập tắt sức mạnh hồi máu của Hạnh Phúc<newline>trong vài giây với sự cô độc của Quỷ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&l$ &6&lThần tài &e&l$;&e&l$ &6&lThần tài &e&l$ I-II<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTiêu diệt được 1 người chơi<newline>nhận được $$$ theo Level (1=300,2=600,3=950).<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &4&l☾ MA SÓI ☾;&4&l☾ MA SÓI ☾ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&cKhi trăng tròn vào lúc 10h<newline>&ctối người chơi sẽ hóa sói,<newline>&cđược tăng Sức Mạnh đến 3h sáng.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&l✿ Sự kiện ✿;&e&l✿ Sự kiện ✿ I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCường hóa này sẽ giúp bạn<newline>&fcày đồ sự kiện mỗi khi,<newline>&fserver có sự kiện.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu + Cúp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &f&l⁕ Bỏng Lạnh ⁕;&f&l⁕ Bỏng Lạnh ⁕ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây sát thương liên tục kèm theo<newline>&fđóng băng và suy yếu kẻ địch đang bị chậm.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu + Cung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&l☾&f&l✗&6&l☽ &6&lHổ Đấu &6&l☾&f&l✗&6&l☽;&6☾&f✗&6☽ &6&lHổ Đấu &6☾&f✗&6☽ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTrạng thái cuồng nộ, lấy đi khả<newline>&fnăng hồi máu và hấp thụ của địch,<newline>đòn đánh gây sát thương chuẩn<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &c&l❣ &d&lBùa Yêu &c&l❣;&c&l❣ &d&lBùa Yêu &c&l❣ I-II<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKhiến kẻ địch của bạn bị đắm<newline>&fchìm vào mê hoặc và bất động trong thời gian ngắn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu + Cung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l3&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &32&8&l);;/celistaxe2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# ######################
+# celistbow1:
+  # command: /celistbow1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nCung&r &b&l(&d&l1&b&l/&d&l2&b&l)'
+  # - '&f| '
+  # - '&f| &a&lVirus;&a&l&nVirus I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fVirus sẽ gây cực độc<newline>&fcho đối thủ gồm cả khô héo.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lBẫy;&b&l&nBẫy I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBẫy sẽ làm đối thủ bị vướng<newline>&fđi chậm và đào chậm.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lĐộc Tố;&b&l&nĐộc Tố I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐộc tố sẽ gây độc đối thủ.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lSăn Ma;&b&l&nSăn Ma I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fDồn damage to những đối thủ<newline>&fcó hiệu ứng tàng hình.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lSinh Lực;&e&l&nSinh Lực I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHút máu từ đối thủ.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lXạ Thủ;&e&l&nXạ Thủ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương khi bắn.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lXuyên Phá;&e&l&nXuyên Phá I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương tên bắn.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lCầu Lửa;&e&l&nCầu Lửa I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fMũi tên bắn từ bạn<newline>sẽ biến thành quả cầu lửa.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lSúng;&e&l&nSúng I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát sát thương cung bắn<newline>đối với những kẻ thù<newline>cằm cung trên tay.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lNhắm Bắn;&6&l&nNhắm Bắn I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBắn vào đầu của đối thủ<newline>sẽ gây sát thương chí mạng.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7- <and>$RUN_COMMAND$&8&l(&bTrang &32&8&l) &d&l»;;/celistbow2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# celistbow2:
+  # command: /celistbow2
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nCung&r &b&l(&d&l2&b&l/&d&l2&b&l)'
+  # - '&f| '
+  # - '&f| &d&lBắn Tỉa;&d&l&nBắn Tỉa I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương Headshot lên cực mạnh.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Nhắm Bắn<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &f&l⁕ Bỏng Lạnh ⁕;&f&l⁕ Bỏng Lạnh ⁕ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây sát thương liên tục kèm theo<newline>&fđóng băng và suy yếu kẻ địch đang bị chậm.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu + Cung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &c&l❣ &d&lBùa Yêu &c&l❣;&c&l❣ &d&lBùa Yêu &c&l❣ I-II<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKhiến kẻ địch của bạn bị đắm<newline>&fchìm vào mê hoặc và bất động trong thời gian ngắn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu + Cung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l2&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &31&8&l);;/celistbow1'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# ##############
+# celisttool1:
+  # command: /celisttool1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nDụng Cụ&r &b&l(&d&l1&b&l/&d&l1&b&l)'
+  # - '&f| '
+  # - '&f| &7&lTự Nung;&7&l&nTự Nung I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fQuặng sẽ tự nung khi bạn khai thác quặng.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCúp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &7&lQuay Tay;&7&l&nQuay Tay I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fQuay tay sẽ cho bạn hiệu ứng<newline>&fvội vàng.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lTất cả công cụ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &7&lThợ Lặn;&7&l&nThợ Lặn I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fThợ lặn sẽ giúp bạn<newline>&fthở ở dưới nước.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lCúp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lMineExp+;&e&lMineExp+ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng kinh nghiệm khi Mine quặng.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCúp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &c&l*** Máy Khoan ***;&c&l*** Máy Khoan *** I-IX<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐào ngẫu nhiên 3x3 khối<newline>cấp càng cao đào càng 3x3 càng nhiều.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCúp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&l$ &6&lThần tài &e&l$;&e&l$ &6&lThần tài &e&l$ I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTrong quá trình mine bạn sẽ<newline>Mine ra $$$ theo Level (1=300,2=600,3=950).<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCúp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7-'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# #################
+# celistarmor1:
+  # command: /celistarmor1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nFull Set&r &b&l(&d&l1&b&l/&d&l3&b&l)'
+  # - '&f| '
+  # - '&f| &a&lSửa Chữa;&a&l&nSửa Chữa I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHồi lại độ bền của áo giáp<newline>khi bị tấn công.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lXương Rồng;&b&l&nXương Rồng I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fPhản sát thương đối thủ.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lPhủ Tuyết;&b&l&nPhủ Tuyết I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fPhủ tuyết sẽ làm<newline>đối thủ sẽ bị làm chậm.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lHơi Độc;&b&l&nHơi Độc I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHơi độc khiến giáp của bạn<newline>có thể thả hơi độc gây độc đối thủ.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lKiệt Sức;&b&l&nKiệt Sức I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKiệt sức làm cho đối<newline>thủ trở nên yếu đuối.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lKhô Héo;&b&l&nKhô Héo I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây độc cho đối thủ bằng<newline>hiệu ứng khô héo.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lThiên Thần;&e&l&nThiên Thần I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng máu khi bạn bị sát thương.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lNhanh Nhẹn;&e&l&nNhanh Nhẹn I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fNé tránh các đoàn đánh của đối thủ.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lKháng Lửa;&e&l&nKháng Lửa I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCung cấp khả năng chống cháy vĩnh viễn.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lKhoẻ;&e&l&nKhoẻ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGiảm sát thương từ rìu<newline>của đối thủ xuống.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7- <and>$RUN_COMMAND$&8&l(&bTrang &32&8&l) &d&l»;;/celistarmor2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# celistarmor2:
+  # command: /celistarmor2
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nFull Set&r &b&l(&d&l2&b&l/&d&l3&b&l)'
+  # - '&f| '
+  # - '&f| &e&lSinh Lý Mạnh;&e&l&nSinh Lý Mạnh I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGiảm mạnh sát thương nhận vào từ kiếm.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lGiày Xịn;&e&l&nGiày Xịn I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChống lại cường hóa làm chậm 1 lần kích hoạt.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lGiáp Creeper;&e&l&nGiáp Creeper I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fMiễn nhiễm với sát thương nổ, ở<newline>cấp độ cao hơn có cơ hội chữa lành vết thương cho bạn.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lThuốc Nhỏ Mắt;&6&l&nThuốc Nhỏ Mắt I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fMiễn bị mù.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lChí Mạng;&6&l&nChí Mạng I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương gấp đôi.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lThiên Sứ;&6&l&nThiên Sứ I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHồi lại máu khi nhận sát thương.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lTrâu;&6&l&nTrâu I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng máu thêm cho bản thân.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lThiết Giáp;&6&l&nThiết Giáp I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGiảm sát thương từ kiếm của kẻ thù.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lPhanh Thây;&d&l&nPhanh Thây I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng gấp 2.1 sát thương.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Chí Mạng<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lThiên Nhiên;&d&l&nThiên Nhiên I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn sẽ hồi máu siêu nhanh khi bị tấn công.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Thiên Sứ<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l2&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &31&8&l);;/celistarmor1<and>   <and>$RUN_COMMAND$&8&l(&bTrang &33&8&l) &d&l»;;/celistarmor3'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# celistarmor3:
+  # command: /celistarmor3
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nFull Set&r &b&l(&d&l3&b&l/&d&l3&b&l)'
+  # - '&f| '
+  # - '&f| &d&lCao Thủ;&d&l&nCao Thủ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKĩ năng Né tránh của bạn sẽ tăng cao,<newline>và bạn sẽ được tăng tốc độ chạy nhanh trong vài giây.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Nhanh Nhẹn<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lThánh Giáp;&d&l&nThánh Giáp I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGiảm sát thương kiếm của kẻ thù nhiều hơn<newline>so với Thiết Giáp.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Thiết Giáp<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lTrâu Thánh;&d&l&nTrâu Thánh I-XXV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fLượng máu bản thân gia tăng cao.<newline>&f(Kích hoạt vĩnh viễn)<newline>Yêu cầu cường hóa: Trâu<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &c&lQuái Băng;&c&l&nQuái Băng I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐóng băng và bào máu liên hoàn của đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&fYêu cầu linh hồn: 75<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &c&lPhượng Hoàng;&c&l&nPhượng Hoàng I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn sẽ được hồi<newline>đầy máu với sức mạnh của Phượng Hoàng<newline>khi còn yếu máu.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&fYêu cầu linh hồn: 300<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &4&l❤ &c&lHạnh phúc &4&l❤&c&l;&4&l❤ &c&lHạnh phúc &4&l❤&c&l I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHồi máu siêu cấp từ TÌNH YÊU.<newline>(Yêu cầu bạn phải ép cường hóa Thiên Nhiên<newline>sau đó mới ép được cường hóa này)<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l3&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &32&8&l);;/celistarmor2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# ##################
+# celisthelmet1:
+  # command: /celisthelmet1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nMũ&r &b&l(&d&l1&b&l/&d&l1&b&l)'
+  # - '&f| '
+  # - '&f| &7&lThuỷ Quái;&7&l&nThuỷ Quái I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fThủy quái sẽ cho bạn khả năng<newline>thở nước.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &7&lThiên Nhãn;&7&l&nThiên Nhãn I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fThiên nhãn sẽ biến thị<newline>lực của bạn thành siêu nhiên<newline>trong bóng tối.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &a&lNội Tại Ẩn;&a&l&nNội Tại Ẩn I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fNội tại ẩn sẽ tăng tốc độ chạy<newline>và tăng máu vàng khi bạn đang yếu máu.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lHoả Mù;&b&l&nHoả Mù I-VIII<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKhi bạn cận kề cái chết<newline>bạn sẽ sinh ra một quả bom khói<newline>để làm mù đối thủ.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lBan Phước;&e&l&nBan Phước I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐược tự động hồi phục +1 máu<newline>bạn sẽ sinh ra một quả bom khói<newline>và +1 thanh thức ăn sau vài giây.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lTuý Quyền;&6&l&nTuý Quyền I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng mạnh sát thương bản thân<newline>nhưng bạn sẽ bị chậm do say.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lTử Thần;&6&l&nTử Thần I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHồi lượng máu lớn<newline>khi bạn đang yếu máu.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lHộ Mệnh;&d&l&nHộ Mệnh I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHồi phục gấp 2 lần Ban phước mỗi 5 giây.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Ban Phước<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&l*** Túy bát tiên quyền ***;&e&l*** Túy bát tiên quyền *** I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sức tấn công khổng lồ theo cấp.<newline>(Yêu cầu bạn phải ép cường hóa Túy Quyền<newline>sau đó mới ép được cường hóa này)<newline>&f(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &2师傅 &a&lTúy bát tiên quyền &2师傅;&2师傅 &a&lTúy bát tiên quyền &2师傅 I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sức tấn công khổng lồ theo cấp.<newline>(Yêu cầu bạn phải ép cường hóa Túy Bát Tiên Quyền sau đó mới ép được cường hóa này)<newline>&f(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7-'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# #################
+# celistchestplate1:
+  # command: /celistchestplate1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nÁo Giáp&r &b&l(&d&l1&b&l/&d&l1&b&l)'
+  # - '&f| '
+  # - '&f| &a&lPhù phép;&a&l&nPhù phép I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fPhù phép sẽ gia tăng sức tấn<newline>công cho bạn, đánh xuyên đề kháng đối phương<newline><khi bạn đang yếu máu nhưng<newline>bạn sẽ bị hiệu ứng đào chậm.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lÁo Giáp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lKìm Hãm;&6&l&nKìm Hãm I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKìm hãm sức mạnh và sát thương lớn từ đối thủ.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lÁo Giáp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lThủ Phép;&d&l&nThủ Phép I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChặn sát lương lớn và phản sát thương cực mạnh.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Kìm Hãm<newline>&bVật phẩm cường hoá: &b&lÁo Giáp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7-'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# ##################
+# celistleggings1:
+  # command: /celistleggings1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nQuần&r &b&l(&d&l1&b&l/&d&l1&b&l)'
+  # - '&f| '
+  # - '&f| &6&l☾&f&l✗&6&l☽ &6&lAn Khang &6&l☾&f&l✗&6&l☽;&6☾&f✗&6☽ &6&lAn Khang &6☾&f✗&6☽ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fMiễn nhiễm sát thương trong thời gian ngắn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lQuần<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7-'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# ##################
+# celistboots1:
+  # command: /celistboots1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nGiày&r &b&l(&d&l1&b&l/&d&l1&b&l)'
+  # - '&f| '
+  # - '&f| &a&lNội Tại Ẩn;&a&l&nNội Tại Ẩn I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fNội tại ẩn sẽ tăng tốc độ chạy<newline>và tăng máu vàng khi bạn đang yếu máu.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lThỏ;&b&l&nThỏ I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fNhảy cao.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lSiêu Trọng Lực;&b&l&nSiêu Trọng Lực I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fNhảy siêu cao.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lThoát Thân;&b&l&nThoát Thân I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fThoát thân sẽ tạo ra 1 vụ nổ<newline>giúp bạn chạy thoát khi yếu máu.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lGiày Xịn;&e&l&nGiày Xịn I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChống lại cường hóa làm chậm 1 lầ kích hoạt.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lKhắc Nhiễm;&e&l&nKhắc Nhiễm I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐộc tố thường và độc khô héo<newline>sẽ hạn chế sát thương và tăng khả năng hồi phục.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lTăng Tốc;&6&l&nTăng Tốc I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng tốc độ chạy.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &3&l෴ Thần tốc ෴;&3&l෴ Thần tốc ෴ I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChạy nhanh với tốc độ bàn thờ.<newline>(Yêu cầu bạn phải ép cường hóa Tăng tốc sau đó mới ép được cường hóa này)<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e❀ &e&lThăng hoa &e❀;&e❀ &e&lThăng hoa &e❀ I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn sẽ kháng làm chậm<newline>trong 5 giây (10 giây hồi).<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7-'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist'
+  # - ''
+# ##################
+# celistcu1:
+  # command: /celistcu1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &7&l&nCũ&r &b&l(&d&l1&b&l/&d&l1&b&l)'
+  # - '&f| '
+  # - '&f| &7&lThuỷ Quái;&7&l&nThuỷ Quái I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fThủy quái sẽ cho bạn khả năng<newline>thở nước.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &7&lTự Nung;&7&l&nTự Nung I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fQuặng sẽ tự nung khi bạn khai thác quặng.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCúp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &7&lMa Trận;&7&l&nMa Trận I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fMa trận sẽ khiến đối thủ<newline>&fbuồn nôn.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &7&lQuay Tay;&7&l&nQuay Tay I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fQuay tay sẽ cho bạn hiệu ứng<newline>&fvội vàng.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lTất cả công cụ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &7&lSuy Kiệt;&7&l&nSuy Kiệt I-VII<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fSuy kiệt sẽ làm cho đối thủ<newline>&fđi chậm ,đào chậm và buồn nôn.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &7&lThợ Lặn;&7&l&nThợ Lặn I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fThợ lặn sẽ giúp bạn<newline>&fthở ở dưới nước.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lCúp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &7&lThiên Nhãn;&7&l&nThiên Nhãn I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fThiên nhãn sẽ biến thị<newline>lực của bạn thành siêu nhiên<newline>trong bóng tối.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7-'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# #################
+# celisthiem1:
+  # command: /celisthiem1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &a&l&nHiếm&r &b&l(&d&l1&b&l/&d&l1&b&l)'
+  # - '&f| '
+  # - '&f| &a&lCuồng Nộ;&a&l&nCuồng Nộ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCuồng nộ sẽ cho bạn tăng sức tấn công<newline>&fnhưng bạn sẽ bị hiệu ứng chậm.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &a&lPhù phép;&a&l&nPhù phép I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fPhù phép sẽ gia tăng sức tấn<newline>công cho bạn, đánh xuyên đề kháng đối phương<newline><khi bạn đang yếu máu nhưng<newline>bạn sẽ bị hiệu ứng đào chậm.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lÁo Giáp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'  
+  # - '&f| &a&lNội Tại Ẩn;&a&l&nNội Tại Ẩn I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fNội tại ẩn sẽ tăng tốc độ chạy<newline>và tăng máu vàng khi bạn đang yếu máu.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &a&lChém Nhanh;&a&l&nChém Nhanh I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn sẽ chém nhanh hơn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &a&lHồi Sức;&a&l&nHồi Sức I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHồi nhanh thanh thức ăn khi<newline>&fbạn đang chiến đấu.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &a&lHút Exp;&a&l&nHút Exp I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHút Exp của đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &a&lVirus;&a&l&nVirus I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fVirus sẽ gây cực độc<newline>&fcho đối thủ gồm cả khô héo.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &a&lSửa Chữa;&a&l&nSửa Chữa I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHồi lại độ bền của áo giáp<newline>khi bị tấn công.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7-'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# #################
+# celistco1:
+  # command: /celistco1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nCổ&r &b&l(&d&l1&b&l/&d&l3&b&l)'
+  # - '&f| '
+  # - '&f| &b&lChoáng;&b&l&nChoáng I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChoáng sẽ làm mù đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lXương Rồng;&b&l&nXương Rồng I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fPhản sát thương đối thủ.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lTử Hình;&b&l&nTử Hình I-VII<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTử hình sẽ tung đòn chí mạng khi đối<newline>thủ của bạn đang yếu máu.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lPhủ Tuyết;&b&l&nPhủ Tuyết I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fPhủ tuyết sẽ làm<newline>đối thủ sẽ bị làm chậm.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lTê Liệt;&b&l&nTê Liệt I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐối thủ sẽ bị sét đánh và làm chậm.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lĐộc;&b&l&nĐộc I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐộc sẽ khiến đối thủ<newline>của bạn sẽ bị nhiễm độc.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lHơi Độc;&b&l&nHơi Độc I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHơi độc khiến giáp của bạn<newline>có thể thả hơi độc gây độc đối thủ.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lBẫy;&b&l&nBẫy I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBẫy sẽ làm đối thủ bị vướng<newline>&fđi chậm và đào chậm.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lPhá Giáp;&b&l&nPhá Giáp I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fPhá giáp sẽ làm độ bền giáp của<newline>đối thủ mất nhiều hơn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lBẫy Titan;&b&l&nBẫy Titan I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBẫy Titan gây hiệu ứng<newline>siêu chậm cho đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7- <and>$RUN_COMMAND$&8&l(&bTrang &32&8&l) &d&l»;;/celistco2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# celistco2:
+  # command: /celistco2
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nCổ&r &b&l(&d&l2&b&l/&d&l3&b&l)'
+  # - '&f| '
+  # - '&f| &b&lĐộc Tố;&b&l&nĐộc Tố I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐộc tố sẽ gây độc đối thủ.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lKiệt Sức;&b&l&nKiệt Sức I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKiệt sức làm cho đối<newline>thủ trở nên yếu đuối.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lKhô Héo;&b&l&nKhô Héo I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây độc cho đối thủ bằng<newline>hiệu ứng khô héo.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lHoả Mù;&b&l&nHoả Mù I-VIII<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKhi bạn cận kề cái chết<newline>bạn sẽ sinh ra một quả bom khói<newline>để làm mù đối thủ.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lChậm Chạp;&b&l&nChậm Chạp I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fLàm chậm đối thủ<newline>trong một thời gian ngắn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lMa Cà Rồng;&b&l&nMa Cà Rồng I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHút máu đối thủ khi chiến đấu.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lChặt;&b&l&nChặt I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây sát thương lớn đối với<newline>&fngười chơi đang sử dụng cung.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &b&lMa Hải Tặc (Looting);&b&l&nMa Hải Tặc (Looting) I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng đồ drop<newline>&ftừ Ma hải tặc (Lv1=x2,Lv2=x3,..)!<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &b&lThỏ;&b&l&nThỏ I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fNhảy cao.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lSiêu Trọng Lực;&b&l&nSiêu Trọng Lực I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fNhảy siêu cao.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l2&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &31&8&l);;/celistco1<and>   <and>$RUN_COMMAND$&8&l(&bTrang &33&8&l) &d&l»;;/celistco3'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# celistco3:
+  # command: /celistco3
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &b&l&nCổ&r &b&l(&d&l3&b&l/&d&l3&b&l)'
+  # - '&f| '
+  # - '&f| &b&lSăn Ma;&b&l&nSăn Ma I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fDồn damage to những đối thủ<newline>&fcó hiệu ứng tàng hình.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &b&lThoát Thân;&b&l&nThoát Thân I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fThoát thân sẽ tạo ra 1 vụ nổ<newline>giúp bạn chạy thoát khi yếu máu.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l3&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &32&8&l);;/celistco2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# ####################
+# celistsieuco1:
+  # command: /celistsieuco1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &e&l&nSiêu Cổ&r &b&l(&d&l1&b&l/&d&l3&b&l)'
+  # - '&f| '
+  # - '&f| &e&lThiên Thần;&e&l&nThiên Thần I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng máu khi bạn bị sát thương.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lSinh Lực;&e&l&nSinh Lực I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHút máu từ đối thủ.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lÁm Sát;&e&l&nÁm Sát I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn càng ở gần kẻ thù, bạn càng gây ra nhiều<newline>&fsát thương (lên tới 1,25 lần). Tuy nhiên,nếu<newline>bạn ở cách xa hơn 2 khối, bạn sẽ gây sát thương ÍT hơn bình thường.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &e&lBảo Hộ;&e&l&nBảo Hộ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fLoại bỏ những hiệu ứng xấu.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &e&lNhiễm Khuẩn;&e&l&nNhiễm Khuẩn I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fNhững loại khuẩn sẽ ăn mòn trong cơ thể<newline>&frút máu kẻ địch trong 1 thời gian ngắn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lBổ Củi;&e&l&nBổ Củi I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương tấn công lớn<newline>&ftrong 1 thời gian ngắn khi Combo.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lLật Kèo;&e&l&nLật Kèo I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGiảm sát thương đối thương đối phương<newline>&fvà tăng sát thương đòn đánh trong 1 đòn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lNhanh Nhẹn;&e&l&nNhanh Nhẹn I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fNé tránh các đoàn đánh của đối thủ.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lGiận Dữ;&e&l&nGiận Dữ I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng thêm sát thương khi máu của bạn thấp.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lBão Tuyết;&e&l&nBão Tuyết I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây ra hiệu ứng chậm<newline>&fchạp lên đối thủ của bạn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7- <and>$RUN_COMMAND$&8&l(&bTrang &32&8&l) &d&l»;;/celistsieuco2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# celistsieuco2:
+  # command: /celistsieuco2
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &e&l&nSiêu Cổ&r &b&l(&d&l2&b&l/&d&l3&b&l)'
+  # - '&f| '
+  # - '&f| &e&lBan Phước;&e&l&nBan Phước I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐược tự động hồi phục +1 máu<newline>bạn sẽ sinh ra một quả bom khói<newline>và +1 thanh thức ăn sau vài giây.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lXạ Thủ;&e&l&nXạ Thủ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương khi bắn.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lKháng Lửa;&e&l&nKháng Lửa I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCung cấp khả năng chống cháy vĩnh viễn.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lXuyên Phá;&e&l&nXuyên Phá I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương tên bắn.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lPhá Hoại;&e&l&nPhá Hoại I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTấn công làm giảm độ bền của áo giáp<newline>&fcủa đối thủ với mỗi đòn tấn công.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lThống Trị;&e&l&nThống Trị I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây suy yếu cho đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lKhắc Nhiễm;&e&l&nKhắc Nhiễm I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐộc tố thường và độc khô héo<newline>sẽ hạn chế sát thương và tăng khả năng hồi phục.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lCầu Lửa;&e&l&nCầu Lửa I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fMũi tên bắn từ bạn<newline>sẽ biến thành quả cầu lửa.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lSúng;&e&l&nSúng I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát sát thương cung bắn<newline>đối với những kẻ thù<newline>cằm cung trên tay.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lKhoẻ;&e&l&nKhoẻ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGiảm sát thương từ rìu<newline>của đối thủ xuống.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l2&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &31&8&l);;/celistsieuco1<and>   <and>$RUN_COMMAND$&8&l(&bTrang &33&8&l) &d&l»;;/celistsieuco3'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# celistsieuco3:
+  # command: /celistsieuco3
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &e&l&nSiêu Cổ&r &b&l(&d&l3&b&l/&d&l3&b&l)'
+  # - '&f| '
+  # - '&f| &e&lSinh Lý Mạnh;&e&l&nSinh Lý Mạnh I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGiảm mạnh sát thương nhận vào từ kiếm.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lGiày Xịn;&e&l&nGiày Xịn I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChống lại cường hóa làm chậm 1 lần kích hoạt.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lGiáp Creeper;&e&l&nGiáp Creeper I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fMiễn nhiễm với sát thương nổ, ở<newline>cấp độ cao hơn có cơ hội chữa lành vết thương cho bạn.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lKhát Máu;&e&l&nKhát Máu I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương Combo và làm giảm<newline>&ftốc độ di chuyển của đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lNhện Yêu Tinh (Looting);&e&l&nNhện Yêu Tinh (Looting) I-II<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng đồ drop<newline>&ftừ Nhện yêu tinh (Lv1=x2,Lv2=x3,..)!<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lKháng Ma;&e&l&nKháng Ma I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKháng tàng hình khi PvP.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &e&lMineExp+;&e&lMineExp+ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng kinh nghiệm khi Mine quặng.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCúp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&lPhù Thuỷ Đen (Looting);&e&l&nPhù Thuỷ Đen (Looting) I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng đồ drop<newline>&ftừ Phù thủy đen (Lv1=x2,Lv2=x3,..)!<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l3&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &32&8&l);;/celistsieuco2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# ###########
+# celisthuyenthoai1:
+  # command: /celisthuyenthoai1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &6&l&nHuyền Thoại&r &b&l(&d&l1&b&l/&d&l2&b&l)'
+  # - '&f| '
+  # - '&f| &6&lMan Rợ;&6&l&nMan Rợ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương<newline>khi đối thủ đang cầm rìu.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lThuốc Nhỏ Mắt;&6&l&nThuốc Nhỏ Mắt I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fMiễn bị mù.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lChí Mạng;&6&l&nChí Mạng I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương gấp đôi.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lGấp Bội;&6&l&nGấp Bội I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCộng dồn sát thương mà đối thủ<newline>đã gây lên bạn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lTuý Quyền;&6&l&nTuý Quyền I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng mạnh sát thương bản thân<newline>nhưng bạn sẽ bị chậm do say.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lThiên Sứ;&6&l&nThiên Sứ I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHồi lại máu khi nhận sát thương.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lTăng Tốc;&6&l&nTăng Tốc I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng tốc độ chạy.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lNội Năng;&6&l&nNội Năng I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChặn sát thương<newline>và hồi từ 1 đến 3 máu.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lHút Máu;&6&l&nHút Máu I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHút máu đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lTrâu;&6&l&nTrâu I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng máu thêm cho bản thân.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7- <and>$RUN_COMMAND$&8&l(&bTrang &32&8&l) &d&l»;;/celisthuyenthoai2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# celisthuyenthoai2:
+  # command: /celisthuyenthoai2
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &6&l&nHuyền Thoại&r &b&l(&d&l2&b&l/&d&l2&b&l)'
+  # - '&f| '
+  # - '&f| &6&lHận Thù;&6&l&nHận Thù I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCombo đối thủ<newline>làm cộng dồn sát thương tấn công.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lThanh Tẩy;&6&l&nThanh Tẩy I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fDập tắt các sức mạnh cường hóa của kẻ thù.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &6&lThiết Giáp;&6&l&nThiết Giáp I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGiảm sát thương từ kiếm của kẻ thù.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lTự Rèn;&6&l&nTự Rèn I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChữa lành giáp bị hư hại<newline>và giảm sát thương của đối phương.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lCắn Xé;&6&l&nCắn Xé I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCộng dồn sát thương và đau hơn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lKìm Hãm;&6&l&nKìm Hãm I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKìm hãm sức mạnh và sát thương lớn từ đối thủ.<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lÁo Giáp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lTử Thần;&6&l&nTử Thần I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHồi lượng máu lớn<newline>khi bạn đang yếu máu.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lDại;&6&l&nDại I-VIII<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fx2 sát thương khi tấn công<newline>đối thủ cầm kiếm.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lNhắm Bắn;&6&l&nNhắm Bắn I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBắn vào đầu của đối thủ<newline>sẽ gây sát thương chí mạng.<newline>(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lCung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&lTrừng Phạt;&6&l&nTrừng Phạt I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCuốn sách của thần Hy Lạp sẽ giúp bạn tăng<newline>sát thương khi chiến đấu với quái vật Địa Ngục.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l2&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &31&8&l);;/celisthuyenthoai1'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# ###########
+# celisttruyenthuyet1:
+  # command: /celisttruyenthuyet1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &d&l&nTruyền Thuyết&r &b&l(&d&l1&b&l/&d&l2&b&l)'
+  # - '&f| '
+  # - '&f| &d&lHoàng Bào;&d&l&nHoàng Bào I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChặn 1 lượng sát thương lớn<newline>và phản lại đối thủ 1 lượng sát thương lớn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Lật Kèo<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &d&lPhanh Thây;&d&l&nPhanh Thây I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng gấp 2.1 sát thương.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Chí Mạng<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lThiên Nhiên;&d&l&nThiên Nhiên I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn sẽ hồi máu siêu nhanh khi bị tấn công.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Thiên Sứ<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lBắn Tỉa;&d&l&nBắn Tỉa I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sát thương Headshot lên cực mạnh.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Nhắm Bắn<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lBẫy Quái Vật;&d&l&nBẫy Quái Vật I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fLàm đối thủ bị chậm chạp 1 thời gian dài.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Bẫy Titan<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &d&lSiêu Rèn;&d&l&nSiêu Rèn I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐộ bền của bạn sẽ được cải thiện<newline>khi chiến đấu và gây ra sát thương cao hơn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Tự Rèn<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lThủ Phép;&d&l&nThủ Phép I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChặn sát lương lớn và phản sát thương cực mạnh.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Kìm Hãm<newline>&bVật phẩm cường hoá: &b&lÁo Giáp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lHộ Mệnh;&d&l&nHộ Mệnh I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHồi phục gấp 2 lần Ban phước mỗi 5 giây.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Ban Phước<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lCao Thủ;&d&l&nCao Thủ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKĩ năng Né tránh của bạn sẽ tăng cao,<newline>và bạn sẽ được tăng tốc độ chạy nhanh trong vài giây.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Nhanh Nhẹn<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lThánh Giáp;&d&l&nThánh Giáp I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGiảm sát thương kiếm của kẻ thù nhiều hơn<newline>so với Thiết Giáp.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Thiết Giáp<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7- <and>$RUN_COMMAND$&8&l(&bTrang &32&8&l) &d&l»;;/celisttruyenthuyet2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# celisttruyenthuyet2:
+  # command: /celisttruyenthuyet2
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &d&l&nTruyền Thuyết&r &b&l(&d&l2&b&l/&d&l2&b&l)'
+  # - '&f| '
+  # - '&f| &d&lQuỷ Dữ;&d&l&nQuỷ Dữ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn sẽ hút máu vô cùng điên loạn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Hút Máu<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| &d&lSát Thủ;&d&l&nSát Thủ I-V<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn càng ở gần kẻ thù,<newline>sát thương tăng càng cao.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Ám Sát<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'  
+  # - '&f| &d&lĐẫm Máu;&d&l&nĐẫm Máu I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây chậm và tăng lượng sát thương Combo lớn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Khát Máu<newline>&bVật phẩm cường hoá: &b&lRìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lTrâu Thánh;&d&l&nTrâu Thánh I-XXV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fLượng máu bản thân gia tăng cao.<newline>&f(Kích hoạt vĩnh viễn)<newline>Yêu cầu cường hóa: Trâu<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &d&lSát Quỷ;&d&l&nSát Quỷ I-VI<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fPhiên bản nâng cấp tăng sát thương nhiều<newline>lần khi chiến đấu với quái vật Địa Ngục.<newline>&f(Kích hoạt ngẫu nhiên)<newline>Yêu cầu cường hóa: Trừng Phạt<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l2&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &31&8&l);;/celisttruyenthuyet1'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# ###################
+# celistlinhhon1:
+  # command: /celistlinhhon1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &c&l&nLinh Hồn&r &b&l(&d&l1&b&l/&d&l1&b&l)'
+  # - '&f| '
+  # - '&f| &c&lQuái Băng;&c&l&nQuái Băng I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fĐóng băng và bào máu liên hoàn của đối thủ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&fYêu cầu linh hồn: 75<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &c&lPhượng Hoàng;&c&l&nPhượng Hoàng I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn sẽ được hồi<newline>đầy máu với sức mạnh của Phượng Hoàng<newline>khi còn yếu máu.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&fYêu cầu linh hồn: 300<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &c&lBẫy Hồn;&c&l&nBẫy Hồn I-III<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fRìu của bạn được thấm nhuần<newline>ma thuật phong ấn và có cơ hội vô<newline>hiệu hóa các cường hóa linh hồn<newline>của đối thủ khi bị tấn công.<newline>&fYêu cầu linh hồn: 2<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &c&lLửa Thần;&c&l&nLửa Thần I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fVũ khí của bạn sẽ thấm nhuần lửa thần,<newline>biến tất cả các đòn tấn công vật lý<newline>của bạn thành phép thuật. Xuất hiện hiệu ứng và<newline>bốc lửa thần lên tất cả kẻ thù<newline>gần đó.<newline>&fYêu cầu linh hồn: 75<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá' 
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7-'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# ##############
+# celistthachdau1:
+  # command: /celistthachdau1
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''
+  # - '&f| &b&lDanh Sách Cường Hoá &d⚔&f&lThách Đấu&d⚔ &b&l(&d&l1&b&l/&d&l2&b&l)'
+  # - '&f| '
+  # - '&f| &3&l෴ Thần tốc ෴;&3&l෴ Thần tốc ෴ I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fChạy nhanh với tốc độ bàn thờ.<newline>(Yêu cầu bạn phải ép cường hóa Tăng tốc sau đó mới ép được cường hóa này)<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &2师傅 &a&lTúy bát tiên quyền &2师傅;&2师傅 &a&lTúy bát tiên quyền &2师傅 I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTăng sức tấn công khổng lồ theo cấp.<newline>(Yêu cầu bạn phải ép cường hóa Túy Bát Tiên Quyền sau đó mới ép được cường hóa này)<newline>&f(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lMũ<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &0&l&8✞ &8Trảm &8✞;&8✞ &8Trảm &8✞ I-II<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCho bạn xác xuất rơi đầu người khác<newline>sau khi tiêu diệt!<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e❀ &e&lThăng hoa &e❀;&e❀ &e&lThăng hoa &e❀ I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fBạn sẽ kháng làm chậm<newline>trong 5 giây (10 giây hồi).<newline>(Kích hoạt vĩnh viễn)<newline>&bVật phẩm cường hoá: &b&lGiày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &4&l❤ &c&lHạnh phúc &4&l❤&c&l;&4&l❤ &c&lHạnh phúc &4&l❤&c&l I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fHồi máu siêu cấp từ TÌNH YÊU.<newline>(Yêu cầu bạn phải ép cường hóa Thiên Nhiên<newline>sau đó mới ép được cường hóa này)<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lMũ + Áo Giáp + Quần + Giày<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &0&l↩ Cô độc ↪;&0&l↩ Cô độc ↪ I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fDập tắt sức mạnh hồi máu của Hạnh Phúc<newline>trong vài giây với sự cô độc của Quỷ.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l1&f] &7- <and>$RUN_COMMAND$&8&l(&bTrang &32&8&l) &d&l»;;/celistthachdau2'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2'
+  # - ''
+# celistthachdau2:
+  # command: /celistthachdau2
+  # permission-required: false 
+  # type: RAW_TEXT
+  # text:
+  # - ''  
+  # - '&f| &b&lDanh Sách Cường Hoá &d⚔&f&lThách Đấu&d⚔&r &b&l(&d&l1&b&l/&d&l2&b&l)'
+  # - '&f| '
+  # - '&f| &4&l☾ MA SÓI ☾;&4&l☾ MA SÓI ☾ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&cKhi trăng tròn vào lúc 10h<newline>&ctối người chơi sẽ hóa sói,<newline>&cđược tăng Sức Mạnh đến 3h sáng.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &e&l✿ Sự kiện ✿;&e&l✿ Sự kiện ✿ I<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fCường hóa này sẽ giúp bạn<newline>&fcày đồ sự kiện mỗi khi,<newline>&fserver có sự kiện.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lRìu + Cúp<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &f&l⁕ Bỏng Lạnh ⁕;&f&l⁕ Bỏng Lạnh ⁕ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fGây sát thương liên tục kèm theo<newline>&fđóng băng và suy yếu kẻ địch đang bị chậm.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu + Cung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &6&l☾&f&l✗&6&l☽ &6&lHổ Đấu &6&l☾&f&l✗&6&l☽;&6☾&f✗&6☽ &6&lHổ Đấu &6☾&f✗&6☽ I-IV<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fTrạng thái cuồng nộ, lấy đi khả<newline>&fnăng hồi máu và hấp thụ của địch,<newline>đòn đánh gây sát thương chuẩn<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| &c&l❣ &d&lBùa Yêu &c&l❣;&c&l❣ &d&lBùa Yêu &c&l❣ I-II<newline>&e100% Tỉ lệ thành công<newline>&60% Tỉ lệ thất bại<newline>&fKhiến kẻ địch của bạn bị đắm<newline>&fchìm vào mê hoặc và bất động trong thời gian ngắn.<newline>&f(Kích hoạt ngẫu nhiên)<newline>&bVật phẩm cường hoá: &b&lKiếm + Rìu + Cung<newline><newline>&a&oCầm sách và thả vào vật phẩm để cường hoá'
+  # - '&f| '
+  # - '&f| &f[Đang xem trang &f&l2&f] &7- <and>$RUN_COMMAND$&d&l« &8&l(&bTrang &31&8&l);;/celistthachdau1'
+  # - '&f| '
+  # - '$RUN_COMMAND$&f| &bQuay về trang trước;;/celist2' 
+  # - ''
+  

@@ -1,0 +1,29 @@
+{
+  "pairs": [
+    {
+      "chance": 100,
+      "items": [
+        {
+          "type": "RED_ROSE",
+          "chance": 100,
+          "min": 0,
+          "max": 2,
+          "looting": true		  
+        }
+      ]
+    },
+    {
+      "killedByPlayer": false,
+      "chance": 100,
+      "items": [
+        {
+          "type": "EMERALD",
+          "chance": 100,
+          "min": 1,
+          "max": 4,	
+          "looting": true		  
+        }
+      ]
+    }
+  ]
+}

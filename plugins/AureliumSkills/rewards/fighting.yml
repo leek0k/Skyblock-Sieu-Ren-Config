@@ -1,0 +1,21 @@
+patterns:
+  - type: stat
+    stat: strength
+    value: 0.5
+    pattern:
+      start: 4
+      interval: 4
+  - type: stat
+    stat: regeneration
+    value: 0.5
+    pattern:
+      start: 2
+      interval: 2
+  - type: stat
+    stat: wisdom
+    value: 3
+    pattern:
+      start: 3
+      interval: 2    
+levels:
+  #wisdom

@@ -1,0 +1,29 @@
+location: NewSpawn:-14.5:151.000:-1753.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&6&l(!) &e&lChào mừng &b&l{player}&r &fđã đến với &6&lMINE &f&lAhihi
+      &7(Skyblock)'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f      Hãy tạo đảo và bắt đầu chuyến phiên lưu'
+    height: 0.3
+  - content: '&f          bằng cách dùng &b&llệnh &f&n/island'
+    height: 0.3
+  - content: '&7&oHãy đọc nội quy trước khi chơi nhé: mineahihi.com/noi-quy'
+    height: 0.3
+  - content: '&7&oKhông biết chơi hãy &7&n/huongdan&r ^^'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f&o     Chúc các bạn phiêu lưu vui vẻ ^^'
+    height: 0.3
+  - content: '&e&l&o     Hỗ trợ hãy liên hệ: &e&oFacebook.com/MineAhihiVN'
+    height: 0.3
+  actions: {}

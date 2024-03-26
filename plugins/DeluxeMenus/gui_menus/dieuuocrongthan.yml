@@ -1,0 +1,105 @@
+file: dieuuocrongthan.yml
+menu_title: '&8&lĐiều Ước &8&lRồng Thần &8(Chọn 1)'
+open_command: 
+- dieuuocrongthan
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 27
+update_interval: 1
+open_requirement: 
+  requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:dragons_breath,namecontains:&6&l๖Điều Ước &e&l๖Rồng Thần,lorecontains:&bƯớc mọi thứ trên thế gian này%'
+          output: '1'
+items:
+  'background1':
+    material: STAINED_GLASS_PANE
+    data: 7
+    display_name: '&r'
+    slots:
+    - '0-9'
+    - '17-26'
+  'conguoiyeu':
+    material: INK_SACK
+    data: 1
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    slot: 10
+    display_name: '&d&lCó Người Yêu'
+    lore:
+    - '&7Có người yêu cho hết F.A :>'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+     - '[close]'
+     - '[message] &dCó cái nịt!! ƯỚC lại đi!!!'
+     - '[message] &dCó cái nịt!! ƯỚC lại đi!!!'
+     - '[message] &dCó cái nịt!! ƯỚC lại đi!!!'     
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  'laoluyen':
+    material: EXP_BOTTLE
+    slot: 12
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&e&lLão Luyện'
+    lore:
+    - '&a+55.000.000 XP'
+    - ''
+    - '&0&o#Item menu'
+    click_requirement:
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:dragons_breath,namecontains:&6&l๖Điều Ước &e&l๖Rồng Thần,lorecontains:&bƯớc mọi thứ trên thế gian này,amt:1%'
+            output: '1'
+    click_commands:
+     - '[message] &a+55.000.000 XP'
+     - '[console] xp give %player_name% 55000000'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  'trieuphu':
+    material: GOLD_INGOT
+    slot: 14
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&a&lTriệu Phú'
+    lore:
+    - '&a+55.000.000 $'
+    - ''
+    - '&0&o#Item menu'
+    click_requirement:
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:dragons_breath,namecontains:&6&l๖Điều Ước &e&l๖Rồng Thần,lorecontains:&bƯớc mọi thứ trên thế gian này,amt:1%'
+            output: '1'
+    click_commands:
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+     - '[console] eco give %player_name% 55000000'
+  'beerus':
+    material: MONSTER_EGG
+    data: 69
+    slot: 16
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&5&lThần Huỷ Diệt'
+    lore:
+    - '&7Được so tài với Thần Huỷ Diệt'
+    - ''
+    - '&0&o#Item menu'
+    click_requirement:
+      requirements:        
+        item:
+            type: '=='
+            input: '%checkitem_amount_remove_mat:dragons_breath,namecontains:&6&l๖Điều Ước &e&l๖Rồng Thần,lorecontains:&bƯớc mọi thứ trên thế gian này,amt:1%'
+            output: '1'
+    click_commands:
+     - '[message] &cKhá lắm chàng trai trẻ!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+     - '[console] ev give %player_name% beerus 1'
+     
+    

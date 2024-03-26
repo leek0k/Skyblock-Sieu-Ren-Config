@@ -1,0 +1,389 @@
+menu_title: '&8&lXui Xẻo &c&lPhù Thủy'
+open_command: 
+  - xuixeophuthuy
+size: 54
+update_interval: 1
+items:
+  'Block':
+    material: STAINED_GLASS_PANE
+    data: 5
+    slots:
+    - 0-8
+    - 45-53
+    display_name: '&r&l'
+    lore:
+    - '&r&l'    
+  'Return':
+    material: STAINED_GLASS_PANE
+    data: 14
+    slot: 49
+    display_name: 'Quay Lại'
+    lore:
+    - ''    
+    click_commands:
+    - '[player] xuixeo'
+  'RankVua':
+    material: PRISMARINE_SHARD
+    slot: 9
+    display_name: '&e&Lx1 MẢNH | Rank &8&l<&6&lVUA&8&l>'
+    lore:
+    - ''
+    - '&c• Giá 120 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '120'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 120'
+    - '[console] epicvouchers give %player% vua 1'
+    - '[close]'
+  'RankQuy':
+    material: PRISMARINE_SHARD
+    slot: 10
+    display_name: '&e&Lx1 MẢNH | Rank &8&l<&c&lQUỶ&8&l>'
+    lore:
+    - ''
+    - '&c• Giá 160 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '160'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 160'
+    - '[console] epicvouchers give %player% quy 1'
+    - '[close]'
+  'RankTien':
+    material: PRISMARINE_SHARD
+    slot: 11
+    display_name: '&e&Lx1 MẢNH | Rank &8&l<&b&lTIÊN&8&l>'
+    lore:
+    - ''
+    - '&c• Giá 400 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '400'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 400'
+    - '[console] epicvouchers give %player% tien 1'
+    - '[close]'
+  'RankThan':
+    material: PRISMARINE_SHARD
+    slot: 12
+    display_name: '&e&Lx1 MẢNH | Rank &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l>'
+    lore:
+    - ''
+    - '&c• Giá 1500 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '1500'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 1500'
+    - '[console] epicvouchers give %player% than 1'
+    - '[close]'
+  'MuToiCao':
+    material: DIAMOND_HELMET
+    slot: 13
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4&LMŨ &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+    lore:
+    - ''
+    - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+    - '&4* Giảm 32% damage nhận vào.'
+    - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'
+    - ''
+    - '&c• Giá 100 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;8
+    - DURABILITY;5
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '100'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 100'
+    - '[console] ie give mutoicao %player% 1'
+    - '[close]'
+  'AoToiCao':
+    material: DIAMOND_CHESTPLATE
+    slot: 14
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4&LÁO &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+    lore:
+    - ''
+    - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+    - '&4* Giảm 32% damage nhận vào.'
+    - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'
+    - ''
+    - '&c• Giá 100 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;8
+    - DURABILITY;5
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '100'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 100'
+    - '[console] ie give aotoicao %player% 1'
+    - '[close]'
+  'QuanToiCao':
+    material: DIAMOND_LEGGINGS
+    slot: 15
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4&LQUẦN &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+    lore:
+    - ''
+    - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+    - '&4* Giảm 32% damage nhận vào.'
+    - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'
+    - ''
+    - '&c• Giá 100 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;8
+    - DURABILITY;5
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '100'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 100'
+    - '[console] ie give quantoicao %player% 1'
+    - '[close]'
+  'GiayToiCao':
+    material: DIAMOND_BOOTS
+    slot: 16
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4&LGIÀY &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+    lore:
+    - ''
+    - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+    - '&4* Giảm 32% damage nhận vào.'
+    - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'
+    - ''
+    - '&c• Giá 100 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;8
+    - DURABILITY;5
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '100'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 100'
+    - '[console] ie give giaytoicao %player% 1'
+    - '[close]'
+  'KiemToiCao':
+    material: DIAMOND_SWORD
+    slot: 17
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4&LKIẾM &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+    lore:
+    - ''
+    - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+    - '&4* Tăng 14% damage.'
+    - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'
+    - ''
+    - '&c• Giá 90 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    enchantments:
+    - DAMAGE_ALL;115
+    - DURABILITY;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;2
+    - DAMAGE_ARTHROPODS;5
+    - DAMAGE_UNDEAD;5
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '90'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 90'
+    - '[console] ie give kiemtoicao %player% 1'
+    - '[close]'
+  'RiuToiCao':
+    material: DIAMOND_AXE
+    slot: 18
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4&LRÌU &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+    lore:
+    - ''
+    - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+    - '&4* Tăng 18% damage.'
+    - '&7&o(Mặc full Set Tối Cao để kích hoạt.)'
+    - ''
+    - '&c• Giá 80 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    enchantments:
+    - DAMAGE_ALL;105
+    - DURABILITY;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;2
+    - DAMAGE_ARTHROPODS;5
+    - DAMAGE_UNDEAD;5
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '80'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 80'
+    - '[console] ie give riutoicao %player% 1'
+    - '[close]'
+  'CungToiCao':
+    material: BOW
+    slot: 19
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4&LCUNG &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱'
+    lore:
+    - ''
+    - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+    - ''
+    - '&c• Giá 50 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    enchantments:
+    - ARROW_DAMAGE;65
+    - DURABILITY;5
+    - ARROW_FIRE;3
+    - ARROW_KNOCKBACK;2
+    - ARROW_INFINITE;1
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '50'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 50'
+    - '[console] ie give riutoicao %player% 1'
+    - '[close]'
+  'cup1':
+    material: DIAMOND_PICKAXE
+    slot: 20
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4&LCÚP &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱ &4(New)'
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&4⊚ ⊚ ⊚ &4&lTỐI CAO &4⊚ ⊚ ⊚ &4(New)'
+    - ''
+    - '&c• Giá 50 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    enchantments:
+    - DIG_SPEED;22
+    - DURABILITY;5
+    - LOOT_BONUS_BLOCKS;10
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '50'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 50'
+    - '[console] ie give cuptoicaotrade1 %player% 1'
+    - '[close]'
+  'cup2':
+    material: DIAMOND_PICKAXE
+    slot: 21
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4&LCÚP &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱ &4(New)'
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&4⊚ ⊚ ⊚ &4(2♦) &4&lTỐI CAO &4(2♦) &4⊚ ⊚ ⊚ &4(New)'
+    - ''
+    - '&c• Giá 60 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    enchantments:
+    - DIG_SPEED;24
+    - DURABILITY;5
+    - LOOT_BONUS_BLOCKS;12
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '60'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 60'
+    - '[console] ie give cuptoicaotrade2 %player% 1'
+    - '[close]'
+  'cup3':
+    material: DIAMOND_PICKAXE
+    slot: 22
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4(3♦) &4&LCÚP &C&LTỐI CAO &4(3♦) &4&L⊱&C&L⊱&4&L⊱ &4(New)'
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&4⊚ ⊚ ⊚ &4(3♦) &4&lTỐI CAO &4(3♦) &4⊚ ⊚ ⊚ &4(New)'
+    - ''
+    - '&c• Giá 70 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    enchantments:
+    - DIG_SPEED;26
+    - DURABILITY;5
+    - LOOT_BONUS_BLOCKS;16
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '70'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 70'
+    - '[console] ie give cuptoicaotrade3 %player% 1'
+    - '[close]'
+  'sotoicao':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmI5ZTQzODZlNTRhYzdmNmUxOGZiZjVjMDlmYjcwMzE5NTNkMGE1MWIwNTRjNWI0ZDYzZjYxOGVlYjI2MzRhOSJ9fX0=
+    slot: 23
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lSỌ phép Địa ngục §4§l⊱§c§l⊱§4§l⊱'
+    lore:
+    - ''
+    - '§7 &l??&7 Sát Thương'
+    - '§7 &l??&7 Tốc Độ Đánh'
+    - '§7 &l??&7 Tim'
+    - '§7 &l??&7 Giáp'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - ''
+    - '§4፠ ፠ ፠ §4§lTỐI CAO §4፠ ፠ ፠'
+    - '§4* SỌ phép Địa ngục'
+    - ''
+    - '§4(Đặt lên Hotbar để kích hoạt!)'
+    - ''
+    - '&c• Giá 90 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '90'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 90'
+    - '[console] cr open %player% sotoicao'
+    - '[close]'
+  'hombavuong':
+    material: ENDER_CHEST
+    slot: 24
+    display_name: '&e&l◍ &B&l&nx1 Hòm Vũ Khí&R &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG
+        ◍'
+    lore:
+    - ''
+    - '&c• Giá 100 (%sieurencore_xuixeo_PhuThuy%) &8&lXui Xẻo &c&lPhù Thủy' 
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_PhuThuy%'
+                output: '100'
+    click_commands:
+    - '[console] src xuixeo remove PhuThuy %player_name% 100'
+    - '[console] cr give to %player% bavuong 1'
+    - '[close]'
+  

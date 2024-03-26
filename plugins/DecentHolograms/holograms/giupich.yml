@@ -1,0 +1,54 @@
+location: NewSpawn:36.5:151.000:-1778.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&f&lTham khảo'
+    height: 0.3
+  - content: '&f/ecraft &7để trade cày đồ'
+    height: 0.3
+  - content: '&f/trade (tên) &7để giao dịch với người khác'
+    height: 0.3
+  - content: '&f/XpBottle <số lượng> &7 rút exp'
+    height: 0.3
+  - content: '&f/Withdraw <số lượng> &7rút tiền'
+    height: 0.3
+  - content: '&f/menu &7đầy đủ tại đây'
+    height: 0.3
+  - content: '&f/lock &7để xem cách chống trộm trong đảo'
+    height: 0.3
+  - content: '&f/xoapv &7để dọn pv rác'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&e&lMob Drop'
+    height: 0.3
+  - content: '&eThỏ &7drop &fCà rốt'
+    height: 0.3
+  - content: '&eDân làng &7drop &fSách'
+    height: 0.3
+  - content: '&eGhast &7drop &fSắt'
+    height: 0.3
+  - content: '&eGolem &7drop &fLục bảo'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&b&lTop điểm khối build đảo'
+    height: 0.3
+  - content: '&bKhối kim cương &7100 điểm'
+    height: 0.3
+  - content: '&bKhối lục bảo &7125 điểm'
+    height: 0.3
+  - content: '&bMiếng mút &720000 điểm'
+    height: 0.3
+  - content: '&bEnder Portal &748000 điểm'
+    height: 0.3
+  - content: '&bTrứng Rồng &75000000 điểm'
+    height: 0.3
+  - content: '&f&l100 điểm = 1 level'
+    height: 0.3
+  actions: {}

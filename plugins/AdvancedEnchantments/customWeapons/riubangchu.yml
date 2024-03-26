@@ -1,0 +1,31 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: 'Bangchu'
+
+# Currently supported are only melee weapons
+material: DIAMOND_AXE
+
+# Weapon's name
+name: '&9&k;;&r &5&L(Rìu) &D&LBang Chủ &9&k;;'
+
+# Weapon's lore
+lore:
+  - ''
+  - '&d◆ ◆ ◆ &d&lTRUYỀN THUYẾT &d◆ ◆ ◆'
+  - '&d* Tăng 12% damage.'
+  - '&7&o(Mặc full Set Bang Chủ để kích hoạt.)'  
+  - ''
+
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'sharpness:30'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:
+  ATTACK:
+    chance: 55
+    effects:
+      - 'INCREASE_DAMAGE:12'

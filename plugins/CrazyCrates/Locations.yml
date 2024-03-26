@@ -1,0 +1,67 @@
+Locations:
+  '1':
+    Crate: Thuongco
+    World: world
+    X: -1193
+    Y: 168
+    Z: 689
+  '2':
+    Crate: Phuthuy
+    World: world
+    X: -1193
+    Y: 168
+    Z: 692
+  '3':
+    Crate: cauvong
+    World: world
+    X: -1193
+    Y: 168
+    Z: 686
+  '4':
+    Crate: QuyMaoDonate
+    World: SuperiorWorld
+    X: -42000
+    Y: 102
+    Z: -16488
+  '5':
+    Crate: Thuongco
+    World: world
+    X: 17
+    Y: 130
+    Z: 1637
+  '6':
+    Crate: cauvong
+    World: world
+    X: 13
+    Y: 130
+    Z: 1639
+  '7':
+    Crate: Phuthuy
+    World: world
+    X: 21
+    Y: 130
+    Z: 1639
+  '9':
+    Crate: Thuongco
+    World: NewSpawn
+    X: 40
+    Y: 145
+    Z: -1738
+  '10':
+    Crate: Phuthuy
+    World: NewSpawn
+    X: 51
+    Y: 145
+    Z: -1749
+  '11':
+    Crate: cauvong
+    World: NewSpawn
+    X: 40
+    Y: 145
+    Z: -1760
+  '8':
+    Crate: TamThangBa
+    World: NewSpawn
+    X: 47
+    Y: 145
+    Z: -1742

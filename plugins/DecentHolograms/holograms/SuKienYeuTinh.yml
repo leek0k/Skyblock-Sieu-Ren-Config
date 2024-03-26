@@ -1,0 +1,30 @@
+location: NewSpawn:32.5:148.000:-1785.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&4&l[!] PHẦN THƯỞNG SỰ KIỆN SĂN LÙNG YÊU TINH'
+    height: 0.3
+  - content: '&a&lXuất hiện 3h 1 lần tại &c&l((Warp PvP))'
+    height: 0.3
+  - content: '&6&l* &5&lSách huyền thoại &7((35%))'
+    height: 0.3
+  - content: '&6&l* &d15 ⛁ &7((50%))'
+    height: 0.3
+  - content: '&6&l* &b26682 EXP &7((100%))'
+    height: 0.3
+  - content: '&6&l* &e&lMảnh Trứng Ngẫu Nhiên &6(Huyền Thoại) &6&l* &7((20%))'
+    height: 0.3
+  - content: '&6&l* &d○ ○ &5&l○ &d&lSPAWNER QUÁI&7 (Ngẫu nhiên x1) &5&l○ &d○ ○ &7((100%))'
+    height: 0.3
+  - content: '&6&l* &e&lMiếng mút (1-5) &7(( 100% ))'
+    height: 0.3
+  - content: '&6&l* &6★ &c&lCHÂU BÁU CỦA &6&lYÊU TINH &6★ &7(( 5% ))'
+    height: 0.3
+  - content: '&7--------------'
+    height: 0.3
+  actions: {}

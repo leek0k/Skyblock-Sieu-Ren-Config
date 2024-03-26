@@ -1,0 +1,11 @@
+# Command
+# /shieldskinitem,ssi give <player> <type> <pattern> - Lấy vật phẩm đặc biệt' # Permission: shieldskinitem.command.give
+# VD: /ssi give Player skin EnderSkin - Lấy vật phẩm sơn skin tên EnderSkin
+# VD: /ssi give Player remove-skin Default  - Lấy vật phẩm tẩy skin tên EnderSkin
+# /shieldskinitem,ssi save <pattern> - Lưu mẫu khiên/cờ hiệu trên tay' # Permission: shieldskinitem.command.save
+# /shieldskinitem,ssi get <pattern> - Lấy mẫu khiên' # Permission: shieldskinitem.command.get
+# /shieldskinitem reload - Cài lại cấu hình' # Permission: shieldskinitem.command.reload
+# /shieldskinitem help - Xem hướng dẫn' # Permission: shieldskinitem.command.help
+
+# Thời gian cập nhật hiệu ứng ItemAbility theo tick
+update-item-ability-tick: 20

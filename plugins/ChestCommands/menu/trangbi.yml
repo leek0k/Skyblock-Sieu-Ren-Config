@@ -1,0 +1,141 @@
+﻿######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+
+menu-settings:
+  name: '&8&lCỬA HÀNG TRANG BỊ'
+  rows: 3
+  command: 'trangbi'
+  
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+
+quaden:
+  POINTS: 119
+  COMMAND: 'console: ae givercbook HEROIC {player} 1;console: ie give kiemquaden {player} 1;console: ie give muquaden {player} 1;console: ie give aoquaden {player} 1;console: ie give giayquaden {player} 1;console: ie give quanquaden {player} 1;console:ss give {player} Irongolem 1; tell: &e&l(&7&l!&e&l)&e&l Mua thành công'  
+  NAME: '&b&kiii&f&l&nTrang bị&d&kiii&f&l KIẾM SĨ'
+  LORE:
+    - ''
+    - '&e&lBộ trang bị gồm&7:'
+    - '&f&l* &4&l◄&c&lGƯƠM&4&l► &4&lQUẠ ĐEN 乂'
+    - '&f&l* &4&l◄&c&lMŨ&4&l► &4&lQUẠ ĐEN 乂'
+    - '&f&l* &4&l◄&c&lGIÁP&4&l► &4&lQUẠ ĐEN 乂'
+    - '&f&l* &4&l◄&c&lQUẦN&4&l► &4&lQUẠ ĐEN 乂'
+    - '&f&l* &4&l◄&c&lGIÀY&4&l► &4&lQUẠ ĐEN 乂'
+    - '&f&l* +1 SPAWNER IRON GOLEM'
+    - '&f&l* +1 &d&lSÁCH TRUYỀN THUYẾT'
+    - ''
+    - '&f&l[!]&r &fLỡ mất hoặc bị đánh vỡ'
+    - '&ftrang bị HeroMC sẽ không chịu trách nhiệm.'
+    - '&r'
+    - '&6&l* &e&l&nGIÁ&7:&r &e&m249&r&b 119⛁'     
+    - ''
+    - '&f&l[!] &eChuột trái&7 để mua &7&ki&r&f&l&nTrang bị&r&7&ki'    
+    - '&f&l[!] &e./GKITZ rồi Chuột phải&7 để xem qua &7&ki&r&f&l&nTrang bị&r&7&ki' 
+    - ''
+    - '&0&o#Item menu'
+  ID: PUMPKIN
+  ENCHANTMENT: 'fire aspect, 1'  
+  POSITION-X: 2
+  POSITION-Y: 2    
+dathu:
+  POINTS: 119
+  COMMAND: 'console: ae givercbook HEROIC {player} 1;console: ie give riudathu {player} 1;console: ie give mudathu {player} 1;console: ie give aodathu {player} 1;console: ie give giaydathu {player} 1;console: ie give quandathu {player} 1;console:ss give {player} Irongolem 1; tell: &e&l(&7&l!&e&l)&e&l Mua thành công'  
+  NAME: '&b&kiii&f&l&nTrang bị&d&kiii&f&l TIỀU PHU'
+  LORE:
+    - ''
+    - '&e&lBộ trang bị gồm&7:'
+    - '&f&l* &2&l◄&A&lRÌU&2&l► &2&lDÃ THÚ &2♰'
+    - '&f&l* &2&l◄&A&lMŨ&2&l► &2&lDÃ THÚ &2♰'
+    - '&f&l* &2&l◄&A&lGIÁP&2&l► &2&lDÃ THÚ &2♰'
+    - '&f&l* &2&l◄&A&lQUẦN&2&l► &2&lDÃ THÚ &2♰'
+    - '&f&l* &2&l◄&A&lGIÀY&2&l► &2&lDÃ THÚ &2♰'
+    - '&f&l* +1 SPAWNER IRON GOLEM'
+    - '&f&l* +1 &d&lSÁCH TRUYỀN THUYẾT'    
+    - ''
+    - '&f&l[!]&r &fLỡ mất hoặc bị đánh vỡ'
+    - '&ftrang bị HeroMC sẽ không chịu trách nhiệm.'
+    - '&r'
+    - '&6&l* &e&l&nGIÁ&7:&r &e&m249&r&b 119⛁'      
+    - ''
+    - '&f&l[!] &eChuột trái&7 để mua &7&ki&r&f&l&nTrang bị&r&7&ki'    
+    - '&f&l[!] &e./GKITZ rồi Chuột phải&7 để xem qua &7&ki&r&f&l&nTrang bị&r&7&ki' 
+    - ''
+    - '&0&o#Item menu'
+  ID: PUMPKIN
+  ENCHANTMENT: 'fire aspect, 1'  
+  POSITION-X: 4
+  POSITION-Y: 2     
+daibang:
+  POINTS: 119
+  COMMAND: 'console: ae givercbook HEROIC {player} 1;console: ie give cungdaibang {player} 1;console: ie give mudaibang {player} 1;console: ie give aodaibang {player} 1;console: ie give giaydaibang {player} 1;console: ie give quandaibang {player} 1;console:ss give {player} Irongolem 1; tell: &e&l(&7&l!&e&l)&e&l Mua thành công'  
+  NAME: '&b&kiii&f&l&nTrang bị&r&d&kiii&f&l XẠ THỦ'
+  LORE:
+    - ''
+    - '&e&lBộ trang bị gồm&7:'
+    - '&f&l* &6&l◄&E&lCUNG&6&l► ĐẠI BÀNG &E➹'
+    - '&f&l* &6&l◄&E&lMŨ&6&l► ĐẠI BÀNG &E➹'
+    - '&f&l* &6&l◄&E&lGIÁP&6&l► ĐẠI BÀNG &E➹'
+    - '&f&l* &6&l◄&E&lQUẦN&6&l► ĐẠI BÀNG &E➹'
+    - '&f&l* &6&l◄&E&lGIÀY&6&l► ĐẠI BÀNG &E➹'
+    - '&f&l* +1 SPAWNER IRON GOLEM'
+    - '&f&l* +1 &d&lSÁCH TRUYỀN THUYẾT'    
+    - ''
+    - '&f&l[!]&r &fLỡ mất hoặc bị đánh vỡ'
+    - '&ftrang bị HeroMC sẽ không chịu trách nhiệm.'
+    - '&r'
+    - '&6&l* &e&l&nGIÁ&7:&r &e&m249&r&b 119⛁'      
+    - ''
+    - '&f&l[!] &eChuột trái&7 để mua &7&ki&r&f&l&nTrang bị&r&7&ki'    
+    - '&f&l[!] &e./GKITZ rồi Chuột phải&7 để xem qua &7&ki&r&f&l&nTrang bị&r&7&ki' 
+    - ''
+    - '&0&o#Item menu'
+  ID: PUMPKIN
+  ENCHANTMENT: 'fire aspect, 1'  
+  POSITION-X: 6
+  POSITION-Y: 2     
+tieuyeu:
+  POINTS: 149
+  COMMAND: 'console: ae givercbook HEROIC {player} 1;console: ie give cuptieuyeu {player} 1;console: ie give giaytieuyeu {player} 1;console:ss give {player} Irongolem 1; tell: &e&l(&7&l!&e&l)&e&l Mua thành công'  
+  NAME: '&b&kiii&f&l&nTrang bị&r&d&kiii&f&l TIỂU YÊU'
+  LORE:
+    - ''
+    - '&e&lBộ trang bị gồm&7:'
+    - '&f&l* &E&l◄&A&lCÚP&E&l► TIỂU YÊU &Aᴖᴥᴖ'
+    - '&f&l* &E&l◄&A&lGIÀY&E&l► TIỂU YÊU &Aᴖᴥᴖ'
+    - '&f&l* +1 SPAWNER IRON GOLEM'
+    - '&f&l* +1 &d&lSÁCH TRUYỀN THUYẾT'    
+    - ''
+    - '&f&l[!]&r &fLỡ mất hoặc bị đánh vỡ'
+    - '&ftrang bị HeroMC sẽ không chịu trách nhiệm.'
+    - '&r'
+    - '&6&l* &e&l&nGIÁ&7:&r &e&m269&r&b 149⛁'     
+    - ''
+    - '&f&l[!] &eChuột trái&7 để mua &7&ki&r&f&l&nTrang bị&r&7&ki'    
+    - '&f&l[!] &e./GKITZ rồi Chuột phải&7 để xem qua &7&ki&r&f&l&nTrang bị&r&7&ki' 
+    - ''
+    - '&0&o#Item menu'
+  ID: PUMPKIN
+  ENCHANTMENT: 'fire aspect, 1'  
+  POSITION-X: 8
+  POSITION-Y: 2
+
+return-to-main:
+  COMMAND: 'open:main-menu.yml'
+  NAME: '&c&l[arrow_left] [Trở về]'
+  LORE:
+    - '&7Nhấn vào để trở về mục trước'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 'arrow' 
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 3   

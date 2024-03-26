@@ -1,0 +1,100 @@
+#Set this to true to automatically add dropped gems to the account
+AutoRedeem: false
+
+
+#This is where you can customize the chances of receiving a gem
+EntityDropRates:
+  PIG_ZOMBIE:
+    chance: 15
+    amount: 3
+    supportStacking: false #Recommended to keep as false unless you're killing the whole stack at once (Overrides 'amount')
+    randomAmount: true #Set as true to drop a random amount of gems between 1 and the number defined in 'amount' (This also applies to active upgrades)
+    message: '&aĐã tìm thấy {amount}☀ Đá quý'
+  CAVE_SPIDER:
+    chance: 15
+    amount: 3
+    supportStacking: false #Recommended to keep as false unless you're killing the whole stack at once (Overrides 'amount')
+    randomAmount: true #Set as true to drop a random amount of gems between 1 and the number defined in 'amount' (This also applies to active upgrades)
+    message: '&aĐã tìm thấy {amount}☀ Đá quý'
+  WITCH:
+    chance: 15
+    amount: 3
+    supportStacking: false #Recommended to keep as false unless you're killing the whole stack at once (Overrides 'amount')
+    randomAmount: true #Set as true to drop a random amount of gems between 1 and the number defined in 'amount' (This also applies to active upgrades)
+    message: '&aĐã tìm thấy {amount}☀ Đá quý'    
+  BLAZE:
+    chance: 12
+    amount: 3
+    supportStacking: false #Recommended to keep as false unless you're killing the whole stack at once (Overrides 'amount')
+    randomAmount: true #Set as true to drop a random amount of gems between 1 and the number defined in 'amount' (This also applies to active upgrades)
+    message: '&aĐã tìm thấy {amount}☀ Đá quý'
+  SKELETON:
+    chance: 10
+    amount: 3
+    supportStacking: false #Recommended to keep as false unless you're killing the whole stack at once (Overrides 'amount')
+    randomAmount: true
+    message: '&aĐã tìm thấy {amount}☀ Đá quý'
+  ZOMBIE:
+    chance: 10
+    amount: 3
+    supportStacking: false
+    randomAmount: true #Set as true to drop a random amount of gems between 1 and the number defined in 'amount' (This also applies to active upgrades)
+    message: '&aĐã tìm thấy {amount}☀ Đá quý'
+  CREEPER:
+    chance: 10
+    amount: 3
+    supportStacking: false #Recommended to keep as false unless you're killing the whole stack at once (Overrides 'amount')
+    randomAmount: true
+    message: '&aĐã tìm thấy {amount}☀ Đá quý'
+  ENDERMAN:
+    chance: 12
+    amount: 3
+    supportStacking: false
+    randomAmount: true #Set as true to drop a random amount of gems between 1 and the number defined in 'amount' (This also applies to active upgrades)
+    message: '&aĐã tìm thấy {amount}☀ Đá quý'    
+  HUSK:
+    chance: 15
+    amount: 9
+    supportStacking: false #Recommended to keep as false unless you're killing the whole stack at once (Overrides 'amount')
+    randomAmount: true #Set as true to drop a random amount of gems between 1 and the number defined in 'amount' (This also applies to active upgrades)
+    message: '&aĐã tìm thấy {amount}☀ Đá quý'    
+  STRAY:
+    chance: 15
+    amount: 15
+    supportStacking: false #Recommended to keep as false unless you're killing the whole stack at once (Overrides 'amount')
+    randomAmount: true #Set as true to drop a random amount of gems between 1 and the number defined in 'amount' (This also applies to active upgrades)
+    message: '&aĐã tìm thấy {amount}☀ Đá quý'    
+
+
+BlockDropRates:
+  EMERALD_OREAA:
+    chance: 45
+    amount: 2
+    randomAmount: true
+    message: '{prefix} &b{amount}x &agem(s) have been dropped from mining an emerald ore!'
+
+FishDropRates:
+  RAW_FISHAA:
+    chance: 50
+    amount: 1
+    randomAmount: true
+    message: '{prefix} &b{amount}x &agem(s) have been dropped from fishing'
+
+
+AutomatedDropRates:
+  VILLAGERAA:
+    chance: 50
+    amount: 1
+    supportStacking: false #Recommended to keep as false unless you're killing the whole stack at once (Overrides 'amount')
+    randomAmount: true #Set as true to drop a random amount of gems between 1 and stack size (Appies to 'supportStacking'). If false, it will drop the amount of gems equivalent to the stack size
+    deathReasons: #For a list of death causes: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
+    - 'FALL'
+    - 'LAVA'
+
+
+DisabledWorlds:
+  - 'world_nether'
+  
+
+#Only enable this if you are having trouble receiving gems when killing an entity (mob)
+mobDeathPatch: false

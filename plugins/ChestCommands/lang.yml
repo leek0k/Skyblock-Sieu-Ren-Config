@@ -1,0 +1,10 @@
+no-points: '&c[!] Bạn không có đủ &c&l{points}⛁ &cđể mua.'
+no-open-permission: '&cBạn không có quyền &e{permission} &cđể sử dụng.'
+default-no-icon-permission: '&cBạn không có quyền làm điều này.'
+open-menu: ''
+no-exp: '&c[!] Bạn không có đủ &c&l{levels} &ccấp.'
+menu-not-found: '&cMenu này không tồn tại , hãy liên hệ admin để mua.'
+no-money: '&c[!] Bạn không có đủ &c&l{money} &cđể mua.'
+no-required-item: '&c&lBạn phải có đủ &e&l{amount}x {material}'
+open-menu-others: '&aĐã mở menu "{menu}" từ {player}.'
+any: any

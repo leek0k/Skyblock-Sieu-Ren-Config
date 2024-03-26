@@ -1,0 +1,38 @@
+# Mensajes Generales
+
+general:
+  nametag:
+    prefix: '&8[&6EpicVouchers&8] '
+interface:
+  confirmsettings:
+
+    # Mensajes de Interfaz
+    title: '&6Confirmación'
+    confirmitemname: '&2&lCONFIRMAR'
+    confirmitemlore: '&aHaz clic aquí si desea confirmar su acción.'
+    cancelitemname: '&4&lCANCELAR'
+    cancelitemlore: '&cHaz clic aquí si desea cancelar su acción.'
+command:
+  error:
+
+    # Mensajes de Comando
+    noplayer: '&7Ese usuario o bien no existe o no está en línea'
+    novoucher: '&cEse cupón no existe.'
+    notexist: '&7El comando que ingresaste no existe o está escrito incorrectamente.'
+    notnumber: '&7Error al analizar ese número en una cantidad válida.'
+  reload:
+    success: '&7Recargados todos los archivos de configuración y cupones.'
+  give:
+    send: '&7Le has dado a &6%player% &7el cupon &6%voucher% &7(&6x%amount%&7).'
+    receive: '&7Has recibido el cupón &6%voucher% &7(&6x%amount%&7).'
+    cancelled: '&cEl evento fue cancelado.'
+  force:
+    send: '&7Has forzado a &6%player% &7a canjear el cupón &6%voucher% &7(&6x%amount%&7).'
+  list:
+    list: '&7Lista de todos los cupones: &6%list%&7.'
+event:
+  general:
+
+    # Mensajes de Eventos
+    nopermission: '&cNo tienes permiso para hacer eso.'
+    cooldown: '&7Por favor espere &6%time%&7 segundos antes de canjear un nuevo cupón.'

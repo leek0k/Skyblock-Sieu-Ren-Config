@@ -1,0 +1,176 @@
+# Create customized commands.
+enchantment-info:
+  enabled: false
+  command: /enchant
+  inventory:
+    enabled: false
+    type: HOPPER
+    size: 45
+    name: '&e%enchant%&7 information'
+    items:
+      '0':
+        type: STAINED_GLASS_PANE
+        id: 15
+        force-glow: false
+        name: ' '
+        lore: []
+      '1':
+        type: ENCHANTED_BOOK
+        id: 0
+        force-glow: false
+        name: '&7Information about &e%enchant% &7enchantment'
+        lore:
+        - '&eEnchantment &7» &r%ench-colors%'
+        - '&eApplies to &7» &r%applies-to%'
+        - '&eMax Level &7» &r%max-lvl%'
+        - '&eDescription &7» &r%desc%'
+      '2':
+        type: STAINED_GLASS_PANE
+        id: 15
+        force-glow: false
+        name: ' '
+        lore: []
+      '3':
+        type: CHEST
+        id: 0
+        force-glow: false
+        name: '&eApplies to &7»'
+        lore:
+        - '&7%list-of-items%'
+      '4':
+        type: STAINED_GLASS_PANE
+        id: 15
+        force-glow: false
+        name: ' '
+        lore: []
+enchantments:
+  enabled: true
+  command: /celist
+  permission: ''
+  mode:
+    currentMode: GROUPS
+  inventory:
+    size: 45
+    go-back-item: true
+    display-page-number: true
+    name: '&e&l* Sách cường hóa MineAhihi'
+    items:
+      '11':
+        type: STAINED_GLASS_PANE
+        id: 0
+        force-glow: false
+        group: SIMPLE
+        name: '&f&lSÁCH CƯỜNG HÓA -CŨ-'
+        lore:
+        - '&7Nhấp vào đây để xem sách cường hóa'
+        - '&7loại &f&lCũ'
+      '12':
+        type: STAINED_GLASS_PANE
+        id: 5
+        force-glow: false
+        group: UNIQUE
+        name: '&a&lSÁCH CƯỜNG HÓA -HIẾM-'
+        lore:
+        - '&7Nhấp vào đây để xem sách cường hóa'
+        - '&7loại &a&lHiếm'
+      '13':
+        type: STAINED_GLASS_PANE
+        id: 3
+        force-glow: false
+        group: ELITE
+        name: '&b&lSÁCH CƯỜNG HÓA -CỔ-'
+        lore:
+        - '&7Nhấp vào đây để xem sách cường hóa'
+        - '&7loại &b&lCổ'
+      '14':
+        type: STAINED_GLASS_PANE
+        id: 4
+        force-glow: false
+        group: ULTIMATE
+        name: '&e&lSÁCH CƯỜNG HÓA -SIÊU CỔ-'
+        lore:
+        - '&7Nhấp vào đây để xem sách cường hóa'
+        - '&7loại &e&lSiêu Cổ'
+      '15':
+        type: STAINED_GLASS_PANE
+        id: 1
+        force-glow: false
+        group: LEGENDARY
+        name: '&6&lSÁCH CƯỜNG HÓA -HUYỀN THOẠI-'
+        lore:
+        - '&7Nhấp vào đây để xem sách cường hóa'
+        - '&7loại &6&lHUYỀN THOẠI'
+      '21':
+        type: STAINED_GLASS_PANE
+        id: 10
+        force-glow: false
+        group: HEROIC
+        name: '&d&lSÁCH CƯỜNG HÓA -TRUYỀN THUYẾT-'
+        lore:
+        - '&7Nhấp vào đây để xem sách cường hóa'
+        - '&7loại &d&lTRUYỀN THUYẾT'
+      '22':
+        type: STAINED_GLASS_PANE
+        id: 14
+        force-glow: false
+        group: SOUL
+        name: '&c&lSÁCH CƯỜNG HÓA -LINH HỒN-'
+        lore:
+        - '&7Nhấp vào đây để xem sách cường hóa'
+        - '&7loại &c&lLINH HỒN'
+      '31':
+        type: EMERALD
+        force-glow: false
+        group: LIMIT
+        name: '&d&lSÁCH CƯỜNG HÓA -&d⚔&f&lThách Đấu&d⚔-'
+        lore:
+        - '&7Nhấp vào đây để xem sách cường hóa'
+        - '&7loại &d⚔&f&lThách Đấu&d⚔'
+        id: 0
+      '23':
+        type: STAINED_GLASS_PANE
+        id: 4
+        force-glow: true
+        group: ROYAL
+        name: '&6&l&k..&e&lTRUYỀN THUYẾT MẠ VÀNG&6&l&k..'
+        lore:
+        - '&7Nhấp vào đây để xem sách cường hóa'
+        - '&7loại &6&l&k..&e&lMẠ VÀNG&6&l&k..'
+      fill:
+        type: STAINED_GLASS_PANE
+        id: 15
+        force-glow: false
+        name: ' '
+        lore: []
+  group-enchantment-inventory:
+    name: '&7Phù Phép %color%%group%'
+    fill-item:
+      material: STAINED_GLASS_PANE
+      id: 15
+      name: ' '
+      lore: []
+      custom-model-data: 0
+    previous-page:
+      material: STAINED_GLASS_PANE
+      id: 14
+      name: '&cTrang trước.'
+      lore: []
+      slot: '%invSize% - 3'
+      custom-model-data: 0
+    next-page:
+      material: STAINED_GLASS_PANE
+      id: 5
+      name: '&aTrang sau.'
+      lore: []
+      slot: '%invSize% - 2'
+      custom-model-data: 0
+    item:
+      type: ENCHANTED_BOOK
+      id: 0
+      force-glow: false
+      name: '&e%ench-colors%'
+      lore:
+      - ' &ePhù phép &7» &r%ench-colors%'
+      - ' &eCường hóa &7» &r%applies-to%'
+      - ' &eCấp độ &7» &r%max-lvl-roman%'
+      - ' &eMô tả &7» &r%desc%'

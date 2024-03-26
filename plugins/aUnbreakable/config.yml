@@ -1,0 +1,72 @@
+prefix: '&c[&6!&c]'
+custom-command: unbreak
+messages:
+  no-permission: '%prefix% &cError&7: &e!!!.'
+  created-by: true
+  notallowed-tool: '%prefix% &cError&7: &eYou cant make this tool unbreakable.'
+  already-unbreakable: '%prefix% &cError&7: &eVật phẩm này đã có không bị phá vỡ!'
+  success: '%prefix% &eÉp thành công!'
+  holding-air: '%prefix% &cError&7: &eBạn phải cầm vật phẩm trên tay &7(Nếu lỡ mất xu bạn hãy chụp dòng này và nhắn về Fanpage)!'
+allowed:
+  armor:
+    diamond:
+      helmet: true
+      chestplate: true
+      leggings: true
+      boots: true
+    iron:
+      helmet: true
+      chestplate: true
+      leggings: true
+      boots: true
+    gold:
+      helmet: true
+      chestplate: true
+      leggings: true
+      boots: true
+    chain:
+      helmet: true
+      chestplate: true
+      leggings: true
+      boots: true
+    leather:
+      helmet: true
+      chestplate: true
+      leggings: true
+      boots: true
+  pickaxes:
+    diamond: true
+    iron: true
+    gold: true
+    stone: true
+    wood: true
+  axes:
+    diamond: true
+    iron: true
+    gold: true
+    stone: true
+    wood: true
+  swords:
+    diamond: true
+    iron: true
+    gold: true
+    stone: true
+    wood: true
+  hoes:
+    diamond: true
+    iron: true
+    gold: true
+    stone: true
+    wood: true
+  shovels:
+    diamond: true
+    iron: true
+    gold: true
+    stone: true
+    wood: true
+  other:
+    filnt-and-steel: true
+    fishing-rod: true
+    shears: true
+    bow: true
+created-by: false

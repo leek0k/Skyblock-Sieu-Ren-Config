@@ -1,0 +1,20 @@
+# Cập nhật permission người chơi (theo tick)
+update-interval-tick: 200
+
+# Level tối đa mặc định (-1 là không giới hạn)
+default-max-level: 10000
+
+# Level tối đa theo permission
+max-level-permission:
+  1:
+    permission: limitlevel.max.1
+    max-level: 20000
+  2:
+    permission: limitlevel.max.2
+    max-level: 30000
+  3:
+    permission: limitlevel.max.3
+    max-level: 40000 
+  4:
+    permission: limitlevel.max.4
+    max-level: 50000 

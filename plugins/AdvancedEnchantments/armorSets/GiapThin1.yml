@@ -1,0 +1,80 @@
+name: '&c&lSET &e&lĐINH £ONG'
+material: DIAMOND
+settings:
+  equipped:
+    - '&a&l(!) &e&lKích hoạt SET &e&lĐINH £ONG!'
+  unequipped:
+    - '&c&l(!) &e&lDừng kích hoạt SET &e&lĐINH £ONG!'
+items:
+  helmet:
+    name: '&6&l∉&e&lᚸ&6&l∌ &6₤&e&lGIÁP&6∄ &6₤&e&lTHÌN&6∄ &e&l2024 &6« Mũ » &6&l∉&e&lᚸ&6&l∌'
+    lore:
+      - ''   
+      - '&6&l∉&e&lᚸ&6&l∌ &e&lĐINH £ONG &6&l∉&e&lᚸ&6&l∌'
+      - '&6&l∉&e Giảm 24% damage &6&l∌'
+      - '&6&l∉&e +4 máu &7((Sinh lực)) &6&l∌'
+      - '&6&l∉&e Đề kháng &6&l∌'
+      - '&7&o(Mặc full Set Đinh £ong để kích hoạt.)'  
+      - ''       
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:6"
+      - "unbreaking:5"
+  chestplate:
+    name: '&6&l∉&e&lᚸ&6&l∌ &6₤&e&lGIÁP&6∄ &6₤&e&lTHÌN&6∄ &e&l2024 &6« Áo » &6&l∉&e&lᚸ&6&l∌'
+    lore:
+      - ''   
+      - '&6&l∉&e&lᚸ&6&l∌ &e&lĐINH £ONG &6&l∉&e&lᚸ&6&l∌'
+      - '&6&l∉&e Giảm 24% damage &6&l∌'
+      - '&6&l∉&e +4 máu &7((Sinh lực)) &6&l∌'
+      - '&6&l∉&e Đề kháng &6&l∌'
+      - '&7&o(Mặc full Set Đinh £ong để kích hoạt.)'  
+      - ''       
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:6"
+      - "unbreaking:5"
+      - "longvuong:1"
+  leggings:
+    name: '&6&l∉&e&lᚸ&6&l∌ &6₤&e&lGIÁP&6∄ &6₤&e&lTHÌN&6∄ &e&l2024 &6« Quần » &6&l∉&e&lᚸ&6&l∌'
+    lore:
+      - ''   
+      - '&6&l∉&e&lᚸ&6&l∌ &e&lĐINH £ONG &6&l∉&e&lᚸ&6&l∌'
+      - '&6&l∉&e Giảm 24% damage &6&l∌'
+      - '&6&l∉&e +4 máu &7((Sinh lực)) &6&l∌'
+      - '&6&l∉&e Đề kháng &6&l∌'
+      - '&7&o(Mặc full Set Đinh £ong để kích hoạt.)'  
+      - ''  
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:6"
+      - "unbreaking:5"
+  boots:
+    name: '&6&l∉&e&lᚸ&6&l∌ &6₤&e&lGIÁP&6∄ &6₤&e&lTHÌN&6∄ &e&l2024 &6« Giày » &6&l∉&e&lᚸ&6&l∌'
+    lore:
+      - ''   
+      - '&6&l∉&e&lᚸ&6&l∌ &e&lĐINH £ONG &6&l∉&e&lᚸ&6&l∌'
+      - '&6&l∉&e Giảm 24% damage &6&l∌'
+      - '&6&l∉&e +4 máu &7((Sinh lực)) &6&l∌'
+      - '&6&l∉&e Đề kháng &6&l∌'
+      - '&7&o(Mặc full Set Đinh £ong để kích hoạt.)'  
+      - ''       
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:6"
+      - "unbreaking:5"
+events:
+  DEFENSE:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:20'
+      - 'NEGATE_DAMAGE:5'      
+  DEFENSE:
+    chance: 100
+    cooldown: 15
+    effects:
+      - 'CURE:DAMAGE_RESISTANCE'
+      - 'POTION:DAMAGE_RESISTANCE:2:100'
+      - 'WAIT:110'
+      - 'CURE:DAMAGE_RESISTANCE'
+      - 'POTION_OVERRIDE:DAMAGE_RESISTANCE:1:1200'
+  DEFENSE_BOW:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:20'   

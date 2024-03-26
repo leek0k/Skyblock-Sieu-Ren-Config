@@ -1,0 +1,22 @@
+location: NewSpawn:21.399:147.000:-1789.255
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&c&l** &c&lPvP &c&L**'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&6Lưu ý Chết sẽ Drop:'
+    height: 0.3
+  - content: '&fTáo vàng, Táo vàng Enchant, Đậu Thần'
+    height: 0.3
+  - content: '&fMắt Ender'
+    height: 0.3
+  - content: '&fCác loại thuốc'
+    height: 0.3
+  actions: {}

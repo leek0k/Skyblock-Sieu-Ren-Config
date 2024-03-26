@@ -1,0 +1,40 @@
+location: NewSpawn:10.500:149.000:-1803.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&a&l[!] TOP ĐẢO BÁ VƯƠNG THÁNG &7(Level đảo)'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&6&l* &e&l#1 &b&lThưởng&7✎ &d600⛁'
+    height: 0.3
+  - content: '&6&l* &e&l#2 &b&lThưởng&7✎ &d550⛁'
+    height: 0.3
+  - content: '&6&l* &e&l#3 &b&lThưởng&7✎ &d500⛁'
+    height: 0.3
+  - content: '&6&l* &e&l#4 &b&lThưởng&7✎ &d450⛁'
+    height: 0.3
+  - content: '&6&l* &e&l#5 &b&lThưởng&7✎ &d400⛁'
+    height: 0.3
+  - content: '&6&l* &e&l#6 &b&lThưởng&7✎ &d350⛁'
+    height: 0.3
+  - content: '&6&l* &e&l#7 &b&lThưởng&7✎ &d300⛁'
+    height: 0.3
+  - content: '&6&l* &e&l#8 &b&lThưởng&7✎ &d250⛁'
+    height: 0.3
+  - content: '&6&l* &e&l#9 &b&lThưởng&7✎ &d200⛁'
+    height: 0.3
+  - content: '&6&l* &e&l#10 &b&lThưởng&7✎ &d150⛁'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&6&l✔ &e&lTRƯA 12H &6&lNGÀY CUỐI CÙNG CỦA MỖI THÁNG'
+    height: 0.3
+  - content: '&6&lSẼ CHỐT TOP VÀ TRAO THƯỞNG ✔'
+    height: 0.3
+  actions: {}

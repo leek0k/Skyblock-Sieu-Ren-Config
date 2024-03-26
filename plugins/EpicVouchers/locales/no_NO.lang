@@ -1,0 +1,38 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&8[&6EpicVouchers&8] '
+interface:
+  confirmsettings:
+
+    # Interface Messages
+    title: '&6Bekreftelse'
+    confirmitemname: '&2&lBEKREFT'
+    confirmitemlore: '&aKlikk her hvis du vil bekrefte handlingen din.'
+    cancelitemname: '&4&lKANSELER'
+    cancelitemlore: '&cKlikk her hvis du ønsker å kanselere handlingen din.'
+command:
+  error:
+
+    # Command Messages
+    noplayer: '&7Den brukeren eksisterer ikke eller er avlogget.'
+    novoucher: '&cDen kupongen eksisterer ikke.'
+    notexist: '&7Kommandoen du skrev inn eksisterer ikke eller er stavet feil.'
+    notnumber: '&7Kunne ikke analysere dette nummeret til et gyldig beløp.'
+  reload:
+    success: '&7Oppdaterte alle konfigurasjonsfiler og kuponger.'
+  give:
+    send: '&7Du har gitt &6%player% &7kupongen &6%voucher% &7(&6x%amount%&7).'
+    receive: '&7Du har mottatt kupongen &6%voucher% &7(&6x%amount%&7).'
+    cancelled: '&cHendelsen ble kansellert.'
+  force:
+    send: '&7Du har tvunget &6%player% &7til å innløse kupongen &6%voucher% &7(&6x%amount%&7).'
+  list:
+    list: '&7Liste av alle kuponger: &6%list%&7.'
+event:
+  general:
+
+    # Event Messages
+    nopermission: '&cDu har ikke tillatelse til å gjøre det.'
+    cooldown: '&7Vennligst vent &6%time%&7 sekunder før du innløser en ny kupong.'

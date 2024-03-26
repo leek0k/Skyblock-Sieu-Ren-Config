@@ -1,0 +1,14 @@
+traitimendermanchua:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    type: CHORUS_FLOWER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lTrái Tim §c§lEnderman Chúa
+      lore:
+      - §fThu thập từ §cEnderman Chúa §ftại §7((/warp theend))
+      - §fDùng để bán tại §e/shop §fhoặc
+      - §ftrao đổi tại §e/ecraft
+      enchants:
+        LUCK: 1

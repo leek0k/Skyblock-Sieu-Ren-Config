@@ -1,0 +1,383 @@
+rules:
+  ######### 5.8.2023 ###############
+  - match-material: 'diamond_sword'
+    match-enchantment: 'durability<4'  
+    match-lore: '#Kiemhuyenthoai1'
+    set-enchantments:
+      - 'durability=4'
+  - match-material: 'diamond_sword'
+    match-enchantment: 'durability<4'  
+    match-lore: '#Kiemhuyenthoai2'
+    set-enchantments:
+      - 'durability=4'
+  - match-material: 'diamond_sword'
+    match-enchantment: 'durability<4'  
+    match-lore: '#Kiemhuyenthoai3'
+    set-enchantments:
+      - 'durability=4'    
+  - match-material: 'diamond_sword'
+    match-enchantment: 'durability<5'  
+    match-lore: '#Kiemtruyenthuyet1'
+    set-enchantments:
+      - 'durability=6'
+  - match-material: 'diamond_sword'
+    match-enchantment: 'durability<5'  
+    match-lore: '#Kiemtruyenthuyet2'
+    set-enchantments:
+      - 'durability=6'
+  - match-material: 'diamond_sword'
+    match-enchantment: 'durability<5'  
+    match-lore: '#iemtruyenthuyet3'
+    set-enchantments:
+      - 'durability=6' 
+  - match-material: 'diamond_sword'
+    match-enchantment: 'durability<5'  
+    match-lore: '#Kiemtoicao1'
+    set-enchantments:
+      - 'durability=7'
+  - match-material: 'diamond_sword'
+    match-enchantment: 'durability<5'  
+    match-lore: '#Kiemtoicao2'
+    set-enchantments:
+      - 'durability=7'
+  - match-material: 'diamond_sword'
+    match-enchantment: 'durability<5'  
+    match-lore: '#Kiemtoicao3'
+    set-enchantments:
+      - 'durability=7' 
+  - match-material: 'gold_axe'
+    match-enchantment: 'durability>9'  
+    match-lore: 'Bá Vương Rìu'
+    set-enchantments:
+      - 'durability=8'  
+  - match-material: 'stone_sword'
+    match-enchantment: 'durability<10'  
+    match-lore: '#Kiemthuongco1'
+    set-enchantments:
+      - 'durability=10'
+  - match-material: 'stone_sword'
+    match-enchantment: 'durability<10'  
+    match-lore: '#Kiemthuongco2'
+    set-enchantments:
+      - 'durability=10'
+  - match-material: 'stone_sword'
+    match-enchantment: 'durability<10'  
+    match-lore: '#Kiemthuongco3'
+    set-enchantments:
+      - 'durability=10'
+  - match-material: 'iron_sword'
+    match-enchantment: 'durability<10'  
+    match-lore: '#Kiemthuongco4'
+    set-enchantments:
+      - 'durability=10'                      
+  ###########HUYEN-THOAI################
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all>100'  
+    match-lore: '#Kiemhuyenthoai1'
+    set-enchantments:
+      - 'damage_all=100'
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all>105'  
+    match-lore: '#Kiemhuyenthoai2'
+    set-enchantments:
+      - 'damage_all=105'    
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all>110'  
+    match-lore: '#Kiemhuyenthoai3'
+    set-enchantments:
+      - 'damage_all=110'       
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>100'  
+    match-lore: '#Riuhuyenthoai1'
+    set-enchantments:
+      - 'damage_all=100'       
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>105'  
+    match-lore: '#Riuhuyenthoai2'
+    set-enchantments:
+      - 'damage_all=105'       
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>110'  
+    match-lore: '#Riuhuyenthoai3'
+    set-enchantments:
+      - 'damage_all=110'       
+  - match-material: 'bow'
+    match-enchantment: 'arrow_damage>55'  
+    match-lore: '#Cunghuyenthoai1'
+    set-enchantments:
+      - 'arrow_damage=55'       
+  - match-material: 'bow'
+    match-enchantment: 'arrow_damage>55'  
+    match-lore: '#Cunghuyenthoai2'
+    set-enchantments:
+      - 'arrow_damage=55'                  
+  #########TRUYEN-THUYET#################
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all>100'  
+    match-lore: '#Kiemtruyenthuyet1'
+    set-enchantments:
+      - 'damage_all=100'          
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all>110'  
+    match-lore: '#Kiemtruyenthuyet2'
+    set-enchantments:
+      - 'damage_all=110'         
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all>115'  
+    match-lore: '#Kiemtruyenthuyet3'
+    set-enchantments:
+      - 'damage_all=115' 
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>100'  
+    match-lore: '#Riutruyenthuyet1'
+    set-enchantments:
+      - 'damage_all=100'          
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>110'  
+    match-lore: '#Riutruyenthuyet2'
+    set-enchantments:
+      - 'damage_all=110'         
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>115'  
+    match-lore: '#Riutruyenthuyet3'
+    set-enchantments:
+      - 'damage_all=115' 
+  - match-material: 'bow'
+    match-enchantment: 'arrow_damage>50'  
+    match-lore: '#Cungtruyenthuyet1'
+    set-enchantments:
+      - 'arrow_damage=50'          
+  - match-material: 'bow'
+    match-enchantment: 'arrow_damage>55'  
+    match-lore: '#Cungtruyenthuyet2'
+    set-enchantments:
+      - 'arrow_damage=55'         
+  - match-material: 'bow'
+    match-enchantment: 'arrow_damage>60'  
+    match-lore: '#Cungtruyenthuyet3'
+    set-enchantments:
+      - 'arrow_damage=60' 
+  ##############TOI-CAO##################      
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all>115'  
+    match-lore: '#Kiemtoicao1'
+    set-enchantments:
+      - 'damage_all=115'
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all<115'  
+    match-lore: '#Kiemtoicao1'
+    set-enchantments:
+      - 'damage_all=115'      
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all>120'  
+    match-lore: '#Kiemtoicao2'
+    set-enchantments:
+      - 'damage_all=120'
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all>125'  
+    match-lore: '#Kiemtoicao3'
+    set-enchantments:
+      - 'damage_all=125'
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>115'  
+    match-lore: '#Riutoicao1'
+    set-enchantments:
+      - 'damage_all=115'
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>120'  
+    match-lore: '#Riutoicao2'
+    set-enchantments:
+      - 'damage_all=120'
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>125'  
+    match-lore: '#Riutoicao3'
+    set-enchantments:
+      - 'damage_all=125'
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>115'  
+    match-lore: '#Riutoicao1'
+    set-enchantments:
+      - 'damage_all=115'
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>120'  
+    match-lore: '#Riutoicao2'
+    set-enchantments:
+      - 'damage_all=120'
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>125'  
+    match-lore: '#Riutoicao3'
+    set-enchantments:
+      - 'damage_all=125'
+  - match-material: 'bow'
+    match-enchantment: 'arrow_damage>65'  
+    match-lore: '#Cungtoicao1'
+    set-enchantments:
+      - 'arrow_damage=65'
+  - match-material: 'bow'
+    match-enchantment: 'arrow_damage>70'  
+    match-lore: '#Cungtoicao2'
+    set-enchantments:
+      - 'arrow_damage=70'
+  - match-material: 'bow'
+    match-enchantment: 'arrow_damage>75'  
+    match-lore: '#Cungtoicao3'
+    set-enchantments:
+      - 'arrow_damage=75'
+  ###############THUONG-CO###############
+  - match-material: 'stone_sword'
+    match-enchantment: 'damage_all>140'  
+    match-lore: '#Kiemthuongco1'
+    set-enchantments:
+      - 'damage_all=140'      
+  - match-material: 'stone_sword'
+    match-enchantment: 'damage_all>145'  
+    match-lore: '#Kiemthuongco2'
+    set-enchantments:
+      - 'damage_all=145'     
+  - match-material: 'stone_sword'
+    match-enchantment: 'damage_all>150'  
+    match-lore: '#Kiemthuongco3'
+    set-enchantments:
+      - 'damage_all=150'      
+  - match-material: 'iron_sword'
+    match-enchantment: 'damage_all>160'  
+    match-lore: '#Kiemthuongco4'
+    set-enchantments:
+      - 'damage_all=160'      
+    ####FIX_THUONGCO#####
+  - match-material: 'stone_sword'
+    match-enchantment: 'damage_all<140'  
+    match-lore: '* Tăng 20% damage.'
+    set-enchantments:
+      - 'damage_all=140'
+  - match-material: 'stone_sword'
+    match-enchantment: 'damage_all<145'  
+    match-lore: '* Tăng 22% damage.'
+    set-enchantments:
+      - 'damage_all=145' 
+  - match-material: 'stone_sword'
+    match-enchantment: 'damage_all<150'  
+    match-lore: '* Tăng 24% damage.'
+    set-enchantments:
+      - 'damage_all=150'
+  - match-material: 'iron_sword'
+    match-enchantment: 'damage_all<160'  
+    match-lore: '*Tăng 30% damage.'
+    set-enchantments:
+      - 'damage_all=160'   
+  - match-material: 'stone_sword'
+    match-enchantment: 'damage_all<145'  
+    match-lore: 'Tăng 22% damage.'
+    set-enchantments:
+      - 'damage_all=145' 
+  - match-material: 'stone_sword'
+    match-enchantment: 'damage_all<150'  
+    match-lore: 'Tăng 24% damage.'
+    set-enchantments:
+      - 'damage_all=150'
+  - match-material: 'iron_sword'
+    match-enchantment: 'damage_all<160'  
+    match-lore: 'Tăng 30% damage.'
+    set-enchantments:
+      - 'damage_all=160' 
+    ####FIX_TOICAO####
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all<115'  
+    match-lore: '* Tăng 16% damage.'
+    set-enchantments:
+      - 'damage_all=115'
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all<115'  
+    match-lore: 'Tăng 16% damage.'
+    set-enchantments:
+      - 'damage_all=115'
+  - match-material: 'bow'
+    match-enchantment: 'arrow_damage<65'  
+    match-lore: '፠ ፠ ፠ TỐI CAO ፠ ፠ ፠'
+    set-enchantments:
+      - 'arrow_damage=65'
+    ###########CUP###########
+  - match-material: 'diamond_pickaxe'
+    match-enchantment: 'dig_speed<6'
+    match-lore: 'HUYỀN THOẠI'
+    set-enchantments:
+      - 'dig_speed=6'
+  - match-material: 'diamond_pickaxe'
+    match-enchantment: 'loot_bonus_blocks=4'
+    match-lore: 'HUYỀN THOẠI'
+    set-enchantments:
+      - 'loot_bonus_blocks=3'
+  - match-material: 'diamond_pickaxe'
+    match-enchantment: 'dig_speed<7'
+    match-lore: 'TRUYỀN THUYẾT'
+    set-enchantments:
+      - 'dig_speed=7'
+  - match-material: 'diamond_pickaxe'
+    match-enchantment: 'dig_speed<8'
+    match-lore: 'TỐI CAO'
+    set-enchantments:
+      - 'dig_speed=8'
+  - match-material: 'diamond_pickaxe'
+    match-enchantment: 'dig_speed<9'
+    match-lore: 'THƯỢNG CỔ'
+    set-enchantments:
+      - 'dig_speed=9'
+  - match-material: 'diamond_pickaxe'
+    match-enchantment: 'dig_speed<10'
+    match-lore: '#Cupbavuong1'
+    set-enchantments:
+      - 'dig_speed=10'
+  - match-material: 'diamond_axe'
+    match-enchantment: 'damage_all>105'
+    match-lore: '* Giảm 10% damage đối thủ.'
+    set-enchantments:
+      - 'damage_all=105'
+  - match-material: 'diamond_sword'
+    match-enchantment: 'damage_all>105'
+    match-lore: '* Giảm 10% damage đối thủ.'
+    set-enchantments:
+      - 'damage_all=105'
+  - match-materials: 
+    - 'DIAMOND_BOOTS'
+    - 'DIAMOND_CHESTPLATE'
+    - 'DIAMOND_HELMET'
+    - 'DIAMOND_LEGGINGS'
+    - 'GOLD_HELMET'
+    - 'GOLD_CHESTPLATE'
+    - 'GOLD_LEGGINGS'
+    - 'GOLD_BOOTS'
+    - 'LEATHER_HELMET'
+    - 'LEATHER_CHESTPLATE'
+    - 'LEATHER_LEGGINGS'
+    - 'LEATHER_BOOTS'
+    - 'SHIELD'
+    - 'CHAINMAIL_HELMET'
+    - 'CHAINMAIL_CHESTPLATE'
+    - 'CHAINMAIL_LEGGINGS'
+    - 'CHAINMAIL_BOOTS'
+    - 'IRON_HELMET'
+    - 'IRON_CHESTPLATE'
+    - 'IRON_LEGGINGS'
+    - 'IRON_BOOTS'
+    match-enchantment: 'thorns>=1'
+    match-lore: ''
+    set-enchantments:
+      - 'thorns=0'
+  ###############TET-2024###############
+  - match-materials: 
+    - 'SKULL'
+    - 'LEATHER_CHESTPLATE'
+    - 'LEATHER_LEGGINGS'
+    - 'LEATHER_BOOTS'
+    - 'DIAMOND_BOOTS'
+    - 'DIAMOND_CHESTPLATE'
+    - 'DIAMOND_HELMET'
+    - 'DIAMOND_LEGGINGS'
+    - 'DIAMOND_SWORD'
+    - 'DIAMOND_AXE'
+    - 'IRON_SWORD'
+    - 'IRON_AXE'
+    match-enchantment: 'DURABILITY>4'
+    match-lore: '£ONG'
+    set-enchantments:
+      - 'luck=10'

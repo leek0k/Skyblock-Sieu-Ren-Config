@@ -1,0 +1,28 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: ''
+
+# Currently supported are only melee weapons
+material: BOW
+
+# Weapon's name
+name: '&5&L✧&D&L✧&5&L✧ &D&lTHẦN &9&l&NCung&r &7(+6) &7[OP] &5&L✧&D&L✧&5&L✧'
+
+# Weapon's lore
+lore:
+  - ''
+  - '&d◆ ◆ ◆ &d&lTRUYỀN THUYẾT &7(New) &d◆ ◆ ◆' 
+  - '&d* Thần Cung'   
+  - '&0&o#Cungtruyenthuyetnew7'
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'power:65'
+  - 'unbreaking:15'
+  - 'flame:4'
+  - 'punch:1'
+  - 'infinity:1'
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:

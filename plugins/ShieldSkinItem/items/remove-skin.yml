@@ -1,0 +1,24 @@
+# Vật phẩm tẩy skin khỏi khiên
+list:
+  Default:
+    # Vật phẩm hiển thị
+    item:
+      type: INK_SACK
+      data: 8
+      display: '&8&lTẩy sơn khiên'
+      lore:
+      - '&7Dùng để tẩy sơn đặc biệt của khiên'
+      glowing: true
+    # Trả lại vật phẩm sơn sau khi tẩy (mặc định: false)
+    # Không trả lại vật phẩm sơn sau khi tẩy (true)
+    no-return-skin-item: false
+    # Danh sách các skin có thể tẩy 
+    # Nếu danh sách trống thì mọi shield có skin đều có thể tẩy
+    # Nếu danh sách không trống thì skin nào trong danh sách mới có thể tẩy
+    #whitelist-skin:
+    #- 'EnderSkin'
+    # Danh sách các skin không thể tẩy
+    # Nếu danh sách trống thì không skin nào bị cấm
+    # Nếu danh sách không trống thì skin nào trong danh sách sẽ không thể tẩy
+    #blacklist-skin: 
+    #- 'EnderSkin'

@@ -1,0 +1,40 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: ''
+
+# Currently supported are only melee weapons
+material: DIAMOND_AXE
+
+# Weapon's name
+name: '&f&l✲ &b&lRÌU GIÁNG SINH 2023 &f&l✲'
+
+# Weapon's lore
+lore:
+  - ''   
+  - '&f❅&f&l❅&f❅ &b&lGIÁNG SINH &f❅&f&l❅&f❅'
+  - '&b⋆ Tăng &c42% &fsát thương.'
+  - '&b⋆ Có cơ hội nhân đôi sát thương'
+  - '&b⋆ Được phù phép từ phép màu giáng sinh'
+
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'sharpness:170'
+  - 'unbreaking:10'
+  - 'fireaspect:5'
+  - 'looting:5'
+  - 'baneofarthropods:5'
+  - 'smite:10'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:
+  ATTACK:
+    chance: 50
+    effects:
+      - 'INCREASE_DAMAGE:42'
+  ATTACK:
+    chance: 5
+    effects:
+      - 'DOUBLE_DAMAGE'

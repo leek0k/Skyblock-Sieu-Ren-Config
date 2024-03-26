@@ -1,0 +1,37 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: 'Thuongco'
+
+# Currently supported are only melee weapons
+material: GOLD_AXE
+
+# Weapon's name
+name: '&e乄٭乄&6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG&e乄٭乄 &6&l(.Rìu.)'
+
+# Weapon's lore
+lore:
+  - ''   
+  - '&e乄٭乄٭乄 &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG &e乄٭乄٭乄'
+  - '&e⋆ &6Bá Vương Rìu'
+  - '&e⋆ &6Tăng 40% damage.'
+  - '&7&o(Mặc full Set Bá Vương để kích hoạt.)' 
+  - ''  
+
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'sharpness:160'
+  - 'unbreaking:8'
+  - 'fireaspect:4'
+  - 'looting:4'
+  - 'baneofarthropods:5'
+  - 'smite:5'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:
+  ATTACK:
+    chance: 55
+    effects:
+      - 'INCREASE_DAMAGE:40'

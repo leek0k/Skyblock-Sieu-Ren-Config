@@ -1,0 +1,873 @@
+#These are normal rewards. There can be UNLIMITED amount of normal rewards.
+#Make sure you edit all spaces. If the new reward doesn't have all values.
+#Plugin might not start correctly.
+Normal:
+  #Make sure you use the same identifier in all servers otherwise players will be able to claim
+  #the same reward because it has a different name.<- IMPORTANT
+  1:
+    Displayname: ""
+    Min-level: 1
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  2:
+    Displayname: ""
+    Min-level: 2
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  3:
+    Displayname: ""
+    Min-level: 3
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  4:
+    Displayname: ""
+    Min-level: 4
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  5:
+    Displayname: ""
+    Min-level: 5
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "lp user {PLAYER} permission set quests.quest.bingo2"  
+  6:
+    Displayname: ""
+    Min-level: 6
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  7:
+    Displayname: ""
+    Min-level: 7
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  8:
+    Displayname: ""
+    Min-level: 8
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  9:
+    Displayname: ""
+    Min-level: 9
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  10:
+    Displayname: ""
+    Min-level: 10
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "lp user {PLAYER} permission set quests.quest.go1" 
+    - "cr give to {PLAYER} hiem 2"
+    - "cr give to {PLAYER} Spawnerhien1 1"
+  11:
+    Displayname: ""
+    Min-level: 11
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  12:
+    Displayname: ""
+    Min-level: 12
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  13:
+    Displayname: ""
+    Min-level: 13
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  14:
+    Displayname: ""
+    Min-level: 14
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  15:
+    Displayname: ""
+    Min-level: 15
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5" 
+    - "lp user {PLAYER} permission set quests.quest.go2"   
+  16:
+    Displayname: ""
+    Min-level: 16
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  17:
+    Displayname: ""
+    Min-level: 17
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"  
+  18:
+    Displayname: ""
+    Min-level: 18
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  19:
+    Displayname: ""
+    Min-level: 19
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"     
+  20:
+    Displayname: ""
+    Min-level: 20
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "ae givebook {PLAYER} godlyoverload 1 1 50 50"
+    - "lp user {PLAYER} permission set quests.quest.khaithac1" 
+    - "cr give to {PLAYER} Spawnerhien1 1"   
+  21:
+    Displayname: ""
+    Min-level: 21
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  22:
+    Displayname: ""
+    Min-level: 22
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  23:
+    Displayname: ""
+    Min-level: 23
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"     
+  24:
+    Displayname: ""
+    Min-level: 24
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  25:
+    Displayname: ""
+    Min-level: 25
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "lp user {PLAYER} permission set quests.quest.khaithac2" 
+  26:
+    Displayname: ""
+    Min-level: 26
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  27:
+    Displayname: ""
+    Min-level: 27
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  28:
+    Displayname: ""
+    Min-level: 28
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  29:
+    Displayname: ""
+    Min-level: 29
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  30:
+    Displayname: ""
+    Min-level: 30
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "lp user {PLAYER} permission set quests.quest.mahaitaccon"
+    - "ie give cuphiem2 {PLAYER} 1"  
+    - "cr give to {PLAYER} Spawnerhien1 1"  
+  31:
+    Displayname: ""
+    Min-level: 31
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5" 
+  32:
+    Displayname: ""
+    Min-level: 32
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  32:
+    Displayname: ""
+    Min-level: 32
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  33:
+    Displayname: ""
+    Min-level: 33
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  34:
+    Displayname: ""
+    Min-level: 34
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  35:
+    Displayname: ""
+    Min-level: 35
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+    - "lp user {PLAYER} permission set quests.quest.nhenyeutinhcon"  
+  36:
+    Displayname: ""
+    Min-level: 36
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  37:
+    Displayname: ""
+    Min-level: 37
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  38:
+    Displayname: ""
+    Min-level: 38
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  39:
+    Displayname: ""
+    Min-level: 39
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"  
+  40:
+    Displayname: ""
+    Min-level: 40
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "lp user {PLAYER} permission set quests.quest.phuthuydencon" 
+    - "cr give to {PLAYER} huyenthoai 1"
+    - "cr give to {PLAYER} Spawnerhien1 1"      
+  41:
+    Displayname: ""
+    Min-level: 41
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"  
+  42:
+    Displayname: ""
+    Min-level: 42
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  43:
+    Displayname: ""
+    Min-level: 43
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"     
+  44:
+    Displayname: ""
+    Min-level: 44
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"     
+  45:
+    Displayname: ""
+    Min-level: 45
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"  
+    - "lp user {PLAYER} permission set quests.quest.quanchetchoc"   
+  46:
+    Displayname: ""
+    Min-level: 46
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"     
+  47:
+    Displayname: ""
+    Min-level: 47
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  48:
+    Displayname: ""
+    Min-level: 48
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  49:
+    Displayname: ""
+    Min-level: 49
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  50:
+    Displayname: ""
+    Min-level: 50
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "lp user {PLAYER} permission set quests.quest.boxuongkiemsi"  
+    - "crazycrates give physical cauvong 3 {PLAYER}"
+    - "cr give to {PLAYER} Spawnerhien1 1" 
+  51:
+    Displayname: ""
+    Min-level: 51
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  52:
+    Displayname: ""
+    Min-level: 52
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  53:
+    Displayname: ""
+    Min-level: 53
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  54:
+    Displayname: ""
+    Min-level: 54
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  55:
+    Displayname: ""
+    Min-level: 55
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "lp user {PLAYER} permission set quests.quest.endercon"
+  56:
+    Displayname: ""
+    Min-level: 56
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  57:
+    Displayname: ""
+    Min-level: 57
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  58:
+    Displayname: ""
+    Min-level: 58
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  59:
+    Displayname: ""
+    Min-level: 59
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  60:
+    Displayname: ""
+    Min-level: 60
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5" 
+    - "lp user {PLAYER} permission set quests.quest.enderme"  
+    - "spellbook give {PLAYER} Sharpness 1" 
+    - "spellbook give {PLAYER} Sharpness 1"  
+    - "cr give to {PLAYER} Spawnerquai3 1"
+  61:
+    Displayname: ""
+    Min-level: 61
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"  
+  62:
+    Displayname: ""
+    Min-level: 62
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  63:
+    Displayname: ""
+    Min-level: 63
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  64:
+    Displayname: ""
+    Min-level: 64
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  65:
+    Displayname: ""
+    Min-level: 65
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"  
+    - "lp user {PLAYER} permission set quests.quest.mahaitacthuong"      
+  66:
+    Displayname: ""
+    Min-level: 66
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  67:
+    Displayname: ""
+    Min-level: 67
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  68:
+    Displayname: ""
+    Min-level: 68
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  69:
+    Displayname: ""
+    Min-level: 69
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  70:
+    Displayname: ""
+    Min-level: 70
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "lp user {PLAYER} permission set quests.quest.nhenyeutinhthuong"    
+    - "crazycrates give physical cauvong 5 {PLAYER}"
+    - "spellbook give {PLAYER} Sharpness 2" 
+    - "spellbook give {PLAYER} Sharpness 2" 
+    - "spellbook give {PLAYER} Power 2" 
+    - "spellbook give {PLAYER} Power 2" 
+    - "cr give to {PLAYER} Spawnerquai3 1" 
+  71:
+    Displayname: ""
+    Min-level: 71
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  72:
+    Displayname: ""
+    Min-level: 72
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"  
+  73:
+    Displayname: ""
+    Min-level: 73
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  74:
+    Displayname: ""
+    Min-level: 74
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  75:
+    Displayname: ""
+    Min-level: 75
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "lp user {PLAYER} permission set quests.quest.phuthuydenthuong"   
+  76:
+    Displayname: ""
+    Min-level: 76
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  77:
+    Displayname: ""
+    Min-level: 77
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5" 
+  78:
+    Displayname: ""
+    Min-level: 78
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  79:
+    Displayname: ""
+    Min-level: 79
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  80:
+    Displayname: ""
+    Min-level: 80
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "lp user {PLAYER} permission set quests.quest.jackthuong" 
+    - "spellbook give {PLAYER} Sharpness 2" 
+    - "spellbook give {PLAYER} Sharpness 2" 
+    - "spellbook give {PLAYER} Power 2" 
+    - "spellbook give {PLAYER} Power 2" 
+    - "ae giverandombook {PLAYER} LEGENDARY"
+    - "cr give to {PLAYER} Spawnerquai3 1"
+  81:
+    Displayname: ""
+    Min-level: 81
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  82:
+    Displayname: ""
+    Min-level: 82
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  83:
+    Displayname: ""
+    Min-level: 83
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  84:
+    Displayname: ""
+    Min-level: 84
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  85:
+    Displayname: ""
+    Min-level: 85
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+    - "lp user {PLAYER} permission set quests.quest.jacksonthuong" 
+  86:
+    Displayname: ""
+    Min-level: 86
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  87:
+    Displayname: ""
+    Min-level: 87
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  88:
+    Displayname: ""
+    Min-level: 88
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  89:
+    Displayname: ""
+    Min-level: 89
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  90:
+    Displayname: ""
+    Min-level: 90
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "lp user {PLAYER} permission set quests.quest.rongenderthuong"   
+    - "ae giverandombook {PLAYER} HEROIC"   
+    - "spellbook give {PLAYER} Sharpness 2" 
+    - "spellbook give {PLAYER} Sharpness 2" 
+    - "spellbook give {PLAYER} Power 2" 
+    - "spellbook give {PLAYER} Power 2" 
+    - "cr give to {PLAYER} Spawnerhien1 1"    
+  91:
+    Displayname: ""
+    Min-level: 91
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"  
+  92:
+    Displayname: ""
+    Min-level: 92
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"   
+  93:
+    Displayname: ""
+    Min-level: 93
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  94:
+    Displayname: ""
+    Min-level: 94
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  95:
+    Displayname: ""
+    Min-level: 95
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"  
+    - "lp user {PLAYER} permission set quests.quest.rongenderthuong"  
+  96:
+    Displayname: ""
+    Min-level: 96
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"    
+  97:
+    Displayname: ""
+    Min-level: 97
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"  
+  98:
+    Displayname: ""
+    Min-level: 98
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+  99:
+    Displayname: ""
+    Min-level: 99
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"  
+  100:
+    Displayname: ""
+    Min-level: 100
+    Servers: []
+    Lore:
+    - ""
+    Commands:
+    - "skills xp add {PLAYER} endurance 5"
+    - "crazycrates give physical PhuThuy 2 {PLAYER}"
+    - "spellbook give {PLAYER} Sharpness 2" 
+    - "spellbook give {PLAYER} Sharpness 2" 
+    - "spellbook give {PLAYER} Sharpness 2" 
+    - "spellbook give {PLAYER} Power 2" 
+    - "spellbook give {PLAYER} Power 2" 
+    - "spellbook give {PLAYER} Power 2" 
+    - "cr give to {PLAYER} Spawnerquai3 1"
+ 

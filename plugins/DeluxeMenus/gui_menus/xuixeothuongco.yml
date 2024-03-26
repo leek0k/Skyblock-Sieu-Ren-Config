@@ -1,0 +1,415 @@
+menu_title: '&8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+open_command: 
+  - xuixeothuongco
+size: 54
+update_interval: 1
+items:
+  'Block':
+    material: STAINED_GLASS_PANE
+    data: 5
+    slots:
+    - 0-8
+    - 45-53
+    display_name: '&r&l'
+    lore:
+    - '&r&l'    
+  'Return':
+    material: STAINED_GLASS_PANE
+    data: 14
+    slot: 49
+    display_name: 'Quay Lại'
+    lore:
+    - ''    
+    click_commands:
+    - '[player] xuixeo'
+  'RankTien':
+    material: PRISMARINE_SHARD
+    slot: 10
+    display_name: '&e&Lx1 MẢNH | Rank &8&l<&b&lTIÊN&8&l>'
+    lore:
+    - ''
+    - '&c• Giá 100 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '100'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 100'
+    - '[console] epicvouchers give %player_name% tien 1'
+    - '[close]'
+  'RankQuy':
+    material: PRISMARINE_SHARD
+    slot: 9
+    display_name: '&e&Lx1 MẢNH | Rank &8&l<&c&lQUỶ&8&l>'
+    lore:
+    - ''
+    - '&c• Giá 40 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '40'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 40'
+    - '[console] epicvouchers give %player_name% quy 1'
+    - '[close]'
+  'RankThan':
+    material: PRISMARINE_SHARD
+    slot: 11
+    display_name: '&e&Lx1 MẢNH | Rank &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l>'
+    lore:
+    - ''
+    - '&c• Giá 300 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '300'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 300'
+    - '[console] epicvouchers give %player_name% than 1'
+    - '[close]'
+  'muthuongco':
+    material: GOLD_HELMET
+    slot: 12
+    display_name: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Mũ)&f﹞&E﹞&6﹞&2&l⌘⌘'
+    lore:
+    - ''
+    - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+    - '&2&l⌘&2Giảm 40% damage.&2&l⌘'
+    - '&2&l⌘&2Đề kháng&2&l⌘'
+    - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+    - ''
+    - '&c• Giá 200 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;10
+    - DURABILITY;5
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '200'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 200'
+    - '[console] ie give muthuongco %player% 1'
+    - '[close]'
+  'giapthuongco':
+    material: GOLD_CHESTPLATE
+    slot: 13
+    display_name: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Giáp)&f﹞&E﹞&6﹞&2&l⌘⌘'
+    lore:
+    - ''
+    - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+    - '&2&l⌘&2Giảm 40% damage.&2&l⌘'
+    - '&2&l⌘&2Đề kháng&2&l⌘'
+    - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+    - ''
+    - '&c• Giá 200 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;10
+    - DURABILITY;5
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '200'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 200'
+    - '[console] ie give giapthuongco %player% 1'
+    - '[close]'
+  'quanthuongco':
+    material: GOLD_LEGGINGS
+    slot: 14
+    display_name: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Quần)&f﹞&E﹞&6﹞&2&l⌘⌘'
+    lore:
+    - ''
+    - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+    - '&2&l⌘&2Giảm 40% damage.&2&l⌘'
+    - '&2&l⌘&2Đề kháng&2&l⌘'
+    - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+    - ''
+    - '&c• Giá 200 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;10
+    - DURABILITY;5
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '200'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 200'
+    - '[console] ie give quanthuongco %player% 1'
+    - '[close]'
+  'giaythuongco':
+    material: GOLD_BOOTS
+    slot: 15
+    display_name: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Giày)&f﹞&E﹞&6﹞&2&l⌘⌘'
+    lore:
+    - ''
+    - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+    - '&2&l⌘&2Giảm 40% damage.&2&l⌘'
+    - '&2&l⌘&2Đề kháng&2&l⌘'
+    - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+    - ''
+    - '&c• Giá 200 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    enchantments:
+    - PROTECTION_ENVIRONMENTAL;10
+    - DURABILITY;5
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '200'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 200'
+    - '[console] ie give giaythuongco %player% 1'
+    - '[close]'
+  'kiem1':
+    material: STONE_SWORD
+    slot: 16
+    display_name: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Kiếm I)&f﹞&E﹞&6﹞&2&l⌘⌘'
+    lore:
+    - ''
+    - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+    - '&2* Tăng 20% damage.'
+    - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+    - ''
+    - '&c• Giá 200 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    enchantments:
+    - DAMAGE_ALL;140
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;3
+    - DURABILITY;10
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '200'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 200'
+    - '[console] ie give kiemthuongco1 %player% 1'
+    - '[close]'
+  'kiem2':
+    material: STONE_SWORD
+    slot: 17
+    display_name: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Kiếm II)&f﹞&E﹞&6﹞&2&l⌘⌘'
+    lore:
+    - ''
+    - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+    - '&2* Tăng 22% damage.'
+    - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+    - ''
+    - '&c• Giá 250 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    enchantments:
+    - DAMAGE_ALL;145
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;3
+    - DURABILITY;10
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '250'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 250'
+    - '[console] ie give kiemthuongco2 %player% 1'
+    - '[close]'
+  'kiem3':
+    material: STONE_SWORD
+    slot: 18
+    display_name: '&2&l⌘⌘&6﹝&E﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&E﹝&f﹝&e(Kiếm III)&f﹞&E﹞&6﹞&2&l⌘⌘'
+    lore:
+    - ''
+    - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+    - '&2* Tăng 24% damage.'
+    - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'
+    - ''
+    - '&c• Giá 300 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    enchantments:
+    - DAMAGE_ALL;150
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;3
+    - DURABILITY;10
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '300'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 300'
+    - '[console] ie give kiemthuongco3 %player% 1'
+    - '[close]'
+  'cup1':
+    material: DIAMOND_PICKAXE
+    slot: 19
+    display_name: '&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    - ''
+    - '&c• Giá 100 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    enchantments:
+    - DIG_SPEED;28
+    - DURABILITY;5
+    - LOOT_BONUS_BLOCKS;18
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '100'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 100'
+    - '[console] ie give cupthuongcotrade1 %player% 1'
+    - '[close]'
+  'cup2':
+    material: DIAMOND_PICKAXE
+    slot: 20
+    display_name: '&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (2♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&2&l⌘⌘&6﹝&e﹝&f﹝&a(2♦) &a&lTHƯỢNG CỔ &a(2♦)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    - ''
+    - '&c• Giá 150 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    enchantments:
+    - DIG_SPEED;30
+    - DURABILITY:5
+    - LOOT_BONUS_BLOCKS;20
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '150'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 150'
+    - '[console] ie give cupthuongcotrade2 %player% 1'
+    - '[close]'
+  'cup3':
+    material: DIAMOND_PICKAXE
+    slot: 21
+    display_name: '&2&l⌘⌘&6﹝&e﹝&f﹝&a&lTHƯỢNG CỔ &6﹝&e﹝&f﹝&e(Cúp&e (3♦))&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&2&l⌘⌘&6﹝&e﹝&f﹝&a(3♦) &a&lTHƯỢNG CỔ &a(3♦)&f﹞&e﹞&6﹞&2&l⌘⌘ &a(New)'
+    - ''
+    - '&c• Giá 200 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    enchantments:
+    - DIG_SPEED;32
+    - DURABILITY:5
+    - LOOT_BONUS_BLOCKS;22
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '200'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 200'
+    - '[console] ie give cupthuongcotrade3 %player% 1'
+    - '[close]'
+  'sothuongco':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjc1NDBiOTM5ZThlOTcyNmNkMjc3NDBkNDQ4ZDExOGNjYTFmZGM1MDlmNTFjNTg4NzZjODU0ODBiMzAyMTQzZSJ9fX0=
+    slot: 22
+    display_name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lSỌ phép từ Trùm Cướp Biển&f﹞&6﹞&d﹞&2&l⌘⌘'
+    lore:
+    - ''
+    - '&7 &l?? &7Sát Thương'
+    - '&7 &l?? &7Tốc Độ Đánh'
+    - '&7 &l?? &7Tim'
+    - '&7 &l?? &7Giáp'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - '&7&l (&7Ô lửa&7&l)'
+    - ''
+    - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+    - '&2* SỌ phép từ Trùm Cướp Biển'
+    - ''
+    - '&2(Đặt lên Hotbar để kích hoạt!)'
+    - ''
+    - '&c• Giá 160 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '160'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 160'
+    - '[console] cr open %player% sothuongco'
+    - '[close]'
+  'tuy_bat_thien_quyen':
+    material: BOOK
+    slot: 23
+    display_name: '&a&lx1 | &2师傅 &a&lTúy bát tiên quyền &2师傅 IV'
+    lore:
+    - ''
+    - '&c• Giá 50 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    enchantments:
+    - DIG_SPEED;32
+    hide_enchantments: true
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '50'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 50'
+    - '[console] ae givebook %player% tuyquyen4 1 1 100 0'
+    - '[close]'
+  'sach_truyen_thuyet':
+    material: BOOK
+    slot: 24
+    display_name: '&Fx3 | &D&LSách Truyền thuyết'
+    lore:
+    - ''
+    - '&c• Giá 50 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '50'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 50'
+    - '[console] ae givercbook HEROIC %player% 3'
+    - '[close]'
+  'sach_linh_hon':
+    material: BOOK
+    slot: 25
+    display_name: '&Fx3 | &C&LSách Linh Hồn'
+    lore:
+    - ''
+    - '&c• Giá 70 (%sieurencore_xuixeo_ThuongCo%) &8&lXui Xẻo &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    click_requirement:
+        requirements:
+            has_points:
+                type: '>='
+                input: '%sieurencore_xuixeo_ThuongCo%'
+                output: '70'
+    click_commands:
+    - '[console] src xuixeo remove ThuongCo %player_name% 70'
+    - '[console] ae givercbook SOUL %player% 3'
+    - '[close]'

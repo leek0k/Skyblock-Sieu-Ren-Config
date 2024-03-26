@@ -1,0 +1,3621 @@
+# 
+# +---------------------------------------+#
+# |         Config Revision 16            |#
+# +---------------------------------------+# (2.X Converted)
+top1farmtop:
+  type: MYSTERY
+  item: ENDER_CHEST 1 arrow_infinite:10 hide:true name:&2&l**_&a&l_Phần_Thưởng_Farm_Top_&c&l[1]_&2&l** lore:&7[!]_Chuột_phải_để_mở_(Real)
+  animation: NONE
+  end-animation: BLANK
+  display-name: top1farmtop
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên trứng!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(100.0), cmd:(/crazycrates give p Thuongco 4 {player}), unique:()
+    - chance:(100.0), cmd:(/crazycrates give p Phuthuy 1 {player}), unique:()
+top2farmtop:
+  type: MYSTERY
+  item: ENDER_CHEST 1 arrow_infinite:10 hide:true name:&2&l**_&a&l_Phần_Thưởng_Farm_Top_&c&l[2]_&2&l** lore:&7[!]_Chuột_phải_để_mở_(Real)
+  animation: NONE
+  end-animation: BLANK
+  display-name: top2farmtop
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên trứng!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(100.0), cmd:(/crazycrates give p Thuongco 3 {player}), unique:()
+    - chance:(100.0), cmd:(/crazycrates give p Phuthuy 1 {player}), unique:()
+top3farmtop:
+  type: MYSTERY
+  item: ENDER_CHEST 1 arrow_infinite:10 hide:true name:&2&l**_&a&l_Phần_Thưởng_Farm_Top_&c&l[3]_&2&l** lore:&7[!]_Chuột_phải_để_mở_(Real)
+  animation: NONE
+  end-animation: BLANK
+  display-name: top3farmtop
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên trứng!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(100.0), cmd:(/crazycrates give p Thuongco 2 {player}), unique:()
+    - chance:(100.0), cmd:(/crazycrates give p Phuthuy 1 {player}), unique:()
+top4farmtop:
+  type: MYSTERY
+  item: ENDER_CHEST 1 arrow_infinite:10 hide:true name:&2&l**_&a&l_Phần_Thưởng_Farm_Top_&c&l[4]_&2&l** lore:&7[!]_Chuột_phải_để_mở_(Real)
+  animation: NONE
+  end-animation: BLANK
+  display-name: top4farmtop
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên trứng!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(100.0), cmd:(/crazycrates give p Thuongco 1 {player}), unique:()
+    - chance:(100.0), cmd:(/crazycrates give p Phuthuy 1 {player}), unique:()
+top5farmtop:
+  type: MYSTERY
+  item: ENDER_CHEST 1 arrow_infinite:10 hide:true name:&2&l**_&a&l_Phần_Thưởng_Farm_Top_&c&l[5]_&2&l** lore:&7[!]_Chuột_phải_để_mở_(Real)
+  animation: NONE
+  end-animation: BLANK
+  display-name: top5farmtop
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên trứng!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/crazycrates give p Thuongco 1 {player}), unique:()
+trungpet1:
+  type: MYSTERY
+  item: EGG 1 arrow_infinite:10 hide:true name:&b&l*_&f&lTrứng_&e&l&nPet&r_&7(Ngẫu_nhiên)_&b&l* lore:&7[!]_Chuột-phải_để_mở_trứng||&b&l***THÔNG_TIN:|&a&l*_&7Thường|&a&l*_&eHiếm|&a&l*_&bCổ|&a&l*_&e&lSiêu_hiếm
+  animation: NONE
+  end-animation: BLANK
+  display-name: trungpet1
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên trứng!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ev give {player} petga 1), unique:()
+    - chance:(100.0), cmd:(/ev give {player} petmeo 1), unique:()
+    - chance:(100.0), cmd:(/ev give {player} petheo 1), unique:()
+    - chance:(100.0), cmd:(/ev give {player} petbo 1), unique:()
+    - chance:(100.0), cmd:(/ev give {player} petcuu 1), unique:()
+    - chance:(100.0), cmd:(/ev give {player} petsoi 1), unique:()
+    - chance:(50.0), cmd:(/ev give {player} petthayma 1), unique:()
+    - chance:(50.0), cmd:(/ev give {player} petslime 1), unique:()
+    - chance:(10.0), cmd:(/ev give {player} petnhenhang 1), unique:()
+tuiluaphep:
+  type: MYSTERY
+  item: LAVA_BUCKET 1 arrow_infinite:10 hide:true name:&e&l๖Túi_๖Lửa_Phép lore:|&7&l&nTHƯỜNG|&7*_&7&l๖Lửa_phép_&7(+Sát_thương)_I|&7*_&7&l๖Lửa_phép_&7(+Máu)_I||&e&l&nHIẾM|&e*_&e&l๖Lửa_phép_&e(+Sát_thương)_II|&e*_&e&l๖Lửa_phép_&e(+Máu)_II||&7Chuột_phải_để_sử_dụng!
+  animation: NONE
+  end-animation: BLANK
+  display-name: tuiluaphep
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 2
+    rewards:
+    - chance:(70.0), cmd:(/itemability gem {player} satthuongthuong 1), unique:()
+    - chance:(70.0), cmd:(/itemability gem {player} mauthuong 1), unique:()
+    - chance:(30.0), cmd:(/itemability gem {player} satthuonghiem 1), unique:()
+    - chance:(30.0), cmd:(/itemability gem {player} mauhiem 1), unique:()
+tuiluathan:
+  type: MYSTERY
+  item: LAVA_BUCKET 1 arrow_infinite:10 hide:true name:&c&l๖Túi_๖Lửa_Thần lore:|&7&l&nTHƯỜNG|&7*_&d&l๖Lửa_phép_&d(+Sát_thương)_IV|&7*_&d&l๖Lửa_phép_&d(+Tim)_IV||&e&l&nHIẾM|&e*_&4&l๖Lửa_phép_&4(+Sát_thương)_V|&e*_&4&l๖Lửa_phép_&4(+Tim)_V||&7Chuột_phải_để_sử_dụng!
+  animation: NONE
+  end-animation: BLANK
+  display-name: tuiluathan
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 2
+    rewards:
+    - chance:(80.0), cmd:(/itemability gem {player} satthuongthanh 1), unique:()
+    - chance:(80.0), cmd:(/itemability gem {player} mauthanh 1), unique:()
+    - chance:(10.0), cmd:(/itemability gem {player} mautoicao 1), unique:()
+    - chance:(10.0), cmd:(/itemability gem {player} satthuongtoicao 1), unique:()
+trungpet2:
+  type: MYSTERY
+  item: EGG 1 arrow_infinite:10 hide:true name:&b&l*_&f&lTrứng_&e&l&nPet&r_&7(Ngẫu_nhiên)_&b&l* lore:&7[!]_Chuột-phải_để_mở_trứng||&b&l***THÔNG_TIN:|&a&l*_&7Thường|&a&l*_&eHiếm|&a&l*_&bCổ|&a&l*_&e&lSiêu_hiếm|&a&l*_&6Huyền_thoại|&a&l*_&dTruyền_thuyết
+  animation: NONE
+  end-animation: BLANK
+  display-name: trungpet2
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên trứng!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(80.0), cmd:(/ev give {player} petga 1), unique:()
+    - chance:(80.0), cmd:(/ev give {player} petmeo 1), unique:()
+    - chance:(80.0), cmd:(/ev give {player} petheo 1), unique:()
+    - chance:(80.0), cmd:(/ev give {player} petbo 1), unique:()
+    - chance:(80.0), cmd:(/ev give {player} petcuu 1), unique:()
+    - chance:(60.0), cmd:(/ev give {player} petsoi 1), unique:()
+    - chance:(30.0), cmd:(/ev give {player} petthayma 1), unique:()
+    - chance:(30.0), cmd:(/ev give {player} petslime 1), unique:()
+    - chance:(30.0), cmd:(/ev give {player} petpigzombie 1), unique:()
+    - chance:(10.0), cmd:(/ev give {player} petmagmacube 1), unique:()
+    - chance:(10.0), cmd:(/ev give {player} petenderman 1), unique:()
+trungpet3:
+  type: MYSTERY
+  item: EGG 1 arrow_infinite:10 hide:true name:&b&l*_&f&lTrứng_&e&l&nPet&r_&7(Ngẫu_nhiên)_&b&l* lore:&7[!]_Chuột-phải_để_mở_trứng||&b&l***THÔNG_TIN:|&a&l*_&7Thường|&a&l*_&eHiếm|&a&l*_&bCổ|&a&l*_&e&lSiêu_hiếm|&a&l*_&6Huyền_thoại|&a&l*_&dTruyền_thuyết|&a&l*_&c&lTối_cao|&a&l*_&a&lThượng_cổ
+  animation: NONE
+  end-animation: BLANK
+  display-name: trungpet3
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên trứng!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ev give {player} petga 1), unique:()
+    - chance:(100.0), cmd:(/ev give {player} petmeo 1), unique:()
+    - chance:(100.0), cmd:(/ev give {player} petheo 1), unique:()
+    - chance:(100.0), cmd:(/ev give {player} petbo 1), unique:()
+    - chance:(100.0), cmd:(/ev give {player} petcuu 1), unique:()
+    - chance:(80.0), cmd:(/ev give {player} petsoi 1), unique:()
+    - chance:(40.0), cmd:(/ev give {player} petthayma 1), unique:()
+    - chance:(40.0), cmd:(/ev give {player} petslime 1), unique:()
+    - chance:(40.0), cmd:(/ev give {player} petpigzombie 1), unique:()
+    - chance:(10.0), cmd:(/ev give {player} petmagmacube 1), unique:()
+    - chance:(10.0), cmd:(/ev give {player} petenderman 1), unique:()
+    - chance:(1.0), cmd:(/ev give {player} petnguoisat 1), unique:()
+bossbeerus:
+  type: MYSTERY
+  item: JACK_O_LANTERN 1 arrow_infinite:10 hide:true name:&9&l๑๑_๑&d&lKho_báu_Thần_Hủy_Diệt_&9&l๑๑_๑ lore:&9Săn_kho_báu_bằng_cách|&9tiêu_diệt_&dBoss_BEERUS.||&f&l&nPhần_thưởng|&f*_1-5_Key_phù_thủy||&7Chuột_phải_để_sử_dụng!
+  animation: NONE
+  end-animation: BLANK
+  display-name: bossbeerus
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/crazycrates give p Phuthuy 1 {player}), unique:()
+    - chance:(100.0), cmd:(/crazycrates give p Phuthuy 2 {player}), unique:()
+    - chance:(100.0), cmd:(/crazycrates give p Phuthuy 3 {player}), unique:()
+    - chance:(100.0), cmd:(/crazycrates give p Phuthuy 4 {player}), unique:()
+    - chance:(100.0), cmd:(/crazycrates give p Phuthuy 5 {player}), unique:()
+bossbeerus2:
+  type: MYSTERY
+  item: BEACON 1 arrow_infinite:10 hide:true name:&b&l★✯★_&5&l●◍Kho_báu_SIÊU_SAIYAN◍●_&b&l★✯★ lore:&9Săn_kho_báu_bằng_cách|&9tiêu_diệt_&dBoss_BEERUS.||&f&l&nPhần_thưởng&r_&7(Ngẫu_nhiên_2_món)||&b★✯★_&5&lSIÊU_●◍SAIYAN◍●_&f(&f&lMũ&f)_&b★✯★|&b★✯★_&5&lSIÊU_●◍SAIYAN◍●_&f(&f&lÁo&f)_&b★✯★|&b★✯★_&5&lSIÊU_●◍SAIYAN◍●_&f(&f&lQuần&f)_&b★✯★|&b★✯★_&5&lSIÊU_●◍SAIYAN◍●_&f(&f&lGiày&f)_&b★✯★||&7Chuột_phải_để_sử_dụng!
+  animation: NONE
+  end-animation: BLANK
+  display-name: bossbeerus2
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(25.0), cmd:(/asets givepiece {player} Saiyan BOOTS), unique:()
+    - chance:(25.0), cmd:(/asets givepiece {player} Saiyan CHESTPLATE), unique:()
+    - chance:(25.0), cmd:(/asets givepiece {player} Saiyan HELMET), unique:()
+    - chance:(25.0), cmd:(/asets givepiece {player} Saiyan LEGGINGS), unique:()
+bossmahaitac:
+  type: MYSTERY
+  item: JACK_O_LANTERN 1 arrow_infinite:10 hide:true name:&4&l๑๑_&c&lKho_báu_Boss_Ma_Hải_Tặc_&4&l๑๑ lore:&cSăn_kho_báu_bằng_cách|&ctiêu_diệt_&4Boss_Ma_Hải_Tặc.||&f&l&nTHƯỜNG|&f*_Exp_20k|&f*_Đá_Quý_100|&f*_Táo_vàng_Enchant_x6||&e&l&nHIẾM|&e*_Ô_cường_hóa_x1|&e*_Sách_Huyền_Thoại_x1||&7Chuột_phải_để_sử_dụng!
+  animation: NONE
+  end-animation: BLANK
+  display-name: bossmahaitac
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 2
+    rewards:
+    - chance:(70.0), cmd:(/exp give {player} 20000), unique:()
+    - chance:(70.0), cmd:(/gem add {player} 100), unique:()
+    - chance:(70.0), cmd:(/give {player} 322:1 6), unique:()
+    - chance:(30.0), cmd:(/ae giveitem {player} slotincreaser 1 simple), unique:()
+    - chance:(50.0), cmd:(/ae givercbook legendary {player} 1), unique:()
+bossmanhen:
+  type: MYSTERY
+  item: JACK_O_LANTERN 1 arrow_infinite:10 hide:true name:&5&l♯♯_&3Kho_báu_Boss_Ma_Nhện_&5&l♯♯ lore:&3Săn_kho_báu_bằng_cách|&3tiêu_diệt_&4Boss_Ma_Hải_Tặc.||&f&l&nTHƯỜNG|&f*_Exp_40k|&f*_Đá_Quý_200|&f*_Táo_vàng_Enchant_x12||&e&l&nHIẾM|&e*_Ô_cường_hóa_x1|&e*_Cục_Thúi_x1|&e*_Sách_Huyền_Thoại_x2||&7Chuột_phải_để_sử_dụng!
+  animation: NONE
+  end-animation: BLANK
+  display-name: bossmanhen
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 2
+    rewards:
+    - chance:(70.0), cmd:(/exp give {player} 40000), unique:()
+    - chance:(70.0), cmd:(/gem add {player} 200), unique:()
+    - chance:(70.0), cmd:(/give {player} 322:1 12), unique:()
+    - chance:(30.0), cmd:(/ae giveitem {player} slotincreaser 1 simple), unique:()
+    - chance:(50.0), cmd:(/ae givercbook legendary {player} 1), unique:()
+    - chance:(20.0), cmd:(/ae giveitem {player} blackscroll 1 51), unique:()
+bossphuthuy:
+  type: MYSTERY
+  item: JACK_O_LANTERN 1 arrow_infinite:10 hide:true name:&8&l☩☩_&8&lKho_báu_Boss_Phù_Thủy_Đen_&8&l☩☩ lore:&8Săn_kho_báu_bằng_cách|&8tiêu_diệt_&8&lBoss_Ma_Hải_Tặc.||&f&l&nTHƯỜNG|&f*_Exp_60k|&f*_Đá_Quý_300|&f*_Táo_vàng_Enchant_x18||&e&l&nHIẾM|&e*_Ô_cường_hóa_x1|&e*_Cục_Thúi_x1|&e*_Sách_Huyền_Thoại_x2|&e*_Sách_Truyền_Thuyết_x1||&7Chuột_phải_để_sử_dụng!
+  animation: NONE
+  end-animation: BLANK
+  display-name: bossphuthuy
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 3
+    rewards:
+    - chance:(70.0), cmd:(/exp give {player} 60000), unique:()
+    - chance:(70.0), cmd:(/gem add {player} 300), unique:()
+    - chance:(70.0), cmd:(/give {player} 322:1 18), unique:()
+    - chance:(30.0), cmd:(/ae giveitem {player} slotincreaser 1 simple), unique:()
+    - chance:(50.0), cmd:(/ae givercbook legendary {player} 2), unique:()
+    - chance:(20.0), cmd:(/ae giveitem {player} blackscroll 1 51), unique:()
+    - chance:(20.0), cmd:(/ae givercbook heroic {player} 2), unique:()
+bossquydianguc:
+  type: MYSTERY
+  item: JUKEBOX 1 arrow_infinite:10 hide:true name:&4&kI_&r&c&l_Kho_báu_Boss_Quỷ_Địa_Ngục_&r&4&kI_ lore:&cSăn_kho_báu_bằng_cách|&ctiêu_diệt_&c&lBoss_Quỷ_Địa_Ngục.||&e&l&nHIẾM|&e*_Ô_cường_hóa_x1|&e*_Cục_Thúi_x1|&e*_Sách_Huyền_Thoại_x2|&e*_Lửa_phép_Hiếm_x2||&6&l&nHUYỀN_THOẠI|&6*_Iron_golem_spawner_x1|&e*_Sách_Truyền_Thuyết_x1|&e*_Lửa_phép_Huyền_thoại_x1||&7Chuột_phải_để_sử_dụng!
+  animation: NONE
+  end-animation: BLANK
+  display-name: bossquydianguc
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 3
+    rewards:
+    - chance:(70.0), cmd:(/give {player} 120 1), unique:()
+    - chance:(30.0), cmd:(/ae giveitem {player} slotincreaser 1 simple), unique:()
+    - chance:(50.0), cmd:(/ae givercbook legendary {player} 2), unique:()
+    - chance:(20.0), cmd:(/ae givercbook heroic {player} 1), unique:()
+    - chance:(20.0), cmd:(/ae giveitem {player} blackscroll 1 51), unique:()
+    - chance:(20.0), cmd:(/silkspawners give {player} ig 1), unique:()
+    - chance:(30.0), cmd:(/itemability gem {player} satthuonght 1), unique:()
+    - chance:(30.0), cmd:(/itemability gem {player} mauht 1), unique:()
+    - chance:(20.0), cmd:(/itemability gem {player} satthuonghiem 1), unique:()
+    - chance:(20.0), cmd:(/itemability gem {player} mauhiem 1), unique:()
+
+phuanhkim:
+  type: MYSTERY
+  item: END_STONE 1 arrow_infinite:10 hide:true name:&3&kI_&r&b&l_Kho_báu_Nhạc_Sỹ_Thiên_Hà_&r&3&kI_ lore:&bSăn_kho_báu
+  animation: NONE
+  end-animation: BLANK
+  display-name: phuanhkim
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(30.0), cmd:(/lp user {player} permission set unbreakable.armor), msg:(&2&l[!] &a&lMở thành công &7(bạn đã thức tỉnh kĩ năng)), unique:()
+    - chance:(70.0), cmd:(/eco give {player} 50000), msg:(&4&l[!] &c&lMở thất bại &7(rơi ra 50,000$)), unique:()
+
+
+thienha:
+  type: MYSTERY
+  item: END_STONE 1 arrow_infinite:10 hide:true name:&3&kI_&r&b&l_Kho_báu_Nhạc_Sỹ_Thiên_Hà_&r&3&kI_ lore:&bSăn_kho_báu_bằng_cách_tiêu_diệt_|&9&lEnder_Chúa_&bhoặc_&5★&d☾&c&l乂&d☽_&d&lRỒNG_KHÔNG_GIAN_&d☾&c&l乂&d☽&5★.||&6&l&nHUYỀN_THOẠI|&6*_Ô_cường_hóa_x3|&6*_Cục_Thúi_x3|&6*_Sách_Huyền_Thoại_x3|&6*_Lửa_phép_Huyền_Thoại_x3|&6*_Iron_golem_spawner_x1|&6*_Iron_ghast_spawner_x1||&d&l&nTRUYỀN_THUYẾT|&d*_Iron_golem_spawner_x2|&d*_Iron_ghast_spawner_x2|&d*_Sách_Truyền_Thuyết_x2|&d*_Lửa_phép_Truyền_Thuyết_x1||&7Chuột_phải_để_sử_dụng!
+  animation: NONE
+  end-animation: BLANK
+  display-name: thienha
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 3
+    maximum-rewards: 4
+    rewards:
+    - chance:(70.0), cmd:(/give {player} 120 1), unique:()
+    - chance:(30.0), cmd:(/ae giveitem {player} slotincreaser 3 simple), unique:()
+    - chance:(50.0), cmd:(/ae givercbook legendary {player} 3), unique:()
+    - chance:(20.0), cmd:(/ae givercbook heroic {player} 2), unique:()
+    - chance:(20.0), cmd:(/ae giveitem {player} blackscroll 3 51), unique:()
+    - chance:(30.0), cmd:(/silkspawners give {player} ig 1), unique:()
+    - chance:(20.0), cmd:(/silkspawners give {player} ig 2), unique:()
+    - chance:(30.0), cmd:(/silkspawners give {player} ghast 1), unique:()
+    - chance:(20.0), cmd:(/silkspawners give {player} ghast 2), unique:()
+    - chance:(20.0), cmd:(/cr open {player} luapheptruyenthuyet), unique:()
+
+luapheptruyenthuyet:
+  type: MYSTERY
+  item: END_PORTAL_FRAME 1 arrow_infinite:10 hide:true name:&3&kI_&r&b&l_Kho_báu_Nhạc_Sỹ_Thiên_Hà_&r&3&kI_ lore:&bSăn_kho_báu_bằng_cách_tiêu_diệt
+  animation: NONE
+  end-animation: BLANK
+  display-name: luapheptruyenthuyet
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(50.0), cmd:(/itemability gem {player} mauthanh 1), unique:()
+    - chance:(50.0), cmd:(/itemability gem {player} satthuongthanh 1), unique:() 
+
+daptrung:
+  type: MYSTERY
+  item: 'player_head 1 name:&ftest lore:test skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNkNWU0M2RlNWQ0MTc3YzRiYWYyZjQ0MTYxNTU0NDczYTNiMGJlNTQzMDk5OGI1ZmNkODI2YWY5NDNhZmUzIn19fQ=='
+  animation: NONE
+  end-animation: BLANK
+  display-name: daptrung
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(50.0), cmd:(/points give {player} 5), unique:()
+    - chance:(85.0), cmd:(/epicvouchers give {player} exp100 1), unique:()        
+    - chance:(85.0), cmd:(/epicvouchers give {player} exp500 1), unique:()        
+    - chance:(85.0), cmd:(/epicvouchers give {player} 500 1), unique:()         
+    - chance:(70.0), cmd:(/epicvouchers give {player} phieu1m 1), unique:()           
+    - chance:(70.0), cmd:(/epicvouchers give {player} phieu5m 1), unique:()   
+    - chance:(15.0), cmd:(/silkspawners give {player} ig 1), unique:()   
+    - chance:(20.0), cmd:(/silkspawners give {player} ghast 1), unique:()
+    - chance:(70.0), cmd:(/itemability gem {player} mauht 1), unique:() 
+    - chance:(70.0), cmd:(/itemability gem {player} satthuonght 1), unique:() 
+    - chance:(70.0), cmd:(/itemability gem {player} satthuonght 1), unique:() 
+    - chance:(70.0), cmd:(/itemability gem {player} tocchayht 1), unique:() 
+    - chance:(75.0), cmd:(/itemability gem {player} satthuonghiem 1), unique:() 
+    - chance:(75.0), cmd:(/itemability gem {player} mauhiem 1), unique:() 
+    - chance:(75.0), cmd:(/itemability gem {player} tocdanhhiem 1), unique:() 
+    - chance:(75.0), cmd:(/itemability gem {player} tocchayhiem 1), unique:() 
+    - chance:(35.0), cmd:(/cr open {player} luapheptruyenthuyet), unique:()
+    - chance:(5.0),  cmd:(/ie give sotoicao {player} 1), unique:()
+    - chance:(55.0), cmd:(/cr give to {player} homtruyenthuyet 1), unique:()
+    - chance:(20.0), cmd:(/cr give to {player} toicao 1), unique:()
+    - chance:(0.1),  cmd:(/ie give daurong {player} 1), unique:()
+    - chance:(0.1),  cmd:(/cr give to {player} kimtinh 1), unique:()
+    - chance:(0.1),  cmd:(/cr give to {player} hoatinh 1), unique:()
+    - chance:(0.1),  cmd:(/cr give to {player} thotinh 1), unique:()
+    - chance:(0.1),  cmd:(/cr give to {player} thuytinh 1), unique:()
+    
+thuytinh:
+  type: MYSTERY
+  item: player_head 1 arrow_infinite:10 hide:true name:&b♫&3☘&b♫_&b&l&nHÒM_vật_phẩm&r_&b&lTHỦY_VƯƠNG_&7(Ngẫu_nhiên)_&b♫&3☘&b♫
+    lore:&7[!]_Chuột-phải_để_mở_ra_1_món_ngẫu_nhiên_|&b&lVẬT_PHẨM_NGŨ_HÀNH||&3★&b✮_&d☾&c⦿&d☽_&b&lTHIÊN_HÀ_&d☾&c⦿&d☽&b_✮&3★ skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDQ1MjQwZmNmMWE5Nzk2MzI3ZGRhNTU5Mzk4NTM0M2FmOTEyMWE3MTU2YmM3NmUzZDZiMzQxYjAyZTZhNmU1MiJ9fX0=
+  animation: NONE
+  end-animation: BLANK
+  display-name: thuytinh
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give muthuytinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give aothuytinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give quanthuytinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give giaythuytinh2 {player} 1), unique:()
+hoatinh:
+  type: MYSTERY
+  item: player_head 1 arrow_infinite:10 hide:true name:&e⪻☾&6&l♨&e☽⪼_&e&l&nHÒM_vật_phẩm&r_&6&lHỎA_VƯƠNG_&7(Ngẫu_nhiên)_&e⪻&e☾&6&l♨&e☽&e⪼
+    lore:&7[!]_Chuột-phải_để_mở_ra_1_món_ngẫu_nhiên_|&6&lVẬT_PHẨM_NGŨ_HÀNH||&e★&6✮_&d☾&c⦿&d☽_&6&lTHIÊN_HÀ_&d☾&c⦿&d☽&6_✮&e★ skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQwZDEyN2E5MmQwYjNkNWI1YTMyYWRkNjdkZGY3ZGI5OGMxYWQ3ZDU0OTE5NDk0NjYyZThkZWFlYjRhMGQ0MiJ9fX0=
+  animation: NONE
+  end-animation: BLANK
+  display-name: hoatinh
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give muhoatinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give aohoatinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give quanhoatinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give giayhoatinh2 {player} 1), unique:()
+moctinh:
+  type: MYSTERY
+  item: player_head 1 arrow_infinite:10 hide:true name:&a☐&2⚒&a☐_&2&l&nHÒM_vật_phẩm&r_&a&lMỘC_TINH_&7(Ngẫu_nhiên)_&a☐&2⚒&a☐
+    lore:&7[!]_Chuột-phải_để_mở_ra_1_món_ngẫu_nhiên_|&a&lVẬT_PHẨM_NGŨ_HÀNH||&a★&2✮_&d☾&c⦿&d☽_&a&lTHIÊN_HÀ_&d☾&c⦿&d☽&2_✮&a★ skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Q2MDUzNGUyMmUzNzE0NzVkNTQzNGQwZjQ5YWUwNThkMzk0MWIwM2E3YzUwYTZlZWYyOTYyMGM2OTI3NzhlMCJ9fX0=
+  animation: NONE
+  end-animation: BLANK
+  display-name: moctinh
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give mumoctinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give aomoctinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give quanmoctinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give giaymoctinh2 {player} 1), unique:()
+thotinh:
+  type: MYSTERY
+  item: player_head 1 arrow_infinite:10 hide:true name:&2☽&a&l乂&2☾_&a&l&nHÒM_vật_phẩm&r_&2&lTHỔ_TINH_&7(Ngẫu_nhiên)_&2☽&a&l乂&2☾
+    lore:&7[!]_Chuột-phải_để_mở_ra_1_món_ngẫu_nhiên_|&2&lVẬT_PHẨM_NGŨ_HÀNH||&2★&a✮_&d☾&c⦿&d☽_&2&lTHIÊN_HÀ_&d☾&c⦿&d☽&a_✮&2★ skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDUxYTVlOTUyNGU1ZGMzZDlmYTEzZmYzOTVlYjY4MjRmMjY3NjE1NTZhNjY5YTZiYTk0MDI5MGZkY2JiNjBmNSJ9fX0=
+  animation: NONE
+  end-animation: BLANK
+  display-name: thotinh
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give muthotinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give aothotinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give quanthotinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give giaythotinh2 {player} 1), unique:()
+kimtinh:
+  type: MYSTERY
+  item: player_head 1 arrow_infinite:10 hide:true name:&7★&f&l⚔&7۞_&7&l&nHÒM_vật_phẩm&r_&f&lKIM_TINH_&7(Ngẫu_nhiên)_&7۞&f&l⚔&7★
+    lore:&7[!]_Chuột-phải_để_mở_ra_1_món_ngẫu_nhiên_|&f&lVẬT_PHẨM_NGŨ_HÀNH||&7★&f✮_&d☾&c⦿&d☽_&f&lTHIÊN_HÀ_&d☾&c⦿&d☽&f_✮&7★ skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ2YTYwZTU3OTlmNGVkYjFiZjUyZGY0OTQ3NGQ3YjQyOGM5NjRlNGE5NDEzMjhlMjQxYTFlYWI5NjAyNTg2OSJ9fX0=
+  animation: NONE
+  end-animation: BLANK
+  display-name: kimtinh
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give mukimtinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give aokimtinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give quankimtinh2 {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give giaykimtinh2 {player} 1), unique:()        
+gaybuon:
+  type: MYSTERY
+  item: CHEST 1 arrow_infinite:10 hide:true name:&a&l$_&e&lHộp_gậy_buôn_may_mắn__&a&l$ lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&a&lGẬY_BUÔN_&a&l$||&f&lx1_&2$_&aGẬY_BUÔN_&7(Lv.2)_&2$|&f&lx1_&2$_&aGẬY_BUÔN_&7(Lv.3)_&2$|&f&lx1_&2$_&aGẬY_BUÔN_&7(Lv.4)_&2$
+  animation: NONE
+  end-animation: BLANK
+  display-name: gaybuon
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/sellwand {player} 1 120 150), unique:()
+    - chance:(100.0), cmd:(/sellwand {player} 1 120 200), unique:()
+    - chance:(100.0), cmd:(/sellwand {player} 1 120 300), unique:()
+hopsomayman11:
+  type: MYSTERY
+  item: SKULL_ITEM 1 arrow_infinite:10 hide:true name:&4&l≎≎_&c&lHộp_sọ_may_mắn_&d(1★)_&4&l≎≎ lore:___________&d&l.✰.|&c**Gồm:|___&c%_Nấm_hải_tặc|___&c%_Sách_cường_hóa_Hiếm|___&c%_Sách_cường_hóa_Cổ|___&c%_Trứng_Pet_(Ngẫu_nhiên)||&f&o(!)_Chuột-phải_để_mở||&7Tip:_Bạn_cần_enchant_vũ_khí_tại_((/shopdacbiet))|&7để_săn_được_Hộp_sọ_tại_((/warp_dugeon))
+  animation: NONE
+  end-animation: BLANK
+  display-name: hopsomayman11
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(50.0), cmd:(/ie give mahaitac {player} 30), unique:()
+    - chance:(40.0), cmd:(/ie give mahaitac {player} 60), unique:()
+    - chance:(25.0), cmd:(/ie give mahaitac {player} 90), unique:()
+    - chance:(20.0), cmd:(/ae givercbook UNIQUE {player} 1)
+    - chance:(5.0), cmd:(/ae givercbook ELITE {player} 1)
+hopsomayman22:
+  type: MYSTERY
+  item: SKULL_ITEM 1 arrow_infinite:10 hide:true name:&4&l≎≎_&c&lHộp_sọ_may_mắn_&d(2★)_&4&l≎≎ lore:___________&d&l.✰✰.|&c**Gồm:|___&c%_Mắt_nhện_yêu_tinh|___&c%_Sách_cường_hóa_Cổ|___&c%_Sách_cường_hóa_Tối_cao|___&c%_Trứng_Pet_(Ngẫu_nhiên)||&f&o(!)_Chuột-phải_để_mở||&7Tip:_Bạn_cần_enchant_vũ_khí_tại_((/shopdacbiet))|&7để_săn_được_Hộp_sọ_tại_((/warp_dugeon))
+  animation: NONE
+  end-animation: BLANK
+  display-name: hopsomayman22
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(50.0), cmd:(/ie give matnhen {player} 30), unique:()
+    - chance:(40.0), cmd:(/ie give matnhen {player} 60), unique:()
+    - chance:(25.0), cmd:(/ie give matnhen {player} 90), unique:()
+    - chance:(20.0), cmd:(/ae givercbook ELITE {player} 1)
+    - chance:(5.0), cmd:(/ae givercbook ULTIMATE {player} 1)
+hopsomayman33:
+  type: MYSTERY
+  item: SKULL_ITEM 1 arrow_infinite:10 hide:true name:&4&l≎≎_&c&lHộp_sọ_may_mắn_&d(3★)_&4&l≎≎ lore:___________&d&l.✰✰✰.|&c**Gồm:|___&c%_Thỏi_vàng_óng_ánh|___&c%_Sách_cường_hóa_Tối_cao|___&c%_Sách_cường_hóa_Huyền_Thoại|___&c%_Trứng_Pet_(Ngẫu_nhiên)||&f&o(!)_Chuột-phải_để_mở||&7Tip:_Bạn_cần_enchant_vũ_khí_tại_((/shopdacbiet))|&7để_săn_được_Hộp_sọ_tại_((/warp_dugeon))
+  animation: NONE
+  end-animation: BLANK
+  display-name: hopsomayman33
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(50.0), cmd:(/ie give PHUTHUY {player} 10), unique:()
+    - chance:(40.0), cmd:(/ie give PHUTHUY {player} 20), unique:()
+    - chance:(25.0), cmd:(/ie give PHUTHUY {player} 30), unique:()
+    - chance:(20.0), cmd:(/ae givercbook ULTIMATE {player} 1)
+    - chance:(2.0), cmd:(/ae givercbook LEGENDARY {player} 1)
+hopsomayman55:
+  type: MYSTERY
+  item: SKULL_ITEM:1 1 arrow_infinite:10 hide:true name:&4&l≎≎_&c&lHộp_sọ_may_mắn_&d(5★)_&4&l≎≎ lore:___________&d&l.✰✰✰✰✰.|&c**Gồm:|___&c%_Sách_Sharpness|___&c%_Sách_Trâu_thánh_(Level_cao)|___&c%_Sách_Power|___&c%_Sách_cường_hóa_Huyền_Thoại|___&c%_Sách_cường_hóa_Truyền_Thuyết|___&c%_Trứng_Pet_(Ngẫu_nhiên)||&f&o(!)_Chuột-phải_để_mở||&7Tip:_Bạn_cần_enchant_vũ_khí_tại_((/shopdacbiet))|&7để_săn_được_Hộp_sọ_tại_((/warp_dugeon))
+  animation: NONE
+  end-animation: BLANK
+  display-name: hopsomayman55
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(50.0), cmd:(/spellbook give {player} sharpness 3), unique:()
+    - chance:(40.0), cmd:(/spellbook give {player} power 3), unique:()
+    - chance:(1.0), cmd:(/ae giverandombook {player} trauthanh 1), unique:()
+    - chance:(6.0), cmd:(/ae givercbook LEGENDARY {player} 1)
+    - chance:(2.0), cmd:(/ae givercbook HEROIC {player} 1)
+    - chance:(10.0), cmd:(/cr give to {player} trungpet3 1)
+hopsomayman1:
+  type: MYSTERY
+  item: SKULL_ITEM 1 arrow_infinite:10 hide:true name:&4&l≎≎_&c&lHộp_sọ_may_mắn_&d(1★)_&4&l≎≎ lore:___________&d&l.✰.|&c**Gồm:|___&c%_Nấm_hải_tặc|___&c%_Sách_cường_hóa_Hiếm|___&c%_Sách_cường_hóa_Cổ||&f&o(!)_Chuột-phải_để_mở||&7Tip:_Bạn_cần_enchant_vũ_khí_tại_((/shopdacbiet))|&7để_săn_được_Hộp_sọ_tại_((/warp_dugeon))
+  animation: NONE
+  end-animation: BLANK
+  display-name: hopsomayman1
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(50.0), cmd:(/ie give mahaitac {player} 30), unique:()
+    - chance:(40.0), cmd:(/ie give mahaitac {player} 60), unique:()
+    - chance:(25.0), cmd:(/ie give mahaitac {player} 90), unique:()
+    - chance:(20.0), cmd:(/ae givercbook UNIQUE {player} 1)
+    - chance:(5.0), cmd:(/ae givercbook ELITE {player} 1)
+hopsomayman2:
+  type: MYSTERY
+  item: SKULL_ITEM 1 arrow_infinite:10 hide:true name:&4&l≎≎_&c&lHộp_sọ_may_mắn_&d(2★)_&4&l≎≎ lore:___________&d&l.✰✰.|&c**Gồm:|___&c%_Mắt_nhện_yêu_tinh|___&c%_Sách_cường_hóa_Cổ|___&c%_Sách_cường_hóa_Tối_cao||&f&o(!)_Chuột-phải_để_mở||&7Tip:_Bạn_cần_enchant_vũ_khí_tại_((/shopdacbiet))|&7để_săn_được_Hộp_sọ_tại_((/warp_dugeon))
+  animation: NONE
+  end-animation: BLANK
+  display-name: hopsomayman2
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(50.0), cmd:(/ie give matnhen {player} 30), unique:()
+    - chance:(40.0), cmd:(/ie give matnhen {player} 60), unique:()
+    - chance:(25.0), cmd:(/ie give matnhen {player} 90), unique:()
+    - chance:(20.0), cmd:(/ae givercbook ELITE {player} 1)
+    - chance:(5.0), cmd:(/ae givercbook ULTIMATE {player} 1)
+hopsomayman3:
+  type: MYSTERY
+  item: SKULL_ITEM 1 arrow_infinite:10 hide:true name:&4&l≎≎_&c&lHộp_sọ_may_mắn_&d(3★)_&4&l≎≎ lore:___________&d&l.✰✰✰.|&c**Gồm:|___&c%_Thỏi_vàng_óng_ánh|___&c%_Sách_cường_hóa_Tối_cao|___&c%_Sách_cường_hóa_Huyền_Thoại||&f&o(!)_Chuột-phải_để_mở||&7Tip:_Bạn_cần_enchant_vũ_khí_tại_((/shopdacbiet))|&7để_săn_được_Hộp_sọ_tại_((/warp_dugeon))
+  animation: NONE
+  end-animation: BLANK
+  display-name: hopsomayman3
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(50.0), cmd:(/ie give PHUTHUY {player} 10), unique:()
+    - chance:(40.0), cmd:(/ie give PHUTHUY {player} 20), unique:()
+    - chance:(25.0), cmd:(/ie give PHUTHUY {player} 30), unique:()
+    - chance:(20.0), cmd:(/ae givercbook ULTIMATE {player} 1)
+    - chance:(2.0), cmd:(/ae givercbook LEGENDARY {player} 1)
+hopsomayman5:
+  type: MYSTERY
+  item: SKULL_ITEM:1 1 arrow_infinite:10 hide:true name:&4&l≎≎_&c&lHộp_sọ_may_mắn_&d(5★)_&4&l≎≎ lore:___________&d&l.✰✰✰✰✰.|&c**Gồm:|___&c%_Sách_Sharpness|___&c%_Sách_Trâu_thánh_(Level_cao)|___&c%_Sách_Power|___&c%_Sách_cường_hóa_Huyền_Thoại|___&c%_Sách_cường_hóa_Truyền_Thuyết||&f&o(!)_Chuột-phải_để_mở||&7Tip:_Bạn_cần_enchant_vũ_khí_tại_((/shopdacbiet))|&7để_săn_được_Hộp_sọ_tại_((/warp_dugeon))
+  animation: NONE
+  end-animation: BLANK
+  display-name: hopsomayman5
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(50.0), cmd:(/spellbook give {player} sharpness 3), unique:()
+    - chance:(40.0), cmd:(/spellbook give {player} power 3), unique:()
+    - chance:(1.0), cmd:(/ae giverandombook {player} trauthanh 1), unique:()
+    - chance:(6.0), cmd:(/ae givercbook LEGENDARY {player} 1)
+    - chance:(2.0), cmd:(/ae givercbook HEROIC {player} 1)
+wither:
+  type: MYSTERY
+  item: NETHER_BRICK_ITEM 1 arrow_infinite:10 hide:true name:&c*_&4&l○_&d&lQUÀ_WITHER_&7(Ngẫu_nhiên)&4&l_○_&c*
+    lore:&7[!]_Chuột-phải_để_vớt_ngẫu_nhiên_&b&lQUÀ|
+  animation: NONE
+  end-animation: BLANK
+  display-name: wither
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 3
+    maximum-rewards: 4
+    rewards:
+    - chance:(60.0), cmd:(/give {player} diamond_block 32), unique:()
+    - chance:(60.0), cmd:(/give {player} iron_block 32), unique:()
+    - chance:(60.0), cmd:(/give {player} gold_block 32), unique:()
+    - chance:(40.0), cmd:(/give {player} lapis_block 32), unique:()
+    - chance:(60.0), cmd:(/give {player} redstone_block 32), unique:()
+    - chance:(60.0), cmd:(/give {player} emerald_block 32), unique:()
+    - chance:(15.0), cmd:(/silkspawners give {player} creeper 1), unique:()
+    - chance:(10.0), cmd:(/silkspawners give {player} skeleton 1), unique:()
+    - chance:(15.0), cmd:(/silkspawners give {player} zombie 1), unique:()
+    - chance:(10.0), cmd:(/silkspawners give {player} enderman 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} blaze 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} villager 1), unique:()
+    - chance:(1.0), cmd:(/silkspawners give {player} ghast 1), unique:()
+    - chance:(1.0), cmd:(/silkspawners give {player} irongolem 1), unique:()
+    - chance:(80.0), cmd:(/ae giveitem {player} secret 9 UNIQUE), unique:()
+    - chance:(80.0), cmd:(/ae giveitem {player} secret 5 UNIQUE), unique:()
+    - chance:(80.0), cmd:(/ae giveitem {player} secret 6 UNIQUE), unique:()
+hommayman:
+  type: MYSTERY
+  item: LOG_2 1 arrow_infinite:10 hide:true name:&a☘_&e&lHÒM_RÌU_MAY_MẮN_&7(Ngẫu_nhiên_X1)_&a☘ lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&a☘&e&lHÒM_RÌU_MAY_MẮN&a☘||&8&l[&e&lLEVEL_1-6&8&l]
+  animation: NONE
+  end-animation: BLANK
+  display-name: hommayman
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give riumm2 {player} 1), unique:()
+    - chance:(70.0), cmd:(/ie give riumm3 {player} 1), unique:()
+    - chance:(50.0), cmd:(/ie give riumm4 {player} 1), unique:()
+    - chance:(30.0), cmd:(/ie give riumm5 {player} 1), unique:()
+    - chance:(10.0), cmd:(/ie give riumm6 {player} 1), unique:()
+hommayman2:
+  type: MYSTERY
+  item: LOG_2 1 arrow_infinite:10 hide:true name:&a☘_&e&lHÒM_RÌU_MAY_MẮN_&7(Ngẫu_nhiên_X1)_&a☘ lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&a☘&e&lHÒM_RÌU_MAY_MẮN&a☘||&8&l[&e&lLEVEL_1-4&8&l]
+  animation: NONE
+  end-animation: BLANK
+  display-name: hommayman2
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give riumm2 {player} 1), unique:()
+    - chance:(70.0), cmd:(/ie give riumm3 {player} 1), unique:()
+    - chance:(50.0), cmd:(/ie give riumm4 {player} 1), unique:()
+book2:
+  type: MYSTERY
+  item: BOOKSHELF 1 arrow_infinite:10 hide:true name:&f&l*&b&l✧&f&l*_&2&lTỦ_SÁCH_&7(Ngẫu_nhiên_x1)_&f&l*&b&l✧&f&l*
+    lore:&f&l[!]_Chuột-phải_để_mở_ngẫu_nhiên_&b&l&nx1_Sách_cường_hóa||&eMạnh_nhất_là_sách_Huyền_thoại!!
+  animation: NONE
+  end-animation: BLANK
+  display-name: book2
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên tủ sách!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(80.0), cmd:(/give {player} enchanted_book 1 0 {StoredEnchantments:[{id:34,lvl:1}]})
+    - chance:(80.0), cmd:(/ae givercbook simple {player} 1)
+    - chance:(80.0), cmd:(/ae givercbook simple {player} 1)
+    - chance:(75.0), cmd:(/ae givercbook UNIQUE {player} 1)
+    - chance:(75.0), cmd:(/ae givercbook UNIQUE {player} 1)
+    - chance:(70.0), cmd:(/ae givercbook ELITE {player} 1)
+    - chance:(70.0), cmd:(/ae givercbook ELITE {player} 1)
+    - chance:(50.0), cmd:(/ae givercbook ULTIMATE {player} 1)
+    - chance:(5.0), cmd:(/ae givercbook LEGENDARY {player} 1)
+Anduongvuong:
+  type: MYSTERY
+  item: CHEST 1 arrow_infinite:10 hide:true name:&e&l❖❖_&e&lRƯƠNG_MAI_AN_TIÊM_&7(Ngẫu_nhiên_x2)_&e&l❖❖ lore:&7[!]_Chuột-phải_để_mở_rương_báu||&a&l&nTHÔNG_TIN_RƯƠNG:_&f&o(Săn_từ_quả_dưa_hấu)|&a&l*_&f&lx1_Súp_nấm|&a&l*_&f&lx16_Bánh_mì|&a&l*_&f&lx10_Táo_vàng|&a&l*_&f&lx1_Siêu_táo|&a&l*_&f&lx8_Ngọc_Luly|&a&l*_&f&lx4_Đầu_xọ|&a&l*_&f&lx3_Thuốc_sức_mạnh|&a&l*_&f&lx3_Bình_Exp|&a&l*_&f&l&a&lx100$|&a&l*_&f&l&a&lx1000$|&b&l*_&f&lTrứng_&e&l&nTHÚ_CƯNG&r_&7(Ngẫu_nhiên)_&b&l*
+  animation: NONE
+  end-animation: BLANK
+  display-name: Anduongvuong
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(30.0), cmd:(/give {player} 384 2), unique:()
+    - chance:(100.0), cmd:(/give {player} 282 1), unique:()
+    - chance:(70.0), cmd:(/give {player} 297 16), unique:()
+    - chance:(100.0), cmd:(/give {player} 322 2), unique:()
+    - chance:(100.0), cmd:(/give {player} 322:1 1), unique:()
+    - chance:(90.0), cmd:(/give {player} 351:4 8), unique:()
+    - chance:(100.0), cmd:(/give {player} 397 2), unique:()
+    - chance:(100.0), cmd:(/eco give {player} 100), unique:()
+    - chance:(100.0), cmd:(/eco give {player} 300), unique:()
+    - chance:(2.0), cmd:(/cr give to {player} Thucung 1), unique:()
+Anduongvuong2:
+  type: MYSTERY
+  item: CHEST 1 arrow_infinite:10 hide:true name:&e&l❖❖_&e&lRƯƠNG_MAI_AN_TIÊM_&7(Ngẫu_nhiên_x2)_&e&l❖❖ lore:&7[!]_Chuột-phải_để_mở_rương_báu||&a&l&nTHÔNG_TIN_RƯƠNG:_&f&o(Săn_từ_quả_dưa_hấu)|&a&l*_&f&lx1_Súp_nấm|&a&l*_&f&lx8_Bánh_mì|&a&l*_&f&lx3_Táo_vàng|&a&l*_&f&lx1_Siêu_táo|&a&l*_&f&lx8_Ngọc_Luly|&a&l*_&f&lx2_Đầu_xọ|&a&l*_&f&lx3_Thuốc_sức_mạnh|&a&l*_&f&lx2_Bình_Exp|&a&l*_&f&l&a&lx100$|&a&l*_&f&l&a&lx300$|&b&l*_&f&lTrứng_&e&l&nTHÚ_CƯNG&r_&7(Ngẫu_nhiên)_&b&l*
+  animation: NONE
+  end-animation: BLANK
+  display-name: Anduongvuong2
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(30.0), cmd:(/give {player} 384 2), unique:()
+    - chance:(100.0), cmd:(/give {player} 282 1), unique:()
+    - chance:(70.0), cmd:(/give {player} 297 8), unique:()
+    - chance:(100.0), cmd:(/give {player} 322 3), unique:()
+    - chance:(100.0), cmd:(/give {player} 322:1 1), unique:()
+    - chance:(90.0), cmd:(/give {player} 351:4 8), unique:()
+    - chance:(100.0), cmd:(/give {player} 397 2), unique:()
+    - chance:(100.0), cmd:(/eco give {player} 100), unique:()
+    - chance:(100.0), cmd:(/eco give {player} 300), unique:()
+    - chance:(2.0), cmd:(/cr give to {player} Thucung 1), unique:()
+Thucung:
+  type: MYSTERY
+  item: EGG 1 arrow_infinite:10 hide:true name:&b&l*_&f&lTrứng_&e&l&nTHÚ_CƯNG&r_&7(Ngẫu_nhiên)_&b&l* lore:&7[!]_Chuột-phải_để_mở_trứng||&3&l&nTHÔNG_TIN_RƯƠNG:_&f&o(Săn_PHÙ_THỦY)|&a&l*_&f&lx1_Ngẫu_nhiên_PET|&a&l*_&f&l10%_Hụt
+  animation: NONE
+  end-animation: BLANK
+  display-name: Thucung
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên trứng!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/tpets give Bb8-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Chewbacca-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Chicken-Pet {player})
+    - chance:(40.0), cmd:(/tpets give Cow-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Creeper-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Exp-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Firework-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Gorilla-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Iron-Golem-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Leprechaun-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Pig-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Sheep-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Spider-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Storm-Trooper-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Squid-Pet {player})
+    - chance:(100.0), cmd:(/tpets give Wolf-Pet {player})
+Thucung2:
+  type: MYSTERY
+  item: EGG 1 arrow_infinite:10 hide:true name:&b&l*_&f&lTrứng_&e&l&nTHÚ_CƯNG&r_&7(Ngẫu_nhiên)_&b&l* lore:&7[!]_Chuột-phải_để_mở_trứng||&a&l*_&f&lx1_Ngẫu_nhiên_PET
+  animation: NONE
+  end-animation: BLANK
+  display-name: Thucung2
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên trứng!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/tpets give PETBB8 {player})
+    - chance:(100.0), cmd:(/tpets give PETCHEWBACCA {player})
+    - chance:(100.0), cmd:(/tpets give PETGÀ {player})
+    - chance:(40.0), cmd:(/tpets give PETBÒ {player})
+    - chance:(100.0), cmd:(/tpets give PETTHIÊNTHẠCH {player})
+    - chance:(100.0), cmd:(/tpets give PETYÊUTINH {player})
+    - chance:(100.0), cmd:(/tpets give PETGORILLA {player})
+    - chance:(100.0), cmd:(/tpets give PETIRONGLOEM {player})
+    - chance:(100.0), cmd:(/tpets give PETHEO {player})
+    - chance:(100.0), cmd:(/tpets give PETR2D2 {player})
+    - chance:(100.0), cmd:(/tpets give PETCỪU {player})
+    - chance:(100.0), cmd:(/tpets give PETNHỆN {player})
+    - chance:(100.0), cmd:(/tpets give PETMỰC {player})
+    - chance:(100.0), cmd:(/tpets give PETSTORMTROOPER {player})
+    - chance:(100.0), cmd:(/tpets give PETSÓI {player})
+    - chance:(100.0), cmd:(/tpets give PETXÁCSỐNG {player})
+Spawnerhien:
+  type: MYSTERY
+  item: MOB_SPAWNER 1 arrow_infinite:10 hide:true name:&2○_○_&a&l○_&2&lSPAWNER_ĐỘNG_VẬT_&7(Ngẫu_nhiên_x3)&2&l_○_&a○_○
+    lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&2&lx3_SPAWNER_ĐỘNG_VẬT||&e◆_◆_◆_&e&lHIẾM_&e◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: Spawnerhien
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 3
+    maximum-rewards: 3
+    rewards:
+    - chance:(5.0), cmd:(/silkspawners give {player} pig 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} sheep 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} cow 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} chicken 1), unique:()
+Spawnerquai3:
+  type: MYSTERY
+  item: MOB_SPAWNER 1 arrow_infinite:10 hide:true name:&d○_○_&5&l○_&d&lSPAWNER_QUÁI_&7(Ngẫu_nhiên_x1)&5&l_○_&d○_○
+    lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&d&lx1_SPAWNER_QUÁI||&6◆_◆_◆_&6&lHUYỀN_THOẠI_&6◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: Spawnerquai3
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(5.0), cmd:(/silkspawners give {player} creeper 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} skeleton 1), unique:()
+    - chance:(1.0), cmd:(/silkspawners give {player} zombie 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} enderman 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} blaze 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} ghast 1), unique:()
+Spawnerquai2:
+  type: MYSTERY
+  item: MOB_SPAWNER 1 arrow_infinite:10 hide:true name:&d○_○_&5&l○_&d&lSPAWNER_QUÁI_&7(Ngẫu_nhiên_x2)&5&l_○_&d○_○
+    lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&d&lx2_SPAWNER_QUÁI||&6◆_◆_◆_&6&lHUYỀN_THOẠI_&6◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: Spawnerquai2
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(5.0), cmd:(/silkspawners give {player} creeper 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} skeleton 1), unique:()
+    - chance:(1.0), cmd:(/silkspawners give {player} zombie 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} enderman 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} blaze 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} ghast 1), unique:()
+Spawnerquai:
+  type: MYSTERY
+  item: MOB_SPAWNER 1 arrow_infinite:10 hide:true name:&d○_○_&5&l○_&d&lSPAWNER_QUÁI_&7(Ngẫu_nhiên_x3)&5&l_○_&d○_○
+    lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&d&lx3_SPAWNER_QUÁI||&6◆_◆_◆_&6&lHUYỀN_THOẠI_&6◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: Spawnerquai
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 3
+    maximum-rewards: 3
+    rewards:
+    - chance:(5.0), cmd:(/silkspawners give {player} creeper 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} skeleton 1), unique:()
+    - chance:(1.0), cmd:(/silkspawners give {player} zombie 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} enderman 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} blaze 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} ghast 1), unique:()
+    - chance:(1.0), cmd:(/silkspawners give {player} irongolem 1), unique:()
+truyenthuyet:
+  type: MYSTERY
+  item: ENDER_PORTAL_FRAME 1 arrow_infinite:10 hide:true name:&5&l✧&d&l✧&5&l✧_&9&l&nHÒM_vật_phẩm&r_&d&lTRUYỀN_THUYẾT_&7(Ngẫu_nhiên)&5&l✧&d&l✧&5&l✧
+    lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&d&lVẬT_PHẨM_TRUYỀN_THUYẾT||&d◆_◆_◆_&d&lTRUYỀN_THUYẾT_&d◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: truyenthuyet
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(5.0), cmd:(/asets weapon {player} kiemtruyenthuyetnew 1), unique:()
+    - chance:(5.0), cmd:(/ie give riuthanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cungthanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cupthanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give aothanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give muthanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give quanthanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give giaythanh {player} 1), unique:()
+homtruyenthuyet:
+  type: MYSTERY
+  item: ENDER_PORTAL_FRAME 1 arrow_infinite:10 hide:true name:&5&l✧&d&l✧&5&l✧_&9&l&nHÒM&r_&d&lTRUYỀN_THUYẾT_&7(Ngẫu_nhiên)&5&l✧&d&l✧&5&l✧
+    lore:&7[!]_Mở_ngẫu_nhiên_&d&lVẬT_PHẨM_TRUYỀN_THUYẾT||&d◆_◆_◆_&d&lTRUYỀN_THUYẾT_&d◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: homtruyenthuyet
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(5.0), cmd:(/ie give kiemthanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give riuthanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cungthanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give kiemthanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cupthanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give aothanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give muthanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give quanthanh {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give giaythanh {player} 1), unique:()
+book:
+  type: MYSTERY
+  item: BOOK 1 arrow_infinite:10 hide:true name:&f&l*&b&l✧&f&l*_&6&lSÁCH_CƯỜNG_HÓA__&7(Ngẫu_nhiên_x4)_&f&l*&b&l✧&f&l*
+    lore:&f&l[!]_Chuột-phải_để_mở_ngẫu_nhiên_&b&l&nx4_Sách_cường_hóa||&6◆_◆_◆_&6&lHUYỀN_THOẠI_&6◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: book
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 4
+    maximum-rewards: 4
+    rewards:
+    - chance:(5.0), cmd:(/ae givercbook simple {player} 2), unique:()
+    - chance:(5.0), cmd:(/ae givercbook UNIQUE {player} 2), unique:()
+    - chance:(5.0), cmd:(/ae givercbook ELITE {player} 2), unique:()
+    - chance:(5.0), cmd:(/ae givercbook ULTIMATE {player} 2), unique:()
+    - chance:(5.0), cmd:(/ae givercbook LEGENDARY {player} 2), unique:()
+    - chance:(5.0), cmd:(/ae givercbook SOUL {player} 2), unique:()
+    - chance:(5.0), cmd:(/ae givercbook HEROIC {player} 2), unique:()
+trangbi:
+  type: MYSTERY
+  item: ENDER_CHEST 1 arrow_infinite:10 hide:true name:&e()==[:::::::::::::>_&3&l&nx1_HÒM_TRANG_BỊ&r_&7(Ngẫu_nhiên)_&e<:::::::::::::]==()
+    lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&3&l&nTRANG_BỊ||&6◆_◆_◆_&6&lHUYỀN_THOẠI_&6◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: trangbi
+  holographic: []
+  preview:
+    enabled: true
+    rows: 2
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(5.0), cmd:(/ae givegkit {player} Spooky), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Hyperdrive), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Destroyer), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Guardian), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Diablo), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Valentines), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Arcane), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Gladiator), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Trickster), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Templar), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Viking), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Tinkermaster), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Admiral), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} PartyAnimal), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Grandmaster), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Independence), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} ArenaChampion), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Butcher), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Cosmonaut), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Paladin), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} Loki), unique:()
+    - chance:(5.0), cmd:(/ae givegkit {player} GrimReaper), unique:()
+bavuong:
+  type: MYSTERY
+  item: ENDER_CHEST 1 arrow_infinite:10 hide:true name:&e&l◍_&b&l&nHòm_Vũ_Khí&r_&6&lB&e&lÁ_&6&lV&e&lƯ&6&lƠ&e&lN&6&lG_◍
+    lore:&f&l[!]_Chuột-phải_để_mở_ngẫu_nhiên_&b&l&nVũ_khí&r_&6&lB&e&lÁ_&6&lV&e&lƯ&6&lƠ&e&lN&6&lG||&e&l◍_&6&l◍_&e&l◍_&6&lB&e&lÁ_&6&lV&e&lƯ&6&lƠ&e&lN&6&lG_&e&l◍_&6&l◍_&e&l◍
+  animation: NONE
+  end-animation: BLANK
+  display-name: bavuong
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(5.0), cmd:(/ie give aobavuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give riubavuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give mubavuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give quanbavuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give giaybavuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cupbavuong {player} 1), unique:()
+    - chance:(4.0), cmd:(/ie give riubavuong {player} 1), unique:()
+thuong:
+  type: MYSTERY
+  item: CHEST 1 arrow_infinite:10 hide:true name:&7◆◆◆_&7&lHòm_vật_phẩm_THƯỜNG_&7(Ngẫu_nhiên_x2)_&7◆◆◆ lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&7&lx2_Vật_phẩm_THƯỜNG||&7◆_◆_◆_&7&lTHƯỜNG_&7◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: thuong
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(5.0), cmd:(/ie give kiemthuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give riuthuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cungthuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give kiemthuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cupthuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give aothuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give muthuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give quanthuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give giaythuong {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cupthuong {player} 1), unique:()
+hiem:
+  type: MYSTERY
+  item: CHEST 1 arrow_infinite:10 hide:true name:&e◆◆◆_&e&lHòm_vật_phẩm_HIẾM_&e&l[&e1&e&l]_&7(Ngẫu_nhiên_x2)_&e◆◆◆
+    lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&e&lx2_Vật_phẩm_HIẾM||&e◆_◆_◆_&e&lHIẾM_&e◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: hiem
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(5.0), cmd:(/ie give kiemhiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give riuhiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cunghiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give kiemhiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cuphiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give aohiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give muhiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give quanhiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give giayhiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cuphiem {player} 1), unique:()
+hiem2:
+  type: MYSTERY
+  item: CHEST 1 arrow_infinite:10 hide:true name:&e◆◆◆_&e&lHòm_vật_phẩm_HIẾM_&e&l[&e2&e&l]_&7(Ngẫu_nhiên_x2)_&e◆◆◆
+    lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&e&lx2_Vật_phẩm_HIẾM_&e&l[&e2&e&l]||&e◆_◆_◆_&e&lHIẾM_&e◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: hiem2
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(5.0), cmd:(/ie give kiemhiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give riuhiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cunghiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give kiemhiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cuphiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give aohiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give muhiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give quanhiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give giayhiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cuphiem2 {player} 1), unique:()
+hiem3:
+  type: MYSTERY
+  item: CHEST 1 arrow_infinite:10 hide:true name:&e◆◆◆_&e&lHòm_vật_phẩm_HIẾM_&7(Ngẫu_nhiên_x2)_&e◆◆◆ lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&e&lx2_Vật_phẩm_HIẾM||&e◆_◆_◆_&e&lHIẾM_&e◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: hiem3
+  holographic: []
+  preview:
+    enabled: true
+    rows: 2
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(5.0), cmd:(/ie give kiemhiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give riuhiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cunghiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give kiemhiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cuphiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give aohiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give muhiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give quanhiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give giayhiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cuphiem {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give kiemhiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give riuhiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cunghiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give kiemhiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cuphiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give aohiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give muhiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give quanhiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give giayhiem2 {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cuphiem2 {player} 1), unique:()
+huyenthoai:
+  type: MYSTERY
+  item: CHEST 1 arrow_infinite:10 hide:true name:&6◆◆◆_&6&lHòm_vật_phẩm_HUYỀN_THOẠI_&7(Ngẫu_nhiên_x2)_&6◆◆◆ lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&6&lx2_Vật_phẩm_HUYỀN_THOẠI||&6◆_◆_◆_&6&lHUYỀN_THOẠI_&6◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: huyenthoai
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(5.0), cmd:(/ie give kiemht {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give riuht {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give cunght {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give kiemht {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give xenght {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give aoht {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give muht {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give quanht {player} 1), unique:()
+    - chance:(5.0), cmd:(/ie give giayht {player} 1), unique:()
+bietdanh:
+  type: MYSTERY
+  item: NAME_TAG 1 arrow_infinite:10 hide:true name:&8&l[&f&lNgẫu_nhiên_x1_&b&lB&f&lI&b&lỆ&f&lT_&b&lD&f&lA&b&lN&f&lH&8&l]
+    lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&6&lx1_Biệt_danh
+  animation: NONE
+  end-animation: BLANK
+  display-name: bietdanh
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag1 1), unique:()
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag2 1), unique:()
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag3 1), unique:()
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag4 1), unique:()
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag6 1), unique:()
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag7 1), unique:()
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag8 1), unique:()
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag9 1), unique:()
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag10 1), unique:()
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag11 1), unique:()
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag12 1), unique:()
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag13 1), unique:()
+    - chance:(5.0), cmd:(/epicvouchers give {player} tag14 1), unique:()
+sachkhoan:
+  type: MYSTERY
+  item: BOOK 1 arrow_infinite:10 hide:true name:&c&l***_Máy_khoan_***(I-IX) lore:&7&l[!]_&7Chuột-phải_để_mở_ngẫu_nhiên_&cSách_cấp_Máy_khoan
+  animation: NONE
+  end-animation: BLANK
+  display-name: sachkhoan
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ae givebook {player} detonate 1 1 90 10), unique:()
+    - chance:(100.0), cmd:(/ae givebook {player} detonate 2 1 90 10), unique:()
+tuibui1:
+  type: MYSTERY
+  item: JUKEBOX 1 arrow_infinite:10 hide:true name:&e&lHộp_bụi_tiên_(*1) lore:&7&l[!]_&7Chuột-phải_để_mở
+  animation: NONE
+  end-animation: BLANK
+  display-name: tuibui1
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 6
+    maximum-rewards: 6
+    rewards:
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 1 SIMPLE), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 1 UNIQUE), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 1 ELITE), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 1 ULTIMATE), unique:()
+    - chance:(70.0), cmd:(/ae giveitem {player} secret 1 LEGENDARY), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 1 SOUL), unique:()
+    - chance:(70.0), cmd:(/ae giveitem {player} secret 1 HEROIC), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 1 DINH), unique:()
+tuibui2:
+  type: MYSTERY
+  item: JUKEBOX 1 arrow_infinite:10 hide:true name:&e&lHộp_bụi_tiên_(*2) lore:&7&l[!]_&7Chuột-phải_để_mở
+  animation: NONE
+  end-animation: BLANK
+  display-name: tuibui2
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 6
+    maximum-rewards: 6
+    rewards:
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 2 SIMPLE), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 2 UNIQUE), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 2 ELITE), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 2 ULTIMATE), unique:()
+    - chance:(70.0), cmd:(/ae giveitem {player} secret 2 LEGENDARY), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 2 SOUL), unique:()
+    - chance:(70.0), cmd:(/ae giveitem {player} secret 2 HEROIC), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 2 DINH), unique:()
+tuibui3:
+  type: MYSTERY
+  item: JUKEBOX 1 arrow_infinite:10 hide:true name:&e&lHộp_bụi_tiên_(*3) lore:&7&l[!]_&7Chuột-phải_để_mở
+  animation: NONE
+  end-animation: BLANK
+  display-name: tuibui3
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 6
+    maximum-rewards: 6
+    rewards:
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 3 SIMPLE), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 3 UNIQUE), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 3 ELITE), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 3 ULTIMATE), unique:()
+    - chance:(70.0), cmd:(/ae giveitem {player} secret 3 LEGENDARY), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 3 SOUL), unique:()
+    - chance:(70.0), cmd:(/ae giveitem {player} secret 3 HEROIC), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 3 DINH), unique:()
+tuibui4:
+  type: MYSTERY
+  item: JUKEBOX 1 arrow_infinite:10 hide:true name:&e&lHộp_bụi_tiên_(*4) lore:&7&l[!]_&7Chuột-phải_để_mở
+  animation: NONE
+  end-animation: BLANK
+  display-name: tuibui4
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 6
+    maximum-rewards: 6
+    rewards:
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 4 SIMPLE), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 4 UNIQUE), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 4 ELITE), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 4 ULTIMATE), unique:()
+    - chance:(70.0), cmd:(/ae giveitem {player} secret 4 LEGENDARY), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 4 SOUL), unique:()
+    - chance:(70.0), cmd:(/ae giveitem {player} secret 4 HEROIC), unique:()
+    - chance:(100.0), cmd:(/ae giveitem {player} secret 4 DINH), unique:()
+tusach:
+  type: MYSTERY
+  item: BOOKSHELF 1 arrow_infinite:10 hide:true name:&f&l*_TỦ_SÁCH_CƯỜNG_HÓA_* lore:&f-_Ngẫu_nhiên_2_sách:|&7x1_Sách_Cũ|&ax1_Sách_Hiếm|&bx1_Sách_Cổ|&ex1_Sách_Tối_cao||&7&l[!]_&7Chuột-phải_để_mở
+  animation: NONE
+  end-animation: BLANK
+  display-name: tusach
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(100.0), cmd:(/ae givercbook SIMPLE {player} 1), unique:()
+    - chance:(100.0), cmd:(/ae givercbook UNIQUE {player} 1), unique:()
+    - chance:(100.0), cmd:(/ae givercbook ELITE {player} 1), unique:()
+    - chance:(50.0), cmd:(/ae givercbook ULTIMATE {player} 1), unique:()
+HopQuaGiangSinh:
+  type: MYSTERY
+  item: SEA_LANTERN 1 arrow_infinite:10 hide:true name:&b&lHộp_quà_&f&lGiáng_Sinh lore:&f&l&nTHƯỜNG:&r|&f-_100.000_XP|&f-_500.000_$|&f-_x1_Cục_thối|&b&lHIẾM:&r|&f-_&b&nChìa_Khoá&r_&f&lGiáng_Sinh_&7(Thường)_&b⁕⁕⁕|&f-_&b&nChìa_Khoá&r_&f&lGiáng_Sinh_&7(Cao_Cấp)_&b⁕⁕⁕|&f-_&f&l&nx1_Bỏng_Lạnh_I|&f-_&b&l⁕_Hòm_Vũ_Khí_&f&lG&b&lI&f&lÁ&b&lN&f&lG_&b&lS&f&lI&b&lN&f&lH&b&l_⁕|&f-_x16_&f&l●Mảnh_&b&lGiáng_Sinh●_&7(Cao_Cấp)
+  animation: NONE
+  end-animation: BLANK
+  display-name: HopQuaGiangSinh
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&l[!] Đã mở &b&lHộp quà &f&lGiáng Sinh!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(20.0), cmd:(/xp give {player} 100000), unique:()
+    - chance:(15.0), cmd:(/eco give {player} 500000), unique:()
+    - chance:(20.0), cmd:(/ae giveitem {player} blackscroll 1 100), unique:()
+    - chance:(10.0), cmd:(/ev give {player} HomVuKhiGiangSinh 1), unique:()
+    - chance:(10.0), cmd:(/crazycrates give p GiangSinhThuong 1 {player}), unique:()
+    - chance:(5.0), cmd:(/crazycrates give p GiangSinhCaoCap 1 {player}), unique:()
+    - chance:(10.0), cmd:(/itemeditor give manhgiangsinhcaocap {player} 8), unique:()
+    - chance:(10.0), cmd:(/ae give {player} bonglanh 1), unique:()
+homvukhinhamdan:
+  type: MYSTERY
+  item: CHEST 1 arrow_infinite:10 hide:true name:&6☾&f✗&6☽_&f&lHÒM_VŨ_KHÍ_&6&lNHÂM_DẦN_&6☾&f✗&6☽ lore:Nhận_1_trong_3_Vũ_Khí:|&f-_x1_&6☾&f✗&6☽_&f&lKIẾM_&6&lNHÂM_DẦN_&6☾&f✗&6☽|&f-_x1_&6☾&f✗&6☽_&f&lRÌU_&6&lNHÂM_DẦN_&6☾&f✗&6☽|&f-_x1_&6☾&f✗&6☽_&f&lCUNG_&6&lNHÂM_DẦN_&6☾&f✗&6☽
+  animation: NONE
+  end-animation: BLANK
+  display-name: homvukhinhamdan
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&l[!] Đã mở &6☾&f✗&6☽ &f&lHÒM VŨ KHÍ &6&lNHÂM DẦN &6☾&f✗&6☽!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(33.0), cmd:(/asets weapon {player} kiemnhamdan), unique:()
+    - chance:(33.0), cmd:(/asets weapon {player} riunhamdan), unique:()
+    - chance:(34.0), cmd:(/asets weapon {player} cungnhamdan), unique:()
+homtrangbinhamdan:
+  type: MYSTERY
+  item: ENDER_CHEST 1 arrow_infinite:10 hide:true name:&6☾&f✗&6☽_&f&lHÒM_VŨ_KHÍ_&6&lNHÂM_DẦN_&6☾&f✗&6☽ lore:Nhận_1_trong_5_Trang_Bị:|&f-_x1_&6☾&f✗&6☽_&f&lMŨ_&6&lNHÂM_DẦN_&6☾&f✗&6☽|&f-_x1_&6☾&f✗&6☽_&f&lGIÁP_&6&lNHÂM_DẦN_&6☾&f✗&6☽|&f-_x1_&6☾&f✗&6☽_&f&lQUẦN_&6&lNHÂM_DẦN_&6☾&f✗&6☽|&f-_x1_&6☾&f✗&6☽_&f&lỦNG_&6&lNHÂM_DẦN_&6☾&f✗&6☽|&f-_x1_&6☾&f✗&6☽_&f&lKHIÊN_&6&lNHÂM_DẦN_&6☾&f✗&6☽
+  animation: NONE
+  end-animation: BLANK
+  display-name: homtrangbinhamdan
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&l[!] Đã mở &6☾&f✗&6☽ &f&lHÒM TRANG BỊ &6&lNHÂM DẦN &6☾&f✗&6☽!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(20.0), cmd:(/asets givepiece {player} Nhamdan HELMET), unique:()
+    - chance:(20.0), cmd:(/asets givepiece {player} Nhamdan CHESTPLATE), unique:()
+    - chance:(20.0), cmd:(/asets givepiece {player} Nhamdan LEGGINGS), unique:()
+    - chance:(20.0), cmd:(/asets givepiece {player} Nhamdan BOOTS), unique:()
+    - chance:(20.0), cmd:(/ie give khiennhamdan {player} 1), unique:()
+lixi:
+  type: MYSTERY
+  item: CHEST 1 arrow_infinite:10 hide:true name:&c&lLÌ_XÌ_TẾT_&6&lNHÂM_DẦN_2022 lore:&7Nhận_ngẫu_nhiên:|&f-_&b1-9_⛁|&f-_x1_&6☾&f✗&6☽_&e&nChìa_Khóa&r_&6&lNHÂM_DẦN&r_&6☾&f✗&6☽|&f-_x1_&eGhast_Spawner|&f-_x1_&6IronGolem_Spawner|&f-_&a5,000,000$
+  animation: NONE
+  end-animation: BLANK
+  display-name: lixi
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &c[&4&l!&c] Đã mở &c&lLÌ XÌ TẾT &6&lNHÂM DẦN 2022&C!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(30.0), cmd:(/points give {player} 1), unique:()
+    - chance:(30.0), cmd:(/points give {player} 2), unique:()
+    - chance:(30.0), cmd:(/points give {player} 3), unique:()
+    - chance:(20.0), cmd:(/points give {player} 4), unique:()
+    - chance:(20.0), cmd:(/points give {player} 5), unique:()
+    - chance:(20.0), cmd:(/points give {player} 6), unique:()
+    - chance:(10.0), cmd:(/points give {player} 7), unique:()
+    - chance:(10.0), cmd:(/points give {player} 8), unique:()
+    - chance:(10.0), cmd:(/points give {player} 9), unique:()
+    - chance:(5.0), cmd:(/crazycrates give p nhamdan 1 {player}), unique:()
+    - chance:(20.0), cmd:(/eco give {player} 5000000), unique:()
+    - chance:(20.0), cmd:(/silkspawners give {player} ghast 1), unique:()
+    - chance:(20.0), cmd:(/silkspawners give {player} irongolem 1), unique:()
+bossngaunhien:
+  type: MYSTERY
+  item: MONSTER_EGG 1 arrow_infinite:10 hide:true name:&e*&a*&e*&cT&eR&aỨ&bN&dG_&cS&eI&aÊ&bU_&dS&cA&eI&aY&bA&dN&e*&a*&e*
+    lore:&7Nhận_ngẫu_nhiên:|&fx1_&2&l**Triệu_hồi_Piccolo**|&fx1_&5&l**Triệu_hồi_Frieza**|&fx1_&b&l**Triệu_hồi_MaBuu**|&fx1_&e&l**Triệu_hồi_Krilin**|&fx1_&f&l**Triệu_hồi_Gohan**|&fx1_&9&l**Triệu_hồi_Vegeta**|&fx1_&6&l**Triệu_hồi_Songoku**
+  animation: NONE
+  end-animation: BLANK
+  display-name: bossngaunhien
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &2&l[&a&l!&2&l] &aMở thành công &e*&a*&e*&cT&eR&aỨ&bN&dG &cS&eI&aÊ&bU &dS&cA&eI&aY&bA&dN&e*&a*&e* &a!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(30.0), cmd:(/ev give {player} piccolo 1), unique:()
+    - chance:(30.0), cmd:(/ev give {player} frieza 1), unique:()
+    - chance:(30.0), cmd:(/ev give {player} mabuu 1), unique:()
+    - chance:(20.0), cmd:(/ev give {player} krilin 1), unique:()
+    - chance:(20.0), cmd:(/ev give {player} gohan 1), unique:()
+    - chance:(20.0), cmd:(/ev give {player} vegeta 1), unique:()
+    - chance:(10.0), cmd:(/ev give {player} songoku 1), unique:()
+giveaway:
+  type: MYSTERY
+  item: CHEST 1 arrow_infinite:10 hide:true name:&c**_&b&l○_&aGiveAway&b&l_○_&c** lore:&7Nhận_ngẫu_nhiên:|&f-_&b1_⛁|&f-_&a50,000_$|&f-_&cCái_NỊT!
+  animation: NONE
+  end-animation: BLANK
+  display-name: giveaway
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &2[&a!&2] &aMở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(30.0), cmd:(/points give {player} 1), unique:()
+    - chance:(40.0), cmd:(/eco give {player} 50000), unique:()
+    - chance:(30.0), cmd:(/msg {player} §cCái NỊT!), unique:()
+hodau:
+  type: MYSTERY
+  item: BOOK 1 arrow_infinite:10 hide:true name:&6☾&f✗&6☽_&6&lHổ_Đấu_&6☾&f✗&6☽_&7(Ngẫu_nhiên) lore:&7Nhận_ngẫu_nhiên_cấp_độ_&fI_-_IV
+  animation: NONE
+  end-animation: BLANK
+  display-name: hodau
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &a&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(25.0), cmd:(/ae give {player} hodau 1), unique:()
+    - chance:(20.0), cmd:(/ae give {player} hodau 2), unique:()
+    - chance:(10.0), cmd:(/ae give {player} hodau 3), unique:()
+    - chance:(5.0), cmd:(/ae give {player} hodau 4), unique:()
+ankhang:
+  type: MYSTERY
+  item: BOOK 1 arrow_infinite:10 hide:true name:&6☾&f✗&6☽_&6&lAn_Khang_&6☾&f✗&6☽_&7(Ngẫu_nhiên) lore:&7Nhận_ngẫu_nhiên_cấp_độ_&fI_-_V
+  animation: NONE
+  end-animation: BLANK
+  display-name: ankhang
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &a&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(35.0), cmd:(/ae give {player} ankhang 1), unique:()
+    - chance:(30.0), cmd:(/ae give {player} ankhang 2), unique:()
+    - chance:(15.0), cmd:(/ae give {player} ankhang 3), unique:()
+    - chance:(10.0), cmd:(/ae give {player} ankhang 4), unique:()
+    - chance:(1.0), cmd:(/ae give {player} ankhang 5), unique:()
+masoi:
+  type: MYSTERY
+  item: BOOK 1 arrow_infinite:10 hide:true name:&4&l☾_MA_SÓI_&4&l☾_&7(Ngẫu_nhiên) lore:&7Nhận_ngẫu_nhiên_cấp_độ_&fI_-_IV
+  animation: NONE
+  end-animation: BLANK
+  display-name: masoi
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &a&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(80.0), cmd:(/ae give {player} masoi 1), unique:()
+    - chance:(10.0), cmd:(/ae give {player} masoi 2), unique:()
+    - chance:(5.0), cmd:(/ae give {player} masoi 3), unique:()
+    - chance:(1.0), cmd:(/ae give {player} masoi 4), unique:()
+bonglanh:
+  type: MYSTERY
+  item: BOOK 1 arrow_infinite:10 hide:true name:&f&l⁕_Bỏng_Lạnh_⁕_&7(Ngẫu_nhiên) lore:&7Nhận_ngẫu_nhiên_cấp_độ_&fI_-_IV
+  animation: NONE
+  end-animation: BLANK
+  display-name: bonglanh
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &a&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(40.0), cmd:(/ae give {player} bonglanh 1), unique:()
+    - chance:(30.0), cmd:(/ae give {player} bonglanh 2), unique:()
+    - chance:(20.0), cmd:(/ae give {player} bonglanh 3), unique:()
+    - chance:(5.0), cmd:(/ae give {player} bonglanh 4), unique:()
+trauthanh:
+  type: MYSTERY
+  item: BOOK 1 arrow_infinite:10 hide:true name:&d&lTrâu_Thánh_&7(Ngẫu_nhiên) lore:&7Nhận_ngẫu_nhiên_cấp_độ_&fX_-_XXIII
+  animation: NONE
+  end-animation: BLANK
+  display-name: trauthanh
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &a&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(30.0), cmd:(/ae give {player} godlyoverload 10), unique:()
+    - chance:(31.0), cmd:(/ae give {player} godlyoverload 11), unique:()
+    - chance:(32.0), cmd:(/ae give {player} godlyoverload 12), unique:()
+    - chance:(33.0), cmd:(/ae give {player} godlyoverload 13), unique:()
+    - chance:(34.0), cmd:(/ae give {player} godlyoverload 14), unique:()
+    - chance:(35.0), cmd:(/ae give {player} godlyoverload 15), unique:()
+    - chance:(30.0), cmd:(/ae give {player} godlyoverload 16), unique:()
+    - chance:(29.0), cmd:(/ae give {player} godlyoverload 17), unique:()
+    - chance:(28.0), cmd:(/ae give {player} godlyoverload 18), unique:()
+    - chance:(27.0), cmd:(/ae give {player} godlyoverload 19), unique:()
+    - chance:(22.0), cmd:(/ae give {player} godlyoverload 20), unique:()
+    - chance:(20.0), cmd:(/ae give {player} godlyoverload 21), unique:()
+    - chance:(18.0), cmd:(/ae give {player} godlyoverload 22), unique:()
+    - chance:(12.0), cmd:(/ae give {player} godlyoverload 23), unique:()
+top1napthe:
+  type: MYSTERY
+  item: MAGMA_CREAM 1 arrow_infinite:10 hide:true name:&6&l♛_•_•_&c&lTOP_1_Nạp_Thẻ_(Real)&6&l_•_•_♛ lore:&7Nhận_ngẫu_nhiên_(x6):|&f-_&6&k&l..&r_&e&lSách_Mạ._Vàng_&6&k&l..&r_&7(1-3)|&f-_&4&l☾_MA_SÓI_&4&l☾_&7(Ngẫu_nhiên)|&f-_&d&lTrâu_Thánh_&7(Ngẫu_nhiên)|&f-_&4&l❤_&c&lHạnh_phúc_&4&l❤&c&l|&f-_&f&l⁕_Bỏng_Lạnh_⁕_&7(Ngẫu_nhiên)|&f-_&6☾&f✗&6☽_&6&lAn_Khang_&6☾&f✗&6☽_&7(Ngẫu_nhiên)|&f-_&6☾&f✗&6☽_&6&lHổ_Đấu_&6☾&f✗&6☽_&7(Ngẫu_nhiên)|&f-_&e❀_&e&lThăng_Hoa_&e❀
+  animation: NONE
+  end-animation: BLANK
+  display-name: top1napthe
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &6&l[&e&l!&6&l] &c♛ • • Mở thành công • • ♛
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 6
+    maximum-rewards: 6
+    rewards:
+    - chance:(10.0), cmd:(/ae give {player} hanhphuc 1)
+    - chance:(10.0), cmd:(/ae give {player} thanghoa 1)
+    - chance:(20.0), cmd:(/cr give to {player} bonglanh 1)
+    - chance:(20.0), cmd:(/cr give to {player} masoi 1)
+    - chance:(30.0), cmd:(/cr give to {player} hodau 1)
+    - chance:(30.0), cmd:(/cr give to {player} ankhang 1)
+    - chance:(30.0), cmd:(/cr give to {player} trauthanh 1)
+    - chance:(30.0), cmd:(/cr open {player} mavangrandom1), unique:()
+top2napthe:
+  type: MYSTERY
+  item: MAGMA_CREAM 1 arrow_infinite:10 hide:true name:&6&l♛_•_•_&e&lTOP_2_Nạp_Thẻ_(Real)&6&l_•_•_♛ lore:&7Nhận_ngẫu_nhiên_(x5):|&f-_&6&k&l..&r_&e&lSách_Mạ._Vàng_&6&k&l..&r_&7(1-3)|&f-_&4&l☾_MA_SÓI_&4&l☾_&7(Ngẫu_nhiên)|&f-_&d&lTrâu_Thánh_&7(Ngẫu_nhiên)|&f-_&4&l❤_&c&lHạnh_phúc_&4&l❤&c&l|&f-_&f&l⁕_Bỏng_Lạnh_⁕_&7(Ngẫu_nhiên)|&f-_&6☾&f✗&6☽_&6&lAn_Khang_&6☾&f✗&6☽_&7(Ngẫu_nhiên)|&f-_&6☾&f✗&6☽_&6&lHổ_Đấu_&6☾&f✗&6☽_&7(Ngẫu_nhiên)|&f-_&e❀_&e&lThăng_Hoa_&e❀
+  animation: NONE
+  end-animation: BLANK
+  display-name: top2napthe
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &6&l[&e&l!&6&l] &e♛ • • Mở thành công • • ♛
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 5
+    maximum-rewards: 5
+    rewards:
+    - chance:(10.0), cmd:(/ae give {player} hanhphuc 1)
+    - chance:(10.0), cmd:(/ae give {player} thanghoa 1)
+    - chance:(20.0), cmd:(/cr give to {player} bonglanh 1)
+    - chance:(20.0), cmd:(/cr give to {player} masoi 1)
+    - chance:(30.0), cmd:(/cr give to {player} hodau 1)
+    - chance:(30.0), cmd:(/cr give to {player} ankhang 1)
+    - chance:(30.0), cmd:(/cr give to {player} trauthanh 1)
+    - chance:(25.0), cmd:(/cr open {player} mavangrandom1), unique:()
+top3napthe:
+  type: MYSTERY
+  item: MAGMA_CREAM 1 arrow_infinite:10 hide:true name:&6&l♛_•_•_&b&lTOP_3_Nạp_Thẻ_(Real)&6&l_•_•_♛ lore:&7Nhận_ngẫu_nhiên_(x4):|&f-_&6&k&l..&r_&e&lSách_Mạ._Vàng_&6&k&l..&r_&7(1-3)|&f-_&4&l☾_MA_SÓI_&4&l☾_&7(Ngẫu_nhiên)|&f-_&d&lTrâu_Thánh_&7(Ngẫu_nhiên)|&f-_&4&l❤_&c&lHạnh_phúc_&4&l❤&c&l|&f-_&f&l⁕_Bỏng_Lạnh_⁕_&7(Ngẫu_nhiên)|&f-_&6☾&f✗&6☽_&6&lAn_Khang_&6☾&f✗&6☽_&7(Ngẫu_nhiên)|&f-_&6☾&f✗&6☽_&6&lHổ_Đấu_&6☾&f✗&6☽_&7(Ngẫu_nhiên)|&f-_&e❀_&e&lThăng_Hoa_&e❀
+  animation: NONE
+  end-animation: BLANK
+  display-name: top3napthe
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &6&l[&e&l!&6&l] &b♛ • • Mở thành công • • ♛
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 4
+    maximum-rewards: 4
+    rewards:
+    - chance:(10.0), cmd:(/ae give {player} hanhphuc 1)
+    - chance:(10.0), cmd:(/ae give {player} thanghoa 1)
+    - chance:(20.0), cmd:(/cr give to {player} bonglanh 1)
+    - chance:(20.0), cmd:(/cr give to {player} masoi 1)
+    - chance:(30.0), cmd:(/cr give to {player} hodau 1)
+    - chance:(30.0), cmd:(/cr give to {player} ankhang 1)
+    - chance:(30.0), cmd:(/cr give to {player} trauthanh 1)
+    - chance:(25.0), cmd:(/cr open {player} mavangrandom1), unique:()
+top4napthe:
+  type: MYSTERY
+  item: MAGMA_CREAM 1 arrow_infinite:10 hide:true name:&6&l♛_•_•_&a&lTOP_4-10_Nạp_Thẻ_(Real)&6&l_•_•_♛ lore:&7Nhận_ngẫu_nhiên_(x3):|&f-_&6&k&l..&r_&e&lSách_Mạ._Vàng_&6&k&l..&r_&7(1-3)|&f-_&4&l☾_MA_SÓI_&4&l☾_&7(Ngẫu_nhiên)|&f-_&d&lTrâu_Thánh_&7(Ngẫu_nhiên)|&f-_&4&l❤_&c&lHạnh_phúc_&4&l❤&c&l|&f-_&f&l⁕_Bỏng_Lạnh_⁕_&7(Ngẫu_nhiên)|&f-_&6☾&f✗&6☽_&6&lAn_Khang_&6☾&f✗&6☽_&7(Ngẫu_nhiên)|&f-_&6☾&f✗&6☽_&6&lHổ_Đấu_&6☾&f✗&6☽_&7(Ngẫu_nhiên)|&f-_&e❀_&e&lThăng_Hoa_&e❀
+  animation: NONE
+  end-animation: BLANK
+  display-name: top4napthe
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &6&l[&e&l!&6&l] &a♛ • • Mở thành công • • ♛
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 3
+    maximum-rewards: 3
+    rewards:
+    - chance:(10.0), cmd:(/ae give {player} hanhphuc 1)
+    - chance:(10.0), cmd:(/ae give {player} thanghoa 1)
+    - chance:(20.0), cmd:(/cr give to {player} bonglanh 1)
+    - chance:(20.0), cmd:(/cr give to {player} masoi 1)
+    - chance:(30.0), cmd:(/cr give to {player} hodau 1)
+    - chance:(30.0), cmd:(/cr give to {player} ankhang 1)
+    - chance:(30.0), cmd:(/cr give to {player} trauthanh 1)
+    - chance:(5.0), cmd:(/cr open {player} mavangrandom1), unique:()
+sothuong:
+  type: MYSTERY
+  item: BARRIER 1 Name:&cconcac lore:&dconcac
+  animation: NONE
+  end-animation: BLANK
+  display-name: sothuong
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: null
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/itemeditor give sothuong {player} 1)
+sohiem:
+  type: MYSTERY
+  item: BARRIER 1 Name:&cconcac lore:&dconcac
+  animation: NONE
+  end-animation: BLANK
+  display-name: sohiem
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: null
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(60.0), cmd:(/itemeditor give sohiem {player} 1)
+    - chance:(30.0), cmd:(/itemeditor give sohiem2 {player} 1)
+    - chance:(10.0), cmd:(/itemeditor give sohiem3 {player} 1)
+sohuyenthoai:
+  type: MYSTERY
+  item: BARRIER 1 Name:&cconcac lore:&dconcac
+  animation: NONE
+  end-animation: BLANK
+  display-name: sohuyenthoai
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: null
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(60.0), cmd:(/itemeditor give soht {player} 1)
+    - chance:(30.0), cmd:(/itemeditor give soht2 {player} 1)
+    - chance:(10.0), cmd:(/itemeditor give soht3 {player} 1)
+sotruyenthuyet:
+  type: MYSTERY
+  item: BARRIER 1 Name:&cconcac lore:&dconcac
+  animation: NONE
+  end-animation: BLANK
+  display-name: sotruyenthuyet
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: null
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(60.0), cmd:(/itemeditor give sothanh {player} 1)
+    - chance:(30.0), cmd:(/itemeditor give sothanh2 {player} 1)
+    - chance:(10.0), cmd:(/itemeditor give sothanh3 {player} 1)
+sotoicao:
+  type: MYSTERY
+  item: BARRIER 1 Name:&cconcac lore:&dconcac
+  animation: NONE
+  end-animation: BLANK
+  display-name: sotoicao
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: null
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(45.0), cmd:(/itemeditor give sotoicao {player} 1)
+    - chance:(40.0), cmd:(/itemeditor give sotoicao2 {player} 1)
+    - chance:(15.0), cmd:(/itemeditor give sotoicao3 {player} 1)
+sothuongco:
+  type: MYSTERY
+  item: BARRIER 1 Name:&cconcac lore:&dconcac
+  animation: NONE
+  end-animation: BLANK
+  display-name: sothuongco
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: null
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(50.0), cmd:(/itemeditor give sothuongco {player} 1)
+    - chance:(40.0), cmd:(/itemeditor give sothuongco2 {player} 1)
+    - chance:(10.0), cmd:(/itemeditor give sothuongco3 {player} 1)
+sothienha:
+  type: MYSTERY
+  item: BARRIER 1 Name:&cconchosduyne lore:&dconchosduyne
+  animation: NONE
+  end-animation: BLANK
+  display-name: sothienha
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: null
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(50.0), cmd:(/itemeditor give sothienha {player} 1)
+    - chance:(40.0), cmd:(/itemeditor give sothienha2 {player} 1)
+    - chance:(10.0), cmd:(/itemeditor give sothienha3 {player} 1)    
+mavang:
+  type: MYSTERY
+  item: BARRIER 1 Name:&cconcac lore:&dconcac
+  animation: NONE
+  end-animation: BLANK
+  display-name: mavang
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: null
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(10.0), cmd:(/ae givercbook ROYALOKK {player} 1)
+    - chance:(30.0), cmd:(/msg {player} §cRất tiếc, lần này đã thất bại), cmd:(/ae
+      giveitem {player} secret 20 SIMPLE)
+    - chance:(30.0), cmd:(/msg {player} §cChúc bạn may mắn lần sau), cmd:(/ae giveitem
+      {player} secret 20 SIMPLE)
+    - chance:(30.0), cmd:(/msg {player} §cThất bại rồi nhưng đừng nản), cmd:(/ae giveitem
+      {player} secret 20 SIMPLE)
+mavangrandom1:
+  type: MYSTERY
+  item: BARRIER 1 Name:&cconcac lore:&dconcac
+  animation: NONE
+  end-animation: BLANK
+  display-name: mavangrandom1
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: null
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(30.0), cmd:(/ae givercbook ROYALOKK {player} 1)
+    - chance:(30.0), cmd:(/ae givercbook ROYALOKK {player} 2)
+    - chance:(30.0), cmd:(/ae givercbook ROYALOKK {player} 3)
+bossthanlong:
+  type: MYSTERY
+  item: ENDER_CHEST 1 arrow_infinite:10 hide:true name:&9&kI_&r&b&l_Kho_báu_Boss_Thần_Long_&r&9&kI_ lore:&cSăn_kho_báu_bằng_cách|&ctiêu_diệt_&b&lBoss_Thần_Long.||&e&l&nHIẾM|&e*_Ô_cường_hóa_x2|&e*_Cục_Thúi_x2|&e*_Sách_Huyền_Thoại_x4||&6&l&nHUYỀN_THOẠI|&6*_Iron_golem_spawner_x2|&d*_Sách_Truyền_Thuyết_x2||&7Chuột_phải_để_sử_dụng!
+  animation: NONE
+  end-animation: BLANK
+  display-name: bossthanlong
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 3
+    rewards:
+    - chance:(70.0), cmd:(/give {player} 120 2), unique:()
+    - chance:(30.0), cmd:(/ae giveitem {player} slotincreaser 2 simple), unique:()
+    - chance:(50.0), cmd:(/ae givercbook legendary {player} 4), unique:()
+    - chance:(20.0), cmd:(/ae givercbook heroic {player} 2), unique:()
+    - chance:(20.0), cmd:(/ae giveitem {player} blackscroll 2 51), unique:()
+    - chance:(20.0), cmd:(/silkspawners give {player} ig 2), unique:()
+manhtrungpet1:
+  type: MYSTERY
+  item: EGG 1 arrow_infinite:10 hide:true name:&6&l*_&e&lMảnh_Trứng_Ngẫu_Nhiên_&7(Thường)_&6&l* lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên||&f&l*_&7Thường
+  animation: NONE
+  end-animation: BLANK
+  display-name: manhtrungpet1
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên mảnh trứng Pet!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give manhtrungga {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give manhtrungmeo {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give manhtrungheo {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give manhtrungbo {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give manhtrungcuu {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give manhtrungtho {player} 1), unique:()
+manhtrungpet2:
+  type: MYSTERY
+  item: EGG 1 arrow_infinite:10 hide:true name:&6&l*_&e&lMảnh_Trứng_Ngẫu_Nhiên_&e(Hiếm)_&6&l* lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên||&f&l*_&eHiếm
+  animation: NONE
+  end-animation: BLANK
+  display-name: manhtrungpet2
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên mảnh trứng Pet!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give manhtrungsoi {player} 1), unique:()
+manhtrungpet3:
+  type: MYSTERY
+  item: EGG 1 arrow_infinite:10 hide:true name:&6&l*_&e&lMảnh_Trứng_Ngẫu_Nhiên_&b(Cổ)_&6&l* lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên||&f&l*_&bCổ
+  animation: NONE
+  end-animation: BLANK
+  display-name: manhtrungpet3
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên mảnh trứng Pet!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give manhtrungthayma {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give manhtrungnguoixuong {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give manhtrungnhen {player} 1), unique:()
+manhtrungpet4:
+  type: MYSTERY
+  item: EGG 1 arrow_infinite:10 hide:true name:&6&l*_&e&lMảnh_Trứng_Ngẫu_Nhiên_&e(Siêu_Hiếm)_&6&l* lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên||&f&l*_&eSiêu_Hiếm
+  animation: NONE
+  end-animation: BLANK
+  display-name: manhtrungpet4
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên mảnh trứng Pet!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give manhtrungslime {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give manhtrungnhenhang {player} 1), unique:()
+manhtrungpet5:
+  type: MYSTERY
+  item: EGG 1 arrow_infinite:10 hide:true name:&6&l*_&e&lMảnh_Trứng_Ngẫu_Nhiên_&6(Huyền_Thoại)_&6&l* lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên||&f&l*_&6Huyền_Thoại
+  animation: NONE
+  end-animation: BLANK
+  display-name: manhtrungpet5
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên mảnh trứng Pet!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give manhtrungheothayma {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give manhtrungmagmacube {player} 1), unique:()
+manhtrungpet6:
+  type: MYSTERY
+  item: EGG 1 arrow_infinite:10 hide:true name:&6&l*_&e&lMảnh_Trứng_Ngẫu_Nhiên_&d(Truyền_Thuyết)_&6&l* lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên||&f&l*_&dTruyền_Thuyết
+  animation: NONE
+  end-animation: BLANK
+  display-name: manhtrungpet6
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Đã mở ngẫu nhiên mảnh trứng Pet!!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(100.0), cmd:(/ie give manhtrungenderman {player} 1), unique:()
+    - chance:(100.0), cmd:(/ie give manhtrungblaze {player} 1), unique:()
+napthe20:
+  type: MYSTERY
+  item: STAINED_GLASS:0 1 name:&f&l*_Phần_Thưởng_Mốc_Nạp_20.000đ_(Real)* lore:&7[!]_Chuột_phải_để_mở||&b&lBên_trong_chứa:|&f*_20.000_EXP|&f*_20.000$|&a*_x1_Ô_cường_hóa_cho_TRANG_BỊ|&6*_x2_Sách_Cường_Hóa_Huyền_Thoại||&c(Lưu_ý:_Cần_2_ô_trống_trong_kho_đồ)
+    arrow_infinite:10 hide:true
+  animation: NONE
+  end-animation: BLANK
+  display-name: napthe20
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: LIME_STAINED_GLASS_PANE:5 1 name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: RED_STAINED_GLASS_PANE:14 1 name:&4No
+  message:
+    open: |
+      &E&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 4
+    maximum-rewards: 4
+    rewards:
+    - chance:(100.0), unique:(), cmd:(eco give {player} 20000)
+    - chance:(100.0), unique:(), cmd:(xp give {player} 20000)
+    - chance:(100.0), unique:(), cmd:(ae giveitem {player} slotincreaser 1 SIMPLE)
+    - chance:(100.0), unique:(), cmd:(ae givercbook LEGENDARY {player} 1)
+napthe100:
+  type: MYSTERY
+  item: STAINED_GLASS:5 1 name:&a&l*_Phần_Thưởng_Mốc_Nạp_100.000đ_(Real)* lore:&7[!]_Chuột_phải_để_mở||&b&lBên_trong_chứa:|&f*_50.000_EXP|&f*_50.000$|&a*_x2_Ô_cường_hóa_cho_TRANG_BỊ|&a*_2000_Đá_Quý|&6*_x10_Sách_Cường_Hóa_Huyền_Thoại|&6*_x1_Cánh_Cứng||&c(Lưu_ý:_Cần_3_ô_trống_trong_kho_đồ)
+    arrow_infinite:10 hide:true
+  animation: NONE
+  end-animation: BLANK
+  display-name: napthe100
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: LIME_STAINED_GLASS_PANE:5 1 name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: RED_STAINED_GLASS_PANE:14 1 name:&4No
+  message:
+    open: |
+      &E&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 6
+    maximum-rewards: 6
+    rewards:
+    - chance:(100.0), unique:(), cmd:(eco give {player} 50000)
+    - chance:(100.0), unique:(), cmd:(xp give {player} 50000)
+    - chance:(100.0), unique:(), cmd:(ae giveitem {player} slotincreaser 2 SIMPLE)
+    - chance:(100.0), unique:(), cmd:(gems add {player} 2000)
+    - chance:(100.0), unique:(), cmd:(ae givercbook LEGENDARY {player} 10)
+    - chance:(100.0), unique:(), cmd:(give {player} elytra 1)
+napthe200:
+  type: MYSTERY
+  item: STAINED_GLASS:3 1 name:&b&l*_Phần_Thưởng_Mốc_Nạp_200.000đ_(Real)* lore:&7[!]_Chuột_phải_để_mở||&b&lBên_trong_chứa:|&f*_200.000_EXP|&f*_200.000$|&a*_x3_Ô_cường_hóa_cho_TRANG_BỊ|&a*_4000_Đá_Quý|&d*_x1_Sách_Cường_Hóa_Truyền_Thuyết|&c*_x1_&C◆&4◆&C◆_&c&nChìa_Khóa&r_&d&lPHÙ_THỦY&r_&C◆&4◆&C◆||&c(Lưu_ý:_Cần_3_ô_trống_trong_kho_đồ)
+    arrow_infinite:10 hide:true
+  animation: NONE
+  end-animation: BLANK
+  display-name: napthe200
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: LIME_STAINED_GLASS_PANE:5 1 name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: RED_STAINED_GLASS_PANE:14 1 name:&4No
+  message:
+    open: |
+      &E&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 6
+    maximum-rewards: 6
+    rewards:
+    - chance:(100.0), unique:(), cmd:(eco give {player} 200000)
+    - chance:(100.0), unique:(), cmd:(xp give {player} 200000)
+    - chance:(100.0), unique:(), cmd:(ae giveitem {player} slotincreaser 3 SIMPLE)
+    - chance:(100.0), unique:(), cmd:(gems add {player} 4000)
+    - chance:(100.0), unique:(), cmd:(ae givercbook HEROIC {player} 1)
+    - chance:(100.0), unique:(), cmd:(crazycrates give p Phuthuy 1 {player})
+napthe500:
+  type: MYSTERY
+  item: STAINED_GLASS:4 1 name:&e&l*_Phần_Thưởng_Mốc_Nạp_500.000đ_(Real)* lore:&7[!]_Chuột_phải_để_mở||&b&lBên_trong_chứa:|&f*_500.000_EXP|&f*_500.000$|&a*_x4_Ô_cường_hóa_cho_TRANG_BỊ|&a*_10000_Đá_Quý|&d*_x3_Sách_Cường_Hóa_Truyền_Thuyết|&c*_x3_Sách_Cường_Hóa_Linh_Hồn|&c*_x3_&C◆&4◆&C◆_&c&nChìa_Khóa&r_&d&lPHÙ_THỦY&r_&C◆&4◆&C◆|&c*_x2_&a◆&2◆&a◆_&c&nChìa_Khóa&r_&a&l⌘&e﹝&2&lThượng_cổ&e﹞&a&l⌘&r_&a◆&2◆&a◆||&c(Lưu_ý:_Cần_5_ô_trống_trong_kho_đồ)
+    arrow_infinite:10 hide:true
+  animation: NONE
+  end-animation: BLANK
+  display-name: napthe500
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: LIME_STAINED_GLASS_PANE:5 1 name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: RED_STAINED_GLASS_PANE:14 1 name:&4No
+  message:
+    open: |
+      &E&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 8
+    maximum-rewards: 8
+    rewards:
+    - chance:(100.0), unique:(), cmd:(eco give {player} 500000)
+    - chance:(100.0), unique:(), cmd:(xp give {player} 500000)
+    - chance:(100.0), unique:(), cmd:(ae giveitem {player} slotincreaser 4 SIMPLE)
+    - chance:(100.0), unique:(), cmd:(gems add {player} 10000)
+    - chance:(100.0), unique:(), cmd:(ae givercbook HEROIC {player} 3)
+    - chance:(100.0), unique:(), cmd:(ae givercbook SOUL {player} 3)
+    - chance:(100.0), unique:(), cmd:(crazycrates give p Phuthuy 3 {player})
+    - chance:(100.0), unique:(), cmd:(crazycrates give p Thuongco 2 {player})
+napthe1000:
+  type: MYSTERY
+  item: STAINED_GLASS:1 1 name:&6&l*_Phần_Thưởng_Mốc_Nạp_1.000.000đ_(Real)* lore:&7[!]_Chuột_phải_để_mở||&b&lBên_trong_chứa:|&f*_1.000.000_EXP|&f*_1.000.000$|&a*_x5_Ô_cường_hóa_cho_TRANG_BỊ|&a*_20000_Đá_Quý|&d*_x6_Sách_Cường_Hóa_Truyền_Thuyết|&c*_x4_Sách_Cường_Hóa_Linh_Hồn|&c*_x4_&C◆&4◆&C◆_&c&nChìa_Khóa&r_&d&lPHÙ_THỦY&r_&C◆&4◆&C◆|&c*_x3_&a◆&2◆&a◆_&c&nChìa_Khóa&r_&a&l⌘&e﹝&2&lThượng_cổ&e﹞&a&l⌘&r_&a◆&2◆&a◆|&4*_x1_&a&l☘☘_&e&lRìu_May_Mắn_LEVEL_5_&a&l☘☘|&4*_x1_&f&l✦_Đá_Cường_Hóa_✦|&4*_x1_&d&lTrâu_Thánh_ngẫu_nhiên_(X-XXIII)||&c(Lưu_ý:_Cần_8_ô_trống_trong_kho_đồ)
+    arrow_infinite:10 hide:true
+  animation: NONE
+  end-animation: BLANK
+  display-name: napthe1000
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: LIME_STAINED_GLASS_PANE:5 1 name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: RED_STAINED_GLASS_PANE:14 1 name:&4No
+  message:
+    open: |
+      &E&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 11
+    maximum-rewards: 11
+    rewards:
+    - chance:(100.0), unique:(), cmd:(eco give {player} 1000000)
+    - chance:(100.0), unique:(), cmd:(xp give {player} 1000000)
+    - chance:(100.0), unique:(), cmd:(ae giveitem {player} slotincreaser 5 SIMPLE)
+    - chance:(100.0), unique:(), cmd:(gems add {player} 20000)
+    - chance:(100.0), unique:(), cmd:(ae givercbook HEROIC {player} 6)
+    - chance:(100.0), unique:(), cmd:(ae givercbook SOUL {player} 4)
+    - chance:(100.0), unique:(), cmd:(crazycrates give p Phuthuy 4 {player})
+    - chance:(100.0), unique:(), cmd:(crazycrates give p Thuongco 3 {player})
+    - chance:(100.0), unique:(), cmd:(ie give bedrock {player} 1)
+    - chance:(100.0), unique:(), cmd:(ie give riumm5 {player} 1)
+    - chance:(100.0), unique:(), cmd:(cr give to {player} trauthanh 1)
+napthe2000:
+  type: MYSTERY
+  item: STAINED_GLASS:6 1 name:&d&l*_Phần_Thưởng_Mốc_Nạp_2.000.000đ_(Real)* lore:&7[!]_Chuột_phải_để_mở||&b&lBên_trong_chứa:|&f*_2.000.000_EXP|&f*_2.000.000$|&a*_x6_Ô_cường_hóa_cho_TRANG_BỊ|&a*_40000_Đá_Quý|&d*_x12_Sách_Cường_Hóa_Truyền_Thuyết|&c*_x8_Sách_Cường_Hóa_Linh_Hồn|&c*_x8_&C◆&4◆&C◆_&c&nChìa_Khóa&r_&d&lPHÙ_THỦY&r_&C◆&4◆&C◆|&c*_x6_&a◆&2◆&a◆_&c&nChìa_Khóa&r_&a&l⌘&e﹝&2&lThượng_cổ&e﹞&a&l⌘&r_&a◆&2◆&a◆|&4*_x1_&a&l☘☘_&e&lRìu_May_Mắn_LEVEL_6_&a&l☘☘|&4*_x2_&f&l✦_Đá_Cường_Hóa_✦|&4*_x2_&d&lTrâu_Thánh_ngẫu_nhiên_(X-XXIII)|&4*_x2_&e&l◍_&b&l&nHòm_Vũ_Khí&r_&6&lB&e&lÁ_&6&lV&e&lƯ&6&lƠ&e&lN&6&lG_◍||&c(Lưu_ý:_Cần_9_ô_trống_trong_kho_đồ)
+    arrow_infinite:10 hide:true
+  animation: NONE
+  end-animation: BLANK
+  display-name: napthe2000
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: LIME_STAINED_GLASS_PANE:5 1 name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: RED_STAINED_GLASS_PANE:14 1 name:&4No
+  message:
+    open: |
+      &E&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 12
+    maximum-rewards: 12
+    rewards:
+    - chance:(100.0), unique:(), cmd:(eco give {player} 2000000)
+    - chance:(100.0), unique:(), cmd:(xp give {player} 2000000)
+    - chance:(100.0), unique:(), cmd:(ae giveitem {player} slotincreaser 6 SIMPLE)
+    - chance:(100.0), unique:(), cmd:(gems add {player} 40000)
+    - chance:(100.0), unique:(), cmd:(ae givercbook HEROIC {player} 12)
+    - chance:(100.0), unique:(), cmd:(ae givercbook SOUL {player} 8)
+    - chance:(100.0), unique:(), cmd:(crazycrates give p Phuthuy 8 {player})
+    - chance:(100.0), unique:(), cmd:(crazycrates give p Thuongco 6 {player})
+    - chance:(100.0), unique:(), cmd:(ie give bedrock {player} 2)
+    - chance:(100.0), unique:(), cmd:(ie give riumm6 {player} 1)
+    - chance:(100.0), unique:(), cmd:(cr give to {player} trauthanh 2)
+    - chance:(100.0), unique:(), cmd:(cr give to {player} bavuong 2)
+napthe5000:
+  type: MYSTERY
+  item: STAINED_GLASS:14 1 name:&c&l*_Phần_Thưởng_Mốc_Nạp_5.000.000đ_(Real)* lore:&7[!]_Chuột_phải_để_mở||&b&lBên_trong_chứa:|&f*_5.000.000_EXP|&f*_5.000.000$|&a*_x7_Ô_cường_hóa_cho_TRANG_BỊ|&a*_80000_Đá_Quý|&d*_x30_Sách_Cường_Hóa_Truyền_Thuyết|&c*_x15_Sách_Cường_Hóa_Linh_Hồn|&c*_x12_&C◆&4◆&C◆_&c&nChìa_Khóa&r_&d&lPHÙ_THỦY&r_&C◆&4◆&C◆|&c*_x10_&a◆&2◆&a◆_&c&nChìa_Khóa&r_&a&l⌘&e﹝&2&lThượng_cổ&e﹞&a&l⌘&r_&a◆&2◆&a◆|&4*_x1_&a&l☘☘_&e&lRìu_May_Mắn_LEVEL_6_&a&l☘☘|&4*_x5_&f&l✦_Đá_Cường_Hóa_✦|&4*_x5_&d&lTrâu_Thánh_ngẫu_nhiên_(X-XXIII)|&4*_x4_&e&l◍_&b&l&nHòm_Vũ_Khí&r_&6&lB&e&lÁ_&6&lV&e&lƯ&6&lƠ&e&lN&6&lG_◍|&4*_x1_&C&L⊰&4&L⊰&C&L⊰_&4&LCUNG_&C&LTỐI_CAO_&4(3♦)_&4&L⊱&C&L⊱&4&L⊱||&c(Lưu_ý:_Cần_10_ô_trống_trong_kho_đồ)
+    arrow_infinite:10 hide:true
+  animation: NONE
+  end-animation: BLANK
+  display-name: napthe5000
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: LIME_STAINED_GLASS_PANE:5 1 name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: RED_STAINED_GLASS_PANE:14 1 name:&4No
+  message:
+    open: |
+      &E&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 13
+    maximum-rewards: 13
+    rewards:
+    - chance:(100.0), unique:(), cmd:(eco give {player} 5000000)
+    - chance:(100.0), unique:(), cmd:(xp give {player} 5000000)
+    - chance:(100.0), unique:(), cmd:(ae giveitem {player} slotincreaser 6 SIMPLE)
+    - chance:(100.0), unique:(), cmd:(gems add {player} 80000)
+    - chance:(100.0), unique:(), cmd:(ae givercbook HEROIC {player} 30)
+    - chance:(100.0), unique:(), cmd:(ae givercbook SOUL {player} 15)
+    - chance:(100.0), unique:(), cmd:(crazycrates give p Phuthuy 12 {player})
+    - chance:(100.0), unique:(), cmd:(crazycrates give p Thuongco 10 {player})
+    - chance:(100.0), unique:(), cmd:(ie give bedrock {player} 5)
+    - chance:(100.0), unique:(), cmd:(ie give riumm6 {player} 1)
+    - chance:(100.0), unique:(), cmd:(cr give to {player} trauthanh 5)
+    - chance:(100.0), unique:(), cmd:(cr give to {player} bavuong 4)
+    - chance:(100.0), unique:(), cmd:(ie give cungtoicao3 {player} 1)
+napthe10000:
+  type: MYSTERY
+  item: STAINED_GLASS:10 1 name:&5&l*_Phần_Thưởng_Mốc_Nạp_10.000.000đ_(Real)* lore:&7[!]_Chuột_phải_để_mở||&b&lBên_trong_chứa:|&f*_10.000.000_EXP|&f*_10.000.000$|&a*_x8_Ô_cường_hóa_cho_TRANG_BỊ|&a*_160000_Đá_Quý|&d*_x60_Sách_Cường_Hóa_Truyền_Thuyết|&c*_x30_Sách_Cường_Hóa_Linh_Hồn|&c*_x24_&C◆&4◆&C◆_&c&nChìa_Khóa&r_&d&lPHÙ_THỦY&r_&C◆&4◆&C◆|&c*_x20_&a◆&2◆&a◆_&c&nChìa_Khóa&r_&a&l⌘&e﹝&2&lThượng_cổ&e﹞&a&l⌘&r_&a◆&2◆&a◆|&4*_x1_&a&l☘☘_&e&lRìu_May_Mắn_LEVEL_6_&a&l☘☘|&4*_x5_&f&l✦_Đá_Cường_Hóa_✦|&4*_x5_&d&lTrâu_Thánh_ngẫu_nhiên_(X-XXIII)|&5*_x1_&2&l⌘⌘&6﹝&d﹝&6﹝&a&lTHƯỢNG_CỔ_&6﹝&d﹝&6﹝&e(Kiếm_(3♦))&f﹞&6﹞&d﹞&2&l⌘⌘||&c(Lưu_ý:_Cần_9_ô_trống_trong_kho_đồ)
+    arrow_infinite:10 hide:true
+  animation: NONE
+  end-animation: BLANK
+  display-name: napthe10000
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: LIME_STAINED_GLASS_PANE:5 1 name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: RED_STAINED_GLASS_PANE:14 1 name:&4No
+  message:
+    open: |
+      &E&l[!] Mở thành công!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 12
+    maximum-rewards: 12
+    rewards:
+    - chance:(100.0), unique:(), cmd:(eco give {player} 10000000)
+    - chance:(100.0), unique:(), cmd:(xp give {player} 10000000)
+    - chance:(100.0), unique:(), cmd:(ae giveitem {player} slotincreaser 8 SIMPLE)
+    - chance:(100.0), unique:(), cmd:(gems add {player} 160000)
+    - chance:(100.0), unique:(), cmd:(ae givercbook HEROIC {player} 60)
+    - chance:(100.0), unique:(), cmd:(ae givercbook SOUL {player} 30)
+    - chance:(100.0), unique:(), cmd:(crazycrates give p Phuthuy 24 {player})
+    - chance:(100.0), unique:(), cmd:(crazycrates give p Thuongco 20 {player})
+    - chance:(100.0), unique:(), cmd:(ie give bedrock {player} 5)
+    - chance:(100.0), unique:(), cmd:(ie give riumm6 {player} 1)
+    - chance:(100.0), unique:(), cmd:(cr give to {player} trauthanh 5)
+    - chance:(100.0), unique:(), cmd:(asets weapon {player} kiemthuongco3)
+homtrangbiquymaoht:
+  type: MYSTERY
+  item: CHEST 1 arrow_infinite:10 hide:true name:&6★_&f&lHÒM_TRANG_BỊ_&e&lQUÝ_MÃO_HUYỀN_THOẠI_&6★ lore:&7Nhận_1_trong_4_Trang_Bị:|&f-_x1_&e&l★_&6&l★_&e&l★_&6&lMŨ_THƯỢNG_QUÝ_MÃO_&e&l★_&6&l★_&e&l★|&f-_x1_&e&l★_&6&l★_&e&l★_&6&lGIÁP_THƯỢNG_QUÝ_MÃO_&e&l★_&6&l★_&e&l★|&f-_x1_&e&l★_&6&l★_&e&l★_&6&lQUẦN_THƯỢNG_QUÝ_MÃO_&e&l★_&6&l★_&e&l★|&f-_x1_&e&l★_&6&l★_&e&l★_&6&lỦNG_THƯỢNG_QUÝ_MÃO_&e&l★_&6&l★_&e&l★
+  animation: NONE
+  end-animation: BLANK
+  display-name: homtrangbiquymaoht
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&l[!] Đã mở &6★ &f&lHÒM TRANG BỊ &e&lQUÝ MÃO HUYỀN THOẠI &6★&e!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(25.0), cmd:(/asets givepiece {player} SetQuyMaoHuyenThoai HELMET), unique:()
+    - chance:(25.0), cmd:(/asets givepiece {player} SetQuyMaoHuyenThoai CHESTPLATE), unique:()
+    - chance:(25.0), cmd:(/asets givepiece {player} SetQuyMaoHuyenThoai LEGGINGS), unique:()
+    - chance:(25.0), cmd:(/asets givepiece {player} SetQuyMaoHuyenThoai BOOTS), unique:()
+homtrangbiquymaothanh:
+  type: MYSTERY
+  item: ENDER_CHEST 1 arrow_infinite:10 hide:true name:&5☾_&f&lHÒM_TRANG_BỊ_&d&lQUÝ_MÃO_TRUYỀN_THUYẾT_&5☽ lore:&7Nhận_1_trong_4_Trang_Bị:|&f-_x1_&d&l☾_&5&l☾_&d&l☾_&d&lMŨ_THIÊN_QUÝ_MÃO_&d&l☽_&5&l☽_&d&l☽|&f-_x1_&d&l☾_&5&l☾_&d&l☾_&d&lGIÁP_THIÊN_QUÝ_MÃO_&d&l☽_&5&l☽_&d&l☽|&f-_x1_&d&l☾_&5&l☾_&d&l☾_&d&lQUẦN_THIÊN_QUÝ_MÃO_&d&l☽_&5&l☽_&d&l☽|&f-_x1_&d&l☾_&5&l☾_&d&l☾_&d&lỦNG_THIÊN_QUÝ_MÃO_&d&l☽_&5&l☽_&d&l☽
+  animation: NONE
+  end-animation: BLANK
+  display-name: homtrangbiquymaothanh
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+          &e&l[!] Đã mở &5☾ &f&lHÒM TRANG BỊ &d&lQUÝ MÃO TRUYỀN THUYẾT &5☽&e!
+  broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(25.0), cmd:(/asets givepiece {player} SetQuyMaoTruyenThuyet HELMET), unique:()
+    - chance:(25.0), cmd:(/asets givepiece {player} SetQuyMaoTruyenThuyet CHESTPLATE), unique:()
+    - chance:(25.0), cmd:(/asets givepiece {player} SetQuyMaoTruyenThuyet LEGGINGS), unique:()
+    - chance:(25.0), cmd:(/asets givepiece {player} SetQuyMaoTruyenThuyet BOOTS), unique:()
+homtrangbiquymaotoicao:
+  type: MYSTERY
+  item: ENDER_PORTAL_FRAME 1 arrow_infinite:10 hide:true name:&4⋞_&f&lHÒM_TRANG_BỊ_&c&lQUÝ_MÃO_TỐI_CAO_&4⋟ lore:&7Nhận_1_trong_4_Trang_Bị:|&f-_x1_&c&l⋞_&4&l⋞_&c&l⋞_&4&lMŨ_VƯƠNG_QUÝ_MÃO&r_&c&l⋟_&4&l⋟_&c&l⋟|&f-_x1_&c&l⋞_&4&l⋞_&c&l⋞_&4&lGIÁP_VƯƠNG_QUÝ_MÃO&r_&c&l⋟_&4&l⋟_&c&l⋟|&f-_x1_&c&l⋞_&4&l⋞_&c&l⋞_&4&lQUẦN_VƯƠNG_QUÝ_MÃO&r_&c&l⋟_&4&l⋟_&c&l⋟|&f-_x1_&c&l⋞_&4&l⋞_&c&l⋞_&4&lỦNG_VƯƠNG_QUÝ_MÃO&r_&c&l⋟_&4&l⋟_&c&l⋟
+  animation: NONE
+  end-animation: BLANK
+  display-name: homtrangbiquymaotoicao
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&l[!] Đã mở &4⋞ &f&lHÒM TRANG BỊ &c&lQUÝ MÃO TỐI CAO &4⋟&e!
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(25.0), cmd:(/asets givepiece {player} SetQuyMaoToiCao HELMET), unique:()
+    - chance:(25.0), cmd:(/asets givepiece {player} SetQuyMaoToiCao CHESTPLATE), unique:()
+    - chance:(25.0), cmd:(/asets givepiece {player} SetQuyMaoToiCao LEGGINGS), unique:()
+    - chance:(25.0), cmd:(/asets givepiece {player} SetQuyMaoToiCao BOOTS), unique:()
+dongxuquymao:
+  type: MYSTERY
+  item: DOUBLE_PLANT 1 arrow_infinite:10 hide:true name:&e&l⋞_&6&l⋞_&e&l⋞_&e&lĐồng_Xu_&6&lQuý_Mão_2023_&e&l⋟_&6&l⋟_&e&l⋟ lore:&e&lTHƯỜNG:&r|&f-_&e10.000.000_XP|&f-_&a25.000.000_$|&f-_&ax1_Ô_cường_hóa_cho_TRANG_BỊ|&f-_&8x1_Cục_thối||&6&lHIẾM:&r|&f-_&e&l⋞_&6&l⋞_&e&l⋞_&e&nChìa_Khóa&r_&6&lVương_Quý_Mão_&e&l⋟_&6&l⋟_&e&l⋟|&f-_&6★_&f&lHÒM_TRANG_BỊ_&e&lQUÝ_MÃO_HUYỀN_THOẠI_&6★|&f-_&5☾_&f&lHÒM_TRANG_BỊ_&d&lQUÝ_MÃO_TRUYỀN_THUYẾT_&5☽|&f-_&4⋞_&f&lHÒM_TRANG_BỊ_&c&lQUÝ_MÃO_TỐI_CAO_&4⋟|&f-&7_x1-8_&a&lBánh_Chưng|&f-&7_x1-3_&6[◆]_&6&lXương_Yêu_Tinh_Quý_Mão_&6[◆]|&f-&7_x300_&e[◆]_&e&lMảnh_Khiên_Ngư_Yêu_&e[◆]|&f-&7_x300_&6[◆]_&6&lĐất_Hi_Vọng_&6[◆]|&f-_&b9⛁|&f-_&b19⛁|&f-&6&l_Gói_Nguyên_Liệu_Bánh_Chưng_V|&f-&6&l_Gói_Nguyên_Liệu_Bánh_Chưng_VI|&f-&6&l_Gói_Nguyên_Liệu_Bánh_Chưng_VII
+  animation: NONE
+  end-animation: BLANK
+  display-name: dongxuquymao
+  message:
+    open: |
+      &2[&a!&2] &aĐã mở thành công &e&l⋞ &6&l⋞ &e&l⋞ &e&lĐồng Xu &6&lQuý Mão 2023 &e&l⋟ &6&l⋟ &e&l⋟
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(20.0), cmd:(/xp give {player} 10000000), cmd:(/msg {player} &f&lBạn nhận được &e10.000.000 XP), unique:()
+    - chance:(20.0), cmd:(/eco give {player} 25000000), cmd:(/msg {player} &f&lBạn nhận được &a25.000.000$), unique:()
+    - chance:(15.0), cmd:(/ae giveitem {player} blackscroll 1 100), cmd:(/msg {player} &f&lBạn nhận được &8x1 Cục Thối), unique:()
+    - chance:(15.0), cmd:(/ae giveitem {player} slotincreaser 1 SIMPLE), cmd:(/msg {player} &f&lBạn nhận được &ax1 Ô cường hóa cho TRANG BỊ), unique:()
+    - chance:(2.0), cmd:(/crazycrates give p QuyMaoDonate 1 {player}), cmd:(/bc &6&l{player} &f&lĐã nhận được &e&l⋞ &6&l⋞ &e&l⋞ &e&nChìa Khóa&r &6&lVương Quý Mão &e&l⋟ &6&l⋟ &e&l⋟ &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&lĐồng Xu &6&lQuý Mão 2023 &e&l⋟ &6&l⋟ &e&l⋟), unique:()
+    - chance:(20.0), cmd:(/cr give to {player} homtrangbiquymaoht 1), cmd:(/msg {player} &f&lBạn nhận được &6★ &f&lHÒM TRANG BỊ &e&lQUÝ MÃO HUYỀN THOẠI &6★), unique:()
+    - chance:(15.0), cmd:(/cr give to {player} homtrangbiquymaothanh 1), cmd:(/msg {player} &f&lBạn nhận được &5☾ &f&lHÒM TRANG BỊ &d&lQUÝ MÃO TRUYỀN THUYẾT &5), unique:()
+    - chance:(2.0), cmd:(/cr give to {player} homtrangbiquymaotoicao 1), cmd:(/bc &6&l{player} &f&lĐã nhận được §f§lHÒM TRANG BỊ §c§lQUÝ MÃO TỐI CAO §4⋟ &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&lĐồng Xu &6&lQuý Mão 2023 &e&l⋟ &6&l⋟ &e&l⋟), unique:()
+    - chance:(10.0), cmd:(/ie give banhchung {player} 1), cmd:(/msg {player} &f&lBạn nhận được &ex1 Bánh Chưng), unique:()
+    - chance:(10.0), cmd:(/ie give banhchung {player} 2), cmd:(/msg {player} &f&lBạn nhận được &ex2 Bánh Chưng), unique:()
+    - chance:(10.0), cmd:(/ie give banhchung {player} 3), cmd:(/msg {player} &f&lBạn nhận được &ex3 Bánh Chưng), unique:()
+    - chance:(10.0), cmd:(/ie give banhchung {player} 4), cmd:(/msg {player} &f&lBạn nhận được &ex4 Bánh Chưng), unique:()
+    - chance:(10.0), cmd:(/ie give banhchung {player} 5), cmd:(/msg {player} &f&lBạn nhận được &ex5 Bánh Chưng), unique:()
+    - chance:(10.0), cmd:(/ie give banhchung {player} 6), cmd:(/msg {player} &f&lBạn nhận được &ex6 Bánh Chưng), unique:()
+    - chance:(10.0), cmd:(/ie give banhchung {player} 7), cmd:(/msg {player} &f&lBạn nhận được &ex7 Bánh Chưng), unique:()
+    - chance:(10.0), cmd:(/ie give banhchung {player} 8), cmd:(/msg {player} &f&lBạn nhận được &ex8 Bánh Chưng), unique:()
+    - chance:(10.0), cmd:(/mm i give -s {player} xuongyeutinhquymao 1), cmd:(/msg {player} &f&lBạn nhận được &ex1 &6[◆] &6&lXương Yêu Tinh Quý Mão &6[◆]), unique:()
+    - chance:(10.0), cmd:(/mm i give -s {player} xuongyeutinhquymao 2), cmd:(/msg {player} &f&lBạn nhận được &ex2 &6[◆] &6&lXương Yêu Tinh Quý Mão &6[◆]), unique:()
+    - chance:(10.0), cmd:(/mm i give -s {player} xuongyeutinhquymao 3), cmd:(/msg {player} &f&lBạn nhận được &ex3 &6[◆] &6&lXương Yêu Tinh Quý Mão &6[◆]), unique:()
+    - chance:(10.0), cmd:(/mm i give -s {player} dathivong 300), cmd:(/msg {player} &f&lBạn nhận được &ex300 &6[◆] &6&lĐất Hi Vọng &6[◆]), unique:()
+    - chance:(10.0), cmd:(/mm i give -s {player} manhkhiennguyeu 300), cmd:(/msg {player} &f&lBạn nhận được &ex300 &e[◆] &e&lMảnh Khiên Ngư Yêu &e[◆]), unique:()
+    - chance:(5.0), cmd:(/points give {player} 9), cmd:(/msg {player} &f&lBạn nhận được &b9⛁), unique:()
+    - chance:(2.0), cmd:(/points give {player} 19), cmd:(/msg {player} &f&lBạn nhận được &b19⛁), unique:()
+    - chance:(10.0), cmd:(/ie give hatnep {player} 12), cmd:(/ie give hatnep {player} 12), cmd:(/ie give dauxanh {player} 12), cmd:(/ie give thitheomuoi {player} 12), cmd:(/ie give ladong {player} 12), cmd:(/ie give daylac {player} 2), cmd:(/ie give cuilua {player} 6), cmd:(/msg {player} &f&lBạn nhận được &6&lGói Nguyên Liệu Bánh Chưng V), unique:()
+    - chance:(10.0), cmd:(/ie give hatnep {player} 20), cmd:(/ie give hatnep {player} 20), cmd:(/ie give dauxanh {player} 20), cmd:(/ie give thitheomuoi {player} 20), cmd:(/ie give ladong {player} 20), cmd:(/ie give daylac {player} 8), cmd:(/ie give cuilua {player} 12), cmd:(/msg {player} &f&lBạn nhận được &6&lGói Nguyên Liệu Bánh Chưng VI), unique:()
+    - chance:(5.0), cmd:(/ie give hatnep {player} 48), cmd:(/ie give hatnep {player} 48), cmd:(/ie give dauxanh {player} 48), cmd:(/ie give thitheomuoi {player} 48), cmd:(/ie give ladong {player} 48), cmd:(/ie give daylac {player} 24), cmd:(/ie give cuilua {player} 32), cmd:(/msg {player} &f&lBạn nhận được &6&lGói Nguyên Liệu Bánh Chưng VII), unique:()
+
+Spawnerhien1:
+  type: MYSTERY
+  item: MOB_SPAWNER 1 arrow_infinite:10 hide:true name:&2○_○_&a&l○_&2&lSPAWNER_ĐỘNG_VẬT_&7(Ngẫu_nhiên_x3)&2&l_○_&a○_○
+    lore:&7[!]_Chuột-phải_để_mở_ngẫu_nhiên_&2&lx3_SPAWNER_ĐỘNG_VẬT||&e◆_◆_◆_&e&lHIẾM_&e◆_◆_◆
+  animation: NONE
+  end-animation: BLANK
+  display-name: Spawnerhien
+  holographic: []
+  preview:
+    enabled: true
+    rows: 0
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &E&l[!] Mở ngẫu nhiên thành công
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(5.0), cmd:(/silkspawners give {player} pig 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} sheep 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} cow 1), unique:()
+    - chance:(5.0), cmd:(/silkspawners give {player} chicken 1), unique:()
+radomsach:
+  type: MYSTERY
+  item: 'player_head 1 name:&ftest lore:test skull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNkNWU0M2RlNWQ0MTc3YzRiYWYyZjQ0MTYxNTU0NDczYTNiMGJlNTQzMDk5OGI1ZmNkODI2YWY5NDNhZmUzIn19fQ=='
+  animation: NONE
+  end-animation: BLANK
+  display-name: radomsach
+  holographic: []
+  preview:
+    enabled: true
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 2
+    maximum-rewards: 2
+    rewards:
+    - chance:(1.0), cmd:(/ae giverandombook {player} SOUL), unique:()   
+    - chance:(2.0), cmd:(/ae giverandombook {player} HEROIC), unique:()   
+    - chance:(10.0), cmd:(/ae giverandombook {player} LEGENDARY), unique:() 
+    - chance:(20.0), cmd:(/ae giverandombook {player} ULTIMATE), unique:()   
+    - chance:(30.0), cmd:(/ae giverandombook {player} ELITE), unique:() 
+    - chance:(40.0), cmd:(/ae giverandombook {player} UNIQUE), unique:()   
+    - chance:(60.0), cmd:(/ae giverandombook {player} SIMPLE), unique:()        
+ChauBauCuaYeuTinh:
+  type: MYSTERY
+  item: ENDER_CHEST 1 hide:true name:&6★_&c&lCHÂU_BÁU_CỦA_&6&lYÊU_TINH_&6★
+    lore:&7Nhận_1_trong_3_Vật_Phẩm:|&f-_x2_&dTruyền_thuyết|&f-_x1_&cLinh_hồn|&f-_x1_&d⚔&f&lThách_Đấu&d⚔|
+  animation: NONE
+  end-animation: BLANK
+  display-name: 'Châu Báu Của Yêu Tinh'
+  holographic: []
+  preview:
+    enabled: false
+    rows: 1
+  buy:
+    enabled: false
+    cost: 0.0
+  confirmation:
+    enabled: false
+    accept-button: STAINED_GLASS_PANE:5 1 arrow_infinite:10 hide:true name:&aYes lore:&fClick_here_to_open_{crate}!
+    decline-button: WOOL:14 1 arrow_infinite:10 hide:true name:&4No
+  message:
+    open: |
+      &e&lMở Thành Công!.
+    broadcast: null
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - chance:(25.0), cmd:(/ae givercbook HEROIC {player} 3), unique:()   
+    - chance:(5.0),  cmd:(/ae givercbook SOUL {player} 2), unique:()   
+    - chance:(1.0),  cmd:(/ae givercbook LIMIT {player} 1), unique:() 
+LiXi2024:
+  type: MYSTERY
+  item: 'chest 1 name:&c[&c&lLÌ_XÌ&c]_&f#New_Year_2024 lore:&7(Chúc_mừng_năm_mới_2024)|&7_|&fĐây_là_quà_máy_chủ_dành_tặng|&fcho_bạn_nhân_dịp_năm_mới|&7_|&e&lCHUỘT_PHẢI&7_để_mở lì xì! glow:true'
+  animation: NONE
+  end-animation: BLANK
+  display-name: 'Li Xi Tet 2024'
+  holographic: []
+  confirmation:
+      enabled: false
+      accept-button: 'GREEN_STAINED_GLASS_PANE 1 name:&aMỞ'
+      decline-button: 'RED_STAINED_GLASS_PANE 1 name:&cKHÔNG'
+  buy:
+      enabled: false
+      cost: 0
+  message:
+      open: |
+        Bạn đã mở phong bao &8[&c&lLÌ XÌ&8] &f#2024.
+      broadcast: ''
+  effect: {}
+  reward:
+    minimum-rewards: 1
+    maximum-rewards: 1
+    rewards:
+    - unique:(), chance:(5),  display:(gold_ingot 1 name:&b10_Xu glow:true),                                cmd:(/points give {player} 10)
+    - unique:(), chance:(15), display:(enchanted_book 1 name:&5Sách_Truyền_Thuyết glow:true),               cmd:(/ae givercbook HEROIC {player} 1),                 cmd:(/msg {player} &f&lBạn nhận được &fx1 Sách Truyền Thuyết)
+    - unique:(), chance:(10), display:(enchanted_book 1 name:&dSách_Linh_Hồn glow:true),                    cmd:(/ae givercbook SOUL {player} 1),                   cmd:(/msg {player} &f&lBạn nhận được &fx1 Sách Linh Hồn)
+    - unique:(), chance:(5),  display:(tripwire_hook 1 name:&fKey_&cGIÁP_THÌN_&c&l2024 glow:true),          cmd:(/crazycrate give physical GiapThin 1 {player}),    cmd:(/msg {player} &f&lBạn nhận được &C⁎&4⁎&C⁎ &c&nChìa Khóa&r &a&lGIÁP THÌN &c&l2024&r &C⁎&4⁎&C⁎)
+    - unique:(), chance:(80), display:(paper 1 name:&e5.000.000$ glow:true),                                cmd:(/eco give {player} 5000000),                       cmd:(/msg {player} &f&lBạn nhận được &a5.000.000$)
+    - unique:(), chance:(70), display:(experience_bottle 1 name:&bKinh_nghiệm_(5.000.000) glow:true),       cmd:(/xp give {player} 5000000),                        cmd:(/msg {player} &f&lBạn nhận được &a5.000.000 &e&lEXP)
+    - unique:(), chance:(80), display:(mob_spawner 3 name:&5Spawner_quái_&7(Ngẫu_Nhiên)_x3 glow:true),      cmd:(/cr give to {player} Spawnerquai),                 cmd:(/msg {player} &f&lBạn nhận được &fx3 &7&lSpawner Quái)
+    - unique:(), chance:(5),  display:(paper 1 name:&2Bánh_Chưng glow:true),                                cmd:(/ie give banhchung2024 {player} 1),                cmd:(/msg {player} &f&lBạn nhận được &fx1 &2Bánh Chưng)
+    - unique:(), chance:(5),  display:(paper 1 name:&2Bánh_Tét glow:true),                                  cmd:(/ie give banhtet2024 {player} 1),                  cmd:(/msg {player} &f&lBạn nhận được &fx1 &2Bánh Tét)

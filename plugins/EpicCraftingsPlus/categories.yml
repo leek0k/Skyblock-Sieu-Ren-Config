@@ -1,0 +1,301 @@
+size: 45
+Categories:
+###################### CÚP ######################
+  cupcoxua:
+    id: WOOD_PICKAXE
+    name: '&b&lCúp Cổ Xưa'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 0
+  cuphuyenthoai:
+    id: STONE_PICKAXE
+    name: '&6&lCúp Huyền Thoại'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 1
+  cuphuyenkim:
+    id: GOLD_PICKAXE
+    name: '&e&lCúp Cổ Huyền Kim'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 2
+  cupthanh:
+    id: IRON_PICKAXE
+    name: '&d&lCúp Truyền Thuyết'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 3  
+  cuptoicao:
+    id: DIAMOND_PICKAXE
+    name: '&c&l⊰ CÚP &4&lTỐI CAO &4&l⊱'
+    lore: 
+    - '&7♦ Trade - Rèn'
+    glow: true     
+    slot: 4
+  cupthuongco:
+    id: GOLD_PICKAXE
+    name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lCÚP THƯỢNG CỔ&6﹞&6﹞&d﹞&2&l⌘⌘'
+    lore: 
+    - '&7♦ Trade - Rèn'
+    glow: true     
+    slot: 5  
+
+###################### SET GIAP ######################   
+  sethiem:
+    id: LEATHER_CHESTPLATE
+    name: '&b◆ ◆ &b&lCỔ XƯA &b◆ ◆'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 9
+  sethuyenthoai:
+    id: CHAINMAIL_CHESTPLATE
+    name: '&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 10
+  sethuyenkim:
+    id: GOLD_CHESTPLATE
+    name: '&e⛂&6⛁ &e&lHUYỀN KIM &6⛁&e⛂'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 11   
+  settruyenthuyet:
+    id: IRON_CHESTPLATE
+    name: '&d◆ ◆ ◆ &d&lTRUYỀN THUYẾT &d◆ ◆ ◆'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 12  
+  settoicao:
+    id: DIAMOND_CHESTPLATE
+    name: '&c&l⊰ SET &4&lTỐI CAO &4&l⊱'
+    lore:
+    - '&7♦ Trade - Rèn'
+    glow: true     
+    slot: 13 
+  setthuongco:
+    id: GOLD_CHESTPLATE
+    name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&6﹞&d﹞&2&l⌘⌘ &7+ &2๖&a&lTHƯỢNG LONG &ax&2｡&a☣&2｡&ax'
+    lore:
+    - '&7♦ Trade - Rèn'
+    glow: true     
+    slot: 14
+
+###################### KIEM ######################    
+  kiemhiem:
+    id: WOOD_SWORD
+    name: '&b&lKIẾM CỔ XƯA'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 18    
+  kiemhuyenthoai:
+    id: STONE_SWORD
+    name: '&6&lKIẾM HUYỀN THOẠI'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 19
+  kiemhuyenkim:
+    id: GOLD_SWORD
+    name: '&e&lKIẾM HUYỀN KIM'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 20 
+  kiemtruyenthuyet:
+    id: IRON_SWORD
+    name: '&d&lKIẾM TRUYỀN THUYẾT'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 21
+  kiemtoicao:
+    id: DIAMOND_SWORD
+    name: '&c&l⊰ KIẾM &4&lTỐI CAO &4&l⊱'
+    lore:
+    - '&7♦ Trade - Rèn'
+    glow: true     
+    slot: 22
+  kiemthuongco:
+    id: GOLD_SWORD
+    name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&6﹞&d﹞&2&l⌘⌘ &7+ &2๖&a&lTHƯỢNG LONG &ax&2｡&a☣&2｡&ax'
+    lore:
+    - '&7♦ Trade - Rèn'
+    glow: true 
+    slot: 23  
+
+###################### RIU ######################    
+  riuhiem:
+    id: WOOD_AXE
+    name: '&b&lRÌU CỔ XƯA'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 27
+  riuhuyenthoai:
+    id: STONE_AXE
+    name: '&6&lRÌU HUYỀN THOẠI'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 28
+  riuhuyenkim:
+    id: GOLD_AXE
+    name: '&e&lRÌU HUYỀN KIM'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 29 
+  riutruyenthuyet:
+    id: IRON_AXE
+    name: '&d&lRÌU TRUYỀN THUYẾT'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 30
+  riutoicao:
+    id: DIAMOND_AXE
+    name: '&c&l⊰ RÌU &4&lTỐI CAO &4&l⊱'
+    lore:
+    - '&7♦ Trade - Rèn'
+    glow: true     
+    slot: 31
+
+  
+###################### CUNG ######################    
+  cunghiem:
+    id: BOW
+    name: '&b&lCUNG CỔ XƯA'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 36
+  cunghuyenthoai:
+    id: BOW
+    name: '&6&lCUNG HUYỀN THOẠI'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 37
+  cunghuyenkim:
+    id: BOW
+    name: '&e&lCUNG HUYỀN KIM'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 38
+  cungtruyenthuyet:
+    id: BOW
+    name: '&d&lCUNG TRUYỀN THUYẾT'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 39
+  cungtoicao:
+    id: BOW
+    name: '&c&l⊰ CUNG &4&lTỐI CAO &4&l⊱'
+    lore:
+    - '&7♦ Trade - Rèn'
+    glow: true     
+    slot: 40
+###################### NGỌC & NGUYEN LIEU & SO ######################   
+
+  ngoc:
+    id: SLIME_BALL
+    name: '&f⊰&f&lNGỌC &b&lTHIÊN SỨ&f⊱'
+    lore:
+    - '&7♦ Trade - Rèn'
+    glow: true     
+    slot: 34
+  nguyenlieu:
+    id: STICK
+    name: '&c&lNguyên liệu'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 16
+ #homvatpham:
+   #id: ENDER_PORTAL_FRAME
+   #name: '&9&lHòm vật phẩm'
+   #lore:
+   #- '&7♦ Trade - Rèn'
+   #slot: 34
+  sach:
+    id: ENCHANTED_BOOK
+    name: '&c&lSách ngọc - Ép, Khảm'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 25
+  sophep:
+    id: SKULL_ITEM:3
+    name: '&b&lSỌ Phép'
+    skull-texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYxNzg1NWZmMTI2OGQ5NTliZDlmMjM5Mzg0ZmUwNDMxZWJkNzUxYjI2MjQ2MTljNTU1ZTlkNDcxZTk0NDAifX19
+    skull-id: 5dd2bcf2-9bb5-4af4-84c3-add9e5d03f7c
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 32  
+
+###################### FIX & KHIEN & PET ######################       
+
+ #fix:
+   #id: BARRIER
+   #name: '&c&lFix'
+   #lore:
+   #- '&7♦ Trade - Rèn'
+   #slot: 46  
+  shield:
+    id: SHIELD
+    name: '&E&LKhiên'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 41     
+  pet:
+    id: MONSTER_EGG:93
+    name: '&e&lTrứng Pet'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 7
+  sukien8thang3:
+    id: BEACON
+    slot: 43
+    name: '&a&lTRADE SỰ KIỆN 8 THÁNG 3 &c&l2024'
+    lore:
+    - '&7♦ Trade - Rèn'
+
+Inventory:
+  '33':
+    id: BOOK
+    slot: 43
+    name: '&6&lTRADE SỰ KIỆN'
+    lore:
+    - '&fNơi trade các sự kiện đặc biệt'
+    - '&7'
+    - '&7♦ &aTrade &8- &cTết 2024'
+    command: 'shop %player% money'      
+  '23b':
+    id: IRON_FENCE
+    slot: 6
+    name: ''
+  '23c':
+    id: IRON_FENCE
+    slot: 8
+    name: ''  
+  '23d':
+    id: IRON_FENCE
+    slot: 15
+    name: ''
+  '23e':
+    id: IRON_FENCE
+    slot: 17
+    name: ''
+  '23f':
+    id: IRON_FENCE
+    slot: 24
+    name: ''
+  '24a':
+    id: IRON_FENCE
+    slot: 26
+    name: ''
+  '24b':
+    id: IRON_FENCE
+    slot: 33
+    name: '' 
+  '24c':
+    id: IRON_FENCE
+    slot: 35
+    name: ''  
+  '25a':
+    id: IRON_FENCE
+    slot: 42
+    name: '' 
+  '25b':
+    id: IRON_FENCE
+    slot: 44
+    name: ''            

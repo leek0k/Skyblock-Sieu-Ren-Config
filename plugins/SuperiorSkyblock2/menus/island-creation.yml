@@ -1,0 +1,94 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: 'Tạo đảo...'
+
+pattern:
+  - '# # @ # ! # ^ # #'
+
+items:
+  '#':
+    type: STAINED_GLASS_PANE
+    data: 15
+    name: '&f'
+  '@':
+    schematic: '1'
+    required-permission: ''
+    biome: PLAINS
+    access:
+      type: SAPLING
+      data: 3
+      name: '&a&lĐảo bay &2&lThiên nhiên'
+      lore:
+        - '&f&oClick vào để tạo đảo.'
+    no-access:
+      type: SAPLING
+      data: 3
+      name: '&a&lĐảo bay &2&lThiên nhiên'
+      lore:
+        - '&f&oClick vào để tạo đảo.'
+  '^':
+    schematic: '2'
+    required-permission: ''
+    biome: PLAINS
+    access:
+      type: NETHERRACK
+      data: 0
+      name: '&c&lĐảo bay &4&lNether'
+      lore:
+        - '&f&oClick vào để tạo đảo.'
+    no-access:
+      type: NETHERRACK
+      data: 0
+      name: '&c&lĐảo bay &4&lNether'
+      lore:
+        - '&f&oClick vào để tạo đảo.'
+  '!':
+    schematic: '3'
+    required-permission: ''
+    biome: PLAINS
+    access:
+      type: ENDER_STONE
+      data: 0
+      name: '&5&lĐảo bay &d&lThe End'
+      lore:
+        - '&f&oClick vào để tạo đảo.'
+    no-access:
+      type: ENDER_STONE
+      data: 0
+      name: '&5&lĐảo bay &d&lThe End'
+      lore:
+        - '&f&oClick vào để tạo đảo.'         
+
+sounds:
+  '@':
+    access:
+      type: BLOCK_PORTAL_AMBIENT
+      volume: 1
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '^':
+    access:
+      type: BLOCK_PORTAL_AMBIENT
+      volume: 1
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2
+  '$':
+    access:
+      type: BLOCK_PORTAL_AMBIENT
+      volume: 1
+      pitch: 0.2
+    no-access:
+      type: BLOCK_ANVIL_PLACE
+      volume: 0.2
+      pitch: 0.2

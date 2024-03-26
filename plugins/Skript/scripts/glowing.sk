@@ -1,0 +1,3 @@
+on craft of a spectral arrow or tipped arrow:
+       cancel event
+       send "&cBạn không thể chế tạo vật phẩm này"

@@ -1,0 +1,49 @@
+# Configuration file
+# https://github.com/connection-lost/LockettePro/wiki/*-config.yml
+# If there are missing entries, you can add them manually.
+
+language-file-name: lang.yml
+enable-quick-protect: false
+enable-uuid-support: false
+block-interfere-placement: true
+block-item-transfer-in: false
+block-item-transfer-out: true
+block-hopper-minecart: remove
+cache-time-seconds: 0
+private-signs:
+- '[Khóa]'
+- '[khóa]'
+- '[Private]'
+- '[Khoa]'
+- '[BaoVe]'
+- '[baove]'
+- '[safe]'
+- '[Baove]'
+- '[private]'
+- '[khoá]'
+- '[Khoá]'
+additional-signs:
+- '[Thêm]'
+- '[Thêm]'
+everyone-signs:
+- '[Everyone]'
+- '[everyone]'
+timer-signs:
+- '[Timer:@]'
+- '[timer:@]'
+lockables:
+- CAULDRON
+- MOB_SPAWNER
+- BEACON
+- DIAMOND_BLOCK
+- GOLD_BLOCK
+- TNT
+- IRON_BLOCK
+- EMERALD_BLOCK
+- SPONGE
+protection-exempt:
+- nothing
+lock-expire: false
+lock-expire-days: 999.9
+lock-default-create-time-unix: -1
+lock-expire-string: '&3[Expired]'

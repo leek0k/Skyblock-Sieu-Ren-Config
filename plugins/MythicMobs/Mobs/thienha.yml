@@ -1,0 +1,171 @@
+endermanchua:
+  Mobtype: enderman
+  Display: '&5✲&9&lEnder &d&lChúa&5✲'
+  Health: 500
+  Damage: 39
+  Armor: 30
+  Faction: []
+  Options:
+    NoDamageTicks: 0
+    AlwaysShowName: true
+    AttackSpeed: 3
+    Collidable: false
+    Despawn: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 7
+    KnockbackResistance: 0.6
+    MaxCombatDistance: 5
+    MovementSpeed: 0.38
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventTeleport: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - 0 clear
+  - 1 players  
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE 0.1
+  - ENTITY_ATTACK 0.2
+  - MELTING 0
+  Skills:
+  - sound{s=entity.enderman.hurt} @self ~OnTimer:200 
+  - potion{type=POISON;d=100;l=1} @target ~onSpawn 1
+  - potion{type=POISON;d=100;l=1} @target ~onAttack
+  - cmd{c="ie give manhkhienthienha <trigger.name> 1"} ~onDeath 0.03
+  - cmd{c="epicvouchers give <trigger.name> trungrong 1"} ~onDeath 0.1
+  Drops:
+  - traitimendermanchua 1 1  
+  - EXP 6240
+
+endercon:
+  Type: babyzombie
+  Display: '&5✲&9&lEnder Con&5✲'
+  Health: 400
+  Damage: 17
+  Armor: 60
+  Faction: []
+  Options:
+    NoDamageTicks: 0
+    AlwaysShowName: true
+    AttackSpeed: 3
+    Collidable: false
+    Despawn: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    FollowRange: 7
+    KnockbackResistance: 0.6
+    MaxCombatDistance: 5
+    MovementSpeed: 0.33
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - 0 clear
+  - 1 players  
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - MAGIC 0
+  - WITHER 0
+  - THORNS 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - FALL 0
+  - PROJECTILE 0.1
+  - ENTITY_ATTACK 0.2
+  - MELTING 0
+  Skills:
+  - sound{s=entity.enderman.hurt} @self ~OnTimer:200 
+  - potion{type=POISON;d=100;l=1} @target ~onSpawn 1
+  - potion{type=POISON;d=100;l=1} @target ~onAttack
+  - cmd{c="ie give manhkhienthienha <trigger.name> 1"} ~onDeath 0.05
+  Drops:
+  - traitimendermancon 1 1
+  - Money 15 0.7
+  - EXP 30 1
+  Equipment:
+  - dauend head  
+  - aogiapendercon chest
+  - quanendercon leggings
+  - giayendercon FEET
+
+
+rongender:
+  Mobtype: wither
+  Display: '&5★&d☾&c&l乂&d☽ &d&lRỒNG KHÔNG GIAN &d☾&c&l乂&d☽&5★'
+  Health: 6300
+  Damage: 150
+  Armor: 150
+  BossBar:
+    Enabled: false
+    Title: '&5★&d☾&c&l乂&d☽ &d&lRỒNG KHÔNG GIAN &d☾&c&l乂&d☽&5★'
+    Range: 70
+    Color: PURPLE
+    Style: SEGMENTED_20
+  Disguise:
+    Type: enderdragon  
+  Options:
+    KnockbackResistance: 1.0
+    MovementSpeed: 0.5
+    Despawn: true
+    FollowRange: 50
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - players  
+  DamageModifiers:
+  - LIGHTNING 0
+  - POISON 0 
+  - WITHER 0
+  - THORNS 0
+  KillMessages:
+  - '&e<target.name> &fđã bị &5★&d☾&c&l乂&d☽ &d&lRỒNG KHÔNG GIAN &d☾&c&l乂&d☽&5★ &fhấp thụ!'  
+  Skills:
+  - skill{s=endercon} ~onDamaged .3  
+  - skill{s=lightning} @Self ~onTimer:300
+  - skill{s=heal} @Self ~onTimer:300
+  - skill{s=hoden} @Self ~onTimer:300
+  - skill{s=samsetthienha} @Self ~onTimer:300
+  - message{m="<mob.name> &fđã hồi sinh! &b(/warp end)"} @server ~onSpawn 1
+  - message{m="<mob.name> &fcòn sống hay mau tiêu diệt! &b(/warp end)"} @server ~onTimer:3000
+  - skill{s=skillrong} ~onDamaged .5
+  - potion{type=SLOW;duration=200;level=7} @Self  
+  - command{c="cr give to <target.name> thienha 1"} ~onDeath 
+  - command{c="give <target.name> 120 10"} ~onDeath 
+  - skill{s=rongthienha} @PlayersInRadius{r=16} ~onDeath
+  - skill{s=rongthienha2} @PlayersInRadius{r=20;limit=8;sort=RANDOM} ~onDeath  
+  - skill{s=rongthienha3} @PlayersInRadius{r=20;limit=2;sort=RANDOM} ~onDeath   
+  - cmd{c="ie give xuongrong <trigger.name> 2"} ~onDeath 0.5 
+   #endercon

@@ -1,0 +1,48 @@
+PREFIX: '&e&lMineAhihi >> &r'
+
+HELP:
+  header: '&8&l------=====[ &c&lItemAbility v{version} &8&l]=====------'
+  help: '&8 > &c/{label} [help|?] &f: &7Hiển thị trang trợ giúp này.'
+  give: '&8 > &c/{label} give <player> <id> [số lượng] &f: &7Trao vật phẩm.'
+  gem: '&8 > &c/{label} gem <player> <id> [số lượng] &f: &7Trao ngọc khảm.'
+  ungem: '&8 > &c/{label} ungem <player> <id> [số lượng] &f: &7Trao ngọc tháo/gỡ.'
+  slot: '&8 > &c/{label} slot <add|del> [dòng] &f: &7Thêm / Xoá ô khảm.'
+  reload: '&8 > &c/{label} reload &f: &7Tải lại cấu hình.'
+  footer: '&8&l------------------------------------------'
+
+SUCCESS:
+  config-reload: '{prefix}&aTải lại cấu hình thành công!'
+
+  item-gave: '{prefix}&aĐã trao &ex{amount} {item} &acho &b{player}&a.'
+  item-received: '{prefix}&aĐã nhận được &ex{amount} {item} &atừ &b{player}&a.'
+
+  slot-added: '{prefix}&aĐã thêm thành công ô khảm trống vào vị trí &e{slot}&a.'
+  slot-deleted: '{prefix}&7Đã xoá thành công ô khảm trống tại vị trí &e{slot}&7.'
+  all-slot-deleted: '{prefix}&7Đã xoá thành công tất cả ô khảm trống trên vật phẩm.'
+
+  gem-added: '{prefix}&aBạn đã khảm thành công ngọc &e{gem}&a.'
+  gem-removed: '{prefix}&7Bạn đã gỡ thành công ngọc &e{gem}&a.'
+
+FAIL:
+  no-permission: '{prefix}&cBạn không có quyền để làm điều đó!'
+  missing-args: '{prefix}&cThiếu cú pháp! Cách dùng: &e{usage}&c.'
+  only-players: '{prefix}&cChỉ người chơi mới có thể sử dụng câu lệnh này!'
+  only-console: '{prefix}&cVui lòng sử dụng lệnh này trên Console!'
+  invalid-syntax: '{prefix}&cCú pháp không hợp lệ! Vui lòng kiểm tra lại!'
+
+  player-not-found: '{prefix}&cKhông thể tìm thấy người chơi &e{value}&c!'
+  item-not-found: '{prefix}&cKhông thể tìm thấy vật phẩm &e{value}&c!'
+  inventory-is-full: '{prefix}&cTúi đồ của &e{player} &cđã đầy!'
+  not-number: '{prefix}&cGiá trị &e{value} &ckhông phải là một con số hợp lệ!'
+  command-in-cooldown: '{prefix}&cVui lòng chờ &e{time} giây &ccho lần sử dụng kế tiếp!'
+  too-many-items: '{prefix}&cSỌ không cộng dồn nên chỉ được để 1 sọ trên Hotbar để kích hoạt!'
+  no-item-in-hand: '{prefix}&cKhông tìm thấy vật phẩm nào trên &ltay chính &ccủa bạn!'
+  invalid-item: '{prefix}&cBạn không thể làm điều đó trên vật phẩm này!'
+  no-slot-found: '{prefix}&cĐã ép full ô lửa!'
+  slot-not-found: '{prefix}&cKhông tìm thấy ô khảm trống tại vị trí &e{slot}&c!'
+  no-slot-on-item: '{prefix}&cKhông thể khảm ngọc lên vật phẩm không có ô khảm!'
+  gem-adding-fail: '{prefix}&cKhảm ngọc &e{gem} &cthất bại!'
+  item-more-than-one: '{prefix}&cBạn không thể làm điều đó với vật phẩm có số lượng nhiều hơn &e1&c.'
+  gem-removing-not-found: '{prefix}&cKhông thể tìm thấy ngọc cần gỡ!'
+  gem-receiving-fail: '{prefix}&cKhông thể nhận lại ngọc! Có thể ID của nó đã bị thay đổi!'
+  gem-removing-fail: '{prefix}&cGỡ ngọc &e{gem} &cthất bại!'

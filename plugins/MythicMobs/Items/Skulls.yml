@@ -1,0 +1,52 @@
+SuKienYeuTinhSkull:
+  Id: 397
+  Data: 3
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2NmZGUxMmQwOTUyMTA3NDQ2ODVmNjQyNDZjZjljZWQxZDhlNTI0OTk3MzUxMWEyZTI3YmJhMWJmYWE4NzU0YyJ9fX0=
+  Enchantments:
+  - WATER_WORKER:1
+  - OXYGEN:3
+  
+Tet2024-TieuLongSkull:
+  Id: 397
+  Data: 3
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTJhNzcwNDU5ZmE2ZDY1ZTIyYWE5NTY3OWQ5M2EyODcwYWFmZWE3MGY5ZjFjNmEwZjc4ZWI2NDFlOTI4OTAifX19
+  Enchantments:
+  - WATER_WORKER:1
+  - OXYGEN:3
+  
+Tet2024-DiaLongSkull:
+  Id: 397
+  Data: 3
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUwNjY5YzdlMzIzMTY1YmI3MTFhZjI0NjRmYzkzZDZkMmY3YTE4ZmU4MzdlYmI5ODkxMjI2Nzc4NjI3NWQ2MyJ9fX0=
+  Enchantments:
+  - WATER_WORKER:1
+  - OXYGEN:3
+  
+Tet2024-HacLongSkull:
+  Id: 397
+  Data: 3
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ4OTJlMTY1YWI2NDQ5YzQ1MjAyMzc1MTFjODgxYzEyYjBiNTdiY2VmYTk3MWNjMWUzNGNhOGM1MWFhZjRhMSJ9fX0=
+  Enchantments:
+  - WATER_WORKER:1
+  - OXYGEN:3
+  

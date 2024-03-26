@@ -1,0 +1,38 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&8[&6EpicVouchers&8] '
+interface:
+  confirmsettings:
+
+    # Interface Messages
+    title: '&6Confirmation'
+    confirmitemname: '&2&lCONFIRMER'
+    confirmitemlore: '&aCliquez ici si vous voulez confirmer votre action.'
+    cancelitemname: '&4&lANNULER'
+    cancelitemlore: '&cCliquez ici si vous voulez annuler votre action.'
+command:
+  error:
+
+    # Command Messages
+    noplayer: '&7Cet utilisateur n''est pas en ligne ou n''existe pas.'
+    novoucher: '&cCe bon n''existe pas.'
+    notexist: '&7Cette commande n''existe pas ou est invalide.'
+    notnumber: '&7Erreur lors de l''analyse, ce n''est pas un nombre valide.'
+  reload:
+    success: '&7Les fichiers de config et les bons ont été rechargés.'
+  give:
+    send: '&7Vous avez donné à &6%player% &7%amount% &7bon(s) &6%voucher%.'
+    receive: '&7Vous avez reçu %amount% bon(s) &6%voucher%.'
+    cancelled: '&cEvénement annulé.'
+  force:
+    send: '&7Vous avez forcé &6%player% &7à récupérer %amount% bon(s) &6%voucher%.'
+  list:
+    list: '&7Liste des Bons: &6%list%&7.'
+event:
+  general:
+
+    # Event Messages
+    nopermission: '&cVous n''avez pas les permissions requises.'
+    cooldown: '&7Attendez &6%time%&7 secondes avant de récupérer un nouveau bon.'

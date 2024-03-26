@@ -1,0 +1,34 @@
+{
+  "ID": "SkillCo",
+  "Order": 9007199254740991,
+  "Name": "Cổ",
+  "MobTypes": [
+    "Skeleton",
+    "Spider",
+    "Zombie"
+  ],
+  "Skills": {
+    "Damage": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Damage": "+5"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "%1>1<1": {
+          "Health": "+200",
+          "Timer": "+3"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Health": "+7"
+        }
+      }
+    }
+  }
+}

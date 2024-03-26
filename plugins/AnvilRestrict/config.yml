@@ -1,0 +1,9 @@
+#id:number is to represent an items id.
+#name:string is to represent part of the display name of an item
+#NoEntry prevents the item from being used in an Anvil
+#NoRename prevents the rename of an item.
+
+NoEntry: id|351,id|378,id|341,id|332,id|340,id|421,id|52,id|154,id|409,id|399,id|120,id|371
+NoRename: id|351,id|378,id|341,id|332,id|340,id|421,id|52,id|154,id|409,id|399,id|120,id|371,id|351,id|381
+NoRenameAll: false
+NoEntryAll: false

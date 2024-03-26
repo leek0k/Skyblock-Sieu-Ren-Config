@@ -1,0 +1,33 @@
+{
+  "ID": "SkillHuyenThoai",
+  "Order": 9007199254740991,
+  "Name": "Huyền Thoại",
+  "MobTypes": [
+    "MagmaCube",
+    "PigZombie"
+  ],
+  "Skills": {
+    "Damage": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Damage": "+8"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "%1>1<1": {
+          "Health": "+400",
+          "Timer": "+3"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Health": "+9"
+        }
+      }
+    }
+  }
+}

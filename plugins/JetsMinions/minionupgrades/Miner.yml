@@ -1,0 +1,15 @@
+MaxLevel: 3
+
+Levels:
+  CostToUpgradeToLevel2: 300000 
+  CostToUpgradeToLevel3: 1500000  
+  CostToUpgradeToLevel4: 10000    
+Settings:
+  SettingsAtLevel1: 1                         
+  SettingsAtLevel2: SMELT | ENCHANTED         
+  SettingsAtLevel3: SMELT | 2 
+  SettingsAtLevel4: SMELT | 2  
+Messages:
+  MessageOnUpgradeTo2: '&aBạn đã nâng cấp Robot của mình lên level 2!'
+  MessageOnUpgradeTo3: '&aBạn đã nâng cấp Robot của mình lên level 3!'  
+  MessageOnUpgradeTo4: '&aBạn đã nâng cấp Robot của mình lên level 4!'   

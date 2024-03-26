@@ -1,0 +1,688 @@
+Crate:
+  CrateType: Cosmic
+  CrateName: '&b&lHÒM GIÁNG SINH &7(&c&lLIMITED&7)'
+  StartingKeys: 0
+  InGUI: false
+  Slot: 23
+  OpeningBroadCast: false
+  BroadCast: '%Prefix%&6&l%Player% &7is opening a &7&lBasic Chest&7.'
+  Item: '130'
+  Glowing: false
+  Name: '&b&lHÒM GIÁNG SINH &7(&c&lLIMITED&7)'
+  Lore:
+  - '&e/hombau&7 để mua Hòm Báu.'
+  - '&r'
+  - '&7 ◆ &nChuột-trái&r &bđể mở Hòm Báu nếu bạn đã mua.'
+  - '&7 ◆ &nChuột-Phải&r &bđể xem qua vật phẩm trong Hòm.'
+  - '&r'
+  - '&7Bạn đang có &c&n%keys%&r &7◆ &b&nHòm Kim Cương&r &7◆.'
+  Preview:
+    Toggle: true
+    ChestLines: 6
+    Glass:
+      Toggle: true
+      Item: IRON_FENCE
+  Hologram:
+    Toggle: false
+    Height: 1.5
+    Message:
+    - '&d&lGalactic Chest'
+  PhysicalKey:
+    Name: '&C◆&4◆&C◆ &c&nChìa Khóa&r &d&lGIÁNG SINH&r &C◆&4◆&C◆'
+    Lore:
+    - '&r'
+    - '&7 ◆ &nChuột-trái&r &fđể mở &7◆&4&lKho báu&r &d&lGIÁNG SINH&r&7◆'
+    - '&7 ◆ &nChuột-Phải&r &fđể xem qua vật phẩm trong.'
+    Item: FEATHER:0
+    Glowing: true
+  Tiers:
+    Basic:
+      Name: '&a&lThường'
+      Color: 19
+      Chance: 40
+      MaxRange: 100
+    UnCommon:
+      Name: '&e&lHiếm'
+      Color: 54
+      Chance: 30
+      MaxRange: 100
+    Rare:
+      Name: '&c&l♦ Xịn ♦'
+      Color: 130
+      Chance: 20
+      MaxRange: 100
+    special:
+      Name: '&d&l♦ Đặc biệt ♦'
+      Color: 426
+      Chance: 10
+      MaxRange: 100
+  Prizes:
+    '1':
+      DisplayName: '&a&lx10 | Pig Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 10
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - silkspawners give %player% Pig 10
+    '2':
+      DisplayName: '&a&lx8 | Cow Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 8
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - silkspawners give %player% Cow 8
+    '4':
+      DisplayName: '&e&lx3 | Skeleton Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 3
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: false
+      Commands:
+      - silkspawners give %player% Skeleton 2
+    '5':
+      DisplayName: '&e&lx3 | Creeper Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 3
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: false
+      Commands:
+      - silkspawners give %player% Creeper 3
+    '6':
+      DisplayName: '&e&lx3 | Blaze Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 3
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 30
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: false
+      Commands:
+      - silkspawners give %player% Blaze 3
+    '7':
+      DisplayName: '&6&lx2 | Iron Golem Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 2
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 25
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - silkspawners give %player% irongolem 2
+    '3':
+      DisplayName: '&e&lx2 | GHAST Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 2
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - silkspawners give %player% Ghast 2
+    '8':
+      DisplayName: '&2○ ○ &a&l○ &2&lSPAWNER ĐỘNG VẬT &7(Ngẫu nhiên x3)&2&l ○ &a○ ○'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - cr give to %player% spawnerhien 1
+    '9':
+      DisplayName: '&D○ ○ &5&l○ &D&lSPAWNER QUÁI &7(Ngẫu nhiên x3)&5&l ○ &D○ ○'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 35
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - cr give to %player% spawnerquai 1
+    '11':
+      DisplayName: '&a&lx1 | 250,000ṩ | PHIẾU'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 65
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - eco give %player% 250000
+    '12':
+      DisplayName: '&a&lx1 | 500,000ṩ | PHIẾU'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 60
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - eco give %player% 500000
+    '13':
+      DisplayName: '&a&lx1 | 750,000ṩ | PHIẾU'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 55
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - eco give %player% 750000
+    '14':
+      DisplayName: '&a&lx1 | 1,000,000ṩ | PHIẾU'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - eco give %player% 1000000
+    '37':
+      DisplayName: '&a&l100,000 &e&lExp&a&l | x1 BÌNH'
+      DisplayItem: '384'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 45
+      Firework: false
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - epicvouchers give %player% exp100 1
+    '38':
+      DisplayName: '&a&l500,000 &e&lExp&a&l | x1 BÌNH'
+      DisplayItem: '384'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - epicvouchers give %player% exp500 1
+    '111':
+      DisplayName: '&a&lx1 | &A☘ &E&lHÒM RÌU MAY MẮN &7(Ngẫu nhiên X1) &A☘'
+      DisplayItem: '162'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      - '&8&L[&E&LLEVEL 1-6&8&l]'
+      MaxRange: 100
+      Chance: 25
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &A☘ &E&lHÒM RÌU MAY
+        MẮN &7(Ngẫu nhiên X1) &A☘
+      - cr give to %player% hommayman 1
+    '21':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&c&lQUỶ&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 15
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&c&lQUỶ&8&l>&r &f&ltừ &c&lHÒM GIÁNG SINH
+      - epicvouchers give %player% quy 1
+    '22':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&b&lTIÊN&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&b&lTIÊN&8&l>&r &f&ltừ &c&lHÒM GIÁNG SINH
+      - epicvouchers give %player% tien 1
+    '23':
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank
+        &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l>&r &f&ltừ &c&lHÒM GIÁNG SINH
+      - epicvouchers give %player% than 1
+    '24':
+      DisplayName: '&e&Lx1 | &5&L✧&D&L✧&5&l✧ &9&l&nHòm vật phẩm&r &d&lTRUYỀN THUYẾT
+        &7(Ngẫu nhiên)&5&L✧&D&L✧&5&l✧'
+      DisplayItem: '120'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 | &5&L✧&D&L✧&5&l✧
+        &9&l&nHòm vật phẩm&r &d&lTRUYỀN THUYẾT &7(Ngẫu nhiên)&5&L✧&D&L✧&5&l✧&r &f&ltừ
+        &c&lHÒM GIÁNG SINH
+      - cr give to %player% truyenthuyet 1
+    '26':
+      DisplayName: '&f&L*&b&L✧&f&l* &6&lSÁCH CƯỜNG HÓA &7(Ngẫu nhiên x4) &f&L*&b&L✧&f&l*'
+      DisplayItem: '340'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 35
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - cr give to %player% book 1
+    '36':
+      DisplayName: '&d&lx20 Bụi phép'
+      DisplayItem: '385'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Tiers:
+      - UnCommon
+      Glowing: true
+      Commands:
+      - ae giveitem %player% secret 20 SIMPLE
+    '41':
+      DisplayName: '&e&Lx1 | &e()==[:::::::::::::> &3&l&NHÒM TRANG BỊ&R &7(Ngẫu nhiên)
+        &e<:::::::::::::]==()'
+      DisplayItem: '130'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 25
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - cr give to %player% trangbi 1
+    '42':
+      DisplayName: '&e&l◍ &B&l&nx1 Hòm Vũ Khí&R &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG
+        ◍'
+      DisplayItem: '130'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&l◍ &B&l&nx1 Hòm
+        Vũ Khí&R &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG ◍&r &f&ltừ &c&lHÒM GIÁNG SINH
+      - cr give to %player% bavuong 1
+    '46':
+      DisplayName: '&c&lx1 &4&lCánh Cứng'
+      DisplayItem: '443'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 15
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - ie give canhcung1 %player% 1
+    '28':
+      DisplayName: '&f&l✲ &b&lMŨ GIÁNG SINH 2023 &f&l✲'
+      Lore:
+      - ''   
+      - '&f❅&f&l❅&f❅ &b&lGIÁNG SINH &f❅&f&l❅&f❅'
+      - '&b★ Giảm &c45% &fsát thương nhận'
+      - '&b★ Có &c10% &fcơ hội nhận khả năng hồi phục'
+      - '&b⋆ Bộ đồ mang sức mạnh phép màu của mùa giáng sinh'
+      - ''
+      - '&7&o(Mặc full Set Giáng Sinh để kích hoạt)'  
+      - ''  
+      Unbreakable: true
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:15
+      - DURABILITY:10
+      DisplayItem: LEATHER_HELMET:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - special
+      Glowing: true
+      Commands:
+      - ie give munoel2023 %player% 1
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &c&lMŨ GIÁNG SINH 2023 &f&ltừ &c&lHÒM GIÁNG SINH
+    '29':
+      DisplayName: '&f&l✲ &b&lÁO GIÁNG SINH 2023 &f&l✲'
+      Lore:
+      - ''   
+      - '&f❅&f&l❅&f❅ &b&lGIÁNG SINH &f❅&f&l❅&f❅'
+      - '&b★ Giảm &c45% &fsát thương nhận'
+      - '&b★ Có &c10% &fcơ hội nhận khả năng hồi phục'
+      - '&b⋆ Bộ đồ mang sức mạnh phép màu của mùa giáng sinh'
+      - ''
+      - '&7&o(Mặc full Set Giáng Sinh để kích hoạt)'  
+      - ''  
+      Unbreakable: true
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:15
+      - DURABILITY:10
+      DisplayItem: LEATHER_CHESTPLATE:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - special
+      Glowing: true
+      Commands:
+      - ie give aonoel2023 %player% 1
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &c&lÁO GIÁNG SINH 2023 &f&ltừ &c&lHÒM GIÁNG SINH
+    '30':
+      DisplayName: '&f&l✲ &b&lQUẦN GIÁNG SINH 2023 &f&l✲'
+      Lore:
+      - ''   
+      - '&f❅&f&l❅&f❅ &b&lGIÁNG SINH &f❅&f&l❅&f❅'
+      - '&b★ Giảm &c45% &fsát thương nhận'
+      - '&b★ Có &c10% &fcơ hội nhận khả năng hồi phục'
+      - '&b⋆ Bộ đồ mang sức mạnh phép màu của mùa giáng sinh'
+      - ''
+      - '&7&o(Mặc full Set Giáng Sinh để kích hoạt)'  
+      - ''  
+      Unbreakable: true
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:15
+      - DURABILITY:10
+      DisplayItem: LEATHER_LEGGINGS:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - special
+      Glowing: true
+      Commands:
+      - ie give quannoel2023 %player% 1
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &c&lQUẦN GIÁNG SINH 2023 &f&ltừ &c&lHÒM GIÁNG SINH
+    '31':
+      DisplayName: '&f&l✲ &b&lGIÀY GIÁNG SINH 2023 &f&l✲'
+      Lore:
+      - ''   
+      - '&f❅&f&l❅&f❅ &b&lGIÁNG SINH &f❅&f&l❅&f❅'
+      - '&b★ Giảm &c45% &fsát thương nhận'
+      - '&b★ Có &c10% &fcơ hội nhận khả năng hồi phục'
+      - '&b⋆ Bộ đồ mang sức mạnh phép màu của mùa giáng sinh'
+      - ''
+      - '&7&o(Mặc full Set Giáng Sinh để kích hoạt)'  
+      - ''  
+      Unbreakable: true
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:15
+      - DURABILITY:10
+      DisplayItem: LEATHER_BOOTS:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - special
+      Glowing: true
+      Commands:
+      - ie give giaynoel2023 %player% 1
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &c&lGIÀY GIÁNG SINH 2023 &f&ltừ &c&lHÒM GIÁNG SINH
+    '33':
+      DisplayName: '&f&l✲ &b&lKIẾM GIÁNG SINH 2023 &f&l✲'
+      Lore:
+       - ''
+       - '&f❅&f&l❅&f❅ &b&lGIÁNG SINH &f❅&f&l❅&f❅'   
+       - '&b★ Tăng &c45% &fsát thương'
+       - '&b★ Có cơ hội kháng bật lùi trong &e3 &fgiây'
+       - '&b⋆ &fĐược phù phép từ phép màu giáng sinh'
+      DisplayEnchantments:
+      - DAMAGE_ALL:180
+      - DAMAGE_UNDEAD:5
+      - DAMAGE_ARTHROPODS:5
+      - FIRE_ASPECT:5
+      - LOOT_BONUS_MOBS:6
+      - DURABILITY:10
+      DisplayItem: DIAMOND_SWORD:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 3
+      Firework: true
+      Tiers:
+      - special
+      Glowing: true
+      Commands:
+      - asets weapon %player% kiemgiangsinh2023
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &c&lKIẾM GIÁNG SINH 2023 &f&ltừ &c&lHÒM GIÁNG SINH
+    '34':
+      DisplayName: '&f&l✲ &b&lRÌU GIÁNG SINH 2023 &f&l✲'
+      Lore:
+      - ''   
+      - '&f❅&f&l❅&f❅ &b&lGIÁNG SINH &f❅&f&l❅&f❅'
+      - '&b⋆ Tăng &c42% &fsát thương.'
+      - '&b⋆ Có cơ hội nhân đôi sát thương'
+      - '&b⋆ Được phù phép từ phép màu giáng sinh'
+      DisplayEnchantments:
+      - DAMAGE_ALL:170
+      - DAMAGE_UNDEAD:10
+      - DAMAGE_ARTHROPODS:5
+      - FIRE_ASPECT:5
+      - LOOT_BONUS_MOBS:5
+      - DURABILITY:10
+      DisplayItem: DIAMOND_AXE:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 3
+      Firework: true
+      Tiers:
+      - special
+      Glowing: true
+      Commands:
+      - asets weapon %player% riugiangsinh2023
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &b&lRÌU GIÁNG SINH 2023 &f&ltừ &c&lHÒM GIÁNG SINH
+    '35':
+      DisplayName: §b§lBÔNG TUYẾT
+      Lore:
+      - §r
+      - §fSử dụng để nâng cấp §cSọ phép giáng sinh
+      DisplayEnchantments:
+      - LURE:1
+      DisplayItem: SNOW_BALL:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 25
+      Firework: true
+      Tiers:
+      - special
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: SNOW_BALL
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §b§lBÔNG TUYẾT
+          lore:
+          - §r
+          - §fSử dụng để nâng cấp §cSọ phép giáng sinh
+          enchants:
+            LURE: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '39':
+      DisplayName: §e§lNGÔI SAO GIÁNG SINH
+      Lore:
+      - §r
+      - §fSử dụng để nâng cấp §cSọ phép giáng sinh
+      DisplayEnchantments:
+      - LURE:1
+      DisplayItem: NETHER_STAR:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+      - special
+      Editor-Items:
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHER_STAR
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §e§lNGÔI SAO GIÁNG SINH
+          lore:
+          - §r
+          - §fSử dụng để nâng cấp §cSọ phép giáng sinh
+          enchants:
+            LURE: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+    '50':
+      DisplayName: §b★ §b§lKHIÊN GIÁNG SINH 2023 §b★
+      Lore:
+      - ''
+      - §b✮✮✮ §b§lCHÚC PHÚC GIÁNG SINH §b ✮✮✮
+      - §b§l★ §fTrang bị tăng §e30 §fmáu
+      - §b§l★ §fTrang bị tăng §e18 §fgiáp
+      - ''
+      - '§3* §3§lSkill: §bChặn khiên sẽ thanh tẩy tất cả'
+      - §bhiệu ứng xấu và hồi lại máu, chặn đòn đối
+      - §bthủ sau đó phản lại sát thương đồng thời
+      - §btăng mạnh các chỉ số trong 3 giây.
+      DisplayItem: SHIELD:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 3
+      Firework: true
+      Tiers:
+      - special
+      Glowing: true
+      Commands:
+      - ssi give %player% shield-skin khiengiangsinh
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng §b★ §b§lKHIÊN GIÁNG SINH 2023 §b★ &f&ltừ &c&lHÒM GIÁNG SINH
+    '51':
+      DisplayName: §f❅&f&l❅ §bSọ phép &b&lGiáng &f&lSinh &b2023 &b(1♦) &f&l❅§f❅
+      Lore:
+      - ''
+      - §7 +36 Sát Thương
+      - §7 +28% Tốc Độ Đánh
+      - §7 +30 Tim
+      - §7 +28 Giáp
+      - ''
+      - '&f❅&f&l❅&f❅ &b(1♦) &b&lGIÁNG &f&lSINH &b(1♦) &f❅&f&l❅&f❅'
+      - '&b★ &c+20% &btốc độ di chuyển'
+      - '&b★ &bĐược tạo ra từ một loại quái vật giáng sinh,'
+      - '&bmang trong mình sức mạnh của giáng sinh'
+      - §0§o#satan
+      - §b(Đặt lên Hotbar để kích hoạt!)
+      DisplayItem: SKULL_ITEM:3
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - special
+      Glowing: true
+      Player: 'http://textures.minecraft.net/texture/33ba9a948ef125aafdb6bc91be6c804d71aee164ba2197b0b225a847fff048c0'
+      Commands:
+      - itemability give %player% hopquanoel1 1
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng §b❅ §c§lSọ phép Giáng sinh 2023 §b❅ §8(§e+1§8) &f&ltừ &c&lHÒM GIÁNG SINH

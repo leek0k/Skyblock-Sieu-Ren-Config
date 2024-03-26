@@ -1,0 +1,25 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+
+Mahaitac1:
+  Drops:
+  - Mahaitaca 1
+  - experience 25  
+Nhenyeutinh1:
+  Drops:
+  - Nhenyeutinh 2 
+  - experience 35  
+Quyheo1:
+  Drops:
+  - Quyheo 1
+  - experience 80  
+Bossmahaitac:
+  Drops:
+  - cmd{c="cr give <trigger.name> bossmahaitac 1"}
+Bossmanhen:
+  Drops:
+  - cmd{c="cr give <trigger.name> bossmahaitac 1"}
+Bossphuthuyden:
+  Drops:
+  - cmd{c="cr give <trigger.name> bossmahaitac 1"}

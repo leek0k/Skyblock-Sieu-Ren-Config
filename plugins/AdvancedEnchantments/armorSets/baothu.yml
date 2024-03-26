@@ -1,0 +1,115 @@
+# Advanced Sets
+# These sets are fully creatable, to create your own simply copy this file, rename it and edit it however you want!
+
+# ** Set Materials:
+# * LEATHER (change-able color)
+# * IRON
+# * GOLD
+# * CHAIN
+# * DIAMOND
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for sets.
+
+#  ** Set Events
+#    Change upon what event should sets trigger
+#    - EFFECT_STATIC : Gives permanent potion effect (as long as armor piece is worn)
+#    - ATTACK : Set Event run only when attacking another player
+#    - DEFENSE : Set Event run only when being attacked
+#    - DEFENSE_BOW : Set Event run only when player gets shot by a bow
+#    - MINING : Gives effects when block is mined
+#    - ATTACK_MOB : Gives effects when player attacks mob
+#    - KILL_MOB : Effects given when attacked mob is killed
+#    - BOW : Effects given when player is shot by another player
+#    - KILL_PLAYER : Effects given when attacker kills a player
+#    - DEATH : Runs when player dies due to another player.
+#    - RIGHT_CLICK : Runs when player right clicks held item
+#    - BOW_MOB : Effects given when mob is shot by player
+#    - FIRE : Effects given when player is on fire
+#    - EXPLOSION : Effects given when player gets hit by explosion
+#    - SWING : Enchant runs when player swings
+#    - FALL_DAMAGE : Set Event runs when player takes fall damage
+#    - DEFENSE_MOB : Set Event runs when mob attacks a player
+#    - SHIFT : Set Event runs when player toggles crouching (shifts)
+#    - ITEM_BREAK : Set Event runs when player toggles crouching (shifts)
+#    - CATCH_FISH : Set Event runs when player catches a fish
+# Set Events & Enchant types are intercompatible together
+
+# ** Creating set effects, this explains the system
+#events:
+#  <any of the effects from the list>:
+#    chance: <chance of effects activating, 1-100> (Optional)
+#    cooldown: <cooldown period after effects activate, in seconds> (Optional)
+#    effects: <effects are available in enchantments.yml>
+#    # E.g.: - 'INCREASED_DAMAGE:10'
+
+name: '&c&lSET &a&lTHƯỢNG CỔ'
+material: IRON
+settings:
+  equipped:
+    - '&a&l(!) &e&lKích hoạt SET BÁO THỦ!'
+  unequipped:
+    - '&c&l(!) &e&lDừng kịch hoạt SET BÁO THỦ!'
+items:
+  helmet:
+    name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lTHƯỢNG CỔ &6﹝&d﹝&6﹝&e(Mũ)&f﹞&6﹞&d﹞&2&l⌘⌘'
+    lore:
+      - ''   
+      - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+      - '&2&l⌘&2Giảm 40% damage.&2&l⌘'
+      - '&2&l⌘&2Đề kháng&2&l⌘'
+      - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'  
+      - ''         
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:10"
+      - "unbreaking:5"
+  chestplate:
+    name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lTHƯỢNG CỔ &6﹝&d﹝&6﹝&e(Giáp)&f﹞&6﹞&d﹞&2&l⌘⌘'
+    lore:
+      - ''   
+      - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+      - '&2&l⌘&2Giảm 40% damage.&2&l⌘'
+      - '&2&l⌘&2Đề kháng&2&l⌘'
+      - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'  
+      - ''          
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:10"
+      - "unbreaking:5"
+  leggings:
+    name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lTHƯỢNG CỔ &6﹝&d﹝&6﹝&e(Quần)&f﹞&6﹞&d﹞&2&l⌘⌘'
+    lore:
+      - ''   
+      - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+      - '&2&l⌘&2Giảm 40% damage.&2&l⌘'
+      - '&2&l⌘&2Đề kháng&2&l⌘'  
+      - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'  
+      - ''    
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:10"
+      - "unbreaking:5"
+  boots:
+    name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lTHƯỢNG CỔ &6﹝&d﹝&6﹝&e(Giày)&f﹞&6﹞&d﹞&2&l⌘⌘'
+    lore:
+      - ''   
+      - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+      - '&2&l⌘&2Giảm 40% damage.&2&l⌘'
+      - '&2&l⌘&2Đề kháng&2&l⌘'    
+      - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'  
+      - ''        
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:10"
+      - "unbreaking:5"
+events:
+  DEFENSE:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:40'
+      - 'NEGATE_DAMAGE:20'      
+  DEFENSE:
+    chance: 100
+    cooldown: 10
+    effects:
+      - 'CURE:DAMAGE_RESISTANCE'
+      - 'POTION:DAMAGE_RESISTANCE:4:100'
+      - 'WAIT:110'
+      - 'CURE:DAMAGE_RESISTANCE'
+      - 'POTION_OVERRIDE:DAMAGE_RESISTANCE:1:1200'

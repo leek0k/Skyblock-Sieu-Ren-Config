@@ -1,0 +1,26 @@
+location: Mapgiangsinh:-975.5:75.625:-653.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&c&lKHU VỰC SỰ KIẾN GIÁNG SINH'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fBoss giáng sinh sẽ được hồi sinh theo khung giờ ngẫu nhiên'
+    height: 0.3
+  - content: '&fbạn sẽ phải tiêu diệt nó, sau khi tiêu diệt được Boss giáng sinh'
+    height: 0.3
+  - content: '&fngười tiêt diệt sẽ nhận được phần thưởng giá trị'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&c&lBOSS:&b&l PHÙ THUỶ GIÁNG SINH'
+    height: 0.3
+  - content: '&fPhần thưởng: &ex1 chìa khoá giáng sinh'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,35 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&8[&6EpicVouchers&8] '
+# Interface Messages
+interface:
+  confirmsettings:
+    title: '&6Godkänn'
+    confirmitemname: '&2&lGodkänn'
+    confirmitemlore: '&aKlicka här om du vill bekräfta din åtgärd.'
+    cancelitemname: '&4&lAvbryt'
+    cancelitemlore: '&cKlicka här om du vill avbryta din åtgärd.'
+# Command Messages
+command:
+  error:
+    noplayer: '&7Användaren finns inte eller så är den inte ansluten.'
+    novoucher: '&cKupongen finns inte.'
+    notexist: '&7Kommandot du angav finns inte eller är felstavat.'
+    notnumber: '&7Misslyckades med att analysera det här numret i en giltig mängd.'
+  reload:
+    success: '&7Uppdaterade alla konfigurerade filer och kuponger.'
+  give:
+    send: '&7Du hat gett &6%player% &7kupongen &6%voucher% &7(&6x%amount%&7).'
+    receive: '&7Du har mottagit kupongen &6%voucher% &7(&6x%amount%&7).'
+    cancelled: '&cHändelsen har avbrutits.'
+  force:
+    send: '&7Du har tvingat &6%player% &7att lösa in kupongen &6%voucher% &7(&6x%amount%&7).'
+  list:
+    list: '&7Lista av alla kuponger: &6%list%&7.'
+# Event Messages
+event:
+  general:
+    nopermission: '&cDu har inte rättigheter att utföra kommandot.'
+    cooldown: Vad god vänta &6%time%&7 sekunder innan du löser in nästa kupong.

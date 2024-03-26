@@ -1,0 +1,26 @@
+tasks:
+  mining:
+    type: "blockbreakcertain"
+    amount: 75
+    block: 59
+display:
+  name: "&a&nNhiệm vụ nông dân:&r &e#2"
+  lore-normal:
+  - "&r"
+  - "&6◆ &eNhiệm vụ:&r &7Thu hoạch 75 lúa."
+  - "&6◆ &eTiến trình:&r &7{mining:progress}/75 lúa."
+  - "&6◆ &eThưởng:&r &a2,000 $"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Đã kích hoạt nhiệm vụ."
+  type: "WHEAT"
+rewards:
+  - "eco give {player} 2000"
+options:
+  category: "farming"
+  requires: ""
+  repeatable: false
+  cooldown:
+    enabled: false
+    time: 2880
+  sort-order: 2

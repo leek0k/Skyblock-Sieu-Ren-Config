@@ -1,0 +1,491 @@
+#
+# The following variables can be used in most messages that involve a punishment:
+#
+# Punishment specific variables
+# $id - The ID of the punishment in the database.
+# $type - Type of punishment - ban, mute, warn, kick.
+# $reason - the reason for the punishment
+# $executor - the moderator's name, or their display name (/nick) if this is enabled in the configuration
+# $executorUUID - the moderator's UUID
+# $permanent - whether this punishment is permanent
+# $ipban - whether this is an IP-ban
+# $silent - whether this punishment was executed silently (-s)
+# $active - whether this punishment is active
+#
+# Affected player specific variables
+# $playerDisplayName - player display name. If display names are not enabled in the configuration or if the player's display name is not available in the message's context, the player's regular name will be used instead.
+# $playerName - player name
+# $playerUUID - UUID of affected player
+# $playerIP - IP of affected player
+# $geoip - Country of affected player, requires GeoIP to be enabled in the configuration, won't work with imported bans
+#
+# Servers
+# These variables represent a server.
+# If the plugin is installed on Spigot, a server is represented by the "server_name" option in config.yml.
+# If the plugin is installed on BungeeCord, a server is represented by their name in the "servers" section in the proxy's config.yml.
+# $serverScope - the scope of the punishment (the server(s) it will affect)
+# $serverOrigin - the origin of the punishment (the server/subserver it was placed on)
+#
+# Dates
+# Example format: "2017-02-03", depends on time_format
+# $dateStart - date the punishment was placed
+# $dateEnd - date the punishment will expire, "forever" if permanent
+#
+# Durations
+# Example format: "20 days, 5 hours, 2 minutes". If permanent, "forever", if expired, "expired" (both are configurable).
+# $duration - time until expiry
+# $originalDuration - the full duration of the punishment.
+# $timeSince - time since placement
+#
+# Placeholders
+# These variables represent messages in this configuration (messages.yml)
+# $base - banned_message_base
+# $appealMessage - banned_message_appeal_message
+#
+# Global variables
+# $activeBans, $activeMutes, $activeWarnings - total number of global active punishments
+# $totalBans, $totalMutes, $totalWarnings - total number of global punishments (including inactive ones)
+#
+# Vault-specific variables
+# $playerPrefix - Vault chat prefix of affected player
+# $playerSuffix - Vault chat suffix of affected player
+# $executorPrefix - Vault chat prefix of executor
+# $executorSuffix - Vault chat suffix of executor
+# Any message can be disabled by setting it to "". Empty messages will not be sent by the plugin.
+#
+# JSON examples:
+# broadcast_ban: '&e$bannedPlayer &chas been banned. {hoverText: &aHover text here!}'
+# Hover text requires "litebans.json.hover_text" to view, players without this permission will see messages without hover text.
+#
+# https://docs.oracle.com/javase/tutorial/i18n/format/simpleDateFormat.html
+# Example time format with hours + minutes:
+# time_format: 'dd/MM/yyyy HH:mm'
+time_format: yyyy-MM-dd
+history_time_format: yyyy-MM-dd
+banned_message_base: |
+  &4&l(!) &4Khóa tài khoản và Ip tạm thời &4&l(!)
+  &r
+  &7---------&8(&e*&8)&7-------&8(&cKhóa Tài Khoản&8)&7-------&8(&e*&8)&7---------
+  &r
+  &7Khóa bởi &8» &e$executor
+  &7Lý do &8» &c$reason&f
+banned_message: "$base\n&7Lệnh cấm sẽ được mở sau\n&e$duration\n&r\n&7Bạn có thể khá\
+  ng cáo lệnh cấm này tại:\n&ePage và Group: MineAhihi "
+banned_message_permanent: |-
+  &4&l(!) &4Bị cấm vĩnh viễn &4&l(!)
+  &r
+  &7---------&8(&e*&8)&7-------&8(&cKhóa Tài Khoản&8)&7-------&8(&e*&8)&7---------
+  &r
+  &7Khóa bởi &8» &e$executor
+  &7Lý do &8» &c$reason&f
+  &r
+  &7Bạn có thể kháng cáo lệnh cấm này tại:
+  $appealMessage
+banned_message_appeal_message: '&eMineAhihi.com/appeal\n &7---------&8(&e*&8)&7-----------------------&8(&e*&8)&7---------'
+banned_message_geoip_blacklist: |-
+  &7--------&8(&e*&8)&7--&8(&cBlackListed-Location&8)&7--&8(&e*&8)&7--------
+
+  &7Vị trí của bạn bị cấm từ &e&lMáy chủ của bạn!&f
+
+  &7Your location is blacklisted:  &b$geoip , Liên hệ với bộ phận hỗ trợ của chúng tôi &b&nFANPAGE, GROUP MineAhihi
+  &7---------&8(&e*&8)&7-----------------------&8(&e*&8)&7---------'
+default_ban_Lý do: Gian lận!
+default_mute_Lý do: Spamming
+permission_error: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+  \n&e          Lý do &8» &8(&eNo Permission To Use This Command&8)'
+muted: " &e▉▉▉▉▉▉▉▉▉ &7----&8(&e*&8)&7----&8(&cCấm chat&8)&7----&8(&e*&8)&7----\n\
+  \ &e▉▉▉▉&f▉&e▉▉▉▉\n &e▉▉▉▉&f▉&e▉▉▉▉     &eStaff &8» &8(&e$executor&8)\n &e▉▉▉▉&f▉\
+  &e▉▉▉▉        &eLý do &8» &8(&c$reason&8)\n &e▉▉▉▉▉▉▉▉▉\n &e▉▉▉▉&f▉&e▉▉▉▉    &eMute\
+  \ Will Expire &8» &8(&c$dateEnd&8)\n &e▉▉▉▉▉▉▉▉▉ "
+muted_permanent: " &e▉▉▉▉▉▉▉▉▉ &7----&8(&e*&8)&7----&8(&cCấm chat&8)&7----&8(&e*&8)&7----\n\
+  \ &e▉▉▉▉&f▉&e▉▉▉▉\n &e▉▉▉▉&f▉&e▉▉▉▉     &7Staff &8» &8(&e$executor&8)\n &e▉▉▉▉&f▉\
+  &e▉▉▉▉        &7Lý do &8» &8(&c$reason&8)\n &e▉▉▉▉▉▉▉▉▉\n &e▉▉▉▉&f▉&e▉▉▉▉  \n &e▉\
+  ▉▉▉▉▉▉▉▉"
+notify:
+  banned_player_join: '&eNgười chơi bị cấm &8» &8(&c$player&8)&e tried to join, but
+    is banned for &8(&c$duration&8).'
+  banned_geoip_blacklist: '&eNgười chơi bị cấm &8» &8(&c$player&8)&e đã cố gắng tham
+    gia, nhưng      GeoIP bị cấm, &8(&c$geoip&8).'
+error_no_Lý do_provided: '&7---------&8(&e*&8)&7-----&8(&cLỖI&8)&7-----&8(&e*&8)&7---------\n
+  \n&e           Lý do &8» &8(&eCung cấp một lý do cho sự trừng phạt!&8)'
+error_no_sql_connection: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+  \n&eLý do &8» &8(&cCó lỗi khi kết nối với sql, hãy kiểm tra cấu hình của bạn!&8)'
+internal_error: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+  \n&e           Lý do &8» &8(&cXảy ra lỗi nội bộ&8)'
+duration_limit_error: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+  \n&e       Lý do &8» &8(&eThời gian cho phép - &8(&c$duration&8)&8)'
+warned_join: '&eNotice &8» eBạn có những cảnh báo mới:'
+warned_join_entry: |-
+  &8 - &7Được cảnh báo bởi &e$executor&7: &c$reason
+     &7(&e$timeSince ago&7)
+command:
+  ban:
+    usage: '&7---------&8(&e*&8)&7-------&8(&eBan Usage&8)&7-------&8(&e*&8)&7---------\n
+      \n&r    &eUsage: &7/ban [-s] <player> [duration] [Lý do]'
+    unban_usage: '&7---------&8(&e*&8)&7------&8(&eUnban Usage&8)&7------&8(&e*&8)&7---------\n
+      \n&r    &r               &eUsage: &7/unban <player>'
+    example: '&r          &eExample: &7/ban Player 7d [Lý do]'
+    silent_prefix: '&9[&3Silent&9]'
+    broadcast_ban: '&7---------&8(&e*&8)&7------&8(&eUser Banned&8)&7------&8(&e*&8)&7---------\n
+      \n                &eStaff Member &8» &8(&e$executor&8)\n &e                  Removed
+      player &8» &8(&c$bannedPlayer&8)\n &e                    Lý do &8» &8(&e$reason&8)'
+    broadcast_tempban: '&7---------&8(&e*&8)&7---&8(&eUser Temp-Banned&8)&7---&8(&e*&8)&7---------\n
+      \n                &eStaff Member &8» &8(&e$executor&8)\n &e                  Removed
+      player &8» &8(&c$bannedPlayer&8)\n &e                    Lý do &8» &8(&e$reason&8)\n
+      &e               Ban Will Expire &8» &8(&e$dateEnd&8)'
+    broadcast_ip_ban: '&7---------&8(&e*&8)&7----&8(&eKhóa tài khoản&8)&7----&8(&e*&8)&7---------\n
+      \n                &eStaff &8» &8(&e$executor&8)\n &e                  Người
+      chơi &8» &8(&c$bannedPlayer&8)\n &e                    Lý do &8» &8(&e$reason&8)'
+    broadcast_temp_ip_ban: '&7---------&8(&e*&8)&7--&8(&eKhóa tài khoản&8)&7--&8(&e*&8)&7---------\n
+      \n                &eStaff &8» &8(&e$executor&8)\n &e                  Người
+      chơi &8» &8(&c$bannedPlayer&8)\n &e                    Lý do &8» &8(&e$reason&8)\n
+      &e               Thời hạn đến hết ngày &8» &8(&e$dateEnd&8)'
+    broadcast_ip_ban_hidden: '[Hidden IP]'
+    broadcast_unban: '&7---------&8(&e*&8)&7-----&8(&eUser Unanned&8)&7-----&8(&e*&8)&7---------\n
+      \n                &eStaff Member &8» &8(&e$executor&8)\n &e                Unbanned
+      player &8» &8(&a$bannedPlayer&8)'
+    previous_ban_removed: '&&7------&8(&e*&8)&7--&8(&ePrevious Ban Removed&8)&7--&8(&e*&8)&7------'
+    previous_ban_existing: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n   &eSeems that the user is already banned and you do not permission to change
+      the ban.'
+    unban_queue: '&7---------&8(&e*&8)&7------&8(&cQueue&8)&7-------&8(&e*&8)&7---------\n
+      \n&e   Lý do &8» &8(&aIf they try to reconnect, they will be unbanned.&8)'
+    error_no_spec: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e           Lý do &8» &8(&eProvide time frame for the ban!&8)'
+    unban_fail: '&7---------&8(&e*&8)&7----&8(&cUnban Failed&8)&7----&8(&e*&8)&7---------\n
+      \n&e             Lý do &8» &8(&ePlayer is not banned&8)'
+    exempt: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e           Lý do &8» &8(&c$player &ecannot be banned!&8)'
+    broadcast_unmute: '&9&lAntiCheat &8- &3Unmuted &3&l$mutedPlayer'
+    no_override: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e            Lý do &8» &8(&ePlayer is already banned&8)'
+    response: ''
+    cooldown: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n   &eYou cannot excecute this command again right now.\n &e          Please
+      wait &8» &8(&c$Seconds&8)'
+  mute:
+    usage: '&7---------&8(&e*&8)&7-------&8(&eMute Usage&8)&7-------&8(&e*&8)&7---------\n
+      \n&r   &eUsage: &7/mute [-s] <player> [duration] [Lý do]'
+    unmute_usage: '&7---------&8(&e*&8)&7------&8(&eUnmute Usage&8)&7------&8(&e*&8)&7---------\n
+      \n&r    &r               &eUsage: &7/unmute <player>'
+    example: '&r         &eExample: &7/mute Player 7d [Lý do]'
+    broadcast: '&7---------&8(&e*&8)&7------&8(&eCấm chat&8)&7------&8(&e*&8)&7---------\n
+      \n                &eStaff &8» &8(&e$executor&8)\n &e                   Người
+      chơi &8» &8(&c$mutedPlayer&8)\n &e                    Lý do &8» &8(&e$reason&8)'
+    broadcast_tempmute: '&7---------&8(&e*&8)&7---&8(&eCấm chat&8)&7---&8(&e*&8)&7---------\n
+      \n                &eStaff &8» &8(&e$executor&8)\n &e                   Người
+      chơi &8» &8(&c$mutedPlayer&8)\n &e                    Lý do &8» &8(&e$reason&8)\n
+      &e               Thời hạn &8» &8(&e$dateEnd&8)'
+    message: "&c▉▉▉▉▉▉▉▉▉ &7---&8(&e*&8)&7--&8(&cYou've Been Muted&8)&7--&8(&e*&8)&7---\\\
+      n\n&c▉▉▉▉&f▉&c▉▉▉▉\\n\n&c▉▉▉▉&f▉&c▉▉▉▉     &eStaff Member &8» &8(&eMineAhihi\
+      \ Staff&8)\\n\n&c▉▉▉▉&f▉&c▉▉▉▉        &eLý do &8» &8(&c$reason&8)\\n\n&c▉▉▉▉\
+      ▉▉▉▉▉        \n&c▉▉▉▉&f▉&c▉▉▉▉    &eMute Will Expire &8» &8(&c$duration&8)\\\
+      n\n&c▉▉▉▉▉▉▉▉▉"
+    message_permanent: "&c▉▉▉▉▉▉▉▉▉ &7---&8(&e*&8)&7--&8(&cYou've Been Muted&8)&7--&8(&e*&8)&7---\\\
+      n\n&c▉▉▉▉&f▉&c▉▉▉▉\\n\n&c▉▉▉▉&f▉&c▉▉▉▉     &eStaff Member &8» &8(&eMineAhihi\
+      \ Staff&8)\\n\n&c▉▉▉▉&f▉&c▉▉▉▉        &eLý do &8» &8(&c$reason&8)\\n\n&c▉▉▉▉\
+      ▉▉▉▉▉        \n&c▉▉▉▉&f▉&c▉▉▉▉    &eMute Will Expire &8» &8(&cNever&8)\\n\n\
+      &c▉▉▉▉▉▉▉▉▉"
+    unmute_fail: '&7---------&8(&e*&8)&7----&8(&cUnmute Failed&8)&7----&8(&e*&8)&7---------\n
+      \n&e             Lý do &8» &8(&eUser is not muted&8)'
+    previous_mute_removed: '&&7------&8(&e*&8)&7--&8(&ePrevious Mute Removed&8)&7--&8(&e*&8)&7------'
+    previous_mute_existing: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n   &eSeems that the user is already muted and you do not permission to change
+      the mute.'
+    exempt: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e            Lý do &8» &8(&c$player &ecannot be muted!&8)'
+    notification: '&eMuted Player &8» &8(&c$mutedPlayer&8)&e tried to speak, but is
+      muted.'
+    error_not_enabled: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e          Lý do &8» &8(&cMuting is disabled in the configuration!&8)'
+    broadcast_ip_mute: '&7---------&8(&e*&8)&7----&8(&eUser Ip-Muted&8)&7----&8(&e*&8)&7---------\n
+      \n                &eStaff Member &8» &8(&e$executor&8)\n &e                Muted
+      player &8» &8(&c$mutedPlayer&8)\n &e                    Lý do &8» &8(&e$reason&8)'
+    broadcast_temp_ip_mute: '&7---------&8(&e*&8)&7--&8(&eUser Temp-IP-Muted&8)&7--&8(&e*&8)&7---------\n
+      \n                &eStaff Member &8» &8(&e$executor&8)\n &e                   Muted
+      player &8» &8(&c$mutedPlayer&8)\n &e                    Lý do &8» &8(&e$reason&8)\n
+      &e               Mute Will Expire &8» &8(&e$dateEnd&8)'
+    no_override: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e            Lý do &8» &8(&ePlayer is already muted&8)'
+    response: ''
+    broadcast_unmute: '&7---------&8(&e*&8)&7-----&8(&eUser Unmuted&8)&7-----&8(&e*&8)&7---------\n
+      \n                &eStaff Member &8» &8(&e$executor&8)\n &e              Unmuted
+      player &8» &8(&a$mutedPlayer&8)'
+  warn:
+    usage: '&7---------&8(&e*&8)&7-------&8(&eWarn Usage&8)&7-------&8(&e*&8)&7---------\n
+      \n&r   &eUsage: &7/warn [-s] <player> [Lý do]'
+    unwarn_usage: '&7---------&8(&e*&8)&7------&8(&eUnwarn Usage&8)&7------&8(&e*&8)&7---------\n
+      \n&r    &r               &eUsage: &7/unwarn <player>'
+    example: '&r         &eExample: &7/warn Player [Lý do]'
+    broadcast: '&7---------&8(&e*&8)&7------&8(&eUser Warned&8)&7------&8(&e*&8)&7---------\n
+      \n                &eStaff Member &8» &8(&e$executor&8)\n &e                 Muted
+      player &8» &8(&c$warnedPlayer&8)\n &e                    Lý do &8» &8(&e$reason&8)'
+    message: "&c▉▉▉▉▉▉▉▉▉ &7---&8(&e*&8)&7--&8(&cYou've Been Warned&8)&7--&8(&e*&8)&7---\\\
+      n\n&c▉▉▉▉&f▉&c▉▉▉▉\\n\n&c▉▉▉▉&f▉&c▉▉▉▉     &eStaff Member &8» &8(&eMineAhihi\
+      \ Staff&8)\\n\n&c▉▉▉▉&f▉&c▉▉▉▉        &eLý do &8» &8(&c$reason&8)\\n\n&c▉▉▉▉\
+      ▉▉▉▉▉        \n&c▉▉▉▉&f▉&c▉▉▉▉     &eWarn Will Expire &8» &8(&cNever&8)\\n\n\
+      &c▉▉▉▉▉▉▉▉▉\\n"
+    list_entry: '\n&8 - &7Warned by &e$executor&7: &c$reason'
+    unwarn_response: '&7------&8(&e*&8)&7--&8(&ePrevious Warning Removed&8)&7--&8(&e*&8)&7------\n
+      \n         &eWarning Removed From &8» &8(&c$player&8)'
+    unwarn_fail: '&7---------&8(&e*&8)&7----&8(&cUnwarn Failed&8)&7----&8(&e*&8)&7---------\n
+      \n&e             Lý do &8» &8(&eUser is not warned&8)'
+    exempt: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e            Lý do &8» &8(&c$player &ecannot be warned!&8)'
+    cooldown: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n   &eYou cannot excecute this command again right now.\n &e          Please
+      wait &8» &8(&c$Seconds&8)'
+    response: ''
+  history:
+    usage: '&7---------&8(&e*&8)&7-------&8(&eMute Usage&8)&7-------&8(&e*&8)&7---------\n
+      \n&r            &eUsage: &7/history <player> [entries=10]'
+    start: '&7----&8(&e*&8)&7--&8(&eHistory for &c$target&e, limit &c$limit&8)&7--&8(&e*&8)&7----\n'
+    ban_entry: |-
+      &7---&8(&e*&8)&7---&8(&e$timeSince trước đây&8)&7---&8(&e*&8)&7---
+      &c&l $name &ebị &cCấm
+      &3 Staff &8» &e$executor
+      &3 Lý do &8» &c$reason
+      &3 Trạng thái &8» &9
+    mute_entry: |-
+      &7---&8(&e*&8)&7---&8(&e$timeSince trước đây&8)&7---&8(&e*&8)&7---
+      &c&l $name &eđã bị &7Cấm chat
+      &e Staff &8» &e$executor
+      &e Lý do &8» &c$reason
+      &e Trạng thái &8» &9
+    warn_entry: |-
+      &7---&8(&e*&8)&7---&8(&e$timeSince trước đây&8)&7---&8(&e*&8)&7---
+      &c&l $name &eđã được &6Cảnh cáo
+      &e Staff &8» &e$executor
+      &e Lý do &8» &c$reason
+      &e Trạng thái &8» &9
+    kick_entry: |-
+      &7---&8(&e*&8)&7---&8(&e$timeSince trước đây&8)&7---&8(&e*&8)&7---
+      &c&l $name &eđã bị &ekick
+      &e Staff &8» &e$executor
+      &e Lý do &8» &c$reason
+      &e Trạng thái &8» &9
+    active_suffix: '&8 [&cHoạt động&8]'
+    active_suffix_temp: |-
+      &f [&cActive&f]
+      &e Expires In &8» &c&l$duration.
+    error_no_history: '&7---------&8(&e*&8)&7-----&8(&cLỖI&8)&7-----&8(&e*&8)&7---------\n
+      \n&e         Lý do &8» &8(&eNgười chơi & không có lịch sử!&8)'
+    unban_entry: |2-
+
+       &c&l$name &7đã được Unbanned &ebởi &n$executor.
+    unmute_entry: |2-
+
+       &c&l$name &7đã được mở cấm chat &ebởi &n$executor.
+    expired_suffix: '&8 [&7Đã hết hạn8]'
+  warnings:
+    usage: '&7---------&8(&e*&8)&7-----&8(&eWarnings Usage&8)&7-----&8(&e*&8)&7---------\n
+      \n&r                  &eUsage: &7/warnings <player>'
+    start: '&7----&8(&e*&8)&7-&8(&eActive warnings for &c$target&8)&7-&8(&e*&8)&7----'
+  prunehistory:
+    usage: '&7-------&8(&e*&8)&7----&8(&ePrune History Usage&8)&7----&8(&e*&8)&7-------\n
+      \n&r        &eUsage: &7/prunehistory <player> [duration]'
+    message: '&7----------&8(&e*&8)&7------&8(&aSUCCESS&8)&7------&8(&e*&8)&7----------\n
+      \n&e      Lý do &8» &8(&eHistory was successfully cleared!&8)'
+  staffhistory:
+    usage: '&7-------&8(&e*&8)&7----&8(&eStaff History Usage&8)&7----&8(&e*&8)&7-------\n
+      \n&r            &eUsage: &7/staffhistory <player> [entries=10]'
+    start: '&7----&8(&e*&8)&7-&8(&eStaff History of &c$target&8)&7-&8(&e*&8)&7----'
+  staffrollback:
+    usage: '&7-------&8(&e*&8)&7----&8(&eStaff RollBack Usage&8)&7----&8(&e*&8)&7-------\n
+      \n&r        &eUsage: &7/staffrollback <player> [duration]'
+    message: '&7----------&8(&e*&8)&7------&8(&aSUCCESS&8)&7------&8(&e*&8)&7----------\n
+      \n&e      Lý do &8» &8(&eRollback was successfully, removed: &a&l$amount&8)'
+  banlist:
+    start: \n&7====== &7Page &e$page&7 out of &e$total&7 ======
+  iphistory:
+    usage: '&7-------&8(&e*&8)&7-----&8(&eIP-History Usage&8)&7-----&8(&e*&8)&7-------\n
+      \n&r        &eUsage: &7/iphistory <player> [entries=10]'
+    start: '&7----&8(&e*&8)&7--&8(&eLịch sử cho &c$target&e, giới hạn &c$limit&8)&7--&8(&e*&8)&7----\n'
+    entry: '&7 - &8[&c$date&8]&7 $name&8:&7 $ip'
+    error_no_history: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e         Lý do &8» &8(&ePlayer &ehas no history!&8)'
+  dupeip:
+    usage: '&7-------&8(&e*&8)&7----&8(&eDupeIP Usage&8)&7----&8(&e*&8)&7-------\n
+      \n&r               &eUsage: &7/dupeip <player>'
+    start: '&7-------&8(&e*&8)&7----&8(&eScanning &n$name&8)&7----&8(&e*&8)&7-------\n
+      &e          Statuses &8» [&aOnline&8] [&7Offline&8] [&cKhóa Tài Khoản&8]\n &e               IP
+      &8» &7$ip\n'
+    start_no_ip: '&7-------&8(&e*&8)&7----&8(&eScanning &n$name&8)&7----&8(&e*&8)&7-------\n
+      &e          Statuses &8» [&aOnline&f&8] [&7Offline&8] [&cKhóa Tài Khoản&8]\n'
+    separator: '&f, '
+    online: '&a'
+    offline: '&7'
+    banned: '&c'
+    muted: '&6'
+    multiple_addresses: '[$num addresses]'
+  ipreport:
+    start: '&7-----&8(&e*&8)&7----&8(&eScanning $num Online Players&8)&7----&8(&e*&8)&7-----\n
+      &e          Statuses &8» [&aOnline&8] [&7Offline&8] [&cKhóa Tài Khoản&8]'
+    entry: '&e$player &8» &7$result'
+  checkban:
+    usage: '&7-------&8(&e*&8)&7----&8(&eCheckBan Usage&8)&7----&8(&e*&8)&7-------\n
+      \n&r               &eUsage: &7/checkban <player>'
+    no_ban: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e          Lý do &8» &8(&cPlayer is not banned!&8)'
+    banned: "&7-------&8(&e*&8)&7----&8(&c$target &eIs Banned&8)&7----&8(&e*&8)&7-------\n\
+      \ &7Khóa bởi » &e&l$executor\n &7Lý do » &c$reason\n &7Banned on » &e$dateStart\n\
+      \ &7Banned until » &e$dateEnd ($duration)\n &7Banned on server » &e&l$serverOrigin\n\
+      \ &7Server scope » &e&l$serverScope\n &7IP-ban » &c$ipban \n &7Silent » &c$silent\n\
+      \ &7Permanent » &c$permanent"
+  checkmute:
+    usage: '&7-------&8(&e*&8)&7----&8(&eCheckMute Usage&8)&7----&8(&e*&8)&7-------\n
+      \n&r              &eUsage: &7/checkmute <player>'
+    no_mute: '&7---------&8(&e*&8)&7-----&8(&cLỖI&8)&7-----&8(&e*&8)&7---------\n
+      \n&e          Lý do &8» &8(&cNgười chơi không bị tắt tiếng!&8)'
+    muted: "&7-------&8(&e*&8)&7----&8(&c$target &eIs Muted&8)&7----&8(&e*&8)&7-------\n\
+      \ &7Cấm chat bởi » &e&l$executor\n &7Muted » &c$reason\n &7Muted on » &e$dateStart\n\
+      \ &7Cấm chat cho đến khi » &e$dateEnd ($duration)\n &7Muted on server » &e&l$serverOrigin\n\
+      \ &7Phạm vi máy chủ » &e&l$serverScope\n &7IP-Mute » &c$ipban \n &7Silent »\
+      \ &c$silent\n &7Dài hạn » &c$permanent"
+  lastuuid:
+    usage: '&7-------&8(&e*&8)&7----&8(&eLastUUID Usage&8)&7----&8(&e*&8)&7-------\n
+      \n&r           &eUsage: &7/lastuuid <player|IP>'
+    message: '&7----&8(&e*&8)&7----&8(&eLastUUID for &c$name&8)&7----&8(&e*&8)&7----\n
+      \n&r   &eUUID: &7$uuid'
+  geoip:
+    usage: '&7-------&8(&e*&8)&7----&8(&eGeoIP Usage&8)&7----&8(&e*&8)&7-------\n
+      \n&r             &eUsage: &7/geoip <player|IP>'
+    message: '&7----&8(&e*&8)&7----&8(&eGeoIP for &c$target&8)&7----&8(&e*&8)&7----\n
+      \n&r             &eUUID: &7$result'
+    error_disabled: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e    Lý do &8» &8(&eGeoIP is disabled in configuration!&8)'
+    error_unavailable: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e      Lý do &8» &8(&eGeoIP is not available, was it downloaded?&8)'
+    error_not_found: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e      Lý do &8» &8(&eGeoIP information for $target not found.&8)'
+  lockdown:
+    usage: '&7-------&8(&e*&8)&7----&8(&eLockDown Usage&8)&7----&8(&e*&8)&7-------\n
+      \n&r     &eUsage: &7/lockdown <Lý do> | /lockdown end'
+    message: '&7---------&8(&e*&8)&7-----&8(&aSUCCESS&8)&7-----&8(&e*&8)&7---------\n
+      \n&e      Lockdown Active &8- &eLý do &8» &8(&c$reason&8)'
+    stopped: '&7---------&8(&e*&8)&7-----&8(&aSUCCESS&8)&7-----&8(&e*&8)&7---------\n
+      \n&e         Lý do &8» &8(&eLockdown has been removed&8)'
+    kick_message: |-
+      &7---------&8(&e*&8)&7-------&8(&cNo Access&8)&7-------&8(&e*&8)&7---------\n
+      &7Server is under lockdown!\n &7Lý do &8» &8(&c$reason&8)
+    error_not_active: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e          Lý do &8» &8(&eLockdown is not active!&8)'
+    kick_message_global: |-
+      &7---------&8(&e*&8)&7-------&8(&cNo Access&8)&7-------&8(&e*&8)&7---------\n
+      &7Network is under lockdown!\n &7Lý do &8» &8(&c$reason&8)
+  kick:
+    usage: '&7---------&8(&e*&8)&7-------&8(&eKick Usage&8)&7-------&8(&e*&8)&7---------\n
+      \n&r           &eUsage: &7/kick <player> [Lý do]'
+    no_match: '&7---------&8(&e*&8)&7-----&8(&cLỖI&8)&7-----&8(&e*&8)&7---------\n
+      \n&e          Lý do &8» &8(&eKhông tìm thấy người chơi!&8)'
+    message: '&7---------&8(&e*&8)&7-------&8(&cKicked&8)&7-------&8(&e*&8)&7---------\n
+      &7Bị Kick bởi&8» &e$executor\n &7Lý do &8» &8(&c$reason&8)'
+    message_no_Lý do: '&7---------&8(&e*&8)&7-------&8(&cKicked&8)&7-------&8(&e*&8)&7---------\n
+      &7Bị Kick bởi&8» &e$executor'
+    response: '&9&l$player &3đã bị đá.'
+    broadcast: '&7---------&8(&e*&8)&7------&8(&eUser Kicked&8)&7------&8(&e*&8)&7---------\n
+      \n                &eThành viên đội ngũ nhân viên &8» &8(&e$executor&8)\n &e                  Đã
+      xóa Người chơi &8» &8(&c$player&8)\n &e                    Lý do &8» &8(&e$reason&8)'
+    broadcast_no_Lý do: '&7---------&8(&e*&8)&7------&8(&eUser Kicked&8)&7------&8(&e*&8)&7---------\n
+      \n                &eStaff Member &8» &8(&e$executor&8)\n &e                  Đã
+      xóa Người chơi &8» &8(&c$player&8)'
+    exempt: '&7---------&8(&e*&8)&7-----&8(&eLỖI&8)&7-----&8(&e*&8)&7---------\n \n&e           Lý
+      do &8» &8(&c$player &ekhông thể đá!&8)'
+    kick_requested: '&7---------&8(&e*&8)&7----&8(&aREQUESTED&8)&7----&8(&e*&8)&7---------\n
+      \n&eLý do &8» &8(&c$player &ekhông được tìm thấy trên máy chủ, đá chéo máy chủ
+             yêu cầu!&8)'
+    message_no_reason: Kicked by $executor.
+    broadcast_no_reason: '&a$player&f was kicked by &a$executor&f.'
+  togglechat:
+    toggle_off: '&aCHAT &8» &7Chat has been toggled off.'
+    toggle_on: '&aCHAT &8» &7Chat has been toggled on.'
+  clearchat:
+    broadcast: '&aCHAT &8» &7Chat has been cleared by &7&n$executor.'
+  mutechat:
+    response: '&aCHAT &8» &cTrò chuyện máy chủ hiện đang bị vô hiệu hóa!'
+    broadcast_disabled: '&aCHAT &8» &7Server chat has been disabled by &cMineAhihi
+      Staff.'
+    broadcast_enabled: '&aCHAT &8» &7Server chat has been enabled by &a$executor.'
+  litebans:
+    reload_success: '&7---------&8(&e*&8)&7-----&8(&aSUCCESS&8)&7-----&8(&e*&8)&7---------\n
+      \n&e    Lý do &8» &8(&aLiteBans reloaded successfully.&8)'
+    reload_fail_connect: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e   Lý do &8» &8(&cLiteBans reloaded. &3Failed to connect to database.!&8)'
+    add_history_usage: '&7---------&8(&e*&8)&7-----&8(&eAddHistory Usage&8)&7-----&8(&e*&8)&7---------\n
+      \n&r      &eUsage: &7/litebans addhistory <name> <UUID> <IP>'
+    add_history: '&aHistory added.'
+    fix_history: '&7---------&8(&e*&8)&7-----&8(&eQUEUE&8)&7-----&8(&e*&8)&7---------\n
+      \n&e         Lý do &8» &8(&eFixing history for table $table...&8)'
+    fix_history_result: '&7---------&8(&e*&8)&7-----&8(&aSUCCESS&8)&7-----&8(&e*&8)&7---------\n
+      \n&e                      Lý do &8» &8(&aAdded $amount entries.&8)'
+    import_usage: '&7---------&8(&e*&8)&7-------&8(&eImport Usage&8)&7-------&8(&e*&8)&7---------\n
+      \n&r                 &eUsage: &7/litebans import start'
+    import_start: '&7---------&8(&e*&8)&7-----&8(&eQUEUE&8)&7-----&8(&e*&8)&7---------\n
+      \n&e        Lý do &8» &8(&eImporting from $db, this might take a while...&8)'
+    import_finish: '&7---------&8(&e*&8)&7-----&8(&aSUCCESS&8)&7-----&8(&e*&8)&7---------\n
+      \n&eLý do &8» &8(&aImport finished successfully. $bans bans imported, $ipbans
+      IP-bans&8)'
+    import_finish_litebans: '&7---------&8(&e*&8)&7-----&8(&aSUCCESS&8)&7-----&8(&e*&8)&7---------\n
+      \n&eLý do &8» &8(&aImport finished successfully. Added $amount entries to the
+      database.&8)'
+    import_fail: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e         Lý do &8» &8(&cImport failed, check console!&8)'
+    import_unsupported: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e   Lý do &8» &8(&cImporting from ''$name'' is not supported yet!&8)'
+    sqlexec_success: '&7---------&8(&e*&8)&7-----&8(&aSUCCESS&8)&7-----&8(&e*&8)&7---------\n
+      \n&e         Lý do &8» &8(&aSQL query executed successfully!&8)'
+    sqlexec_failure: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e         Lý do &8» &8(&cSQL query failed, check console!&8)'
+    reload_fail: '&7---------&8(&e*&8)&7-----&8(&cERROR&8)&7-----&8(&e*&8)&7---------\n
+      \n&e             Lý do &8» &8(&cRelead failed!&8)'
+    reload_fail_config: |-
+      &7---------&8(&e*&8)&7-------&8(&cERROR&8)&7-------&8(&e*&8)&7---------\n
+      &8 » &c[LiteBans] config.yml is not valid and could not be loaded, the default configuration will be used.
+      &8 » &cPlease check the server console for more information.\n
+      &7---------&8(&e*&8)&7---------------------&8(&e*&8)&7---------
+    reload_fail_messages: |-
+      &7---------&8(&e*&8)&7-------&8(&cERROR&8)&7-------&8(&e*&8)&7---------\n
+      &8 » &c[LiteBans] &cmessages.yml is not valid and could not be loaded, default messages will be used.
+      &8 » &cPlease check the server console for more information.\n
+      &7---------&8(&e*&8)&7---------------------&8(&e*&8)&7---------
+    fix_history_offline_uuids: '&cERROR &8» &7$amount UUIDs were not fetched from
+      Mojang since they are offline-mode UUIDs.'
+duration:
+  expired: thời hạn
+  forever: forever
+  year: năm
+  years: năm
+  month: tháng
+  months: tháng
+  week: tuần
+  weeks: tuần
+  day: ngày
+  days: ngày
+  hour: tiếng
+  hours: tiếng
+  minute: phút
+  minutes: phút
+  second: giây
+  seconds: giây
+  format: '%d %s'
+  separator: ', '
+strings:
+  global: global
+  'null': undefined
+  'true': 'true'
+  'false': 'false'
+error_no_uuid_found: '&7---------&8(&e*&8)&7-----&8(&eLỖI&8)&7-----&8(&e*&8)&7---------\n
+  \n&e           Lý do &8» &8(&c$Player không tồn tại!&8)'
+bungee_switch_banned: |-
+  &7---------&8(&e*&8)&7-------&8(&cKhóa Tài Khoản&8)&7-------&8(&e*&8)&7---------
+  &r
+  &7Khóa bởi &8» &e$executor
+  &7Lý do &8» &c$reason&f
+  &r
+  &7Bạn có thể kháng cáo lệnh cấm này tại:
+  $appealMessage
+error_console_only: '&7---------&8(&e*&8)&7-----&8(&eERROR&8)&7-----&8(&e*&8)&7---------\n
+  \n&e Lý do &8» &8(&cThis command can only be used from console!&8)'
+default_ban_reason: The Ban Hammer has spoken!
+default_mute_reason: Spamming
+error_no_reason_provided: '&cYou must provide a reason for this punishment!'

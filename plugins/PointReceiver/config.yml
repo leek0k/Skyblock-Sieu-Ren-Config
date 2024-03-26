@@ -1,0 +1,25 @@
+give-commands:
+- thesieutoc give {player} {point}
+point-multiply: 1.0
+command-delay: 50
+command-per-point:
+  enabled: true
+  commands:
+    '10':
+    - thesieutoc give {player} 10000
+    '20':
+    - thesieutoc give {player} 20000
+    '30':
+    - thesieutoc give {player} 30000
+    '50':
+    - thesieutoc give {player} 50000
+    '100':
+    - thesieutoc give {player} 100000
+    '200':
+    - thesieutoc give {player} 200000
+    '300':
+    - thesieutoc give {player} 300000
+    '500':
+    - thesieutoc give {player} 500000
+    '1000':
+    - thesieutoc give {player} 1000000

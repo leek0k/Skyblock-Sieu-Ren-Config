@@ -1,0 +1,35 @@
+name: vip5
+permissions:
+- animatednames.group.Vip4:
+    value: false
+- animatednames.group.Vip5
+- essentials.chat.color
+- essentials.chatcolor
+- essentials.enderchest
+- essentials.ext
+- essentials.feed
+- essentials.heal
+- essentials.invsee
+- essentials.joinfullserver
+- essentials.kits.vip4:
+    value: false
+- essentials.kits.vip5
+- essentials.ptime
+- essentials.repair
+- essentials.repair.all
+- essentials.sethome.multiple.vip5
+- essentials.top
+- essentials.workbenchssentials.workbench
+- keepitems.keep
+- playerpoints.pay:
+    value: false
+- playervaults.amount.15
+- playervaults.size.6
+- rankup.bedrock
+- resetpv.vault.15
+- unbreakable.armor
+- weight.5
+- zAuctionHouse.maxsell.18
+- zauctionhouse.maxsell.14
+parents:
+- vip4

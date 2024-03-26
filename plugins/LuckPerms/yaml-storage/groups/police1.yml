@@ -1,0 +1,54 @@
+name: police1
+permissions:
+- koth.create:
+    value: true
+    context:
+      server: truie
+- KOTH.END
+- KOTH.START
+- chatsentinel.bypass.cooldown
+- combatlogx.flight.enable
+- deluxetags.tag.68
+- essentials.craft
+- essentials.fly
+- essentials.god
+- essentials.invsee
+- essentials.jails
+- essentials.nick:
+    value: false
+- essentials.repair.all
+- essentials.teleport
+- essentials.teleport.timer.bypass
+- essentials.togglejail
+- essentials.togglejail.offline
+- essentials.tp
+- essentials.tp.others
+- essentials.tpo
+- essentials.vanish
+- essentials.warp
+- essentials.workbench
+- koth.create
+- koth.end
+- koth.gui
+- koth.start
+- litebans.dupeip:
+    value: false
+- litebans.group.police1
+- litebans.kick:
+    value: false
+- litebans.mute
+- litebans.tabcomplete
+- litebans.tempmute
+- litebans.unmute
+- litebans.unmute.own
+- matrix.notify
+- noflyzone.bypass
+- pm.receive
+- spartan.verbose
+- unbreakable.armor
+- weight.90
+parents:
+- vip2
+suffixes:
+- '&e&l★&r':
+    priority: 8

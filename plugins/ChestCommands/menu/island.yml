@@ -1,0 +1,141 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&8&l⋆ &8&lMenu Đảo &8(/i) &8&l⋆⋆'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'i;blockstack;is level;is recalc'
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+vedao:
+  COMMAND: 'is go'
+  NAME: '&e&lDịch chuyển về đảo! &f(/is go)'
+  LORE:
+    - '&7Nhấp chuột vào để Dịch chuyển về đảo của bạn.'
+    - '&f(/is để tạo đảo)'
+    - ''
+    - '&0&o#Item menu'
+  ID: 2
+  POSITION-X: 1
+  POSITION-Y: 2  
+  
+settings:
+  COMMAND: 'op: is settings'
+  NAME: '&e&lTính năng đảo &f(/is settings)'  
+  LORE:
+    - '&7Tùy chỉnh đảo theo yêu thích của bạn!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 6
+  POSITION-X: 3
+  POSITION-Y: 3
+  
+perm:
+  COMMAND: 'op: is permissions'
+  NAME: '&e&lCấp bậc trong team &f(/is permissions)'
+  LORE:
+    - '&7Trao quyền cho các vai trò trong team!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 314
+  POSITION-X: 4
+  POSITION-Y: 3
+
+nancgap:
+  COMMAND: 'is upgrade'
+  NAME: '&e&lNâng cấp đảo &f(/is upgrade)'
+  LORE:
+    - '&7Nâng cấp đảo khai hoang đảo để phát triển!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 52
+  POSITION-X: 5
+  POSITION-Y: 3
+
+miss:
+  COMMAND: 'is missions'
+  NAME: '&e&lNhiệm vụ &f(/is missions)'
+  LORE:
+    - '&7Nhiều thử thách với phần thưởng '
+    - '&7hấp dẫn mlem mlem!'
+    - ''
+    - '&0&o#Item menu'
+  PERMISSION-MESSAGE: '&7Bạn phải có &6&l$&e&lV.I.P&6&l$  &e(/rank) &7(Vì lí do gian lận Clone chúng tôi buộc phải bán chúng tôi rất tiếc)!'    
+  PERMISSION: 'superior.island.missions'        
+  ID: 170
+  POSITION-X: 4
+  POSITION-Y: 1
+  
+ce:
+  COMMAND: 'e'
+  NAME: '&e&lCường hóa &f(/e)'  
+  LORE:
+    - '&7Các loại cường hóa hiếm'
+    - '&7sẽ khiến vật phẩm bạn lợi hại hơn!'
+    - ''
+    - '&0&o#Item menu'
+  ID: book
+  KEEP-OPEN: true   
+  POSITION-X: 6
+  POSITION-Y: 1  
+  
+shop:
+  COMMAND: 'shop'
+  NAME: '&e&lShop &f(/shop)'
+  AMOUNT: 1  
+  LORE:
+    - '&7Mua bán các loại vật phẩm $ (Kinh tế)'
+    - ''
+    - '&0&o#Item menu'
+  ID: 338
+  KEEP-OPEN: true    
+  POSITION-X: 5
+  POSITION-Y: 1 
+    
+
+v88:
+  COMMAND: 'is toggle border'
+  NAME: '&e&lTường đảo &f(/is toggle border)'
+  AMOUNT: 1  
+  LORE:
+    - '&7Click vào đây để Bật/Tắt tường đảo!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 101
+  KEEP-OPEN: true  
+  POSITION-X: 6
+  POSITION-Y: 3
+
+stack:
+  COMMAND: 'blockstack'
+  NAME: '&e&lBlock stack &f(/blockstack)'
+  AMOUNT: 1 
+  LORE:
+    - '&7Click vào đây để Bật/Tắt blockstack!'
+    - '&7(Dùng tay không + Ngồi xuống Click chuột phải'
+    - '&7để thêm số lượng lớn)'
+    - ''
+    - '&0&o#Item menu'
+  ID: 133
+  KEEP-OPEN: true  
+  AMOUNT: 64
+  POSITION-X: 7
+  POSITION-Y: 3  
+  

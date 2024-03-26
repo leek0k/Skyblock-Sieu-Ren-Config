@@ -1,0 +1,31 @@
+name: vip2
+permissions:
+- animatednames.group.Vip1:
+    value: false
+- animatednames.group.Vip2
+- essentials.enderchest
+- essentials.feed
+- essentials.fly
+- essentials.fly.safelogin
+- essentials.hat
+- essentials.joinfullserver
+- essentials.kits.vip1:
+    value: false
+- essentials.kits.vip2
+- essentials.ptime
+- essentials.sethome.multiple.vip2
+- essentials.workbenchssentials.workbench
+- flyspeed.fly
+- flyspeed.speed.1
+- playerpoints.pay:
+    value: false
+- playervaults.amount.4
+- playervaults.size.6
+- rankup.diamond
+- rankup.gold:
+    value: false
+- resetpv.vault.4
+- weight.2
+- zAuctionHouse.maxsell.4
+parents:
+- vip1

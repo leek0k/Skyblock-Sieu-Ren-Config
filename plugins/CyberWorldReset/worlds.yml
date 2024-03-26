@@ -1,0 +1,50 @@
+worlds:
+  Rungxanh:
+    enabled: true
+    last-saved: true
+    settings:
+      time:
+      - 2021-11-10 16:30 60m
+      message: ''
+      seed: DEFAULT
+      safe-world:
+        enabled: true
+        world: world
+        delay: -1
+        spawn: DEFAULT
+      warning:
+        enabled: false
+        warning: '&cWarning: resetting the world {world} in {time}.'
+        time:
+        - 300
+        - 60
+        - 30
+        - 10
+        - 3
+        - 2
+        - 1
+      commands: []
+  khuminezuize:
+    enabled: true
+    last-saved: true
+    settings:
+      time:
+      - '****-**-** **:** 45m'
+      message: '&6&lKhu Mine Zui Zẻ &fđã Reset! &b(/warp mine)'
+      seed: DEFAULT
+      safe-world:
+        enabled: true
+        world: world
+        delay: 5
+        spawn: DEFAULT
+      warning:
+        enabled: true
+        warning: '&6&lKhu Mine Zui Zẻ ^^ &fsẽ được reset trong &a{time}&f.'
+        time:
+        - 10
+        - 3
+        - 2
+        - 1
+        message:
+        - '&6&lKhu Mine Zui Zẻ ^^ &fsẽ được reset trong &a{time}&f.'
+      commands: []

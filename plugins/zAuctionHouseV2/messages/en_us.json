@@ -1,0 +1,252 @@
+{
+  "prefix": "§8(§bChợ đen MineAhihi§8)",
+  "commandHelp": "§a» §6%syntaxe% §7- §e%description%",
+  "noPermission": "§cYou don't have permission !",
+  "syntaxeError": "§cYou must execute the command like this §7: §a%command%",
+  "commandError": "§cThis argument does not exist!",
+  "creativeError": "§cYou can't sell an item in creative mode !",
+  "maxPrice": "§eGiá treo bán max là §6%max%§e!",
+  "minPrice": "§eGiá treo bán thấp nhất là §6%min%§e!",
+  "noMoney": "§eBạn không đủ tiền!",
+  "noMore": "§eBạn chỉ có §6%item% Slot§e, Mua Rank để tăng Slot treo bán!",
+  "blacklistItem": "§eVật phẩm cấm!",
+  "noHoldingItem": "§eBạn phải cầm trên tay vật phẩm muốn treo bán!",
+  "addItem": "§eTreo bán thành công §6%item% §e!",
+  "buyerPurchased": "§6%player% §eđã mua vật phẩm §6%item% §ecủa bạn với giá §6%price%§e.",
+  "actionBuyerPurchased": "§6%player% §ejust bought §6%item% §efor §6%price%§e.",
+  "itemPurchased": "§eMua thành công §6%item% §e!",
+  "removeItem": "§eHủy treo bán vật phẩm này!",
+  "inventoryFull": "§cTúi bạn đã đầy!",
+  "errorBuy": "§cBạn không thể mua vật phẩm này",
+  "cooldown": "§cSpam! Phải chờ §6%time%",
+  "claimMoney": "§aYou have just recovered §b%money%$ §aand §b%playerPoint%§ap",
+  "sellAnnonce": "§aPlayer §b%player% §ahas added §b%item% §afor §b%price% §ato the auction!",
+  "title": {
+    "creativeError": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "maxPrice": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "minPrice": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "noMoney": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "noMore": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "blacklistItem": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "noHoldingItem": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "addItem": {
+      "title": "§aAdding an item !",
+      "subTitle": "%message%"
+    },
+    "buyerPurchased": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "actionBuyerPurchased": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "itemPurchased": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "removeItem": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "inventoryFull": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "errorBuy": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    },
+    "cooldown": {
+      "title": "§cNOPE",
+      "subTitle": "%message%"
+    }
+  },
+  "second": "second",
+  "minute": "minute",
+  "hour": "hour",
+  "day": "day",
+  "itemLore": [
+    "§7§m------------------------------",
+    "§8[§6!§8] §e%status%",
+    "",
+    "  §6* §eNgười bán§7: §f%seller%",
+    "  §6* §eGiá§7: §6%price%",
+    "  §6* §eThời hạn treo bán§7: §6%time%",
+    "§7§m------------------------------"
+  ],
+  "itemLoreBuyOrExpire": [
+    "§7§m------------------------------",
+    "§8[§6!§8] §eClick vào để thu hồi vật phẩm",
+    "",
+    "  §6* §eThời hạn§7: §6%time%",
+    "§7§m------------------------------"
+  ],
+  "statusBuyer": "Click vào để mua vật phẩm",
+  "statusPlayer": "Click vào để thu hồi vật phẩm",
+  "descriptionDefault": "Opens the auction house",
+  "descriptionVersion": "Give plugin version",
+  "descriptionReload": "Reload lang and config file",
+  "descriptionSell": "Sell an item",
+  "buy": "§aĐồng ý mua",
+  "remove": "§aThu hồi",
+  "back": "§aQuay lại",
+  "guiRemove": "§6» §8Hủy treo",
+  "guiRemoveAdmin": "§6» §aRemove - Admin",
+  "guiBuy": "§8» §aMua",
+  "guiExpired": "§6» §8Thu hồi §7(§a%p%§7/§a%mp%§7)",
+  "guiBuying": "§6» §8Giỏ hàng §7(§a%p%§7/§a%mp%§7)",
+  "guiItems": "§6» §8Đang treo bán §7(§a%p%§7/§a%mp%§7)",
+  "guiPlayer": "§6» §aYours items",
+  "guiAuction": "§8» §eChợ đen §7(§a%p%§7/§a%mp%§7)",
+  "guiAuctionCagory": "§6» §e%name% §7(§a%p%§7/§a%mp%§7)",
+  "guiCategory": "§6» §eCategories",
+  "guiConfig": "§6» §eConfig",
+  "guiLang": "§6» §Language",
+  "buttonPrevious": {
+    "name": "§6» §eTrang trước",
+    "item": "ARROW",
+    "lore": null,
+    "slot": 0
+  },
+  "buttonNext": {
+    "name": "§6» §eTrang sau",
+    "item": "ARROW",
+    "lore": null,
+    "slot": 0
+  },
+  "buttonInformation": {
+    "name": "§6» §e§lTHÔNG TIN",
+    "item": "BOOK",
+    "lore": [
+      "§6» §eTổng đang treo bán trên chợ§7: §6%item%",
+      "§6» §eCách treo bán bằng §a$ §7: §6/ah sell <giá>",
+      "§6» §eCách treo bán bằng §b⛁ §7: §6/ah sell <giá>p",
+      "§6» §e5% thuế",
+      "§6» §cLưu ý: §7Treo đồ hết hạn quá 2 ngày không",
+      "§7thu hồi sẽ bị xóa!!"
+    ],
+    "slot": 0
+  },
+  "buttonExpire": {
+    "name": "§6» §e§lTHU HỒI",
+    "item": "FURNACE_MINECART",
+    "lore": [
+      "§6» §eTổng §6%item%",
+      "§6» §7Những sản phẩm hết thời gian treo bán",
+      "§7sẽ đựng ở đây "
+    ],
+    "slot": 0
+  },
+  "buttonBuying": {
+    "name": "§6» §e§LGIỎ HÀNG",
+    "item": "MINECART",
+    "lore": [
+      "§6» §eTổng §6%item%",
+      "§6» §7Những sản phẩm bạn mua sẽ đựng ở đây "
+    ],
+    "slot": 0
+  },
+  "buttonShowItems": {
+    "name": "§6» §e§LĐANG TREO BÁN",
+    "item": "CARROT_ON_A_STICK",
+    "lore": [
+      "§6» §eTổng §6%item%"
+    ],
+    "slot": 0
+  },
+  "buttonCategory": {
+    "name": "§6» §eCategories",
+    "item": "BOOK",
+    "lore": [
+      "§6» §eShow categories"
+    ],
+    "slot": 0
+  },
+  "buttonBack": {
+    "name": "§cQuay lại",
+    "item": "NETHER_STAR",
+    "lore": null,
+    "slot": 0
+  },
+  "buttonRemoveAll": {
+    "name": "§cRemove all",
+    "item": "NETHER_STAR",
+    "lore": null,
+    "slot": 0
+  },
+  "buttonClaimMoney": {
+    "name": "§6» §eClaim money",
+    "item": "NETHER_STAR",
+    "lore": [
+      "§6» §eYou have %money%$ and %playerPoint%P to recover!"
+    ],
+    "slot": 0
+  },
+  "buttonCategoryBlocks": {
+    "name": "§6» §eCategory§7: §6Blocks",
+    "item": "DIRT",
+    "lore": [
+      "§6» §eClick to open this category"
+    ],
+    "slot": 0
+  },
+  "buttonCategoryWeapons": {
+    "name": "§6» §eCategory§7: §6Weapons",
+    "item": "DIAMOND_SWORD",
+    "lore": [
+      "§6» §eClick to open this category"
+    ],
+    "slot": 0
+  },
+  "buttonCategoryTools": {
+    "name": "§6» §eCategory§7: §6Tools",
+    "item": "DIAMOND_PICKAXE",
+    "lore": [
+      "§6» §eClick to open this category"
+    ],
+    "slot": 0
+  },
+  "buttonCategoryPotions": {
+    "name": "§6» §eCategory§7: §6Potions",
+    "item": "POTION",
+    "lore": [
+      "§6» §eClick to open this category"
+    ],
+    "slot": 0
+  },
+  "buttonCategoryMisc": {
+    "name": "§6» §eCategory§7: §6Miscellaneous",
+    "item": "STICK",
+    "lore": [
+      "§6» §eClick to open this category"
+    ],
+    "slot": 0
+  },
+  "categoryBlock": "Blocks",
+  "categoryWeapons": "Weapons",
+  "categoryTools": "Tools",
+  "categoryPotions": "Potions",
+  "categoryMisc": "Misc"
+}

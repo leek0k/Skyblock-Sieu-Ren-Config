@@ -1,0 +1,159 @@
+{
+	"prefix": "§8(§bAuktionshaus§8)",
+	"commandHelp": "§a» §6%syntaxe% §7- §e%description%",
+	"noPermission": "§cDafür hast keine Berechtigung !",
+	"syntaxeError": "§cBenutze diesen Command §7: §a%command%",
+	"commandError": "§cDer Command existiert nicht!",
+	"creativeError": "§cDu kannst nicht im Gamemode verkaufen!",
+	"maxPrice": "§eDu kannst Maximal §6%max%§e verlangen!",
+	"minPrice": "§eDu musst mindestens §6%min%§e verlangen!",
+	"noMoney": "§eDu hast nicht genug Geld!",
+	"noMore": "§eDu kannst nicht mehr Items reinstellen !",
+	"blacklistItem": "§eDu kannst das Item nicht verkaufen !",
+	"noHoldingItem": "§eDu musst ein Item in der Hand haben!",
+	"addItem": "§eDu hast §6%item% §eins Auktionshaus gelegt!",
+	"buyerPurchased": "§6%player% §ehat dein §6%item% §egekauft für §6%price%§e.",
+	"itemPurchased": "§eDu hast §6%item% §egekauft!",
+	"removeItem": "§eDu hast das %item% aus dem Verkauf genommen !",
+	"inventoryFull": "§cDein Inventar ist voll!",
+	"errorBuy": "§cDu kannst das nicht kaufen",
+	"cooldown": "§cDu musst warten: §6%time%",
+	"second": "Sekunde",
+	"minute": "Minute",
+	"hour": "Stunde",
+	"day": "Tag",
+	"itemLore": [
+		"§7§m------------------------------",
+		"§8[§6!§8] §e%status%",
+		"",
+		"  §6* §eVerkäufer§7: §6%seller%",
+		"  §6* §ePreis§7: §6%price%$",
+		"  §6* §eId§7: §6%id%",
+		"  §6* §eAblauf§7: §6%time%",
+		"§7§m------------------------------"
+	],
+	"itemLoreBuyOrExpire": [
+		"§7§m------------------------------",
+		"§8[§6!§8] §eKlicke um das Item abzurufen",
+		"",
+		"  §6* §eAblauf§7: §6%time%",
+		"§7§m------------------------------"
+	],
+	"statusBuyer": "Klicke um das Item zu Kaufen",
+	"statusPlayer": "Klicke um das Item abzurufen",
+	"descriptionDefault": "Öffne das Auktionshaus",
+	"descriptionVersion": "Gibt Plugin Version",
+	"descriptionReload": "Reloadet die Config",
+	"descriptionSell": "Verkaufe ein Item",
+	"buy": "§aKaufen",
+	"remove": "§aLöschen",
+	"back": "§aZurück",
+	"guiRemove": "§6» §aLöschen",
+	"guiRemoveAdmin": "§6» §aLöschen - Admin",
+	"guiBuy": "§6» §aKaufen",
+	"guiExpired": "§6» §eAbgelaufen §7(§a%p%§7/§a%mp%§7)",
+	"guiBuying": "§6» §eKaufen §7(§a%p%§7/§a%mp%§7)",
+	"guiItems": "§6» §eItems §7(§a%p%§7/§a%mp%§7)",
+	"guiPlayer": "§6» §aDeine items",
+	"guiAuction": "§6» §eAuktions §7(§a%p%§7/§a%mp%§7)",
+	"guiAuctionCagory": "§6» §e%name% §7(§a%p%§7/§a%mp%§7)",
+	"guiCategory": "§6» §eKategorie",
+	"guiConfig": "§6» §eConfig",
+	"guiLang": "§6» §Sprache",
+	"buttonPrevious": {
+		"name": "§6» §eVorschau",
+		"item": 262,
+		"lore": null
+	},
+	"buttonNext": {
+		"name": "§6» §eNächste",
+		"item": 262,
+		"lore": null
+	},
+	"buttonInformation": {
+		"name": "§6» §eInformationen",
+		"item": 340,
+		"lore": [
+			"§6» §eItems§7: §6%item%",
+			"§6» §eWie man verkauft§7: §6/ah sell <price>"
+		]
+	},
+	"buttonExpire": {
+		"name": "§6» §eAbgelaufende Items",
+		"item": 340,
+		"lore": [
+			"§6» §eDu hast §6%item% §eitems abgelaufen"
+		]
+	},
+	"buttonBuying": {
+		"name": "§6» §eGekaufte Items",
+		"item": 340,
+		"lore": [
+			"§6» §eDu hast §6%item% §eitems gekauft"
+		]
+	},
+	"buttonShowItems": {
+		"name": "§6» §eItems",
+		"item": 340,
+		"lore": [
+			"§6» §eDu hast §6%item% §eitems in Auktion"
+		]
+	},
+	"buttonCategory": {
+		"name": "§6» §eKategorien",
+		"item": 340,
+		"lore": [
+			"§6» §eZeigt kategorien"
+		]
+	},
+	"buttonBack": {
+		"name": "§cZurück",
+		"item": 399,
+		"lore": null
+	},
+	"buttonCategoryBlocks": {
+		"name": "§6» §eKategorie§7: §6Blöcke",
+		"item": 3,
+		"lore": [
+			"§6» §eKlicke zum öffnen der Kategorie"
+		]
+	},
+	"buttonCategoryWeapons": {
+		"name": "§6» §eKategorie§7: §6Waffen",
+		"item": 276,
+		"lore": [
+			"§6» §eKlicke zum öffnen der Kategorie"
+		]
+	},
+	"buttonCategoryTools": {
+		"name": "§6» §eKategoriey§7: §6Werkzeug",
+		"item": 278,
+		"lore": [
+			"§6» §eKlicke zum öffnen der Kategorie"
+		]
+	},
+	"buttonCategoryPotions": {
+		"name": "§6» §eKategorie§7: §6Tränke",
+		"item": 373,
+		"lore": [
+			"§6» §eKlicke zum öffnen der Kategorie"
+		]
+	},
+	"buttonCategoryMisc": {
+		"name": "§6» §eKategorie§7: §6Sonstiges",
+		"item": 280,
+		"lore": [
+			"§6» §eKlicke zum öffnen der Kategorie"
+		]
+	},
+	"buttonRemoveAll": {
+		"name": "§cAlles entfernen",
+		"item": 399,
+		"lore": null
+	},
+	"categoryBlock": "Blöcke",
+	"categoryWeapons": "Waffen",
+	"categoryTools": "Werkzeug",
+	"categoryPotions": "Tränke",
+	"categoryMisc": "Sonstiges"
+}

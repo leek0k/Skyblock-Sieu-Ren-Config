@@ -1,0 +1,11 @@
+name: helper2
+permissions:
+- essentials.kits.vip3
+- essentials.kits.vip4
+- essentials.nick
+- essentials.nick.color
+- litebans.group.helper2
+- playervaults.amount.15
+- weight.82
+parents:
+- helper

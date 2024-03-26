@@ -1,0 +1,142 @@
+menu_title: '&8=-NÔNG DÂN TOP-='
+open_command:
+- farmtop
+size: 27
+open_commands:
+- '[sound] BLOCK_LEVER_CLICK'
+items:
+  'filler':
+    material: STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 15
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    data: 15
+    amount: 1
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    display_name: '&7'
+  'top1':
+    material: SUGAR_CANE
+    slot: 10
+    priority: 2
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    update: true
+    display_name: '&e#1 &7- &f%sieurencore_farmtop_rank_1_name%'
+    lore:
+    - '&7Mía thu hoạch được: &e%sieurencore_farmtop_rank_1_value%'
+    - ''
+    - '&0&o#Item menu'
+  'top2':
+    material: SUGAR_CANE
+    slot: 11
+    priority: 2
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    update: true
+    display_name: '&e#2 &7- &f%sieurencore_farmtop_rank_2_name%'
+    lore:
+    - '&7Mía thu hoạch được: &e%sieurencore_farmtop_rank_2_value%'
+    - ''
+    - '&0&o#Item menu'
+    left_click_commands:
+    - '[sound] ENTITY_ITEM_PICKUP'
+    right_click_commands:
+    - '[sound] ENTITY_ITEM_PICKUP'
+  'top3':
+    material: SUGAR_CANE
+    slot: 12
+    priority: 2
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    update: true
+    display_name: '&e#3 &7- &f%sieurencore_farmtop_rank_3_name%'
+    lore:
+    - '&7Mía thu hoạch được: &e%sieurencore_farmtop_rank_3_value%'
+    - ''
+    - '&0&o#Item menu'
+    left_click_commands:
+    - '[sound] ENTITY_ITEM_PICKUP'
+    right_click_commands:
+    - '[sound] ENTITY_ITEM_PICKUP'
+  'top4':
+    material: SUGAR_CANE
+    slot: 13
+    priority: 2
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    update: true
+    display_name: '&e#4 &7- &f%sieurencore_farmtop_rank_4_name%'
+    lore:
+    - '&7Mía thu hoạch được: &e%sieurencore_farmtop_rank_4_value%'
+    - ''
+    - '&0&o#Item menu'
+    left_click_commands:
+    - '[sound] ENTITY_ITEM_PICKUP'
+    right_click_commands:
+    - '[sound] ENTITY_ITEM_PICKUP'
+  'top5':
+    material: SUGAR_CANE
+    slot: 14
+    priority: 2
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    update: true
+    display_name: '&e#5 &7- &f%sieurencore_farmtop_rank_5_name%'
+    lore:
+    - '&7Mía thu hoạch được: &e%sieurencore_farmtop_rank_5_value%'
+    - ''
+    - '&0&o#Item menu'
+    left_click_commands:
+    - '[sound] ENTITY_ITEM_PICKUP'
+    right_click_commands:
+    - '[sound] ENTITY_ITEM_PICKUP'
+  'yourstats':
+    material: SUGAR_CANE
+    slot: 16
+    priority: 1
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    update: true
+    display_name: '&eThông tin của bạn'
+    lore:
+    - '&7Tổng mía thu hoạch được: &e%sieurencore_farmtop_value%'
+    - ''
+    - '&0&o#Item menu'
+    left_click_commands:
+    - '[sound] ENTITY_ITEM_PICKUP'
+    right_click_commands:
+    - '[sound] ENTITY_ITEM_PICKUP'

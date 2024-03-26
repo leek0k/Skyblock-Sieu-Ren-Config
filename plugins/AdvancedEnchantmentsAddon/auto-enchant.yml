@@ -1,0 +1,90 @@
+# Số tick mỗi lần chạy cập nhật (không cập nhật khi reload config)
+auto-enchant-interval: 20
+# Số lượng người mỗi lần cập nhật
+auto-enchant-per-player: 20
+
+# Danh sách loại material sẽ được thêm phù phép
+material-whitelist:
+  - 'DIAMOND_SWORD'
+  - 'DIAMOND_AXE'
+  - 'DIAMOND_PICKAXE'
+  - 'DIAMOND_SHOVEL'
+  - 'DIAMOND_HOE'
+  - 'DIAMOND_HELMET'
+  - 'DIAMOND_CHESTPLATE'
+  - 'DIAMOND_LEGGINGS'
+  - 'DIAMOND_BOOTS'
+  - 'IRON_SWORD'
+  - 'IRON_AXE'
+  - 'IRON_PICKAXE'
+  - 'IRON_SHOVEL'
+  - 'IRON_HOE'
+  - 'IRON_HELMET'
+  - 'IRON_CHESTPLATE'
+  - 'IRON_LEGGINGS'
+  - 'IRON_BOOTS'
+  - 'GOLD_SWORD'
+  - 'GOLD_AXE'
+  - 'GOLD_PICKAXE'
+  - 'GOLD_SHOVEL'
+  - 'GOLD_HOE'
+  - 'GOLD_HELMET'
+  - 'GOLD_CHESTPLATE'
+  - 'GOLD_LEGGINGS'
+  - 'GOLD_BOOTS'
+  - 'WOOD_SWORD'
+  - 'WOOD_AXE'
+  - 'WOOD_PICKAXE'
+  - 'WOOD_SHOVEL'
+  - 'WOOD_HOE'
+  - 'WOOD_HELMET'
+  - 'WOOD_CHESTPLATE'
+  - 'WOOD_LEGGINGS'
+  - 'WOOD_BOOTS'
+  - 'CHAINMAIL_SWORD'
+  - 'CHAINMAIL_AXE'
+  - 'CHAINMAIL_PICKAXE'
+  - 'CHAINMAIL_SHOVEL'
+  - 'CHAINMAIL_HOE'
+  - 'CHAINMAIL_HELMET'
+  - 'CHAINMAIL_CHESTPLATE'
+  - 'CHAINMAIL_LEGGINGS'
+  - 'CHAINMAIL_BOOTS'
+  - 'BOW'
+  - 'SHIELD'
+  - 'BANNER'
+
+# Danh sách các ce khi trang bị sẽ áp dụng effect cho các slot còn lại
+list:
+  # Tên
+  all_slot:
+    # Các ce sẽ kích hoạt
+    ce-enable:
+      - 'strike'
+      - 'impact'
+    # Slot khi trang bị sẽ kích hoạt thêm enchant cho các slot khác (auto-slot)
+    # HELMET, CHESTPLATE, LEGGINGS, BOOTS, MAINHAND, OFFHAND
+    trigger-slot: 'OFFHAND'
+    # Danh sách các slot sẽ được tự thêm phù phép và ẩn lore nếu hide-enchant-lore: true
+    # HELMET, CHESTPLATE, LEGGINGS, BOOTS, MAINHAND, OFFHAND
+    apply-slot:
+      - 'HELMET'
+      - 'CHESTPLATE'
+      - 'LEGGINGS'
+      - 'BOOTS'
+      - 'MAINHAND'
+    # Ẩn lore ce cho các slot được tự thêm phù phép
+    hide-enchant-lore: true
+  example2:
+    # Các ce sẽ kích hoạt
+    ce-enable:
+      - 'name_ce1'
+    # Slot khi trang bị sẽ kích hoạt thêm enchant cho các slot khác (auto-slot)
+    # HELMET, CHESTPLATE, LEGGINGS, BOOTS, MAINHAND, OFFHAND
+    trigger-slot: 'OFFHAND'
+    # Danh sách các slot sẽ được tự thêm phù phép
+    # HELMET, CHESTPLATE, LEGGINGS, BOOTS, MAINHAND, OFFHAND
+    apply-slot:
+      - 'MAINHAND'
+    # Ẩn lore ce cho các slot được tự thêm phù phép
+    hide-enchant-lore: true

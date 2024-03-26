@@ -1,0 +1,12 @@
+command:
+  player-not-found: '&4[&c!&4] &cKhông tìm thấy người chơi {player}!'
+  menu-not-found: '&4[&c!&4] &cKhông tìm thấy menu {menu}!'
+  only-player: '&4[&c!&4] &cChỉ có người chơi mới có thể sử dụng lệnh này!'
+  public:
+    first-load: '&2[&a!&2] &aĐang cập nhật bảng đảo!'
+  reload: '&2[&a!&2] &aĐã cài lại file cấu hình!'
+  help:
+  - '&2======== Lệnh Top Cống Nạp &2========'
+  - '&f/thamdao &a- Hiển thị menu đảo ghé thăm' # Permission: superiorskyblock2addon.command.public
+  - '&f/ss2a reload &a- Cài lại cấu hình' # Permission: superiorskyblock2addon.command.reload
+  - '&f/ss2a help &a- Xem hướng dẫn' # Permission: superiorskyblock2addon.command.help

@@ -1,0 +1,32 @@
+{
+  "ID": "SkillThuongco",
+  "Order": 9007199254740991,
+  "Name": "Thượng Cổ",
+  "MobTypes": [
+    "Wither"
+  ],
+  "Skills": {
+    "Life": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Health": "+12"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "%1>1<1": {
+          "Health": "+900",
+          "Timer": "+3"
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Damage": "+16"
+        }
+      }
+    }
+  }
+}

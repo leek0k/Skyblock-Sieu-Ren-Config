@@ -1,0 +1,35 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: 'Truyenthuyet'
+
+# Currently supported are only melee weapons
+material: DIAMOND_AXE
+
+# Weapon's name
+name: '&5&L✧&D&L✧&5&L✧ &D&lTHÁNH &9&l&NRìu&r &7(+3) &7[OP] &5&L✧&D&L✧&5&L✧'
+
+# Weapon's lore
+lore:
+  - ''
+  - '&d◆ ◆ ◆ &d&lTRUYỀN THUYẾT &d◆ ◆ ◆'
+  - '&d* Thánh Rìu'     
+  - '&d* Tăng 10% damage.'
+  - '&7&o(Mặc full Set Truyền Thuyết để kích hoạt.)'  
+  - '&0&o#Riutruyenthuyetlv4' 
+
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'sharpness:50'
+  - 'unbreaking:5'
+  - 'fireaspect:4'
+  - 'looting:4'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:
+  ATTACK:
+    chance: 55
+    effects:
+      - 'INCREASE_DAMAGE:10'

@@ -1,0 +1,38 @@
+HacLong-HapTinhDaiPhap:
+  Conditions:
+  - incombat true
+  Skills:
+  - skill{s=HacLong-Hut;repeat=200;repeatInterval=1} @EIR{r=20}
+  - delay 200
+  - skill{s=HacLong-Throw} @EIR{r=20}
+
+HacLong-RandomDrop:
+  Skills:
+  - randomskill{skills=HacLong-DropBanhTet,HacLong-DropBanhChung}
+
+HacLong-DropBanhTet:
+  Skills:
+  - command{c="ie give banhtet2024 <target.name> 1"}
+  
+HacLong-DropBanhChung:
+  Skills:
+  - command{c="ie give banhchung2024 <target.name> 1"}
+
+HacLong-Reward:
+  Skills:
+  - message{m="&8&lᚬ&ka&8&lᚯ &0&lᾟắc £ong &8&lᚬ&ka&8&lᚯ &cđã bị tiêu diệt bởi &c&l<trigger.name>&c!"} @Server
+  - command{c="cr give to <trigger.name> LiXi2024 1"}
+  - skill{s=HacLong-RandomDrop}
+
+HacLong-Hut:
+  Skills:
+  - pull{velocity=2}
+
+HacLong-Throw:
+  Skills:
+  - damage{amount=1000}
+  - throw{velocity=200;velocityY=50}
+  
+HacLong-ThongBao:
+  Skills:
+  - message{m="&8&lᚬ&ka&8&lᚯ &0&lᾟắc £ong &8&lᚬ&ka&8&lᚯ &ađang còn sống tại &7((&c/Dungeon Tet&7)) !!!"} @Server

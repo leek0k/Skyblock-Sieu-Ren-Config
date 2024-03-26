@@ -1,0 +1,50 @@
+mission-file: ItemsMissions
+island: false
+auto-reward: false
+rewards:
+  commands:
+  - eco give %player% 13000
+  - exp give %player% 409
+  - is admin msg %player% &e&l$ | &7Hoàn thành thử thách!
+required-items:
+  '1':
+    types:
+    - ROTTEN_FLESH
+    amount: 640
+icons:
+  not-completed:
+    type: BLAZE_ROD
+    name: '&6&LTHỬ THÁCH: &c&lTHỢ SĂN &f&l#1'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l thịt zombie &fđể FULL túi'
+    - ''
+    - '&7- &e$13.000 , 409 Exp'
+    - ''
+    - '&6Thu thập: &7{1}/640'
+    - '&6Tiến trình: &7{0}%'
+    - '&c&l ✘ &7Chưa hoàn thành'
+    - ''
+    - '&a&l YÊU CẦU: &aHoàn thành &c&lTHỢ SĂN &f&l#1'
+  can-complete:
+    type: ROTTEN_FLESH
+    name: '&6&LTHỬ THÁCH: &c&lTHỢ SĂN &f&l#1'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l thịt zombie &fđể FULL túi'
+    - ''
+    - '&7- &e$13.000 , 409 Exp'
+    - ''
+    - '&6Thu thập: &7640/640'
+    - '&6Tiến trình: &7100%'
+    - '&a&l ✔ &7Bạn đã có đủ điều kiện Click vào đây.'
+    enchants:
+      DURABILITY: 1
+    flags:
+    - HIDE_ENCHANTS
+  completed:
+    type: MAP
+    name: '&6&LTHỬ THÁCH: &c&lTHỢ SĂN &f&l#1'
+    lore:
+    - ''
+    - '&a&l ✔ &7Đã hoàn thành.'

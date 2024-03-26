@@ -1,0 +1,48 @@
+mission-file: ItemsMissions
+island: false
+auto-reward: false
+rewards:
+  commands:
+  - eco give %player% 97500
+  - exp give %player% 1508
+  - is admin msg %player% &e&l$ | &7Hoàn thành thử thách!
+required-items:
+  '1':
+    types:
+    - WHEAT
+    amount: 640
+icons:
+  not-completed:
+    type: HAY_BLOCK
+    name: '&6&LTHỬ THÁCH: &A&lNÔNG DÂN &f&l#1'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l lúa mì &fđể FULL túi'
+    - ''
+    - '&7- &e$97.500 , 1508 Exp'
+    - ''
+    - '&6Thu thập: &7{1}/640'
+    - '&6Tiến trình: &7{0}%'
+    - '&c&l ✘ &7Chưa hoàn thành'
+  can-complete:
+    type: WHEAT
+    name: '&6&LTHỬ THÁCH: &A&lNÔNG DÂN &f&l#1'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l lúa mì &fđể FULL túi'
+    - ''
+    - '&7- &e$97.500 , 1508 Exp'
+    - ''
+    - '&6Thu thập: &7640/640'
+    - '&6Tiến trình: &7100%'
+    - '&a&l ✔ &7Bạn đã có đủ điều kiện Click vào đây.'
+    enchants:
+      DURABILITY: 1
+    flags:
+    - HIDE_ENCHANTS
+  completed:
+    type: MAP
+    name: '&6&LTHỬ THÁCH: &A&lNÔNG DÂN &f&l#1'
+    lore:
+    - ''
+    - '&a&l ✔ &7Đã hoàn thành.'

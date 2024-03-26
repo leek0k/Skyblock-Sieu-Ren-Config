@@ -1,0 +1,40 @@
+location: NewSpawn:3.5:148.000:-1800.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e&l[!] TOP FARM NÔNG SẢN HÀNG TUẦN &7(/farmtop)'
+    height: 0.3
+  - content: '&7&o((Bảng Top sẽ Update vào 1h sáng hằng tuần))'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&6&l* &e&l#1 &b&lThưởng&7✎ &dx4 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘ &e+ &dx1
+      &C◆ &d&lPHÙ THỦY &C◆'
+    height: 0.3
+  - content: '&6&l* &e&l#2 &b&lThưởng&7✎ &dx3 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘ &e+ &dx1
+      &C◆ &d&lPHÙ THỦY &C◆'
+    height: 0.3
+  - content: '&6&l* &e&l#3 &b&lThưởng&7✎ &dx2 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘ &e+ &dx1
+      &C◆ &d&lPHÙ THỦY &C◆'
+    height: 0.3
+  - content: '&6&l* &e&l#4 &b&lThưởng&7✎ &dx1 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘ &e+ &dx1
+      &C◆ &d&lPHÙ THỦY &C◆'
+    height: 0.3
+  - content: '&6&l* &e&l#5 &b&lThưởng&7✎ &dx1 &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘                          '
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&c&o((Lưu Ý: Phải mua cuốc tiên từ /gems shop để đua top!))'
+    height: 0.3
+  - content: '&6&l✔ &e&l12H TRƯA &6&lCHỦ NHẬT HÀNG TUẦN'
+    height: 0.3
+  - content: '&6&lSẼ CHỐT TOP VÀ TRAO THƯỞNG ✔'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  actions: {}

@@ -1,0 +1,967 @@
+#Hướng dẫn cấu hình:
+#  <id>:
+#    Material: <material> #Vui lòng sử dụng tên, không sử dụng ID. Bắt buộc!
+#    Amount: <số lượng> #Số lượng vật phẩm. Không bắt buộc!
+#    Data: <data> #Loại vật phẩm, thường được dùng cho những item trùng Material. Không bắt buộc!
+#    Name: '<tên>' #Tên hiển thị cho vật phẩm. Không bắt buộc!
+#
+#    Texture: 'hdb-<ID>' #Sử dụng skin từ plugin HeadDatabase.
+#    hoặc
+#    Texture: '<base64>' #Sử dụng skin từ https://minecraft-heads.com/
+#
+#    #Thêm các hiệu ứng phù phép cho vật phẩm:
+#    Enchants:
+#    - '<tên>:<cấp độ>'
+#
+#    #Thêm flag cho vật phẩm:
+#    # * Các flags có sẵn: HIDE_ATTRIBUTES, HIDE_DESTROYS, HIDE_ENCHANTS, HIDE_PLACED_ON, HIDE_POTION_EFFECTS và HIDE_UNBREAKABLE.
+#    Flags:
+#    - '<tên flag>'
+#
+#    Lore: [] #Thêm lore cho vật phẩm. Không bắt buộc!
+#    AbilityType: Ability hoặc Command hoặc AutoCommand.
+#    Abilities:
+#      Ability: #Tuỳ chọn này chỉ hoạt động nếu AbilityType là Ability.
+#        #Có thể thêm nhiều ability trong tuỳ chọn này.
+#        '0': #Ký hiệu, đặt tuỳ ý (khuyến khích sử dụng số).
+#          Type: <Armor, ArmorToughness, AttackDamage, AttackSpeed, KnockbackResistance, Luck, MaxHealth hoặc MovementSpeed>
+#          Operator: <0 hoặc 1> #Với 0 là chỉ số thực, 1 là chỉ số phần trăm.
+#          Value: <giá trị>
+#      Command:
+#        Cooldown: <thời gian> #Khoảng cách thời gian (bằng giây) cho mỗi lần sử dụng lệnh, -1 để vô hiệu hoá.
+#        #Danh sách lệnh. Có hỗ trợ tất cả placeholder trong PlaceholderAPI.
+#        #- '<câu lệnh không cần dấu / >' - chạy lệnh với quyền thông thường.
+#        #- 'OP: <câu lệnh không cần dấu / >' - chạy lệnh với quyền OP (thường bị delay vài mili giây, không khuyến khích sử dụng nhiều).
+#        #- 'CONSOLE: <câu lệnh không cần dấu / >' - chạy lệnh trên console.
+#        #- 'MESSAGE: <thông điệp>' - gửi thông điệp cho người sử dụng.
+#        #- 'SOUND: <âm thanh>' - chơi âm thanh.
+#        List: []
+#      AutoCommand:
+#        LoopTime: <thời gian> #Thời gian (bằng giây) lặp lại.
+#        List: [] #Danh sách lệnh. Có hỗ trợ tất cả placeholder trong PlaceholderAPI.
+Items:
+  thuong:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&7&lSỌ phép bị vỡ'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWI3MzhmYTA1YjI3ZjE4ODc0ZTU3ZDk1YjBiNmM5ZmFkZDFiNTU4ODk0ZjgyZTAyNjFiYTE1NDRlNmZiYmYxZCJ9fX0='
+    Lore:
+    - ''
+    - '&7 +3 Sát Thương'
+    - '&7 +3% Tốc Độ Đánh'
+    - '&7 +1.5 Tim'    
+    - '&7 +1 Giáp'        
+    - ''
+    - '&7◆ ◆ ◆ &7&lTHƯỜNG ◆ ◆ ◆'
+    - '&7* SỌ phép bị vỡ'
+    - '&0&o#sothuong1'
+    - '&7(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 3.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.03
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 3.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 1.0    
+  # thuong2:
+    # Material: SKULL_ITEM
+    # Data: 3
+    # Name: '&7&lSỌ phép bị vỡ &7[2♦]'
+    # Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWI3MzhmYTA1YjI3ZjE4ODc0ZTU3ZDk1YjBiNmM5ZmFkZDFiNTU4ODk0ZjgyZTAyNjFiYTE1NDRlNmZiYmYxZCJ9fX0='
+    # Lore:
+    # - ''
+    # - '&7 +3.5 Sát Thương'
+    # - '&7 +4% Tốc Độ Đánh'
+    # - '&7 +2 Tim'    
+    # - '&7 +4 Giáp'        
+    # - ''
+    # - '&7◆ ◆ ◆ [2♦] &7&lTHƯỜNG &7(2♦) ◆ ◆ ◆'
+    # - '&7* SỌ phép bị vỡ (2♦)'
+    # - '&0&o#sothuong2'
+    # - '&7(Đặt lên Hotbar để kích hoạt!)'
+    # AbilityType: 'Ability'
+    # Abilities:
+      # Ability:
+        # '0':
+          # Type: 'AttackDamage'
+          # Operator: 0
+          # Value: 3.5
+        # '1':
+          # Type: 'AttackSpeed'
+          # Operator: 1
+          # Value: 0.03
+        # '2':
+          # Type: 'MaxHealth'
+          # Operator: 0
+          # Value: 10
+        # '3':
+          # Type: 'Armor'
+          # Operator: 0
+          # Value: 4.0   
+  # thuong3:
+    # Material: SKULL_ITEM
+    # Data: 3
+    # Name: '&7&lSỌ phép bị vỡ &7(3♦)'
+    # Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWI3MzhmYTA1YjI3ZjE4ODc0ZTU3ZDk1YjBiNmM5ZmFkZDFiNTU4ODk0ZjgyZTAyNjFiYTE1NDRlNmZiYmYxZCJ9fX0='
+    # Lore:
+    # - ''
+    # - '&7 +5 Sát Thương'
+    # - '&7 +5% Tốc Độ Đánh'
+    # - '&7 +3 Tim'    
+    # - '&7 +5 Giáp'        
+    # - ''
+    # - '&7◆ ◆ ◆ (3♦) &7&lTHƯỜNG &7(3♦) ◆ ◆ ◆'
+    # - '&7* SỌ phép bị vỡ (3♦)'
+    # - '&0&o#sothuong3'
+    # - '&7(Đặt lên Hotbar để kích hoạt!)'
+    # AbilityType: 'Ability'
+    # Abilities:
+      # Ability:
+        # '0':
+          # Type: 'AttackDamage'
+          # Operator: 0
+          # Value: 5.0
+        # '1':
+          # Type: 'AttackSpeed'
+          # Operator: 1
+          # Value: 5.0
+        # '2':
+          # Type: 'MaxHealth'
+          # Operator: 0
+          # Value: 3.0
+        # '3':
+          # Type: 'Armor'
+          # Operator: 0
+          # Value: 5.0
+  hiem:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&e&lSỌ phép bị nguyền rủa'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYxNzg1NWZmMTI2OGQ5NTliZDlmMjM5Mzg0ZmUwNDMxZWJkNzUxYjI2MjQ2MTljNTU1ZTlkNDcxZTk0NDAifX19'
+    Lore:
+    - ''
+    - '&7 +5 Sát Thương'
+    - '&7 +5% Tốc Độ Đánh'
+    - '&7 +2.5 Tim'    
+    - '&7 +2 Giáp'        
+    - ''
+    - '&E◆ ◆ ◆ &E&lHIẾM &E◆ ◆ ◆'
+    - '&E* SỌ phép bị nguyền rủa'
+    - '&0&o#sohiem1'
+    - '&E(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 5.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.05
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 5.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 2.0       
+  hiem2:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&e&lSỌ phép bị nguyền rủa &e(2♦)'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYxNzg1NWZmMTI2OGQ5NTliZDlmMjM5Mzg0ZmUwNDMxZWJkNzUxYjI2MjQ2MTljNTU1ZTlkNDcxZTk0NDAifX19'
+    Lore:
+    - ''
+    - '&7 +5 Sát Thương'
+    - '&7 +6% Tốc Độ Đánh'
+    - '&7 +3 Tim'    
+    - '&7 +3 Giáp'        
+    - ''
+    - '&E◆ ◆ ◆ &e(2♦) &E&lHIẾM &e(2♦) &E◆ ◆ ◆'
+    - '&E* SỌ phép bị nguyền rủa &e(2♦)'
+    - '&0&o#sohiem2'
+    - '&E(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 5.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.06
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 6.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 3.0      
+  hiem3:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&e&lSỌ phép bị nguyền rủa &e(3♦)'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYxNzg1NWZmMTI2OGQ5NTliZDlmMjM5Mzg0ZmUwNDMxZWJkNzUxYjI2MjQ2MTljNTU1ZTlkNDcxZTk0NDAifX19'
+    Lore:
+    - ''
+    - '&7 +6 Sát Thương'
+    - '&7 +6% Tốc Độ Đánh'
+    - '&7 +3.5 Tim'    
+    - '&7 +4 Giáp'        
+    - ''
+    - '&E◆ ◆ ◆ &e(3♦) &E&lHIẾM &e(3♦) &E◆ ◆ ◆'
+    - '&E* SỌ phép bị nguyền rủa &e(3♦)'
+    - '&0&o#sohiem3'
+    - '&E(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 6.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.06
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 7.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 4.0      
+  huyenthoai:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&6&lSỌ phép từ Chiến binh'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM2OGI3NzYyMDAwNTRmN2MzNzIwNjE2NTI0ZDU1MGRkZjkyNDNmNDg5NmNkNzFlNGE2OTJmZGRkNzJjNzFlNSJ9fX0='
+    Lore:
+    - ''
+    - '&7 +8 Sát Thương'
+    - '&7 +8% Tốc Độ Đánh'
+    - '&7 +4 Tim'    
+    - '&7 +5 Giáp'        
+    - ''
+    - '&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆'
+    - '&6* SỌ phép từ Chiến binh'
+    - '&0&o#sohuyenthoai1'
+    - '&6(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 8.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.08
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 8.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 5.0   
+  huyenthoai2:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&6&lSỌ phép từ Chiến binh &6(2♦)'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM2OGI3NzYyMDAwNTRmN2MzNzIwNjE2NTI0ZDU1MGRkZjkyNDNmNDg5NmNkNzFlNGE2OTJmZGRkNzJjNzFlNSJ9fX0='
+    Lore:
+    - ''
+    - '&7 +9 Sát Thương'
+    - '&7 +10% Tốc Độ Đánh'
+    - '&7 +5 Tim'    
+    - '&7 +6 Giáp'        
+    - ''
+    - '&6◆ ◆ ◆ &6(2♦) &6&lHUYỀN THOẠI &6(2♦) &6◆ ◆ ◆'
+    - '&6* SỌ phép từ Chiến binh &6(2♦)'
+    - '&0&o#sohuyenthoai2'
+    - '&6(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 9.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.1
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 10.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 6.0   
+  huyenthoai3:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&6&lSỌ phép từ Chiến binh &6(3♦)'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM2OGI3NzYyMDAwNTRmN2MzNzIwNjE2NTI0ZDU1MGRkZjkyNDNmNDg5NmNkNzFlNGE2OTJmZGRkNzJjNzFlNSJ9fX0='
+    Lore:
+    - ''
+    - '&7 +10 Sát Thương'
+    - '&7 +12% Tốc Độ Đánh'
+    - '&7 +6 Tim'    
+    - '&7 +7 Giáp'        
+    - ''
+    - '&6◆ ◆ ◆ &6(3♦) &6&lHUYỀN THOẠI &6(3♦) &6◆ ◆ ◆'
+    - '&6* SỌ phép từ Chiến binh &6(3♦)'
+    - '&0&o#sohuyenthoai3'
+    - '&6(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 10.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.12
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 12.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 7.0 
+  truyenthuyet:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&5&L✧&D&L✧&5&L✧ &d&lSỌ phép từ Kiếm sĩ &r&5&L✧&D&L✧&5&L✧'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGIxZTljNzFiZmQ1MWI2MGVhNjA2ZTc5N2QwYjJjMWZkNzc2Y2FjMGEwNTczZmQ5NjAwMjExNTVjYjQwZDY1In19fQ=='
+    Lore:
+    - ''
+    - '&7 +10 Sát Thương'
+    - '&7 +10% Tốc Độ Đánh'
+    - '&7 +5 Tim'    
+    - '&7 +8 Giáp'        
+    - ''
+    - '&d◆ ◆ ◆ &d&lTRUYỀN THUYẾT &d◆ ◆ ◆'
+    - '&d* SỌ phép từ Kiếm Sĩ'
+    - '&0&o#sotruyenthuyet1'
+    - '&d(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 10.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.1
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 10.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 8.0     
+  truyenthuyet2:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&5&L✧&D&L✧&5&L✧ &d&lSỌ phép từ Kiếm sĩ&r &9(2♦) &5&L✧&D&L✧&5&L✧'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGIxZTljNzFiZmQ1MWI2MGVhNjA2ZTc5N2QwYjJjMWZkNzc2Y2FjMGEwNTczZmQ5NjAwMjExNTVjYjQwZDY1In19fQ=='
+    Lore:
+    - ''
+    - '&7 +12 Sát Thương'
+    - '&7 +12% Tốc Độ Đánh'
+    - '&7 +6 Tim'    
+    - '&7 +9 Giáp'        
+    - ''
+    - '&d◆ ◆ ◆ &d(2♦) &d&lTRUYỀN THUYẾT &d(2♦) &d◆ ◆ ◆'
+    - '&d* SỌ phép từ Kiếm Sĩ &9(2♦)'
+    - '&0&o#sotruyenthuyet2'
+    - '&d(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 12.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.12
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 12.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 9.0     
+  truyenthuyet3:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&5&L✧&D&L✧&5&L✧ &d&lSỌ phép từ Kiếm sĩ&r &9(3♦) &5&L✧&D&L✧&5&L✧'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGIxZTljNzFiZmQ1MWI2MGVhNjA2ZTc5N2QwYjJjMWZkNzc2Y2FjMGEwNTczZmQ5NjAwMjExNTVjYjQwZDY1In19fQ=='
+    Lore:
+    - ''
+    - '&7 +16 Sát Thương'
+    - '&7 +16% Tốc Độ Đánh'
+    - '&7 +8 Tim'    
+    - '&7 +10 Giáp'        
+    - ''
+    - '&d◆ ◆ ◆ &d(3♦) &d&lTRUYỀN THUYẾT &d(3♦) &d◆ ◆ ◆'
+    - '&d* SỌ phép từ Kiếm Sĩ &9(3♦)'
+    - '&0&o#sotruyenthuyet3'
+    - '&d(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 16.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.16
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 16.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 10.0 
+  toicao:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&C&L⊰&4&L⊰&C&L⊰ &4&lSỌ phép Địa ngục &4&L⊱&C&L⊱&4&L⊱'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmI5ZTQzODZlNTRhYzdmNmUxOGZiZjVjMDlmYjcwMzE5NTNkMGE1MWIwNTRjNWI0ZDYzZjYxOGVlYjI2MzRhOSJ9fX0='
+    Lore:
+    - ''
+    - '&7 +15 Sát Thương'
+    - '&7 +15% Tốc Độ Đánh'
+    - '&7 +7.5 Tim'    
+    - '&7 +12 Giáp'        
+    - ''
+    - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+    - '&4* SỌ phép Địa ngục'
+    - '&0&o#sotoicao1'
+    - '&4(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 15.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.15
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 15.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 11.0     
+  toicao2:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&C&L⊰&4&L⊰&C&L⊰ &4&lSỌ phép Địa ngục &4(2♦) &4&L⊱&C&L⊱&4&L⊱'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmI5ZTQzODZlNTRhYzdmNmUxOGZiZjVjMDlmYjcwMzE5NTNkMGE1MWIwNTRjNWI0ZDYzZjYxOGVlYjI2MzRhOSJ9fX0='
+    Lore:
+    - ''
+    - '&7 +17 Sát Thương'
+    - '&7 +17% Tốc Độ Đánh'
+    - '&7 +9 Tim'    
+    - '&7 +13 Giáp'        
+    - ''
+    - '&4፠ ፠ ፠ &4(2♦) &4&lTỐI CAO &4(2♦) &4፠ ፠ ፠'
+    - '&4* SỌ phép Địa ngục &4(2♦)'
+    - '&0&o#sotoicao2'
+    - '&4(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 17.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.17
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 18.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 12.0   
+  toicao3:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&C&L⊰&4&L⊰&C&L⊰ &4&lSỌ phép Địa ngục &4(3♦) &4&L⊱&C&L⊱&4&L⊱'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmI5ZTQzODZlNTRhYzdmNmUxOGZiZjVjMDlmYjcwMzE5NTNkMGE1MWIwNTRjNWI0ZDYzZjYxOGVlYjI2MzRhOSJ9fX0='
+    Lore:
+    - ''
+    - '&7 +17.5 Sát Thương'
+    - '&7 +18% Tốc Độ Đánh'
+    - '&7 +10 Tim'    
+    - '&7 +14 Giáp'        
+    - ''
+    - '&4፠ ፠ ፠ &4(3♦) &4&lTỐI CAO &4(3♦) &4፠ ፠ ፠'
+    - '&4* SỌ phép Địa ngục &4(3♦)'
+    - '&0&o#sotoicao3'
+    - '&4(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 17.5
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.18
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 20.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 13.0          
+  thuongco:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lSỌ phép từ Trùm Cướp Biển&f﹞&6﹞&d﹞&2&l⌘⌘'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjc1NDBiOTM5ZThlOTcyNmNkMjc3NDBkNDQ4ZDExOGNjYTFmZGM1MDlmNTFjNTg4NzZjODU0ODBiMzAyMTQzZSJ9fX0='
+    Lore:
+    - ''
+    - '&7 +20 Sát Thương'
+    - '&7 +20% Tốc Độ Đánh'
+    - '&7 +10 Tim'    
+    - '&7 +16 Giáp'        
+    - ''
+    - '&2&l⌘⌘&6﹝&e﹝&6﹝&a&lTHƯỢNG CỔ&6﹞&e﹞&6﹞&2&l⌘⌘'
+    - '&2* SỌ phép từ Trùm Cướp Biển'
+    - '&0&o#sothuongco1'
+    - '&2(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 15.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.15
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 20.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 14.0     
+  thuongco2:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lSỌ phép từ Trùm Cướp Biển &2(2♦)&f﹞&6﹞&d﹞&2&l⌘⌘'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjc1NDBiOTM5ZThlOTcyNmNkMjc3NDBkNDQ4ZDExOGNjYTFmZGM1MDlmNTFjNTg4NzZjODU0ODBiMzAyMTQzZSJ9fX0='
+    Lore:
+    - ''
+    - '&7 +22 Sát Thương'
+    - '&7 +22% Tốc Độ Đánh'
+    - '&7 +12 Tim'    
+    - '&7 +18 Giáp'        
+    - ''
+    - '&2&l⌘⌘&6﹝&e﹝&6﹝&2(2♦) &a&lTHƯỢNG CỔ &2(2♦)&6﹞&e﹞&6﹞&2&l⌘⌘'
+    - '&2* SỌ phép từ Trùm Cướp Biển (2♦)'
+    - '&0&o#sothuongco2'
+    - '&2(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 22.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.22
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 24.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 15.0  
+  thuongco3:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lSỌ phép từ Trùm Cướp Biển &2(3♦)&f﹞&6﹞&d﹞&2&l⌘⌘'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjc1NDBiOTM5ZThlOTcyNmNkMjc3NDBkNDQ4ZDExOGNjYTFmZGM1MDlmNTFjNTg4NzZjODU0ODBiMzAyMTQzZSJ9fX0='
+    Lore:
+    - ''
+    - '&7 +24 Sát Thương'
+    - '&7 +24% Tốc Độ Đánh'
+    - '&7 +14 Tim'    
+    - '&7 +20 Giáp'        
+    - ''
+    - '&2&l⌘⌘&6﹝&e﹝&6﹝&2(3♦) &a&lTHƯỢNG CỔ &2(3♦)&6﹞&e﹞&6﹞&2&l⌘⌘'
+    - '&2* SỌ phép từ Trùm Cướp Biển (3♦)'
+    - '&0&o#sothuongco3'
+    - '&2(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 24.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.24
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 28.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 16.0
+  thienha:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&b♫&3☘&b♫ &b&lSỌ phép từ Nhạc Sỹ Thiên Hà &b♫&3☘&b♫'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU4MDA0NjY3MzE3YWMwZDE5ZjJiNmJiY2Y3ZmQ5YTg1MGZlMzk1M2Y5NzI4NzVmZDNjZTcwZWVlMDJhMWM4MCJ9fX0='
+    Lore:
+    - ''
+    - '&3 +32 Sát Thương'
+    - '&3 +28% Tốc Độ Đánh'
+    - '&3 +26 Tim'    
+    - '&3 +26 Giáp'        
+    - ''
+    - '&3★&b✮ &d☾&c⦿&d☽ &b&lTHÁI DƯƠNG HỆ &d☾&c⦿&d☽&b ✮&3★'
+    - '&b★ SỌ phép từ Nhạc sỹ Thiên Hà '
+    - '&b★ Sức mạnh của âm nhạc'
+    - '&0&o#sothienha1'
+    - '&b(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 32.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.28
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 52.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 17.0 
+  thienha2:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&b♫&3☘&b♫ &b&lSỌ phép từ Nhạc Sỹ Thiên Hà &3(2♦)&f &b♫&3☘&b♫'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU4MDA0NjY3MzE3YWMwZDE5ZjJiNmJiY2Y3ZmQ5YTg1MGZlMzk1M2Y5NzI4NzVmZDNjZTcwZWVlMDJhMWM4MCJ9fX0='
+    Lore:
+    - ''
+    - '&3 +34 Sát Thương'
+    - '&3 +30% Tốc Độ Đánh'
+    - '&3 +28 Tim'    
+    - '&3 +28 Giáp'        
+    - ''
+    - '&3★&b✮✮ &d☾&c⦿&d☽ &b&lTHÁI DƯƠNG HỆ &d☾&c⦿&d☽&b ✮✮&3★'
+    - '&b★ SỌ phép từ Nhạc sỹ Thiên Hà &3(2♦)'
+    - '&b★ Sức mạnh của âm nhạc'
+    - '&0&o#sothienha2'
+    - '&b(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 34.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.30
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 56.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 18.0  
+  thienha3:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&b♫&3☘&b♫ &b&lSỌ phép từ Nhạc Sỹ Thiên Hà &3(3♦)&f &b♫&3☘&b♫'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU4MDA0NjY3MzE3YWMwZDE5ZjJiNmJiY2Y3ZmQ5YTg1MGZlMzk1M2Y5NzI4NzVmZDNjZTcwZWVlMDJhMWM4MCJ9fX0='
+    Lore:
+    - ''
+    - '&3 +36 Sát Thương'
+    - '&3 +32% Tốc Độ Đánh'
+    - '&3 +30 Tim'    
+    - '&3 +30 Giáp'        
+    - ''
+    - '&3★&b✮✮✮ &d☾&c⦿&d☽ &b&lTHÁI DƯƠNG HỆ &d☾&c⦿&d☽&b ✮✮✮&3★'
+    - '&b★ SỌ phép từ Nhạc sỹ Thiên Hà &3(3♦)'
+    - '&b★ Sức mạnh của âm nhạc'
+    - '&0&o#sothienha3'
+    - '&b(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 36.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.32
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 60.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 19.0   
+  hopquanoel1:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&f&l❅ &bSọ phép &b&lGiáng sinh &b2023 &b(1♦) &f&l❅'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNiYTlhOTQ4ZWYxMjVhYWZkYjZiYzkxYmU2YzgwNGQ3MWFlZTE2NGJhMjE5N2IwYjIyNWE4NDdmZmYwNDhjMCJ9fX0='
+    Lore:
+    - ''
+    - '&7 +36 Sát Thương'
+    - '&7 +28% Tốc Độ Đánh'
+    - '&7 +30 Tim'    
+    - '&7 +28 Giáp'        
+    - ''
+    - '&b❅ &b&lGIÁNG SINH &b❅'
+    - '&b★ Nhận &c10% &btốc độ di chuyển'
+    - '&b★ Được tạo ra từ một loại quái vật giáng sinh,'
+    - '&bmang trong mình sức mạnh của giáng sinh'
+    - '&0&o#satan'
+    - '&b(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 40.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.35
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 30.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 32.0
+        '4':
+          Type: 'MovementSpeed'
+          Operator: 1
+          Value: 10.0        
+  hopquanoel2:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&f&l❅ &bSọ phép &b&lGiáng sinh &b2023 &b(2♦) &f&l❅'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNiYTlhOTQ4ZWYxMjVhYWZkYjZiYzkxYmU2YzgwNGQ3MWFlZTE2NGJhMjE5N2IwYjIyNWE4NDdmZmYwNDhjMCJ9fX0='
+    Lore:
+    - ''
+    - '&7 +38 Sát Thương'
+    - '&7 +30% Tốc Độ Đánh'
+    - '&7 +32 Tim'    
+    - '&7 +30 Giáp'        
+    - ''
+    - '&b❅&f&l❅ &b&lGIÁNG SINH &b ❅&f&l❅'
+    - '&b★ Nhận &c15% &btốc độ di chuyển'
+    - '&b★ Được tạo ra từ một loại quái vật giáng sinh,'
+    - '&bmang trong mình sức mạnh của giáng sinh'
+    - '&0&o#satan'
+    - '&b(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 38.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.30
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 32.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 30.0
+        '4':
+          Type: 'MovementSpeed'
+          Operator: 1
+          Value: 15.0        
+  hopquanoel3:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&f&l❅ &bSọ phép &b&lGiáng sinh &b2023 &b(3♦) &f&l❅'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNiYTlhOTQ4ZWYxMjVhYWZkYjZiYzkxYmU2YzgwNGQ3MWFlZTE2NGJhMjE5N2IwYjIyNWE4NDdmZmYwNDhjMCJ9fX0='
+    Lore:
+    - ''
+    - '&7 +40 Sát Thương'
+    - '&7 +35% Tốc Độ Đánh'
+    - '&7 +35 Tim'    
+    - '&7 +32 Giáp'        
+    - ''
+    - '&f❅&f&l❅&f❅ &b&lGIÁNG SINH &f ❅&f&l❅&f❅'
+    - '&b★ Nhận &c20% &btốc độ di chuyển'
+    - '&b★ Hồi phục sau mỗi &c120 giây'
+    - '&b★ Được tạo ra từ một loại quái vật giáng sinh,'
+    - '&bmang trong mình sức mạnh của giáng sinh'
+    - '&0&o#satan'
+    - '&b(Đặt lên Hotbar để kích hoạt!)'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'AttackDamage'
+          Operator: 0
+          Value: 40.0
+        '1':
+          Type: 'AttackSpeed'
+          Operator: 1
+          Value: 0.35
+        '2':
+          Type: 'MaxHealth'
+          Operator: 0
+          Value: 35.0
+        '3':
+          Type: 'Armor'
+          Operator: 0
+          Value: 32.0
+        '4':
+          Type: 'MovementSpeed'
+          Operator: 1
+          Value: 20.0      
+      AutoCommand:
+        LoopTime: 120
+        List:
+        - 'CONSOLE: heal %player_name%'                          
+  heart:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&6Nhẫn Trái Tim'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmI0ZDM1MDNjNDI5MmI4ZTViZTFmZjhlOWFmNzFiMjllYWM4ODY1MzE3OTNkOGZjMmU5OTFiN2JlYzlhZDg4ZSJ9fX0='
+    Lore:
+    - ''
+    - '&f* Thuộc tính:'
+    - '&f Tăng &e25% &fTim cơ bản.'
+    - '&f Tăng &e10% &fTốc độ di chuyển.'
+    - '&0&o#nhantraiTim1'
+    - '&c* Áp dụng khi đặt trên Hotbar.'
+    AbilityType: 'Ability'
+    Abilities:
+      Ability:
+        '0':
+          Type: 'MaxHealth'
+          Operator: 1
+          Value: 25.0
+        '1':
+          Type: 'MovementSpeed'
+          Operator: 1
+          Value: 10.0
+  autoheal:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&6Hộp Hồi Phục'
+    Texture: 'hdb-15968'
+    Lore:
+    - ''
+    - '&f* Thuộc tính:'
+    - '&f Tự động hồi phục mỗi &e60 giây&f.'
+    - '&0&o#hophoiphuc1'
+    - '&c* Áp dụng khi đặt trên Hotbar.'
+    AbilityType: 'AutoCommand'
+    Abilities:
+      AutoCommand:
+        LoopTime: 60
+        List:
+        - 'CONSOLE: heal %player_name%'
+        - 'SOUND: entity_experience_orb_pickup'
+  food:
+    Material: SKULL_ITEM
+    Data: 3
+    Name: '&6Thức Ăn'
+    Texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTllZDIyNTU1YzY1NDk0NWI4YmU1YTBjZDQzYzBiYmU0MTUwZDczNWVjNzE5YjQ1YzU4ZjlhZDFmMTllYTVlZiJ9fX0='
+    Lore:
+    - ''
+    - '&f* Thuộc tính:'
+    - '&f Hồi phục thanh thức ăn khi nhấn.'
+    - '&0&o#sothucan1'
+    - '&c* Áp dụng khi đặt trên Hotbar.'
+    AbilityType: 'Command'
+    Abilities:
+      Command:
+        Cooldown: 30
+        List:
+        - 'CONSOLE: feed %player_name%'
+        - 'SOUND: entity_player_levelup'

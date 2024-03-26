@@ -1,0 +1,77 @@
+menu_title: '&c&lĐẬP TRỨNG'
+open_command: 
+size: 27
+items:
+  '1':
+    material: 'barrier'
+    slot: 10
+    priority: 1
+    display_name: '&c&lChưa Sẵn Sàng'
+    lore:
+      - '&cBạn chưa sẵn sàng cho việc này!'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[close]'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true     
+  '2':
+    material: 'dragon_egg'
+    slot: 13
+    priority: 1
+    display_name: '&5★&d☾&c&l乂&d☽ &c&k||&d&l TRỨNG RỒNG &d(&5｡｡&dBáu Vật&5｡｡&d) &c&k||&d ☾&c&l乂&d☽&5★'
+    lore:
+      - '&bTrứng rồng ngoài không gian có được khi'
+      - '&btiêu diệt hắn ta, phần thưởng hấp dẫn.'
+      - ''
+      - '&3★&b✮ &d☾&c⦿&d☽ &b&lTHIÊN HÀ &d☾&c⦿&d☽&b ✮&3★'
+      - ''
+      - '&7[ &c?? &7]'
+      - '&7[ &c?? &7]'
+      - '&7[ &c?? &7]'
+      - '&7[ &c?? &7]'
+      - '&7[ &c?? &7]'
+      - '&7[ &c?? &7]'
+      - ''
+      - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true     
+
+  '3':
+    material: 'diamond_axe'
+    slot: 16
+    priority: 1
+    display_name: '&a&lĐẬP TRỨNG'
+    lore:
+      - '&6* &eBạn đã sẵn sàng cho việc này!'
+      - ''
+      - '&e&lHiện có: &a%playerpoints_points%&7/&b20⛁'
+      - ''
+      - '&7Chuột phải để bắt đầu đập trứng!'
+      - ''
+      - '&0&o#Item menu'
+    left_click_requirement:
+      requirements:
+        has_points:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '20'
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:dragon_egg,amt:1,namestartswiths:TEST,lorecontains:#TRUNGRONGKHONGGIAN%'
+          output: '1'
+      deny_commands:
+        - '[message] &f[&eMineahihi&f] &7Bạn không có đủ xu để đập trứng, &f(&bhiện có: &c%playerpoints_points%&f)'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true       
+    left_click_commands:
+      - '[console] points take %player_name% 20'
+      - '[message] &aThứ bạn mở ra là ???'
+      - '[console] cr open %player_name% daptrung<delay=40>'
+      - '[message] &c-20 xu'
+      - '[close]'    
+
+
+  

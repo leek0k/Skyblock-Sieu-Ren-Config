@@ -1,0 +1,92 @@
+file: events.yml
+menu_title: '&e&lSự Kiện &c&lTết &6&lQuý Mão &f- &c&l2023'
+open_command: 
+- events
+- event
+- tet
+- tetquymao
+- quymao
+- eventmenu
+- menuevents
+- menuevent
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 45
+update_interval: 1
+open_requirement: 
+items:
+  'background':
+    material: STAINED_GLASS_PANE
+    data: 1
+    display_name: '&a☘'
+    slots:
+    - '0-3'
+    - '5-9'
+    - '12-14'
+    - '17-18'
+    - '26-27'
+    - '35-36'
+    - '30-32'
+    - '35-39'
+    - '41-44'
+  'intro1':
+    material: head-%player_name%
+    slot: 4
+    priority: 1
+    update: true
+    display_name: '&7'
+    lore:
+    - '&6&lMine&f&lAhihi &ckính chúc &f%player_name%'
+    - '&ccó một dịp Tết &eVui vẻ&c, &eAn khang&c, &eThịnh vượng'
+    - '&cvà gặp nhiều &eMay mắn &a☘'
+    - ''
+    - '&0&o#Item menu'
+    # view_requirement:
+      # requirements:
+        # noskin:
+          # type: string equals
+          # input: '%skinsrestorer_getSkinName%'
+          # output: 'None'
+  'exit':
+    material: DOUBLE_PLANT
+    slot: 40
+    display_name: '&c&l[Thoát]'
+    lore:
+    - '&7Thoát menu'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[close]'
+  'help':
+    material: BOOK
+    slot: 20
+    display_name: '&fHướng Dẫn'
+    lore:
+    - '&7Xem các cày sự kiện và'
+    - '&7những vật phẩm sự kiện.'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[openguimenu] helpsukien'
+  'trade':
+    material: WORKBENCH
+    slot: 22
+    display_name: '&fTrao Đổi'
+    lore:
+    - '&7Trao đổi những vật phẩm'
+    - '&7có thể trao đổi trong sự kiện.'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[console] ecraft open sukien %player_name%'
+  'shop':
+    material: EMERALD
+    slot: 24
+    display_name: '&fCửa Hàng'
+    lore:
+    - '&7Mua những vật phẩm chỉ có'
+    - '&7trong sự kiện này.'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[console] chestcommands open eventshop %player_name%'

@@ -1,0 +1,40 @@
+location: NewSpawn:15.5:49.50:-1780.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&f&l** &6&lSỰ KIỆN &F&L**'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&b&l**&7[&b&lSKY DROP&7]&b&l**'
+    height: 0.3
+  - content: '&e&lTình trạng : &f%crazyenvoy_time_left%'
+    height: 0.3
+  - content: '&e&lĐợt tiếp theo : &f%crazyenvoy_cooldown%'
+    height: 0.3
+  - content: '&e&lSKYDROP sót lại : &f%crazyenvoy_crates_left%'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&e[&4♜&e] &6&lCHIẾM ĐỊA BÀN'
+    height: 0.3
+  - content: '&e&lThời gian bắt đầu:'
+    height: 0.3
+  - content: '&a&lTrưa hằng ngày&a: &f12:00'
+    height: 0.3
+  - content: '&a&lChiều tối hằng ngày&a: &f18:00, 21:00 và 22:00'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&4&l[!] &c&lSĂN LÙNG YÊU TINH &4&l[!]'
+    height: 0.3
+  - content: '&e&lThời gian hồi sinh: &f3h'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  actions: {}

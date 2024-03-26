@@ -1,0 +1,572 @@
+list:
+  # Mã code /code <mã>
+  neyuq:
+    # Có hiệu lực hay không
+    enable: true
+    # Tùy chỉnh
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: -1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2023/06/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      #limit-per-player: '&cBạn đã nhận quà!'
+      #limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      #expire: '&cCode đã hết giá trị sử dụng!'
+      #require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND ev give %player_name% neyuq 1'
+  vietbua:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: -1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2023/06/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      #limit-per-player: '&cBạn đã nhận quà!'
+      #limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      #expire: '&cCode đã hết giá trị sử dụng!'
+      #require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND ev give %player_name% vietbua 1' 
+  DR4GONSROBLOX:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: -1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2023/06/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      #limit-per-player: '&cBạn đã nhận quà!'
+      #limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      #expire: '&cCode đã hết giá trị sử dụng!'
+      #require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND ev give %player_name% dragonvn 1'    
+  kresh:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: -1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2023/02/15 12:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      #limit-per-player: '&cBạn đã nhận quà!'
+      #limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      #expire: '&cCode đã hết giá trị sử dụng!'
+      #require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND ev give %player_name% kresh 1'
+  alenkai:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: -1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2023/06/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      #limit-per-player: '&cBạn đã nhận quà!'
+      #limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      #expire: '&cCode đã hết giá trị sử dụng!'
+      #require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND ev give %player_name% alenkai 1'
+  sxP5h946E:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: 1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2024/01/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      limit-per-player: '&cBạn đã nhận quà!'
+      limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      expire: '&cCode đã hết giá trị sử dụng!'
+      require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND silkspawners give %player_name% zombie 2'
+    - 'CONSOLE_COMMAND silkspawners give %player_name% skeleton 2'
+    - 'CONSOLE_COMMAND eco give %player_name% 100000'
+    - 'CONSOLE_COMMAND exp give %player_name% 10000'
+  27219oYqZ:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: 1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2024/01/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      limit-per-player: '&cBạn đã nhận quà!'
+      limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      expire: '&cCode đã hết giá trị sử dụng!'
+      require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND silkspawners give %player_name% zombie 2'
+    - 'CONSOLE_COMMAND silkspawners give %player_name% skeleton 2'
+    - 'CONSOLE_COMMAND eco give %player_name% 100000'
+    - 'CONSOLE_COMMAND exp give %player_name% 10000'
+  7k7805aLn:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: 1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2024/01/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      limit-per-player: '&cBạn đã nhận quà!'
+      limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      expire: '&cCode đã hết giá trị sử dụng!'
+      require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND silkspawners give %player_name% zombie 2'
+    - 'CONSOLE_COMMAND silkspawners give %player_name% skeleton 2'
+    - 'CONSOLE_COMMAND eco give %player_name% 100000'
+    - 'CONSOLE_COMMAND exp give %player_name% 10000'
+  Hf536m2y4:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: 1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2024/01/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      limit-per-player: '&cBạn đã nhận quà!'
+      limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      expire: '&cCode đã hết giá trị sử dụng!'
+      require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND silkspawners give %player_name% zombie 2'
+    - 'CONSOLE_COMMAND silkspawners give %player_name% skeleton 2'
+    - 'CONSOLE_COMMAND eco give %player_name% 100000'
+    - 'CONSOLE_COMMAND exp give %player_name% 10000'
+  u0698v4W0:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: 1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2024/01/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      limit-per-player: '&cBạn đã nhận quà!'
+      limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      expire: '&cCode đã hết giá trị sử dụng!'
+      require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND silkspawners give %player_name% zombie 2'
+    - 'CONSOLE_COMMAND silkspawners give %player_name% skeleton 2'
+    - 'CONSOLE_COMMAND eco give %player_name% 100000'
+    - 'CONSOLE_COMMAND exp give %player_name% 10000'
+  31r245c6X:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: 1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2024/01/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      limit-per-player: '&cBạn đã nhận quà!'
+      limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      expire: '&cCode đã hết giá trị sử dụng!'
+      require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND silkspawners give %player_name% zombie 2'
+    - 'CONSOLE_COMMAND silkspawners give %player_name% skeleton 2'
+    - 'CONSOLE_COMMAND eco give %player_name% 100000'
+    - 'CONSOLE_COMMAND exp give %player_name% 10000'
+  80CgHj519:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: 1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2024/01/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      limit-per-player: '&cBạn đã nhận quà!'
+      limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      expire: '&cCode đã hết giá trị sử dụng!'
+      require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND silkspawners give %player_name% zombie 2'
+    - 'CONSOLE_COMMAND silkspawners give %player_name% skeleton 2'
+    - 'CONSOLE_COMMAND eco give %player_name% 100000'
+    - 'CONSOLE_COMMAND exp give %player_name% 10000'
+  3210AbCkL:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: 1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2024/01/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      limit-per-player: '&cBạn đã nhận quà!'
+      limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      expire: '&cCode đã hết giá trị sử dụng!'
+      require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND silkspawners give %player_name% zombie 2'
+    - 'CONSOLE_COMMAND silkspawners give %player_name% skeleton 2'
+    - 'CONSOLE_COMMAND eco give %player_name% 100000'
+    - 'CONSOLE_COMMAND exp give %player_name% 10000'
+  FGat53113:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: 1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2024/01/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      limit-per-player: '&cBạn đã nhận quà!'
+      limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      expire: '&cCode đã hết giá trị sử dụng!'
+      require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND silkspawners give %player_name% zombie 2'
+    - 'CONSOLE_COMMAND silkspawners give %player_name% skeleton 2'
+    - 'CONSOLE_COMMAND eco give %player_name% 100000'
+    - 'CONSOLE_COMMAND exp give %player_name% 10000'
+  TAIJsj638:
+    # Có hiệu lực hay không
+    enable: true
+    # Chỉ có admin mới có thể tạo code (admin là người có permission codereward.admin)
+    only-admin: true
+    # Tùy chỉnh
+    settings:
+      # Mỗi người chơi chỉ nhập được per-player code
+      limit-per-player: 1
+      # Code này chỉ được per-code người chơi nhập được
+      # -1 để không giới hạn
+      limit-per-code: 1
+      # Thời gian hết hạn
+      # Để trống để sử dụng vô hạn
+      # Định dạng: yyyy/MM/dd HH:mm:ss. VD: 2100/01/31 06:00:00
+      expire-time: '2024/01/30 00:00:00'
+      # Quyền để sử dụng
+      # Nếu có, người chơi cần có quyền codereward.code.<code>
+      require-permission: false
+    # Thiết lập thông báo
+    # Không thiết lập để mặc định theo messages.yml
+    messages:
+      success: '&aNhận quà thành công!'
+      limit-per-player: '&cBạn đã nhận quà!'
+      limit-per-code: '&cMã đã hết số lượng để nhận quà!'
+      expire: '&cCode đã hết giá trị sử dụng!'
+      require-permission: '&cKhông có quyền để nhập mã này!'
+    # Quà kích hoạt
+    # Loại
+    # PLAYER_COMMAND <command> - Buộc người chơi thực thi lệnh (không op)
+    # OP_COMMAND <command> - Buộc người chơi thực thi lệnh (có op)
+    # CONSOLE_COMMAND <command> - Thực thi lệnh trên console
+    # PLAYER_MESSAGE <message> - Gửi tin nhắn đến người chơi
+    # CONSOLE_MESSAGE <message> - Gửi tin nhắn đến console
+    reward-execute:
+    - 'CONSOLE_COMMAND silkspawners give %player_name% zombie 2'
+    - 'CONSOLE_COMMAND silkspawners give %player_name% skeleton 2'
+    - 'CONSOLE_COMMAND eco give %player_name% 100000'
+    - 'CONSOLE_COMMAND exp give %player_name% 10000'

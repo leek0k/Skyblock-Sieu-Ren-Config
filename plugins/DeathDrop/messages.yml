@@ -1,0 +1,42 @@
+PREFIX: '&e&lDeathDrop >> &r'
+
+HELP:
+  header: '&8&l------=====[ &c&lDeathDrop v{version} &8&l]=====------'
+  help: '&8 > &c/{label} [help|?] &f: &7Hiển thị trang trợ giúp này.'
+  save: '&8 > &c/{label} save <id> &f: &7Lưu vật phẩm vào file.'
+  delete: '&8 > &c/{label} delete <id> &f: &7Xoá vật phẩm đã lưu.'
+  addworld: '&8 > &c/{label} addworld [world] &f: &7Thêm thế giới.'
+  delworld: '&8 > &c/{label} delworld <world> &f: &7Xoá thế giới.'
+  addmat: '&8 > &c/{label} addmat [material] &f: &7Thêm vật liệu.'
+  delmat: '&8 > &c/{label} delmat <material> &f: &7Xoá vật liệu.'
+  reload: '&8 > &c/{label} reload &f: &7Tải lại cấu hình.'
+  footer: '&8&l----------------------------------------'
+
+SUCCESS:
+  config-reload: '{prefix}&aTải lại cấu hình thành công!'
+
+  item-saved: '{prefix}&aĐã lưu thành công vật phẩm với ID &e{id}&a. Nó sẽ bị rơi nếu người chơi chết!'
+  item-deleted: '{prefix}&7Đã xoá vật phẩm với ID &e{id}&7!'
+
+  world-added: '{prefix}&aĐã thêm thành công thế giới &e{world}&a.'
+  world-deleted: '{prefix}&7Đã xoá thế giới &e{world}&7!'
+
+  material-added: '{prefix}&aĐã thêm thành công vật liệu &e{material}&a.'
+  material-deleted: '{prefix}&7Đã xoá vật liệu &e{material}&7!'
+
+FAIL:
+  no-permission: '{prefix}&cBạn không có quyền để làm điều đó!'
+  missing-args: '{prefix}&cThiếu cú pháp! Cách dùng: &e{usage}&c.'
+  only-players: '{prefix}&cChỉ người chơi mới có thể sử dụng câu lệnh này!'
+  only-console: '{prefix}&cVui lòng sử dụng lệnh này trên Console!'
+
+  no-item-found: '{prefix}&cKhông tìm thấy vật phẩm nào trên &ltay chính &ccủa bạn!'
+  id-not-found: '{prefix}&cKhông tìm thấy ID &e{value}&c!'
+
+  world-already-existed: '{prefix}&cĐã tồn tại thế giới với tên &e{world}&c!'
+  world-not-found: '{prefix}&cKhông tìm thấy thế giới với tên &e{value}&c!'
+  world-not-existed: '{prefix}&cKhông tồn tại thế giới với tên &e{world}&c!'
+
+  material-already-existed: '{prefix}&cĐã tồn tại vật liệu với tên &e{material}&c!'
+  material-not-found: '{prefix}&cKhông tìm thấy vật liệu với tên &e{value}&c!'
+  material-not-existed: '{prefix}&cKhông tồn tại vật liệu với tên &e{material}&c!'

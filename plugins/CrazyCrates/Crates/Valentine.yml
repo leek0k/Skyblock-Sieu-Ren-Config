@@ -1,0 +1,379 @@
+Crate:
+  CrateType: CSGO #Type of crate (CSGO/QuadCrate/QuickCrate/Roulette/CrateOnTheGo/FireCracker/Wonder/Wheel/War/Cosmic(This requires a additional info to work.)).
+  CrateName: '&f&lHòm &d&lValentine' #Name of the Inventory if a GUI crate.
+  StartingKeys: 0 #Starting amount of keys when the player 1st joins.
+  InGUI: false #If the crate shows in the /cc GUI. (If the crate type is QuickCrate/CrateOnTheGo/FireCracker then the Crate will not work. Quick Crate requires a Physical Crate.)
+  Slot: 23 #Slot the item is in the GUI.
+  OpeningBroadCast: false #Enables/Disables the Broadcasts message when they open a crate.
+  BroadCast: '%Prefix%&6&l%Player% &7is opening a &7&lBasic Chest&7.' #Message that is broadcasted when opening the crate.
+  Item: '130' #Item the crate is in the GUI
+  Glowing: false #If the crate in the main /cc GUI is glowing or not.
+  Name: '&f&lHÒM &d&lVALENTINE' #Name of the item in the GUI.
+  Lore: #The lore of the item in the GUI.
+    - '&e/hombau&7 để mua Hòm Báu.' 
+    - '&r'
+    - '&7 ◆ &nChuột-trái&r &bđể mở Hòm Báu nếu bạn đã mua.'
+    - '&7 ◆ &nChuột-Phải&r &bđể xem qua vật phẩm trong Hòm.'
+    - '&r'
+    - '&7Bạn đang có &c&n%keys%&r &7◆ &b&nHòm Kim Cương&r &7◆.'
+  Preview:
+    #Turn on and off the preview for this crate.
+    Toggle: true
+    #How many lines the previewChest should have. Including Header and Bottom (Between 3 and 6)
+    ChestLines: 6
+    Glass:
+      #Turn the glass boarder in the preview on and off.
+      Toggle: true
+      #The item that shows in the boarder. Can be glass or any other item.
+      Item: 'IRON_FENCE'      
+  Hologram:
+    #Toggle on and off the holograms for the crates.
+    Toggle: true
+    #The height of the hologram above the crate.
+    Height: 1.5
+    #The message that will be displayed.
+    Message:
+      - '&d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+      - '&f(!) Chuột trái để xem qua'
+    #The tiers in the Crate      
+  PhysicalKey:
+    Name: '&d&l↣&c&l❤&d&l↢ &f&l&nChìa Khoá&r &d&lVALENTINE&r &d&l↣&c&l❤&d&l↢' #Name of the Key.
+    Lore:
+    - '&r'
+    - '&7 ◆ &nChuột-trái&r &fđể mở &d&l↣&c&l❤&d&l↢ &f&l&nKho Báu &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    - '&7 ◆ &nChuột-Phải&r &fđể xem qua vật phẩm trong.'
+    Item: '351:9' #The item the key is.
+    Glowing: true #Makes the key look enchanted.
+  Prizes:
+    1d:
+      DisplayName: '&a&l500,000 $ | PHIẾU'
+      DisplayItem: 'PAPER'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'eco give %player_name% 500000'
+        - 'broadcast &6&l%Player% &7đã mở được &a&lx1 | 500,000 $ | PHIẾU &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    1s:
+      DisplayName: '&a&l1,000,000 $ | PHIẾU'
+      DisplayItem: 'PAPER'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'eco give %player_name% 1000000'
+        - 'broadcast &6&l%Player% &7đã mở được &a&lx1 | 1,000,000 $ | PHIẾU &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    1:
+      DisplayName: '&a&l2,000,000 $ | PHIẾU'
+      DisplayItem: 'PAPER'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'eco give %player_name% 2000000'
+        - 'broadcast &6&l%Player% &7đã mở được &a&lx1 | 2,000,000 $ | PHIẾU &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    2d:
+      DisplayName: '&a&l500,000 &e&lExp &a&l| x1 BÌNH'
+      DisplayItem: 'EXP_BOTTLE'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'xp give %player_name% 500000'
+        - 'broadcast &6&l%Player% &7đã mở được &a&lx1 | &a&l500,000 &e&lExp &a&l| BÌNH &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    2s:
+      DisplayName: '&a&l1,000,000 &e&lExp &a&l| x1 BÌNH'
+      DisplayItem: 'EXP_BOTTLE'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'xp give %player_name% 1000000'
+        - 'broadcast &6&l%Player% &7đã mở được &a&lx1 | &a&l1,000,000 &e&lExp &a&l| BÌNH &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    2:
+      DisplayName: '&a&l2,000,000 &e&lExp &a&l| x1 BÌNH'
+      DisplayItem: 'EXP_BOTTLE'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'xp give %player_name% 2000000'
+        - 'broadcast &6&l%Player% &7đã mở được &a&lx1 | &a&l2,000,000 &e&lExp &a&l| BÌNH &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    3:
+      DisplayName: '&e&lx4 | GHAST Spawner'
+      DisplayItem: 'MOB_SPAWNER'
+      DisplayAmount: 4
+      Lore:
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'silkspawners give %player_name% ghast 4'
+        - 'broadcast &6&l%Player% &7đã mở được &e&lx4 | GHAST Spawner &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    4:
+      DisplayName: '&e&lx3 | Iron Golem Spawner'
+      DisplayItem: 'MOB_SPAWNER'
+      DisplayAmount: 3
+      Lore:
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'silkspawners give %player_name% irongolem 3'
+        - 'broadcast &6&l%Player% &7đã mở được &6&lx3 | Iron Golem Spawner &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    5a:
+      DisplayName: '&6&lx64 &6&lSocola'
+      DisplayItem: '351:3'
+      DisplayAmount: 64
+      Lore:
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'ie give socola %player_name% 64'
+        - 'broadcast &6&l%Player% &7đã mở được &6&lx64 &6&lSocola &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    5c:
+      DisplayName: '&b&lx24 Đá Quý'
+      DisplayItem: 'DIAMOND'
+      DisplayAmount: 24
+      Lore:
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'ie give daquy %player_name% 24'
+        - 'broadcast &6&l%Player% &7đã mở được &b&lx24 Đá Quý &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    5b:
+      DisplayName: '&c&lx128 Hoa Hồng'
+      DisplayItem: '175:4'
+      DisplayAmount: 64
+      Lore:
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'ie give hoahong %player_name% 64'
+        - 'ie give hoahong %player_name% 64'
+        - 'broadcast &6&l%Player% &7đã mở được &c&lx128 Hoa Hồng &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    5:
+      DisplayName: '&fx15 &f&lTinh Hoa &d&lValentine'
+      DisplayItem: '351:1'
+      DisplayAmount: 15
+      Lore:
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'ie give tinhhoavalentine %player_name% 15'
+        - 'broadcast &6&l%Player% &7đã mở được &fx15 &f&lTinh Hoa &d&lValentine &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    6:
+      DisplayName: '&fx16 &f&lTinh Hoa &d&lValentine'
+      DisplayItem: '351:1'
+      DisplayAmount: 16
+      Lore:
+      MaxRange: 100
+      Chance: 4
+      Firework: true
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'ie give tinhhoavalentine %player_name% 16'
+        - 'broadcast &6&l%Player% &7đã mở được &fx16 &f&lTinh Hoa &d&lValentine &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    7:
+      DisplayName: '&fx17 &f&lTinh Hoa &d&lValentine'
+      DisplayItem: '351:1'
+      DisplayAmount: 17
+      Lore:
+      MaxRange: 100
+      Chance: 3
+      Firework: true
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'ie give tinhhoavalentine %player_name% 17'
+        - 'broadcast &6&l%Player% &7đã mở được &fx17 &f&lTinh Hoa &d&lValentine &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    8:
+      DisplayName: '&d&l↣&c&l❤&d&l↢ &f&lMŨ &d&lVALENTINE &d&l↣&c&l❤&d&l↢'
+      DisplayItem: 'DIAMOND_HELMET'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'asets givepiece %player_name% valentine HELMET'
+        - 'broadcast &6&l%Player% &7đã mở được &d&l↣&c&l❤&d&l↢ &f&lMŨ &d&lVALENTINE &d&l↣&c&l❤&d&l↢ &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    9:
+      DisplayName: '&d&l↣&c&l❤&d&l↢ &f&lGIÁP &d&lVALENTINE &d&l↣&c&l❤&d&l↢'
+      DisplayItem: 'DIAMOND_CHESTPLATE'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'asets givepiece %player_name% valentine CHESTPLATE'
+        - 'broadcast &6&l%Player% &7đã mở được &d&l↣&c&l❤&d&l↢ &f&lGIÁP &d&lVALENTINE &d&l↣&c&l❤&d&l↢ &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    10:
+      DisplayName: '&d&l↣&c&l❤&d&l↢ &f&lQUẦN &d&lVALENTINE &d&l↣&c&l❤&d&l↢'
+      DisplayItem: 'DIAMOND_LEGGINGS'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'asets givepiece %player_name% valentine LEGGINGS'
+        - 'broadcast &6&l%Player% &7đã mở được &d&l↣&c&l❤&d&l↢ &f&lQUẦN &d&lVALENTINE &d&l↣&c&l❤&d&l↢ &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    11:
+      DisplayName: '&d&l↣&c&l❤&d&l↢ &f&lỦNG &d&lVALENTINE &d&l↣&c&l❤&d&l↢'
+      DisplayItem: 'DIAMOND_BOOTS'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'asets givepiece %player_name% valentine BOOTS'
+        - 'broadcast &6&l%Player% &7đã mở được &d&l↣&c&l❤&d&l↢ &f&lỦNG &d&lVALENTINE &d&l↣&c&l❤&d&l↢ &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    12:
+      DisplayName: '&d&l↣&c&l❤&d&l↢ &f&lKIẾM &d&lVALENTINE &d&l↣&c&l❤&d&l↢'
+      DisplayItem: 'DIAMOND_SWORD'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'asets weapon %player_name% kiemvalentine'
+        - 'broadcast &6&l%Player% &7đã mở được &d&l↣&c&l❤&d&l↢ &f&lKIẾM &d&lVALENTINE &d&l↣&c&l❤&d&l↢ &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    13:
+      DisplayName: '&d&l↣&c&l❤&d&l↢ &f&lRÌU &d&lVALENTINE &d&l↣&c&l❤&d&l↢'
+      DisplayItem: 'DIAMOND_AXE'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'asets weapon %player_name% riuvalentine'
+        - 'broadcast &6&l%Player% &7đã mở được &d&l↣&c&l❤&d&l↢ &f&lRÌU &d&lVALENTINE &d&l↣&c&l❤&d&l↢ &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    14:
+      DisplayName: '&d&l↣&c&l❤&d&l↢ &f&lCUNG &d&lVALENTINE &d&l↣&c&l❤&d&l↢'
+      DisplayItem: 'BOW'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'asets weapon %player_name% cungvalentine'
+        - 'broadcast &6&l%Player% &7đã mở được &d&l↣&c&l❤&d&l↢ &f&lCUNG &d&lVALENTINE &d&l↣&c&l❤&d&l↢ &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+    15:
+      DisplayName: '&d&l↣&c&l❤&d&l↢ &f&lKHIÊN &d&lVALENTINE &d&l↣&c&l❤&d&l↢'
+      DisplayItem: 'SHIELD'
+      DisplayAmount: 1
+      Lore:
+      MaxRange: 100
+      Chance: 3
+      Firework: true
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      HideItemFlags: false
+      Commands:
+        - 'ie give khienvalentine %player_name% 1'
+        - 'broadcast &6&l%Player% &7đã mở được &d&l↣&c&l❤&d&l↢ &f&lKHIÊN &d&lVALENTINE &d&l↣&c&l❤&d&l↢ &7từ &d&l↣&c&l❤&d&l↢ &f&l&nHÒM&r &d&l&nVALENTINE&r &d&l↣&c&l❤&d&l↢'
+      

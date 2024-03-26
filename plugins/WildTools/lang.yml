@@ -1,0 +1,126 @@
+####################################################
+##                                                ##
+##              WildTools Messages                ##
+##              Developed by Ome_R                ##
+##                                                ##
+####################################################
+
+# If you want to disable a message, set it to '' (empty)
+
+# Called when a player doesn't have the required block.
+BUILDER_NO_BLOCK: '&e&l(!) &7You must have at least x1 {0} for building a pillar.'
+
+# Called when a player runs a command not in the required usage
+COMMAND_USAGE: '&e&l(!) &7Usage: /{0}'
+
+# Called when a player has a cool-down on a tool.
+COOLDOWN_TIME: '&e&l(!) &7Hãy chờ {0} giây để sử dụng lại.'
+
+# Called when a player uses a crafting wand on a chest.
+CRAFT_SUCCESS: '&e&l(!) &7Successfully crafted x{0} items.'
+NO_CRAFT_ITEMS: '&e&l(!) &7There were no items to craft.'
+
+# Called when a player uses a cannon-tool.
+FILLED_DISPENSERS: '&e&l(!) &7Successfully filled {0} dispensers with {1} tnt.'
+NO_FILLED_DISPENSERS: '&e&l(!) &7There were no dispensers to fill.'
+
+# Called when a player successfully gave a tool to a player.
+GIVE_TOOL_SUCCESS: '&e&l(!) &7Nhận thành công.'
+
+# Placeholders for {sell-mode}
+HARVESTER_SELL_ENABLED: '&a&lEnabled'
+HARVESTER_SELL_DISABLED: '&c&lDisabled'
+
+# Called when a player successfully sold harvested items with a harvester-tool.
+HARVESTER_SELL_SUCCEED: '&e&l(!) &7Successfully sold {0} items for ${1}.'
+
+# Called when a player runs an invalid tool sub-command.
+HELP_COMMAND_HEADER: '&8&m---------------&e&l (!) &8&m---------------'
+HELP_COMMAND_LINE: '&7- &b/{0} &8- &f{1}'
+HELP_COMMAND_FOOTER: '&8&m---------------&e&l (!) &8&m---------------'
+
+# Called when a player clicked on a regular block with a crafting-tool.
+INVALID_CONTAINER_CRAFTING: '&e&l(!) &7You can only craft items inside a chest.'
+
+# Called when a player clicked on a regular block with a sell-tool.
+INVALID_CONTAINER_SELL_WAND: '&e&l(!) &7Bạn chỉ có thể dùng cho rương đựng vật phẩm
+  bán.'
+
+# Called when a player clicked on a regular block with a sort-tool.
+INVALID_CONTAINER_SORT_WAND: '&e&l(!) &7You can only sort items inside a chest.'
+
+# Called when a player runs a command with a player-parameter.
+INVALID_NUMBER: '&e&l(!) &7Couldn''t find the number ''{0}''.'
+
+# Called when a player runs a command with a player-parameter.
+INVALID_PLAYER: '&e&l(!) &7Couldn''t find the player ''{0}''.'
+
+# Called when a player runs a command with a tool-parameter.
+INVALID_TOOL: '&e&l(!) &7Couldn''t find the tool ''{0}''.'
+
+# Called when a player tries to use super-breaker with a tool.
+MCMMO_TOOL_SUPER_BREAKER: '&e&l(!) &7You cannot use super-breaker on this tool.'
+
+# Called when a player runs a command without the required permission.
+NO_PERMISSION: '&fUnknown command. Type "/help" for help.'
+
+# Called when using an unowned tool.
+NOT_OWNER: '&cYou are not owning the tool.'
+
+# Called when a player successfully reloaded all configuration files.
+RELOAD_SUCCESS: '&e&l(!) &7Successfully reloaded the configuration files.'
+
+# Called when a player selects an area with a cannon-tool.
+SELECTION_RIGHT_CLICK: '&e&l(!) &7Selected position #2'
+SELECTION_LEFT_CLICK: '&e&l(!) &7Selected position #1'
+
+# Called when a player tries to use cannon-tool not inside his selection.
+SELECTION_MUST_BE_INSIDE: '&e&l(!) &7You must be inside the selection to fill it with
+  dispensers.'
+
+# Called when a player tries to use cannon-tool without a valid selection.
+SELECTION_NOT_READY: '&e&l(!) &7You must select an area to fill all dispensers.'
+
+# Called when a player toggles sell-mode on a harvester-tool.
+SELL_MODE_ENABLED: '&e&l(!) &7Enabled sell-mode for this harvester.'
+SELL_MODE_DISABLED: '&e&l(!) &7Disabled sell-mode for this harvester.'
+
+# Called when a player uses a sell-tool.
+SOLD_CHEST: '&e&l(!) &7Bán thành công ${0}.'
+MULTIPLIER: ' &a(x{0} %)'
+NO_SELL_ITEMS: '&e&l(!) &7Bán thất bại! (Rương trống hoặc Shop không bán vật phẩm
+  này).'
+
+# Called when a player successfully sorted a container with a sort-tool.
+SORTED_CHEST: '&e&l(!) &7Successfully sorted this container.'
+NO_SORT_ITEMS: '&e&l(!) &7There were no items to sort.'
+
+# Called when a player runs the info sub-command.
+# Optional sections will be seen only if it's applied for the tool.
+TOOL_INFO_HEADER: '&8&m---------------&e&l (!) &8&m---------------'
+TOOL_INFO_NAME: '&b Tool&7: &f{0}'
+TOOL_INFO_MODE: '&b Tool-Mode&7: &f{0}'
+TOOL_INFO_TYPE: '&b Type&7: &f{0}'
+TOOL_INFO_WHITELISTED_BLOCKS: '&b Whitelisted Blocks&7: &f{0}'
+TOOL_INFO_WHITELISTED_DROPS: '&b Whitelisted Drops&7: &f{0}'
+TOOL_INFO_BLACKLISTED_BLOCKS: '&b Blacklisted Blocks&7: &f{0}'
+TOOL_INFO_BLACKLISTED_DROPS: '&b Blacklisted Drops&7: &f{0}'
+TOOL_INFO_UNBREAKABLE: '&b Unbreakable&7: &f{0}'
+TOOL_INFO_USES: '&b Uses&7: &f{0}'
+TOOL_INFO_COOLDOWN: '&b Cooldown&7: &f{0}'
+TOOL_INFO_AUTO_COLLECT: '&b Auto-Collect&7: &f{0}'
+TOOL_INFO_SILK_TOUCH: '&b Silk Touch&7: &f{0}'
+TOOL_INFO_SAME_TYPE: '&b Only Same Type&7: &f{0}'
+TOOL_INFO_INSIDE_CLAIM: '&b Only Inside Claim&7: &f{0}'
+TOOL_INFO_BREAK_LEVEL: '&b Break Level&7: &f{0}'
+TOOL_INFO_RADIUS: '&b Radius&7: &f{0}'
+TOOL_INFO_TNT_AMOUNT: '&b TNT-Amount&7: &f{0}'
+TOOL_INFO_FOOTER: '&8&m---------------&e&l (!) &8&m---------------'
+
+# Called when a player runs the list sub-command.
+TOOL_LIST_HEADER: '&8&m---------------&b&l WildTools &8&m---------------'
+TOOL_LIST_TYPE: |
+  &b {0}&7:
+  {1}
+TOOL_LIST_LINE: '&7  - {0}'
+TOOL_LIST_FOOTER: '&8&m---------------&b&l WildTools &8&m---------------'

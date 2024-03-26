@@ -1,0 +1,12 @@
+aogiapendercon:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      color:
+        ==: Color
+        RED: 29
+        BLUE: 33
+        GREEN: 29

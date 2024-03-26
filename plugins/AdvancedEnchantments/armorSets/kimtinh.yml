@@ -1,0 +1,129 @@
+# Advanced Sets
+# These sets are fully creatable, to create your own simply copy this file, rename it and edit it however you want!
+
+# ** Set Materials:
+# * LEATHER (change-able color)
+# * IRON
+# * GOLD
+# * CHAIN
+# * DIAMOND
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for sets.
+
+#  ** Set Events
+#    Change upon what event should sets trigger
+#    - EFFECT_STATIC : Gives permanent potion effect (as long as armor piece is worn)
+#    - ATTACK : Set Event run only when attacking another player
+#    - DEFENSE : Set Event run only when being attacked
+#    - DEFENSE_BOW : Set Event run only when player gets shot by a bow
+#    - MINING : Gives effects when block is mined
+#    - ATTACK_MOB : Gives effects when player attacks mob
+#    - KILL_MOB : Effects given when attacked mob is killed
+#    - BOW : Effects given when player is shot by another player
+#    - KILL_PLAYER : Effects given when attacker kills a player
+#    - DEATH : Runs when player dies due to another player.
+#    - RIGHT_CLICK : Runs when player right clicks held item
+#    - BOW_MOB : Effects given when mob is shot by player
+#    - FIRE : Effects given when player is on fire
+#    - EXPLOSION : Effects given when player gets hit by explosion
+#    - SWING : Enchant runs when player swings
+#    - FALL_DAMAGE : Set Event runs when player takes fall damage
+#    - DEFENSE_MOB : Set Event runs when mob attacks a player
+#    - SHIFT : Set Event runs when player toggles crouching (shifts)
+#    - ITEM_BREAK : Set Event runs when player toggles crouching (shifts)
+#    - CATCH_FISH : Set Event runs when player catches a fish
+# Set Events & Enchant types are intercompatible together
+
+# ** Creating set effects, this explains the system
+#events:
+#  <any of the effects from the list>:
+#    chance: <chance of effects activating, 1-100> (Optional)
+#    cooldown: <cooldown period after effects activate, in seconds> (Optional)
+#    effects: <effects are available in enchantments.yml>
+#    # E.g.: - 'INCREASED_DAMAGE:10'
+
+name: '&c&lSET &6&lKIM TINH'
+material: LEATHER
+settings:
+  equipped:
+    - '&a&l(!) &e&lKích hoạt SET KIM TINH!'
+  unequipped:
+    - '&c&l(!) &e&lDừng kịch hoạt SET KIM TINH!'
+items:
+  helmet:
+    color: 102;102;102
+    name: '&7۞&f&l⚔⚔&7۞ &f&lKIM TINH &7۞&f&l⚔⚔&7۞  &7(&f｡｡&fMũ&f｡｡&7)'
+    lore:
+      - ''   
+      - '&7★&f✮ &d☾&c⦿&d☽ &f&lTHÁI DƯƠNG HỆ &d☾&c⦿&d☽&f ✮&7★ (Sao Kim)'
+      - '&7&l◉ &fTăng 33% damage'
+      - '&7&l◉ &fGiảm 45% damage nhận vào'
+      - '&7&l◉ &fĐề kháng và Tăng damage'
+      - '&7&l◉ &fMột trong ngũ đại hành tinh của vũ trụ'
+      - '&7&o(Mặc full Set Kim Tinh để kích hoạt.)'      
+      - ''  
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:12"
+      - "unbreaking:7"
+  chestplate:
+    color: 102;102;102
+    name: '&7۞&f&l⚔⚔&7۞ &f&lKIM TINH &7۞&f&l⚔⚔&7۞  &7(&f｡｡&7Giáp&f｡｡&7)'
+    lore:
+      - ''   
+      - '&7★&f✮ &d☾&c⦿&d☽ &f&lTHÁI DƯƠNG HỆ &d☾&c⦿&d☽&f ✮&7★ (Sao Kim)'
+      - '&7&l◉ &fTăng 33% damage'
+      - '&7&l◉ &fGiảm 45% damage nhận vào'
+      - '&7&l◉ &fĐề kháng và Tăng damage'
+      - '&7&l◉ &fMột trong ngũ đại hành tinh của vũ trụ'
+      - '&7&o(Mặc full Set Kim Tinh để kích hoạt.)'      
+      - ''         
+    enchants: # Supports AdvancedEnchantments CE
+      - "kimtinh:1"
+      - "protection:12"
+      - "unbreaking:7"
+  leggings:
+    color: 128;128;128
+    name: '&7۞&f&l⚔⚔&7۞ &f&lKIM TINH &7۞&f&l⚔⚔&7۞  &7(&f｡｡&fQuần&f｡｡&7)'
+    lore:
+      - ''   
+      - '&7★&f✮ &d☾&c⦿&d☽ &f&lTHÁI DƯƠNG HỆ &d☾&c⦿&d☽&f ✮&7★ (Sao Kim)'
+      - '&7&l◉ &fTăng 33% damage'
+      - '&7&l◉ &fGiảm 45% damage nhận vào'
+      - '&7&l◉ &fĐề kháng và Tăng damage'
+      - '&7&l◉ &fMột trong ngũ đại hành tinh của vũ trụ'
+      - '&7&o(Mặc full Set Kim Tinh để kích hoạt.)'      
+      - ''   
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:12"
+      - "unbreaking:7"
+  boots:
+    color: 102;102;102
+    name: '&7۞&f&l⚔⚔&7۞ &f&lKIM TINH &7۞&f&l⚔⚔&7۞  &7(&f｡｡&fGiày&f｡｡&7)'
+    lore:
+      - ''   
+      - '&7★&f✮ &d☾&c⦿&d☽ &f&lTHÁI DƯƠNG HỆ &d☾&c⦿&d☽&f ✮&7★ (Sao Kim)'
+      - '&7&l◉ &fTăng 33% damage'
+      - '&7&l◉ &fGiảm 45% damage nhận vào'
+      - '&7&l◉ &fĐề kháng và Tăng damage'
+      - '&7&l◉ &fMột trong ngũ đại hành tinh của vũ trụ'
+      - '&7&o(Mặc full Set Kim Tinh để kích hoạt.)'      
+      - ''    
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:12"
+      - "unbreaking:7"
+events:
+  DEFENSE:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:45'
+      - 'NEGATE_DAMAGE:22'
+      - 'INCREASE_DAMAGE:33'
+  DEFENSE:
+    chance: 100
+    cooldown: 7
+    effects:
+      - 'CURE:DAMAGE_RESISTANCE'
+      - 'POTION:DAMAGE_RESISTANCE:4:110'
+      - 'WAIT:100'
+      - 'CURE:DAMAGE_RESISTANCE'
+      - 'POTION_OVERRIDE:DAMAGE_RESISTANCE:1:1320'

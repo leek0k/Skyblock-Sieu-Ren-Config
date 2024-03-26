@@ -1,0 +1,15 @@
+requireSet: ''
+material: BOW
+name: '&e&l★ &6&l★ &e&l★ &6&lCUNG THƯỢNG QUÝ MÃO &e&l★ &6&l★ &e&l★'
+lore:
+  - ''
+  - '&6&l◆ ◆ ◆ HUYỀN THOẠI &6(Quý Mão 2023) &l◆ ◆ ◆'
+  - '&6&oVật phẩm sự kiện Tết Quý Mão 2023'
+  - ''
+enchants:
+  - 'power:60'
+  - 'unbreaking:5'
+  - 'flame:2'
+  - 'infinity:1'
+  - 'thigiacquymao:1'
+events:

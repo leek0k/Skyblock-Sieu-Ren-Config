@@ -1,0 +1,43 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: ''
+
+# Currently supported are only melee weapons
+material: GOLD_AXE
+
+# Custom Model Data (for 1.13+ servers with custom item packs)
+# Set custom model data integer
+customModelData: 0
+
+# Item Flags
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html
+itemFlags: []
+#  - 'HIDE_POTION_EFFECTS' # An Example Item Flag
+
+# Weapon's name
+name: '&6✯ ║ &lRÌU TRUNG THU &e&lMAY MẮN &6║ &r&6✯'
+
+# Weapon's lore
+lore:
+  - ''
+  - '&6⊹⊹ &lSự Kiện Trung Thu &r&6⊹⊹'
+  - '&e     &a» +(1-3) Bí ngô khi farm.'
+
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'riutrungthu:1'
+  - 'sharpness:50'
+  - 'efficiency:5'
+  - 'looting:7'
+  - 'unbreaking:10'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:
+  ATTACK:
+    chance: 100
+    condition: "%block type% contains PUMPKIN: %allow%" 
+    effects:
+      - 'CONSOLE_COMMAND:give %attacker name% 86 <random number>1-3</random number>'      

@@ -1,0 +1,59 @@
+#Cấu hình ngọc tháo/gỡ.
+
+#Hướng dẫn cấu hình:
+#  <id>:
+#    Material: <material> #Vui lòng sử dụng tên, không sử dụng ID. Bắt buộc!
+#    Amount: <số lượng> #Số lượng vật phẩm. Không bắt buộc!
+#    Data: <data> #Loại vật phẩm, thường được dùng cho những item trùng Material. Không bắt buộc!
+#    Name: '<tên>' #Tên hiển thị cho vật phẩm. Không bắt buộc!
+#
+#    #Loại tháo / gỡ:
+#    Type: 'RANDOM hoặc GEMID' #Với RANDOM - tháo ngẫu nhiên, GEMID - tháo ngọc được chỉ định.
+#    GemID: '<id của ngọc>' #ID của ngọc cần tháo. Chỉ hoạt động khi Type là GEMID.
+#
+#    Texture: 'hdb-<ID>' #Sử dụng skin từ plugin HeadDatabase.
+#    hoặc
+#    Texture: '<base64>' #Sử dụng skin từ https://minecraft-heads.com/
+#
+#    #Thêm các hiệu ứng phù phép cho vật phẩm:
+#    Enchants:
+#    - '<tên>:<cấp độ>'
+#
+#    #Thêm flag cho vật phẩm:
+#    # * Các flags có sẵn: HIDE_ATTRIBUTES, HIDE_DESTROYS, HIDE_ENCHANTS, HIDE_PLACED_ON, HIDE_POTION_EFFECTS và HIDE_UNBREAKABLE.
+#    Flags:
+#    - '<tên flag>'
+#
+#    Lore: [] #Thêm lore cho vật phẩm. Không bắt buộc!
+#    Chance: <tỉ lệ> #Tỉ lệ thành công khi tháo/gỡ. Tối thiểu 0.0, tối đa 100.0
+Items:
+  sample:
+    Material: FLINT
+    Name: '&c&lĐá gỡ Lửa Phép'
+    Type: 'RANDOM'
+    Lore:
+    - ''
+    - '&cĐá này được sử dụng để &c&ntháo&r'
+    - '&cLửa phép được khảm vào'
+    - '&c&lSọ phép&c.'
+    - ''
+    - '&8(&6!&8) &7Cầm và nhấp vào vật phẩm'
+    - '&7bạn muốn tháo Lửa phép.'
+    #Tỉ lệ thành công khi khảm:
+    Chance: 100.0
+  samplegemid:
+    Material: GOLD_NUGGET
+    Name: '&e  Tháo Ngọc Khảm'
+    Type: 'GEMID'
+    GemID: 'sample'
+    Lore:
+    - ''
+    - '&f+ Ngọc này được sử dụng để'
+    - '&etháo &fngọc được khảm vào'
+    - '&fvật phẩm chính.'
+    - ''
+    - '&f+ Xác suất thành công: &680%'
+    - ''
+    - '&8[&6!&8] &7Cầm và nhấp vào vật phẩm'
+    - '&7bạn muốn tháo / gỡ ngọc.'
+    Chance: 80.0

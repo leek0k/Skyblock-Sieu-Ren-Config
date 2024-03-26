@@ -1,0 +1,52 @@
+mission-file: ItemsMissions
+required-missions:
+- e_islandfarmer_c
+island: false
+auto-reward: false
+rewards:
+  commands:
+  - eco give %player% 7680
+  - exp give %player% 920
+  - is admin msg %player% &e&l$ | &7Hoàn thành thử thách!
+required-items:
+  '1':
+    types:
+    - CACTUS
+    amount: 640
+icons:
+  not-completed:
+    type: HAY_BLOCK
+    name: '&6&LTHỬ THÁCH: &A&lNÔNG DÂN &f&l#4'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l xương rồng &fđể FULL túi'
+    - ''
+    - '&7- &e$7.680 , 920 Exp'
+    - ''
+    - '&6Thu thập: &7{1}/640'
+    - '&6Tiến trình: &7{0}%'
+    - '&c&l ✘ &7Chưa hoàn thành'
+    - ''
+    - ' &a&lYÊU CẦU: &aHoàn thành &A&lNÔNG DÂN &f&l#3'
+  can-complete:
+    type: CACTUS
+    name: '&6&LTHỬ THÁCH: &A&lNÔNG DÂN &f&l#4'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l xương rồng &fđể FULL túi'
+    - ''
+    - '&7- &e$7.680 , 920 Exp'
+    - ''
+    - '&6Thu thập: &7640/640'
+    - '&6Tiến trình: &7100%'
+    - '&a&l ✔ &7Bạn đã có đủ điều kiện Click vào đây.'
+    enchants:
+      DURABILITY: 1
+    flags:
+    - HIDE_ENCHANTS
+  completed:
+    type: MAP
+    name: '&6&LTHỬ THÁCH: &A&lNÔNG DÂN &f&l#4'
+    lore:
+    - ''
+    - '&a&l ✔ &7Đã hoàn thành.'

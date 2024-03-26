@@ -1,0 +1,28 @@
+# ######################################################################
+#           This is the world group configuration of MyPet             #
+#                 You can find more info on the wiki:                  #
+#   https://wiki.mypet-plugin.de/setup/configurations/worldgroups.yml  #
+# ######################################################################
+
+Disabled:
+- jail
+Groups:
+  default:
+  - world
+  - SuperiorWorld
+  - world_nether
+  - NewSpawn
+  - Dugeon1
+  - Dugeon2
+  - Dugeon3
+  - DungeonTheEnd
+  - Nether1
+  - huongdan
+  - mobarea
+  - Rungxanh
+  - afkcheck
+  - Mapgiangsinh
+  - NhiemVu
+  - Koth2
+  - MapTet
+  - khuminezuize

@@ -1,0 +1,5 @@
+name: owner
+permissions:
+- weight.101
+parents:
+- admin

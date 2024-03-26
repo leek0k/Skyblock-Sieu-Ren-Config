@@ -1,0 +1,41 @@
+menu_title: '&f&lNhận Quà &c&lViệt Bựa&7((code))'
+open_command: 
+- code vietbua
+size: 27
+items:
+  '1':
+    material: 'BEACON'
+    slot: 13
+    priority: 1
+    display_name: '&b&l●&3&l•&b&l● &c&lGói Quà Việt Bựa &c(Youtuber) &b&l●&3&l•&b&l●'
+    lore:
+      - ''
+      - '&7&lHộp quà gồm:'
+      - '&7x1 &f(Sơn Shield) &c&lViệt Bựa'
+      - '&7x10 &6&l♈Cà Rốt Sinh Lực♈ &6&l(&6Lvl: 1&6&l)'
+      - '&7x1 &b✿&f✿&b✿ &A&nChìa Khóa&r &d&lCẦU VỒNG&r &b✿&f✿&b✿'
+      - '&7x10 &eTáo vàng'
+      - '&7x100 &6☀ Đá quý'
+      - '&7x2 &eSheep &fSpawner'
+      - '&7x2 &eCow &fSpawner'
+      - ''
+      - '&c[!] Yêu cầu level tối thiểu là 5'
+      - ''
+      - '&0&o#Item menu'
+    left_click_requirement:
+      requirements:
+        has_level:
+          type: '>='
+          input: '%alonsolevels_level_format%'
+          output: '5'
+          deny_commands:
+          - '[message] &fChưa đủ cấp!' 
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true       
+    left_click_commands:
+      - '[console] codereward code %player_name% vietbua'
+      - '[close]'    
+
+
+  

@@ -1,0 +1,5367 @@
+vouchers:
+
+  # ############ITEM-PET-VOUCHER###################
+  petga:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 93
+    name: '&7&l**Trứng PET GÀ**'
+    lore:
+    - ''
+    - '&7Loại: Thường'
+    - ''
+    - '&7/petname (/pt) (Để đặt tên)'
+    - '&7/petstore (/pst) (Để cất Pet)'
+    - '&7/Petcall (/pc) (Để gọi Pet)'
+    - '&7/petrelease (Để xóa Pet khỏi túi)'
+    - '&7/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% chicken 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petmeo:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 98
+    name: '&7&l**Trứng PET MÈO**'
+    lore:
+    - ''
+    - '&7Loại: Thường'
+    - ''
+    - '&7/petname (/pt) (Để đặt tên)'
+    - '&7/petstore (/pst) (Để cất Pet)'
+    - '&7/Petcall (/pc) (Để gọi Pet)'
+    - '&7/petrelease (Để xóa Pet khỏi túi)'
+    - '&7/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% ocelot 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petheo:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 90
+    name: '&7&l**Trứng PET HEO**'
+    lore:
+    - ''
+    - '&7Loại: Thường'
+    - ''
+    - '&7/petname (/pt) (Để đặt tên)'
+    - '&7/petstore (/pst) (Để cất Pet)'
+    - '&7/Petcall (/pc) (Để gọi Pet)'
+    - '&7/petrelease (Để xóa Pet khỏi túi)'
+    - '&7/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% pig 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petbo:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 92
+    name: '&7&l**Trứng PET BÒ**'
+    lore:
+    - ''
+    - '&7Loại: Thường'
+    - ''
+    - '&7/petname (/pt) (Để đặt tên)'
+    - '&7/petstore (/pst) (Để cất Pet)'
+    - '&7/Petcall (/pc) (Để gọi Pet)'
+    - '&7/petrelease (Để xóa Pet khỏi túi)'
+    - '&7/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% cow 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petcuu:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 91
+    name: '&7&l**Trứng PET CỪU**'
+    lore:
+    - ''
+    - '&7Loại: Thường'
+    - ''
+    - '&7/petname (/pt) (Để đặt tên)'
+    - '&7/petstore (/pst) (Để cất Pet)'
+    - '&7/Petcall (/pc) (Để gọi Pet)'
+    - '&7/petrelease (Để xóa Pet khỏi túi)'
+    - '&7/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% Sheep 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  pettho:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 101
+    name: '&7&l**Trứng PET THỎ**'
+    lore:
+    - ''
+    - '&7Loại: Thường'
+    - ''
+    - '&7/petname (/pt) (Để đặt tên)'
+    - '&7/petstore (/pst) (Để cất Pet)'
+    - '&7/Petcall (/pc) (Để gọi Pet)'
+    - '&7/petrelease (Để xóa Pet khỏi túi)'
+    - '&7/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% rabbit 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petsoi:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 95
+    name: '&e&l**Trứng PET SÓI**'
+    lore:
+    - ''
+    - '&eLoại: Hiếm'
+    - ''
+    - '&e/petname (/pt) (Để đặt tên)'
+    - '&e/petstore (/pst) (Để cất Pet)'
+    - '&e/Petcall (/pc) (Để gọi Pet)'
+    - '&e/petrelease (Để xóa Pet khỏi túi)'
+    - '&e/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% wolf 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petthayma:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 54
+    name: '&b&l**Trứng PET THÂY MA**'
+    lore:
+    - ''
+    - '&bLoại: Cổ'
+    - ''
+    - '&b/petname (/pt) (Để đặt tên)'
+    - '&b/petstore (/pst) (Để cất Pet)'
+    - '&b/Petcall (/pc) (Để gọi Pet)'
+    - '&b/petrelease (Để xóa Pet khỏi túi)'
+    - '&b/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% zombie 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petnguoixuong:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 51
+    name: '&b&l**Trứng PET NGƯỜI XƯƠNG**'
+    lore:
+    - ''
+    - '&bLoại: Cổ'
+    - ''
+    - '&b/petname (/pt) (Để đặt tên)'
+    - '&b/petstore (/pst) (Để cất Pet)'
+    - '&b/Petcall (/pc) (Để gọi Pet)'
+    - '&b/petrelease (Để xóa Pet khỏi túi)'
+    - '&b/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% skeleton 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petnhen:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 52
+    name: '&b&l**Trứng PET NHỆN**'
+    lore:
+    - ''
+    - '&bLoại: Cổ'
+    - ''
+    - '&b/petname (/pt) (Để đặt tên)'
+    - '&b/petstore (/pst) (Để cất Pet)'
+    - '&b/Petcall (/pc) (Để gọi Pet)'
+    - '&b/petrelease (Để xóa Pet khỏi túi)'
+    - '&b/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% spider 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petslime:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 55
+    name: '&E&l**Trứng PET SLIME**'
+    lore:
+    - ''
+    - '&eLoại: Siêu hiếm'
+    - ''
+    - '&e/petname (/pt) (Để đặt tên)'
+    - '&e/petstore (/pst) (Để cất Pet)'
+    - '&e/Petcall (/pc) (Để gọi Pet)'
+    - '&e/petrelease (Để xóa Pet khỏi túi)'
+    - '&e/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% slime 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petnhenhang:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 59
+    name: '&E&l**Trứng PET NHỆN HANG**'
+    lore:
+    - ''
+    - '&eLoại: Siêu hiếm'
+    - ''
+    - '&e/petname (/pt) (Để đặt tên)'
+    - '&e/petstore (/pst) (Để cất Pet)'
+    - '&e/Petcall (/pc) (Để gọi Pet)'
+    - '&e/petrelease (Để xóa Pet khỏi túi)'
+    - '&e/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% cavespider 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petpigzombie:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 57
+    name: '&6&l**Trứng PET HEO THÂY MA**'
+    lore:
+    - ''
+    - '&6Loại: Huyền thoại'
+    - ''
+    - '&6/petname (/pt) (Để đặt tên)'
+    - '&6/petstore (/pst) (Để cất Pet)'
+    - '&6/Petcall (/pc) (Để gọi Pet)'
+    - '&6/petrelease (Để xóa Pet khỏi túi)'
+    - '&6/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% pigzombie 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petmagmacube:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 62
+    name: '&6&l**Trứng PET MAGMACUBE**'
+    lore:
+    - ''
+    - '&6Loại: Huyền thoại'
+    - ''
+    - '&6/petname (/pt) (Để đặt tên)'
+    - '&6/petstore (/pst) (Để cất Pet)'
+    - '&6/Petcall (/pc) (Để gọi Pet)'
+    - '&6/petrelease (Để xóa Pet khỏi túi)'
+    - '&6/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% magmacube 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petenderman:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 58
+    name: '&d&l**Trứng PET ENDERMAN**'
+    lore:
+    - ''
+    - '&dLoại: Truyền thuyết'
+    - ''
+    - '&d/petname (/pt) (Để đặt tên)'
+    - '&d/petstore (/pst) (Để cất Pet)'
+    - '&d/Petcall (/pc) (Để gọi Pet)'
+    - '&d/petrelease (Để xóa Pet khỏi túi)'
+    - '&d/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% enderman 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petblaze:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 61
+    name: '&d&l**Trứng PET BLAZE**'
+    lore:
+    - ''
+    - '&dLoại: Truyền thuyết'
+    - ''
+    - '&d/petname (/pt) (Để đặt tên)'
+    - '&d/petstore (/pst) (Để cất Pet)'
+    - '&d/Petcall (/pc) (Để gọi Pet)'
+    - '&d/petrelease (Để xóa Pet khỏi túi)'
+    - '&d/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% blaze 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  petnguoisat:
+    permission: petegg.use
+    material: MONSTER_EGG
+    data: 56
+    name: '&c&l**Trứng PET NGƯỜI SẮT**'
+    lore:
+    - ''
+    - '&cLoại: &c&lTối cao'
+    - ''
+    - '&c/petname (/pt) (Để đặt tên)'
+    - '&c/petstore (/pst) (Để cất Pet)'
+    - '&c/Petcall (/pc) (Để gọi Pet)'
+    - '&c/petrelease (Để xóa Pet khỏi túi)'
+    - '&c/petswitch (Để chọn và đổi Pet)'
+    - ''
+    - '&f&o(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - petadmin create -f %player% Irongolem 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  ts6:
+    permission: skinsrestorer.playercmds
+    material: INK_SACK
+    data: 5
+    name: '&B&l⊰⊰NGỌC THIÊN SỨ⊱⊱ &e«Level: 6»'
+    lore:
+    - ''
+    - '&8● &fHồi lập tức &c16♥'
+    - '&8● &fBuff máu vàng &e+6♥'
+    - '&8● &fLoại bỏ hiệu ứng xấu'
+    - '&8● &fChống đói'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 35
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 8
+    - effect %player% minecraft:absorption 100 3
+    - effect %player% minecraft:slowness 0
+    - effect %player% minecraft:wither 0
+    - effect %player% minecraft:blindness 0
+    - effect %player% minecraft:hunger 0
+    - effect %player% minecraft:nausea 0
+    - feed %player%
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LAVA_POP
+      pitch: 1
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    coolDown: 35
+    texture: ''
+  tss6:
+    permission: skinsrestorer.playercmds
+    material: MAGMA_CREAM
+    data: 0
+    name: '&e&l⊰NGỌC THIÊN SỨ⊱ &6&lLevel: 6'
+    lore:
+    - ''
+    - '&eHồi lập tức &616♥'
+    - '&eLoại bỏ hiệu ứng xấu'
+    - '&eChống đói'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 8
+    - effect %player% minecraft:slowness 0
+    - effect %player% minecraft:wither 0
+    - effect %player% minecraft:blindness 0
+    - effect %player% minecraft:hunger 0
+    - effect %player% minecraft:nausea 0
+    - feed %player%
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LAVA_POP
+      pitch: 1
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 25
+  ts7:
+    permission: skinsrestorer.playercmds
+    material: MAGMA_CREAM
+    data: 0
+    name: '&e&l⊰NGỌC THIÊN SỨ⊱ &6&lLevel: 7'
+    lore:
+    - ''
+    - '&eHồi lập tức &620♥'
+    - '&eLoại bỏ hiệu ứng xấu'
+    - '&eChống đói'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 10
+    - effect %player% minecraft:slowness 0
+    - effect %player% minecraft:wither 0
+    - effect %player% minecraft:blindness 0
+    - effect %player% minecraft:hunger 0
+    - effect %player% minecraft:nausea 0
+    - feed %player%
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LAVA_POP
+      pitch: 1
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 25
+  ts8:
+    permission: skinsrestorer.playercmds
+    material: MAGMA_CREAM
+    data: 0
+    name: '&e&l⊰NGỌC THIÊN SỨ⊱ &6&lLevel: 8'
+    lore:
+    - ''
+    - '&eHồi lập tức &624♥'
+    - '&eLoại bỏ hiệu ứng xấu'
+    - '&eChống đói'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 12
+    - effect %player% minecraft:slowness 0
+    - effect %player% minecraft:wither 0
+    - effect %player% minecraft:blindness 0
+    - effect %player% minecraft:hunger 0
+    - effect %player% minecraft:nausea 0
+    - feed %player%
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LAVA_POP
+      pitch: 1
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 25
+  ts9:
+    permission: skinsrestorer.playercmds
+    material: MAGMA_CREAM
+    data: 0
+    name: '&e&l⊰NGỌC THIÊN SỨ⊱ &6&lLevel: 9'
+    lore:
+    - ''
+    - '&eHồi lập tức &628♥'
+    - '&eLoại bỏ hiệu ứng xấu'
+    - '&eChống đói'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 14
+    - effect %player% minecraft:slowness 0
+    - effect %player% minecraft:wither 0
+    - effect %player% minecraft:blindness 0
+    - effect %player% minecraft:hunger 0
+    - effect %player% minecraft:nausea 0
+    - feed %player%
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LAVA_POP
+      pitch: 1
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 25
+  trauthanh:
+    permission: skinsrestorer.playercmds
+    material: BOOK
+    data: 0
+    name: '&d&lSách trâu thánh'
+    lore:
+    - '&e&O(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ae givebook %player% godlyoverload 1 1 75 25
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  cansa:
+    permission: skinsrestorer.playercmds
+    material: INK_SACK
+    data: 2
+    name: '&2&lĐIẾU CẦN SA'
+    lore:
+    - '&2Em ơi em anh Phê quên hết đường vềề..'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: true
+    cooldown: 5
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:absorption 35 20
+    - effect %player% minecraft:nausea 40
+    - effect %player% minecraft:jump_boost 25 50
+    - effect %player% minecraft:speed 10 50
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: FIREWORK_BLAST
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    texture: ''
+    coolDown: 0
+  dauthan:
+    permission: skinsrestorer.playercmds
+    material: GOLD_NUGGET
+    data: 0
+    name: '&2&l✦ &a&lĐậu thần'
+    lore:
+    - ''
+    - '&f&o((Hãy thử ăn 1 đậu xem!!))'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 5
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 20
+    - effect %player% minecraft:regeneration 10 3
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: EAT
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    texture: ''
+    coolDown: 0
+  quayt:
+    permission: skinsrestorer.playercmds
+    material: BED
+    data: 0
+    name: '&e&lQUÀ CHÚ SLIME &8- &f&lYOU&c&lTUBE'
+    lore:
+    - '&aCảm ơn các bạn đã đồng hành ủng hộ'
+    - '&achúng mình <3'
+    - ''
+    - '&7(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ss give %player% pig 1
+    - ss give %player% cow 1
+    - eco give %player% 3000
+    - give %player% diamond_block 3
+    - give %player% 322:1 2
+    - give %player% 145 1
+    - give %player% 7 3
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  irongolem:
+    permission: skinsrestorer.playercmds
+    material: MOB_SPAWNER
+    data: 0
+    name: '&e&lSpawner IronGolem'
+    lore:
+    - ''
+    - '&7(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ss give %player% ig 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  vua:
+    permission: skinsrestorer.playercmds
+    material: NETHER_STAR
+    data: 0
+    name: '&e&lRank &8&l<&6&lVUA&8&l> &e&l| MẢNH'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: true
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% parent set Vip2
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 100
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  exp500:
+    permission: skinsrestorer.playercmds
+    material: EXP_BOTTLE
+    data: 0
+    name: '&a&l500,000 &e&lExp&a&l | x1 BÌNH'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - exp give %player% 500000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  ts2:
+    permission: skinsrestorer.playercmds
+    material: SLIME_BALL
+    data: 0
+    name: '&f&l⊰NGỌC THIÊN SỨ⊱ &b&lLevel: 2'
+    lore:
+    - '&fHồi lập tức &b6♥'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 6
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LAVA_POP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    coolDown: 25
+    texture: ''
+  ts1:
+    permission: skinsrestorer.playercmds
+    material: SLIME_BALL
+    data: 0
+    name: '&f&l⊰NGỌC THIÊN SỨ⊱ &b&lLevel: 1'
+    lore:
+    - '&fHồi lập tức &b4♥'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 4
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LAVA_POP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    coolDown: 25
+    texture: ''
+  ts4:
+    permission: skinsrestorer.playercmds
+    material: SLIME_BALL
+    data: 0
+    name: '&f&l⊰NGỌC THIÊN SỨ⊱ &b&lLevel: 4'
+    lore:
+    - '&fHồi lập tức &b10♥'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 10
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LAVA_POP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    coolDown: 25
+    texture: ''
+  ts3:
+    permission: skinsrestorer.playercmds
+    material: SLIME_BALL
+    data: 0
+    name: '&f&l⊰NGỌC THIÊN SỨ⊱ &b&lLevel: 3'
+    lore:
+    - '&fHồi lập tức &b8♥'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 8
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LAVA_POP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    coolDown: 25
+    texture: ''
+  ts5:
+    permission: skinsrestorer.playercmds
+    material: MAGMA_CREAM
+    data: 0
+    name: '&e&l⊰NGỌC THIÊN SỨ⊱ &6&lLevel: 5'
+    lore:
+    - ''
+    - '&eHồi lập tức &612♥'
+    - '&eLoại bỏ hiệu ứng xấu'
+    - '&eChống đói'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 12
+    - effect %player% minecraft:slowness 0
+    - effect %player% minecraft:wither 0
+    - effect %player% minecraft:blindness 0
+    - effect %player% minecraft:hunger 0
+    - effect %player% minecraft:nausea 0
+    - feed %player%
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LAVA_POP
+      pitch: 1
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 25
+  sm1:
+    permission: skinsrestorer.playercmds
+    material: INK_SACK
+    data: 5
+    name: '&A&l⊰NGỌC CAO SU⊱ &2&lLevel: 3'
+    lore:
+    - '&aNhảy cao &24&1 trong &210&1 giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 27
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:jump_boost 10 4
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: FIREWORK_BLAST
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  than:
+    permission: skinsrestorer.playercmds
+    material: NETHER_STAR
+    data: 0
+    name: '&e&lRank &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l> &e&l| MẢNH'
+    lore:
+    - '&f[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: true
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% parent set Vip5
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  sm3:
+    permission: skinsrestorer.playercmds
+    material: INK_SACK
+    data: 5
+    name: '&D&l⊰NGỌC SỨC MẠNH⊱ &9&lLevel: 3'
+    lore:
+    - '&DSức mạnh &9V&D trong &915&D giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:strength 15 5
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: FIREWORK_BLAST
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  sm2:
+    permission: skinsrestorer.playercmds
+    material: INK_SACK
+    data: 5
+    name: '&D&l⊰NGỌC SỨC MẠNH⊱ &9&lLevel: 2'
+    lore:
+    - '&DSức mạnh &9IV&D trong &915&D giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:strength 15 4
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: FIREWORK_BLAST
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  '50':
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l50,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 50000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  exp100:
+    permission: skinsrestorer.playercmds
+    material: EXP_BOTTLE
+    data: 0
+    name: '&a&l100,000 &e&lExp&a&l | x1 BÌNH'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - exp give %player% 100000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  '10':
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l10,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 10000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  trum:
+    permission: skinsrestorer.playercmds
+    material: NETHER_STAR
+    data: 0
+    name: '&e&lRank &8&l<&7&lTRÙM&8&l> &e&l| MẢNH'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: true
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% parent set Vip1
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tc2:
+    permission: skinsrestorer.playercmds
+    material: INK_SACK
+    data: 11
+    name: '&e&l⊰NGỌC TIA CHỚP⊱ &6&lLevel: 2'
+    lore:
+    - '&eTăng tốc &6VI&E trong &610&E giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 26
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:speed 10 6
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: FIREWORK_BLAST
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tc1:
+    permission: skinsrestorer.playercmds
+    material: INK_SACK
+    data: 11
+    name: '&e&l⊰NGỌC TIA CHỚP⊱ &6&lLevel: 1'
+    lore:
+    - '&eTăng tốc &6V&E trong &610&E giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:speed 10 5
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: FIREWORK_BLAST
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tc3:
+    permission: skinsrestorer.playercmds
+    material: INK_SACK
+    data: 11
+    name: '&e&l⊰NGỌC TIA CHỚP⊱ &6&lLevel: 3'
+    lore:
+    - '&eTăng tốc &6VII&E trong &610&E giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 27
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:speed 10 7
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: FIREWORK_BLAST
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag10:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&7&LSợ vợ⊙﹏⊙&8&l &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.10
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag11:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&3&LTÒMÒ&b◕‿◕&8&l] &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.11
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag12:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&7ĐỘI TRƯỞNG╚(•⌂•)╝&8&l] &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.12
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag13:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&D&LBÁNH BÈO&b(●´ω｀●)&8&l] &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.13
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag14:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&b&LTỐT BỤNG(◠‿◠)&8&l] &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.14
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  '200':
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l200,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 200000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  '5':
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l5,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 5000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  '20':
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l20,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 20000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  cs1:
+    permission: skinsrestorer.playercmds
+    material: INK_SACK
+    data: 10
+    name: '&A&l⊰NGỌC CAO SU⊱ &2&lLevel: 1'
+    lore:
+    - '&aNhảy cao &2II&a trong &210&a giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 27
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:jump_boost 10 2
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: FIREWORK_BLAST
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  cs3:
+    permission: skinsrestorer.playercmds
+    material: INK_SACK
+    data: 10
+    name: '&A&l⊰NGỌC CAO SU⊱ &2&lLevel: 3'
+    lore:
+    - '&aNhảy cao &2IV&a trong &210&a giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 27
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:jump_boost 10 4
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: FIREWORK_BLAST
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  cs2:
+    permission: skinsrestorer.playercmds
+    material: INK_SACK
+    data: 10
+    name: '&A&l⊰NGỌC CAO SU⊱ &2&lLevel: 2'
+    lore:
+    - '&aNhảy cao &2III&a trong &210&a giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 27
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:jump_boost 10 3
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: FIREWORK_BLAST
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  10xu:
+    permission: skinsrestorer.playercmds
+    material: BONE
+    data: 0
+    name: '&6&l* 10 Xu *'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - p give %player% 10
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  example:
+    permission: epicvouchers.example
+    material: PAPER
+
+    # Keep data on 0 if you are on 1.13 or higher.
+    data: 0
+    name: '&a&l20,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+
+    # Enter a custom coolDown if you wish to.
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 20000
+
+    # You can use [chat], [player] and [op].
+    # Also use [delay-10] for 10 seconds delay.
+    # Change 10 to any number you want to have.
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+      particle: MOBSPAWNER_FLAMES
+    effects:
+      amplifier: 0
+      effect: SPEED
+      duration: 10
+    coolDown: 0
+    feed-player: true
+    texture: ''
+  quy:
+    permission: skinsrestorer.playercmds
+    material: NETHER_STAR
+    data: 0
+    name: '&e&lRank &8&l<&c&lQUỶ&8&l> &e&l| MẢNH'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: true
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% parent set Vip3
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  top:
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&e&lTOP ĐẢO'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - bc &fCHÚC MỪNG &E&LBF_CevinMC &FLÃNH ĐẠO ĐẢO ĐẠT TOP 1 CỦA TUẦN NÀY ^^ THƯỞNG ĐÃ ĐƯỢC GỬI CẢM ƠN CÁC BẠN ĐÃ THAM GIA ĐUA TOP ^^ - p give BF_CevinMC 1000 - bc &fCHÚC MỪNG &E&LPhoDz_Vn &FLÃNH ĐẠO ĐẢO ĐẠT TOP 2 CỦA TUẦN NÀY ^^ THƯỞNG ĐÃ ĐƯỢC GỬI CẢM ƠN CÁC BẠN ĐÃ THAM GIA ĐUA TOP ^^ - p give PhoDz_Vn 900 - bc &fCHÚC MỪNG &E&L_Songngu_ &FLÃNH ĐẠO ĐẢO ĐẠT TOP 3 CỦA TUẦN NÀY ^^ THƯỞNG ĐÃ ĐƯỢC GỬI CẢM ƠN CÁC BẠN ĐÃ THAM GIA ĐUA TOP ^^ - p give _Songngu_ 800 - bc &fCHÚC MỪNG &E&Lclayd2211 &FLÃNH ĐẠO ĐẢO ĐẠT TOP 4 CỦA TUẦN NÀY ^^ THƯỞNG ĐÃ ĐƯỢC GỬI CẢM ƠN CÁC BẠN ĐÃ THAM GIA ĐUA TOP ^^ - p give clayd2211 700 - bc &fCHÚC MỪNG &E&LKing_Boss &FLÃNH ĐẠO ĐẢO ĐẠT TOP 5 CỦA TUẦN NÀY ^^ THƯỞNG ĐÃ ĐƯỢC GỬI CẢM ƠN CÁC BẠN ĐÃ THAM GIA ĐUA TOP ^^ - p give King_Boss 600 - bc &fCHÚC MỪNG &E&LTheKingWorld &FLÃNH ĐẠO ĐẢO ĐẠT TOP 6 CỦA TUẦN NÀY ^^ THƯỞNG ĐÃ ĐƯỢC GỬI CẢM ƠN CÁC BẠN ĐÃ THAM GIA ĐUA TOP ^^ - p give TheKingWorld 500 - bc &fCHÚC MỪNG &E&LBG_Uzi17 &FLÃNH ĐẠO ĐẢO ĐẠT TOP 7 CỦA TUẦN NÀY ^^ THƯỞNG ĐÃ ĐƯỢC GỬI CẢM ƠN CÁC BẠN ĐÃ THAM GIA ĐUA TOP ^^ - p give BG_Uzi17 400 - bc &fCHÚC MỪNG &E&LACEJack &FLÃNH ĐẠO ĐẢO ĐẠT TOP 8 CỦA TUẦN NÀY ^^ THƯỞNG ĐÃ ĐƯỢC GỬI CẢM ƠN CÁC BẠN ĐÃ THAM GIA ĐUA TOP ^^ - p give ACEJack 300 - bc &fCHÚC MỪNG &E&LHACKEDZED8B &FLÃNH ĐẠO ĐẢO ĐẠT TOP 9 CỦA TUẦN NÀY ^^ THƯỞNG ĐÃ ĐƯỢC GỬI CẢM ƠN CÁC BẠN ĐÃ THAM GIA ĐUA TOP ^^ - p give HACKEDZED8B 200 - bc &fCHÚC MỪNG &E&LLionTV &FLÃNH ĐẠO ĐẢO ĐẠT TOP 10 CỦA TUẦN NÀY ^^ THƯỞNG ĐÃ ĐƯỢC GỬI CẢM ƠN CÁC BẠN ĐÃ THAM GIA ĐUA TOP ^^ - p give LionTV 100
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  envoy:
+    permission: skinsrestorer.playercmds
+    material: TORCH
+    data: 0
+    name: '&c&l● &B&LTriệu hồi SKY DROP &C&L●'
+    lore:
+    - '&fVật phẩm này sẽ kích hoạt'
+    - '&fSky Drop ngay lập tức'
+    - '&c&lLưu ý: &cKhông sử dụng trong khi đang trong DROP'
+    - ''
+    - '&7&o((!)) Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - envoy end
+    - envoy start
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  sm:
+    permission: skinsrestorer.playercmds
+    material: SAPLING
+    data: 4
+    name: '&A&l⊰MẦM CÂY CAO SU⊱ &2&lLevel: 3'
+    lore:
+    - '&aNhảy cao &24&1 trong &210&1 giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 27
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:jump_boost 10 4
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: FIREWORK_BLAST
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag0:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&7&LSợ vợ⊙﹏⊙&8&l &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.0
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag1:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&fTui F.Aᴖᴥᴖ&r&8&l] &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.1
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tien:
+    permission: skinsrestorer.playercmds
+    material: NETHER_STAR
+    data: 0
+    name: '&e&lRank &8&l<&b&lTIÊN&8&l> &e&l| MẢNH'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: true
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% parent set Vip4
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag8:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&eDân chơi(¬‿¬)&8&l] &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.8
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag9:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&7&LSợ vợ⊙﹏⊙&8&l &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.9
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag6:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&FĐ&BẸ&FP &BZ&FA&BI&E*∩_∩*&8&l] &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.6
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag7:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&eDân chơi(¬‿¬)&8&l] &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.7
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag4:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&b&lXinh &f&lgái&b˘◡˘&r&8&l] &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.4
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag5:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&FĐ&BẸ&FP &BZ&FA&BI&E*∩_∩*&8&l] &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.5
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag2:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&c&lTrùm trường(¬‿¬)&r&8&l] &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.2
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  tag3:
+    permission: skinsrestorer.playercmds
+    material: NAME_TAG
+    data: 0
+    name: '&8&l[&4&lĐ&c&lẠ&4&LI &c&lC&4&lA&c(∪ ◡ ∪)&r&8&l] &e&l| THẺ BIỆT DANH'
+    lore:
+    - '&7[!] Các bạn &e/tags &7để hiển thị biệt danh nhé'
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set deluxetags.tag.3
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  '100':
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l100,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 100000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  '500':
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l500,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 500000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  1pv:
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l+1 PV | PHIẾU &7(Không dành cho những bạn có Rank!)'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - lp user %player% permission set playervaults.amount.1
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  war4:
+    permission: skinsrestorer.playercmds
+    material: REDSTONE_BLOCK
+    data: 0
+    name: '&4&l■ PHIẾU CHIẾN ĐẤU IV ■'
+    lore:
+    - '&clưu ý: Dọn sạch đồ trong túi trước khi sử dụng!!!'
+    - '&d(SV đã thông báo, mất đồ Sv không chịu trách nhiệm)'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 27
+    broadcasts: []
+    messages: []
+    commands:
+    - chestcommands open war4 %player%
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  war3:
+    permission: skinsrestorer.playercmds
+    material: REDSTONE_BLOCK
+    data: 0
+    name: '&4&l■ PHIẾU CHIẾN ĐẤU III ■'
+    lore:
+    - '&clưu ý: Dọn sạch đồ trong túi trước khi sử dụng!!!'
+    - '&d(SV đã thông báo, mất đồ Sv không chịu trách nhiệm)'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 27
+    broadcasts: []
+    messages: []
+    commands:
+    - chestcommands open war3 %player%
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  war2:
+    permission: skinsrestorer.playercmds
+    material: REDSTONE_BLOCK
+    data: 0
+    name: '&4&l■ PHIẾU CHIẾN ĐẤU II ■'
+    lore:
+    - '&clưu ý: Dọn sạch đồ trong túi trước khi sử dụng!!!'
+    - '&d(SV đã thông báo, mất đồ Sv không chịu trách nhiệm)'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - chestcommands open war2 %player%
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  war1:
+    permission: skinsrestorer.playercmds
+    material: REDSTONE_BLOCK
+    data: 0
+    name: '&4&l■ KHỐI CHIẾN ĐẤU I ■'
+    lore:
+    - '&clưu ý: Dọn sạch đồ trong túi trước khi sử dụng!!!'
+    - '&d(SV đã thông báo, mất đồ Sv không chịu trách nhiệm)'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - chestcommands open war1 %player%
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  cuoctien:
+    permission: skinsrestorer.playercmds
+    material: DIAMOND_HOE
+    data: 0
+    name: '&b&lCuốc tiên &d[Tự động bán/nhận]'
+    lore:
+    - ''
+    - '&7Cuốc tiện lợi dùng để farm và đua top &f((/canetop))'
+    - ''
+    - '&e&O(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - scyther give %player% 1 200
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  masoi:
+    permission: skinsrestorer.playercmds
+    material: BOOK
+    data: 0
+    name: '&4&lSách &4&l☾ MA SÓI ☾'
+    lore:
+    - '&cKhi trăng tròn vào lúc 10h'
+    - '&ctối người chơi sẽ hóa sói,'
+    - '&cđược Tăng Sức Mạnh đến 3h sáng.'
+    - '&f(Kích hoạt ngẫu nhiên)'
+    - ''
+    - '&e&O(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ae givebook %player% masoi 1 1 100 0
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  sukien:
+    permission: skinsrestorer.playercmds
+    material: BOOK
+    data: 0
+    name: '&e&lSách &e&l✿ Sự kiện ✿'
+    lore:
+    - '&aCường hóa này sẽ giúp bạn'
+    - '&acày đồ sự kiện mỗi khi'
+    - '&aserver có sự kiện.'
+    - '&f(Level càng cao tỉ lệ ra đồ càng cao)'
+    - ''
+    - '&e&O(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ae givebook %player% sukien 1 1 100 0
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  HomVuKhiGiangSinh:
+    permission: skinsrestorer.playercmds
+    material: ENDER_CHEST
+    name: '&b&l⁕ Hòm Vũ Khí &f&lG&b&lI&f&lÁ&b&lN&f&lG &b&lS&f&lI&b&lN&f&lH&b&l ⁕'
+    lore:
+    - '&fNhận cả 3 Vũ Khí:'
+    - '&f- &b⁕&f⁕&b⁕ &b&lKIẾM &f&lGIÁNG &f&lSINH &b⁕&f⁕&b⁕'
+    - '&f- &b⁕&f⁕&b⁕ &b&lRÌU &f&lGIÁNG &f&lSINH &b⁕&f⁕&b⁕'
+    - '&f- &b⁕&f⁕&b⁕ &b&lCUNG &f&lGIÁNG &f&lSINH &b⁕&f⁕&b⁕'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - asets weapon %player% KiemGiangSinh
+    - asets weapon %player% RiuGiangSinh
+    - asets weapon %player% CungGiangSinh
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    data: 0
+  HomVuKhiGiangSinhPlus:
+    permission: skinsrestorer.playercmds
+    material: ENDER_CHEST
+    name: '&b&l⁕ Hòm Vũ Khí &f&lG&b&lI&f&lÁ&b&lN&f&lG &b&lS&f&lI&b&lN&f&lH&b&l &f[&b2&f] &b&l⁕'
+    lore:
+    - '&fNhận cả 3 Vũ Khí:'
+    - '&f- &b⁕&f⁕&b⁕ &b&lKIẾM &f&lGIÁNG &f&lSINH &f[&b2&f] &b⁕&f⁕&b⁕'
+    - '&f- &b⁕&f⁕&b⁕ &b&lRÌU &f&lGIÁNG &f&lSINH &f[&b2&f] &b⁕&f⁕&b⁕'
+    - '&f- &b⁕&f⁕&b⁕ &b&lCUNG &f&lGIÁNG &f&lSINH &f[&b2&f] &b⁕&f⁕&b⁕'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - asets weapon %player% KiemGiangSinhPlus
+    - asets weapon %player% RiuGiangSinhPlus
+    - asets weapon %player% CungGiangSinhPlus
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    data: 0
+
+  # #################MYTHICMOBS-SPAWNEGG-VOUCHER###############
+  cocnubsbede:
+    material: MONSTER_EGG
+    data: 93
+    name: '&2&l**Triệu hồi Piccolo**'
+    lore:
+    - ''
+    - '&aRơi &f1-5 &7[♦] &7&lMảnh đá nâng cấp &7[♦]'
+    - '&aĐộ khó: &aDễ'
+    - '&f&o(!) Chuột phải để triệu hồi'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 600
+    broadcasts: []
+    messages: []
+    commands:
+    - '[op]mm m spawn Piccolo'
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+
+  # #################MYTHICMOBS-SPAWNEGG-VOUCHER###############
+  piccolo:
+    material: MONSTER_EGG
+    data: 54
+    name: '&2&l**Triệu hồi Piccolo**'
+    lore:
+    - ''
+    - '&7Rơi: &f1-5 &7[♦] &7&lMảnh đá nâng cấp &7[♦]'
+    - '&7Độ khó: &aDễ'
+    - '&c&o((Lưu ý không triệu hồi ở Spawn và Warzone))'
+    - '&f(!) Chuột phải để triệu hồi'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 600
+    broadcasts: []
+    messages: []
+    commands:
+    - '[op]mm m spawn Piccolo'
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: bosssaiyan.spawn
+  frieza:
+    material: MONSTER_EGG
+    data: 58
+    name: '&5&l**Triệu hồi Frieza**'
+    lore:
+    - ''
+    - '&7Rơi: &f2-8 &7[♦] &7&lMảnh đá nâng cấp &7[♦]'
+    - '&7Độ khó: &aDễ'
+    - '&c&o((Lưu ý không triệu hồi ở Spawn và Warzone))'
+    - '&f(!) Chuột phải để triệu hồi'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 600
+    broadcasts: []
+    messages: []
+    commands:
+    - '[op]mm m spawn Frieza'
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: bosssaiyan.spawn
+  android18:
+    material: MONSTER_EGG
+    data: 59
+    name: '&b&l**Triệu hồi Android18**'
+    lore:
+    - ''
+    - '&7Rơi: &f4-12 &7[♦] &7&lMảnh đá nâng cấp &7[♦]'
+    - '&7Độ khó: &eTrung Bình'
+    - '&c&o((Lưu ý không triệu hồi ở Spawn và Warzone))'
+    - '&f(!) Chuột phải để triệu hồi'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 600
+    broadcasts: []
+    messages: []
+    commands:
+    - '[op]mm m spawn Android18'
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: bosssaiyan.spawn
+  krilin:
+    material: MONSTER_EGG
+    data: 57
+    name: '&e&l**Triệu hồi Krilin**'
+    lore:
+    - ''
+    - '&7Rơi: &f12-36 &7[♦] &7&lMảnh đá nâng cấp &7[♦]'
+    - '&7Độ khó: &eTrung Bình'
+    - '&c&o((Lưu ý không triệu hồi ở Spawn và Warzone))'
+    - '&f(!) Chuột phải để triệu hồi'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 600
+    broadcasts: []
+    messages: []
+    commands:
+    - '[op]mm m spawn Krilin'
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: bosssaiyan.spawn
+  gohan:
+    material: MONSTER_EGG
+    data: 51
+    name: '&f&l**Triệu hồi Gohan**'
+    lore:
+    - ''
+    - '&7Rơi: &f30-120 &7[♦] &7&lMảnh đá nâng cấp &7[♦]'
+    - '&7Độ khó: &cKhó'
+    - '&c&o((Lưu ý không triệu hồi ở Spawn và Warzone))'
+    - '&f(!) Chuột phải để triệu hồi'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 600
+    broadcasts: []
+    messages: []
+    commands:
+    - '[op]mm m spawn Gohan'
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: bosssaiyan.spawn
+  vegeta:
+    material: MONSTER_EGG
+    data: 120
+    name: '&9&l**Triệu hồi Vegeta**'
+    lore:
+    - ''
+    - '&7Rơi: &f45-160 &7[♦] &7&lMảnh đá nâng cấp &7[♦]'
+    - '&7Độ khó: &cKhó'
+    - '&c&o((Lưu ý không triệu hồi ở Spawn và Warzone))'
+    - '&f(!) Chuột phải để triệu hồi'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 600
+    broadcasts: []
+    messages: []
+    commands:
+    - '[op]mm m spawn Vegeta'
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: bosssaiyan.spawn
+  songoku:
+    material: MONSTER_EGG
+    data: 61
+    name: '&6&l**Triệu hồi Songoku**'
+    lore:
+    - ''
+    - '&7Rơi: &f90-270 &7[♦] &7&lMảnh đá nâng cấp &7[♦]'
+    - '&7      &f0-3 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - '&7      &f0-2 &f✦ Đá cường hóa ✦'
+    - '&7Độ khó: &4&l???'
+    - '&c&o((Lưu ý không triệu hồi ở Spawn và Warzone))'
+    - '&f(!) Chuột phải để triệu hồi'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 600
+    broadcasts: []
+    messages: []
+    commands:
+    - '[op]mm m spawn Songoku'
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: bosssaiyan.spawn
+  mabuu:
+    material: MONSTER_EGG
+    data: 59
+    name: '&b&l**Triệu hồi MaBuu**'
+    lore:
+    - ''
+    - '&7Rơi: &f4-12 &7[♦] &7&lMảnh đá nâng cấp &7[♦]'
+    - '&7Độ khó: &eTrung Bình'
+    - '&c&o((Lưu ý không triệu hồi ở Spawn và Warzone))'
+    - '&f(!) Chuột phải để triệu hồi'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 600
+    broadcasts: []
+    messages: []
+    commands:
+    - '[op]mm m spawn Mabuu'
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: bosssaiyan.spawn
+  ngocrong1:
+    material: DOUBLE_PLANT
+    data: 0
+    name: '&6&lNgọc Rồng (1✯)'
+    lore:
+    - ''
+    - '&fDùng để đổi điều ước của &6&l(RỒNG THẦN)'
+    - '&7(Click-chuột-phải để đổi điều ước!)'
+    - '&01'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ecraft opencraft dieuuoc %player%
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  ngocrong2:
+    material: DOUBLE_PLANT
+    data: 0
+    name: '&6&lNgọc Rồng (2✯)'
+    lore:
+    - ''
+    - '&fDùng để đổi điều ước của &6&l(RỒNG THẦN)'
+    - '&7(Click-chuột-phải để đổi điều ước!)'
+    - '&02'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ecraft opencraft dieuuoc %player%
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  ngocrong3:
+    material: DOUBLE_PLANT
+    data: 0
+    name: '&6&lNgọc Rồng (3✯)'
+    lore:
+    - ''
+    - '&fDùng để đổi điều ước của &6&l(RỒNG THẦN)'
+    - '&7(Click-chuột-phải để đổi điều ước!)'
+    - '&03'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ecraft opencraft dieuuoc %player%
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  ngocrong4:
+    material: DOUBLE_PLANT
+    data: 0
+    name: '&6&lNgọc Rồng (4✯)'
+    lore:
+    - ''
+    - '&fDùng để đổi điều ước của &6&l(RỒNG THẦN)'
+    - '&7(Click-chuột-phải để đổi điều ước!)'
+    - '&04'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ecraft opencraft dieuuoc %player%
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  ngocrong5:
+    material: DOUBLE_PLANT
+    data: 0
+    name: '&6&lNgọc Rồng (5✯)'
+    lore:
+    - ''
+    - '&fDùng để đổi điều ước của &6&l(RỒNG THẦN)'
+    - '&7(Click-chuột-phải để đổi điều ước!)'
+    - '&05'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ecraft opencraft dieuuoc %player%
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  ngocrong6:
+    material: DOUBLE_PLANT
+    data: 0
+    name: '&6&lNgọc Rồng (6✯)'
+    lore:
+    - ''
+    - '&fDùng để đổi điều ước của &6&l(RỒNG THẦN)'
+    - '&7(Click-chuột-phải để đổi điều ước!)'
+    - '&06'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ecraft opencraft dieuuoc %player%
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  ngocrong7:
+    material: DOUBLE_PLANT
+    data: 0
+    name: '&6&lNgọc Rồng (7✯)'
+    lore:
+    - ''
+    - '&fDùng để đổi điều ước của &6&l(RỒNG THẦN)'
+    - '&7(Click-chuột-phải để đổi điều ước!)'
+    - '&07'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ecraft opencraft dieuuoc %player%
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  dieuuoc:
+    material: DRAGONS_BREATH
+    data: 0
+    name: '&6&l๖Điều Ước &e&l๖Rồng Thần'
+    lore:
+    - ''
+    - '&bƯớc mọi thứ trên thế gian này'
+    - '&bSức mạnh, quyền lực, tiền tài,...'
+    - ''
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - dm open dieuuocrongthan %player%
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  beerus:
+    material: MONSTER_EGG
+    data: 69
+    name: '&d&l**Triệu hồi Beerus**'
+    lore:
+    - ''
+    - '&7Độ khó: &4&l???'
+    - '&c&o((Lưu ý không triệu hồi ở Spawn và Warzone))'
+    - '&f(!) Chuột phải để triệu hồi'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 600
+    broadcasts:
+    - '&c&l%player% &4&lđã đánh thức &f&lThần Huỷ Diệt &d&lBeerus'
+    messages: []
+    commands:
+    - '[op]mm m spawn Beerus'
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: bosssaiyan.spawn
+  '6000':
+    material: REDSTONE_TORCH_ON
+    data: 0
+    name: '&b&l●&3&l•&b&l● &a&lQuà Kỉ Niệm &e&l6&6&l0&e&l0&6&l0 &e&lThành Viên &b&l●&3&l•&b&l●'
+    lore:
+    - '&7Nhận các vật phẩm sau:'
+    - ''
+    - '&6&lx2 Sách cường hoá Huyền thoại'
+    - '&7x3 &b✿&f✿&b✿ &A&nChìa Khóa&r &d&lCẦU VỒNG&r &b✿&f✿&b✿'
+    - ''
+    - '&f(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages:
+    - '&2[&a!&2] &aMở thành công!'
+    commands:
+    - ae givercbook legendary %player% 2
+    - crazycrates give p cauvong 3 %player%
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  strength4:
+    material: POTION
+    data: 8201
+    name: '&c&lThuốc Sức Mạnh IV'
+    lore:
+    - '&9Sức mạnh IV (5:00)'
+    - ''
+    - '&f(!) Chuột phải để dùng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: true
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages:
+    - '&c&l** Sức mạnh IV &c(5:00) &c&l**'
+    commands:
+    - effect %player% strength 300 3
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_WITCH_DRINK
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 5
+    actionbar: ''
+    permission: ''
+  strength6:
+    material: POTION
+    data: 8201
+    name: '&c&lThuốc Sức Mạnh VI'
+    lore:
+    - '&9Sức mạnh VI (5:00)'
+    - ''
+    - '&f(!) Chuột phải để dùng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: true
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 5
+    broadcasts: []
+    messages:
+    - '&c&l** Sức mạnh VI &c(5:00) &c&l**'
+    commands:
+    - effect %player% strength 300 5
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_WITCH_DRINK
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 5
+    actionbar: ''
+    permission: ''
+  strength8:
+    material: POTION
+    data: 8201
+    name: '&c&lThuốc Sức Mạnh VIII'
+    lore:
+    - '&9Sức mạnh VIII (5:00)'
+    - ''
+    - '&f(!) Chuột phải để dùng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: true
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages:
+    - '&c&l** Sức mạnh VIII &c(5:00) &c&l**'
+    commands:
+    - effect %player% strength 300 7
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_WITCH_DRINK
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 5
+    actionbar: ''
+    permission: ''
+  strength10:
+    material: POTION
+    data: 8201
+    name: '&c&lThuốc Sức Mạnh X'
+    lore:
+    - '&9Sức mạnh X (5:00)'
+    - ''
+    - '&f(!) Chuột phải để dùng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: true
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages:
+    - '&c&l** Sức mạnh X &c(5:00) &c&l**'
+    commands:
+    - effect %player% strength 300 9
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_WITCH_DRINK
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 5
+    actionbar: ''
+    permission: ''
+  '2000':
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l2,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 2000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  '4000':
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l4,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 4000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  exp10:
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l100,000 &e&lExp&a&l | x1 BÌNH'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - exp give %player% 10000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  '1000':
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l1,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 1000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  gems100:
+    permission: ''
+    material: EMERALD
+    data: 0
+    name: '&6&lx100 Gems'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - gems add %player% 100
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  bingo64:
+    permission: ''
+    material: PUMPKIN
+    data: 0
+    name: '&6&lx64 Bí Khổng Lồ'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - ie give bingo %player% 64
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  giveaway:
+    material: CHEST
+    name: '&f&l「&b&lPhần Thưởng &e&lGiveAway MineAhihi&f&l」'
+    lore:
+    - ''
+    - '&f| &e(!) Chuột phải để khám phá'
+    - '&f| &f&lTHAM GIA NGAY &7(/giveaway)'
+    - ''
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: true
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages:
+    - '&e&l[!] Mở thành công'
+    commands:
+    - crazycrates give p Thuongco 2 %player%
+    - crazycrates give p Phuthuy 2 %player%
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_PLAYER_LEVELUP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 5
+    actionbar: ''
+    permission: ''
+    data: 0
+  carrot:
+    material: CARROT_ITEM
+    name: '&6&l♈Cà Rốt Sinh Lực♈ &6&l(&6Lvl: 1&6&l)'
+    lore:
+    - ''
+    - '&8● &fHồi lập tức &c8♥'
+    - '&8● &c&lLưu Ý: &cChỉ dùng ở Dungeon!'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: true
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 1 2
+    - effect %player% minecraft:instant_damage 0
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_PLAYER_LEVELUP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 5
+    actionbar: ''
+    permission: dungeon.carrot
+    data: 0
+  carrot2:
+    material: GOLDEN_CARROT
+    name: '&d&l♈Cà Rốt Sinh Lực♈ &d&l(&dLv: 2&d&l)'
+    lore:
+    - ''
+    - '&8● &fHồi lập tức &c64♥'
+    - '&8● &c&lLưu Ý: &cChỉ dùng ở Dungeon!'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: true
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - effect %player% minecraft:instant_health 1 5
+    - effect %player% minecraft:instant_damage 0
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_PLAYER_LEVELUP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 5
+    actionbar: ''
+    permission: dungeon.carrot
+    data: 0
+  trieuhoi:
+    material: STICK
+    name: '&6&lTriệu hồi Rồng Con'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: true
+    remove-item: false
+    heal-player: false
+    smite-effect: true
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - mm s activate Rong1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_PLAYER_LEVELUP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 5
+    actionbar: ''
+    permission: ''
+    data: 0
+  giet:
+    material: BLAZE_ROD
+    name: '&6&lGiết Rồng Con'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: true
+    remove-item: false
+    heal-player: false
+    smite-effect: true
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - mm m kill Rong
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_PLAYER_LEVELUP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 5
+    actionbar: ''
+    permission: ''
+    data: 0
+  neyuq:
+    material: CHEST
+    data: 0
+    name: '&b&l●&3&l•&b&l● &c&lHộp Quà NeyuQ &c(Youtuber) &b&l●&3&l•&b&l●'
+    lore:
+    - ''
+    - '&7&lHộp quà gồm:'
+    - '&7x1 &f(Sơn Shield) &f&lNeyuQ Gang'
+    - '&7x10 &6&l♈Cà Rốt Sinh Lực♈ &6&l(&6Lvl: 1&6&l)'
+    - '&7x1 &b✿&f✿&b✿ &A&nChìa Khóa&r &d&lCẦU VỒNG&r &b✿&f✿&b✿'
+    - '&7x10 &eTáo vàng'
+    - '&7x100 &6☀ Đá quý'
+    - '&7x2 &eSheep &fSpawner'
+    - '&7x2 &eCow &fSpawner'
+    - ''
+    - '&7&o(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages:
+    - '&2[&a!&2] &aMở thành công!'
+    commands:
+    - give %player% golden_apple 10
+    - crazycrates give p Cauvong 1 %player%
+    - ev give %player% carrot 10
+    - gems add %player% 100
+    - ssi give %player% skin NeyuQ
+    - silkspawners give %player% sheep 2
+    - silkspawners give %player% cow 2
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_PLAYER_LEVELUP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  kresh:
+    material: CHEST
+    data: 0
+    name: '&b&l●&3&l•&b&l● &c&lHộp Quà Kresh &c(Youtuber) &b&l●&3&l•&b&l●'
+    lore:
+    - ''
+    - '&7&lHộp quà gồm:'
+    - '&7x10 &6&l♈Cà Rốt Sinh Lực♈ &6&l(&6Lvl: 1&6&l)'
+    - '&7x2 &b✿&f✿&b✿ &A&nChìa Khóa&r &d&lCẦU VỒNG&r &b✿&f✿&b✿'
+    - '&7x10 &eTáo vàng'
+    - '&7x100 &6☀ Đá quý'
+    - '&7x1 &eSheep &fSpawner'
+    - '&7x1 &eCow &fSpawner'
+    - '&7x1 &eChicken &fSpawner'
+    - '&7x1 &ePig &fSpawner'
+    - ''
+    - '&7&o(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages:
+    - '&2[&a!&2] &aMở thành công!'
+    commands:
+    - give %player% golden_apple 10
+    - crazycrates give p Cauvong 2 %player%
+    - ev give %player% carrot 10
+    - gems add %player% 100
+    - silkspawners give %player% sheep 1
+    - silkspawners give %player% cow 1
+    - silkspawners give %player% chicken 1
+    - silkspawners give %player% pig 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_PLAYER_LEVELUP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  alenkai:
+    material: CHEST
+    data: 0
+    name: '&b&l●&3&l•&b&l● &c&lHộp Quà AlenKai &c(Youtuber) &b&l●&3&l•&b&l●'
+    lore:
+    - ''
+    - '&7&lHộp quà gồm:'
+    - '&7x10 &6&l♈Cà Rốt Sinh Lực♈ &6&l(&6Lvl: 1&6&l)'
+    - '&7x2 &b✿&f✿&b✿ &A&nChìa Khóa&r &d&lCẦU VỒNG&r &b✿&f✿&b✿'
+    - '&7x10 &eTáo vàng'
+    - '&7x100 &6☀ Đá quý'
+    - '&7x1 &eSheep &fSpawner'
+    - '&7x1 &eCow &fSpawner'
+    - '&7x1 &eChicken &fSpawner'
+    - '&7x1 &ePig &fSpawner'
+    - ''
+    - '&7&o(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages:
+    - '&2[&a!&2] &aMở thành công!'
+    commands:
+    - give %player% golden_apple 10
+    - crazycrates give p Cauvong 2 %player%
+    - ev give %player% carrot 10
+    - gems add %player% 100
+    - silkspawners give %player% sheep 1
+    - silkspawners give %player% cow 1
+    - silkspawners give %player% chicken 1
+    - silkspawners give %player% pig 1
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_PLAYER_LEVELUP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+
+  # ############ITEM-PET-VOUCHER###################
+  testmoruong:
+    permission: petegg.use
+    material: DRAGON_EGG
+    data: 93
+    name: '&5★&d☾&c&l乂&d☽ &c&k||&d&l TRỨNG RỒNG &d(&5｡｡&dBáu Vật&5｡｡&d) &c&k||&d ☾&c&l乂&d☽&5★'
+    lore:
+    - '&bTrứng rồng ngoài không gian có được khi'
+    - '&btiêu diệt hắn ta, phần thưởng hấp dẫn.'
+    - ''
+    - '&3★&b✮ &d☾&c⦿&d☽ &b&lTHIÊN HÀ &d☾&c⦿&d☽&b ✮&3★'
+    - ''
+    - '&c&lĐập trứng: &b20⛃'
+    - '&7&o(/warp end)'
+    - ''
+    - '&7Chuột phải để sử dụng!'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - dm open quayruongxu %player%
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+
+  # ############ITEM-PET-VOUCHER###################
+  trungrong:
+    permission: petegg.usee
+    material: DRAGON_EGG
+    data: 93
+    name: '&5★&d☾&c&l乂&d☽ &c&k||&d&l TRỨNG RỒNG &d(&5｡｡&dBáu Vật&5｡｡&d) &c&k||&d ☾&c&l乂&d☽&5★'
+    lore:
+    - '&bTrứng rồng ngoài không gian có được khi'
+    - '&btiêu diệt hắn ta, phần thưởng hấp dẫn.'
+    - ''
+    - '&3★&b✮ &d☾&c⦿&d☽ &b&lTHIÊN HÀ &d☾&c⦿&d☽&b ✮&3★'
+    - ''
+    - '&c&lĐập trứng: &b20⛃'
+    - '&0#TRUNGRONGKHONGGIAN'
+    - ''
+    - '&7Chuột phải để sử dụng!'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - dm execute %player% [message] &f[&cMineahihi&f] &aTiến hành đập trứng, vui lòng chờ trong 1s...
+    - dm execute %player% [openguimenu] quayruongxu<delay=20>
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: '0'
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+  phieu1m:
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l1,000,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 1000000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  phieu5m:
+    permission: skinsrestorer.playercmds
+    material: PAPER
+    data: 0
+    name: '&a&l5,000,000ṩ | PHIẾU'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: false
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - eco give %player% 5000000
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ''
+      pitch: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  dendiem:
+    permission: skinsrestorer.playercmds
+    material: NETHER_STAR
+    data: 0
+    name: '&e&lĐền Điểm Skill &7(lỗi reset thiếu điểm)'
+    lore:
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: true
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages: []
+    commands:
+    - dm open dendiemskill %player%
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LEVEL_UP
+      pitch: 1
+    particles:
+      amount: 100
+    effects:
+      amplifier: 0
+    coolDown: 0
+    texture: ''
+  vietbua:
+    material: CHEST
+    data: 0
+    name: '&b&l●&3&l•&b&l● &c&lHộp Quà &2&lViệt Bựa &c(Youtuber) &b&l●&3&l•&b&l●'
+    lore:
+    - ''
+    - '&7&lHộp quà gồm:'
+    - '&7x1 &f(Sơn Shield) &2&lViệt Bựa'
+    - '&7x10 &6&l♈Cà Rốt Sinh Lực♈ &6&l(&6Lvl: 1&6&l)'
+    - '&7x1 &b✿&f✿&b✿ &A&nChìa Khóa&r &d&lCẦU VỒNG&r &b✿&f✿&b✿'
+    - '&7x10 &eTáo vàng'
+    - '&7x100 &6☀ Đá quý'
+    - '&7x2 &eSheep &fSpawner'
+    - '&7x2 &eCow &fSpawner'
+    - ''
+    - '&7&o(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages:
+    - '&2[&a!&2] &aMở thành công!'
+    commands:
+    - give %player% golden_apple 10
+    - crazycrates give p Cauvong 1 %player%
+    - ev give %player% carrot 10
+    - gems add %player% 100
+    - ssi give %player% skin vietbua
+    - silkspawners give %player% sheep 2
+    - silkspawners give %player% cow 2
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_PLAYER_LEVELUP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  dragonvn:
+    material: CHEST
+    data: 0
+    name: '&b&l●&3&l•&b&l● &c&lHộp Quà DragonVN &c(Youtuber) &b&l●&3&l•&b&l●'
+    lore:
+    - ''
+    - '&7&lHộp quà gồm:'
+    - '&7x1 &f(Sơn Shield) &c&lDragonVN'
+    - '&7x10 &6&l♈Cà Rốt Sinh Lực♈ &6&l(&6Lvl: 1&6&l)'
+    - '&7x1 &b✿&f✿&b✿ &A&nChìa Khóa&r &d&lCẦU VỒNG&r &b✿&f✿&b✿'
+    - '&7x10 &eTáo vàng'
+    - '&7x100 &6☀ Đá quý'
+    - '&7x2 &eSheep &fSpawner'
+    - '&7x2 &eCow &fSpawner'
+    - ''
+    - '&7&o(!) Chuột phải để nhận'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: true
+    heal-player: false
+    smite-effect: false
+    cooldown: 0
+    broadcasts: []
+    messages:
+    - '&2[&a!&2] &aMở thành công!'
+    commands:
+    - give %player% golden_apple 10
+    - crazycrates give p Cauvong 1 %player%
+    - ev give %player% carrot 10
+    - gems add %player% 100
+    - ssi give %player% skin dragonvn
+    - silkspawners give %player% sheep 2
+    - silkspawners give %player% cow 2
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: ENTITY_PLAYER_LEVELUP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    texture: ''
+    coolDown: 0
+    actionbar: ''
+    permission: ''
+  hoatinhyeu:
+    permission: skinsrestorer.playercmds
+    material: RED_ROSE
+    data: 0
+    name: '&c&l⊰♥ HOA TÌNH YÊU ♥⊱ &6&l[I]'
+    lore:
+    - '&7Hồi lập tức &c10 ♥ &7cho mình và đồng minh'
+    - '&7Phạm vi: &a5 khối'
+    - '&7Thời gian hồi: &e5 giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    cooldown: 40
+    broadcasts: []
+    messages: []
+    commands:
+    - src healteam %player% 10 5
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    sounds:
+      sound: LAVA_POP
+      pitch: 0
+    particles:
+      amount: 0
+      particle: ''
+    effects:
+      amplifier: 0
+      effect: ''
+    coolDown: 10
+    texture: ''
+  hoatinhyeu1:
+    permission: skinsrestorer.playercmds
+    material: RED_ROSE
+    data: 0
+    name: '&c&l⊰♥ HOA TÌNH YÊU ♥⊱ &6&l[I]'
+    lore:
+    - '&7Hồi lập tức &c10 ♥ &7cho mình và đồng minh'
+    - '&7Phạm vi: &a5 khối'
+    - '&7Thời gian hồi: &e10 giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    commands:
+    - src healteam %player% 10 5
+    sounds:
+      sound: LAVA_POP
+      pitch: 0
+    coolDown: 10
+    texture: ''
+    broadcasts: []
+    messages: []
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+  hoatinhyeu2:
+    permission: skinsrestorer.playercmds
+    material: RED_ROSE
+    data: 0
+    name: '&c&l⊰♥ HOA TÌNH YÊU ♥⊱ &6&l[II]'
+    lore:
+    - '&7Hồi lập tức &c20 ♥ &7cho mình và đồng minh'
+    - '&7Phạm vi: &a5 khối'
+    - '&7Thời gian hồi: &e10 giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    commands:
+    - src healteam %player% 20 5
+    sounds:
+      sound: LAVA_POP
+      pitch: 0
+    coolDown: 10
+    texture: ''
+    broadcasts: []
+    messages: []
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0
+  hoatinhyeu3:
+    permission: skinsrestorer.playercmds
+    material: RED_ROSE
+    data: 0
+    name: '&c&l⊰♥ HOA TÌNH YÊU ♥⊱ &6&l[III]'
+    lore:
+    - '&7Hồi lập tức &c50 ♥ &7cho mình và đồng minh'
+    - '&7Giải hiệu ứng bất lợi'
+    - '&7Chống đói'
+    - '&7Phạm vi: &a10 khối'
+    - '&7Thời gian hồi: &e10 giây'
+    - ''
+    - '&7[!] Chuột phải để sử dụng'
+    glow: true
+    confirm: false
+    unbreakable: true
+    hide-attributes: false
+    remove-item: false
+    heal-player: false
+    smite-effect: false
+    commands:
+    - src healteam %player% 50 10
+    - effect %player% minecraft:slowness 0
+    - effect %player% minecraft:wither 0
+    - effect %player% minecraft:blindness 0
+    - effect %player% minecraft:hunger 0
+    - effect %player% minecraft:nausea 0
+    - feed %player%
+    sounds:
+      sound: LAVA_POP
+      pitch: 0
+    coolDown: 10
+    texture: ''
+    broadcasts: []
+    messages: []
+    actionbar: ''
+    titles:
+      title: ''
+      subtitle: ''
+      fade-in: 0
+      stay: 0
+      fade-out: 0
+    particles:
+      amount: 0
+    effects:
+      amplifier: 0

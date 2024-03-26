@@ -1,0 +1,91 @@
+bosshoanggiaskull:
+  Id: 397
+  Data: 3
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmY5NTVmYTAxNjkyZjNkOWU4MGFkZWE2OTEzZTBlMzI3Nzk1ZTI4Y2NmYjhiMGE0NmEwYWY1MTk3ZDQ1MGYxMiJ9fX0=
+  Enchantments:
+  - WATER_WORKER:1
+  - OXYGEN:3
+thivehoanggiaskull:
+  Id: 397
+  Data: 3
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODMxNTJiMzhkYzE0MjU4OGQxNGZkZDM4YWFhMGI1NGU2MTM4NjBmN2QxNTM5NTM1YjMyYzAxZWIyMjBmZTY3YiJ9fX0=
+  Enchantments:
+  - WATER_WORKER:1
+  - OXYGEN:3
+thivehoanggiachestplate:
+  Id: 299
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    Unbreakable: true
+    Color: 51,0,153
+thivehoanggialeggings:
+  Id: 300
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    Unbreakable: true
+    Color: 51,0,153
+thivehoanggiaboots:
+  Id: 301
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    Unbreakable: true
+    Color: 51,0,153
+cungthuhoanggiaskull:
+  Id: 397
+  Data: 3
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2UwZDNmMjhiOGUwZjBhNDVjYTJiNDJiNmY0OTViYmZkYTczNzMyZDNhM2YxMDhmNjM1MmU3NThlMWNiOWJhOSJ9fX0=
+  Enchantments:
+  - WATER_WORKER:1
+  - OXYGEN:3
+cungthuhoanggiachestplate:
+  Id: 299
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    Unbreakable: true
+    Color: 255,255,255
+cungthuhoanggialeggings:
+  Id: 300
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    Unbreakable: true
+    Color: 255,255,255
+cungthuhoanggiaboots:
+  Id: 301
+  Display: ''
+  Model: []
+  Attributes: []
+  Amount: 1
+  Options:
+    Unbreakable: true
+    Color: 255,255,255
+  

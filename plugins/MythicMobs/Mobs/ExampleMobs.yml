@@ -1,0 +1,460 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+ThanTai:
+  Type: GIANT
+  Display: '&e&k..&r &c&lBOSS THẦN TÀI &e&k..&r'  
+  Health: 333
+  Damage: 0
+  DamageModifiers:
+  - MAGIC 0
+  - SUFFOCATION 0
+  - ENTITY_ATTACK 0.02
+  - FIRE 0
+  - FIRE_TICK 0
+  - CUSTOM 0
+  - PROJECTILE 0
+  Armor: 500
+  Despawn: false  
+  Equipment:
+  - gold_sword:0 
+  - gold_axe:5
+  - gold_helmet:4
+  - gold_chestplate:3 
+  - gold_leggings:2  
+  - gold_boots:1   
+  Skills:
+  - message{m="&e&k..&r &c&lBOSS THẦN TÀI &e&k..&r &fđã xuất hiện tại &b(/spawn)"} @server ~onSpawn 1  
+  - message{m="&e&k..&r &c&lBOSS THẦN TÀI &e&k..&r &fcòn sống hay mau tiêu diệt! &b(/spawn)"} @server ~onTimer:1600
+  - message{m="&e&k..&r &c&lBOSS THẦN TÀI &e&k..&r &cđã bị tiêu diệt bởi &c&l<trigger.name>&c và nhận được &b&l%math_{server_online}/2[precision:0]% &bXu&c!"} @server ~onDeath 1      
+  - velocity{m=set;x=0;y=0;z=0} @self ~onDamaged
+  # - skill{s=hattung} @trigger ~onDamaged 0.15   
+  - command{c="give <target.name> gold_ingot 1"} ~onDamaged 0.5
+  - command{c="eco give <target.name> 1000"} ~onDamaged 0.4
+  - command{c="points give <trigger.name> %math_{server_online}/2[precision:0]%"} ~onDeath 1
+  - skill{s=thantai1} @PIR{r=50} ~onDeath
+  - potion{type=SLOW_DIGGING;duration=100;level=3} @PlayersInRadius{r=20} ~onTimer:100
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true  
+  AIGoalSelectors:
+  - 0 clear
+  - 2 movetowardstarget
+  AITargetSelectors:
+  - 0 clear 
+  Options:
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    NoDamageTicks: 20
+    MaxCombatDistance: 15
+    MovementSpeed: 0.4
+    Collidable: false
+    LockPitch: true
+    AttackSpeed: 0  
+    KnockbackResistance: 1   
+    Silent: true
+  BossBar:
+    Enabled: true
+    Range: 50
+    Style: SEGMENTED_10
+    Color: YELLOW
+    Title: '&e&m-$⛁⛁⛁$-&r &e&k..&r &c&lBOSS THẦN TÀI &e&k..&r &f∻ &e&m-$⛁⛁⛁$-'    
+Mahaitac:
+  Type: PIG_ZOMBIE
+  Display: '&4&l๑Ma hải tặc๑'  
+  Health: 80
+  Damage: 15
+  Drops:
+  - Mahaitac1
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true  
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  AITargetSelectors:
+  - 0 clear
+  - 1 players    
+  Options:
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    MaxCombatDistance: 15
+    MovementSpeed: 0.2
+    AttackSpeed: 12  
+    Despawn: true
+Bossmahaitac:
+  Type: GIANT
+  Display: '&4&l๑BOSS Ma hải tặc๑'  
+  Health: 2500
+  Damage: 150
+  DamageModifiers:
+  - MAGIC 0
+  - SUFFOCATION 0
+  - PROJECTILE 0.01
+  Armor: 150
+  Despawn: false  
+  Equipment:
+  - gold_sword:0 
+  - gold_helmet:4
+  - gold_chestplate:3 
+  - gold_leggings:2  
+  - chainmail_boots:1   
+  Skills:
+  - remove @EIR{r=5} ~onSpawn
+  - skill{s=mahaitac32} @PlayersInRadius{r=16} ~onDeath
+  - message{m="&4&l๑BOSS Ma hải tặc๑ &fđã xuất hiện tại &eHoang đảo Roslad"} @server ~onSpawn 1  
+  - message{m="&4&l๑BOSS Ma hải tặc๑  &f&lcòn sống ae qua hốt lẹ!! nhớ rũ thêm ae!! &b&o((/dungeon)"} @server ~onTimer:1600
+  - message{m="&4&l๑BOSS Ma hải tặc๑ &cđã bị ae server thịt!"} @server ~onDeath 1      
+  - skill{s=mahaitac1} @trigger ~onDamaged 0.35
+  - damage{amount=15;ia=true} @trigger ~onDamaged
+  # - potion{type=HARM;duration=80;level=3} @PlayersInRadius{r=10;limit=20;sort=RANDOM} ~onTimer:200 
+  - velocity{m=set;x=0;y=0;z=0} @self ~onDamaged
+  - skill{s=hattung} @trigger ~onDamaged 0.15   
+  - potion{type=BLINDNESS;duration=60;level=1} @PlayersInRadius{r=20;limit=4;sort=RANDOM} ~onDamaged 0.1
+  - command{c="cr give to <target.name> bossmahaitac 1"} ~onDeath  
+  - skill{s=manhtrungthuong} @PlayersInRadius{r=8;limit=6;sort=RANDOM} ~onDeath      
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true  
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  AITargetSelectors:
+  - 0 clear
+  - 1 players    
+  Options:
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    NoDamageTicks: 5
+    Persistent: true
+    MaxCombatDistance: 15
+    MovementSpeed: 0.4
+    AttackSpeed: 19  
+    KnockbackResistance: 1   
+  BossBar:
+    Enabled: true
+    Range: 30
+    Style: SEGMENTED_10
+    Color: RED
+    Title: '&c&m---๑---&r &c&lMa Hải Tặc &f∻ &c&m---๑---&r  &c<mob.hp>❤'    
+Manhen:
+  Type: CAVE_SPIDER
+  Display: '&5&l♯NHỆN YÊU TINH♯'  
+  Health: 120
+  Damage: 25
+  Armor: 2
+  Drops:
+  - Nhenyeutinh1
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true    
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  AITargetSelectors:
+  - 0 clear
+  - 1 players  
+  Options:
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    MaxCombatDistance: 25
+    MovementSpeed: 0.3
+    AttackSpeed: 15   
+    Despawn: true  
+  Skills:
+  - cmd{c="ie give manhkhiennhenyeutinh <trigger.name> 1"} ~onDeath 0.02
+Bossmanhen:
+  Type: GIANT
+  Display: '&5&l♯BOSS NHỆN YÊU TINH♯'  
+  Health: 3500
+  DamageModifiers:
+  - MAGIC 0
+  - CUSTOM 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - PROJECTILE 0.01
+  Damage: 150
+  Armor: 150
+  Equipment:
+  - iron_hoe:0 
+  - iron_helmet:4
+  - iron_chestplate:3 
+  - iron_leggings:2  
+  - chainmail_boots:1    
+  Despawn: false     
+  Skills:
+  - message{m="&5&l♯BOSS NHỆN YÊU TINH♯ &fđã xuất hiện tại &eLàng yêu tinh Blesrk"} @server ~onSpawn 1  
+  - message{m="&5&l♯BOSS NHỆN YÊU TINH♯ &cđã bị ae server thịt!"} @server ~onDeath 1  
+  - message{m="&5&l♯BOSS NHỆN YÊU TINH♯ &f&lcòn sống ae qua hốt lẹ!! nhớ rũ thêm ae!! &b&o((/dungeon)"} @server ~onTimer:1600    
+  - skill{s=nhen32} @PlayersInRadius{r=16} ~onDeath
+  - skill{s=nhenx2} @PlayersInRadius{r=8;limit=8;sort=RANDOM} ~onDeath      
+  - threat{amount=1000} @NearestPlayer ~onTimer:100
+  - skill{s=nhen1} @trigger ~onDamaged 0.35  
+  # - velocity{m=set;x=0;y=0;z=0} @self ~onDamaged
+  # - skill{s=hattung} @trigger ~onDamaged 0.15  
+  - damage{amount=15;ia=true} @trigger ~onDamaged
+  # - potion{type=HARM;duration=80;level=3} @PlayersInRadius{r=15;limit=20;sort=RANDOM} ~onTimer:200 
+  - command{c="cr give to <target.name> bossmanhen 1"} ~onDeath   
+  - cmd{c="ie give xuongnhenyeutinh <trigger.name> 1"} ~onDeath 0.2
+  - skill{s=manhtrunghiem} @PlayersInRadius{r=8;limit=6;sort=RANDOM} ~onDeath    
+  Drops:
+  - Mahaitac1
+  Modules:
+    ThreatTable: false
+    ImmunityTable: false
+  AIGoalSelectors:
+  - clear
+  - opendoors
+  - meleeattack
+  - float
+  - lookatplayers
+  - movetowardstarget
+  AITargetSelectors:
+  - 0 clear
+  - 1 players    
+  Options:
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    NoDamageTicks: 10
+    MaxCombatDistance: 7
+    MovementSpeed: 0.8
+    AttackSpeed: 2.4  
+    KnockbackResistance: 1.3      
+  BossBar:
+    Enabled: true
+    Range: 30
+    Style: SEGMENTED_10
+    Color: PINK
+    Title: '&5&m---♯---&r &d&lNhện Yêu Tinh &f∻ &5&m---♯---&r &c<mob.hp>❤'
+Quyslime:
+  Type: WITCH
+  Display: '&0&l☩PHÙ THỦY ĐEN☩'  
+  Health: 140
+  Damage: 50
+  Armor: 33
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true    
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  AITargetSelectors:
+  - 0 clear
+  - 1 players    
+  Drops:
+  - Quyheo1
+  Options:
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    MaxCombatDistance: 25
+    MovementSpeed: 0.4
+    AttackSpeed: 15 
+    Despawn: true
+  Skills:
+  - cmd{c="ie give manhkhienphuthuyden <trigger.name> 1"} ~onDeath 0.05
+Bossquyslime:
+  Type: GIANT
+  Display: '&0&l☩BOSS PHÙ THỦY ĐEN☩'  
+  DamageModifiers:
+  - MAGIC 0
+  - PROJECTILE 0.01
+  Equipment:
+  - potion:0 
+  - diamond_helmet:4
+  - diamond_chestplate:3 
+  - diamond_leggings:2  
+  - chainmail_boots:1   
+  Health: 5000
+  Damage: 150
+  Armor: 150
+  Despawn: false   
+  Skills:
+  - message{m="&0&l☩BOSS PHÙ THỦY ĐEN☩ &fđã xuất hiện tại &eCứ địa phù thủy Onnuk"} @server ~onSpawn 1  
+  - message{m="&0&l☩BOSS PHÙ THỦY ĐEN☩ &cđã bị ae server thịt!"} @server ~onDeath 1    
+  - message{m="&0&l☩BOSS PHÙ THỦY ĐEN☩ &f&lcòn sống ae qua hốt lẹ!! nhớ rũ thêm ae!! &b&o((/dungeon))"} @server ~onTimer:1600 
+  - skill{s=phuthuy32} @PlayersInRadius{r=16} ~onDeath
+  - skill{s=phuthuyx2} @PlayersInRadius{r=10;limit=8;sort=RANDOM} ~onDeath    
+  - skill{s=phuthuy1} @trigger ~onDamaged 0.35 
+  - damage{amount=15;ia=true} @trigger ~onDamaged
+  # - potion{type=HARM;duration=80;level=3} @PlayersInRadius{r=20;limit=20;sort=RANDOM} ~onTimer:200 
+  - velocity{m=set;x=0;y=0;z=0} @self ~onDamaged
+  - skill{s=hattung} @trigger ~onDamaged 0.15
+  - potion{type=WITHER;duration=80;level=2} @PlayersInRadius{r=20;limit=10;sort=RANDOM} ~onDamaged 0.2 
+  - command{c="cr give to <target.name> bossphuthuy 1"} ~onDeath 
+  - skill{s=manhtrungco} @PlayersInRadius{r=8;limit=6;sort=RANDOM} ~onDeath    
+  - cmd{c="ie give xuongphuthuyden <trigger.name> 1"} ~onDeath 0.2
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true  
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  AITargetSelectors:
+  - 0 clear
+  - 1 players    
+  Options:
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    MaxCombatDistance: 15
+    MovementSpeed: 0.6
+    NoDamageTicks: 10
+    AttackSpeed: 32  
+    KnockbackResistance: 1.5    
+  BossBar:
+    Enabled: true
+    Range: 30
+    Style: SEGMENTED_10
+    Color: GREEN
+    Title: '&2&m---☩---&r &a&lPhù Thuỷ Đen &f∻ &2&m---☩---&r &c<mob.hp>❤'    
+# lucifer:
+  # Mobtype: GIANT
+  # Display: '&4&k;;&r &4&lQUỶ ĐỊA NGỤC&r &4&k;;&r'
+  # Health: 1500
+  # Damage: 250
+  # Armor: 1600
+  # DamageModifiers:
+  # - FALL 0
+  # - ENTITY_EXPLOSION 0
+  # - MAGIC 0
+  # - BLOCK_EXPLOSION 0
+  # Modules:
+    # ThreatTable: true
+    # ImmunityTable: true  
+  # AIGoalSelectors:
+  # - 0 clear
+  # - 1 meleeattack
+  # - 2 movetowardstarget
+  # AITargetSelectors:
+  # - 0 clear
+  # - 1 players 
+  # Options:
+    # PreventRandomEquipment: true
+    # PreventOtherDrops: true
+    # PreventItemPickup: true
+    # MaxCombatDistance: 15
+    # NoDamageTicks: 10
+    # MovementSpeed: 0.6
+    # AttackSpeed: 32  
+    # KnockbackResistance: 1.5
+  # Equipment:
+  # - kiemlufifer:0
+  # - mulufifer:4
+  # - aolufifer:3
+  # - quanlufifer:2
+  # - unglucifer:1
+  # BossBar:
+    # Enabled: true
+    # Range: 30
+    # Style: SEGMENTED_10
+    # Color: RED
+    # Title: '&4&m---❂---&r &4&k;;&r &4&lQUỶ ĐỊA NGỤC&r &4&k;;&r &f∻ &c<mob.hp>❤ &4&m---❂---'  
+  # Skills:
+  # - message{m="&4&k;;&r &4&lQUỶ ĐỊA NGỤC&r &4&k;;&r &cđã xuất hiện tại &eCứ địa phù thủy Onnuk"} @server ~onSpawn 1  
+  # - message{m="&4&k;;&r &4&lQUỶ ĐỊA NGỤC&r &4&k;;&r &cđã bị ae server thịt!"} @server ~onDeath 1    
+  # - message{m="&4&k;;&r &4&lQUỶ ĐỊA NGỤC&r &4&k;;&r &f&lcòn sống ae qua hốt lẹ!! nhớ rũ thêm ae!! &b&o((/dungeon)"} @server ~onTimer:800    
+  # - effect:lightning{repeat=5;repeatInterval=3;l=true;lr=80} @self ~onSpawn
+  # - skill{s=osiriseff} @self ~onTimer:50
+  # - skill{s=osirisspawn} @self ~onTimer:100
+  # - skill{s=PhapSu} @Target ~onTimer:800  
+  # - skill{s=summonslave} @Target ~onTimer:600 
+  # - skill{s=osiris8} @trigger ~onTimer:50 0.15  
+  # - damage{amount=15;ia=true} @trigger ~onDamaged
+  # # - potion{type=HARM;duration=80;level=3} @PlayersInRadius{r=15;limit=20;sort=RANDOM} ~onTimer:200 
+  # - skill{s=quydianguc} @PlayersInRadius{r=16} ~onDeath
+  # - skill{s=quydianguc2} @PlayersInRadius{r=25;limit=8;sort=RANDOM} ~onDeath      
+  # - randomskill{s=ra1,TitanSteamRelease} @self ~onTimer:520 <99% 0.95
+  # - randomskill{s=zeus,ra1} @self ~onTimer:700 <98% 0.68
+  # - randomskill{s=amon4,ChainingThrow} @self ~onTimer:600 <99% 1  
+  # - command{c="cr give to <target.name> quydianguc 1"} ~onDeath      
+  # - velocity{m=set;x=0;y=0;z=0} @self ~onDamaged 
+  # - skill{s=manhtrungtruyenthuyet} @PlayersInRadius{r=8;limit=6;sort=RANDOM} ~onDeath    
+# Rong:
+  # Type: ENDER_DRAGON
+  # Display: '&cRồng Con'
+  # Size:
+  # Damage: 40
+  # Armor: 50
+  # DamageModifiers:
+  # - BLOCK_EXPLOSION 0
+  # - ENTITY_EXPLOSION 0
+  # - LIGHTNING 0
+  # - FALL 0
+  # BossBar:
+    # Enabled: true
+    # Title: '&cRồng Con'
+    # Range: 20
+    # Color: RED
+    # Style: SEGMENTED_20
+  # Health: 400
+  # AIGoalSelectors:
+  # - clear
+  # - opendoors
+  # - meleeattack
+  # - float
+  # - lookatplayers
+  # - movetowardstarget
+  # AITargetSelectors:
+  # - players
+  # Drops:
+  # - exp 100000
+  # - diamond 64
+  # - emerald 64
+  # - stone 64
+  # - glass 64
+  # - iron_ingot 64
+  # - gold_ingot 64
+  # - iron_sword 5
+  # - diamond_sword 5
+  # - wool 64
+  # - glowstone_dust 64
+  # - stick 64
+  # Options:
+    # NoDamageTicks: 1
+    # MovementSpeed: 0
+    # KnockbackResistance: 1
+    # PreventSunburn: true 
+    # PreventRandomEquipment: true
+    # PreventOtherDrops: true
+    # PreventMobKillDrops: true
+    # Silent: true
+    # Despawn: false
+    # PreventSlimeSplit: true
+    # Collidable: false
+    # FollowRange: 15
+    # MaxCombatDistance: 20
+    # AttackSpeed: 1
+  # DamageModifiers:
+  # - LIGHTNING 0
+  # - POISON 0 
+  # - MAGIC 0
+  # - WITHER 0
+  # - THORNS 0
+  # - FIRE_TICK 0
+  # - FIRE 0
+  # - FALL 0
+  # - PROJECTILE 0.5
+  # - ENTITY_ATTACK 0.5
+  # - CUSTOM 0
+  # - MELTING 0
+  # - SUFFOCATION 0
+  # - EXPLOSION 0
+  # Skills:
+  # - velocity{m=set;x=0;y=0;z=0} @self ~onDamaged
+  # - velocity{m=set;x=0;y=0;z=0} @self ~onTimer:
+  # - command{c="crazycrates give p Phuthuy 1 <target.name>"} ~onDeath  
+  # - command{c="crazycrates give p Cauvong 10 <target.name>"} ~onDeath  
+  # - message{m="&c&lRồng Con Đã Xuất Hiện Tại Dungeon 3"} @server ~onSpawn 1  
+  # - message{m="&c&lRồng Con Đã Bị Thịt Bởi &c&l<trigger.name>"} @server ~onDeath 1
+  # - skill{s=hattung} @trigger ~onTimer:200

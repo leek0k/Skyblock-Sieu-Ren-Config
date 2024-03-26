@@ -1,0 +1,23 @@
+name: vip1
+permissions:
+- animatednames.group.Vip1
+- animatednames.group.default:
+    value: false
+- essentials.craft
+- essentials.feed
+- essentials.kits.vip1
+- essentials.sethome.multiple.vip1
+- essentials.wb
+- essentials.workbench
+- playerpoints.pay:
+    value: false
+- playervaults.amount.2
+- playervaults.size.6
+- rankup.default:
+    value: false
+- rankup.gold
+- resetpv.vault.2
+- weight.1
+- zAuctionHouse.maxsell.2
+parents:
+- default

@@ -1,0 +1,280 @@
+file: shopsukien.yml
+menu_title: '&e&lSự Kiện &c&lTết &6&lNhâm Dần &f- &c&l2022'
+open_command: 
+- shopevents
+- shopevent
+- shopsukien
+- shoptet
+- eventshop
+- eventsshop
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 27
+update_interval: 1
+open_requirement: 
+items:
+  'background1':
+    material: STAINED_GLASS_PANE
+    data: 1
+    display_name: '&a☘'
+    slots:
+    - '0'
+    - '2'
+    - '4'
+    - '6'
+    - '8-9'
+    - '17-18'
+    - '20'
+    - '24'
+    - '26'
+  'background2':
+    material: STAINED_GLASS_PANE
+    data: 4
+    display_name: '&a☘'
+    slots:
+    - '1'
+    - '3'
+    - '5'
+    - '7'
+    - '19'
+    - '21'
+    - '23'
+    - '25'
+  'exit':
+    material: ARROW
+    slot: 22
+    display_name: '&cTrở về'
+    lore:
+    - '&7Quay về menu trước'
+    click_commands:
+    - '[openguimenu] events'
+  'key1a':
+    material: INK_SACK
+    update: true
+    data: 14
+    slot: 10
+    priority: 1
+    amount: 1
+    view_requirement:
+      requirements:
+        enough: 
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '39'
+    enchantments: 
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&7x1 &6☾&f✗&6☽ &e&nChìa Khóa&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    lore:
+    - '&e&l* &6&lGiá&7: &b39 ⛁'
+    - ''
+    - '&0&o#Item menu'
+    click_requirement:
+      requirements:
+        has_points:
+           type: '>='
+           input: '%playerpoints_points%'
+           output: '39'
+      deny_commands:
+        - '[refresh]'
+        - '[sound] ENTITY_VILLAGER_NO'  
+        - '[message] &cBạn không có đủ xu!'
+    click_commands:
+     - '[console] points take %player_name% 39'
+     - '[refresh]'
+     - '[console] crazycrates give p Nhamdan 1 %player_name%'      
+     - '[message] &a&l[&2&l!&a&l] &aMua thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  'key1b':
+    material: INK_SACK
+    update: true
+    data: 14
+    slot: 10
+    priority: 2
+    amount: 1
+    enchantments: 
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&7x1 &6☾&f✗&6☽ &e&nChìa Khóa&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    lore:
+    - '&e&l* &6&lGiá&7: &b39 ⛁'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[refresh]'
+    - '[sound] ENTITY_VILLAGER_NO'  
+    - '[message] &cBạn không có đủ xu!'
+  'key2a':
+    material: INK_SACK
+    data: 14
+    priority: 1
+    slot: 12
+    update: true
+    view_requirement:
+      requirements:
+        enough: 
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '190'
+    amount: 5
+    enchantments: 
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&7x5 &6☾&f✗&6☽ &e&nChìa Khóa&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    lore:
+    - '&e&l* &6&lGiá&7: &7&m195 ⛁&r'
+    - '&e&l* &6&lGiá&7: &b190 ⛁' 
+    - ''
+    - '&0&o#Item menu'
+    click_requirement:
+      requirements:
+        has_points:
+           type: '>='
+           input: '%playerpoints_points%'
+           output: '190'
+      deny_commands:
+        - '[sound] ENTITY_VILLAGER_NO'  
+        - '[message] &cBạn không có đủ xu!'
+    click_commands:
+     - '[console] points take %player_name% 190'
+     - '[refresh]'
+     - '[console] crazycrates give p Nhamdan 5 %player_name%'     
+     - '[console] bc &b&l%player_name% &c&lđã mua &7x5 &6☾&f✗&6☽ &e&nChìa Khóa&r &6&lNHÂM DẦN&r &6☾&f✗&6☽&c&l!'
+     - '[message] &a&l[&2&l!&a&l] &aMua thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  'key2b':
+    material: INK_SACK
+    data: 14
+    priority: 2 
+    slot: 12
+    update: true
+    amount: 5
+    enchantments: 
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&7x5 &6☾&f✗&6☽ &e&nChìa Khóa&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    lore:
+    - '&e&l* &6&lGiá&7: &7&m195 ⛁&r'
+    - '&e&l* &6&lGiá&7: &b190 ⛁' 
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[refresh]'
+    - '[sound] ENTITY_VILLAGER_NO'  
+    - '[message] &cBạn không có đủ xu!'
+  'key3a':
+    material: INK_SACK
+    data: 14
+    slot: 14
+    priority: 1
+    update: true
+    view_requirement:
+      requirements:
+        enough: 
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '265'
+    amount: 7
+    enchantments: 
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&7x7 &6☾&f✗&6☽ &e&nChìa Khóa&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    lore:
+    - '&e&l* &6&lGiá&7: &7&m273 ⛁&r'
+    - '&e&l* &6&lGiá&7: &b265 ⛁'
+    - ''
+    - '&0&o#Item menu'
+    click_requirement:
+      requirements:
+        has_points:
+           type: '>='
+           input: '%playerpoints_points%'
+           output: '265'
+      deny_commands:
+        - '[sound] ENTITY_VILLAGER_NO'  
+        - '[message] &cBạn không có đủ xu!'
+    click_commands:
+     - '[console] crazycrates give p Nhamdan 7 %player_name%'
+     - '[refresh]'    
+     - '[console] points take %player_name% 265'
+     - '[console] bc &b&l%player_name% &c&lđã mua &7x7 &6☾&f✗&6☽ &e&nChìa Khóa&r &6&lNHÂM DẦN&r &6☾&f✗&6☽&c&l!'
+     - '[message] &a&l[&2&l!&a&l] &aMua thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  'key3b':
+    material: INK_SACK
+    data: 14
+    slot: 14
+    priority: 2
+    update: true
+    amount: 7
+    enchantments: 
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&7x7 &6☾&f✗&6☽ &e&nChìa Khóa&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    lore:
+    - '&e&l* &6&lGiá&7: &7&m273 ⛁&r'
+    - '&e&l* &6&lGiá&7: &b265 ⛁'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[sound] ENTITY_VILLAGER_NO'  
+    - '[message] &cBạn không có đủ xu!'
+  'key4a':
+    material: INK_SACK
+    data: 14
+    priority: 1
+    update: true
+    slot: 16
+    amount: 9
+    view_requirement:
+      requirements:
+        enough: 
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '330'
+    enchantments: 
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&7x9 &6☾&f✗&6☽ &e&nChìa Khóa&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    lore:
+    - '&e&l* &6&lGiá&7: &7&m351 ⛁&r'
+    - '&e&l* &6&lGiá&7: &b330 ⛁'
+    - ''
+    - '&0&o#Item menu'
+    click_requirement:
+      requirements:
+        has_points:
+           type: '>='
+           input: '%playerpoints_points%'
+           output: '330'
+      deny_commands:
+        - '[sound] ENTITY_VILLAGER_NO'  
+        - '[message] &cBạn không có đủ xu!'
+    click_commands:
+     - '[console] crazycrates give p Nhamdan 9 %player_name%'
+     - '[refresh]'         
+     - '[console] points take %player_name% 330'
+     - '[console] bc &b&l%player_name% &c&lđã mua &7x9 &6☾&f✗&6☽ &e&nChìa Khóa&r &6&lNHÂM DẦN&r &6☾&f✗&6☽&c&l!'
+     - '[message] &a&l[&2&l!&a&l] &aMua thành công!'
+     - '[sound] ENTITY_PLAYER_LEVELUP'
+  'key4b':
+    material: INK_SACK
+    data: 14
+    priority: 2
+    update: true
+    slot: 16
+    amount: 9
+    enchantments: 
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&7x9 &6☾&f✗&6☽ &e&nChìa Khóa&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    lore:
+    - '&e&l* &6&lGiá&7: &7&m351 ⛁&r'
+    - '&e&l* &6&lGiá&7: &b330 ⛁'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[sound] ENTITY_VILLAGER_NO'  
+    - '[message] &cBạn không có đủ xu!'
+    
+    

@@ -1,0 +1,482 @@
+file: mocnapthe.yml
+menu_title: '&8&lMốc Nạp Thẻ'
+open_command: 
+- mocnapthe
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 18
+update_interval: 20
+open_requirement: 
+items:
+  '20000a':
+    material: STAINED_GLASS
+    data: 0
+    slot: 2
+    priority: 2
+    display_name: '&f&l* Mốc 20.000đ * &c&l✘'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 20.000 EXP'
+    - '&f* 20.000$'
+    - '&a* x1 Ô cường hóa cho TRANG BỊ'
+    - '&6* x2 Sách Cường Hóa Huyền Thoại'
+    - ''
+    - '&cBạn chưa hoàn thành mốc này :('
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn chưa hoàn thành mốc này :('
+    - '[sound] ENTITY_VILLAGER_NO'
+  '20000b':
+    material: STAINED_GLASS
+    data: 0
+    slot: 2
+    priority: 1
+    view_requirement:
+      requirements:        
+        perm:
+            type: has permission
+            permission: napthe.20
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&f&l* Mốc 20.000đ * &a&l✔'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 20.000 EXP'
+    - '&f* 20.000$'
+    - '&a* x1 Ô cường hóa cho TRANG BỊ'
+    - '&6* x2 Sách Cường Hóa Huyền Thoại'
+    - ''
+    - '&aBạn đã hoàn thành mốc này!'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &aBạn đã hoàn thành mốc này!'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  '100000a':
+    material: STAINED_GLASS
+    data: 5
+    slot: 3
+    priority: 2
+    display_name: '&a&l* Mốc 100.000đ * &c&l✘'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 50.000 EXP'
+    - '&f* 50.000$'
+    - '&a* x2 Ô cường hóa cho TRANG BỊ'
+    - '&a* 2000 Đá Quý'
+    - '&6* x10 Sách Cường Hóa Huyền Thoại'
+    - '&6* x1 Cánh Cứng'
+    - ''
+    - '&cBạn chưa hoàn thành mốc này :('
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn chưa hoàn thành mốc này :('
+    - '[sound] ENTITY_VILLAGER_NO'
+  '100000b':
+    material: STAINED_GLASS
+    data: 5
+    slot: 3
+    priority: 1
+    view_requirement:
+      requirements:        
+        perm:
+            type: has permission
+            permission: napthe.100
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&a&l* Mốc 100.000đ * &a&l✔'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 50.000 EXP'
+    - '&f* 50.000$'
+    - '&a* x2 Ô cường hóa cho TRANG BỊ'
+    - '&a* 2000 Đá Quý'
+    - '&6* x10 Sách Cường Hóa Huyền Thoại'
+    - '&6* x1 Cánh Cứng'
+    - ''
+    - '&aBạn đã hoàn thành mốc này!'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &aBạn đã hoàn thành mốc này!'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  '200000a':
+    material: STAINED_GLASS
+    data: 3
+    slot: 4
+    priority: 2
+    display_name: '&b&l* Mốc 200.000đ * &c&l✘'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 200.000 EXP'
+    - '&f* 200.000$'
+    - '&a* x3 Ô cường hóa cho TRANG BỊ'
+    - '&a* 4000 Đá Quý'
+    - '&d* x1 Sách Cường Hóa Truyền Thuyết'
+    - '&c* x1 &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ_THỦY&r &C◆&4◆&C◆'
+    - ''
+    - '&cBạn chưa hoàn thành mốc này :('
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn chưa hoàn thành mốc này :('
+    - '[sound] ENTITY_VILLAGER_NO'
+  '200000b':
+    material: STAINED_GLASS
+    data: 3
+    slot: 4
+    priority: 1
+    view_requirement:
+      requirements:        
+        perm:
+            type: has permission
+            permission: napthe.200
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&b&l* Mốc 200.000đ * &a&l✔'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 200.000 EXP'
+    - '&f* 200.000$'
+    - '&a* x3 Ô cường hóa cho TRANG BỊ'
+    - '&a* 4000 Đá Quý'
+    - '&d* x1 Sách Cường Hóa Truyền Thuyết'
+    - '&c* x1 &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ_THỦY&r &C◆&4◆&C◆'
+    - ''
+    - '&aBạn đã hoàn thành mốc này!'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &aBạn đã hoàn thành mốc này!'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  '500000a':
+    material: STAINED_GLASS
+    data: 4
+    slot: 5
+    priority: 2
+    display_name: '&e&l* Mốc 500.000đ * &c&l✘'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 500.000 EXP'
+    - '&f* 500.000$'
+    - '&a* x4 Ô cường hóa cho TRANG BỊ'
+    - '&a* 10000 Đá Quý'
+    - '&d* x3 Sách Cường Hóa Truyền Thuyết'
+    - '&c* x3 &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ_THỦY&r &C◆&4◆&C◆'
+    - '&c* x2 &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&r &a◆&2◆&a◆'
+    - ''
+    - '&cBạn chưa hoàn thành mốc này :('
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn chưa hoàn thành mốc này :('
+    - '[sound] ENTITY_VILLAGER_NO'
+  '500000b':
+    material: STAINED_GLASS
+    data: 4
+    slot: 5
+    priority: 1
+    view_requirement:
+      requirements:        
+        perm:
+            type: has permission
+            permission: napthe.500
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&e&l* Mốc 500.000đ * &a&l✔'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 500.000 EXP'
+    - '&f* 500.000$'
+    - '&a* x4 Ô cường hóa cho TRANG BỊ'
+    - '&a* 10000 Đá Quý'
+    - '&d* x3 Sách Cường Hóa Truyền Thuyết'
+    - '&c* x3 &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ_THỦY&r &C◆&4◆&C◆'
+    - '&c* x2 &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&r &a◆&2◆&a◆'
+    - ''
+    - '&aBạn đã hoàn thành mốc này!'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &aBạn đã hoàn thành mốc này!'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  '1ma':
+    material: STAINED_GLASS
+    data: 1
+    slot: 6
+    priority: 2
+    display_name: '&6&l* Mốc 1.000.000đ * &c&l✘'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 1.000.000 EXP'
+    - '&f* 1.000.000$'
+    - '&a* x5 Ô cường hóa cho TRANG BỊ'
+    - '&a* 20000 Đá Quý'
+    - '&d* x6 Sách Cường Hóa Truyền Thuyết'
+    - '&c* x4 Sách Cường Hóa Linh Hồn'
+    - '&c* x4 &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ_THỦY&r &C◆&4◆&C◆'
+    - '&c* x3 &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&r &a◆&2◆&a◆'
+    - '&4* x1 &a&l☘☘ &e&lRìu May Mắn LEVEL 5 &a&l☘☘'
+    - '&4* x1 &f&l✦ Đá Cường Hóa ✦'
+    - '&4* x1 &d&lTrâu Thánh ngẫu nhiên (X-XXIII)'
+    - ''
+    - '&cBạn chưa hoàn thành mốc này :('
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn chưa hoàn thành mốc này :('
+    - '[sound] ENTITY_VILLAGER_NO'
+  '1mb':
+    material: STAINED_GLASS
+    data: 1
+    slot: 6
+    priority: 1
+    view_requirement:
+      requirements:        
+        perm:
+            type: has permission
+            permission: napthe.1000
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&6&l* Mốc 1.000.000đ * &a&l✔'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 1.000.000 EXP'
+    - '&f* 1.000.000$'
+    - '&a* x5 Ô cường hóa cho TRANG BỊ'
+    - '&a* 20000 Đá Quý'
+    - '&d* x6 Sách Cường Hóa Truyền Thuyết'
+    - '&c* x4 Sách Cường Hóa Linh Hồn'
+    - '&c* x4 &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ_THỦY&r &C◆&4◆&C◆'
+    - '&c* x3 &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&r &a◆&2◆&a◆'
+    - '&4* x1 &a&l☘☘ &e&lRìu May Mắn LEVEL 5 &a&l☘☘'
+    - '&4* x1 &f&l✦ Đá Cường Hóa ✦'
+    - '&4* x1 &d&lTrâu Thánh ngẫu nhiên (X-XXIII)'
+    - ''
+    - '&aBạn đã hoàn thành mốc này!'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &aBạn đã hoàn thành mốc này!'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  '2ma':
+    material: STAINED_GLASS
+    data: 6
+    slot: 12
+    priority: 2
+    display_name: '&d&l* Mốc 2.000.000đ * &c&l✘'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 2.000.000 EXP'
+    - '&f* 2.000.000$'
+    - '&a* x6 Ô cường hóa cho TRANG BỊ'
+    - '&a* 40000 Đá Quý'
+    - '&d* x12 Sách Cường Hóa Truyền Thuyết'
+    - '&c* x8 Sách Cường Hóa Linh Hồn'
+    - '&c* x8 &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ_THỦY&r &C◆&4◆&C◆'
+    - '&c* x6 &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&r &a◆&2◆&a◆'
+    - '&4* x1 &a&l☘☘ &e&lRìu May Mắn LEVEL 6 &a&l☘☘'
+    - '&4* x2 &f&l✦ Đá Cường Hóa ✦'
+    - '&4* x2 &d&lTrâu Thánh ngẫu nhiên (X-XXIII)'
+    - '&4* x2 &e&l◍ &b&l&nHòm Vũ Khí&r &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG ◍'
+    - ''
+    - '&cBạn chưa hoàn thành mốc này :('
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn chưa hoàn thành mốc này :('
+    - '[sound] ENTITY_VILLAGER_NO'
+  '2mb':
+    material: STAINED_GLASS
+    data: 6
+    slot: 12
+    priority: 1
+    view_requirement:
+      requirements:        
+        perm:
+            type: has permission
+            permission: napthe.2000
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&d&l* Mốc 2.000.000đ * &a&l✔'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 2.000.000 EXP'
+    - '&f* 2.000.000$'
+    - '&a* x6 Ô cường hóa cho TRANG BỊ'
+    - '&a* 40000 Đá Quý'
+    - '&d* x12 Sách Cường Hóa Truyền Thuyết'
+    - '&c* x8 Sách Cường Hóa Linh Hồn'
+    - '&c* x8 &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ_THỦY&r &C◆&4◆&C◆'
+    - '&c* x6 &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&r &a◆&2◆&a◆'
+    - '&4* x1 &a&l☘☘ &e&lRìu May Mắn LEVEL 6 &a&l☘☘'
+    - '&4* x2 &f&l✦ Đá Cường Hóa ✦'
+    - '&4* x2 &d&lTrâu Thánh ngẫu nhiên (X-XXIII)'
+    - '&4* x2 &e&l◍ &b&l&nHòm Vũ Khí&r &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG ◍'
+    - ''
+    - '&aBạn đã hoàn thành mốc này!'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &aBạn đã hoàn thành mốc này!'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  '5ma':
+    material: STAINED_GLASS
+    data: 14
+    slot: 13
+    priority: 2
+    display_name: '&c&l* Mốc 5.000.000đ * &c&l✘'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 5.000.000 EXP'
+    - '&f* 5.000.000$'
+    - '&a* x7 Ô cường hóa cho TRANG BỊ'
+    - '&a* 80000 Đá Quý'
+    - '&d* x30 Sách Cường Hóa Truyền Thuyết'
+    - '&c* x15 Sách Cường Hóa Linh Hồn'
+    - '&c* x12 &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ_THỦY&r &C◆&4◆&C◆'
+    - '&c* x10 &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&r &a◆&2◆&a◆'
+    - '&4* x1 &a&l☘☘ &e&lRìu May Mắn LEVEL 6 &a&l☘☘'
+    - '&4* x5 &f&l✦ Đá Cường Hóa ✦'
+    - '&4* x5 &d&lTrâu Thánh ngẫu nhiên (X-XXIII)'
+    - '&4* x4 &e&l◍ &b&l&nHòm Vũ Khí&r &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG ◍'
+    - '&4* x1 &C&L⊰&4&L⊰&C&L⊰ &4&LCUNG &C&LTỐI CAO &4(3♦) &4&L⊱&C&L⊱&4&L⊱'
+    - ''
+    - '&cBạn chưa hoàn thành mốc này :('
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn chưa hoàn thành mốc này :('
+    - '[sound] ENTITY_VILLAGER_NO'
+  '5mb':
+    material: STAINED_GLASS
+    data: 14
+    slot: 13
+    priority: 1
+    view_requirement:
+      requirements:        
+        perm:
+            type: has permission
+            permission: napthe.5000
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&c&l* Mốc 5.000.000đ * &a&l✔'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 5.000.000 EXP'
+    - '&f* 5.000.000$'
+    - '&a* x7 Ô cường hóa cho TRANG BỊ'
+    - '&a* 80000 Đá Quý'
+    - '&d* x30 Sách Cường Hóa Truyền Thuyết'
+    - '&c* x15 Sách Cường Hóa Linh Hồn'
+    - '&c* x12 &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ_THỦY&r &C◆&4◆&C◆'
+    - '&c* x10 &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&r &a◆&2◆&a◆'
+    - '&4* x1 &a&l☘☘ &e&lRìu May Mắn LEVEL 6 &a&l☘☘'
+    - '&4* x5 &f&l✦ Đá Cường Hóa ✦'
+    - '&4* x5 &d&lTrâu Thánh ngẫu nhiên (X-XXIII)'
+    - '&4* x4 &e&l◍ &b&l&nHòm Vũ Khí&r &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG ◍'
+    - '&4* x1 &C&L⊰&4&L⊰&C&L⊰ &4&LCUNG &C&LTỐI CAO &4(3♦) &4&L⊱&C&L⊱&4&L⊱'
+    - ''
+    - '&aBạn đã hoàn thành mốc này!'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &aBạn đã hoàn thành mốc này!'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  '10ma':
+    material: STAINED_GLASS
+    data: 10
+    slot: 14
+    priority: 2
+    display_name: '&5&l* Mốc 10.000.000đ * &c&l✘'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 10.000.000 EXP'
+    - '&f* 10.000.000$'
+    - '&a* x8 Ô cường hóa cho TRANG BỊ'
+    - '&a* 160000 Đá Quý'
+    - '&d* x60 Sách Cường Hóa Truyền Thuyết'
+    - '&c* x30 Sách Cường Hóa Linh Hồn'
+    - '&c* x24 &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ_THỦY&r &C◆&4◆&C◆'
+    - '&c* x20 &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&r &a◆&2◆&a◆'
+    - '&4* x1 &a&l☘☘ &e&lRìu May Mắn LEVEL 6 &a&l☘☘'
+    - '&4* x5 &f&l✦ Đá Cường Hóa ✦'
+    - '&4* x5 &d&lTrâu Thánh ngẫu nhiên (X-XXIII)'
+    - '&4* x4 &e&l◍ &b&l&nHòm Vũ Khí&r &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG ◍'
+    - '&5* x1 &2&l⌘⌘&6﹝&d﹝&6﹝&a&lTHƯỢNG CỔ &6﹝&d﹝&6﹝&e(Kiếm (3♦))&f﹞&6﹞&d﹞&2&l⌘⌘'
+    - ''
+    - '&cBạn chưa hoàn thành mốc này :('
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &cBạn chưa hoàn thành mốc này :('
+    - '[sound] ENTITY_VILLAGER_NO'
+  '10mb':
+    material: STAINED_GLASS
+    data: 10
+    slot: 14
+    priority: 1
+    view_requirement:
+      requirements:        
+        perm:
+            type: has permission
+            permission: napthe.10000
+    enchantments:
+    - DURABILITY;1
+    hide_enchantments: true
+    display_name: '&5&l* Mốc 10.000.000đ * &a&l✔'
+    lore:
+    - ''
+    - '&8&l[&e&lPhần Thưởng&8&l]'
+    - '&f* 10.000.000 EXP'
+    - '&f* 10.000.000$'
+    - '&a* x8 Ô cường hóa cho TRANG BỊ'
+    - '&a* 160000 Đá Quý'
+    - '&d* x60 Sách Cường Hóa Truyền Thuyết'
+    - '&c* x30 Sách Cường Hóa Linh Hồn'
+    - '&c* x24 &C◆&4◆&C◆ &c&nChìa Khóa&r &d&lPHÙ_THỦY&r &C◆&4◆&C◆'
+    - '&c* x20 &a◆&2◆&a◆ &c&nChìa Khóa&r &a&l⌘&e﹝&2&lThượng cổ&e﹞&a&l⌘&r &a◆&2◆&a◆'
+    - '&4* x1 &a&l☘☘ &e&lRìu May Mắn LEVEL 6 &a&l☘☘'
+    - '&4* x5 &f&l✦ Đá Cường Hóa ✦'
+    - '&4* x5 &d&lTrâu Thánh ngẫu nhiên (X-XXIII)'
+    - '&4* x4 &e&l◍ &b&l&nHòm Vũ Khí&r &6&lB&e&lÁ &6&lV&e&lƯ&6&lƠ&e&lN&6&lG ◍'
+    - '&5* x1 &2&l⌘⌘&6﹝&d﹝&6﹝&a&lTHƯỢNG CỔ &6﹝&d﹝&6﹝&e(Kiếm (3♦))&f﹞&6﹞&d﹞&2&l⌘⌘'
+    - ''
+    - '&aBạn đã hoàn thành mốc này!'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[message] &aBạn đã hoàn thành mốc này!'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  exit:
+    material: DOUBLE_PLANT
+    display_name: '&c&l⬅ [Trở về]'
+    slot: 17
+    lore:
+    - "&7Nhấn vào để trở về mục trước"
+    click_commands:
+    - '[player] topnapthe'

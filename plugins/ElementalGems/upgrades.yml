@@ -1,0 +1,128 @@
+Upgrades:
+  Fortune: #Receive more gems per drop
+    enabled: false
+    maxLevel: 3
+    levels:
+      '1':
+        price: 5000
+        multiplier: 2
+      '2':
+        price: 25000
+        multiplier: 3
+      '3':
+        price: 100000
+        multiplier: 4
+
+  Luck: #Increases the chance to receive gems
+    enabled: true
+    maxLevel: 5
+    levels:
+      '1':
+        price: 80
+        multiplier: 4.0
+      '2':
+        price: 200
+        multiplier: 8.0
+      '3':
+        price: 400
+        multiplier: 12.0
+      '4':
+        price: 800
+        multiplier: 16.0        
+      '5':
+        price: 1600
+        multiplier: 20.0      
+        
+  Discount: #Receive a percentage discount on all items in the Gem Shop
+    enabled: false
+    maxLevel: 5
+    levels:
+      '1':
+        price: 100
+        percent: 2
+      '2':
+        price: 1
+        percent: 4
+      '3':
+        price: 24000
+        percent: 6
+      '4':
+        price: 32000
+        percent: 8       
+      '5':
+        price: 100000
+        percent: 12
+
+  Charity: #When a player receives the gem(s), everyone on the server also receives the gem(s) depending on the multiplier
+    enabled: false
+    maxLevel: 3
+    levels:
+      '1':
+        price: 5000
+        amount: 1
+        chance: 1
+        randomAmount: true
+      '2':
+        price: 25000
+        amount: 2
+        chance: 2
+        randomAmount: true
+      '3':
+        price: 100000
+        amount: 3
+        chance: 3
+        randomAmount: true
+
+
+
+#Gem Upgrades Menu Customization
+UpgradesMenu:
+  Size: 36
+  Title: '&8☀ &8&lNâng cấp Đá quý &8 ☀'
+  UseFiller: true
+  Decorations:
+    - 'balance:27'
+    - 'information:35'
+  Upgrades:
+    '13':
+      upgradeType: luck
+      material: NETHER_STAR
+      damage: 0
+      amount: 1
+      glow: true
+      displayName: '&a&l&nLuck'
+      lore:
+        - ''
+        - '&aTăng tỉ lệ rớt đá quý!'
+        - '&7&o(Click vào để nâng cấp)'        
+        - ''
+        - '&e&l☀Level hiện tại: &f&l{level}'
+        - ''
+        - '&aLevel 1: &f80 gems &7(+4.0%)'
+        - '&aLevel 2: &f200 gems &7(+8.0%)'
+        - '&aLevel 3: &f400 gems &7(+12.0%)'
+        - '&aLevel 4: &f800 gems &7(+16.0%)'
+        - '&aLevel 5: &f1,600 gems &7(+20.0%)'                   
+
+
+
+GUIFiller:
+  material: STAINED_GLASS_PANE
+  damage: 7
+  amount: 1
+  glow: false
+  displayName: '&f'
+  lore: []
+
+Decorations:
+  'balance':
+    material: EMERALD
+    damage: 0
+    amount: 1
+    glow: false
+    displayName: '&fBạn hiện có &6{balance} &6☀'
+    lore: []
+  
+
+#Cooldown, in Milliseconds, between how long a player must wait to purchase another upgrade. (Cooldown resets when the server or plugin restarts) (20 milliseconds = 1 second)
+upgrade-purchase-cooldown: 1

@@ -1,0 +1,22 @@
+location: huongdan:-957.5:56.414:1029.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&6&l✶&e⋆&6⋆ &e&lHƯỚNG DẪN CƠ BẢN &6⋆&e⋆&6&l✶'
+    height: 0.3
+  - content: ''
+    height: 0.3  
+  - content: '&6* &eLevel càng cao thì farm càng nhiều exp!'
+    height: 0.3 
+  - content: '&6* &e/quest &7-> &eĐể làm nhiệm vụ, lên cấp và nhận thưởng!'
+    height: 0.3   
+  - content: '&6* &e/gems shop &7-> &eĐể mua đồ bằng đá quý!'
+    height: 0.3  
+  - content: '&6* &e/ecraft &7-> &eĐể trao đổi, chế tạo đồ!'
+    height: 0.3   
+  actions: {}

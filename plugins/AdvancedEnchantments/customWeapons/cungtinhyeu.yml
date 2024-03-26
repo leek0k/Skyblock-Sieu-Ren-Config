@@ -1,0 +1,17 @@
+requireSet: ''
+material: BOW
+customModelData: 0
+itemFlags: []
+name: '&d&l↣&c&l❤&d&l↢ &f&lCUNG &d&lTÌNH YÊU &d&l↣&c&l❤&d&l↢'
+lore:
+  - ''
+  - '&d&l↣&c&l❤&d&l↢ &d&lTÌNH YÊU &d&l&d&l↣&c&l❤&d&l↢'
+  - '&0&o#Cungtinhyeu'
+enchants:
+  - 'power:70'
+  - 'unbreaking:4'
+  - 'flame:1'
+  - 'punch:2'
+  - 'infinity:1'
+  - 'buayeu:2'
+events:

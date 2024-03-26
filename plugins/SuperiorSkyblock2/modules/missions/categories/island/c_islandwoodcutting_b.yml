@@ -1,0 +1,52 @@
+mission-file: ItemsMissions
+required-missions:
+- c_islandwoodcutting_a
+island: false
+auto-reward: false
+rewards:
+  commands:
+  - eco give %player% 6000
+  - exp give %player% 599
+  - is admin msg %player% &e&l$ | &7Hoàn thành thử thách!
+required-items:
+  '1':
+    types:
+    - LOG
+    amount: 640
+icons:
+  not-completed:
+    type: LOG
+    name: '&6&LTHỬ THÁCH: &2&lTIỀU PHU &f&l#2'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l gỗ &fđể FULL túi'
+    - ''
+    - '&7- &e$6.000 , 599 Exp'
+    - ''
+    - '&6Thu thập: &7{1}/640'
+    - '&6Tiến trình: &7{0}%'
+    - '&c&l ✘ &7Chưa hoàn thành'
+    - ''
+    - '&a&l YÊU CẦU: &aHoàn thành &2&lTIỀU PHU &f&l#1'
+  can-complete:
+    type: LOG
+    name: '&6&LTHỬ THÁCH: &2&lTIỀU PHU &f&l#2'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l gỗ &fđể FULL túi'
+    - ''
+    - '&7- &e$6.000 , 599 Exp'
+    - ''
+    - '&6Thu thập: &7640/640'
+    - '&6Tiến trình: &7100%'
+    - '&a&l ✔ &7Bạn đã có đủ điều kiện Click vào đây.'
+    enchants:
+      DURABILITY: 1
+    flags:
+    - HIDE_ENCHANTS
+  completed:
+    type: MAP
+    name: '&6&LTHỬ THÁCH: &2&lTIỀU PHU &f&l#2'
+    lore:
+    - ''
+    - '&a&l ✔ &7Đã hoàn thành.'

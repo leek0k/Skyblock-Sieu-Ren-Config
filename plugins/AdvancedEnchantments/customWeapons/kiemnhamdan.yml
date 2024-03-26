@@ -1,0 +1,23 @@
+requireSet: 'Nhamdan'
+material: DIAMOND_SWORD
+customModelData: 0
+itemFlags: []
+name: '&6☾&f✗&6☽ &f&lKIẾM &6&lNHÂM DẦN &6☾&f✗&6☽'
+lore:
+  - ''
+  - '&6☾&f✗&6☽ &6&lNHÂM DẦN &6☾&f✗&6☽'
+  - '&6* Tăng 32% damage.'
+  - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+  - '&0&o#Kiemnhamdan'
+enchants:
+  - 'sharpness:120'
+  - 'smite:4'
+  - 'baneofarthropods:4'
+  - 'unbreaking:5'
+  - 'fire_aspect:3'
+  - 'looting:5'
+events:
+  ATTACK:
+    chance: 100
+    effects:
+      - 'INCREASE_DAMAGE:32'

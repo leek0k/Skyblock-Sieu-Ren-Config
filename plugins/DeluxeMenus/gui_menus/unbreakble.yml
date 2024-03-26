@@ -1,0 +1,97 @@
+file: unbreakble.yml
+menu_title: '&d&lRèn Thiên Thạch'
+open_command: 
+- phuanhkim123123129
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 9
+update_interval: 1    
+items:
+  'muadiem':
+    material: EMERALD
+    hide_attributes: true
+    display_name: '&f&lMua &d&lCỏ Ba Lá'
+    slot: 0
+    lore:
+    - ''
+    - '&7Mua Cỏ Ba Lá Bằng Đá Quý Tại Đây'
+    - ''
+    - '&0&o#Item menu'
+    left_click_commands:
+      - '[player] gems shop'
+
+  'close':
+    material: arrow
+    hide_attributes: true
+    display_name: '&c&lĐóng'
+    slot: 8
+    lore:
+    - ''
+    - '&7Đóng menu này!'
+    - ''
+    - '&0&o#Item menu'
+    left_click_commands:
+      - '[close]'    
+
+  'unbr':
+    material: OBSIDIAN
+    hide_attributes: true
+    priority: 2
+    display_name: '&d&lThiên Thạch Unbreakable &7((không thể phá))'
+    slot: 4
+    lore:
+    - ''
+    - '&7- Thiên thạch này giúp cho vật phẩm hoặc '
+    - '&7giáp của bạn không bao giờ có thể bị vỡ !'
+    - ''
+    - '&e&lYêu cầu:'
+    - ' &7Đang có: &6%aureliumskills_xp_int_agility% Cỏ Ba Lá'
+    - ' &7Yêu cầu để radom: &f5000 Cỏ Ba Lá '
+    - ' &7Tỉ Lệ: &a50%&f/&c50%'
+    - ''
+    - ' &cLưu ý: &fyêu cầu tối thiểu &aCấp 70'
+    - ''
+    - '&0&o#Item menu'
+    left_click_requirement:
+      requirements:    
+        has_level:
+          type: '>='
+          input: '%alonsolevels_level_format%'
+          output: '70'
+          deny_commands:
+          - '[message] &fChưa đủ cấp!' 
+        has_gems:
+          type: '>='
+          input: '%aureliumskills_xp_int_agility%' #%math_{alonsolevels_level_format}*10+200%
+          output: '5000'
+          deny_commands:
+          - '[message] &fKhông đủ &65000 Cỏ Ba Lá ' 
+    left_click_commands:
+      - '[console] skills xp remove %player_name% agility 5000'
+      - '[console] lp user %player_name% permission settemp phuanhkimcooldown true 2h'
+      - '[console] ie give ngocunbr %player_name% 1'
+      - '[close]'
+
+  'unbreak2':
+    material: OBSIDIAN
+    hide_attributes: true
+    priority: 1
+    display_name: '&d&lThiên Thạch Unbreakable &7((không thể phá))'
+    slot: 4
+    lore:
+    - ''
+    - '&7- Thiên thạch này giúp cho vật phẩm hoặc '
+    - '&7giáp của bạn không bao giờ có thể bị vỡ !'
+    - ''
+    - '&fMua lại sau&7: &c%luckperms_expiry_time_phuanhkimcooldown%'
+    - ''
+    - ''
+    - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+    view_requirement:
+      requirements:
+        has_permission:
+         type: has permission
+         permission: phuanhkimcooldown

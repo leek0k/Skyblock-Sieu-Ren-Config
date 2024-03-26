@@ -1,0 +1,3 @@
+on player move:
+  if player is in region "pvp":
+    remove invisibility from the player

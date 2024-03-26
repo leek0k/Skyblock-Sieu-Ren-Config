@@ -1,0 +1,85 @@
+menu-settings:
+  name: '&e&lNẠP THẺ &8&l| &6&lCHỌN MỆNH GIÁ'
+  rows: 1
+  auto-refresh: 5
+Mobifone-10k:
+  COMMAND: 'donate choose Mobifone 10000'
+  NAME: '&b&lMobifone 10,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fMobifone 10,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 1
+  POSITION-Y: 1
+Mobifone-20k:
+  COMMAND: 'donate choose Mobifone 20000'
+  NAME: '&b&lMobifone 20,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fMobifone 20,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 2
+  POSITION-Y: 1
+Mobifone-30k:
+  COMMAND: 'donate choose Mobifone 30000'
+  NAME: '&b&lMobifone 30,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fMobifone 30,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 3
+  POSITION-Y: 1
+Mobifone-50k:
+  COMMAND: 'donate choose Mobifone 50000'
+  NAME: '&b&lMobifone 50,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fMobifone 50,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 4
+  POSITION-Y: 1
+Mobifone-100k:
+  COMMAND: 'donate choose Mobifone 100000'
+  NAME: '&b&lMobifone 100,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fMobifone 100,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 5
+  POSITION-Y: 1
+Mobifone-200k:
+  COMMAND: 'donate choose Mobifone 200000'
+  NAME: '&b&lMobifone 200,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fMobifone 200,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 6
+  POSITION-Y: 1
+Mobifone-300k:
+  COMMAND: 'donate choose Mobifone 300000'
+  NAME: '&b&lMobifone 300,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fMobifone 300,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 7
+  POSITION-Y: 1
+Mobifone-500k:
+  COMMAND: 'donate choose Mobifone 500000'
+  NAME: '&b&lMobifone 500,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fMobifone 500,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 8
+  POSITION-Y: 1
+Mobifone-1m:
+  COMMAND: 'donate choose Mobifone 1000000'
+  NAME: '&b&lMobifone 1,000,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fMobifone 100,000,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 9
+  POSITION-Y: 1

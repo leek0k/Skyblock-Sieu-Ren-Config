@@ -1,0 +1,35 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&8[&6EpicVouchers&8] '
+# Interface Messages
+interface:
+  confirmsettings:
+    title: '&6Bevestiging'
+    confirmitemname: '&2&lBEVESTIG'
+    confirmitemlore: '&aKlik hier om je actie te bevestigen.'
+    cancelitemname: '&4&lANNULEER'
+    cancelitemlore: '&cKlik hier om je actie te annuleren.'
+# Command Messages
+command:
+  error:
+    noplayer: '&7Die gebruiker bestaat niet of is niet online.'
+    novoucher: '&cDie voucher bestaat niet.'
+    notexist: '&7Het commando wat je hebt ingevoerd bestaat niet of is verkeerd gespeld.'
+    notnumber: '&7Het is niet gelukt om getal om te zetten naar een geldige hoeveelheid.'
+  reload:
+    success: '&7Alle configuraties en vouchers zijn herladen.'
+  give:
+    send: '&7Je hebt &6%player% &7de voucher &6%voucher% &7(&6x%amount%&7) gegeven.'
+    receive: '&7Je hebt de voucher &6%voucher% &7(&6x%amount%&7) ontvangen.'
+    cancelled: '&cEvent is geannuleerd.'
+  force:
+    send: '&7Je hebt &6%player% &7gedwongen om de voucher &6%voucher% &7(&6x%amount%&7) in te wisselen.'
+  list:
+    list: '&7Lijst van alle vouchers: &6%list%&7.'
+# Event Messages
+event:
+  general:
+    nopermission: '&cJe hebt geen toestemming om dat te doen.'
+    cooldown: '&7Wacht &6%time%&7 seconden voordat je een nieuwe voucher inwisselt.'

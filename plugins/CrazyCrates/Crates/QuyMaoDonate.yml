@@ -1,0 +1,803 @@
+Crate:
+  CrateType: Cosmic
+  CrateName: '&e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟'
+  StartingKeys: 0
+  InGUI: false
+  Slot: 23
+  OpeningBroadCast: false
+  BroadCast: '%Prefix%&6&l%Player% &7is opening a &7&lBasic Chest&7.'
+  Item: '130'
+  Glowing: false
+  Name: '&e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟'
+  Lore:
+  - '&e/hombau&7 để mua Hòm Báu.'
+  - '&r'
+  - '&7 ◆ &nChuột-trái&r &bđể mở Hòm Báu nếu bạn đã mua.'
+  - '&7 ◆ &nChuột-Phải&r &bđể xem qua vật phẩm trong Hòm.'
+  - '&r'
+  - '&7Bạn đang có &c&n%keys%&r &7◆ &b&nHòm Kim Cương&r &7◆.'
+  Preview:
+    Toggle: true
+    ChestLines: 6
+    Glass:
+      #Turn the glass boarder in the preview on and off.
+      Toggle: true
+      #The item that shows in the boarder. Can be glass or any other item.
+      Item: 'IRON_FENCE' 
+  Hologram:
+    Toggle: true
+    Height: 1.5
+    Message:
+    - '&e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟'
+    - '&f(!) Chuột trái để xem qua'
+  PhysicalKey:
+    Name: '&e&l⋞ &6&l⋞ &e&l⋞ &e&nChìa Khóa&r &6&lVương Quý Mão &e&l⋟ &6&l⋟ &e&l⋟'
+    Lore:
+    - '&r'
+    - '&7 ◆. &nChuột-trái&r &fđể mở &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHòm&r &6&lVương Quý Mão
+      &e&l⋟ &6&l⋟ &e&l⋟'
+    - '&7 ◆ &nChuột-Phải&r &fđể xem qua vật phẩm trong.'
+    Item: '351:14'
+    Glowing: true
+  Tiers:
+    Basic:
+      Name: '&f&lThường'
+      Color: 265
+      Chance: 50
+      MaxRange: 100
+    UnCommon:
+      Name: '&e&lMay Mắn'
+      Color: 266
+      Chance: 40
+      MaxRange: 100
+    Rare:
+      Name: '&e&l⋞ &6&l⋞ &e&l⋞ &6&lPhát Tài &e&l⋟ &6&l⋟ &e&l⋟'
+      Color: 264
+      Chance: 30
+      MaxRange: 100
+      Glowing: true
+  Prizes:
+    '1':
+      DisplayName: '&6&lGói Nguyên Liệu Bánh Chưng I'
+      DisplayItem: '61'
+      DisplayAmount: 1
+      Lore:
+      - '&7Bao gồm:'
+      - '&ex10 &e&lHạt Nếp'
+      - '&ex10 &e&lĐậu Xanh'
+      MaxRange: 100
+      Chance: 90
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - ie give hatnep %player% 10
+      - ie give dauxanh %player% 10
+    '2':
+      DisplayName: '&6&lGói Nguyên Liệu Bánh Chưng II'
+      DisplayItem: '61'
+      DisplayAmount: 2
+      Lore:
+      - '&7Bao gồm:'
+      - '&ex10 &e&lHạt Nếp'
+      - '&ex10 &e&lĐậu Xanh'
+      - '&ex10 &f&lThịt Heo Muối'
+      MaxRange: 100
+      Chance: 30
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - ie give hatnep %player% 10
+      - ie give dauxanh %player% 10
+      - ie give thitheomuoi %player% 10
+    '3':
+      DisplayName: '&6&lGói Nguyên Liệu Bánh Chưng III'
+      DisplayItem: '61'
+      DisplayAmount: 3
+      Lore:
+      - '&7Bao gồm:'
+      - '&ex12 &e&lHạt Nếp'
+      - '&ex12 &e&lĐậu Xanh'
+      - '&ex12 &f&lThịt Heo Muối'
+      - '&ex12 &2&lLá Dong'
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - ie give hatnep %player% 12
+      - ie give dauxanh %player% 12
+      - ie give thitheomuoi %player% 12
+      - ie give ladong %player% 12
+    '4':
+      DisplayName: '&6&lGói Nguyên Liệu Bánh Chưng IV'
+      DisplayItem: '61'
+      DisplayAmount: 4
+      Lore:
+      - '&7Bao gồm:'
+      - '&ex12 &e&lHạt Nếp'
+      - '&ex12 &e&lĐậu Xanh'
+      - '&ex12 &f&lThịt Heo Muối'
+      - '&ex12 &2&lLá Dong'
+      - '&ex6 &c&lCủi Lửa'
+      MaxRange: 100
+      Chance: 25
+      Firework: false
+      Tiers:
+      - Basic
+      Glowing: false
+      Commands:
+      - ie give hatnep %player% 12
+      - ie give dauxanh %player% 12
+      - ie give thitheomuoi %player% 12
+      - ie give ladong %player% 12
+      - ie give cuilua %player% 6
+    '5':
+      DisplayName: '&6&lGói Nguyên Liệu Bánh Chưng V'
+      DisplayItem: '61'
+      DisplayAmount: 5
+      Lore:
+      - '&7Bao gồm:'
+      - '&ex12 &e&lHạt Nếp'
+      - '&ex12 &e&lĐậu Xanh'
+      - '&ex12 &f&lThịt Heo Muối'
+      - '&ex12 &2&lLá Dong'
+      - '&ex2 &6&lDây Lạc'
+      - '&ex6 &c&lCủi Lửa'
+      MaxRange: 100
+      Chance: 25
+      Firework: false
+      Tiers:
+      - Uncommon
+      Glowing: false
+      Commands:
+      - ie give hatnep %player% 12
+      - ie give dauxanh %player% 12
+      - ie give thitheomuoi %player% 12
+      - ie give ladong %player% 12
+      - ie give daylac %player% 2
+      - ie give cuilua %player% 6
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6&lGói Nguyên Liệu Bánh Chưng V
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '6':
+      DisplayName: '&6&lGói Nguyên Liệu Bánh Chưng VI'
+      DisplayItem: '61'
+      DisplayAmount: 6
+      Lore:
+      - '&7Bao gồm:'
+      - '&ex20 &e&lHạt Nếp'
+      - '&ex20 &e&lĐậu Xanh'
+      - '&ex20 &f&lThịt Heo Muối'
+      - '&ex20 &2&lLá Dong'
+      - '&ex8 &6&lDây Lạc'
+      - '&ex12 &c&lCủi Lửa'
+      MaxRange: 100
+      Chance: 15
+      Firework: false
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - ie give hatnep %player% 20
+      - ie give dauxanh %player% 20
+      - ie give thitheomuoi %player% 20
+      - ie give ladong %player% 20
+      - ie give daylac %player% 8
+      - ie give cuilua %player% 12
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6&lGói Nguyên Liệu Bánh Chưng VI
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '7':
+      DisplayName: '&6&lGói Nguyên Liệu Bánh Chưng VII'
+      DisplayItem: '61'
+      DisplayAmount: 7
+      Lore:
+      - '&7Bao gồm:'
+      - '&ex48 &e&lHạt Nếp'
+      - '&ex48 &e&lĐậu Xanh'
+      - '&ex48 &f&lThịt Heo Muối'
+      - '&ex48 &2&lLá Dong'
+      - '&ex24 &6&lDây Lạc'
+      - '&ex32 &c&lCủi Lửa'
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - ie give hatnep %player% 48
+      - ie give dauxanh %player% 48
+      - ie give thitheomuoi %player% 48
+      - ie give ladong %player% 48
+      - ie give daylac %player% 24
+      - ie give cuilua %player% 32
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6&lGói Nguyên Liệu Bánh Chưng VII
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '8':
+      DisplayName: '&6&lGói Nguyên Liệu Bánh Chưng &e&lTHƯỢNG HẠNG'
+      DisplayItem: '61'
+      DisplayAmount: 7
+      Lore:
+      - '&7Bao gồm:'
+      - '&ex48 &e&lHạt Nếp'
+      - '&ex48 &e&lĐậu Xanh'
+      - '&ex48 &f&lThịt Heo Muối'
+      - '&ex48 &2&lLá Dong'
+      - '&ex48 &6&lDây Lạc'
+      - '&ex48 &c&lCủi Lửa'
+      MaxRange: 100
+      Chance: 8
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - ie give hatnep %player% 48
+      - ie give dauxanh %player% 48
+      - ie give thitheomuoi %player% 48
+      - ie give ladong %player% 48
+      - ie give daylac %player% 48
+      - ie give cuilua %player% 48
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6&lGói Nguyên Liệu Bánh Chưng &e&lTHƯỢNG HẠNG
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '100':
+      DisplayName: '&ex32 §a§lBánh Chưng'
+      Lore:
+      - §eNguyên liệu để trao đổi vật phẩm
+      - §esự kiện §cTết §6Quý Mão 2023
+      DisplayItem: SKULL_ITEM:3
+      Player: http://textures.minecraft.net/texture/b805caf3d02e35e4aadc19af15e82790177f1cd7b79f4f5b88d943ac6be203a1
+      DisplayAmount: 16
+      MaxRange: 100
+      Chance: 1
+      Tiers:
+      - Rare
+      Commands:
+      - ie give banhchung %player% 32
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &ex32 §a§lBánh Chưng
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '101':
+      DisplayName: '&ex64 §a§lBánh Chưng'
+      Lore:
+      - §eNguyên liệu để trao đổi vật phẩm
+      - §esự kiện §cTết §6Quý Mão 2023
+      DisplayItem: SKULL_ITEM:3
+      Player: http://textures.minecraft.net/texture/b805caf3d02e35e4aadc19af15e82790177f1cd7b79f4f5b88d943ac6be203a1
+      DisplayAmount: 32
+      MaxRange: 100
+      Chance: 1
+      Tiers:
+      - Rare
+      Commands:
+      - ie give banhchung %player% 64
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &ex64 §a§lBánh Chưng
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '101b':
+      DisplayName: '&ex128 §a§lBánh Chưng'
+      Lore:
+      - §eNguyên liệu để trao đổi vật phẩm
+      - §esự kiện §cTết §6Quý Mão 2023
+      DisplayItem: SKULL_ITEM:3
+      Player: http://textures.minecraft.net/texture/b805caf3d02e35e4aadc19af15e82790177f1cd7b79f4f5b88d943ac6be203a1
+      DisplayAmount: 64
+      MaxRange: 120
+      Chance: 1
+      Tiers:
+      - Rare
+      Commands:
+      - ie give banhchung %player% 64
+      - ie give banhchung %player% 64
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &ex128 §a§lBánh Chưng
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '102':
+      DisplayName: §6[◆] §6§lĐất Hi Vọng §6[◆]
+      Lore:
+      - §7Sử dụng để đổi khiên trong sự kiện Tết 2023
+      - §6Kill Sơn Yêu §7§o((/warp dungeon))
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:2
+      DisplayItem: DIRT:0
+      DisplayAmount: 32
+      MaxRange: 100
+      Chance: 30
+      Tiers:
+      - Basic
+      Commands:
+      - mm i give -s %player% dathivong 64
+    '103':
+      DisplayName: §6[◆] §6§lĐất Hi Vọng §6[◆]
+      Lore:
+      - §7Sử dụng để đổi khiên trong sự kiện Tết 2023
+      - §6Kill Sơn Yêu §7§o((/warp dungeon))
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:2
+      DisplayItem: DIRT:0
+      DisplayAmount: 64
+      MaxRange: 100
+      Chance: 30
+      Tiers:
+      - Uncommon
+      Commands:
+      - mm i give -s %player% dathivong 128
+    '104':
+      DisplayName: §ex64 [◆] §e§lMảnh Khiên Ngư Yêu §e[◆]
+      Lore:
+      - §7Sử dụng để đổi khiên trong sự kiện Tết 2023
+      - §eKill Ngư Yêu §7§o((/warp dungeon))
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:2
+      DisplayItem: PRISMARINE_SHARD:0
+      DisplayAmount: 32
+      MaxRange: 100
+      Chance: 30
+      Tiers:
+      - Basic
+      Commands:
+      - mm i give -s %player% manhkhiennguyeu 64
+    '105':
+      DisplayName: §ex128 [◆] §e§lMảnh Khiên Ngư Yêu §e[◆]
+      Lore:
+      - §7Sử dụng để đổi khiên trong sự kiện Tết 2023
+      - §eKill Ngư Yêu §7§o((/warp dungeon))
+      DisplayEnchantments:
+      - PROTECTION_ENVIRONMENTAL:2
+      DisplayItem: PRISMARINE_SHARD:0
+      DisplayAmount: 64
+      MaxRange: 100
+      Chance: 30
+      Tiers:
+      - Uncommon
+      Commands:
+      - mm i give -s %player% manhkhiennguyeu 128
+    '11':
+      DisplayName: '&e&lx5 | GHAST Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 5
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Tiers:
+      - Uncommon
+      Glowing: false
+      Commands:
+      - silkspawners give %player% Ghast 5
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&lx5 | GHAST Spawner
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '12':
+      DisplayName: '&6&lx5 | Iron Golem Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 5
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - Uncommon
+      Glowing: false
+      Commands:
+      - silkspawners give %player% irongolem 5
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6&lx5 | Iron Golem Spawner
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '13':
+      DisplayName: '&a&l10,000,000 &e&lExp&a&l | x1 BÌNH'
+      DisplayItem: '384'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - Uncommon
+      Glowing: false
+      Commands:
+      - xp give %player% 10000000
+    13b:
+      DisplayName: '&a&l20,000,000 &e&lExp&a&l | x1 BÌNH'
+      DisplayItem: '384'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 20
+      Firework: false
+      Tiers:
+      - Uncommon
+      Glowing: false
+      Commands:
+      - xp give %player% 20000000
+    13c:
+      DisplayName: '&a&l30,000,000 &e&lExp&a&l | x1 BÌNH'
+      DisplayItem: '384'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 5
+      Firework: false
+      Tiers:
+      - Uncommon
+      Glowing: false
+      Commands:
+      - xp give %player% 30000000
+    '14':
+      DisplayName: '&a&lx1 | 10,000,000ṩ'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+      - Uncommon
+      Glowing: false
+      Commands:
+      - eco give %player% 10000000
+    14b:
+      DisplayName: '&a&lx1 | 30,000,000ṩ'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 20
+      Firework: false
+      Tiers:
+      - Uncommon
+      Glowing: false
+      Commands:
+      - eco give %player% 30000000
+    14c:
+      DisplayName: '&a&lx1 | 50,000,000ṩ'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Tiers:
+      - Uncommon
+      Glowing: false
+      Commands:
+      - eco give %player% 50000000
+    trangbi:
+      DisplayName: §4⋞ §f§lHÒM TRANG BỊ §c§lQUÝ MÃO TỐI CAO §4⋟
+      Lore:
+      - '§7Nhận 1 trong 4 Trang Bị:'
+      - §f- x1 §c§l⋞ §4§l⋞ §c§l⋞ §4§lMŨ VƯƠNG QUÝ MÃO§r §c§l⋟ §4§l⋟ §c§l⋟
+      - §f- x1 §c§l⋞ §4§l⋞ §c§l⋞ §4§lGIÁP VƯƠNG QUÝ MÃO§r §c§l⋟ §4§l⋟ §c§l⋟
+      - §f- x1 §c§l⋞ §4§l⋞ §c§l⋞ §4§lQUẦN VƯƠNG QUÝ MÃO§r §c§l⋟ §4§l⋟ §c§l⋟
+      - §f- x1 §c§l⋞ §4§l⋞ §c§l⋞ §4§lỦNG VƯƠNG QUÝ MÃO§r §c§l⋟ §4§l⋟ §c§l⋟
+      DisplayItem: ENDER_PORTAL_FRAME:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 7
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - cr give to %player% homtrangbiquymaotoicao 1
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng §4⋞ §f§lHÒM TRANG BỊ §c§lQUÝ MÃO TỐI CAO §4⋟
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    trangbifull:
+      DisplayName: §4⋞ §f§lBỘ TRANG BỊ §c§lQUÝ MÃO TỐI CAO §4⋟
+      Lore:
+      - '§6Nhận 4 Món Trang Bị:'
+      - §f- x1 §c§l⋞ §4§l⋞ §c§l⋞ §4§lMŨ VƯƠNG QUÝ MÃO§r §c§l⋟ §4§l⋟ §c§l⋟
+      - §f- x1 §c§l⋞ §4§l⋞ §c§l⋞ §4§lGIÁP VƯƠNG QUÝ MÃO§r §c§l⋟ §4§l⋟ §c§l⋟
+      - §f- x1 §c§l⋞ §4§l⋞ §c§l⋞ §4§lQUẦN VƯƠNG QUÝ MÃO§r §c§l⋟ §4§l⋟ §c§l⋟
+      - §f- x1 §c§l⋞ §4§l⋞ §c§l⋞ §4§lỦNG VƯƠNG QUÝ MÃO§r §c§l⋟ §4§l⋟ §c§l⋟
+      DisplayItem: BEACON
+      DisplayAmount: 1
+      MaxRange: 500
+      Chance: 1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - asets give %player% SetQuyMaoToiCao
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng §4⋞ §f§lBỘ TRANG BỊ §c§lQUÝ MÃO TỐI CAO §4⋟
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    kiem:
+      DisplayName: §c§l⋞ §4§l⋞ §c§l⋞ §4§lKIẾM VƯƠNG QUÝ MÃO §c§l⋟ §4§l⋟ §c§l⋟
+      Lore:
+      - '&7&l๖Móng Vuốt Cửu Mão III'
+      - ''
+      - §4§l◆ ◆ ◆ TỐI CAO §4(Quý Mão 2023) §l◆ ◆ ◆
+      - §4* Tăng 24% damage gây ra.
+      - §4§oVật phẩm sự kiện Tết Quý Mão 2023
+      - §7§o(Mặc full set Quý Mão để kích hoạt.)
+      - ''
+      DisplayEnchantments:
+      - DAMAGE_ALL:128
+      - DAMAGE_UNDEAD:5
+      - DAMAGE_ARTHROPODS:5
+      - FIRE_ASPECT:2
+      - LOOT_BONUS_MOBS:2
+      - DURABILITY:5
+      DisplayItem: DIAMOND_SWORD:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 7
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - asets weapon %player% KiemQuyMaoToiCao
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng §c§l⋞ §4§l⋞ §c§l⋞ §4§lKIẾM VƯƠNG QUÝ MÃO §c§l⋟ §4§l⋟ §c§l⋟
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    riu:
+      DisplayName: §c§l⋞ §4§l⋞ §c§l⋞ §4§lRÌU VƯƠNG QUÝ MÃO §c§l⋟ §4§l⋟ §c§l⋟
+      Lore:
+      - '&7&l๖Cửu Thiên Mão Hoại III'
+      - ''
+      - §4§l◆ ◆ ◆ TỐI CAO §4(Quý Mão 2023) §l◆ ◆ ◆
+      - §4* Tăng 24% damage gây ra.
+      - §4§oVật phẩm sự kiện Tết Quý Mão 2023
+      - §7§o(Yêu cầu mang đủ Set để kích hoạt.)
+      - ''
+      DisplayEnchantments:
+      - DAMAGE_ALL:128
+      - DAMAGE_UNDEAD:5
+      - DAMAGE_ARTHROPODS:5
+      - FIRE_ASPECT:2
+      - LOOT_BONUS_MOBS:2
+      - DURABILITY:5
+      DisplayItem: DIAMOND_AXE:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 7
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - asets weapon %player% RiuQuyMaoToiCao
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng §c§l⋞ §4§l⋞ §c§l⋞ §4§lRÌU VƯƠNG QUÝ MÃO §c§l⋟ §4§l⋟ §c§l⋟
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    cung:
+      DisplayName: §c§l⋞ §4§l⋞ §c§l⋞ §4§lCUNG VƯƠNG QUÝ MÃO §c§l⋟ §4§l⋟ §c§l⋟
+      Lore:
+      - '&7&l๖Thị Giác Quý Mão III'
+      - ''
+      - §4§l◆ ◆ ◆ TỐI CAO §4(Quý Mão 2023) §l◆ ◆ ◆
+      - §4§oVật phẩm sự kiện Tết Quý Mão 2023
+      - ''
+      DisplayEnchantments:
+      - DURABILITY:5
+      - ARROW_DAMAGE:80
+      - ARROW_KNOCKBACK:2
+      - ARROW_FIRE:3
+      - ARROW_INFINITE:1
+      DisplayItem: BOW:0
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - asets weapon %player% CungQuyMaoToiCao
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng §c§l⋞ §4§l⋞ §c§l⋞ §4§lCUNG VƯƠNG QUÝ MÃO §c§l⋟ §4§l⋟ §c§l⋟
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '22':
+      DisplayName: '&4&l☀ &c&l☀ &4&l☀ &c&l&nKhiên Vương Quý Mão&r &4&l☀ &c&l☀ &4&l☀'
+      DisplayItem: '442'
+      Patterns:
+      - 'BASE:RED'
+      - 'PER_PALE:RED'
+      - 'FLOWER:YELLOW'
+      - 'TRIANGLES_TOP:YELLOW'
+      - 'TRIANGLES_BOTTOM:YELLOW'
+      DisplayAmount: 1
+      Lore:
+      - '&c๖Khiên Vương Quý Mão I'
+      - ''
+      - '&4&l◆ ◆ ◆ SHIELD THƯỢNG MÃO ◆ ◆ ◆'
+      - '&7&l* &7Trang bị tăng &f20 &7tim'
+      - '&7&l* &7Trang bị tăng &f10 &7giáp'
+      - ''
+      - '&4* &4&lSkill: &4Chặn khiên sẽ hồi lại máu và thức ăn '
+      - '&4đồng thời tăng tốc độ chạy, sau 1s bạn được '
+      - '&4tăng sức mạnh và kẻ địch bị móng vuốt từ'
+      - '&4khiên phản lại chảy máu trong 5s.'
+      MaxRange: 120
+      Chance: 1
+      Firework: true
+      Flags:
+      - HIDE_POTION_EFFECTS
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - ie give khienthuongmao %player% 1
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &4&l☀ &c&l☀ &4&l☀ &c&l&nKhiên Vương Quý Mão&r &4&l☀ &c&l☀ &4&l☀
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '23':
+      DisplayName: '&7&lLông Mèo II'
+      DisplayItem: 'BOOK'
+      DisplayAmount: 1
+      Lore:
+      - '&e100% tỉ lệ thành công'
+      - '&60% tỉ lệ thành công'
+      - '&fKhi bị tấn công có cơ hội né đòn đánh từ kẻ địch và hồi máu'
+      - '&fđồng thời tăng tốc độ chạy thoáng chốc cho bạn.'
+      - '&bVật phẩm cường hóa: &b&lGiày'
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Uncommon
+      Commands:
+      - ae givebook %player% longmeo 2 1 100 0
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &7&lLông Mèo II
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '24':
+      DisplayName: '&a&lMắt Mèo II'
+      DisplayItem: 'BOOK'
+      DisplayAmount: 1
+      Lore:
+      - '&e100% tỉ lệ thành công'
+      - '&60% tỉ lệ thành công'
+      - '&fMắt của bạn được cường hóa nhìn rõ mọi hành động của đối thủ'
+      - '&fkhiến bạn nhận tăng tốc chạy và hồi máu.'
+      - '&bVật phẩm cường hóa: &b&lNón'
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Uncommon
+      Commands:
+      - ae givebook %player% matmeo 2 1 100 0
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &a&lMắt Mèo II
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '25':
+      DisplayName: '&e&lVuốt Sắc II'
+      DisplayItem: 'BOOK'
+      DisplayAmount: 1
+      Lore:
+      - '&e100% tỉ lệ thành công'
+      - '&60% tỉ lệ thành công'
+      - '&fBị tấn công có cơ hội phản lại sát thương cho đối phương và gây chảy máu'
+      - '&ftrong vài giây đồng thời tăng tốc độ chạy cho bản thân.'
+      - '&bVật phẩm cường hóa: &b&lQuần'
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Uncommon
+      Commands:
+      - ae givebook %player% vuotsac 2 1 100 0
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&lVuốt Sắc II
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '26':
+      DisplayName: '&d&lThiên Mão II'
+      DisplayItem: 'BOOK'
+      DisplayAmount: 1
+      Lore:
+      - '&e100% tỉ lệ thành công'
+      - '&60% tỉ lệ thành công'
+      - '&fKhi bạn đang hấp hối, Cửu Mão sẽ cho bạn sức mạnh vực dậy hồi lại'
+      - '&f1 lượng lớn máu cho bạn, đồng thời tăng tất cả mọi chỉ số'
+      - '&ftrong vài giây.'
+      - '&bVật phẩm cường hóa: &b&lÁo Giáp'
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+      - Rare
+      Commands:
+      - ae givebook %player% thienmao 2 1 100 0
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &d&lThiên Mão II
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '27':
+      DisplayName: '&Fx3 | &D&LSách Truyền thuyết'
+      DisplayItem: '340'
+      DisplayAmount: 3
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 15
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - ae givercbook HEROIC %player% 3
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &Fx3 | &D&LSách Truyền
+        thuyết &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '28':
+      DisplayName: '&Fx3 | &C&LSách Linh Hồn'
+      DisplayItem: '340'
+      DisplayAmount: 3
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - ae givercbook SOUL %player% 3
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &Fx3 | &C&LSách Linh
+        Hồn &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '29':
+      DisplayName: '&b9⛁'
+      DisplayItem: 'DOUBLE_PLANT'
+      DisplayAmount: 9
+      Lore:
+      - '&7Nhận ngay &b9⛁ &7vào tài khoản!'
+      MaxRange: 100
+      Chance: 1
+      Firework: true
+      Tiers:
+      - Uncommon
+      Glowing: false
+      Commands:
+      - points give %player% 9
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &b9⛁
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '30':
+      DisplayName: '&b19⛁'
+      DisplayItem: 'DOUBLE_PLANT'
+      DisplayAmount: 19
+      Lore:
+      - '&7Nhận ngay &b9⛁ &7vào tài khoản!'
+      MaxRange: 100
+      Chance: 3
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - points give %player% 19
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &b19⛁
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    '31':
+      DisplayName: '&b39⛁'
+      DisplayItem: 'DOUBLE_PLANT'
+      DisplayAmount: 39
+      Lore:
+      - '&7Nhận ngay &b39⛁ &7vào tài khoản!'
+      MaxRange: 140
+      Chance: 1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: false
+      Commands:
+      - points give %player% 39
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &b39⛁
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+    'lixi':
+      DisplayName: '&c&lLì Xì Server &b1⛁'
+      DisplayItem: 'GOLD_BLOCK'
+      DisplayAmount: 1
+      Lore:
+      - '&7Lì xì mọi người trong Server &b1⛁ &7!'
+      MaxRange: 400
+      Chance: 1
+      Firework: true
+      Tiers:
+      - Rare
+      Glowing: true
+      Commands:
+      - points giveall 1
+      - broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &c&lLì Xì Server &b1⛁
+        &f&ltừ &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟
+      - msg ** &c&lBạn đã nhận &b1⛁ &c&lmay mắn từ phần Lì Xì &e&l⋞ &6&l⋞ &e&l⋞ &e&l&nHÒM&r &6&lVƯƠNG QUÝ MÃO &e&l⋟ &6&l⋟ &e&l⋟

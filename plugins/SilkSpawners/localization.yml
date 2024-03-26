@@ -1,0 +1,83 @@
+# This line affects the new naming of spawners, to DISABLE this, change the message back to Monster Spawner
+spawnerName: '&e%creature% &fSpawner'
+
+addedEgg: '&7Successfully added  &a%amount% %creature% spawn egg(s) &7to your inventory.'
+addedEggOtherPlayer: '&7Added  &a%amount% %creature% spawn egg(s) &7to &e%player%
+  &a''s inventory.'
+addedSpawner: '&7Added  &a%amount% %creature% spawner(s) &7to your inventory.'
+addedSpawnerOtherPlayer: '&7Added  &a%amount% %creature% spawner(s) &7to &e%player%
+  &a''s inventory.'
+noFreeSlot: '&4There is no free slot in the inventory!'
+noFreeSlotDroppedGround: '&4There is no free slot in the inventory. &eDropping items
+  on the ground instead!'
+
+noPermission: ' &aNo permission.'
+noPermissionChangingEgg: '&aYou do not have permission to change spawn eggs!'
+noPermissionChangingSpawner: '&aYou do not have permission to change spawners!'
+noPermissionFreeEgg: '&aYou do not have permission to spawn free eggs!'
+noPermissionFreeSpawner: '&aYou do not have the permission to spawn free spawners!'
+noPermissionViewType: '&aYou do not have the permission to view the type of this spawner!'
+noPermissionChangingWithEggs: ' &aYou do not have permission to change spawners with
+  spawn eggs!'
+noPermissionCraft: '&7You do not have the permission to craft a(n)&a%creature% &7spawner!'
+noPermissionPlace: '&7You do not have the permission to place a(n)&a%creature% &7spawner!'
+
+changedEgg: '&7Successfully changed the spawning egg to a(n) &a%creature% spawn egg.'
+changedSpawner: '&7Successfully changed the spawner to a(n) &a%creature% spawner.'
+
+playerOffline: ' &aSorry this player is offline!'
+changingDeniedFactions: '&aYou are not allowed to change spawners in other peoples
+  territory!'
+changingDeniedWorldGuard: '&aChanging spawner type denied by WorldGuard protection.'
+getSpawnerType: '&7This is a(n) &a%creature% spawner&7.'
+unknownArgument: '&aUnrecognized argument. See &7/silkspawners help'
+unknownCreature: '&aUnrecognized creature &7%creature% &a.'
+useNumbers: ' &aPlease use a numeric number between 1 and 64!'
+noConsole: ' &aThe console can not use this command!'
+configsReloaded: '&7Successfully reloaded the configs!'
+
+spawnerBroken: '&a%creature% &7spawner broken.'
+spawnerPlaced: '&a%creature% &7spawner placed.'
+placingDefault: '&7Placing default spawner  &a(either this spawner is invalid or disabled)'
+
+informationOfSpawner1: -- Monster Spawner --
+informationOfSpawner2: '-- Type: %creature% --'
+informationOfSpawnerBar: '&7Monster Spawner, Type:  &a%creature%&7, ID: %ID%'
+
+spawningDenied: '&7Spawning of  &a%creature% (ID %ID%) &7denied!'
+spawning: '&7Spawning  &a%creature% (ID %ID%)'
+noSpawnerHere: ' &aA spawner can not be placed here, because the block above is blocked!'
+
+lookAtSpawner: ' &aYou must be looking directly at a spawner.'
+spawnerNotDeterminable: '&4You either have no spawner or egg in your hand or a spawner
+  or egg in both hands. Please make one empty!'
+help: |-
+  &7------&aSilkSpawners v%version% Help Menu&7------
+  &e/ss help &7- &2Displays the help menu.
+  &e/ss list|all &7- &2Displays all available creatures.
+  &e/ss view &7- &2Displays information about the viewed spawner.
+  &e/ss reload|rl &7- &2Reloads the configuration files
+  &e/ss change <newMob> &7- &2Changes the spawner you are currently holding or viewing at.
+  &e/ss give|add <player> <mob> [amount] &7- &2Gives a spawner or egg to the player. Amount is optional
+changindDeniedFeudal: '&4You are not allowed to change spawners in other peoples kingdom!'
+informationOfSpawner3: '-- EntityID: %ID% --'
+usageEggCommand: '&4To use this command, empty your hand (to get a free spawn egg)
+  or have a spawn egg in your hand (to change the type)'
+usageEggCommandCommandLine: '&4To use SilkSpawners from the command line use /egg
+  [creature] [amount] [name]'
+usageSpawnerCommand: '&4To use this command, empty your hand (to get a free spawner),
+  point at an existing spawner or have a spawner in your hand (to change the spawner
+  type)'
+usageSpawnerCommandCommandLine: '&4To use SilkSpawners from the command line use /spawner
+  [creature]|[creature]egg [amount] [name]'
+lookAtSpawnerOrInHand: '&4You must be looking directly at a spawner or have a spawner
+  in your hand to use this command'
+help1: '&7------ &aOstia&fSpawners Help Menu&7------'
+help2: ' &a/ss help &8- &fDisplays the help menu.'
+help3: ' &a/ss list|all &8- &fDisplays all available creatures.'
+help4: ' &a/ss view &8- &fDisplays information about the viewed spawner.'
+help5: ' &a/ss reload|rl &8- &fReloads the configuration files.'
+help6: ' &a/ss change <newMob> &8- &fChanges the spawner you are currently holding
+  or viewing at.'
+help7: ' &a/ss give|add <player> <mob> [amount] &8- &fGives a spawner or egg to the
+  player. Amount is optional'

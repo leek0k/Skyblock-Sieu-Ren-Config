@@ -1,0 +1,501 @@
+#########################################################################################
+#                                                                                       #
+# Scyther, a premium resource by Norska#1933 [ID: 253886847690866688]                   #
+#                                                                                       #
+# Wiki: https://norska.dev/docs/welcome                                                 #
+# Support: https://norska.dev/discord                                                   #
+#                                                                                       #
+# You are editing the config.yml file of Scyther.                                       #
+#                                                                                       #
+#########################################################################################
+
+#########################################################################################
+#                                                                                       #
+# NOTE: PLEASE READ BEFORE CONFIGURING!                                                 #
+#                                                                                       #
+# Please consult the wiki for any questions regarding the setup of this plugin, if you  #
+# still require help, open a ticket on my discord server!                               #
+#                                                                                       #
+#########################################################################################
+
+##################################
+#                                #
+#            PATCHES             #
+#                                #
+##################################
+
+patches:
+
+   # Note: Will disable harvester hoe usage if the player has an item
+   # in their second hand, which can be abused alongside cheats in order
+   # to spam farm sugarcane/bamboo.
+   # Bypass Permission: scyther.patches.offhand
+  disableOffHand:
+    enabled: true
+      
+   # Note: Will disable placing sugarcane on top of sugarcane in order to
+   # farm it quicker, that way the player must wait for the sugarcane to
+   # grow on its own.
+   # Bypass Permission: scyther.patches.cane
+  disableCanePlacement:
+    enabled: true
+      
+   # Note: Will disable harvester hoe usage if the crop is next to dispensers
+   # which can be used alongside redstone clocks to spam farm crops.
+   # Bypass Permission: scyther.patches.dispensers
+  disableWhenNearbyDispensers:
+    enabled: true
+
+##################################
+#                                #
+#             HOOKS              #
+#                                #
+##################################
+         
+hooks:
+  worldguard:
+    enabled: true
+      
+  griefprevention:
+    enabled: true
+      
+  coreprotect:
+    enabled: true
+    
+  askyblock:
+    enabled: true
+      
+  towny:
+    enabled: true
+      
+  superiorskyblock2:
+    enabled: false
+
+   # Note: Autosell money will be doubled, or quadrupled if both personal and global boosters are active.
+  superboosters:
+    enabled: true
+      
+   # Note: Allows the player to gain farming experience when harvesting crops with Scyther.    
+  jobsreborn:
+    enabled: true
+      
+   # Note: EliteMasks's sellboost will affect Scyther's prices.         
+  elitemasks:
+    enabled: true
+
+   # Note: Scyther will fetch crop prices directly from ShopGUIPlus.
+  shopguiplus:
+    enabled: true
+      
+  vehicles:
+    enabled: true
+      
+   # Note: Here you can configure the permission item that shows up in "/is permissions", to toggle usage of harvesters for specific ranks on your island. IridiumSkyblock v3+ ONLY!
+   # Note: Use the placeholder %permission% in the lore!
+   # Note: Find customizable sounds/messages for IridiumSkyblock in Scyther's messages.yml and sounds.yml file!
+  iridiumskyblock:
+    enabled: false
+    permission:
+      material: DIAMOND_HOE
+      amount: 1
+      slot: 1
+      name: '&aUse harvester hoes'
+      lore:
+      - '&7Grant the ability to use harvester hoes on your Island.'
+      - ''
+      - '&e&lPermission'
+      - '%permission%'
+   
+   # Note: Allows the player to gain farming experience when harvesting crops with Scyther.
+   # Note: The experience gets multiplied by the amount of crops harvested.   
+   # Note: The experience must be set in Doubles (e.g 0.5 and not 1).
+  aureliumskills:
+    enabled: false
+    settings:
+      worksWithAutosell: true
+      worksWithAutocollect: true
+         # Note: It is suggested to use periodical payouts as it reduces API calls and therefore improves performance.
+      periodicalPayouts:
+        enabled: true
+        interval: 5
+      experience:
+        sugarcane: 0.5
+        carrot: 0.5
+        wheat: 0.5
+        potato: 0.5
+        netherwart: 0.5
+        cocoa: 0.5
+        beetroot: 0.5
+        sweetberry: 0.5
+        bamboo: 0.5
+        melon: 0.5
+        pumpkin: 0.5
+        honeycomb: 0.5
+   
+   # Note: Allows the player to gain herbalism experience when harvesting crops with Scyther.
+   # Note: The experience gets multiplied by the amount of crops harvested.
+   # Note: The experience must be set in Integers (e.g 1 and not 0.5).         
+  mcmmo:
+    enabled: false
+    settings:
+      worksWithAutosell: true
+      worksWithAutocollect: true
+         # Note: It is suggested to use periodical payouts as it reduces API calls and therefore improves performance.
+      periodicalPayouts:
+        enabled: true
+        interval: 5
+      experience:
+        sugarcane: 1
+        carrot: 1
+        wheat: 1
+        potato: 1
+        netherwart: 1
+        cocoa: 1
+        beetroot: 1
+        sweetberry: 1
+        bamboo: 1
+        melon: 1
+        pumpkin: 1
+        honeycomb: 1
+
+####################################
+#                                  #
+# PERFORMANCE (PERIODICAL PAYOUTS) #
+#                                  #
+####################################
+
+performance:
+   # Note: It is suggested to use periodical payouts as it reduces API calls and therefore improves performance.
+  periodicalPayouts:
+    enabled: true
+    interval: 5
+
+##################################
+#                                #
+#           HOLOGRAMS            #
+#                                #
+##################################
+
+# Placeholders for names and lores for AUTOSELL:
+# {0} = money
+# {1} = boosted money
+# {2} = boost percentage
+# {3} = taxed money
+# {4} = tax percentage
+# {5} = amount
+# {6} = experience
+# {ITEM} = itemstack of crop
+
+# Placeholders for names and lores for AUTOCOLLECT:
+# {0} = amount
+# {1} = experience
+# {ITEM} = itemstack of crop
+
+# Note: Lines in layout with {ITEM} cannot contain any other placeholder.
+
+holograms:
+  settings:
+      # Note: Default values (0.5, 2.7 and 0.5) are perfectly centered.
+    locationOffset:
+      addX: 0.5
+      addY: 2.7
+      addZ: 0.5
+    displayTime: 3
+      # Handlers: HolographicDisplays, CMI
+    handler: HolographicDisplays
+      
+  autosell:
+    enabled: false
+    layout:
+    - '&f&l+&a${0}'
+    - '&f(Boost: &a${1}&f)'
+    - '&f(Tax: &c${3}&f)'
+    - '{ITEM}'
+    - '&a&l+{6} XP'
+      
+  autocollect:
+    enabled: false
+    layout:
+    - '&f&l+&a{0} crops&r'
+    - '{ITEM}'
+    - '&a&l+{1} EXP'
+
+##################################
+#                                #
+#         TAXES & BOOSTS         #
+#                                #
+##################################
+
+# Note: decideFor can be set to MIN or MAX (case sensitive), this option is here in order for the feature to work with perm inheritance.
+# Note: MIN -> Grab the lowest tax (works for when higher ranks [ranks that inherit lower ranks perms] have a lower tax rate)
+# Note: MAX -> Grab the highest tax (works for when higher ranks [ranks that inherit lower ranks perms] have a higher tax rate)
+
+# Note: You can add permissions to players in order to tax their sales from Scyther. Permission -> scyther.tax.<integer>
+taxes:
+  decideFor: MIN
+
+# Note: You can add permissions to players in order to tax their sales from Scyther. Permission -> scyther.moneyboost.<integer>
+moneyBoost:
+  decideFor: MIN
+   
+##################################
+#                                #
+#           HOE MODES            #
+#                                #
+##################################   
+   
+modes:
+   # Note: Permission -> scyther.modes.autosell
+  autosell:
+    enabled: true
+   # Note: Permission -> scyther.modes.autocollect   
+  autocollect:
+    enabled: false
+   # Note: Permission -> scyther.modes.dirtdigger
+  dirtdigger:
+    enabled: false
+  requirePermissions: false
+   
+##################################
+#                                #
+#    FULL INV & DROP CONFIRM     #
+#                                #
+################################## 
+
+fullInventory:
+   # Note: true will drop the dropped items to the ground if inventory is full, false will remove the dropped items if inventory is full.
+  dropItems: true
+confirmDrop:
+   # Note: Whether or not the user has to confirm (double drop) in order to drop a harvester hoe.
+  enabled: true
+   # Note: Time before the request times out.
+  timeout: 10
+
+##################################
+#                                #
+#    HARVESTER OWNER BINDING     #
+#                                #
+##################################
+
+harvesterBinding:
+  settings:
+      # Note: Whether or not to bind harvesters to their owners (player that uses the harvester for the first time).
+    enabled: false
+    disableUsageEntirely:
+         # Note: Whether or not to disable usage of the harvester entirely if it is not owned by the player trying to use it.
+      enabled: false
+    taxes:
+         # Note: Whether or not to tax the player that uses another player's harvester, for this feature to work disableUsageEntirely needs to be set to false.
+      enabled: false
+         # Note: This tax gets applied last (after other boosts, taxes, etc.). Accepted values -> Integer.
+      percentage: 25
+    placeholders:
+         # Note: What the {8} placeholder (ITEM section) will show when the harvester is not bound yet.
+      notBound: Not bound to a player
+
+##################################
+#                                #
+#    VALUE DISPLAY SETTINGS      #
+#                                #
+################################## 
+
+displaySettings:
+  infiniteDisplay: Vĩnh viễn
+   # Note: Format can be 1 or 2. 1 = Display 10000 as 10,000. 250000 as 250,000 etc. // 2 = Display 10000 as 10k. 1000000 as 1M etc.
+  numberFormatting:
+    format: 1
+  experienceProgressBar:
+    symbol: '|'
+    color1: '&a'
+    color2: '&7'
+    length: 20
+
+##################################
+#                                #
+#             CROPS              #
+#                                #
+##################################
+
+crops:
+         
+  sugarcane:
+    enabled: true
+    worth: 5.0
+    experience:
+      autosell: 0.1
+      autocollect: 0.1
+  bamboo:
+    enabled: true
+    worth: 5.0
+    experience:
+      autosell: 0.1
+      autocollect: 0.1
+  carrot:
+    enabled: true
+    worth: 1.0
+    drops:
+      minimum: 1
+      maximum: 2
+    experience:
+      autosell: 0.1
+      autocollect: 0.1
+    exclusive:
+      replantafter: 5
+         
+  potato:
+    enabled: true
+    worth: 1.0
+    drops:
+      minimum: 1
+      maximum: 2
+    experience:
+      autosell: 0.1
+      autocollect: 0.1
+    exclusive:
+      replantafter: 5
+         
+  wheat:
+    enabled: true
+    worth: 1.0
+    drops:
+      minimum: 1
+      maximum: 2
+    experience:
+      autosell: 0.1
+      autocollect: 0.1
+    exclusive:
+      replantafter: 5
+         
+  netherwart:
+    enabled: true
+    worth: 5.0
+    drops:
+      minimum: 2
+      maximum: 6
+    experience:
+      autosell: 0.1
+      autocollect: 0.1
+    exclusive:
+      replantafter: 0
+         
+  beetroot:
+    enabled: true
+    worth: 1.0
+    drops:
+      minimum: 1
+      maximum: 2
+    experience:
+      autosell: 0.1
+      autocollect: 0.1
+    exclusive:
+      replantafter: 5
+         
+  cocoa:
+    enabled: true
+    worth: 5.0
+    drops:
+      minimum: 2
+      maximum: 6
+    experience:
+      autosell: 0.1
+      autocollect: 0.1
+  sweetberry:
+    enabled: true
+    worth: 5.0
+    drops:
+      minimum: 2
+      maximum: 6
+    experience:
+      autosell: 0.1
+      autocollect: 0.1
+        
+  melon:
+    enabled: true
+    worth: 7.0
+    drops:
+      minimum: 2
+      maximum: 6
+    experience:
+      autosell: 0.1
+      autocollect: 0.1
+   
+  pumpkin:
+    enabled: true
+    worth: 7.0
+    experience:
+      autosell: 0.1
+      autocollect: 0.1
+ 
+  honeycomb:
+    enabled: true
+    worth: 5.0
+    drops:
+      minimum: 2
+      maximum: 6
+    experience:
+      autosell: 0.1
+      autocollect: 0.1
+
+##################################
+#                                #
+#             ITEM               #
+#                                #
+##################################
+
+# Placeholders for names and lores:
+# {0} = uses
+# {1} = sell multiplier
+# {2} = drop multiplier
+# {3} = level
+# {4} = max level
+# {5} = experience
+# {6} = experience to next level
+# {7} = experience progress bar 
+# {8} = owner (harvester binding feature needs to be enabled)
+
+item:
+   # Note: Available modes are AUTOSELL, AUTOCOLLECT, DIRTDIGGER
+  defaultMode: AUTOSELL
+  glow: true
+  material: WOOD_HOE
+  materialData: 0
+  customModelData: 0
+  displaynames:
+    autosell: '&aCuốc tiên &7» &7[&eAutosell&7] &f(Boost: &ax{1}&f)'
+    autocollect: '&aCuốc tiên &7» &7[&6Auto thu thập&7] &f(Boost: &ax{2}&f)'
+    dirtdigger: '&aCuốc tiên &7» &f[&cDigger&f]'
+  lores:
+    autosell:
+    - ''
+    - '&fThông tin:'
+    - ' &e• &7Trạng thái: &eAutosell'
+    - ' &e• &7Boost: &ex{1}'
+    - ' &e• &7Max: &e{0}'
+    - ''
+    - '&7(Chuột-trái lên nông sản để dùng!)'
+    - '&7(Chuột-phải để đổi trạng thái!)'
+      
+    autocollect:
+    - ''
+    - '&fThông tin:'
+    - ' &e• &7Mode: &6Auto thu thập'
+    - ' &e• &7Boost: &ex{2}'
+    - ' &e• &7Max: &e{0}'
+    - ''
+    - '&7(Chuột-trái lên nông sản để dùng!)'
+    - '&7(Chuột-phải để đổi trạng thái!)'
+    dirtdigger:
+    - ''
+    - '&fInformation:'
+    - ' &e• &7Mode: &cDigger'
+    - ''
+    - '&8(Shift-Right-Click to toggle mode!)'
+  itemFlags:
+  - HIDE_ATTRIBUTES
+  - HIDE_ENCHANTS
+  - HIDE_PLACED_ON
+   
+updates:
+  notifications: false
+   
+extras: none

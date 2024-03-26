@@ -1,0 +1,56 @@
+# Placeholder
+# %topphuquy_point_top_<top>% - Trả về điểm của người chơi top <top> VD: %topphuquy_point_top_1% 
+# %topphuquy_point_formatted_top_<top>% - Trả về điểm của người chơi top <top> theo dạng format VD: %topphuquy_point_top_1%, 10000 điểm = 10k điểm, 1000000 điểm = 1M điểm
+# %topphuquy_player_top_<top>% - Trả về tên của người chơi top <top> VD: %topphuquy_player_top_1% 
+# %topphuquy_top% - Trả về xếp hạng của người chơi hiện tại VD: %topphuquy_top% 
+# %topphuquy_point% - Trả về điểm của người chơi hiện tại
+# %topphuquy_point_formatted% - Trả về điểm của người chơi hiện tại theo dạng format, 10000 điểm = 10k điểm, 1000000 điểm = 1M điểm
+# %topphuquy_group_top_<plugin>% - Trả về xếp hạng theo nhóm Plugin thuộc người chơi hiện tại
+# %topphuquy_group_top_<plugin>_<top>% - Trả về xếp hạng theo nhóm Plugin top <top>
+# %topphuquy_group_name_<plugin>% - Trả về tên nhóm Plugin thuộc người chơi hiện tại
+# %topphuquy_group_owner_top_<plugin>_<top>% - Trả về tên người chơi chủ nhóm Plugin top <top>
+# %topphuquy_group_player_top_<plugin>_<top>% - Trả về tên người chơi top 1 trong nhóm Plugin top <top>
+# %topphuquy_group_point_top_<plugin>_<top>% - Trả về tổng điểm nhóm Plugin top <top>
+# %topphuquy_group_point_formatted_top_<plugin>_<top>% - Trả về tổng điểm dạng đã rút gọn nhóm Plugin top <top>
+# %topphuquy_group_total_point_<plugin>% - Trả về tổng điểm nhóm Plugin thuộc người chơi hiện tại
+# %topphuquy_group_members_top_<plugin>_<top>% - Trả về danh sách người chơi nhóm Plugin top <top> (chỉ sử dụng cho menu)
+# <plugin>: LANDS, SUPERIORSKYBLOCK2
+
+# Command
+# /topphuquy - Hiển thị top cống nạp
+# /congnap add <tên người chơi> <điểm> - thêm điểm
+# /congnap remove <tên người chơi> <điểm> - bớt điểm
+# /congnap set <tên người chơi> <điểm> - sửa điểm
+# /congnap show <tên người chơi> - xem điểm
+# /congnap reload - Cài lại cấu hình
+# /congnap reset player - Xóa thông tin người chơi
+# /congnap reset all - Xóa toàn bộ thông tin
+# /congnap update - Cập nhật lại bảng top
+# /congnap help - Xem hướng dẫn
+
+# Permission
+# topphuquy.command - /congnap
+# topphuquy.command.public - /topphuquy
+# topphuquy.command.add
+# topphuquy.command.remove
+# topphuquy.command.set
+# topphuquy.command.show
+# topphuquy.command.reload
+# topphuquy.command.reset.player
+# topphuquy.command.reset.all
+# topphuquy.command.update
+# topphuquy.command.help
+
+# Lưu dữ liệu người chơi vào file mỗi tick (cần restart server để áp dụng thay đổi)
+save-player-data-interval-tick: 6000 # 5 minutes
+# Cập nhật top mỗi tick (cần restart server để áp dụng thay đổi)
+update-top-interval-tick: 200 # 20 tick = 1 second
+
+unknown-top-player-name: '&7Trống'
+unknown-top-group-name: '&7Trống'
+unknown-top-group-owner: '&7Trống'
+
+default-menu: 'skyblock-menu'
+
+group-player-format: '&6#%index% &e%player% - %point%'
+version: 1

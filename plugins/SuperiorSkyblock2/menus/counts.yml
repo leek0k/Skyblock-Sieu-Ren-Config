@@ -1,0 +1,49 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&lCheck đảo'
+
+pattern:
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - '@ @ @ @ @ @ @ @ @'
+  - '$ $ $ $ $ $ $ $ $'
+  - '# # % # * # ^ # #'
+
+slots: '@'
+previous-page: '%'
+current-page: '*'
+next-page: '^'
+
+items:
+  '@':
+    type: STONE
+    name: '&e{0}'
+    lore:
+      - '&6&l* &e&lSố lượng &fx{1}'
+  '%':
+    type: PAPER
+    name: '{0}Trang trước'
+  '*':
+    type: DOUBLE_PLANT
+    name: '&aTrang hiện tại'
+    lore:
+      - '&7Bạn đang ở trang {0}'
+  '^':
+    type: PAPER
+    name: '{0}Trang sau'
+  '$':
+    type: STAINED_GLASS_PANE
+    data: 15
+    name: '&f'
+
+sounds:
+  '@':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2

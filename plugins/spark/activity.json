@@ -1,0 +1,75 @@
+[
+  {
+    "user": {
+      "type": "other",
+      "name": "CONSOLE"
+    },
+    "time": 1710593455185,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/ci4ZigkL7M"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "CONSOLE"
+    },
+    "time": 1701183464877,
+    "type": "Heap dump",
+    "data": {
+      "type": "file",
+      "value": "plugins/spark/heap-2023-11-28_21.57.18.hprof"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "CONSOLE"
+    },
+    "time": 1699758237660,
+    "type": "Heap dump",
+    "data": {
+      "type": "file",
+      "value": "plugins/spark/heap-2023-11-12_10.02.39.hprof"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "CONSOLE"
+    },
+    "time": 1674828808325,
+    "type": "Profiler",
+    "data": {
+      "type": "file",
+      "value": "plugins/spark/profile-2023-01-27_21.13.28.sparkprofile"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Coconubs",
+      "uniqueId": "b3702d25-b0e1-3f2b-bee0-71ef27ae5903"
+    },
+    "time": 1674800071397,
+    "type": "Profiler",
+    "data": {
+      "type": "file",
+      "value": "plugins/spark/profile-2023-01-27_13.14.31.sparkprofile"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "CONSOLE"
+    },
+    "time": 1673879998362,
+    "type": "Profiler",
+    "data": {
+      "type": "file",
+      "value": "plugins/spark/profile-2023-01-16_21.39.57.sparkprofile"
+    }
+  }
+]

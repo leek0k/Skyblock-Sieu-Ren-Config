@@ -1,0 +1,82 @@
+#MoneyPouch configuration 2.1
+help:
+ - '&8&m-----------------'
+ - '&5&lTúi đựng tiền v%version%'
+ - ''
+ - '&7&o/mp <tier> <người chơi> [số lượng] : nhận một túi tiền của <tier>'
+ - '&7&o/mp list : liệt kê tất cả các loại tiền'
+ - '&7&o/mp shop : mở cửa hàng Moneypouch (nếu được bật)'
+ - '&7&o/mp reload : tải lại cấu hình'
+ - ''
+ - '%author%'
+ - '&8&m-----------------'
+pouches:
+  tier:
+    1:
+      name: '&5&l*&d&l*&5&l* &2&lHòm &e&l$ &2&lmay mắn I &5&l*&d&l*&5&l*'
+      item: 'ENDER_CHEST'
+      pricerange:
+        from: '25000'
+        to: '75000'
+      lore:
+        - '&7Random 25000$ - 75000$'
+        - '&7&o((&fChuột phải để sử dụng&7&o))'
+    2:
+      name: '&5&l*&d&l*&5&l* &c&lHòm &e&l$ &c&lmay mắn II &5&l*&d&l*&5&l*'
+      item: 'ENDER_CHEST'
+      pricerange:
+        from: '75000'
+        to: '150000'
+      lore:
+        - '&7Random 75000$ - 150000$'
+        - '&7&o((&fChuột phải để sử dụng&7&o))'
+    3:
+      name: '&5&l*&d&l*&5&l* &6&lHòm &e&l$ &6&lmay mắn III &5&l*&d&l*&5&l*'
+      item: 'ENDER_CHEST'
+      pricerange:
+        from: '150000'
+        to: '250000'
+      lore:
+        - '&7Random 150000$ - 250000$'
+        - '&7&o((&fChuột phải để sử dụng&7&o))'
+    4:
+      name: '&5&l*&d&l*&5&l* &4&lHòm &e&l$ &4&lmay mắn IV &5&l*&d&l*&5&l**'
+      item: 'ENDER_CHEST'
+      pricerange:
+        from: '250000'
+        to: '500000'
+      lore:
+        - '&7Random 250000$ - 500000$'
+        - '&7&o((&fChuột phải để sử dụng&7&o))'
+    5:
+      name: '&5&l*&d&l*&5&l* &5&lHòm &e&l$ &5&lmay mắn V &5&l*&d&l*&5&l**'
+      item: 'ENDER_CHEST'
+      pricerange:
+        from: '500000'
+        to: '1000000'
+      lore:
+        - '&7Random 500000$ - 1000000$'
+        - '&7&o((&fChuột phải để sử dụng&7&o))'
+  sound:
+    enabled: true
+    opensound: 'CHEST_OPEN'
+    revealsound: 'ANVIL_LAND'
+    endsound: 'EXPLODE'
+  title:
+    speedintick: 10
+    format: false
+shop:
+  enabled: false
+  buyable:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+  prices:
+    1: 6000
+    2: 30000
+    3: 110000
+    4: 380000
+    5: 1200000
+  inventoryname: '&9Đại lý túi'

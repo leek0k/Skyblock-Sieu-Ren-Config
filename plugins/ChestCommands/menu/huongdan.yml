@@ -1,0 +1,437 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&8.Hướng dẫn (MineAhihi) (^^)'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 4
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'huongdan; help'
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: BLOCK_NOTE_PLING'
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+pv1:
+  COMMAND: ''
+  NAME: '&6&l! &e&lHƯỚNG DẪN &ecơ bản #1'
+  AMOUNT: 1   
+  LORE:
+    - '&6**Link video hướng dẫn cày đồ:'
+    - '&ehttps://mineahihi.com/cay-do-manh-tai-mineahihi/'  
+    - ''
+    - '&b&lOP Skyblock &6&lMine&f&lAhihi&f: '
+    - '&fTại &6&lMine&f&lAhihi &fmọi thứ luôn nhộn nhịp, hãy cùng bạn bè vào'
+    - '&fsinh tồn và khám phá, sv có tận &f&n12 Slot&r &ftrong 1 đảo lận đó ^^'
+    - ''
+    - '&fBắt đầu xây đảo cùng bạn bè thôi: &a&l&n/is'
+    - '&7&o((/is help: để biết thêm về lệnh đảo))'  
+    - '&7&o((/warp nhiemvu: để nhận nhiệm vụ săn quà khủng))'     
+    - ''
+    - '&fSau đó hãy bỏ ít thời gian tìm hiểu giá cả $: &e&l&n/shop'
+    - '&fBiết món nào bán đắt/rẻ sau đó bắt tay trồng trọt buôn bán.'
+    - ''
+    - '&fCó ít vốn &a&l$$ &fthì hãy mua nhiều hạt giống nữa nhân rộng ra'
+    - '&frồi sau đó đầu tư mua &dSpawner &fSpawner Stack Farm rất lợi hại.'
+    - '&fFarm &dSpawner Stack&f cho bạn nhiều &aExp &fvà cả &6Đá quý&f: &6/gems shop' 
+    - '&fvà &6/gems upgrades'
+    - '&7&o((Lưu ý: Để tránh bị ăn cắp spawner hãy /lock để biết thêm))'
+    - ''
+    - '&fTranh cơ hội lụm &bDrop Free &fnhiều &bđồ cày xịn'
+    - '&b&l&n/warp pvp&r &7(Để xem thời gian Drop rơi)'
+    - ''
+    - '&fĐể cường hóa đồ mạnh với sức mạnh đa dạng bạn cần &aExp&f: &6&l/e'
+    - ''
+    - '&0&o#Item menu'
+  ID: 340
+  POSITION-X: 1
+  POSITION-Y: 1
+  
+pv2:
+  COMMAND: ''
+  NAME: '&6&l! &e&lHƯỚNG DẪN &ecơ bản #2'
+  AMOUNT: 2   
+  LORE:
+    - ''
+    - '&fĐấu giá đi ở đây mua bán nhộn nhịp có thêm thu nhập:'
+    - '&d&l/ah'
+    - ''
+    - '&f&lNhớ trả lời câu hỏi đố toán học đó có xu đó!'
+    - '' 
+    - '&fĐua top đảo không?'
+    - '&fHãy chăm Mine và mua Spawner tại: &c&l&n/shop'
+    - '&fđể có nhiều quặng đặt trong đảo nhé!' 
+    - ''
+    - '&fChơi lâu mạnh rồi xuống địa bàn tỉ thí nha :D '
+    - ''
+    - '&e&LThăm ngàn chăm chỉ sẽ khiến bạn Pro lên sớm'
+    - '&e&Lthôi. Vui là chính ^^'
+    - '&7&0((Nhớ rèn luyện 1 ít kĩ năng làm việc nhóm khi chơi nhé!))'    
+    - ''
+    - '&0&o#Item menu'  
+  ID: 340
+  POSITION-X: 2
+  POSITION-Y: 1
+  
+pv3:
+  COMMAND: ''
+  NAME: '&6&l! &e&lHƯỚNG DẪN &6nâng cao'
+  AMOUNT: 3   
+  LORE:
+    - '&fNói nâng cao vậy thôi chứ các bạn chơi'
+    - '&fvà tìm hiểu là còn rành hơn tui đó :D'
+    - '&f((Nhưng đừng vội tin ai cẩn thận họ lừa đồ bạn đấy))'
+    - ''
+    - '&fCòn muốn &e&lPro &anhiều quyền hơn, tiện lợi hơn'
+    - '&fthì &c&l&n/menu &ftìm hiểu quyền lợi, đồ bạn cần nhé ^^'
+    - ''     
+    - '&fNếu các bạn thích thì có thể Donate ủng hộ'
+    - '&fServer &d&l&n/napthe &7^^'
+    - ''
+    - '&0&o#Item menu'
+  ID: 403
+  POSITION-X: 3
+  POSITION-Y: 1 
+  
+pv4:
+  COMMAND: ''
+  NAME: '&6&l! &e&lNhóm các bạn chơi và trang &6&lMine&f&lAhihi' 
+  LORE:
+    - '&f&lTham gia nhóm ngay: '
+    - '&bFacebook.com/groups/Mineahihi'
+    - '&f- Các bạn vào nhóm đi có nhiều người'
+    - '&fcùng chơi MineAhihi lắm'
+    - '&f- Gặp Hack cứ quay clip đăng vào'
+    - '&fbọn mình BAN 30 giây!'
+    - ''
+    - '&f&lLike trang PAGE ngay:'
+    - '&efacebook.com/MineAhihiVN'
+    - '&f- Hãy nhắn tin về Page nếu bạn gặp vấn đề'
+    - '&fgì đó về Sv'
+    - '&f- Nhưng PAGE sẽ không giải quyết nếu nó vô lý'
+    - '&fđâu nhé cung cấp PAGE nhiều bằng chứng cụ thể nhé ^^'
+    - ''
+    - '&eCHÚC CÁC BẠN CHƠI VUI VẺ ^^ <3'
+    - ''
+    - '&0&o#Item menu'
+  ID: 138    
+  POSITION-X: 4
+  POSITION-Y: 1
+
+ChestCmds40:
+  PRICE: 10000
+  COMMAND: 'tell: &e&l(&7&l!&e&l)&e&l Mua thành công; console:cr give to {player} thuong 1'
+  NAME: '&7◆◆◆ &7&lx1 Hòm vật phẩm THƯỜNG &7(Ngẫu nhiên x2) &7◆◆◆'
+  LORE:
+  - '&7Không đủ tiền, thì Craft bàn Enchant tự enchant &e:D'  
+  - ''        
+  - '&6&l* &eGiá: &a10,000&2$'
+  - ''
+  - '&0&o#Item menu'
+  ID: 54
+  ENCHANTMENT: durability, 10 
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 1
+ChestCmds30:
+  PRICE: 20000
+  COMMAND: 'tell: &e&l(&7&l!&e&l)&e&l Mua thành công; console:cr give to {player} hiem 1'
+  NAME: '&e◆◆◆ &e&lx1 Hòm vật phẩm HIẾM &e&l[&e1&e&l] &7(Ngẫu nhiên x2) &e◆◆◆'
+  LORE:
+  - '&7Không đủ tiền, thì Craft bàn Enchant tự enchant &e:D'  
+  - ''        
+  - '&6&l* &eGiá: &a20,000&2$'
+  - ''
+  - '&0&o#Item menu'     
+  ID: 54
+  ENCHANTMENT: durability, 10 
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 1
+ChestCmds32:
+  PRICE: 32000
+  COMMAND: 'tell: &e&l(&7&l!&e&l)&e&l Mua thành công; console:cr give to {player} hiem2 1'
+  NAME: '&e◆◆◆ &e&lx1 Hòm vật phẩm HIẾM &e&l[&e2&e&l] &7(Ngẫu nhiên x2) &e◆◆◆'
+  LORE:
+  - '&7Không đủ tiền, thì Craft bàn Enchant tự enchant &e:D'    
+  - ''        
+  - '&6&l* &eGiá: &a32,000&2$'
+  - ''
+  - '&0&o#Item menu'
+  ID: 54
+  ENCHANTMENT: durability, 10 
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 1  
+huongdan1:
+  COMMAND: ''
+  NAME: '&fBán đồ kiếm tiền kiểu gì?'
+  LORE:
+  - ''
+  - '&7Nhập lệnh ((/shop)) chọn món đồ'
+  - '&7bạn muốn bán rồi Click Chuột giữa!'  
+  - ''
+  - '&0&o#Item menu' 
+  ID: Log
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 3 
+huongdan2:
+  COMMAND: ''
+  NAME: '&fKiếm nguyên liệu trade đồ ở đâu?'
+  LORE:
+  - '&7Nguyên liệu: (Kim cương đúc, bí không lồ,..)'
+  - ''
+  - '&7Nhập lệnh ((/ecraft)) chọn mục nguyên liệu'
+  - '&7hình que stick, rồi bấm vào nguyên liệu bạn muốn'
+  - '&7đổi xem cần những gì! (Đa số sẽ ở ./warp dungeon)'  
+  - ''
+  - '&0&o#Item menu'    
+  ID: diamond
+  ENCHANTMENT: durability, 10   
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 3   
+huongdan3:
+  COMMAND: ''
+  NAME: '&fCách khởi đầu cày đồ?'
+  LORE:
+  - ''
+  - '&7Hãy ((/warp enchant)) và enchant trước cho mình'
+  - '&71 cây cúp, rìu, và 1 set giáp sau đó dùng lệnh'
+  - '&7((/ecraft)) rồi tìm Set giáp ngon bạn muốn cày'
+  - '&7và lên đường tìm nguyên liệu thôi!'  
+  - ''
+  - '&0&o#Item menu'   
+  ID: 267
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 3    
+huongdan4:
+  COMMAND: ''
+  NAME: '&fCách mời người chơi vào đảo?'
+  LORE:
+  - ''
+  - '&7Tham khảo tất cả lệnh đảo: /is help'
+  - ''
+  - '&0&o#Item menu'    
+  ID: dirt
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 3  
+huongdan5:
+  COMMAND: ''
+  NAME: '&fCách tăng Level đảo?'
+  LORE:
+  - ''
+  - '&7Hãy đặt các khối quặng tại đảo'
+  - '&7và coi Level ở bảng bên phải.'
+  - '&7(/blockstack để đặt stack khối quặng'
+  - '&7tiết kiệm diện tích đảo)'
+  - ''
+  - '&0&o#Item menu'     
+  ID: 57
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 3   
+huongdan6:
+  COMMAND: ''
+  NAME: '&fCách làm nhiệm vụ?'
+  LORE:
+  - ''
+  - '&7Hãy khám phá và nhận thưởng tại'
+  - '&7mục thành tựu (/aach list)'
+  - '&7Còn bạn muốn có khám phá kho thử thách'
+  - '&7mới hãy mua V.I.P tại (/shopxu).'
+  - ''
+  - '&0&o#Item menu'     
+  ID: paper
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 3   
+huongdan7:
+  COMMAND: ''
+  NAME: '&fĐánh Boss ở đâu?'
+  LORE:
+  - ''
+  - '&7(/dungeon)'
+  - ''
+  - '&0&o#Item menu'   
+  ID: 283
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 3    
+huongdan8:
+  COMMAND: ''
+  NAME: '&fTùy chỉnh cho đảo?'
+  LORE:
+  - ''
+  - '&7Tùy chỉnh: Sáng, tối, pvp trong đảo,..'
+  - '(/is settings)'
+  - ''
+  - '&0&o#Item menu'     
+  ID: grass
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 3      
+huongdan9:
+  COMMAND: ''
+  NAME: '&fTùy chỉnh quyền hạn thành viên đảo?'
+  LORE:
+  - ''
+  - '&7Quyền hạn: Cấm cấp dưới đập spawner, trồng cây,...'
+  - '&7(/is permissions)'
+  - '&7Tăng/giảm cấp bật cho thành viên:'  
+  - '&7(/is promote,demote Tên)'  
+  - ''
+  - '&0&o#Item menu'      
+  ID: 298
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 3   
+huongdan10:
+  COMMAND: ''
+  NAME: '&fCách kiếm đá quý?'
+  LORE:
+  - ''
+  - '&7Farm quái và đánh dungeon'
+  - '&7(/gems shop)'  
+  - ''
+  - '&0&o#Item menu'     
+  ID: 175
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 4    
+huongdan11:
+  COMMAND: ''
+  NAME: '&fLàm sao để trang bị siêu mạnh?'
+  LORE:
+  - ''
+  - '&7Cày 1 set giáp xịn tại (/ecraft)'
+  - '&7Ép sharpness cho kiếm lên 100 tại (/ecraft)'  
+  - '&7Giờ hãy ép sách trâu và túy quyền tại (/gems shop)'
+  - '&7Sau đó hãy nâng cấp Trâu lên Trâu thánh tại (/ecraft)'  
+  - '&7và nâng cấp Túy Quyền lên Túy Bát Tiên Quyền (/gems shop)'
+  - '&7và cuối cùng hãy tìm hiểu ce tại (/e) để ép vào!'  
+  - ''
+  - '&0&o#Item menu'     
+  ID: 311
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 4      
+huongdan12:
+  COMMAND: ''
+  NAME: '&fCách tăng nhiều máu cho giáp?'
+  LORE:
+  - ''
+  - '&7Ép sách trâu tại (/gems shop)'
+  - '&7Sau đó hãy mua Trâu Thánh tại (/ecraft)'  
+  - '&7rồi ép vào giáp Trâu Thánh để nâng cấp' 
+  - '&7Có thể ghép 2 Trâu Thánh lên tại Máy ép (/e)'
+  - '&7hoặc mua bản Random tại (/shopxu)'
+  - ''
+  - '&0&o#Item menu'     
+  ID: 331
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 4   
+huongdan13:
+  COMMAND: ''
+  NAME: '&fCách nâng tỉ lệ cho sách?'
+  LORE:
+  - ''
+  - '&7Lấy sách không dùng vào Máy tái chế tại (/e)'
+  - '&7tái chế Bụi tiên và ép vào Sách bạn muốn!'  
+  - ''
+  - '&0&o#Item menu'     
+  ID: 385
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 4    
+huongdan14:
+  COMMAND: ''
+  NAME: '&fCách có sọ và mảnh đá nâng cấp?'
+  LORE:
+  - ''
+  - '&7Hãy đủ mạnh và xuống địa ngục!'
+  - ''
+  - '&0&o#Item menu'    
+  ID: Log
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 4 
+huongdan15:
+  COMMAND: ''
+  NAME: '&fCách bảo vệ Spawner, quặng trong đảo?'
+  LORE:
+  - ''
+  - '&71. Đặt bảng lên khối và ghi [baove]'
+  - '&72. Set quyền chặn đập spawner các thành viên chưa uy tín'
+  - '&7tại (/is permissions)'
+  - ''
+  - '&0&o#Item menu'   
+  ID: 101
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 4    
+huongdan16:
+  COMMAND: ''
+  NAME: '&fMẹo chơi game?'
+  LORE:
+  - ''
+  - '&7Tìm đồng đội tốt!'
+  - '&7La liếm Boss!'  
+  - '&7Tham gia sự kiện!'  
+  - '&7Chăm chỉ!'  
+  - ''
+  - '&0&o#Item menu'   
+  ID: sign
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 4     
+huongdan17:
+  COMMAND: ''
+  NAME: '&fCách ép đồ mạnh ?'
+  LORE:
+  - ''
+  - '&7Tham khảo lối build'
+  - '&7đồ của server (/cehelp)'
+  - ''
+  - '&0&o#Item menu' 
+  ID: armor_stand
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 4  
+
+huongdan18:
+  COMMAND: 'console:dm open checknhiemvu {player}'
+  NAME: '&fCách làm nhiệm vụ?'
+  LORE:
+  - ''
+  - '&7Tham khảo cách làm nhiệm vụ'
+  - '&7săn quà khủng của server (/q)'
+  - ''
+  - '&0&o#Item menu'     
+  ID: book
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 4   

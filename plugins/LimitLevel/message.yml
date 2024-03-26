@@ -1,0 +1,6 @@
+command:
+  help:
+  - '&2======== &aLệnh LimitLevel &2========'
+  - '&f/limitlevel reload &a- Cài lại cấu hình' # Permission: limitlevel.command.reload
+  - '&f/limitlevel help &a- Xem hướng dẫn' # Permission: limitlevel.command.help
+  reload: '&2[&a!&2] &aĐã cài lại file cấu hình!'

@@ -1,0 +1,16 @@
+# Thời gian hopper nhận vật phẩm (tính bằng tick)
+hopper-delay-enable: false
+hopper-delay-tick: 20
+
+# Thời gian trễ giữa mỗi lần drop vật phẩm (tính bằng tick)
+# VD: mỗi 0.25 giây mới có thể nhấn Q để drop vật phẩm
+drop-delay-enable: false
+drop-delay-tick: 5
+
+# Danh sách vật phẩm có thể sử dụng từ dispense và dropper
+material-dispense-whitelist-enable: true
+material-dispense-whitelist:
+  - 'TNT'
+
+# Chặn item có meta (có lore hoặc display) rơi vào hopper
+prevent-meta-item-in-hopper: true

@@ -1,0 +1,13 @@
+summonwolf:
+  Cooldown: 0
+  Skills:  
+  - sendetitl{title="";subtitle="&cTriệu hồi sói tuyết!";d=60} @PlayersInRadius{r=20}
+  - delay 20
+  - summon{mob=soituyet;amount=2;noise=5;r=7} @target 
+  - delay 20
+  - summon{mob=soituyet;amount=2;noise=5;r=7} @target 
+  - delay 20
+  - summon{mob=soituyet;amount=2;noise=5;r=7} @target 
+dongbang:
+  Skills:
+  - potion{type=SLOW;duration=60;level=7} @PlayersInRadius{r=20}

@@ -1,0 +1,80 @@
+name: '&c&lSET &a&lCUỒNG £ONG'
+material: DIAMOND
+settings:
+  equipped:
+    - '&a&l(!) &a&lKích hoạt &c&lSET &a&lCUỒNG £ONG!'
+  unequipped:
+    - '&c&l(!) &a&lDừng kích hoạt &c&lSET &a&lCUỒNG £ONG!'
+items:
+  helmet:
+    name: '&2&l∉&a&lᚸ&2&l∌ &2₤&a&lGIÁP&2∄ &2₤&a&lTHÌN&2∄ &a&l2024 &2« Mũ » &2&l∉&a&lᚸ&2&l∌'
+    lore:
+      - ''   
+      - '&2&l∉&a&lᚸ&2&l∌ &a&lCUỒNG £ONG &2&l∉&a&lᚸ&2&l∌'
+      - '&2&l∉ &aGiảm 42% damage &2&l∌'
+      - '&2&l∉ &a+7 máu &7((Sinh lực)) &2&l∌'
+      - '&2&l∉ &aĐề kháng &2&l∌'
+      - '&7&o(Mặc full Set Cuồng £ong để kích hoạt.)'  
+      - ''       
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:10"
+      - "unbreaking:10"
+  chestplate:
+    name: '&2&l∉&a&lᚸ&2&l∌ &2₤&a&lGIÁP&2∄ &2₤&a&lTHÌN&2∄ &a&l2024 &2« Áo » &2&l∉&a&lᚸ&2&l∌'
+    lore:
+      - ''   
+      - '&2&l∉&a&lᚸ&2&l∌ &a&lCUỒNG £ONG &2&l∉&a&lᚸ&2&l∌'
+      - '&2&l∉ &aGiảm 42% damage &2&l∌'
+      - '&2&l∉ &a+7 máu &7((Sinh lực)) &2&l∌'
+      - '&2&l∉ &aĐề kháng &2&l∌'
+      - '&7&o(Mặc full Set Cuồng £ong để kích hoạt.)'  
+      - ''       
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:10"
+      - "unbreaking:10"
+      - "longvuong:1"
+  leggings:
+    name: '&2&l∉&a&lᚸ&2&l∌ &2₤&a&lGIÁP&2∄ &2₤&a&lTHÌN&2∄ &a&l2024 &2« Quần » &2&l∉&a&lᚸ&2&l∌'
+    lore:
+      - ''   
+      - '&2&l∉&a&lᚸ&2&l∌ &a&lCUỒNG £ONG &2&l∉&a&lᚸ&2&l∌'
+      - '&2&l∉ &aGiảm 42% damage &2&l∌'
+      - '&2&l∉ &a+7 máu &7((Sinh lực)) &2&l∌'
+      - '&2&l∉ &aĐề kháng &2&l∌'
+      - '&7&o(Mặc full Set Cuồng £ong để kích hoạt.)'  
+      - ''  
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:10"
+      - "unbreaking:10"
+  boots:
+    name: '&2&l∉&a&lᚸ&2&l∌ &2₤&a&lGIÁP&2∄ &2₤&a&lTHÌN&2∄ &a&l2024 &2« Giày » &2&l∉&a&lᚸ&2&l∌'
+    lore:
+      - ''   
+      - '&2&l∉&a&lᚸ&2&l∌ &a&lCUỒNG £ONG &2&l∉&a&lᚸ&2&l∌'
+      - '&2&l∉ &aGiảm 42% damage &2&l∌'
+      - '&2&l∉ &a+7 máu &7((Sinh lực)) &2&l∌'
+      - '&2&l∉ &aĐề kháng &2&l∌'
+      - '&7&o(Mặc full Set Cuồng £ong để kích hoạt.)'  
+      - ''       
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:10"
+      - "unbreaking:10"
+events:
+  DEFENSE:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:30'
+      - 'NEGATE_DAMAGE:10'      
+  DEFENSE:
+    chance: 100
+    cooldown: 15
+    effects:
+      - 'CURE:DAMAGE_RESISTANCE'
+      - 'POTION:DAMAGE_RESISTANCE:3:100'
+      - 'WAIT:110'
+      - 'CURE:DAMAGE_RESISTANCE'
+      - 'POTION_OVERRIDE:DAMAGE_RESISTANCE:1:1200'
+  DEFENSE_BOW:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:30'   

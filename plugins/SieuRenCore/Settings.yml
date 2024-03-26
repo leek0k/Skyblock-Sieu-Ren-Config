@@ -1,0 +1,51 @@
+Settings:
+  SpawnersHolo:
+    - Bossmahaitac
+    - Bossnhen
+    - Bossphuthuy
+    - anhemdianguc
+    - rongender
+    - SuKienYeuTinh
+  TopRewards:
+    CongNap:
+      ResetDate:
+        IsWeekly: false
+      ResetCommands:
+        - ''
+      Rewards:
+        1:
+          - 'points give %player% 600'
+        2:
+          - 'points give %player% 550'
+        3:
+          - 'points give %player% 500'
+        4:
+          - 'points give %player% 450'
+        5:
+          - 'points give %player% 400'
+        6:
+          - 'points give %player% 350'
+        7:
+          - 'points give %player% 300'
+        8:
+          - 'points give %player% 250'
+        9:
+          - 'points give %player% 200'
+        10:
+          - 'points give %player% 150'
+    FarmTop:
+      ResetDate:
+        IsWeekly: true
+      ResetCommands:
+        - ''
+      Rewards:
+        1:
+          - 'cr give to %player% top1farmtop 1'
+        2:
+          - 'cr give to %player% top2farmtop 1'
+        3:
+          - 'cr give to %player% top3farmtop 1'
+        4:
+          - 'cr give to %player% top4farmtop 1'
+        5:
+          - 'cr give to %player% top5farmtop 1'

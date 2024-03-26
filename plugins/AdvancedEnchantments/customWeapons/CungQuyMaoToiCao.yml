@@ -1,0 +1,16 @@
+requireSet: ''
+material: BOW
+name: '&c&l⋞ &4&l⋞ &c&l⋞ &4&lCUNG VƯƠNG QUÝ MÃO &c&l⋟ &4&l⋟ &c&l⋟'
+lore:
+  - ''
+  - '&4&l◆ ◆ ◆ TỐI CAO &4(Quý Mão 2023) &l◆ ◆ ◆'
+  - '&4&oVật phẩm sự kiện Tết Quý Mão 2023'
+  - '' 
+enchants:
+  - 'power:80'
+  - 'unbreaking:5'
+  - 'flame:3'
+  - 'punch:2'
+  - 'infinity:1'
+  - 'thigiacquymao:3'
+events:

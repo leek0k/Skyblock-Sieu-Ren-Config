@@ -1,0 +1,273 @@
+menu_title: '&c&lThợ Săn: &fXin chào! đây là dungeon 3.'
+open_command: 
+- de3khoidau  
+size: 36 #book_and_quill
+items:
+  'kinh':
+    material: 'IRON_FENCE'
+    slots: 
+      - '0-5'
+      - '9'
+      - '14'
+      - '18'
+      - '23'
+      - '27-32'
+    display_name: ''
+    lore:
+      - ''
+  'q1':
+    material: 'arrow'
+    slot: 25
+    priority: 1
+    display_name: '&7.&cQuay về&7.'
+    lore:
+      - '&7- Bạn chưa sẵn sàng cho việc này?'
+      - ''
+      - '&a[!] Ấn vào đây để được hộ tống về sảnh'
+      - ''
+      - '&0&o#Item menu'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[player] spawn'
+      - '[close]'          
+  'q':
+    material: 'book_and_quill'
+    slot: 16
+    priority: 1
+    display_name: '&7..&aNhiệm Vụ&7..'
+    lore:
+      - ' &7.&fTiêu diệt các phù thủy đen tại cứ địa onnuk&7.'
+      - ' &7Nhận ngay vật phẩm &eThói vàng óng ánh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &9&lKill 50 Phù Thủy Đen'
+      - ' &7khi đạt đủ 40 levels ((/q)).'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[player] q'
+      - '[close]'      
+  '1':
+    material: 'gold_nugget'
+    slot: 10
+    priority: 1
+    display_name: '&7..&aNguyên Liệu Cơ Bản&7..'
+    lore:
+      - ' &7.&fTiêu diệt các phù thủy đen tại cứ địa onnuk&7.'
+      - ' &7Nhận ngay vật phẩm &eThói vàng óng ánh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &9&lKill 50 Phù Thủy Đen'
+      - ' &7khi đạt đủ 40 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+    # - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+      - ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open nguyenlieu %player_name%'
+      - '[close]'
+  '1a':
+    material: 'SLIME_BALL'
+    slot: 11
+    amount: 1
+    priority: 1
+    display_name: '&7..&f&l⊰NGỌC THIÊN SỨ⊱ &b&lLevel: 1&7..'
+    lore:
+      - ' &7.&fTiêu diệt các phù thủy đen tại cứ địa onnuk&7.'
+      - ' &7Nhận ngay vật phẩm &eThói vàng óng ánh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &9&lKill 50 Phù Thủy Đen'
+      - ' &7khi đạt đủ 40 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+    # - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+      - ' &7▫ &6☀ &eNgọc Thiên Sứ &6☀'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open ngoc %player_name%'
+      - '[close]' 
+  '1b':
+    material: 'SLIME_BALL'
+    slot: 12
+    amount: 2
+    priority: 1
+    display_name: '&7..&f&l⊰NGỌC THIÊN SỨ⊱ &b&lLevel: 2&7..'
+    lore:
+      - ' &7.&fTiêu diệt các phù thủy đen tại cứ địa onnuk&7.'
+      - ' &7Nhận ngay vật phẩm &eThói vàng óng ánh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &9&lKill 50 Phù Thủy Đen'
+      - ' &7khi đạt đủ 40 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+    # - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+      - ' &7▫ &6☀ &eNgọc Thiên Sứ &6☀'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open ngoc %player_name%'
+      - '[close]' 
+  '1c':
+    material: 'SLIME_BALL'
+    slot: 13
+    amount: 3
+    priority: 1
+    display_name: '&7..&f&l⊰NGỌC THIÊN SỨ⊱ &b&lLevel: 3&7..'
+    lore:
+      - ' &7.&fTiêu diệt các phù thủy đen tại cứ địa onnuk&7.'
+      - ' &7Nhận ngay vật phẩm &eThói vàng óng ánh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &9&lKill 50 Phù Thủy Đen'
+      - ' &7khi đạt đủ 40 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+    # - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+      - ' &7▫ &6☀ &eNgọc Thiên Sứ &6☀'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open ngoc %player_name%'
+      - '[close]'
+  '1d':
+    material: 'SLIME_BALL'
+    slot: 19
+    amount: 4
+    priority: 1
+    display_name: '&7..&f&l⊰NGỌC THIÊN SỨ⊱ &b&lLevel: 4&7..'
+    lore:
+      - ' &7.&fTiêu diệt các phù thủy đen tại cứ địa onnuk&7.'
+      - ' &7Nhận ngay vật phẩm &eThói vàng óng ánh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &9&lKill 50 Phù Thủy Đen'
+      - ' &7khi đạt đủ 40 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+    # - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+      - ' &7▫ &6☀ &eNgọc Thiên Sứ &6☀'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open ngoc %player_name%'
+      - '[close]'    
+  '1e':
+    material: 'ender_portal_frame'
+    slot: 20
+    amount: 1
+    priority: 1
+    display_name: '&7..&5&l✧&d&l✧&5&l✧ &9&l&nHÒM&r &d&lTRUYỀN THUYẾT &5&l✧&d&l✧&5&l✧&7..'
+    lore:
+      - ' &7.&fTiêu diệt các phù thủy đen tại cứ địa onnuk&7.'
+      - ' &7Nhận ngay vật phẩm &eThói vàng óng ánh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &9&lKill 50 Phù Thủy Đen'
+      - ' &7khi đạt đủ 40 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+    # - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+      - ' &7▫ &2❖ &aHòm &2❖'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true 
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open settruyenthuyet %player_name%'
+      - '[close]'     
+  '2':
+    material: 'EYE_OF_ENDER'
+    slot: 21
+    amount: 1
+    priority: 1
+    display_name: '&7..&a&l+1 Ô cường hóa cho TRANG BỊ&7..'
+    lore:
+      - ' &7.&fTiêu diệt các phù thủy đen tại cứ địa onnuk&7.'
+      - ' &7Nhận ngay vật phẩm &eThói vàng óng ánh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &9&lKill 50 Phù Thủy Đen'
+      - ' &7khi đạt đủ 40 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+    # - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+      - ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true 
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open sach %player_name%'
+      - '[close]'         
+  '4a':
+    material: 'SHIELD'
+    slot: 22
+    priority: 1
+    display_name: '&7..&5☪&d☪&5☪  &d&lKhiên &5&lPhù Thủy Đen &5☪&d☪&5☪&7..'
+    lore:
+      - ' &7.&fTiêu diệt các phù thủy đen tại cứ địa onnuk&7.'
+      - ' &7Nhận ngay vật phẩm &eThói vàng óng ánh,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &9&lKill 50 Phù Thủy Đen'
+      - ' &7khi đạt đủ 40 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm&7.'
+      - ' &7▫ &8♡ &7Khiên &8♡'
+     #- ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open shield %player_name%'
+      - '[close]'  
+
+
+  

@@ -1,0 +1,37 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: 'Thuongco'
+
+# Currently supported are only melee weapons
+material: STONE_SWORD
+
+# Weapon's name
+name: '&2&l⌘⌘&6﹝&d﹝&6﹝&a&lTHƯỢNG CỔ &6﹝&d﹝&6﹝&e(Kiếm (2♦))&f﹞&6﹞&d﹞&2&l⌘⌘'
+
+# Weapon's lore
+lore:
+  - ''
+  - '&2&l⌘⌘&6﹝&e﹝&6﹝&a(2♦) &a&lTHƯỢNG CỔ &a(2♦)&6﹞&e﹞&6﹞&2&l⌘⌘'
+  - '&2* Thượng Cổ Kiếm (2♦)'  
+  - '&2* Tăng 22% damage.'
+  - '&7&o(Mặc full Set Thượng Cổ để kích hoạt.)'  
+  - '&0&o#Kiemthuongco2' 
+
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'sharpness:145'
+  - 'unbreaking:9'
+  - 'fireaspect:5'
+  - 'looting:5'
+  - 'baneofarthropods:5'
+  - 'smite:5'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:
+  ATTACK:
+    chance: 100
+    effects:
+      - 'INCREASE_DAMAGE:22'

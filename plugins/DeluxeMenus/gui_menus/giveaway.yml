@@ -1,0 +1,65 @@
+file: giveaway.yml
+menu_title: '&8&lGiveAway - &6&lMine&f&lAhihi'
+open_command: 
+- giveaway
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 27
+update_interval: 1
+open_requirement: 
+items:
+  'background':
+    material: STAINED_GLASS_PANE
+    data: 4
+    display_name: '&a☘'
+    slots:
+    - '1-5'
+    - '9'
+    - '17'
+    - '21-25'
+  'background2':
+    material: STAINED_GLASS_PANE
+    data: 1
+    display_name: '&a☘'
+    slots:
+    - '0'
+    - '6-8'
+    - '18-20'
+    - '26'
+  '1':
+    material: PAPER
+    display_name: '&6&l==== Cách Thức Tham Gia ===='
+    slot: 12
+    lore:
+    - '&fBước 1'
+    - '&7- Chụp hình ảnh hoặc quay &e1 &7video' 
+    - '&7Yêu cầu:'
+    - '&f* &7Có nội dung về server'
+    - '&f* &7Sáng tạo, thú vị, độc lạ'
+    - '&f* &7Có thể bao gồm bạn, team, công trình,...'
+    - '&fBước 2'
+    - '&7- Đăng bài viết lên Facebook cá nhân'
+    - '&7ở chế độ &e&lCông Khai'
+    - '&7- Bài viết gắn thẻ 2 bạn bè kèm hashtag'
+    - '&f* &b#Mineahihi'
+    - '&f* &b#Giveaway'
+    - '&cBài viết không hợp lệ sẽ bị loại'
+    - '&cSự kiện sẽ chốt vào 7h chủ nhật mỗi tuần'
+  '2':
+    material: PAPER
+    display_name: '&6&l==== Hướng Dẫn Lệnh ===='
+    slot: 14
+    lore:
+    - '&f/ga dangky &7<link>'
+    - '&7(Link bài viết trên Facebook của bạn)'
+    - '&f/ga huydangky'
+    - '&7(Gỡ link trong trường hợp nhập sai)'
+  '3':
+    material: COMPASS
+    display_name: '&6&l==== Sự Kiện GiveAway ===='
+    slot: 13
+    lore:
+    - '&fSự kiện GiveAway do MineAhihi tổ chức'
+    - '&7Giúp người chơi thỏa sức sáng tạo'
+    - '&7Tạo sân chơi cạnh tranh công bằng'
+    - '&7Và phần thưởng hấp dẫn miễn phí'

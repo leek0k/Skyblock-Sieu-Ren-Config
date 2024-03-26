@@ -1,0 +1,15 @@
+DateFormat:
+  expires_at: "&cThời hạn còn: &f"
+  useful_life: "&6((&6&lThời hạn&6))&f&l "
+  s: " &fgiây"
+  m: " &fphút"
+  h: " &fgiờ"
+  d: " &fngày"
+Messages:
+  prefix: ""
+  expire: "&cThông báo đồ của bạn đã hết hạn sử dụng!"
+  expire_onjoin: "&e%amount% &cđồ trong túi của bạn đã hết han!"
+  config_reload: "&aConfig reloaded!"
+  invalid_usage: "&cInvalid usage! /ti set [number] [Unit of time] s:Seconds m:Minutes h:Hours d:Days"
+  time_set: "&aThời gian sử dụng đã bắt đầu tính!"
+  no_item: "&cYêu cầu cầm vật phẩm trên tay!"

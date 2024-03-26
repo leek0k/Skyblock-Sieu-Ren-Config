@@ -1,0 +1,27 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: ''
+
+# Currently supported are only melee weapons
+material: DIAMOND_PICKAXE
+
+# Weapon's name
+name: '&b&lCúp Cổ Xưa'
+
+# Weapon's lore
+lore:
+  - ''
+  - '&b◆ ◆ &b&lCỔ XƯA &b◆ ◆'
+  - '&0&o#cupcoxua1'
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'efficiency:4'
+  - 'unbreaking:2'
+  - 'fortune:3'
+  - 'mayhut:1'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:

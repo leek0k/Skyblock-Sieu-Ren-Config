@@ -1,0 +1,29 @@
+name: staff
+permissions:
+- vulcan.bypass.*
+- bukkit.command.teleport
+- essentials.fly
+- essentials.god
+- essentials.teleport
+- essentials.tp
+- essentials.tp.others
+- essentials.tpo
+- essentials.vanish
+- litebans.kick
+- vulcan.alerts
+- vulcan.ban
+- vulcan.check
+- vulcan.clickalert
+- vulcan.cps
+- vulcan.freeze
+- vulcan.kb
+- vulcan.knockback
+- vulcan.logs
+- vulcan.menu
+- vulcan.ping
+- vulcan.rotate
+- vulcan.shuffle
+- vulcan.verbose
+- vulcan.violations
+parents:
+- default

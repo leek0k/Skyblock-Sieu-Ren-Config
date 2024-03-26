@@ -1,0 +1,22 @@
+location: NewSpawn:-29.5:148.000:-1818.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&6&lCường hóa'
+    height: 0.3
+  - content: '&fHãy cường hóa set đồ của bạn'
+    height: 0.3
+  - content: '&fthành tối tân nhất!'
+    height: 0.3
+  - content: '&fBằng cách ép cường hóa, nâng enchant'
+    height: 0.3
+  - content: '&fvà máu của trang bị của bạn!'
+    height: 0.3
+  - content: '&f&nLệnh:&r &e/e'
+    height: 0.3
+  actions: {}

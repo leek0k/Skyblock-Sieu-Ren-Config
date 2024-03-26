@@ -1,0 +1,120 @@
+#In this file, you will be able to modify or add minions skins.
+#To change a skin of a default minion, simply change it here and ensure the name of the skin is set in the config.yml for that minion (under DefaultSkin: <skinname>
+
+#To be able to change a skin on an already spawned minion, players will need the permission minions.skins.<SkinIdentifier>
+Skins:
+  Miner: #The skin identifier
+    DisplayName: "&6&L✔ &E&LROBOT &E&L&NTHỢ MỎ"
+    HeadItem: "hdb-13739" #Use %HEAD% to get the player's head in game, or simply the name of a minecraft account to get the skin of that (without %'s)
+    HeadDisplayName: "&7Default &3Miner Skin"
+    Body: "255,255,0" #Requires an RGB colour - https://www.rapidtables.com/web/color/RGB_Color.html
+    Legs: "255,128,0" #rgb colour
+    Boots: "255,255,0" #rgb
+  Slayer:
+    DisplayName: "&6&L✔ &E&LROBOT &a&LTHỢ SĂN"
+    HeadItem: "hdb-7329"
+    HeadDisplayName: "&7Default &cSlayer Skin"
+    Body: "0,255,0" #Requires an RGB colour
+    Legs: "0,255,0" #rgb colour
+    Boots: "0,255,0" #rgb
+  Collector:
+    DisplayName: "&3%PLAYERNAME%'s Collector"
+    HeadItem: "397:3"
+    HeadDisplayName: "&7Default &cCollector Skin"
+    Body: "238,255,11" #Requires an RGB colour
+    Legs: "156,159,113" #rgb colour
+    Boots: "238,255,11" #rgb
+  Feeder:
+    DisplayName: "&e&lRobot Vú em"
+    HeadItem: "397:3"
+    HeadDisplayName: "&7Default &cFeeder Skin"
+    Body: "238,255,40"
+    Legs: "156,159,100"
+    Boots: "238,255,40"
+  Lumberjack:
+    DisplayName: "&2&lRobot Tiều phu"
+    HeadItem: "397:3"
+    HeadDisplayName: "&7Default &cLumberjack Skin"
+    Body: "108,77,5"
+    Legs: "178,159,39"
+    Boots: "108,77,5"
+  Farmer:
+    DisplayName: "&a&lRobot Nông dân"
+    HeadItem: "397:3"
+    HeadDisplayName: "&7Default &cFarmers Skin"
+    Body: "204,204,0"
+    Legs: "102,204,0"
+    Boots: "204,204,0"
+  Spiderman:
+    DisplayName: "&c%PLAYERNAMES%'s SpiderMan"
+    HeadItem: "SpiderMan578"
+    HeadDisplayName: "&CSpiderMan!"
+    Body: "0,0,255"
+    Legs: "0,0,255"
+    Boots: "255,0,0"
+  Batman:
+    DisplayName: "&c%PLAYERNAMES%'s Batman"
+    HeadItem: "1mBatman"
+    HeadDisplayName: "&cBatman!"
+    Body: "159,154,81"
+    Legs: "120,125,62"
+    Boots: "91,87,28"
+
+#The Skin GUI for the minions
+SkinGUI:
+  Settings:
+    DisplayName: "&eMinion Skins"
+    Size: 27 #Must be a multiple of 9
+  FillerItem: #This can be called anything
+    Slot: filler #Either specify a slot ID, or specify filler to fill empty spaces
+    Item: STAINED_GLASS_PANE:7 #Put damage of the material after a :
+    Action: none #Possible Actions: None, Close, Back (back to main menu),Default (for the default skin), or a Skin Identifier
+    DisplayName: " "
+    Lore: []
+  FirstSkin:
+    Slot: 10
+    Item: SKULL:%DEFAULTSKIN% #If using a Skull, put Skull:<playersname> (or %PLAYERSNAME% for the person who opened the inventory, or %DEFAULTSKIN% for the Minions Default Head)
+    Action: Default
+    DisplayName: "&e&lDefault Skin"
+    Lore:
+      - "&7Click me to equip the"
+      - "&7Default Skin"
+  SecondSkin:
+    Slot: 11
+    Item: SKULL:SpiderMan578
+    Action: Spiderman #Skin names are case-sensitive, it must match the identifier of the skin
+    DisplayName: "&cSpider Man"
+    Lore:
+      - "&7Click me to equip the"
+      - "&7Spider Man Skin"
+  ThirdSkin:
+    Slot: 12
+    Item: SKULL:1mBatman
+    Action: Batman #Skin names are case-sensitive, it must match the identifier of the skin
+    DisplayName: "&7Batman"
+    Lore:
+      - "&7Click me to equip the"
+      - "&7Batman Skin"
+  BackButton:
+    Slot: 22
+    Item: NETHER_STAR:0
+    Action: Back
+    DisplayName: "&cBack To Main Menu"
+    Lore:
+      - "&7Click to return to the"
+      - "&7Main Menu"
+#When requesting a skin for the first time, it can take a while (meaning opening an inventory containing lots of heads may take a while)
+#To speed up the processes, when the server loads we can cashe these head values, simply list the names of the heads here to do this
+HeadCache:
+  - MHF_ArrowUp
+  - MHF_ArrowRight
+  - MHF_ArrowDown
+  - MHF_ArrowLeft
+  - SpiderMan578
+  - 1mBatman
+  - RobinHood
+  - Miner
+  - Builder
+  - MCSetups
+  - Cow
+  - Farmer

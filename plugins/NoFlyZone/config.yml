@@ -1,0 +1,35 @@
+# NoFlyZone version: 1.3 Main Configuration
+# 
+# List regions below that will disable players from flying when they enter them
+
+no_fly_worlds:
+- Dugeon1
+- Dugeon2
+- Dugeon3
+- map2
+- map3
+- Nether1
+- DungeonTheEnd
+- MapTet
+no_fly_message: '&cKhu vực cấm bay!'
+auto_fly_message: ''
+no_fly_regions:
+  world:
+  - pvp
+  - tp
+  SuperiorWorld:
+  - ev
+  Koth2:
+  - __global__
+  dugeon1:
+  - __global__
+  dugeon2:
+  - __global__
+  dugeon3:
+  - __global__
+  Dungeonquymao:
+  - __global__
+  DungeonTheEnd:
+  - __global__
+  MapTet:
+  - __global__

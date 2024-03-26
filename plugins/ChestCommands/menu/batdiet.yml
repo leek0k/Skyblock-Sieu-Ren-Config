@@ -1,0 +1,40 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&8Xem hạn Rank'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 1
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'batdiet'
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: BLOCK_NOTE_PLING'
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+pv15:
+  COMMAND: 'op: lp user {player} parent info'
+  NAME: '&e&lThời gian hết hạn Rank &e&l⊰⊹ &6&lBất diệt &e&l⊹⊱'
+  LORE:
+    - '&7Click vào để xem'
+    - ''
+    - '&0&o#Item menu'
+  ID: 347     
+  POSITION-X: 5
+  POSITION-Y: 1 

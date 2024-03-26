@@ -1,0 +1,85 @@
+menu-settings:
+  name: '&e&lNẠP THẺ &8&l| &6&lCHỌN MỆNH GIÁ'
+  rows: 1
+  auto-refresh: 5
+Vcoin-10k:
+  COMMAND: 'donate choose Vcoin 10000'
+  NAME: '&b&lVcoin 10,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVcoin 10,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 1
+  POSITION-Y: 1
+Vcoin-20k:
+  COMMAND: 'donate choose Vcoin 20000'
+  NAME: '&b&lVcoin 20,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVcoin 20,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 2
+  POSITION-Y: 1
+Vcoin-30k:
+  COMMAND: 'donate choose Vcoin 30000'
+  NAME: '&b&lVcoin 30,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVcoin 30,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 3
+  POSITION-Y: 1
+Vcoin-50k:
+  COMMAND: 'donate choose Vcoin 50000'
+  NAME: '&b&lVcoin 50,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVcoin 50,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 4
+  POSITION-Y: 1
+Vcoin-100k:
+  COMMAND: 'donate choose Vcoin 100000'
+  NAME: '&b&lVcoin 100,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVcoin 100,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 5
+  POSITION-Y: 1
+Vcoin-200k:
+  COMMAND: 'donate choose Vcoin 200000'
+  NAME: '&b&lVcoin 200,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVcoin 200,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 6
+  POSITION-Y: 1
+Vcoin-300k:
+  COMMAND: 'donate choose Vcoin 300000'
+  NAME: '&b&lVcoin 300,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVcoin 300,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 7
+  POSITION-Y: 1
+Vcoin-500k:
+  COMMAND: 'donate choose Vcoin 500000'
+  NAME: '&b&lVcoin 500,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVcoin 500,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 8
+  POSITION-Y: 1
+Vcoin-1m:
+  COMMAND: 'donate choose Vcoin 1000000'
+  NAME: '&b&lVcoin 1,000,000₫'
+  LORE:
+    - '&7Nhấn để nạp thẻ &fVcoin 100,000,000₫'
+  ID: sign
+  ENCHANTMENT: luck, 3
+  POSITION-X: 9
+  POSITION-Y: 1

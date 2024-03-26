@@ -1,0 +1,11 @@
+# Ignore Other Folder Except Plugins Folder
+/*
+!/plugins/
+!/*
+/*/
+!/plugins/
+
+# Ignore File
+*.jar
+*.db
+userdata/

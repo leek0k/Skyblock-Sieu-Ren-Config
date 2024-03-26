@@ -1,0 +1,59 @@
+title: '&8&lThống kê (Trang {page})'
+row: 6
+
+# Các loại Condition - Hiển thị vật phẩm nếu trả về đúng
+### PERMISSION <permission>
+### - Trả về đúng nếu người chơi có quyền <permission>
+
+# Các loại Execute - Thực thi câu lệnh khi click vật phẩm
+### CLOSE - Đóng menu
+### PLAYER_COMMAND <command> - Người chơi thực hiện câu lệnh
+### CONSOLE_COMMAND <command> - Console thực hiện câu lệnh
+### PLAYER_MESSAGE <message> - Gửi tin nhắn cho người chơi
+### CONSOLE_MESSAGE <message> - Gửi tin nhắn cho Console
+### PLAY_SOUND <sound> - Chơi nhạc
+
+items:
+  info:
+    type: RELOAD_STATISTIC_1
+    item:
+      type: BOOK
+      display: '&6Thống kê vật phẩm được sử dụng gần đây'
+      lore:
+      - ''
+      - '&eBởi người chơi: &f{target_name}'
+      - ''
+      - '&eNhấp để tải lại trang'
+    slot: 49
+  statistic-item:
+    type: STATISTIC_1
+    item:
+      type: PAPER
+      display: '&6&l#{index} &e{time}'
+      lore:
+      - ''
+      - '&eID: &f{id}'
+      - '&eTên vật phẩm: &f{item_display}'
+      #- '&eLores:'
+      #- '{item_lore}'
+      - ''
+      - '&eTổng thời gian sử dụng: &f{time_used_count}'
+      - ''
+      - '&eTọa độ: &f{location}'
+      - '&eLần cuối sử dụng: &f{time}'
+      skull-owner: '%player_name%'
+    slot: 0-44
+  next-page:
+    type: NEXT_PAGE
+    item:
+      type: STAINED_GLASS_PANE
+      damage: 5
+      display: '&a&lTrang kế'
+    slot: 50
+  previous-page:
+    type: PREVIOUS_PAGE
+    item:
+      type: STAINED_GLASS_PANE
+      damage: 4
+      display: '&e&lTrang trước'
+    slot: 48

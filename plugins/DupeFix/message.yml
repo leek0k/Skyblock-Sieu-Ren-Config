@@ -1,0 +1,6 @@
+command:
+  help:
+  - '&2======== &aLệnh DupeFix &2========'
+  - '&f/dupefix reload &a- Cài lại cấu hình' # Permission: dupefix.command.reload
+  - '&f/dupefix help &a- Xem hướng dẫn' # Permission: dupefix.command.help
+  reload: '&2[&a!&2] &aĐã cài lại file cấu hình!'

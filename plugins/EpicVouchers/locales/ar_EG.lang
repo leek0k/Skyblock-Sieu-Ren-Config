@@ -1,0 +1,35 @@
+# General Messages (Rasa2l 3ama)
+
+general:
+  nametag:
+    prefix: '&8[&6EpicVouchers&8] '
+# Interface Messages (Rasa2l el Wagha)
+interface:
+  confirmsettings:
+    title: '&6T2ked'
+    confirmitemname: '&2&lT2ked'
+    confirmitemlore: '&aEd3`ad hona lel t2ked.'
+    cancelitemname: '&4&lAl3`a2'
+    cancelitemlore: '&cEd3`ad hona lel al3`a2.'
+# Command Messages (Rasa2l el awamer)
+command:
+  error:
+    noplayer: '&7haza al esm les mowgod'
+    novoucher: '&chazehe al warqa lesat mowgoda.'
+    notexist: '&7haza al Amr les mowgod ow honak 5at2 fe al ketaba.'
+    notnumber: '&7haza les rakam.'
+  reload:
+    success: '&7tam e3adad t7mel al malafat.'
+  give:
+    send: '&7la9at a36et &6%player% &7al warqa &6%voucher% &7(&6x%amount%&7).'
+    receive: '&7la9at estlamt &6%voucher% &7(&6x%amount%&7).'
+    cancelled: '&ctam el3`a al 7adas.'
+  force:
+    send: '&7la9at agbart &6%player% &7lekay ystlem &6%voucher% &7(&6x%amount%&7).'
+  list:
+    list: '&79a2mat al Warq: &6%list%&7.'
+# Event Messages (Rasa2l el a7das)
+event:
+  general:
+    nopermission: '&canta la tmtlek sala7ya letf3al zalek.'
+    cooldown: '&7Entazer &6%time%&7 sawane 9abl an tstlem Warqa gadeda.'

@@ -1,0 +1,74 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&8Warp PvP'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 1
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'warp pvp; pvp; warps pvp; warp pvps'
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: ''
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    ID: feather
+    left-click: false
+    right-click: false
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+warp-pvp1:
+  COMMAND: 'warp pvp;sound: ENTITY_PLAYER_LEVELUP, 1.5, 1.0'
+  NAME: '&e&lWarp PvP 1'
+  LORE:
+    - '&fKhô máu cùng anh em! '
+    - '&7(Nơi diễn ra Địa Bàn &e&n1&7)'
+    - ''
+    - '&7Click để dịch chuyển!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 'DIAMOND_SWORD'
+  AMOUNT: 1
+  POSITION-X: 3
+  POSITION-Y: 1
+warp-pvp2:
+  COMMAND: 'warp pvp2;sound: ENTITY_PLAYER_LEVELUP, 1.5, 1.0'
+  NAME: '&e&lWarp PvP 2'
+  LORE:
+    - '&fKhô máu cùng anh em! '
+    - ''
+    - '&7Click để dịch chuyển!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 'IRON_SWORD'
+  AMOUNT: 1
+  POSITION-X: 6
+  POSITION-Y: 1 
+return-to-main:
+  COMMAND: 'open:warps-Gui.yml'
+  NAME: '&c&l[arrow_left] [Trở về]'
+  LORE:
+    - '&7Nhấn vào để trở về mục trước'  
+    - ''
+    - '&0&o#Item menu'
+  ID: '175'  
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 1

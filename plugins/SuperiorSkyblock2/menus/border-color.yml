@@ -1,0 +1,44 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&l        Border Color'
+type: HOPPER
+
+pattern:
+  - '@ # ^ # $'
+
+green-color: '@'
+red-color: '^'
+blue-color: '$'
+
+items:
+  '@':
+    type: WOOL
+    data: 5
+    name: '&aXanh lá'
+  '^':
+    type: WOOL
+    data: 14
+    name: '&cĐỏ'
+  '$':
+    type: WOOL
+    data: 3
+    name: '&bXanh dương'
+
+sounds:
+  '@':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2
+  '^':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2
+  '$':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2

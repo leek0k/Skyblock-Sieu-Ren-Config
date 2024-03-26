@@ -1,0 +1,405 @@
+TroiGiang:
+  Skills:
+  - projectile{onTick=TroiGiang_Tick;onEnd=TroiGiang_End;v=27;i=1;hR=3;vR=2;syo=20;sfo=0;mr=70;d=500;sE=false;Repeat=4;RepeatInterval=80;sE=true;sB=true} @NearestPlayer{r=30}
+  # - effect:sound{s=entity.endermen.stare;p=2.0;v=3} @Origin
+TroiGiang_Tick:
+  Skills:
+  - effect:particles{particle=reddust;color=#000000;a=10;vS=0.2;hS=0.2;sE=true;sB=true} @Origin
+TroiGiang_End:
+  Skills:
+  - damage{a=3;ia=true} @PlayersNearOrigin{r=8}
+  - effect:particlering{particle=hugeexplosion;radius=1;points=1;amount=1;hS=1;vS=0} @Origin
+  - effect:sound{s=entity.generic.explode;;volume=0.5;pitch=1} @Origin
+TiaHuyDiet:
+  Skills:
+  - potion{type=SLOW;duration=60;level=7} @Self
+  - message{m="&d&l**Tia Huỷ Diệt**"} @PIR{r=15}
+  - projectile{onTick=TiaHuyDiet_Tick;onHit=TiaHuyDiet_Hit;v=12;i=1;syo=1.1;hR=1;vR=1;mR=20} @Ring{radius=20;points=8}
+TiaHuyDiet_Tick:
+  Skills:
+  - effect:particles{particle=reddust;color=#9600FF;amount=5;hSpread=0.1;vSpread=0.1;speed=0.1;yOffset=0} @origin
+TiaHuyDiet_Hit:
+  Skills: 
+  - ignite{ticks=100} @PlayersNearOrigin{r=2}   
+  - damage{a=4;ia=true} @Target     
+# TiaHuyDiet:
+  # Skills:
+  # - message{m="&a&l**Tia Huỷ Diệt**"} @PIR{r=15}
+  # - missle{onTick=TiaHuyDiet_Tick;onHit=TiaHuyDiet_Hit;v=5;i=1;hR=1;vR=1;in=0.75;md=200}
+  # - effect:sound{s=entity.blaze.shoot;v=0.8;p=0.01} @self
+# TiaHuyDiet_Tick:
+  # Skills:
+  # - effect:particles{particle=reddust;color=#9600FF;a=10;hs=0.1;vs=0.1} @Origin
+# TiaHuyDiet_Hit:
+  # Skills:
+  # - effect:particles{p=dripLava;amount=30;hSpread=0.2;ySpread=0.2;speed=0.1;yOffset=0.5} @Target
+  # - damage{a=24;ia=true} @Target
+  # - ignite{ticks=100} @PlayersNearOrigin{r=2}   
+Frieza:
+  Skills:
+  - projectile{oT=Frieza_Tick;oE=Frieza_End;i=1;mr=5;hO=90;vO=0.4;hp=false} @Self
+  - effect:sound{s=entity.blaze.shoot;v=0.8;p=1} @Self
+Frieza_Tick:
+  Skills:
+  - effect:particles{particle=reddust;color=#9600FF;a=10;hs=0.1;vs=0.1} @Origin
+Frieza_End:
+  Skills:
+  - summon{type=FriezaMinion;amount=1;radius=2}   
+ChiChi:
+  Skills:
+  - message{m="&b&l**Hất Tung**"} @PlayersInRadius{r=10}
+  - delay 20
+  - throw{velocity=10;velocityY=12} @PIR{r=10} 
+  - damage{amount=8;ia=true} @PlayersInRadius{r=10}
+NuotChung:
+  Skills:
+  - message{m="&b&l**Nuốt Chửng**"} @PlayersInRadius{r=20}
+  - potion{type=SLOW;duration=125;level=7} @Self
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=2;pkb=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=1;pkb=true;ia=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self
+  - delay 5
+  - pull{v=6;to=false} @PIR{r=20}
+  - damage{a=1;pkb=true;ia=true} @PIR{r=20}
+  - effect:sound{s=entity.pig.ambient;v=1;p=0.01} @self
+  - effect:particlering{particle=reddust;color=#89dfff;radius=1;points=4;amount=1;hS=1;vS=0} @self
+  - heal{a=1} @Self  
+KinhLuc:
+  Skills:
+  - message{m="&e&l**Kình Lực**"} @PIR{r=10}
+  - potion{type=SLOW;lvl=2;duration=50} @PlayersInRadius{r=10}
+  - jump{velocity=2.5} @self
+  - delay 50
+  - jump{velocity=-5} @self
+  - delay 5
+  - effect:particlering{particle=hugeexplosion;radius=1;points=1;amount=1;hS=1;vS=0} @self
+  - effect:particlering{particle=hugeexplosion;radius=2;points=2;amount=2;hS=1;vS=0} @self
+  - effect:particlering{particle=hugeexplosion;radius=3;points=3;amount=3;hS=1;vS=0} @self
+  - effect:particlering{particle=hugeexplosion;radius=4;points=4;amount=4;hS=1;vS=0} @self
+  - effect:particlering{particle=hugeexplosion;radius=5;points=5;amount=5;hS=1;vS=0} @self
+  - damage{amount=10;ia=true} @PIR{r=5}
+  - consume{d=1;ia=true;h=5} @PIR{r=10}
+  - potion{type=SLOW;lvl=127;duration=100} @PlayersInRadius{r=10}
+  - delay 100
+  - damage{amount=8;ia=true} @PlayersInRadius{r=10}
+NguyenKhiCau:
+  Skills:
+  - message{m="&f&l**Nguyên Khí Cầu**"} @PIR{r=15}
+  - delay 50
+  - velocity{m=set;x=0;y=0;z=0} @Self 
+  - effect:particlesphere{particle=cloud;i=100;amount=8;radius=0.3;y=5} @Self
+  - effect:particlesphere{particle=reddust;color=#89dfff;i=1;amount=40;radius=0.5;y=5} @Self
+  - effect:sound{s=entity.enderdragon.hurt;v=1;p=0.01} @self
+  - damage{amount=8;ia=true} @PlayersInRadius{r=15}
+  - delay 50
+  - velocity{m=set;x=0;y=0;z=0}
+  - effect:particlesphere{particle=cloud;i=100;amount=8;radius=0.5;y=5} @Self
+  - effect:particlesphere{particle=reddust;color=#89dfff;i=10;amount=40;radius=1;y=5} @Self
+  - effect:sound{s=entity.enderdragon.hurt;v=1;p=0.01} @self
+  - damage{amount=10;ia=true} @PlayersInRadius{r=15}
+  - delay 50 
+  - velocity{m=set;x=0;y=0;z=0}
+  - effect:particlesphere{particle=cloud;i=100;amount=10;radius=0.75;y=5} @Self
+  - effect:particlesphere{particle=reddust;color=#89dfff;i=10;amount=50;radius=1.5;y=5} @Self
+  - effect:sound{s=entity.enderdragon.hurt;v=1;p=0.01} @self
+  - damage{amount=12;ia=true} @PlayersInRadius{r=15}
+  - delay 50 
+  - velocity{m=set;x=0;y=0;z=0}
+  - effect:particlesphere{particle=cloud;i=100;amount=10;radius=1;y=5} @Self
+  - effect:particlesphere{particle=reddust;color=#89dfff;i=10;amount=50;radius=2;y=5} @Self
+  - effect:sound{s=entity.enderdragon.hurt;v=1;p=0.01} @self
+  - damage{amount=14;ia=true} @PlayersInRadius{r=15}
+  - delay 50
+  - velocity{m=set;x=0;y=0;z=0}
+  - effect:particlesphere{particle=cloud;i=100;amount=10;radius=2;y=5} @Self
+  - effect:particlesphere{particle=reddust;color=#89dfff;i=10;amount=50;radius=3;y=5} @Self
+  - effect:sound{s=entity.enderdragon.hurt;v=1;p=0.01} @self
+  - damage{amount=16;ia=true} @PlayersInRadius{r=15}
+  - delay 50
+  - velocity{m=set;x=0;y=0;z=0}
+  - effect:sound{s=entity.enderdragon.hurt;v=1;p=0.01} @self
+  - damage{amount=18;ia=true} @PlayersInRadius{r=15}
+KiemLinhHon:
+  Skills:
+  - missile{ot=KiemLinhHon_Tick;oh=KiemLinhHon_Hit;v=10;i=1;hR=1;vR=1;in=0.75;md=200} @NearestPlayer{r=30}
+KiemLinhHon_Tick:
+  Skills:
+  - effect:itemspray{item=diamond_sword;amount=1;d=1;velocity=0;yo=0.5} @origin
+KiemLinhHon_Hit:
+  Skills:
+  - effect:particles{p=dripLava;amount=30;hSpread=0.2;ySpread=0.2;speed=0.1;yOffset=0.5} @Target
+  - damage{a=5;ia=true} @Target
+Kamehameha:
+  Skills:
+  # - message{m="&6&l**Kamehameha**"} @PIR{r=15}
+  - potion{type=SLOW;duration=80;level=7} @Self
+  - potion{type=SLOW;lvl=127;duration=60} @PlayersInRadius{r=15}
+  - projectile{onTick=Kamehameha_Tick;onHit=Kamehameha_Hit;hO=90;v=30;i=1;hR=1;vR=1;mr=15;sE=false;sB=false;hp=true}
+Kamehameha_Tick:
+  Skills:
+  - effect:particles{particle=instantSpell;i=1;speed=10;hS=0.3;vS=0.3;onHit=Kamehameha_Hit;amount=100} @Origin
+Kamehameha_Hit:
+  Skills:
+  - damage{amount=2;ia=true} 
+######BEERUS######
+beerus1:
+  Cooldown: 0.25
+  Skills:
+  - missile{ot=KL_TICK;oh=KL_HIT;v=5;i=1;hR=1;vR=1;in=0.75} @NearestPlayer{r=15}
+  - effect:sound{s=entity.endermen.scream;v=0.1;p=0.01} @self
+L_TICK:
+  Skills:
+  - effect:particles{p=reddust;c=#000000;a=5;hS=0.1;vS=0.1} @origin
+L_HIT:
+  Skills:
+  - effect:particles{p=reddust;c=#F8013B;a=30;hS=0.3;vS=0.8;y=1.0}
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}
+  - damage{amount=28;ignorearmor=true} @Target
+beerus2:
+  Skills:
+  - missile{ot=crr_TICK;oh=crr_HIT;v=5;i=1;hR=1;vR=1;in=0.40} @NearestPlayer{r=15}
+  - delay 20
+crr_TICK:
+  Skills:
+  - effect:particles{p=reddust;color=#2b184f} @origin
+
+crr_HIT:
+  Skills:
+  - effect:particles{p=lava;a=50;hS=1;vS=1}
+  - effect:sound{s=entity.endermen.scream;v=1;p=0}
+  - potion{type=CONFUSION;duration=300;level=4} @PlayersInRadius{r=40}
+  - effect:blockmask{m=MAGMA;r=10;d=100} @Origin
+  - damage{a=40;ia=true;pkb=true} @PIR{r=20}
+
+beerus3:
+    Skills:
+    - projectile{type=METEOR;onTick=o5;onEnd=o6;onHit=o6;v=50;i=1;hR=2;vR=1;mr=110;g=2.3;hfs=20;sE=true;sB=true} @RLNTE{amount=24;radius=25;spacing=1;minradius=0}
+
+o5:
+    Skills:
+    - effect:particles{p=flame;amount=20;speed=0.00011;hS=0.2;vS=0.6} @origin
+    - potion{type=CONFUSION;duration=100;level=4} @PlayersInRadius{r=3}
+
+o6:
+    Skills:
+    - damage{a=40;ia=true} @PlayersNearOrigin{r=5}
+    - effect:particles{p=lava;amount=25;speed=0.2;hS=0.1;vS=1} @origin
+    - effect:particles{p=hugeexplosion;amount=1;hSpread=0.1;vSpread=0.1;speed=0.1;yOffset=0.1} @origin
+
+beerus4:
+  Skills:
+  - projectile{onTick=os-Tick;onHit=os-Hit;v=14;i=1;hR=1;vR=1} @NearestPlayer{r=30}
+  
+os-Tick:
+  Skills:
+  - effect:particles{p=hugeexplosion;amount=1;hSpread=0.6;vSpread=0.6;speed=0.1;yOffset=0.5} @origin
+  - effect:sound{s=entity.generic.explode;v=1.3;p=0.01} @origin
+os-Hit:
+  Skills: 
+  - effect:particles{p=largesmoke;amount=10;hSpread=0.1;vSpread=0.1;speed=0.1;yOffset=0} @origin  
+  - damage{a=30;ia=true} @PlayersNearOrigin{r=8}  
+  - ignite{ticks=100} @PlayersNearOrigin{r=2} 
+Prison:
+  Skills:
+  - prison{material=MAGMA;duration=80;breakable=false} @target
+Teleport:
+  Skills:
+  - teleport{spreadh=5;spreadv=0} @NearestPlayer{r=8}
+Test:
+  Skills:
+  # - message{m="&6&l**Kamehameha**"} @PIR{r=15}
+  - potion{type=SLOW;duration=80;level=7} @Self
+  - potion{type=SLOW;lvl=127;duration=60} @PlayersInRadius{r=15}
+  - projectile{onTick=Test_Tick;onHit=Test_Hit;hO=0;v=20;i=1;hR=1;vR=1;mr=10;sE=false;sB=false;hp=true}
+Test_Tick:
+  Skills:
+  # - effect:particles{particle=instantSpell;i=1;speed=20;hS=0.1;vS=0.1;onHit=Test_Hit;amount=10} @Origin
+  - effect:particles{p=reddust;color=#FF0000;i=1;speed=20;hS=0.1;vS=0.1;onHit=Test_Hit;amount=10} @Origin
+  # - effect:particles{p=flame;i=1;speed=20;hS=0.1;vS=0.1;onHit=Test_Hit;amount=10} @Origin
+Test_Hit:
+  Skills:
+  - damage{amount=1;ia=true}
+ShingaTensei:
+  Skills:
+  - effect:particlesphere{particle=reddust;color=#000000;i=10;amount=500;radius=2;y=0.5} @Self
+Bomvithu:
+  Skills:
+  - message{m="&8&LBOM VĨ THÚ"} @PIR{r=20}
+  - effect:particlesphere{particle=reddust;color=#000000;i=10;amount=500;radius=0.1;onHit=Bomvithu_Hit;y=0.5;;forwardOffset=1} @Origin
+  - delay 20
+  - effect:particlesphere{particle=reddust;color=#000000;i=10;amount=500;radius=0.2;onHit=Bomvithu_Hit;y=0.5;forwardOffset=1} @Origin
+  - delay 20
+  - effect:particlesphere{particle=reddust;color=#000000;i=10;amount=500;radius=0.3;onHit=Bomvithu_Hit;y=0.5;forwardOffset=1} @Origin
+  - delay 20
+  - effect:particlesphere{particle=reddust;color=#000000;i=10;amount=500;radius=0.4;onHit=Bomvithu_Hit;y=0.5;forwardOffset=1} @Origin
+  - delay 20
+  - effect:particlesphere{particle=reddust;color=#000000;i=10;amount=500;radius=0.5;onHit=Bomvithu_Hit;y=0.5;forwardOffset=1} @Origin
+  - delay 5
+  - effect:particlesphere{particle=reddust;color=#000000;i=10;amount=500;radius=0.5;onHit=Bomvithu_Hit;y=0.5;forwardOffset=1} @Origin
+  - delay 5
+  - effect:particlesphere{particle=reddust;color=#000000;i=10;amount=500;radius=0.5;onHit=Bomvithu_Hit;y=0.5;forwardOffset=1} @Origin
+  - delay 5
+  - effect:particlesphere{particle=reddust;color=#000000;i=10;amount=500;radius=0.5;onHit=Bomvithu_Hit;y=0.5;forwardOffset=1} @Origin
+  - delay 5
+  - effect:particlesphere{particle=reddust;color=#000000;i=10;amount=500;radius=0.5;onHit=Bomvithu_Hit;y=0.5;forwardOffset=1} @Origin
+  - delay 5
+  - effect:particlesphere{particle=reddust;color=#000000;i=10;amount=500;radius=0.5;onHit=Bomvithu_Hit;y=0.5;forwardOffset=1} @Origin
+  - delay 5
+  - projectile{onTick=Bomvithu_Tick;onHit=Bomvithu_Hit;v=2;i=1;hR=1;vR=1;mr=15;sE=false;sB=false;hp=true}
+Bomvithu_Tick:
+  Skills:
+  - effect:particlesphere{particle=reddust;color=#000000;i=10;amount=500;radius=2;onHit=Bomvithu_Hit} @Origin
+  - effect:particlesphere{particle=reddust;color=#00239c;i=10;amount=200;radius=0.5;onHit=Bomvithu_Hit} @Origin
+  # - effect:particleorbital{r=2;points=16;oY=1;t=28;i=1;vy=20;particle=reddust;color=#ff0000} @Origin ~onTimer:20
+  # - effect:particletornado{particle=reddust;color=#ff0000;cp=largeexplode;mr=1;h=3;i=4;d=1;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @Origin ~onTimer:100
+  - effect:particlebox{particle=reddust;color=#ff0000;amount=10;radius=5} @Origin
+  - pull{v=3;to=false} @PlayersNearOrigin{r=10} ~onTimer:1
+Bomvithu_Hit:
+  Skills:
+  - damage{amount=10;ia=true} 

@@ -1,0 +1,38 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&8[&6EpicVouchers&8] '
+interface:
+  confirmsettings:
+
+    # Interface Messages
+    title: '&6Bestätigung'
+    confirmitemname: '&2&lBESTÄTIGEN'
+    confirmitemlore: '&aKlicke hier, um deine Aktion zu bestätigen.'
+    cancelitemname: '&4&1ABBRECHEN'
+    cancelitemlore: '&cKlicke hier, um deine Aktion abzubrechen.'
+command:
+  error:
+
+    # Command Messages
+    noplayer: '&7Dieser Spieler existiert nicht oder ist gerade nicht online.'
+    novoucher: '&cDieser Gutschein existiert nicht.'
+    notexist: '&7Der eingegebene Befehl existiert nicht oder wurde falsch geschrieben.'
+    notnumber: '&7Dies ist keine gültige Zahl.'
+  reload:
+    success: '&7Alle Konfigurationen und Gutscheine wurden erfolgreich neu geladen.'
+  give:
+    send: '&7Du hast dem Spieler &6%player% &7den Gutschein &6%voucher% &7(&6x%amount%&7) gegeben.'
+    receive: '&7Du hast den Gutschein &6%voucher% &7(&6x%amount%&7) erhalten.'
+    cancelled: '&cDie Aktion wurde abgebrochen.'
+  force:
+    send: '&7Du hast den Spieler &6%player% &7gezwungen den Gutschein &6%voucher% &7(&6x%amount%&7) einzulösen.'
+  list:
+    list: '&7Liste aller Gutscheine: &6%list%&7.'
+event:
+  general:
+
+    # Event Messages
+    nopermission: '&cDazu hast du keine Rechte.'
+    cooldown: '&7Bitte warte noch &6%time%&7 Sekunden bevor du den nächsten Gutschein einlöst.'

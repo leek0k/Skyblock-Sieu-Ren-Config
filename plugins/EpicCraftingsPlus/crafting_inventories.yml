@@ -1,0 +1,152 @@
+crafting_inventory:
+  '0':
+    id: IRON_FENCE
+    slot: 0
+  '1':
+    id: IRON_FENCE
+    slot: 1
+  '2':
+    id: IRON_FENCE
+    slot: 2
+  '3':
+    id: IRON_FENCE
+    slot: 3
+  '4':
+    id: IRON_FENCE
+    slot: 4
+  '5':
+    id: IRON_FENCE
+    slot: 5
+  '6':
+    id: IRON_FENCE
+    slot: 6
+  '7':
+    id: IRON_FENCE
+    slot: 7
+  '8':
+    id: IRON_FENCE
+    slot: 8
+  '9':
+    id: IRON_FENCE
+    slot: 9
+  '10':
+    id: IRON_FENCE
+    slot: 17
+  '11':
+    id: IRON_FENCE
+    slot: 18
+  '12':
+    id: IRON_FENCE
+    slot: 26
+  '13':
+    id: IRON_FENCE
+    slot: 27
+  '14':
+    id: IRON_FENCE
+    slot: 35
+  '15':
+    id: IRON_FENCE
+    slot: 36
+  '16':
+    id: IRON_FENCE
+    slot: 37
+  '17':
+    id: IRON_FENCE
+    slot: 38
+  '18':
+    id: IRON_FENCE
+    slot: 39
+  '19':
+    id: IRON_FENCE
+    slot: 40
+  '20':
+    id: IRON_FENCE
+    slot: 41
+  '21':
+    id: IRON_FENCE
+    slot: 42
+  '22':
+    id: IRON_FENCE
+    slot: 43
+  '23':
+    id: IRON_FENCE
+    slot: 44
+crafting_item_inventory:
+  '0':
+    id: IRON_FENCE
+    slot: 0
+  '1':
+    id: IRON_FENCE
+    slot: 1
+  '2':
+    id: IRON_FENCE
+    slot: 2
+  '3':
+    id: IRON_FENCE
+    slot: 3
+  '4':
+    id: IRON_FENCE
+    slot: 4
+  '5':
+    id: IRON_FENCE
+    slot: 5
+  '6':
+    id: IRON_FENCE
+    slot: 6
+  '7':
+    id: IRON_FENCE
+    slot: 7
+  '8':
+    id: IRON_FENCE
+    slot: 8
+  '9':
+    id: IRON_FENCE
+    slot: 9
+  '10':
+    id: IRON_FENCE
+    slot: 11
+  '11':
+    id: IRON_FENCE
+    slot: 17
+  '12':
+    id: IRON_FENCE
+    slot: 18
+  '13':
+    id: IRON_FENCE
+    slot: 20
+  '14':
+    id: IRON_FENCE
+    slot: 26
+  '15':
+    id: IRON_FENCE
+    slot: 27
+  '16':
+    id: IRON_FENCE
+    slot: 29
+  '17':
+    id: IRON_FENCE
+    slot: 35
+  '18':
+    id: IRON_FENCE
+    slot: 36
+  '19':
+    id: IRON_FENCE
+    slot: 37
+  '20':
+    id: IRON_FENCE
+    slot: 38
+  '21':
+    id: IRON_FENCE
+    slot: 39
+  '22':
+    id: IRON_FENCE
+    slot: 40
+  '23':
+    id: IRON_FENCE
+    slot: 42
+  '24':
+    id: IRON_FENCE
+    slot: 43
+  '25':
+    id: IRON_FENCE
+    slot: 44

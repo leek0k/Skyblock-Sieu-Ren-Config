@@ -1,0 +1,62 @@
+menu_title: '&c&Đền Điểm Skills'
+open_command: 
+size: 27
+items:
+  'rsdiem':
+    material: barrier
+    priority: 1
+    hide_attributes: true
+    display_name: '&e&lReset &6&lĐiểm Skill &7((tất cả))'
+    slot: 13
+    lore:
+    - ''
+    - '&7Reset điểm skill levels và trả tất cả'
+    - '&7về con số 0 và nhận lại số điểm skills'
+    - '&7tương tương số điểm đã reset.'
+    - ''
+    - '&e&lYêu cầu:'
+    - ' &fLưu ý khi đền: &aChỉ dùng được 1 lần'
+    - ' &fTổng các level 6 skills:'
+    - '  &a.&2.&a&lThần Nông&2.&a. &7(&a%math_{aureliumskills_farming}[precision:0]%&7)'
+    - '  &b.&3.&b&lThợ Mỏ&b.&3. &7(&a%math_{aureliumskills_mining}[precision:0]%&7)'
+    - '  &c.&e.&c&lTiều Phu&6.&c. &7(&a%math_{aureliumskills_foraging}[precision:0]%&7)'
+    - '  &c.&4.&c&lCung Thuật&4.&c. &7(&a%math_{aureliumskills_archery}[precision:0]%&7)'
+    - '  &d.&5.&d&lPhòng Thủ&5.&d. &7(&a%math_{aureliumskills_defense}[precision:0]%&7)'
+    - '  &6.&e.&6&lKiếm Thuật&6.&e. &7(&a%math_{aureliumskills_fighting}[precision:0]%&7)'
+    - ''
+    - ' &fĐiểm nhận lại khi reset: &b%math_({alonsolevels_level}*5)[precision:0]%'
+    - ''
+    - ' &cLưu ý: &fyêu cầu tối thiểu &aCấp 5'
+    - ''
+    - '&0&o#Item menu'
+    left_click_requirement:
+      requirements:  
+        has_level2:
+          type: '>='
+          input: '%alonsolevels_level_format%'
+          output: '5'
+          deny_commands:
+          - '[message] &f[&4!&f] &cChưa đủ cấp!' 
+    left_click_commands:
+      - '[console] points take %player_name% 30'
+      - '[console] skills skill reset %player_name% farming'
+      - '[console] skills skill reset %player_name% foraging'
+      - '[console] skills skill reset %player_name% mining'
+      - '[console] skills skill reset %player_name% archery'
+      - '[console] skills skill reset %player_name% defense'
+      - '[console] skills skill reset %player_name% fighting' #endurance
+      - '[console] skills skill reset %player_name% endurance' #endurance
+      - '[console] skills xp add %player_name% endurance %math_({alonsolevels_level}*5)[precision:0]%'
+      - '[message] &f[&4!&f] &c&lReset Thành Công!'
+      - '[message] &c-30⛁'
+      - '[message] &f[&4!&f] &a.&2.&a&lThần Nông&2.&a. &7((Skills)) &c-%math_{aureliumskills_farming}-1%'
+      - '[message] &f[&4!&f] &b.&3.&b&lThợ Mỏ&b.&3. &7((Skills) &c-%math_{aureliumskills_mining}-1%'
+      - '[message] &f[&4!&f] &c.&e.&c&lTiều Phu&6.&c. &7((Skills)) &c-%math_{aureliumskills_foraging}-1%'
+      - '[message] &f[&4!&f] &c.&4.&c&lCung Thuật&4.&c. &7((Skills)) &c-%math_{aureliumskills_archery}-1%'
+      - '[message] &f[&4!&f] &d.&5.&d&lPhòng Thủ&5.&d. &7((Skills)) &c-%math_{aureliumskills_defense}-1%'
+      - '[message] &f[&4!&f] &6.&e.&6&lKiếm Thuật&6.&e. &7((Skills)) &c-%math_{aureliumskills_fighting}-1%'
+      - '[message] &f[&4!&f] &b&LĐiểm Skill Tồn Đọng: &c-%aureliumskills_xp_formatted_endurance%'
+      - '[message] &f[&aMineAhihi&f] &a+%math_({alonsolevels_level}*5)[precision:0]% Điểm Skills'
+      - '[close]'
+
+ 

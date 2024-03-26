@@ -1,0 +1,13 @@
+name: helper3
+permissions:
+- essentials.jails
+- 'essentials.kits.vip5 '
+- essentials.socialspy
+- essentials.togglejail
+- essentials.togglejail.offline
+- litebans.dupeip
+- litebans.group.helper3
+- playervaults.amount.20
+- weight.83
+parents:
+- helper2

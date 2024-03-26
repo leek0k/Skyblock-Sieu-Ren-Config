@@ -1,0 +1,35 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: 'coxua'
+
+# Currently supported are only melee weapons
+material: DIAMOND_AXE
+
+# Weapon's name
+name: '&b&lRìu Cổ Xưa &7(+3)'
+
+# Weapon's lore
+lore:
+  - ''
+  - '&b◆ ◆ &b&lCỔ XƯA &b◆ ◆'
+  - '&3* &bCổ Xưa Rìu'
+  - '&3* &bTăng 3% damage'
+  - '&7&o(Mặc full Set Cổ Xưa để kích hoạt.)'
+  - '&0&o#Riucoxua4' 
+
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'sharpness:35'
+  - 'unbreaking:2'
+  - 'looting:2'
+  - 'fire_aspect:2'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:
+  ATTACK:
+    chance: 55
+    effects:
+      - 'INCREASE_DAMAGE:3'

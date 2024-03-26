@@ -1,0 +1,254 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&8&lCỬA HÀNG RANK'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'rank'
+  
+
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+v1:
+  POINTS: 50
+  COMMAND: 'console: lp user {player} parent set vip1; CONSOLE: eco give {player} 5000;tell: &e&l(&7&l!&e&l)&e&l Mua thành công'
+  NAME: '&8&l<&7&lTRÙM&8&l>'
+  AMOUNT: 1    
+  LORE:
+    - ''
+    - '&e&lQUYỀN LỢI RANK:'
+    - '&e&l* &7/kit &7&lTRÙM &7(1 ngày nhận 1 lần)'    
+    - '&e&l* &7/craft'    
+    - '&e&l* &7/feed'     
+    - '&e&l* &7/pv &e(1)'
+    - '&e&l* &e+2 &7Slot đấu giá (/ah)'
+    - '&e&l* &e+5000$'
+    - ''    
+    - '&6&l* &e&lGiá: &b50⛁'
+    - ''
+    - '&7Thời Hạn Vĩnh Viễn'
+    - ''
+    - '&7&l&nLưu ý:&r &7Bạn phải nâng cấp tầng rank một'
+    - ''
+    - '&0&o#Item menu'
+  PERMISSION-MESSAGE: '&cBạn đã mua rank này rồi!'    
+  PERMISSION: 'rankup.default'    
+  ID: 270
+  ENCHANTMENT: 'fire aspect, 1'
+  POSITION-X: 1
+  POSITION-Y: 2 
+  
+v2:
+  POINTS: 100
+  AMOUNT: 2    
+  COMMAND: 'console: lp user {player} parent set vip2; CONSOLE: eco give {player} 10000;tell: &e&l(&7&l!&e&l)&e&l Mua thành công'
+  NAME: '&8&l<&7&lTRÙM&8&l> &7→ &8&l<&6&lVUA&8&l>'
+  LORE:
+    - ''
+    - '&e&lQUYỀN LỢI RANK:'
+    - '&7Bao gồm quyền lợi rank trước'
+    - '&e&l* &7/kit &6&lVUA &7(1 ngày nhận 1 lần)'
+    - '&e&l* &7/hat'    
+    - '&e&l* &7/ec'    
+    - '&e&l* &7/fly'    
+    - '&e&l* &7/pv &e(3)'     
+    - '&e&l* &e+4 &7Slot đấu giá (/ah)'  
+    - '&e&l* &eVào server khi full'    
+    - '&e&l* &e+10000$'
+    - ''    
+    - '&6&l* &e&lGiá: &b100⛁'
+    - ''
+    - '&7Thời Hạn Vĩnh Viễn'
+    - ''
+    - '&7&l&nLưu ý:&r &7Bạn phải nâng cấp tầng rank một'  
+    - ''
+    - '&0&o#Item menu'
+  PERMISSION-MESSAGE: '&cBạn chưa mua rank trước hoặc đã mua rank này rồi!'  
+  ID: 274
+  ENCHANTMENT: 'fire aspect, 1'
+  PERMISSION: 'rankup.gold'  
+  POSITION-X: 2
+  POSITION-Y: 2
+  
+v3:
+  POINTS: 200
+  AMOUNT: 3    
+  COMMAND: 'console: lp user {player} parent set vip3; CONSOLE: eco give {player} 15000; CONSOLE: cr give tokey 1 2;tell: &e&l(&7&l!&e&l)&e&l Mua thành công'
+  NAME: '&8&l<&6&lVUA&8&l> &7→ &8&l<&c&lQUỶ&8&l>'
+  LORE:
+    - ''
+    - '&e&lQUYỀN LỢI RANK:'
+    - '&7Bao gồm quyền lợi rank trước'
+    - '&e&l* &7/kit &c&lQUỶ &7(1 ngày nhận 1 lần)'      
+    - '&e&l* &7/fix hand'
+    - '&e&l* &7/top (Tp lên cao nhất)'    
+    - '&e&l* &7/sell all (Bán tất cả vật phẩm trong túi)'
+    - '&e&l* &7/pv &e(6)'
+    - '&e&l* &7Chat [i] (Để khoe đồ đang cầm)'    
+    - '&e&l* &7/eco pay (tên) (Chuyển $)'    
+    - '&e&l* &e+6 &7Slot đấu giá (/ah)'       
+    - '&e&l* &e+15000$'
+    - ''       
+    - '&6&l* &e&lGiá: &b200⛁'
+    - ''
+    - '&7Thời Hạn Vĩnh Viễn'
+    - ''
+    - '&7&l&nLưu ý:&r &7Bạn phải nâng cấp tầng rank một'  
+    - ''
+    - '&0&o#Item menu' 
+  PERMISSION-MESSAGE: '&cBạn chưa mua rank trước hoặc đã mua rank này rồi!'    
+  ID: 257
+  ENCHANTMENT: 'fire aspect, 1'
+  PERMISSION: 'rankup.diamond'    
+  POSITION-X: 3
+  POSITION-Y: 2
+  
+v4:
+  POINTS: 300
+  AMOUNT: 4    
+  COMMAND: 'console: lp user {player} parent set vip4; CONSOLE: eco give {player} 20000;tell: &e&l(&7&l!&e&l)&e&l Mua thành công'
+  NAME: '&8&l<&c&lQUỶ&8&l> &7→ &8&l<&b&lTIÊN&8&l>'
+  LORE:
+    - ''
+    - '&e&lQUYỀN LỢI RANK:'
+    - '&7Bao gồm quyền lợi rank trước'
+    - '&e&l* &7/kit &b&lTIÊN &7(1 ngày nhận 1 lần)'    
+    - '&e&l* &7/fix all'
+    - '&e&l* &7/ext &e(Dập lửa)'    
+    - '&e&l* &e/msgtoggle&7, &e/tptoggle'
+    - '&e&l* &7/pv &e(10)'    
+    - '&e&l* &e+8 &7Slot đấu giá (/ah)'    
+    - '&e&l* &7/condense &eQuặng=Khối'    
+    - '&e&l* &e+25000$'      
+    - ''    
+    - '&6&l* &e&lGiá: &b300⛁'
+    - ''
+    - '&7Thời Hạn Vĩnh Viễn'
+    - ''
+    - '&7&l&nLưu ý:&r &7Bạn phải nâng cấp tầng rank một'    
+    - ''
+    - '&0&o#Item menu'   
+  PERMISSION-MESSAGE: '&cBạn chưa mua rank trước hoặc đã mua rank này rồi!'  
+  ENCHANTMENT: 'fire aspect, 1'  
+  ID: 285
+  POSITION-X: 4
+  PERMISSION: 'rankup.emeral'     
+  POSITION-Y: 2
+  
+v6:
+  POINTS: 500
+  AMOUNT: 5    
+  COMMAND: 'console: lp user {player} parent set vip5; CONSOLE: eco give {player} 50000;tell: &e&l(&7&l!&e&l)&e&l Mua thành công'
+  NAME: '&8&l<&b&lTIÊN&8&l> &7→ &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l>' 
+  LORE:
+    - ''
+    - '&e&lQUYỀN LỢI RANK:'
+    - '&7Bao gồm quyền lợi rank trước'
+    - '&e&l* &7/kit &6&lT&e&lH&6&lẦ&e&lN &7(1 ngày nhận 1 lần)'    
+    - '&e&l* &7/heal'   
+    - '&e&l* &7/chat color'
+    - '&e&l* &7/invsee' 
+    - '&e&l* &7/near'
+    - '&e&l* &7/pv &e(15)'   
+    - '&e&l* &e+14 &7Slot đấu giá (/ah)'    
+    - '&e&l* &eSet giáp mang vào sẽ bền vĩnh viễn khi pvp'
+    - '&e&l* &e+50000$'
+    - '' 
+    - '&6&l* &e&lGiá: &b500⛁'
+    - ''
+    - '&7Thời Hạn Vĩnh Viễn'
+    - ''
+    - '&7&l&nLưu ý:&r &7Bạn phải nâng cấp tầng rank một'  
+    - ''
+    - '&0&o#Item menu'      
+  PERMISSION-MESSAGE: '&cBạn chưa mua rank trước hoặc đã mua rank này rồi!'    
+  ID: 278
+  POSITION-X: 5
+  ENCHANTMENT: 'fire aspect, 1'
+  PERMISSION: 'rankup.bedrock'     
+  POSITION-Y: 2   
+  
+batdiet:
+  POINTS: 350
+  AMOUNT: 6    
+  COMMAND: 'console: lp user {player} parent addtemp vip6 30d accumulate; CONSOLE: eco give {player} 3000000;console: crazycrates give p phuthuy 3 {player}'
+  NAME: '&8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l> &7→ &e&l⊰⊹ &6&lBất diệt &e&l⊹⊱' 
+  LORE:
+    - ''
+    - '&e&lQUYỀN LỢI RANK: &7(1 tháng sử dụng)'
+    - '&7Bao gồm quyền lợi rank trước'
+    - '&e&l* &eTp không mất thời gian'   
+    - '&e&l* &e/sell-all và condense không mất thời gian'      
+    - '&e&l* &eChat không mất thời gian'   
+    - '&e&l* &eBay trong warp PvP'    
+    - '&e&l* &7/kittycannon' 
+    - '&e&l* &7/batdiet &eđể xem bao nhiều ngày hết hạn'     
+    - '&e&l* &dBộ 3 kit bá đạo nhận theo thời gian &7(/kit)'     
+    - '&e&l* &fKhuyến mãi: &a+3m$&7, &3x3 Phù thủy &7(key)'  
+    - '&c&l(!) Lưu ý: &fBấm nhiều lần thì thời gian gia hạn '
+    - '&fsẽ tăng lên!'
+    - '' 
+    - '&6&l* &e&lGiá: &b350⛁'
+    - ''
+    - '&cThời Hạn 30 ngày'
+    - ''
+    - '&7&l&nLưu ý:&r &7Bạn phải nâng cấp tầng rank một' 
+    - ''
+    - '&0&o#Item menu'       
+  PERMISSION-MESSAGE: '&cBạn chưa mua rank trước hoặc đã mua rank này rồi!'    
+  ID: 311
+  POSITION-X: 6
+  ENCHANTMENT: 'fire aspect, 1'
+  PERMISSION: 'essentials.invsee'     
+  POSITION-Y: 2   
+  
+vip:
+  POINTS: 39
+  COMMAND: 'console: lp user {player} permission set superior.island.missions;console: order Rank Vip 1;console: lp user {player} permission set superior.island.mission;console: lp user {player} permission set superior.island.mission;console: lp user {player} permission set shopguiplus.shops.alien;console: lp user {player} meta setsuffix 1 "&e &e&l&n$&r";console: lp user {player} permission set vip.vip false;tell: &e&l(&7&l!&e&l)&e&l Mua thành công giờ các bạn hãy /is missions để bắt đầu nhiệm vụ !!'
+  NAME: '&6&l$&e&lV.I.P&6&l$' 
+  LORE:
+    - ''
+    - '&e&lQUYỀN LỢI &6&l$&e&lV.I.P&6&l$&e&l:'
+    - '&e&l* &7Kho &e45 &7nhiệm vụ &e&lV.I.P&7: &e/c'
+    - '&e&l* &7Mở Shop siêu cấp: &e/shop!!'        
+    - '' 
+    - '&6&l* &e&lGiá: &b39⛁'
+    - ''
+    - '&7Thời Hạn Vĩnh Viễn'  
+    - ''
+    - '&0&o#Item menu'
+  PERMISSION-MESSAGE: '&cBạn đã mua &d&lV.I.P&c này rồi!'    
+  ID: 371
+  POSITION-X: 8
+  ENCHANTMENT: 'fire aspect, 1'
+  PERMISSION: 'vip.vip'     
+  POSITION-Y: 2    
+  
+  
+return-to-main:
+  COMMAND: 'open:main-menu.yml'
+  NAME: '&c&l[arrow_left] [Trở về]'
+  LORE:
+    - '&7Nhấn vào để trở về mục trước'  
+    - ''
+    - '&0&o#Item menu'
+  ID: 'arrow' 
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 3            

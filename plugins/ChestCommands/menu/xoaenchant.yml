@@ -1,0 +1,209 @@
+menu-settings:
+  name: '&8Xoá Phù Phép'
+  rows: 3
+  command: 'xoaenchant;xoaphuphep;grindstone;removeenchant;removephuphep;deletephuphep;xoacuonghoa;thanhtay'
+  open-action: 'sound: BLOCK_CHEST_OPEN, 2.0, 0.5'
+Knockback: 
+  COMMAND: 'op:enchant knockback 0;tell: &e&l[&7&l!&e&l]&e&l Xoá thành công!'
+  NAME: '&eĐánh Bật Lùi &7(Knockback)'
+  ENCHANTMENT: 'knockback, 1'  
+  LORE:
+    - '&7Nhấn vào để loại bỏ phù phép này trên tay'
+    - '&c&o((Không thể hoàn tác))'
+    - ''
+    - '&0&o#Item menu'
+  ID: 403
+  POSITION-X: 2
+  POSITION-Y: 2
+Thorns: 
+  COMMAND: 'op:enchant thorns 0;tell: &e&l[&7&l!&e&l]&e&l Xoá thành công!'
+  NAME: '&eGai &7(Thorns)'
+  ENCHANTMENT: 'thorns, 1'  
+  LORE:
+    - '&7Nhấn vào để loại bỏ phù phép này trên tay'
+    - '&c&o((Không thể hoàn tác))'
+    - ''
+    - '&0&o#Item menu'
+  ID: 403
+  POSITION-X: 3
+  POSITION-Y: 2
+Mending: 
+  COMMAND: 'op:enchant mending 0;tell: &e&l[&7&l!&e&l]&e&l Xoá thành công!'
+  NAME: '&eSửa Chữa &7(Mending)'
+  ENCHANTMENT: 'mending, 1'  
+  LORE:
+    - '&7Nhấn vào để loại bỏ phù phép này trên tay'
+    - '&c&o((Không thể hoàn tác))'
+    - ''
+    - '&0&o#Item menu'
+  ID: 403
+  POSITION-X: 4
+  POSITION-Y: 2
+Looting: 
+  COMMAND: 'op:enchant looting 0;tell: &e&l[&7&l!&e&l]&e&l Xoá thành công!'
+  NAME: '&eNhặt &7(Looting)'
+  ENCHANTMENT: 'looting, 1'  
+  LORE:
+    - '&7Nhấn vào để loại bỏ phù phép này trên tay'
+    - '&c&o((Không thể hoàn tác))'
+    - ''
+    - '&0&o#Item menu'
+  ID: 403
+  POSITION-X: 5
+  POSITION-Y: 2
+Fireaspect: 
+  COMMAND: 'op:enchant fireaspect 0;tell: &e&l[&7&l!&e&l]&e&l Xoá thành công!'
+  NAME: '&eGây Cháy &7(FireAspect)'
+  ENCHANTMENT: 'fireaspect, 1'  
+  LORE:
+    - '&7Nhấn vào để loại bỏ phù phép này trên tay'
+    - '&c&o((Không thể hoàn tác))'
+    - ''
+    - '&0&o#Item menu'
+  ID: 403
+  POSITION-X: 6
+  POSITION-Y: 2
+Vanishing: 
+  COMMAND: 'op:enchant curseofvanishing 0;tell: &e&l[&7&l!&e&l]&e&l Xoá thành công!'
+  NAME: '&cLời Nguyền Biến Mất &7(CurseOfVanishing)'
+  ENCHANTMENT: 'fireaspect, 1'  
+  LORE:
+    - '&7Nhấn vào để loại bỏ phù phép này trên tay'
+    - '&c&o((Không thể hoàn tác))'
+    - ''
+    - '&0&o#Item menu'
+  ID: 403
+  POSITION-X: 7
+  POSITION-Y: 2
+Binding: 
+  COMMAND: 'op:enchant curseofbinding 0;tell: &e&l[&7&l!&e&l]&e&l Xoá thành công!'
+  NAME: '&cLời Nguyền Ràng Buộc &7(CurseOfBinding)'
+  ENCHANTMENT: 'fireaspect, 1'  
+  LORE:
+    - '&7Nhấn vào để loại bỏ phù phép này trên tay'
+    - '&c&o((Không thể hoàn tác))'
+    - ''
+    - '&0&o#Item menu'
+  ID: 403
+  POSITION-X: 8
+  POSITION-Y: 2
+1:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 1
+  POSITION-Y: 1
+2:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 2
+  POSITION-Y: 1
+3:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 3
+  POSITION-Y: 1
+4:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 4
+  POSITION-Y: 1
+5:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 5
+  POSITION-Y: 1
+6:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 6
+  POSITION-Y: 1
+7:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 7
+  POSITION-Y: 1
+8:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 8
+  POSITION-Y: 1
+9:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 9
+  POSITION-Y: 1
+10:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 1
+  POSITION-Y: 2
+11:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 9
+  POSITION-Y: 2
+12:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 1
+  POSITION-Y: 3
+13:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 2
+  POSITION-Y: 3
+14:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 3
+  POSITION-Y: 3
+15:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 4
+  POSITION-Y: 3
+16:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 5
+  POSITION-Y: 3
+17:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 6
+  POSITION-Y: 3
+18:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 7
+  POSITION-Y: 3
+19:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 8
+  POSITION-Y: 3
+20:
+  NAME: ''
+  KEEP-OPEN: true
+  ID: '160:15' 
+  POSITION-X: 9
+  POSITION-Y: 3

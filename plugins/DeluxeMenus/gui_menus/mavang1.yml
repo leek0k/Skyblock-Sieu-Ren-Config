@@ -1,0 +1,192 @@
+file: mavang1.yml
+menu_title: '&8&lNâng Cấp - &6&k&l..&r &e&lMạ Vàng Phù Phép &6&k&l..&r'
+open_command: 
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+  # - '[console] msg %player_name% &cĐã xóa của &6&l%player_name% &d&lTrâu thánh: &f%checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%'
+  - '[refresh]'
+  - '[refresh]<delay=5>'
+  - '[refresh]<delay=10>'
+  - '[refresh]<delay=15>'
+  - '[refresh]<delay=20>'
+  - '[refresh]<delay=25>'
+  - '[refresh]<delay=30>'
+  - '[refresh]<delay=35>'
+  - '[refresh]<delay=40>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=5>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=10>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=15>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=20>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=25>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=30>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=35>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=40>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=45>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=50>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=55>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=60>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=65>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=70>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=75>'
+  # - '[console] papi parse %player_name% %checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%<delay=80>'
+size: 54
+update_interval: 1    
+open_requirement: 
+  requirements:
+    has_item:
+      type: string equals
+      input: '%checkitem_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%'
+      output: 'no'
+  deny_commands:
+    - "[message] &cBạn phải loại bỏ tất cả sách &d&l&nTrâu Thánh&c trước khi mạ vàng!"
+    - "[message] &b&lĐANG CÓ: &f%math_{checkitem_amount_mat:book,lorecontains:&fYêu cầu cường hóa:}-{checkitem_amount_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu}[precision:0]%&f/5 Quyển"
+    - '[refresh]'
+    - '[refresh]<delay=5>'
+    - '[refresh]<delay=10>'
+items:
+  'background':
+    material: STAINED_GLASS_PANE
+    data: 4
+    display_name: ' '
+    slots:
+    - '0'
+    - '8'
+  'background2':
+    material: STAINED_GLASS_PANE
+    data: 1
+    display_name: ' '
+    slots:
+    - '1-3'
+    - '5-7'
+    - '9'
+    - '18'
+    - '27'
+    - '36'
+    - '45-46'
+    - '17'
+    - '26'
+    - '35'
+    - '44'
+    - '52-53'
+  'icon':
+    material: EYE_OF_ENDER
+    display_name: '&6&k&l..&r &e&lMạ Vàng Phù Phép &6&k&l..&r'
+    slot: 4
+    hide_attributes: true
+    lore:
+    - '&7Thăng hạng phù phép'
+    - '&d&lTruyền Thuyết &f&l-> &6&k&l..&r &e&lMạ Vàng &6&k&l..&r'
+    - ''
+    - '&0&o#Item menu'
+  'nangcap':
+    material: LAVA_BUCKET
+    hide_attributes: true
+    display_name: '&e&lMạ Vàng Phù Phép'
+    priority: 3
+    slot: 22
+    lore:
+    - ''
+    - '&7Yêu cầu &e&n5&r &7sách &d&lTruyền Thuyết &7bất kỳ'
+    - ''
+    - '&7Đang có: &c%math_{checkitem_amount_mat:book,lorecontains:&fYêu cầu cường hóa:}-{checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu}[precision:0]%&7/5'
+    - '&4[!] Lưu Ý: &cCó tỉ lệ thành công / thất bại'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[close]'
+    - '[refresh]'
+    - '[message] &cChưa đủ sách để tiến hành mạ vàng!'
+    # - '[console] msg %player_name% &cĐã xóa của &6&l%player_name% &d&lTrâu thánh: &f%checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%'
+    - '[refresh]'
+    view_requirement:
+      requirements:
+        notenough: 
+          type: '<'
+          input: '%math_{checkitem_amount_mat:book,lorecontains:&fYêu cầu cường hóa:}-2368*{checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu}[precision:0]%'
+          output: '5'
+          success_commands:
+          - "[refresh]"
+  'nangcap1':
+    material: LAVA_BUCKET
+    hide_attributes: true
+    display_name: '&e&lMạ Vàng Phù Phép'
+    priority: 2
+    slot: 22
+    lore:
+    - ''
+    - '&7Yêu cầu &e&n5&r &7sách &d&lTruyền Thuyết &7bất kỳ'
+    - ''
+    - '&7Đang có: &a%math_{checkitem_amount_mat:book,lorecontains:&fYêu cầu cường hóa:}-2368*{checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu}[precision:0]%&7/5'
+    - '&4[!] Lưu Ý: &cCó tỉ lệ thành công / thất bại'
+    - ''
+    - '&0&o#Item menu'
+    click_requirement:
+      requirements:        
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:book,amt:5,lorecontains:&fYêu cầu cường hóa:%'
+          output: '5'
+      deny_commands:
+        - '[close]'
+        - '[refresh]'
+        # - '[console] msg %player_name% &cĐã xóa của &6&l%player_name% &d&lTrâu thánh: &f%checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%'
+    click_commands:
+      # - '[close]'
+      - '[refresh]'
+      # - '[console] msg %player_name% &cĐã xóa của &6&l%player_name% &d&lTrâu thánh: &f%checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%'
+      - '[console] cr open %player_name% mavang'
+      - '[refresh]'
+    view_requirement:
+      requirements:
+        notenough: 
+          type: '>='
+          input: '%math_{checkitem_amount_mat:book,lorecontains:&fYêu cầu cường hóa:}-2368*{checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu}[precision:0]%'
+          output: '5'
+          success_commands:
+          - "[refresh]"
+  'nangcaperror':
+    material: LAVA_BUCKET
+    hide_attributes: true
+    display_name: '&e&lMạ Vàng Phù Phép'
+    priority: 1
+    slot: 22
+    lore:
+    - ''
+    - '&7Yêu cầu &e&n5&r &7sách &d&lTruyền Thuyết &7bất kỳ'
+    - ''
+    - '&7Đang có: &a%math_{checkitem_amount_mat:book,lorecontains:&fYêu cầu cường hóa:}-{checkitem_amount_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu}[precision:0]%&7/5'
+    - '&4[!] Lưu Ý: &cCó tỉ lệ thành công / thất bại'
+    - ''
+    - '&0&o#Item menu'
+    click_requirement:
+      requirements:        
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:book,amt:1,lorecontains:&fYêu cầu cường hóa: Trâu%'
+          output: '1'
+      deny_commands:
+        - '[close]'
+        - '[refresh]'
+        - '[console] msg %player_name% &cĐã xóa của &6&l%player_name% &d&lTrâu thánh: &f%checkitem_amount_remove_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%'
+    click_commands:
+      - '[refresh]'
+      - '[console] kick %player_name% 30d &4&lVật phẩm không hợp lệ khi MẠ VÀNG'
+      - '[refresh]'
+    view_requirement:
+      requirements:
+        notenough: 
+          type: '>='
+          input: '%checkitem_amount_mat:book,lorecontains:&fYêu cầu cường hóa: Trâu%'
+          output: '1'
+          success_commands:
+          - "[console] kick %player_name% &4&lVật phẩm không hợp lệ khi MẠ VÀNG"
+  'exit':
+    material: DOUBLE_PLANT
+    slot: 49
+    display_name: '&c&l⬅ [Trở về]'
+    lore:
+    - "&7Nhấn vào để trở về mục trước"
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[player] e'

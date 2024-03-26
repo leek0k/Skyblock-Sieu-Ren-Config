@@ -1,0 +1,458 @@
+#Cấu hình ngọc khảm:
+# * Lưu ý: Tránh chỉnh sửa lore của item có chứa ngọc đã được khảm.
+
+#Hướng dẫn cấu hình:
+#  <id>: #Các ID không được trùng nhau.
+#    Material: <material> #Vui lòng sử dụng tên, không sử dụng ID. Bắt buộc!
+#    Amount: <số lượng> #Số lượng vật phẩm. Không bắt buộc!
+#    Data: <data> #Loại vật phẩm, thường được dùng cho những item trùng Material. Không bắt buộc!
+#    Name: '<tên>' #Tên hiển thị cho vật phẩm. Không bắt buộc!
+#
+#    #Tên ngọc sẽ được hiển thị trên vật phẩm được khảm:
+#    DisplayName: '<tên>'
+#
+#    Texture: 'hdb-<ID>' #Sử dụng skin từ plugin HeadDatabase.
+#    hoặc
+#    Texture: '<base64>' #Sử dụng skin từ https://minecraft-heads.com/
+#
+#    #Thêm các hiệu ứng phù phép cho vật phẩm:
+#    Enchants:
+#    - '<tên>:<cấp độ>'
+#
+#    #Thêm flag cho vật phẩm:
+#    # * Các flags có sẵn: HIDE_ATTRIBUTES, HIDE_DESTROYS, HIDE_ENCHANTS, HIDE_PLACED_ON, HIDE_POTION_EFFECTS và HIDE_UNBREAKABLE.
+#    Flags:
+#    - '<tên flag>'
+#
+#    Lore: [] #Thêm lore cho vật phẩm. Không bắt buộc!
+#
+#    #Tỉ lệ thành công (cố định, đặt số nào lấy số đó) khi khảm. Tối thiểu 0.0, tối đa 100.0
+#    Chance: <tỉ lệ>
+#
+#    #Thêm ngẫu nhiên tỉ lệ thành công trong khoảng từ MIN đến MAX khi trao vật phẩm.
+#    # * Tuỳ chọn này sẽ không hoạt động nếu giá trị của Chance (ở trên) lớn hơn 0.
+#    RandomChance: <min>-<max>
+#
+#    Abilities:
+#      #Có thể thêm nhiều ability trong tuỳ chọn này.
+#      '0': #Ký hiệu, đặt tuỳ ý (khuyến khích sử dụng số).
+#        Type: <Armor, ArmorToughness, AttackDamage, AttackSpeed, KnockbackResistance, Luck, MaxHealth hoặc MovementSpeed>
+#        Operator: <0 hoặc 1> #Với 0 là chỉ số thực, 1 là chỉ số phần trăm.
+#        Value: <giá trị>
+Items:    
+  satthuongthuong:
+    Material: BLAZE_POWDER
+    Name: '&7&l๖Lửa phép &7(+Sát Thương) I'
+    DisplayName: ' &f+3 Sát Thương &7(Thường)'
+    Lore:
+    - ''
+    - '&7Lửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&7⚔ Sức mạnh: &f+3 Sát Thương'   
+    - '&7⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&7◆ ◆ ◆ &7&lTHƯỜNG &7◆ ◆ ◆'
+    - ''
+    - '&8[&6!&8] &7Cầm và nhấp vào sọ'
+    - '&7bạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 30.0-100.0
+    Abilities:
+      '0':
+        Type: 'AttackDamage'
+        Operator: 0
+        Value: 3.0
+  mauthuong:
+    Material: BLAZE_POWDER
+    Name: '&7&l๖Lửa phép &7(+Tim) I'
+    DisplayName: ' &f+2 Tim &7(Thường)'
+    Lore:
+    - ''
+    - '&7Lửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&7⚔ Sức mạnh: &f+2 Tim'   
+    - '&7⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&7◆ ◆ ◆ &7&lTHƯỜNG &7◆ ◆ ◆'
+    - ''
+    - '&8[&6!&8] &7Cầm và nhấp vào sọ'
+    - '&7bạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 30.0-100.0
+    Abilities:
+      '0':
+        Type: 'MaxHealth'
+        Operator: 0
+        Value: 4.0        
+  satthuonghiem:
+    Material: BLAZE_POWDER
+    Name: '&e&l๖Lửa phép &e(+Sát Thương) II'
+    DisplayName: ' &f+5 Sát Thương &e(Hiếm)'
+    Lore:
+    - ''
+    - '&eLửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&e⚔ Sức mạnh: &f+5 Sát Thương'   
+    - '&e⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&e◆ ◆ ◆ &e&lHIẾM &e◆ ◆ ◆'
+    - ''
+    - '&8[&6!&8] &eCầm và nhấp vào sọ'
+    - '&ebạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 30.0-100.0
+    Abilities:
+      '0':
+        Type: 'AttackDamage'
+        Operator: 0
+        Value: 5.0
+  mauhiem:
+    Material: BLAZE_POWDER
+    Name: '&e&l๖Lửa phép &e(+Tim) II'
+    DisplayName: ' &f+3 Tim &e(Hiếm)'
+    Lore:
+    - ''
+    - '&eLửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&e⚔ Sức mạnh: &f+3 Tim'   
+    - '&e⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&e◆ ◆ ◆ &e&lHIẾM &e◆ ◆ ◆'
+    - ''
+    - '&8[&6!&8] &eCầm và nhấp vào sọ'
+    - '&ebạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 30.0-100.0
+    Abilities:
+      '0':
+        Type: 'MaxHealth'
+        Operator: 0
+        Value: 6.0        
+  mauht:
+    Material: BLAZE_POWDER
+    Name: '&6&l๖Lửa phép &6(+Tim) III'
+    DisplayName: ' &6+6 Tim &6(Huyền thoại)'
+    Lore:
+    - ''
+    - '&6Lửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&6⚔ Sức mạnh: &f+6 Tim'   
+    - '&6⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆'
+    - ''
+    - '&8[&6!&8] &6Cầm và nhấp vào sọ'
+    - '&6bạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 30.0-100.0
+    Abilities:
+      '0':
+        Type: 'MaxHealth'
+        Operator: 0
+        Value: 12.0
+  satthuonght:
+    Material: BLAZE_POWDER
+    Name: '&6&l๖Lửa phép &6(+Sát Thương) III'
+    DisplayName: ' &f+7 Sát Thương &6(Huyền thoại)'
+    Lore:
+    - ''
+    - '&6Lửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&6⚔ Sức mạnh: &f+7 Sát Thương'   
+    - '&6⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆'
+    - ''
+    - '&8[&6!&8] &6Cầm và nhấp vào sọ'
+    - '&6bạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 30.0-100.0
+    Abilities:
+      '0':
+        Type: 'AttackDamage'
+        Operator: 0
+        Value: 7.0
+  mauthanh:
+    Material: BLAZE_POWDER
+    Name: '&d&l๖Lửa phép &d(+Tim) IV'
+    DisplayName: ' &d+8 Tim &d(Truyền thuyết)'
+    Lore:
+    - ''
+    - '&dLửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&d⚔ Sức mạnh: &f+18 Tim'   
+    - '&d⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&5&L✧&D&L✧&5&L✧ &d&lTRUYỀN THUYẾT &5&L✧&D&L✧&5&L✧'
+    - ''
+    - '&8[&6!&8] &dCầm và nhấp vào sọ'
+    - '&dbạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 20.0-100.0
+    Abilities:
+      '0':
+        Type: 'MaxHealth'
+        Operator: 0
+        Value: 18.0
+  satthuongthanh:
+    Material: BLAZE_POWDER
+    Name: '&d&l๖Lửa phép &d(+Sát Thương) IV'
+    DisplayName: ' &f+10 Sát Thương &d(Truyền thuyết)'
+    Lore:
+    - ''
+    - '&dLửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&d⚔ Sức mạnh: &f+10 Sát Thương'   
+    - '&d⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&5&L✧&D&L✧&5&L✧ &d&lTRUYỀN THUYẾT &5&L✧&D&L✧&5&L✧'
+    - ''
+    - '&8[&6!&8] &dCầm và nhấp vào sọ'
+    - '&dbạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 20.0-100.0
+    Abilities:
+      '0':
+        Type: 'AttackDamage'
+        Operator: 0
+        Value: 10.0
+  mautoicao:
+    Material: BLAZE_POWDER
+    Name: '&4&l๖Lửa phép &4(+Tim) V'
+    DisplayName: ' &4+10 Tim &4(Truyền thuyết)'
+    Lore:
+    - ''
+    - '&4Lửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&4⚔ Sức mạnh: &f+10 Tim'   
+    - '&4⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+    - ''
+    - '&8[&6!&8] &4Cầm và nhấp vào sọ'
+    - '&4bạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 5.0-100.0
+    Abilities:
+      '0':
+        Type: 'MaxHealth'
+        Operator: 0
+        Value: 20.0
+  satthuongtoicao:
+    Material: BLAZE_POWDER
+    Name: '&4&l๖Lửa phép &4(+Sát Thương) V'
+    DisplayName: ' &f+10 Sát Thương &4(Truyền thuyết)'
+    Lore:
+    - ''
+    - '&4Lửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&4⚔ Sức mạnh: &f+10 Sát Thương'   
+    - '&4⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠'
+    - ''
+    - '&8[&6!&8] &4Cầm và nhấp vào sọ'
+    - '&4bạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 5.0-100.0
+    Abilities:
+      '0':
+        Type: 'AttackDamage'
+        Operator: 0
+        Value: 10.0
+  tocdanhthuong:
+    Material: BLAZE_POWDER
+    Name: '&7&l๖Lửa phép &7(+Tốc Đánh) I'
+    DisplayName: ' &7+1% Tốc Đánh &7(Thường)'
+    Lore:
+    - ''
+    - '&7Lửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&7⚔ Sức mạnh: &f+1% Tốc đánh'   
+    - '&7⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&7◆ ◆ ◆ &7&lTHƯỜNG &7◆ ◆ ◆'
+    - ''
+    - '&8[&6!&8] &7Cầm và nhấp vào sọ'
+    - '&7bạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 30.0-100.0
+    Abilities:
+      '0':
+        Type: 'AttackSpeed'
+        Operator: 1
+        Value: 0.01
+  tocdanhhiem:
+    Material: BLAZE_POWDER
+    Name: '&e&l๖Lửa phép &e(+Tốc Đánh) II'
+    DisplayName: ' &e+2% Tốc Đánh &e(Hiếm)'
+    Lore:
+    - ''
+    - '&eLửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&e⚔ Sức mạnh: &f+2% Tốc đánh'   
+    - '&e⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&e◆ ◆ ◆ &e&lHIẾM &e◆ ◆ ◆'
+    - ''
+    - '&8[&6!&8] &eCầm và nhấp vào sọ'
+    - '&ebạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 30.0-100.0
+    Abilities:
+      '0':
+        Type: 'AttackSpeed'
+        Operator: 1
+        Value: 0.02
+  tocdanhht:
+    Material: BLAZE_POWDER
+    Name: '&6&l๖Lửa phép &6(+Tốc Đánh) III'
+    DisplayName: ' &6+5% Tốc Đánh &6(Huyền Thoại)'
+    Lore:
+    - ''
+    - '&6Lửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&6⚔ Sức mạnh: &f+5% Tốc đánh'   
+    - '&6⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆'
+    - ''
+    - '&8[&6!&8] &6Cầm và nhấp vào sọ'
+    - '&6bạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 30.0-100.0
+    Abilities:
+      '0':
+        Type: 'AttackSpeed'
+        Operator: 1
+        Value: 0.05
+  tocchaythuong:
+    Material: BLAZE_POWDER
+    Name: '&7&l๖Lửa phép &7(+Tốc Chạy) I'
+    DisplayName: ' &7+2% Tốc Chạy &7(Thường)'
+    Lore:
+    - ''
+    - '&7Lửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&7⚔ Sức mạnh: &f+2% Tốc Chạy'   
+    - '&7⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&7◆ ◆ ◆ &7&lTHƯỜNG &7◆ ◆ ◆'
+    - ''
+    - '&8[&6!&8] &7Cầm và nhấp vào sọ'
+    - '&7bạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 30.0-100.0
+    Abilities:
+      '0':
+        Type: 'MovementSpeed'
+        Operator: 1
+        Value: 0.2
+  tocchayhiem:
+    Material: BLAZE_POWDER
+    Name: '&e&l๖Lửa phép &e(+Tốc Chạy) II'
+    DisplayName: ' &e+4% Tốc Chạy &e(Hiếm)'
+    Lore:
+    - ''
+    - '&eLửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&e⚔ Sức mạnh: &f+4% Tốc Chạy'   
+    - '&e⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&e◆ ◆ ◆ &e&lHIẾM &e◆ ◆ ◆'
+    - ''
+    - '&8[&6!&8] &eCầm và nhấp vào sọ'
+    - '&ebạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 30.0-100.0
+    Abilities:
+      '0':
+        Type: 'MovementSpeed'
+        Operator: 1
+        Value: 0.4
+  tocchayht:
+    Material: BLAZE_POWDER
+    Name: '&6&l๖Lửa phép &6(+Tốc Chạy) III'
+    DisplayName: ' &6+6% Tốc Chạy &6(Huyền Thoại)'
+    Lore:
+    - ''
+    - '&6Lửa phép được dùng để phù phép SỌ.'
+    - ''
+    - '&6⚔ Sức mạnh: &f+6% Tốc Chạy'   
+    - '&6⚔ Tỉ lệ thành công: &fNgẫu nhiên'    
+    - ''
+    - '&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆'
+    - ''
+    - '&8[&6!&8] &6Cầm và nhấp vào sọ'
+    - '&6bạn muốn khảm.'
+    Enchants:
+    - 'DAMAGE_ALL:1'  
+    Flags:
+    - 'HIDE_ENCHANTS'    
+    #Tỉ lệ thành công khi khảm:
+    RandomChance: 30.0-100.0
+    Abilities:
+      '0':
+        Type: 'MovementSpeed'
+        Operator: 1
+        Value: 0.6

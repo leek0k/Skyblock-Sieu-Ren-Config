@@ -1,0 +1,50 @@
+mission-file: StatisticsMissions
+island: true
+auto-reward: false
+rewards:
+  commands:
+  - eco give %player% 10000
+  - exp give %player% 1000
+  - is admin msg %player% &e&l$ | &7Hoàn thành thử thách!
+required-checks:
+  - '%topphuquy_group_total_point_normal_SUPERIORSKYBLOCK2% > 10000'
+only-show-if-required-completed: false
+required-statistics:
+  '1':
+    statistics:
+      - 'PLAY_ONE_TICK'
+    amount: 432000
+icons:
+  not-completed:
+    type: IRON_BLOCK
+    name: '&6&LTHỬ THÁCH: &a&lSIÊU ĐẢO &6&lMINE&f&lAHIHI &f&l#1'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&e&lTài Sản: &b10.000'
+    - '&e&lOnline: &bTrên 6 tiếng'
+    - ''
+    - '&7- &e$10.000 , 1000 Exp'
+    - ''
+    - '&c&l ✘ &7Chưa hoàn thành'
+    - ''
+  can-complete:
+    type: IRON_BLOCK
+    name: '&6&LTHỬ THÁCH: &a&lSIÊU ĐẢO &6&lMINE&f&lAHIHI &f&l#1'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&e&lTài Sản: &b10.000'
+    - '&e&lOnline: &bTrên 6 tiếng'
+    - ''
+    - '&7- &e$100.000 , 10.000 Exp'
+    - ''
+    - '&a&l ✔ &7Bạn đã có đủ điều kiện Click vào đây.'
+    enchants:
+      DURABILITY: 1
+    flags:
+    - HIDE_ENCHANTS
+  completed:
+    type: MAP
+    name: '&6&LTHỬ THÁCH: &a&lCẤP ĐẢO &f&l#1'
+    lore:
+    - ''
+    - '&a&l ✔ &7Đã hoàn thành.'

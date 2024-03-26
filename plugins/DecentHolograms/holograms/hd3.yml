@@ -1,0 +1,20 @@
+location: huongdan:-949.5:55.533:1044.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&8&l✶&7⋆&8⋆ &7&lMÁY FARM KHOÁNG SẢN &8⋆&7⋆&8&l✶'
+    height: 0.3
+  - content: ''
+    height: 0.3  
+  - content: '&fMáy được tạo ra từ &bNước &fvà &cLava &fdùng để'
+    height: 0.3 
+  - content: '&ffarm khoáng sản tại &aĐảo &fcủa bạn!'
+    height: 0.3   
+  - content: '&7((Dùng &a/is upgrade &7để nâng cấp gen máy farm quặng))'
+    height: 0.3     
+  actions: {}

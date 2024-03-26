@@ -1,0 +1,456 @@
+# 
+# +------------------------------------------------------+ #
+# |                       Notes                          | #
+# +------------------------------------------------------+ #
+ops-name-color: ''
+nickname-prefix: ''
+max-nick-length: 50
+ignore-colors-in-max-nick-length: true
+change-displayname: true
+teleport-safety: true
+force-disable-teleport-safety: false
+teleport-cooldown: 4
+teleport-delay: 4
+teleport-invulnerability: 0
+teleport-to-center: true
+heal-cooldown: 60
+near-radius: 200
+command-cooldowns:
+  feed: 10
+  home: 70
+  sell: 5
+  condense: 5
+  heal: 30
+  eco: 30
+  pay: 30
+permission-based-item-spawn: false
+spawnmob-limit: 10
+warn-on-smite: true
+drop-items-if-full: false
+notify-no-new-mail: true
+socialspy-commands:
+- msg
+- w
+- r
+- mail
+- m
+- t
+- whisper
+- emsg
+- tell
+- er
+- reply
+- ereply
+- email
+- action
+- describe
+- eme
+- eaction
+- edescribe
+- etell
+- ewhisper
+- pm
+mute-commands:
+- f
+- kittycannon
+player-commands:
+- afk
+- afk.auto
+- back
+- back.ondeath
+- balance
+- balance.others
+- balancetop
+- build
+- chat.color
+- chat.format
+- chat.shout
+- chat.question
+- clearinventory
+- compass
+- depth
+- delhome
+- getpos
+- geoip.show
+- help
+- helpop
+- home
+- home.others
+- ignore
+- info
+- itemdb
+- kit
+- kits.tools
+- list
+- mail
+- mail.send
+- me
+- motd
+- msg
+- msg.color
+- nick
+- near
+- pay
+- ping
+- protect
+- r
+- rules
+- realname
+- seen
+- sell
+- sethome
+- setxmpp
+- signs.create.protection
+- signs.create.trade
+- signs.break.protection
+- signs.break.trade
+- signs.use.balance
+- signs.use.buy
+- signs.use.disposal
+- signs.use.enchant
+- signs.use.free
+- signs.use.gamemode
+- signs.use.heal
+- signs.use.info
+- signs.use.kit
+- signs.use.mail
+- signs.use.protection
+- signs.use.repair
+- signs.use.sell
+- signs.use.time
+- signs.use.trade
+- signs.use.warp
+- signs.use.weather
+- spawn
+- suicide
+- time
+- tpa
+- tpaccept
+- tpahere
+- tpdeny
+- warp
+- warp.list
+- world
+- worth
+- xmpp
+- repair
+- feed
+skip-used-one-time-kits-from-kit-list: false
+kits:
+  nongdan:
+    delay: 86400
+    items:
+    - GRASS 16
+    - DIAMOND 5
+    - IRON_INGOT 5
+    - REDSTONE 8
+    - BREAD 5
+    - COAL 10
+    - GOLDEN_APPLE 1
+  Vip1:
+    delay: 86400
+    items:
+    - DIAMOND 64
+    - EMERALD 32
+    - GOLDEN_APPLE 3
+    - COOKED_BEEF 16
+    - EXP_BOTTLE 64
+    - TORCH 16
+    - GRASS 32
+  Vip2:
+    delay: 86400
+    items:
+    - DIAMOND 64
+    - DIAMOND 64
+    - EMERALD 64
+    - GOLDEN_APPLE 6
+    - COOKED_BEEF 32
+    - EXP_BOTTLE 64
+    - EXP_BOTTLE 16
+    - TORCH 32
+    - GRASS 64
+  Vip3:
+    delay: 86400
+    items:
+    - DIAMOND 64
+    - DIAMOND 64
+    - DIAMOND 64
+    - EMERALD 64
+    - EMERALD 32
+    - GOLDEN_APPLE 9
+    - COOKED_BEEF 48
+    - EXP_BOTTLE 64
+    - EXP_BOTTLE 32
+    - TORCH 48
+    - GRASS 64
+    - GRASS 32
+  Vip4:
+    delay: 86400
+    items:
+    - DIAMOND 64
+    - DIAMOND 64
+    - DIAMOND 64
+    - DIAMOND 64
+    - EMERALD 64
+    - EMERALD 64
+    - GOLDEN_APPLE 12
+    - COOKED_BEEF 64
+    - COOKED_BEEF 32
+    - EXP_BOTTLE 64
+    - EXP_BOTTLE 64
+    - TORCH 64
+    - GRASS 64
+    - GRASS 64
+    - GRASS 64
+  Vip5:
+    delay: 86400
+    items:
+    - DIAMOND 64
+    - DIAMOND 64
+    - DIAMOND 64
+    - DIAMOND 64
+    - DIAMOND 64
+    - EMERALD 64
+    - EMERALD 64
+    - EMERALD 64
+    - EXP_BOTTLE 64
+    - EXP_BOTTLE 64
+    - EXP_BOTTLE 64
+    - TORCH 64
+    - TORCH 64
+    - COOKED_BEEF 64
+    - COOKED_BEEF 64
+    - COOKED_BEEF 64
+    - GOLDEN_APPLE 21
+    - GRASS 64
+    - GRASS 64
+    - GRASS 64
+    - GRASS 64   
+  batdiet:
+    delay: 172700
+    items:
+    - DIAMOND_BLOCK 64   
+    - EMERALD_BLOCK 64   
+    - EXP_BOTTLE 64
+    - EXP_BOTTLE 64
+    - EXP_BOTTLE 64
+    - EXP_BOTTLE 64    
+    - COOKED_BEEF 64
+    - COOKED_BEEF 64
+    - COOKED_BEEF 64
+    - PRISMARINE_SHARD 128     
+    - GOLDEN_APPLE 21
+    - GOLDEN_APPLE 64    
+    - GRASS 64
+    - GRASS 64
+    - GRASS 64
+    - GRASS 64      
+    - /ae magicdust ULTIMATE 2 {USERNAME}
+    - /ae magicdust ULTIMATE 2 {USERNAME}   
+    - /ae magicdust ULTIMATE 2 {USERNAME}    
+    - /ae magicdust LEGENDARY 2 {USERNAME}    
+    - /ae magicdust LEGENDARY 2 {USERNAME}  
+    - /ae magicdust LEGENDARY 2 {USERNAME}      
+    - /ae magicdust HEROIC 2 {USERNAME}
+    - /ae magicdust HEROIC 2 {USERNAME}    
+    - /ae giverandombook {USERNAME} ULTIMATE  
+  batdiet2:
+    delay: 259200
+    items:
+    - /ss give {USERNAME} ghast 1
+    - /ss give {USERNAME} irongolem 1
+    - /ss give {USERNAME} zombie 1
+    - /ss give {USERNAME} skeleton 1  
+    - /ss give {USERNAME} blaze 1     
+  batdiet3:
+    delay: 432000
+    items:
+    - /crazycrates give p phuthuy 1 {USERNAME}
+    - /crazycrates give p cloud 1 {USERNAME}
+    - /crazycrates give p cauvong 1 {USERNAME}        
+enabledSigns:
+- color
+- balance
+- buy
+- sell
+- trade
+- free
+- disposal
+- warp
+- kit
+- mail
+- enchant
+- gamemode
+- heal
+- info
+- spawnmob
+- repair
+- time
+- weather
+sign-use-per-second: 4
+backup:
+  interval: 30
+per-warp-permission: false
+list:
+  Admins: owner admin
+debug: false
+remove-Bedrock-on-disconnect: false
+auto-afk: -1
+auto-afk-kick: -1
+freeze-afk-players: false
+disable-item-pickup-while-afk: false
+cancel-afk-on-interact: true
+cancel-afk-on-move: false
+afk-list-name: none
+death-messages: false
+allow-silent-join-quit: true
+custom-join-message: none
+custom-quit-message: none
+world-teleport-permissions: false
+default-stack-size: -1
+oversized-stacksize: 1
+repair-enchanted: true
+unsafe-enchantments: true
+register-back-in-listener: false
+login-attack-delay: 0
+max-fly-speed: 0.6
+max-walk-speed: 0.8
+mails-per-minute: 50
+max-tempban-time: -1
+last-message-reply-recipient: true
+last-message-reply-recipient-timeout: 180
+milk-bucket-easter-egg: true
+send-fly-enable-on-join: false
+world-time-permissions: false
+command-cooldown-persistence: true
+npcs-in-balance-ranking: false
+pastebin-createkit: true
+allow-bulk-buy-sell: true
+update-bed-at-daytime: true
+world-home-permissions: false
+sethome-multiple:
+  default: 1
+  vip1: 2
+  vip2: 4
+  vip3: 6
+  vip4: 8
+  vip5: 10
+tpa-accept-cancellation: 120
+starting-balance: 5000
+currency-symbol: $
+max-money: 10000000000000
+min-money: -10000
+economy-log-enabled: false
+use-bukkit-permissions: false
+minimum-pay-amount: 0.001
+non-ess-in-help: true
+hide-permissionless-help: true
+chat:
+  radius: 0
+  format: '&8&l(&7&lLevel&7: &e&l{alonsolevels_level}&8&l) &8&l<&7Gamer&8&l> &7{DISPLAYNAME} &r{deluxetags_tag}&r &8»&7 {MESSAGE}'
+  group-formats:
+    vip1: '&8&l(&7&lLevel&7: &e&l{alonsolevels_level}&8&l) &8&l<&7&lTRÙM&8&l> &f{DISPLAYNAME} &r{deluxetags_tag}&r &f»&7 {MESSAGE}'
+    vip2: '&8&l(&7&lLevel&7: &e&l{alonsolevels_level}&8&l) &8&l<&6&lVUA&8&l> &e{DISPLAYNAME} &r{deluxetags_tag}&r &6»&7 {MESSAGE}'
+    vip3: '&8&l(&7&lLevel&7: &e&l{alonsolevels_level}&8&l) &8&l<&c&lQUỶ&8&l> &4{DISPLAYNAME} &r{deluxetags_tag}&r &4»&7 {MESSAGE}'
+    vip4: '&8&l(&7&lLevel&7: &e&l{alonsolevels_level}&8&l) &8&l<&b&lTIÊN&8&l> &3{DISPLAYNAME} &r{deluxetags_tag}&r &b»&7 {MESSAGE}'
+    vip5: '&8&l(&7&lLevel&7: &e&l{alonsolevels_level}&8&l) &8&l<&6&lT&e&lH&6&lẦ&e&lN&8&l> &6&l{DISPLAYNAME} &r{deluxetags_tag}&r &6»&e {MESSAGE}'
+    vip6: '&8&l(&7&lLevel&7: &e&l{alonsolevels_level}&8&l) &e&l⊰⊹ &6&l{DISPLAYNAME} &e&l⊹⊱ &r{deluxetags_tag}&r &6»&e&l {MESSAGE}'       
+    police1: '&e&l★&3&lPolice &3{DISPLAYNAME} &b&l✔ &r{deluxetags_tag}&r &3»&3&l {MESSAGE}'    
+    police2: '&e&l★★&3&lPolice &3{DISPLAYNAME} &b&l✔ &r{deluxetags_tag}&r &3»&3&l {MESSAGE}'
+    police3: '&e&l★★★&3&lPolice &3{DISPLAYNAME} &b&l✔ &r{deluxetags_tag}&r &3»&3&l {MESSAGE}'
+    helper0: '&b&lTrial Helper &b{DISPLAYNAME} &b&l✔ &r{deluxetags_tag}&r &b»&b&l {MESSAGE}'
+    helper1: '&a&l★&b&lHelper &b{DISPLAYNAME} &b&l✔ &r{deluxetags_tag}&r &b»&b&l {MESSAGE}'
+    helper2: '&a&l★★&b&lHelper &b{DISPLAYNAME} &b&l✔ &r{deluxetags_tag}&r &b»&b&l {MESSAGE}'
+    helper3: '&a&l★★★&b&lHelper &b{DISPLAYNAME} &b&l✔ &r{deluxetags_tag}&r &b»&b&l {MESSAGE}'
+    youtuber: '&f&l(&c&lYoutuber&f&l) &c{DISPLAYNAME} &b&l✔ &r{deluxetags_tag}&r &f»&f&l {MESSAGE}'
+    admin: '&e★★★&c&lADMIN &c{DISPLAYNAME} &b&l✔ &r{deluxetags_tag}&r &4»&c&l {MESSAGE}'
+    owner: '&e✯&4&lOWNER &4{DISPLAYNAME} &b&l✔ &r{deluxetags_tag}&r &4»&c&l {MESSAGE}'
+protect:
+  prevent:
+    lava-flow: false
+    water-flow: false
+    water-bucket-flow: false
+    fire-spread: true
+    lava-fire-spread: true
+    flint-fire: false
+    lightning-fire-spread: true
+    portal-creation: false
+    tnt-explosion: true
+    tnt-playerdamage: false
+    tnt-minecart-explosion: true
+    tnt-minecart-playerdamage: false
+    fireball-explosion: true
+    fireball-fire: false
+    fireball-playerdamage: false
+    witherskull-explosion: true
+    witherskull-playerdamage: false
+    wither-spawnexplosion: true
+    wither-blockreplace: true
+    creeper-explosion: false
+    creeper-playerdamage: false
+    creeper-blockdamage: false
+    enderdragon-blockdamage: true
+    enderman-pickup: false
+    villager-death: false
+    entitytarget: true
+    spawn:
+      zombie_baby: true   
+      creeper: false
+      skeleton: false
+      spider: false
+      giant: false
+      zombie: false
+      slime: false
+      ghast: false
+      pig_zombie: false
+      enderman: false
+      cave_spider: false
+      silverfish: false
+      blaze: false
+      magma_cube: false
+      ender_dragon: false
+      pig: false
+      sheep: false
+      cow: false
+      chicken: false
+      squid: false
+      wolf: false
+      mushroom_cow: false
+      snowman: false
+      ocelot: false
+      iron_golem: false
+      villager: false
+      wither: false
+      bat: false
+      witch: false
+      horse: false
+  creeper:
+    max-height: -1
+  disable:
+    fall: false
+    pvp: false
+    drown: false
+    suffocate: false
+    lavadmg: false
+    projectiles: false
+    contactdmg: false
+    firedmg: false
+    lightning: false
+    wither: false
+    weather:
+      storm: false
+      thunder: false
+      lightning: false
+    build: true
+    use: true
+    warn-on-build-disallow: true
+  alert:
+    on-placement: 10,11,46,327
+    on-use: 327
+  blacklist:
+    placement: 10,11,46,327
+    usage: 327
+newbies:
+  announce-format: '&e[!] &fChào mừng &e&l{DISPLAYNAME} &flần đầu đến với &6&LSkyblock MineAhihi &b#{UNIQUE} &a(Hãy "/warp huongdan và /huongdan" để tìm hiểu nhen <3)'
+  starting-balance: 5000
+  kit: nongdan 

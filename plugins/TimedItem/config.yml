@@ -1,0 +1,21 @@
+Settings:
+  #plugin language
+  #插件语言,中文请设置zh
+  language: en
+  #Wether start time counting down on player clicks the item
+  #if false the time counting down will only start when player use the item
+  #armor will start counting down when player take damage
+  #是否在玩家点击物品而非使用物品的时候就开始倒计时
+  start_date_calculate_on_click: true
+  #if players armor expires on damage
+  #reset players max health to 20? prevent some health boost rpg attribute glitches
+  #是否在玩家护甲到期时将玩家血量设置为20? 防止某些RPG插件的血量加成属性在盔甲消失后依然生效
+  reset_player_health_if_armor: true
+  #Enble plugin Sounds?
+  #是否启用音效
+  Sounds: true
+  #automaticly checks expired items in players inventory?
+  auto-check: true
+  #automaticly starts item date count down for timed items in players inventory?
+  auto-start-count-down: true
+

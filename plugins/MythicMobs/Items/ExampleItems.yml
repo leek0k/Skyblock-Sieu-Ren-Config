@@ -1,0 +1,101 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+
+Mahaitaca:
+  Id: RED_MUSHROOM
+  Data: 0
+  Amount: 1
+  Display: '&cNấm &c&lMa hải tặc'
+  Lore:
+  - '&cKill Ma hải tặc &7&o((/warp dugeon))'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2
+Nhenyeutinh:
+  Id: SPIDER_EYE
+  Data: 0
+  Amount: 1
+  Display: '&5Mắt &5&lNhện yêu tinh'
+  Lore:
+  - '&5Kill Nhện yêu tinh &7&o((/warp dugeon))'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2  
+Quyheo:
+  Id: GOLD_NUGGET
+  Data: 0
+  Amount: 1
+  Display: '&eVàng thỏi &e&lÓng ánh'
+  Lore:
+  - '&eKill Phù thủy đen &7&o((/warp dugeon))'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2   
+mulufifer:
+  Id: 298
+  Display: '&alufifer'
+  Options:
+    Color: 19,1,1
+  Enchantments:
+  - DURABILITY:1000
+  - PROTECTION_PROJECTILE:2  
+aolufifer:
+  Id: 299
+  Display: '&aÁo Của lufifer'
+  Options:
+    Color: 19,1,1
+  Enchantments:
+  - DURABILITY:1000
+  - PROTECTION_PROJECTILE:2 
+quanlufifer:
+  Id: 300
+  Display: '&aÁo Của lufifer'
+  Options:
+    Color: 19,1,1
+  Enchantments:
+  - DURABILITY:1000
+  - PROTECTION_PROJECTILE:2 
+unglucifer:
+  Id: 301
+  Display: '&aÁo Của lufifer'
+  Options:
+    Color: 19,1,1
+  Enchantments:
+  - DURABILITY:1000
+  - PROTECTION_PROJECTILE:2   
+kiemlufifer:
+  Id: 272
+  Display: '&ak Của lufifer'
+  Enchantments:
+  - DURABILITY:1000
+  - PROTECTION_PROJECTILE:2  
+manhkhiennguyeu:
+  Id: prismarine_shard
+  Data: 0
+  Amount: 1
+  Display: '&e[◆] &e&lMảnh Khiên Ngư Yêu &e[◆]'
+  Lore:
+  - '&7Sử dụng để đổi khiên trong sự kiện Tết 2023'
+  - '&eKill Ngư Yêu &7&o((/warp dungeon))'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2 
+
+dathivong:
+  Id: dirt
+  Data: 0
+  Amount: 1
+  Display: '&6[◆] &6&lĐất Hi Vọng &6[◆]'
+  Lore:
+  - '&7Sử dụng để đổi khiên trong sự kiện Tết 2023'
+  - '&6Kill Sơn Yêu &7&o((/warp dungeon))'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2 
+
+xuongyeutinhquymao:
+  Id: bone
+  Data: 0
+  Amount: 1
+  Display: '&6[◆] &6&lXương Yêu Tinh Quý Mão &6[◆]'
+  Lore:
+  - '&7Sử dụng để đổi khiên trong sự kiện Tết 2023'
+  - '&6Kill BOSS Yêu Tinh Quý Mão &7&o((/warp dungeon))'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2 

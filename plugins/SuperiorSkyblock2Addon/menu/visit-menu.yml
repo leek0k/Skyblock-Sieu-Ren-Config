@@ -1,0 +1,49 @@
+title: '&6&lDanh sách đảo ghé thăm'
+row: 6
+type: 'visit'
+
+# Các loại Condition - Hiển thị vật phẩm nếu trả về đúng
+### PERMISSION <permission>
+### - Trả về đúng nếu người chơi có quyền <permission>
+
+# Các loại Execute - Thực thi câu lệnh khi click vật phẩm
+### CLOSE - Đóng menu
+### PLAYER_COMMAND <command> - Người chơi thực hiện câu lệnh
+### CONSOLE_COMMAND <command> - Console thực hiện câu lệnh
+### PLAYER_MESSAGE <message> - Gửi tin nhắn cho người chơi
+### CONSOLE_MESSAGE <message> - Gửi tin nhắn cho Console
+### PLAY_SOUND <sound> - Chơi nhạc
+
+items:
+  # Hiển thị thông tin bản thân
+  visit:
+    type: visit
+    item:
+      type: SIGN
+      display: '&e&lĐảo &f&l{island_name}'
+      lore:
+        - '&6&l* &aChủ đảo: &e{island_owner}'
+        - ''
+        - '&6&l* &aThành viên đảo'
+        - '{island_members}'
+        - ''
+        - '&6Nhấp để ghé thăm đảo'
+    slot: 0-44
+  background:
+    item:
+      type: STAINED_GLASS_PANE
+      damage: 15
+      display: ' '
+    slot: 45-51
+  previous-page:
+    type: previous-page
+    item:
+      type: ARROW
+      display: '&e&lTrang trước'
+    slot: 52
+  next-page:
+    type: next-page
+    item:
+      type: ARROW
+      display: '&a&lTrang kế'
+    slot: 53

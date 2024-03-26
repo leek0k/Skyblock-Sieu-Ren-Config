@@ -1,0 +1,23 @@
+requireSet: ''
+material: DIAMOND_SWORD
+customModelData: 0
+itemFlags: []
+name: '&d&l↣&c&l❤&d&l↢ &f&lKIẾM &d&lTÌNH YÊU &d&l↣&c&l❤&d&l↢'
+lore:
+  - ''
+  - '&d&l↣&c&l❤&d&l↢ &d&lTÌNH YÊU &d&l&d&l↣&c&l❤&d&l↢'
+  - '&d* Tăng 30% damage.'
+  - '&0&o#Kiemtinhyeu'
+enchants:
+  - 'sharpness:120'
+  - 'smite:4'
+  - 'baneofarthropods:4'
+  - 'unbreaking:5'
+  - 'fire_aspect:3'
+  - 'looting:5'
+  - 'buayeu:2'
+events:
+  ATTACK:
+    chance: 100
+    effects:
+      - 'INCREASE_DAMAGE:30'

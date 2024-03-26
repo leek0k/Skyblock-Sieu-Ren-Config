@@ -1,0 +1,154 @@
+{
+  "prefix": "§8(§bzAuctionHouse§8)",
+  "commandHelp": "§a» §6%syntaxe% §7- §e%description%",
+  "noPermission": "§cYou don't have permission !",
+  "syntaxeError": "§cYou must execute the command like this §7: §a%command%",
+  "commandError": "§cThis argument does not exist!",
+  "creativeError": "§cYou can't sell an item in creative mode !",
+  "maxPrice": "§eYou can't put more than §6%max%§e for the price !",
+  "minPrice": "§eYou can't put less than §6%min%§e for the price !",
+  "noMoney": "§eYou don't have enough money to buy this !",
+  "noMore": "§eYou can't put more §6%item% §eitems !",
+  "blacklistItem": "§eYou can't put this item !",
+  "noHoldingItem": "§eAre you stupid ? You can't sell air !",
+  "addItem": "§eYou just put §6%item% §eon sale !",
+  "buyerPurchased": "§6%player% §ejust bought §6%item% §efor §6%price%§e.",
+  "itemPurchased": "§eYou just purchased §6%item% §e!",
+  "removeItem": "§eYou just removed this item from the sales !",
+  "inventoryFull": "§cYou can not retrieve this item, your inventory is full!",
+  "errorBuy": "§cYou can't buy this item",
+  "cooldown": "§cÈ necessario attendere §6%time%",
+  "second": "secondo",
+  "minute": "minuto",
+  "hour": "ore",
+  "day": "giorno",
+  "itemLore": [
+    "§7§m------------------------------",
+    "§8[§6!§8] §e%status%",
+    "",
+    "  §6* §eVenditore§7: §6%seller%",
+    "  §6* §ePrezoz§7: §6%price%",
+    "  §6* §eId§7: §6%id%",
+    "  §6* §eScade tra§7: §6%time%",
+    "§7§m------------------------------"
+  ],
+  "itemLoreBuyOrExpire": [
+    "§7§m------------------------------",
+    "§8[§6!§8] §eClicca per riscattare questo prodotto",
+    "",
+    "  §6* §eScade tra§7: §6%time%",
+    "§7§m------------------------------"
+  ],
+  "statusBuyer": "Clicca per comprare questo oggetto",
+  "statusPlayer": "",
+  "descriptionDefault": "Apri la casa d'aste",
+  "descriptionVersion": "Prendi la versione del plugin",
+  "descriptionReload": "Ricarica il lang e il config",
+  "descriptionSell": "Vendi un oggetto",
+  "buy": "§aCompra",
+  "remove": "§aRimuovi",
+  "back": "§aIndietro",
+  "guiRemove": "§6» §aRimuovi",
+  "guiRemoveAdmin": "§6» §aRimuovi - Admin",
+  "guiBuy": "§6» §aCompra",
+  "guiExpired": "§6» §eScade tra §7(§a%p%§7/§a%mp%§7)",
+  "guiBuying": "§6» §eCompra §7(§a%p%§7/§a%mp%§7)",
+  "guiItems": "§6» §eProdotti §7(§a%p%§7/§a%mp%§7)",
+  "guiPlayer": "§6» §aI tuoi oggetti",
+  "guiAuction": "§6» §eAH §7(§a%p%§7/§a%mp%§7)",
+  "guiAuctionCagory": "§6» §e%name% §7(§a%p%§7/§a%mp%§7)",
+  "guiCategory": "§6» §eCategorie",
+  "guiConfig": "§6» §eConfig",
+  "guiLang": "§6» §Language",
+  "buttonPrevious": {
+    "name": "§6» §ePrecedente",
+    "item": 262,
+    "lore": null
+  },
+  "buttonNext": {
+    "name": "§6» §eSuccessivo",
+    "item": 262,
+    "lore": null
+  },
+  "buttonInformation": {
+    "name": "§6» §eInformazioni",
+    "item": 340,
+    "lore": [
+      "§6» §eProdotti§7: §6%item%",
+      "§6» §eCome vendere§7: §6/ah sell <price>"
+    ]
+  },
+  "buttonExpire": {
+    "name": "§6» §eProdotti scaduti",
+    "item": 340,
+    "lore": [
+      "§6» §eHai §6%item% §eprodotti scaduti"
+    ]
+  },
+  "buttonBuying": {
+    "name": "§6» §eCompra un prodotto",
+    "item": 340,
+    "lore": [
+      "§6» §eHai comprato §6%item% §eprodotti"
+    ]
+  },
+  "buttonShowItems": {
+    "name": "§6» §eProdotti",
+    "item": 340,
+    "lore": [
+      "§6» §eHai §6%item% §eprodotti all'asta"
+    ]
+  },
+  "buttonCategory": {
+    "name": "§6» §eCategories",
+    "item": 340,
+    "lore": [
+      "§6» §eMostra le categorie"
+    ]
+  },
+  "buttonBack": {
+    "name": "§cIndietro",
+    "item": 399,
+    "lore": null
+  },
+  "buttonCategoryBlocks": {
+    "name": "§6» §eCategoria§7: §6Blocchi",
+    "item": 3,
+    "lore": [
+      "§6» §eClicca per aprire questa categoria"
+    ]
+  },
+  "buttonCategoryWeapons": {
+    "name": "§6» §eCategoria§7: §6Armi",
+    "item": 276,
+    "lore": [
+      "§6» §eClicca per aprire questa categoria"
+    ]
+  },
+  "buttonCategoryTools": {
+    "name": "§6» §eCategoria§7: §6Attrezzi",
+    "item": 278,
+    "lore": [
+      "§6» §eClicca per aprire questa categoria"
+    ]
+  },
+  "buttonCategoryPotions": {
+    "name": "§6» §eCategoria§7: §6Pozioni",
+    "item": 373,
+    "lore": [
+      "§6» §eClicca per aprire questa categoria"
+    ]
+  },
+  "buttonCategoryMisc": {
+    "name": "§6» §eCategoria§7: §6Prodotti vari",
+    "item": 280,
+    "lore": [
+      "§6» §eClicca per aprire questa categoria"
+    ]
+  },
+  "categoryBlock": "Blocchi",
+  "categoryWeapons": "Armi",
+  "categoryTools": "Attrezzi",
+  "categoryPotions": "Pozioni",
+  "categoryMisc": "Prodotti Vari"
+}

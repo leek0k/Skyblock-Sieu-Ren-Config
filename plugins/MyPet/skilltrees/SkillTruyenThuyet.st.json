@@ -1,0 +1,35 @@
+{
+  "ID": "SkillTruyenThuyet",
+  "Order": 9007199254740991,
+  "Name": "Truyền Thuyết",
+  "MobTypes": [
+    "Blaze",
+    "Enderman",
+    "Snowman",
+    "Witch"
+  ],
+  "Skills": {
+    "Life": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Health": "+10"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "%1>1<1": {
+          "Health": "+500",
+          "Timer": "+3"
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Damage": "+10"
+        }
+      }
+    }
+  }
+}

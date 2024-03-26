@@ -1,0 +1,49 @@
+name: police3
+permissions:
+- openinv.*
+- bukkit.command.teleport
+- chatsentinel.bypass.cooldown
+- essentials.fly
+- essentials.god
+- essentials.jail
+- essentials.jail.allow
+- essentials.seen
+- essentials.seen.extra
+- essentials.seen.ip
+- essentials.seen.ipsearch
+- essentials.seen.location
+- essentials.socialspy
+- essentials.teleport
+- essentials.teleport.timer.bypass
+- essentials.togglejail
+- essentials.tp
+- essentials.tp.others
+- essentials.tpo
+- essentials.tpoffline
+- essentials.tptoggle
+- essentials.vanish
+- essentials.warp
+- finditem.command
+- finditem.command.info
+- finditem.command.info.item
+- finditem.command.info.player
+- litebans.ban
+- litebans.banip
+- litebans.dupeip
+- litebans.group.police3
+- litebans.ipban
+- litebans.kick
+- litebans.tempban
+- litebans.unban.own
+- noflyzone.bypass
+- playerpoints.look
+- playervaults.admin
+- staffscam.command.mode
+- superior.admin.teleport
+- vulcan.bypass
+- weight.92
+parents:
+- police2
+suffixes:
+- '&e&l★★★&r':
+    priority: 8

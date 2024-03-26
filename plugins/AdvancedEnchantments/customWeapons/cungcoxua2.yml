@@ -1,0 +1,28 @@
+# Advanced Sets Weapons
+
+# What set should be required in order to apply effects from this weapon?
+# Set to '' to not require a set
+requireSet: ''
+
+# Currently supported are only melee weapons
+material: BOW
+
+# Weapon's name
+name: '&b&lCung Tên Chiến Tranh &7(+1)'
+
+# Weapon's lore
+lore:
+  - ''
+  - '&b◆ ◆ &b&lCỔ XƯA &b◆ ◆'
+  - '&3* &bCung tên trong chiến tranh'  
+  - '&7&o(Mặc full Set Cổ Xưa để kích hoạt.)'
+  - '&0&o#cungcoxua2'
+# These enchants will be applied by default when giving out weapons
+# Advanced Enchantments are supported
+enchants:
+  - 'power:8'
+  - 'unbreaking:3'
+  - 'flame:1'
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for custom weapons
+events:

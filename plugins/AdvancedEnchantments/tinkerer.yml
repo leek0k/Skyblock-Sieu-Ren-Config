@@ -1,0 +1,47 @@
+messages: {}
+inventory:
+  open-sound: CHEST_OPEN
+  name: Vật phẩm của bạn      Tái chế
+  inv-size: 54
+  items:
+    agree:
+      type: STAINED_GLASS_PANE
+      id: 14
+      name: '&e[!] Nhấp vào đây để ĐỒNG Ý tái chế'
+      lore: []
+    placeholder-items:
+      type: THIN_GLASS
+      id: 0
+      name: ' '
+      lore: []
+    confirm-agree:
+      enable: false
+      type: STAINED_GLASS_PANE
+      id: 5
+      name: '&a[!] Nhấp lần nữa để BẮT ĐẦU tái chế'
+      lore: []
+      enabled: true
+      sound: BLOCK_LEVER_CLICK
+    confirm-agree-tinkerer:
+      enable: false
+      type: CHEST
+      id: 5
+      name: '&a[!] Nhấp lần nữa để BẮT ĐẦU tái chế'
+      lore: []
+prices:
+  type: exp
+  amount: 50
+  formula: (%amount%*%enchants%)*%durability%
+items:
+  money:
+    type: PAPER
+    id: 0
+    name: '&cMoney &7(%amount%)$'
+    lore:
+    - '&c[!]Chuột phải để sử dụng'
+  exp:
+    type: EXP_BOTTLE
+    id: 0
+    name: '&a&lExperience Bottle &7(Chuột-phải)'
+    lore:
+    - '&dSố lượng: &f%amount% XP'

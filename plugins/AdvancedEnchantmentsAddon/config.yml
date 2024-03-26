@@ -1,0 +1,174 @@
+task:
+  # Cập nhật set AE đang mặc trên người
+  set-combo:
+    # Bật/tắt tính năng
+    enable: true
+    # Số tick mỗi lần chạy cập nhật (không cập nhật khi reload config)
+    auto-update-interval: 20
+  remove-enchant:
+    # Số tick mỗi lần chạy cập nhật (không cập nhật khi reload config)
+    auto-update-interval: 5
+    # Số lượng người mỗi lần cập nhật
+    # Giả sử auto-update-interval: 5 và auto-update-per-player: 10
+    # thì cứ mỗi 5 tick sẽ cập nhật vật phẩm của 10 người chơi đang online
+    auto-update-per-player: 10
+    # Danh sách các nhóm phù phép sẽ bị xóa (không phân biệt viết thường, viết hoa)
+    # - $ALL để xóa toàn bộ
+    group-blacklist:
+      - ROYAL
+      - test_group2
+    # Danh sách các phù phép sẽ bị xóa (không phân biệt viết thường, viết hoa)
+    # - $ALL để xóa toàn bộ
+    enchant-blacklist:
+      - test_example1
+    remove-on-click: false
+
+# Placeholder
+# %aeaddon_set_combo% - Hiển thị tên set AE đang mặc
+set-combo:
+  # Trường hợp không có set nào #&d☾&c⦿&d☽ &b&lTHUỶ VƯƠNG THẦN &d☾&c⦿&d☽
+  EMPTY: ""
+  # Các trường hợp có set
+  Truyenthuyet: ""
+  Thuongco: "&2&l⌘⌘"
+  Bavuong: ""
+  Saiyan: ""
+  Toicao: ""
+  Huyenthoai: ""
+  SetQuyMaoTruyenThuyet: ""
+  SetQuyMaoHuyenThoai: ""
+  SetQuyMaoToiCao: ""
+  thuytinh: "&d☾&c⦿&d☽"
+  hoatinh: "&d☾&c⦿&d☽"
+  moctinh: "&d☾&c⦿&d☽"
+  thotinh: "&d☾&c⦿&d☽"
+  kimtinh: "&d☾&c⦿&d☽"
+
+# Danh sách vật phẩm
+list:
+  remove1:
+    # Loại vật phẩm
+    # remove-enchant: dùng để gỡ phù phép
+    type: remove-enchant
+    # Vật phẩm hiển thị
+    item:
+      type: STONE
+      glowing: true
+      display: '&8&lGiấy gỡ phù phép'
+      lore:
+        - ''
+        - '&eDùng để gỡ các phù phép theo nhóm SIMPLE và ELITE'
+        - ''
+        - '&aTỉ lệ thành công sau khi gỡ: &f%success%'
+    # Danh các nhóm có thể gỡ
+    # $ALL - để áp dụng cho tất cả nhóm
+    groups:
+      - test_group1
+      - test_group2
+    # Tỉ lệ thành công sau khi gỡ
+    success: 50
+    # Tỉ lệ phá hủy sau khi gỡ
+    destroy: 0
+    # Trả sách khi gỡ, nếu false chỉ xóa phù phép và không hoàn trả sách
+    return-books: true
+  remove2:
+    type: remove-enchant
+    item:
+      type: STONE
+      glowing: true
+      display: '&8&lGiấy gỡ phù phép'
+      lore:
+        - ''
+        - '&eDùng để gỡ phù phép tất cả các nhóm'
+        - ''
+        - '&aTỉ lệ thành công sau khi gỡ: &f%success%'
+    groups:
+      - $ALL
+    success: 50
+    destroy: 0
+    return-books: false
+shield-damage-reduction:
+  # Kích hoạt tính năng
+  enabled: true
+  worlds: []
+  # Lượng sát thương sẽ bị giảm
+  # Công thức cho các phiên bản 1.8: (damage - 1) * 50%    1.9: damage * 33%   1.11: damage * 0%
+  # Công thức dame reduction = (damage - damageReductionAmount) * damageReductionPercentage / 100
+  generalDamageReductionAmount: 0
+  generalDamageReductionPercentage: 80
+  # Lượng sát thương giảm từ cung tên,...
+  # Thiết lập amount = 0 và percentage = 100 để cung tên không bị giảm sát thương
+  projectileDamageReductionAmount: 0
+  projectileDamageReductionPercentage: 80    
+# Danh sách combo tấn công kích hoạt ce theo set (yêu cầu có config task.set-combo.enable = true)
+set-combo-attack:
+  default:
+    enable: true
+    # Số hit để kích hoạt, đến hit thứ 5 sẽ kích hoạt CE
+    combo-hit: 5
+    # Số ae kích hoạt
+    combo-ae: 10
+    # Khi đánh và bị chặn bởi khiên thì sẽ reset điểm combo của người chơi đang tấn công
+    block-shield-reset-combo: true
+    # Thời gian delay giữa 2 lần cộng combo
+    delay-attack-seconds: 1.0
+    # Thời gian mất combo nếu không tấn công
+    lost-combo-seconds: 3.0
+    # Thông báo
+    notify:
+      enable: true
+      # Mode thông báo
+      # ACTION_BAR - Hiển thị trên action bar
+      # MESSAGE - Hiển thị tin nhắn
+      mode: MESSAGE
+      # Action bar theo combo
+      ready-combo:
+        default: "&fx%combo%"
+        0: "Reset combo"
+        1: "&7||||||||| &fx1"
+        2: "&a|||&7|||||| &fx2"
+        3: "&a||||||&7||| &fx3"
+        4: "&a|||||||||&7 &fx4"
+      final-combo: "&c&lAE COMBO - Kích hoạt %combo_ae% CE"
+      # 1.13+: ENTITY_ENDER_DRAGON_GROWL
+      final-combo-sound: ENTITY_ENDERDRAGON_GROWL
+  Huyenthoai:
+    enable: true
+    combo-hit: 5
+    combo-ae: 10
+    block-shield-reset-combo: true
+    delay-attack-seconds: 0.5
+    lost-combo-seconds: 3.0
+    notify:
+      enable: true
+      mode: MESSAGE
+      ready-combo:
+        default: "&fx%combo%"
+        0: "Reset combo"
+        1: "&6&l1 HIT"
+        2: "&6&l2 HIT"
+        3: "&6&l3 HIT"
+        4: "&6&l4 HIT"
+      final-combo: "&c&lKích COMBO - Kích hoạt %combo_ae% CE"
+      final-combo-sound: ENTITY_ENDERDRAGON_GROWL
+      
+task:
+  # Cập nhật kho đồ (kiểm tra kho đồ full)
+  inventory-checker:
+    auto-update-interval: 10
+
+# Chặn đập block khi full kho đồ
+full-inventory-break-cancel:
+  # Kích hoạt tính năng
+  enable: false
+  # Thời gian delay giữa 2 lần cảnh báo
+  delay-seconds: 5
+  # Thông báo
+  message: '&c&lKho đồ của bạn đang đầy, hãy dọn dẹp kho đồ để có thể tiếp tục mine!'
+
+# Liên quan sách CE
+enchant-book:
+  # Chặn ép sách CE vào vật phẩm plugin ItemAbility
+  cancel-enchant-item-ability:
+    enable: true
+    message: '&c&lKhông thể ép sách CE vào vật phẩm này!'

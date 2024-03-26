@@ -1,0 +1,135 @@
+# Categories are a way of grouping up quests.
+# When a player uses /quests, a menu of categories will be presented to them.
+# When a player clicks ona category, a list of quests under that category will show.
+# If categories are disabled, all quests will be shown under one big GUI.
+# Players can access specific categories by command using /quests c [category].
+# If a quest does not have a category, it will not be shown.
+categories:
+# Categories are a way of grouping up quests.
+# When a player uses /quests, a menu of categories will be presented to them.
+# When a player clicks ona category, a list of quests under that category will show.
+# If categories are disabled, all quests will be shown under one big GUI.
+# Players can access specific categories by command using /quests c [category].
+# If a quest does not have a category, it will not be shown.
+categories:
+  bingo:
+    display:
+      name: ""
+      lore:
+        - ""
+        - "&e&lHướng dẫn:"
+        - " &7Bạn phải làm nhiệm vụ để lên cấp levels (XP)"
+        - " &7Sau khi lên cấp sẽ được +6 điểm skill ((/skills))"
+        - " &71 Điểm Skill = 1 Cấp Skill (có tất cả 100 cấp skill)"
+        - " &7và 6 hệ skills riêng biệt."
+        - " &7Khi lên 1 số cấp nhất định bạn sẽ được mở khóa các"
+        - " &7nhiệm vụ mới xịn xò hơn và rất nhiều phần thưởng xịn!!"
+        - ""
+        - "&e&lLệnh Cơ Bản:"
+        - " &a/checknhiemcu &7-> &fXem các cấp độ nhận nhiệm vụ"
+        - " &a/q &7-> &fMở bảng menu nhiệm vụ"
+        - " &a/diemskill &7-> &fMở bảng nâng cấp chỉ số"
+        - " &a/warp nhiemvu &7-> &fDịch chuyển sang đảo nhiệm vụ"
+      type: "WOOD_AXE"
+
+  chatgo:
+    display:
+      name: ""
+      lore:
+        - ""
+        - "&e&lHướng dẫn:"
+        - " &7Bạn phải làm nhiệm vụ để lên cấp levels (XP)"
+        - " &7Sau khi lên cấp sẽ được +6 điểm skill ((/skills))"
+        - " &71 Điểm Skill = 1 Cấp Skill (có tất cả 100 cấp skill)"
+        - " &7và 6 hệ skills riêng biệt."
+        - " &7Khi lên 1 số cấp nhất định bạn sẽ được mở khóa các"
+        - " &7nhiệm vụ mới xịn xò hơn và rất nhiều phần thưởng xịn!!"
+        - ""
+        - "&e&lLệnh Cơ Bản:"
+        - " &a/checknhiemcu &7-> &fXem các cấp độ nhận nhiệm vụ"
+        - " &a/q &7-> &fMở bảng menu nhiệm vụ"
+        - " &a/diemskill &7-> &fMở bảng nâng cấp chỉ số"
+        - " &a/warp nhiemvu &7-> &fDịch chuyển sang đảo nhiệm vụ"
+      type: "STONE_AXE"
+      permission-required: true  
+  khaithac:
+    display:
+      name: ""
+      lore:
+        - ""
+        - "&e&lHướng dẫn:"
+        - " &7Bạn phải làm nhiệm vụ để lên cấp levels (XP)"
+        - " &7Sau khi lên cấp sẽ được +6 điểm skill ((/skills))"
+        - " &71 Điểm Skill = 1 Cấp Skill (có tất cả 100 cấp skill)"
+        - " &7và 6 hệ skills riêng biệt."
+        - " &7Khi lên 1 số cấp nhất định bạn sẽ được mở khóa các"
+        - " &7nhiệm vụ mới xịn xò hơn và rất nhiều phần thưởng xịn!!"
+        - ""
+        - "&e&lLệnh Cơ Bản:"
+        - " &a/checknhiemcu &7-> &fXem các cấp độ nhận nhiệm vụ"
+        - " &a/q &7-> &fMở bảng menu nhiệm vụ"
+        - " &a/diemskill &7-> &fMở bảng nâng cấp chỉ số"
+        - " &a/warp nhiemvu &7-> &fDịch chuyển sang đảo nhiệm vụ"
+      type: "IRON_AXE"
+      permission-required: true  
+  de13:
+    display:
+      name: ""
+      lore:
+        - ""
+        - "&e&lHướng dẫn:"
+        - " &7Bạn phải làm nhiệm vụ để lên cấp levels (XP)"
+        - " &7Sau khi lên cấp sẽ được +6 điểm skill ((/skills))"
+        - " &71 Điểm Skill = 1 Cấp Skill (có tất cả 100 cấp skill)"
+        - " &7và 6 hệ skills riêng biệt."
+        - " &7Khi lên 1 số cấp nhất định bạn sẽ được mở khóa các"
+        - " &7nhiệm vụ mới xịn xò hơn và rất nhiều phần thưởng xịn!!"
+        - ""
+        - "&e&lLệnh Cơ Bản:"
+        - " &a/checknhiemcu &7-> &fXem các cấp độ nhận nhiệm vụ"
+        - " &a/q &7-> &fMở bảng menu nhiệm vụ"
+        - " &a/diemskill &7-> &fMở bảng nâng cấp chỉ số"
+        - " &a/warp nhiemvu &7-> &fDịch chuyển sang đảo nhiệm vụ"
+      type: "GOLD_AXE"  
+      permission-required: true  
+  de45:
+    display:
+      name: ""
+      lore:
+        - ""
+        - "&e&lHướng dẫn:"
+        - " &7Bạn phải làm nhiệm vụ để lên cấp levels (XP)"
+        - " &7Sau khi lên cấp sẽ được +6 điểm skill ((/skills))"
+        - " &71 Điểm Skill = 1 Cấp Skill (có tất cả 100 cấp skill)"
+        - " &7và 6 hệ skills riêng biệt."
+        - " &7Khi lên 1 số cấp nhất định bạn sẽ được mở khóa các"
+        - " &7nhiệm vụ mới xịn xò hơn và rất nhiều phần thưởng xịn!!"
+        - ""
+        - "&e&lLệnh Cơ Bản:"
+        - " &a/checknhiemcu &7-> &fXem các cấp độ nhận nhiệm vụ"
+        - " &a/q &7-> &fMở bảng menu nhiệm vụ"
+        - " &a/diemskill &7-> &fMở bảng nâng cấp chỉ số"
+        - " &a/warp nhiemvu &7-> &fDịch chuyển sang đảo nhiệm vụ"
+      type: "GOLD_AXE"  
+      permission-required: true 
+
+  boss:
+    display:
+      name: ""
+      lore:
+        - ""
+        - "&e&lHướng dẫn:"
+        - " &7Bạn phải làm nhiệm vụ để lên cấp levels (XP)"
+        - " &7Sau khi lên cấp sẽ được +6 điểm skill ((/skills))"
+        - " &71 Điểm Skill = 1 Cấp Skill (có tất cả 100 cấp skill)"
+        - " &7và 6 hệ skills riêng biệt."
+        - " &7Khi lên 1 số cấp nhất định bạn sẽ được mở khóa các"
+        - " &7nhiệm vụ mới xịn xò hơn và rất nhiều phần thưởng xịn!!"
+        - ""
+        - "&e&lLệnh Cơ Bản:"
+        - " &a/checknhiemcu &7-> &fXem các cấp độ nhận nhiệm vụ"
+        - " &a/q &7-> &fMở bảng menu nhiệm vụ"
+        - " &a/diemskill &7-> &fMở bảng nâng cấp chỉ số"
+        - " &a/warp nhiemvu &7-> &fDịch chuyển sang đảo nhiệm vụ"
+      type: "GOLD_AXE"  
+      permission-required: true       

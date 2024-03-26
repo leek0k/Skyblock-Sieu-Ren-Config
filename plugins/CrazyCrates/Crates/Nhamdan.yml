@@ -1,0 +1,458 @@
+Crate:
+  CrateType: Cosmic #Type of crate (CSGO/QuadCrate/QuickCrate/Roulette/CrateOnTheGo/FireCracker/Wonder/Wheel/War/Cosmic(This requires a additional info to work.)).
+  CrateName: '&6&lHòm Nhâm Dần' #Name of the Inventory if a GUI crate.
+  StartingKeys: 0 #Starting amount of keys when the player 1st joins.
+  InGUI: false #If the crate shows in the /cc GUI. (If the crate type is QuickCrate/CrateOnTheGo/FireCracker then the Crate will not work. Quick Crate requires a Physical Crate.)
+  Slot: 23 #Slot the item is in the GUI.
+  OpeningBroadCast: false #Enables/Disables the Broadcasts message when they open a crate.
+  BroadCast: '%Prefix%&6&l%Player% &7is opening a &7&lBasic Chest&7.' #Message that is broadcasted when opening the crate.
+  Item: '130' #Item the crate is in the GUI
+  Glowing: false #If the crate in the main /cc GUI is glowing or not.
+  Name: '&6&lHÒM NHÂM DẦN' #Name of the item in the GUI.
+  Lore: #The lore of the item in the GUI.
+    - '&e/hombau&7 để mua Hòm Báu.' 
+    - '&r'
+    - '&7 ◆ &nChuột-trái&r &bđể mở Hòm Báu nếu bạn đã mua.'
+    - '&7 ◆ &nChuột-Phải&r &bđể xem qua vật phẩm trong Hòm.'
+    - '&r'
+    - '&7Bạn đang có &c&n%keys%&r &7◆ &b&nHòm Kim Cương&r &7◆.'
+  Preview:
+    #Turn on and off the preview for this crate.
+    Toggle: true
+    #How many lines the previewChest should have. Including Header and Bottom (Between 3 and 6)
+    ChestLines: 6
+    Glass:
+      #Turn the glass boarder in the preview on and off.
+      Toggle: true
+      #The item that shows in the boarder. Can be glass or any other item.
+      Item: 'IRON_FENCE'     
+  Hologram:
+    #Toggle on and off the holograms for the crates.
+    Toggle: true
+    #The height of the hologram above the crate.
+    Height: 1.5
+    #The message that will be displayed.
+    Message:
+      - '&6☾&f✗&6☽ &e&nHÒM&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+      - '&f(!) Chuột trái để xem qua'
+    #The tiers in the Crate      
+  PhysicalKey:
+    Name: '&6☾&f✗&6☽ &e&nChìa Khóa&r &6&lNHÂM DẦN&r &6☾&f✗&6☽' #Name of the Key.
+    Lore:
+    - '&r'
+    - '&7 ◆ &nChuột-trái&r &fđể mở &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    - '&7 ◆ &nChuột-Phải&r &fđể xem qua vật phẩm trong.'
+    Item: '351:14' #The item the key is.
+    Glowing: true #Makes the key look enchanted.
+  Tiers:
+    Basic:
+      #The in-game name of the Crate
+      Name: '&f&lThường'
+      #Use the MetaData for the color of the glass
+      Color: 265
+      #Chance of that item getting picked. It would be 80/100 chance because MaxRange is 100.
+      Chance: 50
+      #The max range that the chance will go though.
+      MaxRange: 100
+    UnCommon:
+      Name: '&e&lMay Mắn'
+      Color: 266
+      Chance: 40
+      MaxRange: 100
+    Rare:
+      Name: '&6☾&f✗&6☽ &6&lPhát Tài &6☾&f✗&6☽'
+      Color: 264
+      Chance: 30
+      MaxRange: 100         
+  Prizes:
+    1:
+      DisplayName: '&c&lLì xì I'
+      DisplayItem: '351:1'
+      DisplayAmount: 1
+      Lore:
+      - '&fNhận x1 &e&lHoa Mai &f+ x1 &d&lHoa Đào'
+      MaxRange: 100
+      Chance: 90
+      Firework: false
+      Tiers:
+        - 'Basic'      
+      Glowing: false
+      Commands:
+        - 'ie give hoamai %player% 1'
+        - 'ie give hoadao %player% 1'
+    2:
+      DisplayName: '&c&lLì xì II'
+      DisplayItem: '351:1'
+      DisplayAmount: 1
+      Lore:
+      - '&fNhận x2 &e&lHoa Mai &f+ x2 &d&lHoa Đào'
+      MaxRange: 100
+      Chance: 30
+      Firework: false
+      Tiers:
+        - 'Basic'      
+      Glowing: false
+      Commands:
+        - 'ie give hoamai %player% 2'
+        - 'ie give hoadao %player% 2'
+    3:
+      DisplayName: '&c&lLì xì III'
+      DisplayItem: '351:1'
+      DisplayAmount: 1
+      Lore:
+      - '&fNhận x3 &e&lHoa Mai &f+ x3 &d&lHoa Đào'
+      MaxRange: 100
+      Chance: 30
+      Firework: false
+      Tiers:
+        - 'Basic'      
+      Glowing: false
+      Commands:
+        - 'ie give hoamai %player% 3'
+        - 'ie give hoadao %player% 3'
+    4:
+      DisplayName: '&c&lLì xì IV'
+      DisplayItem: '351:1'
+      DisplayAmount: 1
+      Lore:
+      - '&fNhận x4 &e&lHoa Mai &f+ x4 &d&lHoa Đào'
+      MaxRange: 100
+      Chance: 25
+      Firework: false
+      Tiers:
+        - 'Basic'      
+      Glowing: false
+      Commands:
+        - 'ie give hoamai %player% 4'
+        - 'ie give hoadao %player% 4'
+    5:
+      DisplayName: '&c&lLì xì V'
+      DisplayItem: '351:1'
+      DisplayAmount: 1
+      Lore:
+      - '&fNhận x5 &e&lHoa Mai &f+ x5 &d&lHoa Đào'
+      MaxRange: 100
+      Chance: 20
+      Firework: false
+      Tiers:
+        - 'Basic'      
+      Glowing: false
+      Commands:
+        - 'ie give hoamai %player% 5'
+        - 'ie give hoadao %player% 5'
+    6:
+      DisplayName: '&c&lLì xì VI'
+      DisplayItem: '351:1'
+      DisplayAmount: 1
+      Lore:
+      - '&fNhận x6 &e&lHoa Mai &f+ x6 &d&lHoa Đào'
+      MaxRange: 100
+      Chance: 15
+      Firework: false
+      Tiers:
+        - 'Uncommon'      
+      Glowing: true
+      Commands:
+        - 'ie give hoamai %player% 6'
+        - 'ie give hoadao %player% 6'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &c&lLì xì VI&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    7:
+      DisplayName: '&c&lLì xì VII'
+      DisplayItem: '351:1'
+      DisplayAmount: 1
+      Lore:
+      - '&fNhận x7 &e&lHoa Mai &f+ x7 &d&lHoa Đào'
+      MaxRange: 100
+      Chance: 5
+      Firework: false
+      Tiers:
+        - 'Uncommon'      
+      Glowing: true
+      Commands:
+        - 'ie give hoamai %player% 7'
+        - 'ie give hoadao %player% 7'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &c&lLì xì VII&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    8:
+      DisplayName: '&e&lTết Nhâm Dần...'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - "&fNhận &e&l'Tết Nhâm Dần..."
+      - "&7Kết hợp cùng &6&l'...2022'"
+      MaxRange: 100
+      Chance: 30
+      Firework: false
+      Tiers:
+        - 'Uncommon'      
+      Glowing: false
+      Commands:
+        - 'ie give tetnhamdan %player% 1'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&lTết Nhâm Dần...&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    9:
+      DisplayName: '&6&l...2022'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - "&fNhận &6&l'...2022'"
+      - "&7Kết hợp cùng &e&l'Tết Nhâm Dần...'"
+      MaxRange: 100
+      Chance: 20
+      Firework: false
+      Tiers:
+        - 'Uncommon'      
+      Glowing: false
+      Commands:
+        - 'ie give 2022 %player% 1'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6&l...2022&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    10:
+      DisplayName: '&e&lTết Nhâm Dần &6&l2022'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - '&fNhận x48 &e&lHoa Mai &f+ x48 &d&lHoa Đào'
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: true
+      Commands:
+        - 'ie give hoamai %player% 48'
+        - 'ie give hoadao %player% 48'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&lTết Nhâm Dần &6&l2022&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    11:
+      DisplayName: '&e&lx5 | GHAST Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 5
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Tiers:
+        - 'Uncommon'      
+      Glowing: false
+      Commands:
+        - 'silkspawners give %player% Ghast 5'
+    12:
+      DisplayName: '&6&lx5 | Iron Golem Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 5
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+        - 'Uncommon'      
+      Glowing: false
+      Commands:
+        - 'silkspawners give %player% irongolem 5'
+    13:
+      DisplayName: '&a&l10,000,000 &e&lExp&a&l | x1 BÌNH'
+      DisplayItem: '384'
+      DisplayAmount: 1
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+        - 'Uncommon'      
+      Glowing: false
+      Commands:
+        - 'xp give %player% 10000000'
+    14:
+      DisplayName: '&a&lx1 | 10,000,000ṩ'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Tiers:
+        - 'Uncommon'      
+      Glowing: false
+      Commands:
+        - 'eco give %player% 10000000'
+    15:
+      DisplayName: '&6☾&f✗&6☽ &f&lMŨ &6&lNHÂM DẦN &6☾&f✗&6☽'
+      DisplayItem: '298'
+      DisplayAmount: 1
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: true
+      Commands:
+        - 'asets givepiece %player_name% Nhamdan HELMET'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6☾&f✗&6☽ &f&lMŨ &6&lNHÂM DẦN &6☾&f✗&6☽&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    16:
+      DisplayName: '&6☾&f✗&6☽ &f&lGIÁP &6&lNHÂM DẦN &6☾&f✗&6☽'
+      DisplayItem: '299'
+      DisplayAmount: 1
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: true
+      Commands:
+        - 'asets givepiece %player_name% Nhamdan CHESTPLATE'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6☾&f✗&6☽ &f&lGIÁP &6&lNHÂM DẦN &6☾&f✗&6☽&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    17:
+      DisplayName: '&6☾&f✗&6☽ &f&lQUẦN &6&lNHÂM DẦN &6☾&f✗&6☽'
+      DisplayItem: '300'
+      DisplayAmount: 1
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: true
+      Commands:
+        - 'asets givepiece %player_name% Nhamdan LEGGINGS'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6☾&f✗&6☽ &f&lQUẦN &6&lNHÂM DẦN &6☾&f✗&6☽&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    18:
+      DisplayName: '&6☾&f✗&6☽ &f&lỦNG &6&lNHÂM DẦN &6☾&f✗&6☽'
+      DisplayItem: '301'
+      DisplayAmount: 1
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: true
+      Commands:
+        - 'asets givepiece %player_name% Nhamdan BOOTS'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6☾&f✗&6☽ &f&lỦNG &6&lNHÂM DẦN &6☾&f✗&6☽&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    19:
+      DisplayName: '&6☾&f✗&6☽ &f&lKIẾM &6&lNHÂM DẦN &6☾&f✗&6☽'
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: true
+      Commands:
+        - 'asets weapon %player% kiemnhamdan'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6☾&f✗&6☽ &f&lKIẾM &6&lNHÂM DẦN &6☾&f✗&6☽&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    20:
+      DisplayName: '&6☾&f✗&6☽ &f&lRÌU &6&lNHÂM DẦN &6☾&f✗&6☽'
+      DisplayItem: '279'
+      DisplayAmount: 1
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: true
+      Commands:
+        - 'asets weapon %player% riunhamdan'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6☾&f✗&6☽ &f&lRÌU &6&lNHÂM DẦN &6☾&f✗&6☽&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    21:
+      DisplayName: '&6☾&f✗&6☽ &f&lCUNG &6&lNHÂM DẦN &6☾&f✗&6☽'
+      DisplayItem: '261'
+      DisplayAmount: 1
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: true
+      Commands:
+        - 'asets weapon %player% cungnhamdan'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6☾&f✗&6☽ &f&lCUNG &6&lNHÂM DẦN &6☾&f✗&6☽&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    22:
+      DisplayName: '&6☾&f✗&6☽ &f&lKHIÊN &6&lNHÂM DẦN &6☾&f✗&6☽'
+      DisplayItem: '442'
+      DisplayAmount: 1
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: true
+      Commands:
+        - 'ie give khiennhamdan %player% 1'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6☾&f✗&6☽ &f&lKHIÊN &6&lNHÂM DẦN &6☾&f✗&6☽&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    23:
+      DisplayName: '&6☾&f✗&6☽ &f&lHÒM VŨ KHÍ &6&lNHÂM DẦN &6☾&f✗&6☽'
+      DisplayItem: '54'
+      DisplayAmount: 1
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: true
+      Commands:
+        - 'cr give to %player% homvukhinhamdan 1'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6☾&f✗&6☽ &f&lHÒM VŨ KHÍ &6&lNHÂM DẦN &6☾&f✗&6☽&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    24:
+      DisplayName: '&6☾&f✗&6☽ &f&lHÒM TRANG BỊ &6&lNHÂM DẦN &6☾&f✗&6☽'
+      DisplayItem: '130'
+      DisplayAmount: 1
+      Lore:
+      - ""
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: true
+      Commands:
+        - 'cr give to %player% homtrangbinhamdan 1'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6☾&f✗&6☽ &f&lHÒM TRANG BỊ &6&lNHÂM DẦN &6☾&f✗&6☽&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    25:
+      DisplayName: '&6☾&f✗&6☽ &6&lHổ Đấu &7(Ngẫu nhiên) &6☾&f✗&6☽'
+      DisplayItem: '340'
+      DisplayAmount: 1
+      Lore:
+      - "&7Nhận ngẫu nhiên cấp độ &fI - II"
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: false
+      Commands:
+        - 'cr give to %player% hodau 1'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6☾&f✗&6☽ &6&lHổ Đấu &7(Ngẫu nhiên) &6☾&f✗&6☽&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'
+    26:
+      DisplayName: '&6☾&f✗&6☽ &6&lAn Khang &7(Ngẫu nhiên) &6☾&f✗&6☽'
+      DisplayItem: '340'
+      DisplayAmount: 1
+      Lore:
+      - "&7Nhận ngẫu nhiên cấp độ &fI - II"
+      MaxRange: 100
+      Chance: 5
+      Firework: true
+      Tiers:
+        - 'Rare'      
+      Glowing: false
+      Commands:
+        - 'cr give to %player% ankhang 1'
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6☾&f✗&6☽ &6&lAn Khang &7(Ngẫu nhiên) &6☾&f✗&6☽&r &f&ltừ &6☾&f✗&6☽ &e&nKho Báu&r &6&lNHÂM DẦN&r &6☾&f✗&6☽'

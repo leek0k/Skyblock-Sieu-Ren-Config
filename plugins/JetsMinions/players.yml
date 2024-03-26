@@ -1,0 +1,57 @@
+# 
+#  PlayerUUID
+#    Minion,world,xpos,ypos,zpos,yaw,health/maxhealth,worldforchest,xpos,ypos,zpos,stats,level,base64-encoded-additional-data
+ConfigVersion: 7.2.0
+Players:
+  f9c9ac01-f52f-320c-a1ef-d685d407e44e:
+  - Miner,SuperiorWorld,1496,88,19499,180,20/20,SuperiorWorld,1498,93,19502,184411,3,null
+  75e85a96-af80-3ab4-9bf0-0d4b7812e7b5: []
+  821b3d9c-8e13-3c7c-8d5f-5802916275a6:
+  - Miner,SuperiorWorld,19497,102,-52510,90,20/20,SuperiorWorld,19498,124,-52510,58702,3,null
+  b00af56b-f49c-350d-872d-6df6a685644b:
+  - Miner,SuperiorWorld,58497,100,-52473,270,20/20,SuperiorWorld,58496,98,-52472,16820,3,null
+  b5ea612b-8645-3a19-976a-acbe7c1f3b7d:
+  - Miner,SuperiorWorld,-61494,102,17993,180,20/20,SuperiorWorld,-61493,102,17993,330,2,null
+  0a3583fa-a73a-3406-a929-e538ee673b89:
+  - Slayer,SuperiorWorld,-55578,2,-1584,90,20/20,SuperiorWorld,-55576,8,-1591,1647,2,RVhQOjIxMDA=
+  57b51f16-0fbf-37c2-a7ff-ad4b1a95bf64:
+  - Miner,SuperiorWorld,60000,99,-61501,90,20/20,SuperiorWorld,60002,105,-61499,58960,3,null
+  - Slayer,SuperiorWorld,60036,100,-61496,90,20/20,SuperiorWorld,60033,99,-61495,727,2,RVhQOjgwMzgw
+  - Miner,SuperiorWorld,60000,99,-61506,90,20/20,SuperiorWorld,60002,105,-61500,7093,3,null
+  f588e359-f9ee-338b-a538-11b210ba0588:
+  - Miner,SuperiorWorld,56993,42,49501,0,20/20,SuperiorWorld,56990,42,49498,8291,3,null
+  - Slayer,SuperiorWorld,56991,46,49519,180,20/20,SuperiorWorld,56986,40,49515,407,2,RVhQOjQ1MDA=
+  - Miner,SuperiorWorld,56991,42,49505,0,20/20,SuperiorWorld,56990,43,49499,13579,3,null
+  5132579c-38fd-3496-b0ad-948aeac7ae69:
+  - Miner,SuperiorWorld,-32987,90,58469,270,20/20,SuperiorWorld,-32988,90,58470,8947,2,null
+  - Miner,SuperiorWorld,-32987,90,58464,270,20/20,SuperiorWorld,-32988,90,58463,942,3,null
+  04fba1b8-9d10-3af8-9bb6-1fda3fdf96a9:
+  - Miner,SuperiorWorld,-62997,99,-35996,0,20/20,SuperiorWorld,-62993,102,-35999,265811,3,null
+  - Slayer,SuperiorWorld,-63000,105,-36000,0,20/20,SuperiorWorld,-62998,104,-36000,18708,2,RVhQOjE1NjAw
+  - Miner,SuperiorWorld,-62999,99,-35996,0,20/20,SuperiorWorld,-62993,102,-35996,261969,3,null
+  60455c79-efce-3f1e-b494-ca789c278bd0: []
+  86674ff9-a20b-33eb-b4ad-219f6dc1452a: []
+  e2591263-ad66-3894-b5b8-0432828999f3:
+  - Miner,SuperiorWorld,71990,104,56993,90,20/20,SuperiorWorld,71991,103,56994,7787,3,null
+  - Miner,SuperiorWorld,71985,104,56993,270,20/20,SuperiorWorld,71991,103,56995,7781,3,null
+  - Slayer,SuperiorWorld,71998,100,57018,0,20/20,SuperiorWorld,71999,99,57019,112,2,RVhQOjMzNjAw
+MinionUUIDs:
+  3180ef14-a7cb-471a-8d74-a4b5141f420d: ''
+  8894391f-5737-41bf-a5cb-53031518e4f1: ''
+  0fad1efa-ed14-4302-85ef-ba29bce1a36f: ''
+  704e473f-1541-4e5b-a798-a178737af947: ''
+  3a7828a3-c9bc-422d-8454-f87587b57df0: ''
+  eaf35876-63a4-4786-86fc-a63d8d3ec9a3: ''
+  1e42ba23-a30b-4b32-b2b5-72a1da3cba0f: ''
+  f2bd1aef-7d7f-4c57-a53a-46d5810811a1: ''
+  d5454e86-0c7c-4c3f-90dd-a22efc34346c: ''
+  a8612d07-dd3f-478d-a8b1-bb168f392206: ''
+  72c4d434-58a0-4497-99bf-a2041640e75f: ''
+  5959c47b-4653-4f1b-afd7-07b0c419566b: ''
+  3d41be51-7c7f-4b32-b621-16578756e0e7: ''
+  e744f5be-56e3-4a84-acf5-cfa4d4d27a70: ''
+  e6da6b82-7b96-4f6e-8929-b4af584d05ad: ''
+  f8b9648e-55d2-4e9d-b902-ff5924f30bb6: ''
+  255c0acb-bac4-4ca8-81ce-2b3108a09093: ''
+  003bd43e-8f3f-4878-82e2-19aa395f8194: ''
+  70d5859f-d92d-4179-b717-18db180f4137: ''

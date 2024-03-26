@@ -1,0 +1,730 @@
+file: nangcaptrangbitoicao.yml
+menu_title: '&8&lNâng Cấp Vũ Khí'
+open_command: 
+- nangcaptrangbitoicao
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 54
+update_interval: 1
+open_requirement: 
+items:
+  'background':
+    material: STAINED_GLASS_PANE
+    data: 4
+    display_name: ' '
+    slots:
+    - '0'
+    - '8'
+    - '45'
+    - '53'
+    - '11'
+    - '20'
+    - '29'
+    - '38'
+    - '53'
+  'background2':
+    material: STAINED_GLASS_PANE
+    data: 1
+    display_name: ' '
+    slots:
+    - '1-3'
+    - '5-7'
+    - '9'
+    - '17-18'
+    - '26-27'
+    - '36'
+    - '46'
+    - '47'
+    - '51'
+    - '52'
+    - '44'
+    - '35'
+  'exit':
+    material: DOUBLE_PLANT
+    display_name: '&c&l⬅ [Trở về]'
+    slot: 49
+    lore:
+    - "&7Nhấn vào để trở về mục trước"
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - '[player] ecraft'
+  'prevpage':
+    material: ARROW
+    display_name: '&e&lTrang Trước'
+    slot: 48
+    click_commands:
+    - '[player] nangcaptrangbithanh'
+  'nextpage':
+    material: ARROW
+    display_name: '&e&lTrang Sau'
+    slot: 50
+    click_commands:
+    - '[player] nangcaptrangbithuongco'
+  'icon':
+    material: CLAY_BRICK
+    slot: 4
+    display_name: '&e[♦] &e&lĐá nâng cấp &e[♦]'
+    lore:
+    - '&7Số Lượng: &a%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%'
+    - ''
+    - '&0&o#Item menu'
+  'kiemtoicao':
+    material: DIAMOND_SWORD
+    display_name: '&c&l⊱ Kiếm &4&lTối Cao &4&l⊱'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 10
+    hide_attributes: true
+  'kiemtoicao2a':
+    material: DIAMOND_SWORD
+    slot: 12
+    priority: 2
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lKIẾM §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱'
+    enchantments:
+    - DAMAGE_ALL;120
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;2
+    - DURABILITY;5
+    lore:
+    - §4፠ ፠ ፠ §4(2♦) §4§lTỐI CAO §4(2♦) §4፠ ፠ ፠
+    - §4* Kiếm Tối Cao (2♦)
+    - §4* Tăng 20% damage.
+    - '&7Yêu cầu:'
+    - '&a+ §c§l⊰§4§l⊰§c§l⊰ §4§lKIẾM §c§lTỐI CAO &7[OP] §4§l⊱§c§l⊱§4§l⊱'
+    - '&a- &7Sắc bén 115'
+    - '&a+ &7x32 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu"
+    - "[message] §c§l⊰§4§l⊰§c§l⊰ §4§lKIẾM §c§lTỐI CAO &7[OP] §4§l⊱§c§l⊱§4§l⊱ &fsở hữu: %checkitem_amount_mat:diamond_sword,amt:1,lorecontains:* Tăng 16,enchantments:damage_all=115%"
+    - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+    - "[refresh]"
+  'kiemtoicao2':
+    material: DIAMOND_SWORD
+    slot: 12
+    priority: 1
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lKIẾM §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱'
+    enchantments:
+    - DAMAGE_ALL;120
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;2
+    - DURABILITY;5
+    lore:
+    - §4፠ ፠ ፠ §4(2♦) §4§lTỐI CAO §4(2♦) §4፠ ፠ ፠
+    - §4* Kiếm Tối Cao (2♦)
+    - §4* Tăng 20% damage.
+    - '&7Yêu cầu:'
+    - '&a+ §c§l⊰§4§l⊰§c§l⊰ §4§lKIẾM §c§lTỐI CAO &7[OP] §4§l⊱§c§l⊱§4§l⊱'
+    - '&a- &7Sắc bén 115'
+    - '&a+ &7x32 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:32%'
+          output: '32'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_sword,amt:1,lorecontains:* Tăng 16,enchantments:damage_all=115%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:32%'
+          output: '32'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_sword,amt:1,lorecontains:* Tăng 16,enchantments:damage_all=115%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[message] §c§l⊰§4§l⊰§c§l⊰ §4§lKIẾM §c§lTỐI CAO &7[OP] §4§l⊱§c§l⊱§4§l⊱ &fsở hữu: %checkitem_amount_mat:diamond_sword,amt:1,lorecontains:* Tăng 16,enchantments:damage_all=115%"
+      - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+      - "[close]"
+    click_commands:
+    - "[console] ie give kiemtoicao2 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"
+  'kiemtoicao3a':
+    material: DIAMOND_SWORD
+    slot: 13
+    priority: 2
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lKIẾM §c§lTỐI CAO §4(3♦) §4§l⊱§c§l⊱§4§l⊱'
+    enchantments:
+    - DAMAGE_ALL;125
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;2
+    - DURABILITY;5
+    lore:
+    - §4፠ ፠ ፠ §4(3♦) §4§lTỐI CAO §4(3♦) §4፠ ፠ ፠
+    - §4* Kiếm Tối Cao (3♦)
+    - §4* Tăng 22% damage.
+    - '&7Yêu cầu:'
+    - '&a+ §c§l⊰§4§l⊰§c§l⊰ §4§lKIẾM §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱'
+    - '&a- &7Sắc bén 120'
+    - '&a+ &7x64 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu"
+    - "[message] §c§l⊰§4§l⊰§c§l⊰ §4§lKIẾM §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱ &fsở hữu: %checkitem_amount_mat:diamond_sword,amt:1,lorecontains:* Tăng 20,enchantments:damage_all=120%"
+    - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+    - "[refresh]"
+  'kiemtoicao3':
+    material: DIAMOND_SWORD
+    slot: 13
+    priority: 1
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lKIẾM §c§lTỐI CAO §4(3♦) §4§l⊱§c§l⊱§4§l⊱'
+    enchantments:
+    - DAMAGE_ALL;125
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;2
+    - DURABILITY;5
+    lore:
+    - §4፠ ፠ ፠ §4(3♦) §4§lTỐI CAO §4(3♦) §4፠ ፠ ፠
+    - §4* Kiếm Tối Cao (3♦)
+    - §4* Tăng 22% damage.
+    - '&7Yêu cầu:'
+    - '&a+ §c§l⊰§4§l⊰§c§l⊰ §4§lKIẾM §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱'
+    - '&a- &7Sắc bén 120'
+    - '&a+ &7x64 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:64%'
+          output: '64'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_sword,amt:1,lorecontains:* Tăng 20,enchantments:damage_all=120%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:64%'
+          output: '64'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_sword,amt:1,lorecontains:* Tăng 20,enchantments:damage_all=120%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[message] §c§l⊰§4§l⊰§c§l⊰ §4§lKIẾM §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱ &fsở hữu: %checkitem_amount_mat:diamond_sword,amt:1,lorecontains:* Tăng 20,enchantments:damage_all=120%"
+      - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+      - "[close]"
+    click_commands:
+    - "[console] ie give kiemtoicao3 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"  
+  'riutoicao':
+    material: DIAMOND_AXE
+    display_name: '&c&l⊱ Rìu &4&lTối Cao &4&l⊱'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 19
+    hide_attributes: true
+  'riutoicao2a':
+    material: DIAMOND_AXE
+    slot: 21
+    priority: 2
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lRìu §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱'
+    enchantments:
+    - DAMAGE_ALL;120
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;2
+    - DURABILITY;5
+    lore:
+    - §4፠ ፠ ፠ §4(2♦) §4§lTỐI CAO §4(2♦) §4፠ ፠ ፠
+    - §4* Rìu Tối Cao (2♦)
+    - §4* Tăng 20% damage.
+    - '&7Yêu cầu:'
+    - '&a+ §c§l⊰§4§l⊰§c§l⊰ §4§lRìu §c§lTỐI CAO &7[OP] §4§l⊱§c§l⊱§4§l⊱'
+    - '&a- &7Sắc bén 105'
+    - '&a+ &7x32 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu"
+    - "[message] §c§l⊰§4§l⊰§c§l⊰ §4§lRìu §c§lTỐI CAO &7[OP] §4§l⊱§c§l⊱§4§l⊱ &fsở hữu: %checkitem_amount_mat:diamond_axe,amt:1,lorecontains:* Tăng 18,enchantments:damage_all=105%"
+    - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+    - "[refresh]"
+  'riutoicao2':
+    material: DIAMOND_AXE
+    slot: 21
+    priority: 1
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lRìu §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱'
+    enchantments:
+    - DAMAGE_ALL;120
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;2
+    - DURABILITY;5
+    lore:
+    - §4፠ ፠ ፠ §4(2♦) §4§lTỐI CAO §4(2♦) §4፠ ፠ ፠
+    - §4* Rìu Tối Cao (2♦)
+    - §4* Tăng 20% damage.
+    - '&7Yêu cầu:'
+    - '&a+ §c§l⊰§4§l⊰§c§l⊰ §4§lRìu §c§lTỐI CAO &7[OP] §4§l⊱§c§l⊱§4§l⊱'
+    - '&a- &7Sắc bén 105'
+    - '&a+ &7x32 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:32%'
+          output: '32'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_axe,amt:1,lorecontains:* Tăng 18,enchantments:damage_all=105%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:32%'
+          output: '32'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_axe,amt:1,lorecontains:* Tăng 18,enchantments:damage_all=105%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[message] §c§l⊰§4§l⊰§c§l⊰ §4§lRìu §c§lTỐI CAO &7[OP] §4§l⊱§c§l⊱§4§l⊱ &fsở hữu: %checkitem_amount_mat:diamond_axe,amt:1,lorecontains:* Tăng 18,enchantments:damage_all=105%"
+      - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+      - "[close]"
+    click_commands:
+    - "[console] ie give riutoicao2 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"
+  'riutoicao3a':
+    material: DIAMOND_AXE
+    slot: 22
+    priority: 2
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lRìu §c§lTỐI CAO §4(3♦) §4§l⊱§c§l⊱§4§l⊱'
+    enchantments:
+    - DAMAGE_ALL;125
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;2
+    - DURABILITY;5
+    lore:
+    - §4፠ ፠ ፠ §4(3♦) §4§lTỐI CAO §4(3♦) §4፠ ፠ ፠
+    - §4* Rìu Tối Cao (3♦)
+    - §4* Tăng 22% damage.
+    - '&7Yêu cầu:'
+    - '&a+ §c§l⊰§4§l⊰§c§l⊰ §4§lRìu §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱'
+    - '&a- &7Sắc bén 120'
+    - '&a+ &7x64 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu"
+    - "[message] §c§l⊰§4§l⊰§c§l⊰ §4§lRìu §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱ &fsở hữu: %checkitem_amount_mat:diamond_axe,amt:1,lorecontains:* Tăng 20,enchantments:damage_all=120%"
+    - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+    - "[refresh]"
+  'riutoicao3':
+    material: DIAMOND_AXE
+    slot: 22    
+    priority: 1
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lRìu §c§lTỐI CAO §4(3♦) §4§l⊱§c§l⊱§4§l⊱'
+    enchantments:
+    - DAMAGE_ALL;125
+    - DAMAGE_UNDEAD;5
+    - DAMAGE_ARTHROPODS;5
+    - FIRE_ASPECT;2
+    - LOOT_BONUS_MOBS;2
+    - DURABILITY;5
+    lore:
+    - §4፠ ፠ ፠ §4(3♦) §4§lTỐI CAO §4(3♦) §4፠ ፠ ፠
+    - §4* Rìu Tối Cao (3♦)
+    - §4* Tăng 22% damage.
+    - '&7Yêu cầu:'
+    - '&a+ §c§l⊰§4§l⊰§c§l⊰ §4§lRìu §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱'
+    - '&a- &7Sắc bén 120'
+    - '&a+ &7x64 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:64%'
+          output: '64'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_axe,amt:1,lorecontains:* Tăng 20,enchantments:damage_all=120%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:64%'
+          output: '64'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_axe,amt:1,lorecontains:* Tăng 20,enchantments:damage_all=120%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[message] §c§l⊰§4§l⊰§c§l⊰ §4§lRìu §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱ &fsở hữu: %checkitem_amount_mat:diamond_axe,amt:1,lorecontains:* Tăng 20,enchantments:damage_all=120%"
+      - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+      - "[close]"
+    click_commands:
+    - "[console] ie give riutoicao3 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"  
+  'cungtoicao':
+    material: BOW
+    display_name: '&c&l⊱ Cung &4&lTối Cao &4&l⊱'
+    lore:
+    - '&7♦ Trade - Rèn'
+    slot: 28
+    hide_attributes: true
+  'cungtoicao2a':
+    material: BOW
+    slot: 30
+    priority: 2
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lCung §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱'
+    enchantments:
+    - DURABILITY;5
+    - ARROW_DAMAGE;70
+    - ARROW_KNOCKBACK;2
+    - ARROW_FIRE;3
+    - ARROW_INFINITE;1
+    lore:
+    - §4፠ ፠ ፠ §4(2♦) §4§lTỐI CAO §4(2♦) §4፠ ፠ ፠
+    - §4* Cung Tối Cao (2♦)
+    - '&7Yêu cầu:'
+    - '&a+ §c§l⊰§4§l⊰§c§l⊰ §4§lCung §c§lTỐI CAO &7[OP] §4§l⊱§c§l⊱§4§l⊱'
+    - '&a- &7Sức mạnh 65'
+    - '&a+ &7x32 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu"
+    - "[message] §c§l⊰§4§l⊰§c§l⊰ §4§lCung §c§lTỐI CAO &7[OP] §4§l⊱§c§l⊱§4§l⊱ &fsở hữu: %checkitem_amount_mat:bow,amt:1,lorecontains:&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠,enchantments:arrow_damage=65%"
+    - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+    - "[refresh]"
+  'cungtoicao2':
+    material: BOW
+    slot: 30
+    priority: 1
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lCung §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱'
+    enchantments:
+    - DURABILITY;5
+    - ARROW_DAMAGE;70
+    - ARROW_KNOCKBACK;2
+    - ARROW_FIRE;3
+    - ARROW_INFINITE;1
+    lore:
+    - §4፠ ፠ ፠ §4(2♦) §4§lTỐI CAO §4(2♦) §4፠ ፠ ፠
+    - §4* Cung Tối Cao (2♦)
+    - '&7Yêu cầu:'
+    - '&a+ §c§l⊰§4§l⊰§c§l⊰ §4§lCung §c§lTỐI CAO &7[OP] §4§l⊱§c§l⊱§4§l⊱'
+    - '&a- &7Sức mạnh 65'
+    - '&a+ &7x32 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:32%'
+          output: '32'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:bow,amt:1,lorecontains:&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠,enchantments:arrow_damage=65%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:32%'
+          output: '32'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:bow,amt:1,lorecontains:&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠,enchantments:arrow_damage=65%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[message] §c§l⊰§4§l⊰§c§l⊰ §4§lCung §c§lTỐI CAO &7[OP] §4§l⊱§c§l⊱§4§l⊱ &fsở hữu: %checkitem_amount_mat:bow,amt:1,lorecontains:&4፠ ፠ ፠ &4&lTỐI CAO &4፠ ፠ ፠,enchantments:arrow_damage=65%"
+      - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+      - "[close]"
+    click_commands:
+    - "[console] ie give cungtoicao2 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"
+  'cungtoicao3a':
+    material: BOW
+    slot: 31
+    priority: 2
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lCung §c§lTỐI CAO §4(3♦) §4§l⊱§c§l⊱§4§l⊱'
+    enchantments:
+    - DURABILITY;5
+    - ARROW_DAMAGE;75
+    - ARROW_KNOCKBACK;2
+    - ARROW_FIRE;3
+    - ARROW_INFINITE;1
+    lore:
+    - §4፠ ፠ ፠ §4(3♦) §4§lTỐI CAO §4(3♦) §4፠ ፠ ፠
+    - §4* Cung Tối Cao (3♦)
+    - '&7Yêu cầu:'
+    - '&a+ §c§l⊰§4§l⊰§c§l⊰ §4§lCung §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱'
+    - '&a- &7Sức mạnh 70'
+    - '&a+ &7x64 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cBạn chưa đủ nguyên liệu"
+    - "[message] §c§l⊰§4§l⊰§c§l⊰ §4§lCung §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱ &fsở hữu: %checkitem_amount_mat:bow,amt:1,lorecontains:&4፠ ፠ ፠ &4(2♦) &4&lTỐI CAO &4(2♦) &4፠ ፠ ፠,enchantments:arrow_damage=70%"
+    - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+    - "[refresh]"
+  'cungtoicao3':
+    material: BOW
+    slot: 31
+    priority: 1
+    display_name: '§c§l⊰§4§l⊰§c§l⊰ §4§lCung §c§lTỐI CAO §4(3♦) §4§l⊱§c§l⊱§4§l⊱'
+    enchantments:
+    - DURABILITY;5
+    - ARROW_DAMAGE;75
+    - ARROW_KNOCKBACK;2
+    - ARROW_FIRE;3
+    - ARROW_INFINITE;1
+    lore:
+    - §4፠ ፠ ፠ §4(3♦) §4§lTỐI CAO §4(3♦) §4፠ ፠ ፠
+    - §4* Cung Tối Cao (3♦)
+    - '&7Yêu cầu:'
+    - '&a+ §c§l⊰§4§l⊰§c§l⊰ §4§lCung §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱'
+    - '&a- &7Sức mạnh 70'
+    - '&a+ &7x64 &e[♦] &e&lĐá nâng cấp &e[♦]'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:64%'
+          output: '64'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:bow,amt:1,lorecontains:&4፠ ፠ ፠ &4(2♦) &4&lTỐI CAO &4(2♦) &4፠ ፠ ፠,enchantments:arrow_damage=70%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft)),amt:64%'
+          output: '64'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:bow,amt:1,lorecontains:&4፠ ፠ ፠ &4(2♦) &4&lTỐI CAO &4(2♦) &4፠ ፠ ፠,enchantments:arrow_damage=70%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[message] §c§l⊰§4§l⊰§c§l⊰ §4§lCung §c§lTỐI CAO §4(2♦) §4§l⊱§c§l⊱§4§l⊱ &fsở hữu: %checkitem_amount_mat:bow,amt:1,lorecontains:&4፠ ፠ ፠ &4(2♦) &4&lTỐI CAO &4(2♦) &4፠ ፠ ፠,enchantments:arrow_damage=70%"
+      - "[message] &e[♦] &e&lĐá nâng cấp &e[♦] &fsở hữu: %checkitem_amount_mat:clay_brick,lorecontains:&7&o((Rèn tại /ecraft))%"
+      - "[close]"
+    click_commands:
+    - "[console] ie give cungtoicao3 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"  
+
+  'cuptoicao':
+    material: DIAMOND_PICKAXE
+    display_name: '&4&lCúp &c&lTối Cao'
+    lore:
+    - '&7♦ Trade - Rèn'
+    - ''
+    - '&0&o#Item menu'
+    slot: 37
+    hide_attributes: true   
+
+  'cuptoicao2':
+    material: DIAMOND_PICKAXE
+    slot: 39
+    priority: 1
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4(2♦) &4&LCÚP &C&LTỐI CAO &4(2♦) &4&L⊱&C&L⊱&4&L⊱ &4(New)'
+    enchantments:
+    - DURABILITY;5
+    - DIG_SPEED;24
+    - LOOT_BONUS_BLOCKS;12
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&4⊚ ⊚ ⊚ &4(2♦) &4&lTỐI CAO &4(2♦) &4⊚ ⊚ ⊚ &4(New)'
+    - '&0&o#Cuptoicao2'
+    - '&a▢ Ô cường hóa: +7'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ &C&L⊰&4&L⊰&C&L⊰ &4&LCÚP &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱ &4(New) &f(&eHiện có: &a%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&4⊚ ⊚ ⊚ &4&lTỐI CAO &4⊚ ⊚ ⊚,enchantments:DIG_SPEED=22%&f)'
+    - '&a- &7Hiệu suất 22'
+    - '&a+ &fx1 &f&l✦ Đá cường hóa ✦ &f(&eHiện có: &a%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu))%&f)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&4⊚ ⊚ ⊚ &4&lTỐI CAO &4⊚ ⊚ ⊚,enchantments:DIG_SPEED=22%'
+          output: '1'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu)),amt:1%'
+          output: '1'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu)),amt:1%'
+          output: '1'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_pickaxe,amt:1,lorecontains:&4⊚ ⊚ ⊚ &4&lTỐI CAO &4⊚ ⊚ ⊚,enchantments:DIG_SPEED=22%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[close]"
+    click_commands:
+    - "[console] ie give cuptoicaotrade2 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]"  
+
+  'cuptoicao2a':
+    material: DIAMOND_PICKAXE
+    slot: 39
+    priority: 2
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4(2♦) &4&LCÚP &C&LTỐI CAO &4(2♦) &4&L⊱&C&L⊱&4&L⊱ &4(New)'
+    enchantments:
+    - DURABILITY;5
+    - DIG_SPEED;24
+    - LOOT_BONUS_BLOCKS;12
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&4⊚ ⊚ ⊚ &4(2♦) &4&lTỐI CAO &4(2♦) &4⊚ ⊚ ⊚ &4(New)'
+    - '&0&o#Cuptoicao2'
+    - '&a▢ Ô cường hóa: +7'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ &C&L⊰&4&L⊰&C&L⊰ &4&LCÚP &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱ &4(New) &f(&eHiện có: &c%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&4⊚ ⊚ ⊚ &4&lTỐI CAO &4⊚ ⊚ ⊚,enchantments:DIG_SPEED=22%&f)'
+    - '&a- &7Hiệu suất 22'
+    - '&a+ &fx1 &f&l✦ Đá cường hóa ✦ &f(&eHiện có: &c%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu))%&f)'  
+    - ''
+    - '&0&o#Item menu'
+    click_commands:
+    - "[message] &cNguyên liệu không đủ!"
+    - "[message] &C&L⊰&4&L⊰&C&L⊰ &4&LCÚP &C&LTỐI CAO &7[OP] &4&L⊱&C&L⊱&4&L⊱ &4(New) &f(&eHiện có: &c%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&4⊚ ⊚ ⊚ &4&lTỐI CAO &4⊚ ⊚ ⊚,enchantments:DIG_SPEED=22%&f)"
+    - "[message] &fx1 &f&l✦ Đá cường hóa ✦ &f(&eHiện có: &c%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu))%&f)"
+    - "[close]"
+
+  'cuptoicao3':
+    material: DIAMOND_PICKAXE
+    slot: 40
+    priority: 1
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4(3♦) &4&LCÚP &C&LTỐI CAO &4(3♦) &4&L⊱&C&L⊱&4&L⊱ &4(New)'
+    enchantments:
+    - DURABILITY;5
+    - DIG_SPEED;26
+    - LOOT_BONUS_BLOCKS;16
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&4⊚ ⊚ ⊚ &4(3♦) &4&lTỐI CAO &4(3♦) &4⊚ ⊚ ⊚ &4(New)'
+    - '&0&o#Cuptoicao3'
+    - '&a▢ Ô cường hóa: +7'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ &C&L⊰&4&L⊰&C&L⊰ &4(2♦) &4&LCÚP &C&LTỐI CAO &4(2♦) &4&L⊱&C&L⊱&4&L⊱ &4(New) &f(&eHiện có: &a%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&4⊚ ⊚ ⊚ &4(2♦) &4&lTỐI CAO &4(2♦) &4⊚ ⊚ ⊚,enchantments:DIG_SPEED=24%&f)'
+    - '&a- &7Hiệu suất 24'
+    - '&a+ &fx2 &f&l✦ Đá cường hóa ✦ &f(&eHiện có: &a%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu))%&f)'
+    - ''
+    - '&0&o#Item menu'
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '>='
+          input: '%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&4⊚ ⊚ ⊚ &4(2♦) &4&lTỐI CAO &4(2♦) &4⊚ ⊚ ⊚,enchantments:DIG_SPEED=24%'
+          output: '1'
+        '2':
+          type: '>='
+          input: '%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu)),amt:2%'
+          output: '2'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        '1':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu)),amt:2%'
+          output: '2'
+        '2':
+          type: '=='
+          input: '%checkitem_amount_remove_mat:diamond_pickaxe,amt:1,lorecontains:&4⊚ ⊚ ⊚ &4(2♦) &4&lTỐI CAO &4(2♦) &4⊚ ⊚ ⊚,enchantments:DIG_SPEED=24%'
+          output: '1'
+      deny_commands:
+      - "[message] &cBạn chưa đủ nguyên liệu"
+      - "[close]"
+    click_commands:
+    - "[console] ie give cuptoicaotrade3 %player_name% 1"
+    - "[message] &e♦ Trade-Rèn &8- &bTrade-rèn thành công!"
+    - "[close]" 
+
+  'cuptoicao3a':
+    material: DIAMOND_PICKAXE
+    slot: 40
+    priority: 2
+    display_name: '&C&L⊰&4&L⊰&C&L⊰ &4(3♦) &4&LCÚP &C&LTỐI CAO &4(3♦) &4&L⊱&C&L⊱&4&L⊱ &4(New)'
+    enchantments:
+    - DURABILITY;5
+    - DIG_SPEED;26
+    - LOOT_BONUS_BLOCKS;16
+    lore:
+    - '&7&l&mI ⚏&r &7&lMáy hút &7&l&m⚏ I'
+    - '&4⊚ ⊚ ⊚ &4(3♦) &4&lTỐI CAO &4(3♦) &4⊚ ⊚ ⊚ &4(New)'
+    - '&0&o#Cuptoicao3'
+    - '&a▢ Ô cường hóa: +7'
+    - ''
+    - '&7Yêu cầu:'
+    - '&a+ &C&L⊰&4&L⊰&C&L⊰ &4(2♦) &4&LCÚP &C&LTỐI CAO &4(2♦) &4&L⊱&C&L⊱&4&L⊱ &4(New) &f(&eHiện có: &c%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&4⊚ ⊚ ⊚ &4(2♦) &4&lTỐI CAO &4(2♦) &4⊚ ⊚ ⊚,enchantments:DIG_SPEED=24%&f)'
+    - '&a- &7Hiệu suất 24'
+    - '&a+ &fx2 &f&l✦ Đá cường hóa ✦ &f(&eHiện có: &c%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu))%&f)'   
+    - ''
+    - '&0&o#Item menu'   
+    click_commands:
+    - "[message] &cKhông đủ nguyên liệu!"
+    - "[message] &C&L⊰&4&L⊰&C&L⊰ &4(2♦) &4&LCÚP &C&LTỐI CAO &4(2♦) &4&L⊱&C&L⊱&4&L⊱ &4(New) &f(&eHiện có: &a%checkitem_amount_mat:diamond_pickaxe,amt:1,lorecontains:&4⊚ ⊚ ⊚ &4(2♦) &4&lTỐI CAO &4(2♦) &4⊚ ⊚ ⊚,enchantments:DIG_SPEED=24%&f)"
+    - "[message] &fx2 &f&l✦ Đá cường hóa ✦ &f(&eHiện có: &a%checkitem_amount_mat:bedrock,lorecontains:&f**Mua Tại &f&o((/shopxu))%&f)"
+    - "[close]" 

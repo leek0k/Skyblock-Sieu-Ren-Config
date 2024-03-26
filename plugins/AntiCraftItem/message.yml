@@ -1,0 +1,11 @@
+anticraft: '&cVật phẩm này bị cấm chế tạo!'
+command:
+  block: '&aĐã thêm vật phẩm vào danh sách đen!'
+  unblock: '&cĐã xóa vật phẩm khỏi danh sách đen!'
+  reload: '&2[&a!&2] &aĐã cài lại file cấu hình!'
+  help:
+  - '&6======== &eLệnh AntiCraft &6========'
+  - '&f/anticraft block &e- Thêm vật phẩm vào danh sách đen'
+  - '&f/anticraft unblock &e- Xóa vật phẩm khỏi danh sách đen'
+  - '&f/anticraft reload &e- Cài lại cấu hình'
+  - '&f/anticraft help &e- Xem hướng dẫn'

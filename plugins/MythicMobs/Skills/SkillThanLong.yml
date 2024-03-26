@@ -1,0 +1,1165 @@
+saokspawn:
+  Skills:
+  - delay 100
+  - message{cooldown=30;m="<mob.name><&co> &6&lCó một sức mạnh gì đó"} @PlayersInRadius{r=40}
+  - delay 20
+  - effect:particles{p=reddust;color=#ffd500;amount=10;hS=0.1;vd=500;vS=0.1;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=11;hS=0.15;vd=500;vS=0.15;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=12;hS=0.2;vd=500;vS=0.2;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=13;hS=0.25;vd=500;vS=0.25;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=14;hS=0.3;vd=500;vS=0.3;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=15;hS=0.35;vd=500;vS=0.35;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=16;hS=0.4;vd=500;vS=0.4;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=17;hS=0.45;vd=500;vS=0.45;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=18;hS=0.5;vd=500;vS=0.5;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=19;hS=0.55;vd=500;vS=0.55;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=20;hS=0.6;vd=500;vS=0.6;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=21;hS=0.65;vd=500;vS=0.65;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=22;hS=0.7;vd=500;vS=0.7;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=23;hS=0.75;vd=500;vS=0.75;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=24;hS=0.8;vd=500;vS=0.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=25;hS=0.85;vd=500;vS=0.85;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=26;hS=0.9;vd=500;vS=0.9;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=27;hS=0.95;vd=500;vS=0.95;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=28;hS=1;vd=500;vS=1;speed=0.1} @self
+  - delay 5
+  - message{cooldown=30;m="<mob.name><&co> &6&lMột sự hủy diệt chăng?"} @PlayersInRadius{r=40}
+  - effect:particles{p=reddust;color=#ffd500;amount=100;hS=8;vd=500;vS=8;speed=8.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=29;hS=1.05;vd=500;vS=1.05;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=30;hS=1.1;vd=500;vS=1.1;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=31;hS=1.15;vd=500;vS=1.15;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=32;hS=1.2;vd=500;vS=1.2;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=33;hS=1.25;vd=500;vS=1.25;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=34;hS=1.3;vd=500;vS=1.3;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=35;hS=1.35;vd=500;vS=1.35;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=36;hS=1.4;vd=500;vS=1.4;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=37;hS=1.45;vd=500;vS=1.45;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=38;hS=1.5;vd=500;vS=1.5;speed=0.1} @self
+  - effect:particles{p=reddust;color=#ffd500;amount=120;hS=2.0;vd=300;vS=2.0;speed=0.8} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=39;hS=1.55;vd=500;vS=1.55;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=40;hS=1.6;vd=500;vS=1.6;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=41;hS=1.65;vd=500;vS=1.65;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=42;hS=1.7;vd=500;vS=1.7;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=43;hS=1.75;vd=500;vS=1.75;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=44;hS=1.8;vd=500;vS=1.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=45;hS=1.85;vd=500;vS=1.85;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=46;hS=1.9;vd=500;vS=1.9;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=47;hS=1.95;vd=500;vS=1.95;speed=0.1} @self
+  - delay 5
+  - message{cooldown=30;m="<mob.name><&co> &6&lCó thứ gì đó to lớn"} @PlayersInRadius{r=40}
+  - effect:particles{p=reddust;color=#ffd500;amount=120;hS=2.0;vd=300;vS=2.0;speed=0.8} @self
+  - effect:particles{p=reddust;color=#ffd500;amount=67;hS=2.2;vd=500;vS=2.2;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=87;hS=2.4;vd=500;vS=2.4;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=97;hS=2.6;vd=500;vS=2.6;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ffd500;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - message{cooldown=30;m="<mob.name><&co> &6&lĐang dần hiện hình"} @PlayersInRadius{r=40}
+  - effect:particles{p=reddust;color=#ffbb00;amount=190;hS=3.0;vd=500;vS=3.0;speed=0.1} @self
+  - effect:particles{p=reddust;color=#ff9700;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff8800;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff6f00;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff5300;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff3c00;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff2400;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff1500;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff1500;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff1500;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff1500;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff1500;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff1500;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff1500;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff1500;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - delay 5
+  - effect:particles{p=reddust;color=#ff1500;amount=127;hS=2.8;vd=500;vS=2.8;speed=0.1} @self
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=0} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 5
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 4
+  - skill{s=saokspawn2} @Self
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=7;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=6;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=5;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=4;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=3;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=2;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  - effect:particlering{p=instantSpell;radius=1;points=72;amount=1;hS=3;vS=3} @self
+  - delay 2
+  
+  
+  
+saokspawn2:
+  Skills:
+  - effect:particlesphere{particle=instantSpell;amount=20;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=40;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=60;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=80;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=100;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=120;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=140;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=160;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=180;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=200;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=220;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=240;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=260;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=280;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=300;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=300;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=300;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=300;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=300;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=300;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=300;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=300;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - skill{s=saokspawn3} @Self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=instantSpell;amount=400;radius=3} @self  
+  
+  
+  
+saokspawn3:
+  Skills:
+  - effect:sound{s=entity.endermen.teleport;v=2;p=0.01}
+  - delay 50
+  - skill{s=saokspawn4} @Self
+  
+saokspawn4:
+  Skills:
+  - command{c="time set 6000"}
+  - delay 5
+  - command{c="time set 42000"}
+  - delay 6
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self  
+  - skill{s=saokspawn5} @Self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self    
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self
+  - delay 2
+  - effect:particlesphere{particle=flame;amount=400;radius=3} @self   
+
+  
+saokspawn5:
+  Skills:
+  - effect:sound{s=entity.enderdragon.hurt;v=1;p=0.01}
+  - delay 62
+  - effect:particlering{p=largeexplode;radius=1;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=2;p=0.01}
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=2;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=3;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=2;p=0.01}
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=4;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=5;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=6;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - throw{velocity=7;velocityY=1} @PlayersInRadius{r=16}
+  - effect:particlering{p=largeexplode;radius=7;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=8;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=9;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}
+  - delay 1
+  - skill{s=saokspawn6} @Self
+  - effect:particlering{p=largeexplode;radius=10;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=11;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=12;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=13;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=14;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=15;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=16;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=17;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=18;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=19;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=20;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=21;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=22;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=23;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=24;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=25;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=26;points=51;amount=1;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.01}
+  - delay 1
+  - effect:particlering{p=largeexplode;radius=27;points=51;amount=1;hS=3;vS=3} @self
+  - delay 1
+
+  
+    
+saokspawn6:
+  Skills:
+  - velocity{m=set;x=0;y=1;z=0} @self
+  - delay 5
+  - velocity{m=set;x=0;y=1;z=0} @self
+  - delay 5
+  - velocity{m=set;x=0;y=1;z=0} @self
+  - effect:lightning 
+  - delay 10
+  - effect:lightning 
+  - delay 10
+  - effect:lightning 
+  - delay 10
+  - command{c="mm m kill SuGia"}
+  - activatespawner{spawner=ThanLong}
+
+###
+EBang:
+  Cooldown: 10
+  Skills:
+  - effect:particlering{particle=dragonbreath;points=20;radius=10;amount=40;hS=1;vS=0} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;points=20;radius=11;amount=40;hS=1;vS=0} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;points=20;radius=12;amount=40;hS=1;vS=0} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;points=20;radius=13;amount=40;hS=1;vS=0} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;points=20;radius=14;amount=40;hS=1;vS=0} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;points=20;radius=14;amount=40;hS=1;vS=0} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;points=20;radius=15;amount=40;hS=1;vS=0} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;points=20;radius=16;amount=40;hS=1;vS=0} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;radius=17;amount=40;hS=1;vS=0;points=20} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;radius=18;amount=40;hS=1;points=20;vS=0} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;radius=19;amount=40;points=20;hS=1;vS=0} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;radius=20;points=20;amount=40;hS=1;vS=0} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;points=20;radius=21;amount=45;hS=1;vS=0} @self
+  - delay 2
+  - effect:particlering{particle=dragonbreath;radius=22;points=20;amount=45;hS=1;vS=0} @self
+  - damage{a=50} @PIR{r=22}
+  - lightning{damage=10} @PIR{r=22}
+  - throw{velocity=19;velocityY=9} @PIR{r=22}
+DemonAssassin:
+  Cooldown: 15
+  Skills:
+  - effect:particles{particle=largeexplode;amount=1;hS=0.1;vS=0.5;speed=5} @self
+  - potion{t=BLINDNESS;d=220;l=20} @PIR{r=20}
+  - potion{t=INVISIBILITY;d=140;l=100} @self
+  - effect:particles{particle=smoke;amount=200;hS=1;vS=1} @self
+  - potion{t=slow;d=140;l=100} @self
+  - effect:particleline{p=reddust;color=#000000;amount=1;fromOrigin=true} @target
+  - delay 40
+  - effect:particleline{particle=flame;amount=1;fromOrigin=true} @target
+  - potion{t=slow;d=150;l=100} @target
+  - sendtitle{title="&4&l! &e&lNGUY HIỂM &4&l!";subtitle="&c&lBạn đang là mục tiêu!";d=100} @target
+  - delay 60
+  - effect:particleline{particle=flame;amount=1;fromOrigin=true} @target
+  - teleport @target
+  - leap{velocity=200} @target
+  - delay 20
+  - jump{velocity=-100}
+  - effect:explosion @self
+DemonSummon:
+  Cooldown: 35
+  Skills:
+  - message{msg="&f&lThần Long<&co> &4&lHãy...đến....đây!!"} @PlayersInRadius{r=30}
+  - summon{type=DemonArmy;amount=4;radius=2} @self
+  - effect:particleline{particle=flame;amount=1;fromOrigin=true} @MIR{r=10;t=DemonArmy}
+  - delay 80
+  - effect:particleline{particle=flame;amount=1;fromOrigin=true} @MIR{r=10;t=DemonArmy}
+  - delay 40
+  - effect:particleline{particle=flame;amount=1;fromOrigin=true} @MIR{r=10;t=DemonArmy}
+DemonDead!:
+  Cooldown: 75
+  Skills:
+  - potion{t=slow;d=240;l=100} @self
+  - message{msg="&f&lThần Long<&co> &bHãy đến gần ta nào!!"} @PlayersInRadius{r=30}
+  - pull{velocity=7} @LivingEntitiesInRadius{r=20}
+  - effect:particles{particle=cloud;amount=100;hS=1;vS=1} @self
+  - pull{velocity=2} @LivingEntitiesInRadius{r=2}
+  - potion{t=slow;d=60;l=100} @LivingEntitiesInRadius{r=20}
+  - delay 20
+  - pull{velocity=5} @LivingEntitiesInRadius{r=20}
+  - effect:particles{particle=cloud;amount=100;hS=1;vS=1} @self
+  - pull{velocity=3} @LivingEntitiesInRadius{r=2}
+  - potion{t=slow;d=60;l=100} @LivingEntitiesInRadius{r=20}
+  - delay 20
+  - pull{velocity=9} @LivingEntitiesInRadius{r=20}
+  - effect:particles{particle=cloud;amount=100;hS=1;vS=1} @self
+  - pull{velocity=2} @LivingEntitiesInRadius{r=2}
+  - potion{t=slow;d=60;l=100} @LivingEntitiesInRadius{r=20}
+  - message{msg="&f&lThần Long<&co> &bĐể tận hưởng cái chết nhanh hơn!"} @PlayersInRadius{r=30}
+  - delay 20
+  - pull{velocity=4} @LivingEntitiesInRadius{r=20}
+  - effect:particles{particle=cloud;amount=100;hS=1;vS=1} @self
+  - pull{velocity=3} @LivingEntitiesInRadius{r=2}
+  - potion{t=slow;d=60;l=100} @LivingEntitiesInRadius{r=20}
+  - delay 20
+  - pull{velocity=5} @LivingEntitiesInRadius{r=20}
+  - effect:particles{particle=cloud;amount=100;hS=1;vS=1} @self
+  - pull{velocity=1} @LivingEntitiesInRadius{r=2}
+  - potion{t=slow;d=60;l=100} @LivingEntitiesInRadius{r=20}
+  - delay 20
+  - pull{velocity=6} @LivingEntitiesInRadius{r=20}
+  - effect:particles{particle=cloud;amount=100;hS=1;vS=1} @self
+  - pull{velocity=2} @LivingEntitiesInRadius{r=2}
+  - potion{t=slow;d=60;l=100} @LivingEntitiesInRadius{r=20}
+  - delay 20
+  - pull{velocity=4} @LivingEntitiesInRadius{r=20}
+  - effect:particles{particle=cloud;amount=100;hS=1;vS=1} @self
+  - pull{velocity=2} @LivingEntitiesInRadius{r=2}
+  - potion{t=slow;d=60;l=100} @LivingEntitiesInRadius{r=20}
+  - delay 20
+  - pull{velocity=3} @LivingEntitiesInRadius{r=20}
+  - effect:particles{particle=cloud;amount=100;hS=1;vS=1} @self
+  - pull{velocity=3} @LivingEntitiesInRadius{r=2}
+  - potion{t=slow;d=60;l=100} @LivingEntitiesInRadius{r=20}
+  - delay 20
+  - pull{velocity=2} @LivingEntitiesInRadius{r=20}
+  - effect:particles{particle=cloud;amount=100;hS=1;vS=1} @self
+  - pull{velocity=4} @LivingEntitiesInRadius{r=2}
+  - potion{t=slow;d=60;l=100} @LivingEntitiesInRadius{r=20}
+  - delay 20
+  - pull{velocity=6} @LivingEntitiesInRadius{r=20}
+  - effect:particles{particle=cloud;amount=100;hS=1;vS=1} @self
+  - pull{velocity=3} @LivingEntitiesInRadius{r=2}
+  - potion{t=slow;d=60;l=100} @LivingEntitiesInRadius{r=20}
+  - delay 35
+  - message{msg="&f&lThần Long<&co> &4&lCHẾT NÀY!!"} @PlayersInRadius{r=30}
+  - skill{skill=Dead!Effect} @self 1
+  - delay 20
+  - skill{skill=Dead!Effect2} @self 1
+Dead!Effect:
+  Cooldown: 0.25
+  Skills:
+  - effect:particles{particle=explode;amount=50;vSpread=0.5;hSpread=1;Speed=0.01;yOffset=20} @self 1
+  - effect:particles{particle=largeexplode;amount=20;vSpread=1;hSpread=0.5;Speed=1;yOffset=20} @self 1
+  - effect:sound{sound=random.explode;volume=2;p=0.5} @Self >0 1
+  - delay 3
+  - effect:particles{particle=explode;amount=50;vSpread=0.5;hSpread=1;Speed=0.01;yOffset=17} @self 1
+  - effect:particles{particle=largeexplode;amount=20;vSpread=1;hSpread=0.5;Speed=1;yOffset=17} @self 1
+  - effect:sound{sound=random.explode;volume=2;p=0.5} @Self >0 1
+  - delay 3
+  - effect:particles{particle=explode;amount=50;vSpread=0.5;hSpread=1;Speed=0.01;yOffset=14} @self 1
+  - effect:particles{particle=largeexplode;amount=20;vSpread=1;hSpread=0.5;Speed=1;yOffset=14} @self 1
+  - effect:sound{sound=random.explode;volume=2;p=0.5} @Self >0 1
+  - delay 3
+  - effect:particles{particle=explode;amount=50;vSpread=0.5;hSpread=1;Speed=0.01;yOffset=11} @self 1
+  - effect:particles{particle=largeexplode;amount=20;vSpread=1;hSpread=0.5;Speed=1;yOffset=11} @self 1
+  - effect:sound{sound=random.explode;volume=2;p=0.5} @Self >0 1
+  - delay 3
+  - effect:particles{particle=explode;amount=50;vSpread=0.5;hSpread=1;Speed=0.01;yOffset=8} @self 1
+  - effect:particles{particle=largeexplode;amount=20;vSpread=1;hSpread=0.5;Speed=1;yOffset=8} @self 1
+  - effect:sound{sound=random.explode;volume=2;p=0.5} @Self >0 1
+  - delay 3
+  - effect:particles{particle=explode;amount=50;vSpread=0.5;hSpread=1;Speed=0.01;yOffset=5} @self 1
+  - effect:particles{particle=largeexplode;amount=20;vSpread=1;hSpread=0.5;Speed=1;yOffset=5} @self 1
+  - effect:sound{sound=random.explode;volume=2;p=0.5} @Self >0 1
+  - delay 3
+  - effect:particles{particle=explode;amount=50;vSpread=0.5;hSpread=1;Speed=0.01;yOffset=2} @self 1
+  - effect:particles{particle=largeexplode;amount=20;vSpread=1;hSpread=0.5;Speed=1;yOffset=2} @self 1
+  - damage{a=5;ignorearmor=true} @EntitiesInRadius{r=15}
+  - damage{a=10;ignorearmor=true} @EntitiesInRadius{r=10}
+  - damage{a=20;ignorearmor=true} @EntitiesInRadius{r=5}
+  - delay 3
+  - effect:sound{sound=random.explode;volume=2;p=0.5} @Self >0 1
+  - effect:particles{particle=largeexplode;amount=50;vSpread=5;hSpread=1;Speed=1;yOffset=0} @self 1
+  - effect:particles{particle=hugeexplosion;amount=10;vSpread=3.5;hSpread=3;Speed=1;yOffset=0} @self 1
+  - effect:particles{particle=smoke;amount=100;vSpread=5;hSpread=2;Speed=1;yOffset=0} @self 1
+Dead!Effect2:
+  Cooldown: 0.25
+  Skills:
+  - effect:sound{sound=random.explode;volume=2;p=1} @Self >0 1
+  - effect:particlering{particle=largeexplode;amount=40;vspread=0.5;hspread=0.5;speed=0;yoffset=0.3;points=20;radius=1} @Self >0 1
+  - delay 2
+  - effect:sound{sound=random.explode;volume=2;p=1} @Self >0 1
+  - effect:particlering{particle=largeexplode;amount=40;vspread=0.5;hspread=0.5;speed=0;yoffset=0.3;points=20;radius=3} @Self >0 1
+  - delay 2
+  - effect:sound{sound=random.explode;volume=2;p=1} @Self >0 1
+  - effect:particlering{particle=largeexplode;amount=40;vspread=0.5;hspread=0.5;speed=0;yoffset=0.3;points=20;radius=5} @Self >0 1
+  - potion{t=slow;d=40;l=1005} @EntitiesInRadius{r=20}
+  - potion{t=BLINDNESS;d=40;l=1005} @EntitiesInRadius{r=20}
+  - delay 2
+  - effect:sound{sound=random.explode;volume=2;p=1} @Self >0 1
+  - effect:particlering{particle=largeexplode;amount=40;vspread=0.5;hspread=0.5;speed=0;yoffset=0.3;points=20;radius=7} @Self >0 1
+  - delay 2
+  - effect:sound{sound=random.explode;volume=2;p=1} @Self >0 1
+  - effect:particlering{particle=largeexplode;amount=40;vspread=0.5;hspread=0.5;speed=0;yoffset=0.3;points=20;radius=9} @Self >0 1
+  - delay 2
+  - effect:sound{sound=random.explode;volume=2;p=1} @Self >0 1
+  - effect:particlering{particle=largeexplode;amount=40;vspread=0.5;hspread=0.5;speed=0;yoffset=0.3;points=20;radius=11} @Self >0 1
+  - delay 2
+  - effect:sound{sound=random.explode;volume=2;p=1} @Self >0 1
+  - effect:particlering{particle=largeexplode;amount=40;vspread=0.5;hspread=0.5;speed=0;yoffset=0.3;points=20;radius=13} @Self >0 1
+  - delay 2
+  - effect:sound{sound=random.explode;volume=2;p=1} @Self >0 1
+  - effect:particlering{particle=largeexplode;amount=40;vspread=0.5;hspread=0.5;speed=0;yoffset=0.3;points=20;radius=15} @Self >0 1
+DemonDead:
+  Skills:
+  - effect:particles{p=largeexplode;a=50;s=5} @self
+  - effect:lightning @self
+DemonHealth:
+  Cooldown: 0.25
+  Skills:
+  - sendactionmessage{msg=“&f&lThần Long<&sp><&co><&sp> &a<mob.hp>&6/&b<mob.mhp>”} @PlayersInRadius{r=20} =100%-80% 1
+  - sendactionmessage{msg=“&f&lThần Long<&sp><&co><&sp> &a<mob.hp>&6/&b<mob.mhp>”} @PlayersInRadius{r=20} =80%-60% 1
+  - sendactionmessage{msg=“&f&lThần Long<&sp><&co><&sp> &e<mob.hp>&6/&b<mob.mhp>”} @PlayersInRadius{r=20} =60%-40% 1
+  - sendactionmessage{msg=“&f&lThần Long<&sp><&co><&sp> &e<mob.hp>&6/&b<mob.mhp>”} @PlayersInRadius{r=20} =40%-20% 1
+  - sendactionmessage{msg=“&f&lThần Long<&sp><&co><&sp> &c<mob.hp>&6/&b<mob.mhp>”} @PlayersInRadius{r=20} =20%-10% 1
+  - sendactionmessage{msg=“&f&lThần Long<&sp><&co><&sp> &4<mob.hp>&6/&b<mob.mhp>”} @PlayersInRadius{r=20} =10%-0% 1
+light:
+  Skills:
+  - projectile{onTick=111111-Tick;onHit=111111-Hit;v=7;i=1;hR=1;vR=1} @Ring{radius=15;points=4}
+  
+111111-Tick:
+  Skills:
+  - effect:lightning @origin
+111111-Hit:
+  Skills: 
+  - effect:particles{p=largesmoke;amount=10;hSpread=0.1;vSpread=0.1;speed=0.1;yOffset=0} @origin  
+  - damage{a=135} @Target  
+SaoBang:
+  Skills:
+  - projectile{onTick=SaoBang_Tick;onEnd=SaoBang_End;v=27;i=1;hR=3;vR=2;syo=50;sfo=0;mr=70;d=500;sE=false;Repeat=4;RepeatInterval=80} @NearestPlayer{r=15}
+SaoBang_Tick:
+  Skills:
+  - effect:particles{p=reddust;color=#00FFFF;a=60;vS=0.2;hS=0.2;sE=true;sB=true} @Origin
+SaoBang_End:
+  Skills:
+  - damage{a=20;ia=true} @PlayersNearOrigin{r=8}
+  - effect:particlering{particle=hugeexplosion;radius=1;points=1;amount=1;hS=1;vS=0} @Origin
+  - effect:sound{s=entity.player.levelup;volume=2.0;pitch=0.5} @Origin
+TrieuHoiCrystal:
+  Skills:
+  - effect:sound{s=entity.elder_guardian.curse;volume=2.0;pitch=0.5} @Origin
+  - sendtitle{title="&d&lTriệu Hồi Trụ Pha Lê";d=100} @PIR{r=200}
+  - activatespawner{spawner=Crystal1}
+  - activatespawner{spawner=Crystal2}
+  - activatespawner{spawner=Crystal3}
+  - activatespawner{spawner=Crystal4}
+thanlong1:
+  Skills:
+  - command{c="ie give manhnangcap <target.name> 64"}    
+  - command{c="ie give manhnangcap <target.name> 64"}     
+  - command{c="exp give <target.name> 60500"}  
+  - command{c="give <target.name> diamondblock 20"}  
+  - command{c="crazycrates give physical cauvong 12 <target.name>"}    
+thanlong2:
+  Skills:  
+  - command{c="cr give <target.name> spawnerquai2 12"}    

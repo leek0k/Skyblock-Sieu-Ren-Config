@@ -1,0 +1,15 @@
+requireSet: 'GiangSinh'
+material: BOW
+customModelData: 0
+itemFlags: []
+name: '&b⁕&f⁕&b⁕ &b&lCUNG &f&lGIÁNG &f&lSINH &b⁕&f⁕&b⁕'
+lore:
+  - ''
+  - '&b⁕&f⁕&b⁕ &f&lGIÁNG SINH &b⁕&f⁕&b⁕'
+enchants:
+  - 'power:20'
+  - 'unbreaking:5'
+  - 'flame:2'
+  - 'punch:2'
+  - 'infinity:1'
+events:

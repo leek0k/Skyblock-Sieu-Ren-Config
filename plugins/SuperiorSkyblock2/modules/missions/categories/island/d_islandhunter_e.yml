@@ -1,0 +1,58 @@
+mission-file: ItemsMissions
+required-missions:
+- d_islandhunter_d
+island: false
+auto-reward: false
+rewards:
+  commands:
+  - eco give %player% 350000
+  - exp give %player% 3099
+  - silkspawners give %player% villager 1
+  - lp user %player% permission set deluxetags.tag.65
+  - is admin msg %player% &e&l$ | &7Hoàn thành thử thách!
+required-items:
+  '1':
+    types:
+    - BLAZE_ROD
+    amount: 640
+icons:
+  not-completed:
+    type: BLAZE_ROD
+    name: '&6&LTHỬ THÁCH: &c&lTHỢ SĂN &f&l#5'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l que quỷ lửa &fđể FULL túi'
+    - ''
+    - '&7- &e$350.000 , 3009 Exp'
+    - '&7- &fDanh hiệu &c&l⊹Thợ săn chính hiệu⊹'
+    - '&7- &fx1 Villager spawner'
+    - ''
+    - '&6Thu thập: &7{1}/640'
+    - '&6Tiến trình: &7{0}%'
+    - '&c&l ✘ &7Chưa hoàn thành'
+    - ''
+    - '&a&l YÊU CẦU: &aHoàn thành &c&lTHỢ SĂN &f&l#5'
+  can-complete:
+    type: BLAZE_ROD
+    name: '&6&LTHỬ THÁCH: &c&lTHỢ SĂN &f&l#5'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l que quỷ lửa &fđể FULL túi'
+    - ''
+    - '&7- &e$350.000 , 3009 Exp'
+    - '&7- &fDanh hiệu &c&l⊹Thợ săn chính hiệu⊹'
+    - '&7- &fx1 Rabbit spawner'
+    - ''
+    - '&6Thu thập: &7640/640'
+    - '&6Tiến trình: &7100%'
+    - '&a&l ✔ &7Bạn đã có đủ điều kiện Click vào đây.'
+    enchants:
+      DURABILITY: 1
+    flags:
+    - HIDE_ENCHANTS
+  completed:
+    type: MAP
+    name: '&6&LTHỬ THÁCH: &c&lTHỢ SĂN &f&l#5'
+    lore:
+    - ''
+    - '&a&l ✔ &7Đã hoàn thành.'

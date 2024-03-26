@@ -1,0 +1,16 @@
+requireSet: ''
+material: BOW
+name: '&d&l☾ &5&l☾ &d&l☾ &d&lCUNG THIÊN QUÝ MÃO &d&l☽ &5&l☽ &d&l☽'
+lore:
+  - ''
+  - '&d&l◆ ◆ ◆ TRUYỀN THUYẾT &d(Quý Mão 2023) &l◆ ◆ ◆'
+  - '&D&oVật phẩm sự kiện Tết Quý Mão 2023'
+  - ''  
+enchants:
+  - 'power:65'
+  - 'unbreaking:5'
+  - 'flame:3'
+  - 'punch:1'
+  - 'infinity:1'
+  - 'thigiacquymao:2'
+events:

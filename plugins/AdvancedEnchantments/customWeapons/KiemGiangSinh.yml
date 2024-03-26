@@ -1,0 +1,19 @@
+requireSet: 'GiangSinh'
+material: DIAMOND_SWORD
+customModelData: 0
+itemFlags: []
+name: '&b⁕&f⁕&b⁕ &b&lKIẾM &f&lGIÁNG &f&lSINH &b⁕&f⁕&b⁕'
+lore:
+  - ''
+  - '&b⁕&f⁕&b⁕ &f&lGIÁNG SINH &b⁕&f⁕&b⁕'
+  - '&f* Tăng 10% damage.'
+  - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+enchants:
+  - 'sharpness:20'
+  - 'unbreaking:5'
+  - 'fire_aspect:2'
+events:
+  ATTACK:
+    chance: 100
+    effects:
+      - 'INCREASE_DAMAGE:10'

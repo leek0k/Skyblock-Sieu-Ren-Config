@@ -1,0 +1,36 @@
+menu_title: '&8&lXui Xẻo Shop'
+open_command: 
+  - xuixeo
+size: 9
+update_interval: 1
+items:
+  'XuiXeoCauVong':
+    material: CHEST
+    slot: 2
+    display_name: '&7&lXUI XẺO &a&lCẦU VỒNG'
+    lore:
+    - ''
+    - '&aBấm vào đây để mở menu đổi điểm xui xẻo !!!'
+    - ''
+    click_commands:
+    - '[player] xuixeocauvong'
+  'XuiXeoPhuThuy':
+    material: ENDER_CHEST
+    slot: 4
+    display_name: '&7&lXUI XẺO &c&lPHÙ THỦY'
+    lore:
+    - ''
+    - '&aBấm vào đây để mở menu đổi điểm xui xẻo !!!'
+    - ''
+    click_commands:
+    - '[player] xuixeophuthuy'
+  'XuiXeoThuongCo':
+    material: ENDER_PORTAL_FRAME
+    slot: 6
+    display_name: '&7&lXUI XẺO &2&l⌘⌘&e﹝&a&lThượng cổ&e﹞&2&l⌘⌘'
+    lore:
+    - ''
+    - '&aBấm vào đây để mở menu đổi điểm xui xẻo !!!'
+    - ''
+    click_commands:
+    - '[player] xuixeothuongco'

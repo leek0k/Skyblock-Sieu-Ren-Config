@@ -1,0 +1,163 @@
+{
+  "prefix": "",
+  "commandHelp": "§a» §6%syntaxe% §7- §e%description%",
+  "noPermission": "§cYou don't have permission !",
+  "syntaxeError": "§cSai lệnh",
+  "commandError": "§cSai lệnh!",
+  "creativeError": "§cYou can't sell an item in creative mode !",
+  "maxPrice": "§eGiá tối đa được phép treo trên chợ đen là §6%max%§e!",
+  "minPrice": "§eGiá thấp nhất được phép treo trên chợ đen là §6%min%§e!",
+  "noMoney": "§eBạn không đủ $ !",
+  "noMore": "§eHãy mua Rank để có thêm slot bán đồ trên chợ đen!",
+  "blacklistItem": "§eBạn không thể treo bán vật phẩm này !",
+  "noHoldingItem": "§eHãy cầm vật phẩm lên tay để bán!",
+  "addItem": "§eBạn đã treo bán thành công §6%item% §elên chợ đen!",
+  "buyerPurchased": "§6%player% §eã mua §6%item% §evới giá §6%price%§e.",
+  "itemPurchased": "§eMua thành công!",
+  "removeItem": "§eBạn đã hủy treo bán vật phẩm !",
+  "inventoryFull": "§cTúi bạn đã full không thể mua vật phẩm này!",
+  "errorBuy": "§cBạn không thể mua vật phẩm này",
+  "cooldown": "§cHãy chờ §6%time% để treo bán tiếp",
+  "second": "giây",
+  "minute": "phút",
+  "hour": "giờ",
+  "day": "ngày",
+  "itemLore": [
+    "§7§m------------------------------",
+    "§8[§6!§8] §e%status%",
+    "",
+    "  §6* §eNgười bán§7: §6%seller%",
+    "  §6* §eGiá§7: §6%price%",
+    "  §6* §eThời hạn treo bán§7: §6%time%",
+    "§7§m------------------------------"
+  ],
+  "itemLoreBuyOrExpire": [
+    "§7§m------------------------------",
+    "§8[§6!§8] §eNhấn vào để thu hồi",
+    "",
+    "  §6* §eHết hạn trong§7: §6%time%",
+    "§7§m------------------------------"
+  ],
+  "statusBuyer": "Nhấn vào để mua",
+  "statusPlayer": "Nhấn vào để thu về",
+  "descriptionDefault": "Opens the auction house",
+  "descriptionVersion": "Give plugin version",
+  "descriptionReload": "Reload lang and config file",
+  "descriptionSell": "Sell an item",
+  "buy": "§aMua",
+  "remove": "§aThu về",
+  "back": "§aTrở lại",
+  "guiRemove": "§6» §aThu về",
+  "guiRemoveAdmin": "§6» §aThu về - Admin",
+  "guiBuy": "§6» §aMua",
+  "guiExpired": "§6» §eKHO HÀNG THU VỀ §7(§a%p%§7/§a%mp%§7)",
+  "guiBuying": "§6» §eKho vật phẩm đã mua §7(§a%p%§7/§a%mp%§7)",
+  "guiItems": "§6» §eVật phẩm §7(§a%p%§7/§a%mp%§7)",
+  "guiPlayer": "§6» §aKho vật phẩm của bạn",
+  "guiAuction": "§6» §8CHỢ ĐEN §7(§a%p%§7/§a%mp%§7)",
+  "guiAuctionCagory": "§6» §e%name% §7(§a%p%§7/§a%mp%§7)",
+  "guiCategory": "§6» §eĐa mục",
+  "guiConfig": "§6» §eConfig",
+  "guiLang": "§6» §Language",
+  "buttonPrevious": {
+    "name": "§6» §eTrang trước",
+    "item": 262,
+    "lore": null
+  },
+  "buttonNext": {
+    "name": "§6» §eTrang sau",
+    "item": 262,
+    "lore": null
+  },
+  "buttonInformation": {
+    "name": "§6» §eTHÔNG TIN",
+    "item": 340,
+    "lore": [
+      "§6» §eSố lượng treo bán§7: §6%item%",
+      "§6» §eCách treo bán đồ lên CHỢ (§a$§e) §7: §6/ah sell <giá>",
+      "§6» §eCách treo bán đồ lên CHỢ (§bXu§e) §7: §6/ah sell <giá>p",
+      "§6» §cLưu ý: Treo đồ quá 2 ngày không thu hồi sẽ bị xóa!!"
+    ]
+  },
+  "buttonExpire": {
+    "name": "§6» §eVật phẩm hết hạn",
+    "item": 54,
+    "lore": [
+      "§6» §6%item% §evật phẩm"
+    ]
+  },
+  "buttonBuying": {
+    "name": "§6» §eGIỎ ĐỰNG HÀNG",
+    "item": 328,
+    "lore": [
+      "§6» §eNhững sản phẩm bạn mua sẽ đựng ở đây §6%item%",
+      "",
+      "§7((Click vào để lấy về túi))",
+      "§6» §cLưu ý: Treo đồ quá 2 ngày không thu hồi sẽ bị xóa!!"
+    ]
+  },
+  "buttonShowItems": {
+    "name": "§6» §eChợ đen",
+    "item": 264,
+    "lore": [
+      "§6» §eBạn đang treo §6%item% §evật phẩm trên chợ đen"
+    ]
+  },
+  "buttonCategory": {
+    "name": "§6» §eĐa mục",
+    "item": 340,
+    "lore": [
+      "§6» §eChia mục vật phẩm"
+    ]
+  },
+  "buttonBack": {
+    "name": "§cTrở về",
+    "item": 399,
+    "lore": null
+  },
+  "buttonRemoveAll": {
+    "name": "§cRemove all",
+    "item": 399,
+    "lore": null
+  },
+  "buttonCategoryBlocks": {
+    "name": "§6» §eMục§7: §6Khối",
+    "item": 3,
+    "lore": [
+      "§6» §eNhấn vào để mở mục"
+    ]
+  },
+  "buttonCategoryWeapons": {
+    "name": "§6» §eMục§7: §6Vũ khí",
+    "item": 276,
+    "lore": [
+      "§6» §eNhấn vào để mở mục"
+    ]
+  },
+  "buttonCategoryTools": {
+    "name": "§6» §eMục§7: §6Dụng cụ",
+    "item": 278,
+    "lore": [
+      "§6» §eNhấn vào để mở mục"
+    ]
+  },
+  "buttonCategoryPotions": {
+    "name": "§6» §eMục§7: §6Thuốc",
+    "item": 373,
+    "lore": [
+      "§6» §eNhấn vào để mở mục"
+    ]
+  },
+  "buttonCategoryMisc": {
+    "name": "§6» §eMục§7: §6Linh tinh",
+    "item": 280,
+    "lore": [
+      "§6» §eNhấn vào để mở mục"
+    ]
+  },
+  "categoryBlock": "Khối",
+  "categoryWeapons": "Vũ khí",
+  "categoryTools": "Dụng cụ",
+  "categoryPotions": "Thuốc",
+  "categoryMisc": "Khác"
+}

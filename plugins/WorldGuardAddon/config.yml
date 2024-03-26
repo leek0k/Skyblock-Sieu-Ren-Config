@@ -1,0 +1,175 @@
+# Command
+# /worldguardaddon,wga reload
+#
+# Permission
+# worldguardaddon.bypass - not affect by flag
+#
+# How to use
+# /rg flag <region> place-specific-blocks <section>
+# /rg flag <region> break-specific-blocks <section>
+
+flags:
+  place-specific-blocks: # flag
+    default: # section
+      override: false # bypass cancelled of all other plugin
+      whitelist: []
+      blacklist: []
+    example: # section
+      override: false
+      whitelist: []
+      blacklist: []
+      enable-message: true
+      message: '&cChỉ có thể đặt khối đá'
+  break-specific-blocks: # flag
+    default: # section
+      override: false
+      whitelist: []
+      blacklist: []
+    example: # section
+      override: false
+      whitelist:
+      - 'STONE'
+      blacklist: []
+      enable-message: true
+      message: '&cChỉ có thể đập khối đá'
+  anti-item-drop:
+    default:
+      enable: true
+      list:
+        # 1:
+          # material-blacklist:
+          # - 'STONE'
+          # # compare-type
+          # # CONTAINS - chỉ cần chứa chuỗi
+          # # EQUALS - so sánh chính xác chuỗi
+          # display-compare-type: CONTAINS
+          # display-compare: 'Test' 
+          # lore-compare-type: CONTAINS
+          # # Đối với CONTAINS lore 
+          # # Mỗi dòng lore của item sẽ kiểm tra có chứa từng dòng trong lore-compare
+          # # Đối với CONTAINS lore
+          # # So sánh chính xác từng dòng lore item với từng dòng lore compare 
+          # lore-compare: 
+          # - 'Test'
+          # message: 
+          # - '&cKhông thể vứt vật phẩm này!'
+        1:
+          material-blacklist: []
+          # compare-type
+          # CONTAINS - chỉ cần chứa chuỗi
+          # EQUALS - so sánh chính xác chuỗi
+          display-compare-type: CONTAINS
+          display-compare: ""
+          lore-compare-type: CONTAINS
+          # Đối với CONTAINS lore 
+          # Mỗi dòng lore của item sẽ kiểm tra có chứa từng dòng trong lore-compare
+          # Đối với CONTAINS lore
+          # So sánh chính xác từng dòng lore item với từng dòng lore compare 
+          lore-compare: 
+          - 'Giảm'
+          message: 
+          - '&cKhông thể vứt vật phẩm này!'
+        2:
+          material-blacklist: []
+          # compare-type
+          # CONTAINS - chỉ cần chứa chuỗi
+          # EQUALS - so sánh chính xác chuỗi
+          display-compare-type: CONTAINS
+          display-compare: ""
+          lore-compare-type: CONTAINS
+          # Đối với CONTAINS lore 
+          # Mỗi dòng lore của item sẽ kiểm tra có chứa từng dòng trong lore-compare
+          # Đối với CONTAINS lore
+          # So sánh chính xác từng dòng lore item với từng dòng lore compare 
+          lore-compare: 
+          - 'Tăng'
+          message: 
+          - '&cKhông thể vứt vật phẩm này!'
+        3:
+          material-blacklist: []
+          # compare-type
+          # CONTAINS - chỉ cần chứa chuỗi
+          # EQUALS - so sánh chính xác chuỗi
+          display-compare-type: CONTAINS
+          display-compare: ""
+          lore-compare-type: CONTAINS
+          # Đối với CONTAINS lore 
+          # Mỗi dòng lore của item sẽ kiểm tra có chứa từng dòng trong lore-compare
+          # Đối với CONTAINS lore
+          # So sánh chính xác từng dòng lore item với từng dòng lore compare 
+          lore-compare: 
+          - '[!] Chuột phải để sử dụng'
+          message: 
+          - '&cKhông thể vứt vật phẩm này!'
+        4:
+          material-blacklist: []
+          # compare-type
+          # CONTAINS - chỉ cần chứa chuỗi
+          # EQUALS - so sánh chính xác chuỗi
+          display-compare-type: CONTAINS
+          display-compare: ""
+          lore-compare-type: CONTAINS
+          # Đối với CONTAINS lore 
+          # Mỗi dòng lore của item sẽ kiểm tra có chứa từng dòng trong lore-compare
+          # Đối với CONTAINS lore
+          # So sánh chính xác từng dòng lore item với từng dòng lore compare 
+          lore-compare: 
+          - '* SỌ'
+          message: 
+          - '&cKhông thể vứt vật phẩm này!'
+        5:
+          material-blacklist: []
+          # compare-type
+          # CONTAINS - chỉ cần chứa chuỗi
+          # EQUALS - so sánh chính xác chuỗi
+          display-compare-type: CONTAINS
+          display-compare: ""
+          lore-compare-type: CONTAINS
+          # Đối với CONTAINS lore 
+          # Mỗi dòng lore của item sẽ kiểm tra có chứa từng dòng trong lore-compare
+          # Đối với CONTAINS lore
+          # So sánh chính xác từng dòng lore item với từng dòng lore compare 
+          lore-compare: 
+          - 'Trang bị'
+          message: 
+          - '&cKhông thể vứt vật phẩm này!'
+        6:
+          material-blacklist: []
+          # compare-type
+          # CONTAINS - chỉ cần chứa chuỗi
+          # EQUALS - so sánh chính xác chuỗi
+          display-compare-type: CONTAINS
+          display-compare: ""
+          lore-compare-type: CONTAINS
+          # Đối với CONTAINS lore 
+          # Mỗi dòng lore của item sẽ kiểm tra có chứa từng dòng trong lore-compare
+          # Đối với CONTAINS lore
+          # So sánh chính xác từng dòng lore item với từng dòng lore compare 
+          lore-compare: 
+          - 'Skill'
+          message: 
+          - '&cKhông thể vứt vật phẩm này!'
+        7:
+          material-blacklist: []
+          # compare-type
+          # CONTAINS - chỉ cần chứa chuỗi
+          # EQUALS - so sánh chính xác chuỗi
+          display-compare-type: CONTAINS
+          display-compare: ""
+          lore-compare-type: CONTAINS
+          # Đối với CONTAINS lore 
+          # Mỗi dòng lore của item sẽ kiểm tra có chứa từng dòng trong lore-compare
+          # Đối với CONTAINS lore
+          # So sánh chính xác từng dòng lore item với từng dòng lore compare 
+          lore-compare: 
+          - '&fYêu cầu cường hóa: Trâu'
+          message: 
+          - '&cKhông thể vứt sách &d&lTrâu Thánh&c!'
+  force-gamemode:
+    enable: true
+    # gamemode khi join hoặc quit. SURVIVAL, ADVENTURE, SPECTATOR, AUTO
+    join-gamemode: SURVIVAL
+    quit-gamemode: SURVIVAL
+    blacklist-region:
+      - world-koth
+      - world-koth2

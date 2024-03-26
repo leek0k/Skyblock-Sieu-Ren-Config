@@ -1,0 +1,4 @@
+giapendercon:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE

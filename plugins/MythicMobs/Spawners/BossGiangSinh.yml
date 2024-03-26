@@ -1,0 +1,24 @@
+BossGiangSinh:
+  MobName: QuaQuaiQuy
+  World: Mapgiangsinh
+  X: -975
+  Y: 73
+  Z: -642
+  Radius: 0
+  UseTimer: true
+  MaxMobs: 1
+  MobLevel: '1'
+  MobsPerSpawn: 1
+  Cooldown: 3600
+  CooldownTimer: 0
+  Warmup: 0
+  WarmupTimer: 0
+  CheckForPlayers: false
+  ActivationRange: 40
+  LeashRange: 40
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  ShowFlames: true
+  Breakable: false
+  Conditions: []
+  ActiveMobs: 0

@@ -1,0 +1,17 @@
+command:
+  illegal-notice:
+    no-illegal: 
+    - '&cKhông có hành vi OP hoặc Permission không hợp lệ nào được tìm thấy!'
+    illegal: 
+    - '&cCó hành vi OP hoặc Permission không hợp lệ, hãy kiểm tra file logs.yml!'
+    - '&f/illegalop read &cđể xác nhận đã đọc thông báo này'
+  reload: '&2[&a!&2] &aĐã cài lại file cấu hình!'
+  save: '&2[&a!&2] &aLưu dữ liệu thành công!'
+  read: '&2[&a!&2] &aĐánh dấu đã đọc thông báo thành công!'
+  help:
+  - '&6======== &eLệnh IllegalOP &6========'
+  - '&f/illegalop,iop reload &e- Cài lại cấu hình'
+  - '&f/illegalop read &e- Đã đọc logs'
+  - '&f/illegalop check &e- Kiểm tra có thông báo OP không hợp lệ'
+  - '&f/illegalop save &e- Lưu dữ liệu'
+  - '&f/illegalop help &e- Xem hướng dẫn'

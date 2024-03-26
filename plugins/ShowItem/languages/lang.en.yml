@@ -1,0 +1,86 @@
+# 
+# The %type% variable is also usable in the named string for example like this:
+#   named: "%icon%%type% &anamed %name%
+no-permission: '&cBạn không có quyền %permission%'
+count: 'x%count% '
+item:
+  inventory-title: '&eKhoe vật phẩm:'
+  unnamed: '%color%[%count%\%icon%%color%%type%%color%\]'
+  named: '%color%[%count%%color%\%icon%%name%%color%\]'
+  none: \[None\]
+  unknown: '&cVật phẩm không xác định'
+  name-ellipsis: '...'
+  custom:
+    your custom displayname: '%color%[%count%&6\%icon%Custom Display Name&6\]'
+slot:
+  numbered: 'Từ ô %slot%'
+  hand: ''
+all:
+  self: '&aBạn khoe %item%%slot%&a cho mọi người!'
+  target: '%player% &ađã khoe %item%%slot%!'
+world:
+  self: '&aBạn khoe %item%%slot%&a cho mọi người trong cùng thế giới!'
+  target: '%player% &ađã khoe %item%%slot%&a cđến mọi người trong cùng thế giới!'
+radius:
+  self: '&aBạn khoe trong bán kính %item%%slot%!%customradius%'
+  custom: '&8(Bán kinh: %radius%&8 khối)'
+  target: '%player%&a đã khoe %item%%slot%!'
+player:
+  self: '&aBạn khoe cho %player% %item%%slot%'
+  target: '%player% &akhoe cho bạn %item%%slot%'
+inv:
+  chat: '&a\[Kho đồ của %player%\]'
+  title: '&rKho đồ của %player%'
+  hover: '&5Nhấn để xem kho đồ của &e%player%'
+  inventory-not-viewable: '&cKhông thể xem kho đồ này!'
+  all:
+    self: '&aYou show your inventory to everyone!'
+    target: '&a%player% &ashows everyone his inventory!'
+  world:
+    self: '&aYou show your inventory to everyone in your world!'
+    target: '&a%player% &ashows his inventory to everyone in his world!'
+  radius:
+    self: '&aYou show your inventory to everyone around you!%customradius%'
+    custom: '&8(View distance: %radius%&8 blocks)'
+    target: '%player%&a shows his inventory!'
+  player:
+    self: '&aYou show %target%&a your inventory. (Click)'
+    target: '%player%&a shows you his inventory. (Click)'
+ender:
+  chat: '&a\[%player%''s Enderchest\]'
+  title: '&r%player%''s Enderchest'
+  hover: '&5Click to view the Enderchest of &e%player%'
+  inventory-not-viewable: '&cThat Enderchest is not viewable!'
+  all:
+    self: '&aYou show your Enderchest to everyone!'
+    target: '%player%&a shows everyone his Enderchest!'
+  world:
+    self: '&aYou show your Enderchest to everyone in your world!'
+    target: '%player%&a shows his Enderchest to everyone in his world!'
+  radius:
+    self: '&aYou show your Enderchest to everyone around you!%customradius%'
+    custom: '&8(View distance: %radius%&8 blocks)'
+    target: '%player%&a shows his Enderchest!'
+  player:
+    self: '&aYou show %target%&a your Enderchest. (Click)'
+    target: '%player%&a shows you his Enderchest. (Click)'
+help:
+  item-info: '&eOptions for showing %item%&e from slot %slot%:'
+  suggest-hover: '&9Click to insert &f%insert%&9 into input'
+  chat: '&e> &aWrite &f%variable%&a into chat.'
+  player: '&e> &aShow a specific player: &f%command%'
+  default: '&e> &aShow people in a %radius% block radius: &f%command%'
+  radius: '&e> &aShow people in a custom radius: &f%command%'
+  world: '&e> &aShow to everyone in your world: &f%command%'
+  all: '&e> &aShow every online player: &f%command%'
+error:
+  no-item: '&cBạn không cầm vật phẩm nào. :('
+  item-no-longer-cached: '&cVật phẩm này không thể khoe!'
+  invalid-slot: '&e%input% &ckhông phải là 1 ô!'
+  radius-too-small: '&cLỗi: Bán kính %input% là quá nhỏ!'
+  radius-not-integer: '&cLỗi: %input% phải là 1 số từ 0-9999!'
+  missing-radius: '&cLỗi: Hãy thêm số sau -r!'
+  item-blocked: '&cBạn không được quyền khoe vật phẩm này! (Bị chặn bởi %definition%&c)'
+  player-offline: '&cNgười chơi %player%&c không online'
+  noone-around: '&cKhông có ai xung quanh bạn  cả :('
+  cooldown: '&cBạn phải đợi %remaining%&c giây trước khi khoe lần nữa!'

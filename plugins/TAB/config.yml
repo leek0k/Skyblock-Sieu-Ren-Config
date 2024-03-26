@@ -1,0 +1,204 @@
+# Detailed explanation of all options available at https://github.com/NEZNAMY/TAB/wiki/config.yml
+
+header-footer:
+  enabled: true
+  disable-in-worlds:
+    - disabledworld
+  header:
+    - ""
+    - "&f&lONLINE: &E%server_online% &8- &6&lMine&f&lAhihi &8- &e&lPING: &f%player_ping%"
+    - ""
+  footer:
+    - ""
+    - "&f&lHỖ TRỢ: &dFacebook.com/MineAhihiVN&r"
+    - ""
+    - "&e&l/NAPTHE &Fđể Donate ủng hộ MineAhihi"
+    - ""
+  per-world:
+    world1:
+      header:
+        - "an example of world with custom"
+      footer:
+        - "header/footer and prefix/suffix"
+    world2;world3:
+      header:
+        - "This is a shared header for"
+        - "world2 and world3"
+
+tablist-name-formatting:
+  enabled: true
+  align-tabsuffix-on-the-right: false
+  character-width-overrides: {}
+  anti-override: true
+  disable-in-worlds:
+    - disabledworld
+
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  anti-override: true
+  sorting-types:
+    - "GROUPS:owner,admin,staff,youtuber,police3,police2,police1,helper3,helper2,helper1,helper0,vip6,vip5,vip4,vip3,vip2,vip1,default"
+    - "PLACEHOLDER_A_TO_Z:%player%"
+  case-sensitive-sorting: true
+  disable-in-worlds:
+    - disabledworld
+  unlimited-nametag-mode:
+    enabled: false
+    use-marker-tag-for-1-8-x-clients: false
+    disable-on-boats: true
+    space-between-lines: 0.22
+    disable-in-worlds:
+      - disabledworld
+    dynamic-lines:
+      - abovename
+      - nametag #the original one, combination of tagprefix + customtagname + tagsuffix
+      - belowname
+      - another
+    static-lines:
+      myCustomLine: 0.66
+
+yellow-number-in-tablist:
+  enabled: true
+  value: "%ping%"
+  disable-in-worlds:
+    - disabledworld
+
+belowname-objective:
+  enabled: true
+  number: "%health%"
+  text: "&c❤"
+  disable-in-worlds:
+    - disabledworld
+
+prevent-spectator-effect:
+  enabled: false
+
+bossbar:
+  enabled: true
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: false
+  disable-in-worlds:
+    - disabledworld
+  bars:
+    x2:  
+      style: "PROGRESS"
+      color: "%animation:barcolors2%"
+      progress: "%animation:barnumbers%" # in %
+      #text: '%animation:rainbow%%animation:dots2% &c&lKHUYẾN MÃI&c: %animation:rainbow% x2 Nạp Thẻ Từ 01/02/2024 %animation:dots%'
+      text: '%animation:eventtext%'
+
+per-world-playerlist:
+  enabled: false
+  # players with tab.staff will always see all players
+  allow-bypass-permission: false
+  # players in these worlds will always see all players
+  ignore-effect-in-worlds:
+    - ignoredworld
+    - build
+  shared-playerlist-world-groups:
+    lobby:
+      - lobby1
+      - lobby2
+    minigames:
+      - paintball
+      - bedwars
+
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: false
+  hidden-by-default: false
+  use-numbers: true
+  static-number: 0
+  delay-on-join-milliseconds: 0
+  respect-other-plugins: true
+  disable-in-worlds: 
+    - disabledworld
+  scoreboards:
+    scoreboard1:
+      title: "&a&lSkyBlock &a๖Siêu Rèn III"
+      lines:
+        - "&7&o%server_time_dd/MM/yyyy HH:mm%"
+        - "&7"
+        - "&a&l%player_name%"
+        - ""
+        - " &fK/D: &c%statistic_player_kills%/%statistic_deaths%" 
+        - " &fTiền: &a%vault_eco_balance_formatted%&2&L$"
+        - " &fXu: &b%playerpoints_points%⛁"
+        - " &fĐá quý: &6%elementalgems_balance%☀"  
+        - "&7"
+        - "&a&lThông tin đảo"
+        - " &fĐội: &7%superior_island_team_size%/12"
+        - " &fCấp: &7%topphuquy_group_total_point_SUPERIORSKYBLOCK2% &e✮"
+        - " &fXếp hạng Đảo: &6&l%topphuquy_group_top_SUPERIORSKYBLOCK2%"
+        - "&7"
+        - "&7&oMineAhihi.com"
+
+ping-spoof:
+  enabled: false
+  value: 0
+
+fix-pet-names:
+  enabled: false
+
+placeholders:
+  date-format: "dd.MM.yyyy"
+  time-format: "[HH:mm:ss / h:mm a]"
+  time-offset: 0
+  remove-strings:
+    - "[]"
+    - "< >"
+
+placeholder-output-replacements:
+  "%essentials_vanished%":
+    "yes": "&7| Vanished"
+    "no": ""
+  "%afk%":
+    true: " &o[AFK]&r"
+    false: ""
+  "%essentials_nickname%":
+    "%essentials_nickname%": "%player%" #placeholder did not parse correctly, show real name instead
+
+conditions:
+  nick: # use it with %condition:nick%
+    conditions:
+      - "%player%=%essentials_nickname%"
+    yes: "%player%"
+    no: "~%essentials_nickname%"
+
+placeholderapi-refresh-intervals:
+  default-refresh-interval: 500
+  server:
+    "%server_uptime%": 1000
+    "%server_tps_1_colored%": 1000
+    "%server_unique_joins%": 5000
+  player:
+    "%player_health%": 200
+    "%player_ping%": 1000
+    "%vault_prefix%": 1000
+  relational:
+    "%rel_factionsuuid_relation_color%": 1000
+
+#if none of the above fits your needs, you can enable this to give groups using tab.group.<group name from the list below> permission
+assign-groups-by-permissions: false
+
+#if the option above is true, all groups are taken based on permissions and the one higher in this list is used as primary
+primary-group-finding-list:
+  - Owner
+  - Admin
+  - Mod
+  - Helper0
+  - default
+
+debug: false
+
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password

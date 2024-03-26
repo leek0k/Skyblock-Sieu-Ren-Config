@@ -1,0 +1,14 @@
+location: NewSpawn:51.5:147.000:-1748.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&d&lHÒM &c&lPHÙ THỦY'
+    height: 0.3
+  - content: '&f(!) Chuột trái để xem qua'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,14 @@
+# Here you have to specify a list of whitelisted ips.
+# Note that you do not need to specify bungee IPs here.
+# Those are automatically imported from your bukkit.yml.
+# Set them there if you didn't already.
+whitelist:
+- 10.226.47.103
+- 10.226.47.234
+- 10.90.226.176
+- 10.90.226.88
+- 127.0.0.1
+- 172.18.0.1
+playerKickMessage: '&cYou have to join through the proxy.'
+debug: false
+setup: false

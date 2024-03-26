@@ -1,0 +1,12 @@
+#Khoảng cách thời gian (bằng giây) thông báo cho người chơi biết
+#rằng họ không thể có nhiều hơn 1 vật phẩm trên hotbar:
+NotifyTooManyItemsTime: 10
+
+#Thời gian (bằng ticks với mỗi 20 ticks bằng 1 giây) kiểm tra và
+#cập nhật các thuộc tính từ vật phẩm cho người chơi:
+# * Thời gian càng cao thì hiệu năng máy chủ càng ít bị tác động!
+# * Bạn phải khởi động lại máy chủ nếu muốn thay đổi giá trị này!
+UpdateAbilityTime: 20
+
+#Dòng lore này dùng để xác định vật phẩm đó có ô khảm:
+EmptySlotLore: '&7&l (&7Ô lửa&7&l)'

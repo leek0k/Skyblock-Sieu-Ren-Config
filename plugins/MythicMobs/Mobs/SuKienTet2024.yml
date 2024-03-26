@@ -1,0 +1,136 @@
+Tet2024-TieuLong:
+  Type: HUSK
+  Display: '&e&lTiểu Long'
+  Health: 500
+  Damage: 25
+  Options:
+    AlwaysShowName: true
+    NoDamageTicks: 5
+    MovementSpeed: 0.2
+    KnockbackResistance: 1
+    PreventSunburn: true 
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    Silent: true
+    Despawn: true
+    Collidable: false
+  AIGoalSelectors:
+    - randomstroll
+    - meleeattack
+  AITargetSelectors:
+    - players
+  Equipment:
+    - Tet2024-TieuLongSkull:4
+  Drops:
+    - Tet2024-ManhLiXi 1 0.25
+  DamageModifiers:
+    - LIGHTNING 0
+    - POISON 0 
+    - MAGIC 0
+    - WITHER 0
+    - THORNS 0
+    - FIRE_TICK 0
+    - FIRE 0
+    - FALL 0
+    - CUSTOM 0
+    - MELTING 0
+    - SUFFOCATION 0
+    - EXPLOSION 0
+  Skills:
+  - summon{type=Tet2024-DiaLong} @Self ~onDeath 0.01
+    
+Tet2024-DiaLong:
+  Type: SKELETON
+  Display: '&2&lĐịa Long'
+  Health: 1000
+  Damage: 50
+  Options:
+    AlwaysShowName: true
+    NoDamageTicks: 5
+    MovementSpeed: 0.25
+    KnockbackResistance: 1
+    PreventSunburn: true 
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    Silent: true
+    Despawn: true
+    Collidable: false
+  AIGoalSelectors:
+    - randomstroll
+    - meleeattack
+  AITargetSelectors:
+    - players
+  Equipment:
+    - Tet2024-DiaLongSkull:4
+  Drops:
+    - Tet2024-LiXi 1 1
+  DamageModifiers:
+    - LIGHTNING 0
+    - POISON 0 
+    - MAGIC 0
+    - WITHER 0
+    - THORNS 0
+    - FIRE_TICK 0
+    - FIRE 0
+    - FALL 0
+    - CUSTOM 0
+    - MELTING 0
+    - SUFFOCATION 0
+    - EXPLOSION 0
+  
+Tet2024-HacLongBoss:
+  Type: WITHER_SKELETON
+  Display: '&8&lᚬ&ka&8&lᚯ &0&lᾟắc £ong &8&lᚬ&ka&8&lᚯ'
+  Health: 250000
+  Damage: 200
+  BossBar:
+    Enabled: true
+    Range: 50
+    Style: SEGMENTED_10
+    Color: RED
+    Title: '&8&lᚬ&ka&8&lᚯ &0&lᾟắc £ong &8&lᚬ&ka&8&lᚯ &f∻ &c<mob.hp>❤'
+  Options:
+    AlwaysShowName: true
+    NoDamageTicks: 1
+    MovementSpeed: 0.25
+    KnockbackResistance: 1
+    PreventSunburn: true 
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    Silent: true
+    Despawn: false
+    Collidable: false
+  AIGoalSelectors:
+    - meleeattack
+  AITargetSelectors:
+    - players
+  Equipment:
+    - Tet2024-HacLongSkull:4
+    - iron_sword:0
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  DamageModifiers:
+    - LIGHTNING 0
+    - POISON 0 
+    - MAGIC 0
+    - WITHER 0
+    - THORNS 0
+    - FIRE_TICK 0
+    - FIRE 0
+    - FALL 0
+    - CUSTOM 0
+    - MELTING 0
+    - SUFFOCATION 0
+    - EXPLOSION 0
+  Skills:
+  - potion{type=GLOWING;duration=1000000000;level=1} @Self ~onSpawn
+  - message{m="&8&lᚬ&ka&8&lᚯ &0&lᾟắc £ong &8&lᚬ&ka&8&lᚯ đã xuất hiện! &5((/dungeon tet))"} @Server ~onSpawn
+  - skill{s=HacLong-HapTinhDaiPhap} ~onTimer:1000
+  - skill{s=HacLong-Reward} @Trigger ~onDeath
+  - command{c="cr give to <target.name> LiXi2024 1"} @PIR{r=10} ~onDeath
+  - skill{s=HacLong-RandomDrop} @PIR{r=10} ~onDeath
+  

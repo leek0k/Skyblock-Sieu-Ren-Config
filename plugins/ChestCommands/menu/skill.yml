@@ -1,0 +1,663 @@
+﻿
+
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&8&lSKILLS'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 6
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  command: 'skill'
+  open-action: 'sound: BLOCK_CHEST_OPEN, 2.0, 0.5'
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+MCMMO: 
+  COMMAND: ''
+  NAME: '&d&lMCMMO'
+  LORE:
+    - '&7《 COMMANDS &7》'
+    - '&d* &a/stats &7Xem thông tin của Skill của chính bạn.'
+    - '&d* &a/inspect <tên> &7Xem Skill của người khác.'
+    - '&d* &a/mctop &7Xem top Skill trong server.'
+    - '&d* &a/mctop <tên Skill> &7Xem top từng loại Skill.'
+    - '&d* &a/acrobatics &7Xem Skill nhào lộn của bạn.'
+    - '&d* &a/alchemy &7Xem Skill điều chế thuốc của bạn.'
+    - '&d* &a/archery &7Xem Skill bắn cung của bạn.'
+    - '&d* &a/axes &7Xem Skill đánh bằng rìu của bạn.'
+    - '&d* &a/excavation &7Xem Skill đào bới của bạn.'
+    - '&d* &a/fishing &7Xem Skill câu cá của bạn.'
+    - '&d* &a/herbalish &7Xem Skill trồng trọt của bạn.'
+    - '&d* &a/mining &7Xem Skill khai mỏ của bạn.'
+    - '&d* &a/swords &7Xem Skill đánh kiếm của bạn.'
+    - '&d* &a/woodcutting &7Xem Skill chặt gỗ của bạn.'
+    - '&d* &a/smelting &7Xem Skill nấu chảy của bạn.'
+    
+  ID: 3
+  POSITION-X: 5
+  POSITION-Y: 2
+taming:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 3   
+woodcutting:
+  COMMAND: ''
+  KEEP-OPEN: true    
+  NAME: '&e&lTiều Phu &b&l(/Woodcutting)'  
+  LORE:
+    - '&7《 &b&lKỹ Năng Nội Tại &7》'  
+    - '&7⚔ &aNhân Đôi'
+    - ' &fCó cơ hội x2 gỗ khi chặt cây'
+    - '&7⚔ &aThổi lá'
+    - ' &fCho phép phá ngay lập tức Lá cây khi dùng Rìu'
+    - ' &fskill Chuột phải Kích hoạt &aMáy Cưa'
+    - '&7《 &b&lKỹ Năng Chuột phải Kích hoạt &7》'
+  ID: 275
+  POSITION-X: 3
+  POSITION-Y: 3     
+fishing:
+  COMMAND: ''
+  KEEP-OPEN: true    
+  NAME: '&e&lNgư Dân &b&l(/Fishing)'  
+  LORE:
+    - '&7《 &b&lKỹ Năng Nội Tại &7》'  
+    - '&7⚔ &aThợ săn kho báu'
+    - ' &fCấp càng cao, tỉ lệ câu được vật phẩm hiếm càng cao'
+    - '&7⚔ &aThợ săn ma thuật'
+    - ' &fCho phép câu được những vật phẩm có Enchant'
+    - '&7⚔ &aBậc Thầy Câu Cá'
+    - ' &fTăng cơ hội cá cắn câu cho bạn'
+    - '&7⚔ &aHồi Food'
+    - ' &fKhi ăn cá, thanh đói của bạn sẽ tăng nhiều hơn'
+    - '&7《 &b&lKỹ Năng Chuột phải Kích hoạt &7》'
+    - '&7⚔ &aLay Động'
+    - ' &fNém cần câu vào Mob để ăn trộm vật phẩm của'
+    - ' &fchúng rơi ra khi chết (&eTùy mob&f)'
+    - ' &cVD&f: ném cần câu vào &bNhện &fsẽ lấy'
+    - ' &fra sợi chỉ của nhện'
+    - '&7⚔ &aCâu Cá Trên Băng'
+    - ' &fCho phép câu cá trong khu vực băng'
+  ID: 346
+  POSITION-X: 4
+  POSITION-Y: 3   
+  
+Mining:
+  COMMAND: ''
+  KEEP-OPEN: true    
+  NAME: '&e&lThần Mỏ &b&l(/Mining)'  
+  LORE:
+    - '&7《 &b&lKỹ Năng Đặc Biệt &7》'  
+    - '&7⚔ &aNhân Đôi'
+    - ' &fCó cơ hội đào x2 vật phẩm &e{0.1% cơ hội với mỗi cấp)'
+    - '&7⚔ &aĐảo Nổ &7(LV: 100+)'
+    - ' &fSử dụng TNT để khai thác mỏ, cách sử dụng skill:'
+    - ' &fđặt 1 quả TNT sau đó chạy ra xa để cầm đá lửa và'
+    - ' Shift + Chuột Phải vào không khí hướng về phía TNT'
+    - ' &fđể kích nổ nó từ xa &e(50s hồi chiêu)'
+    - '&7⚔ &aBombs Khổng Lồ &7(LV: 100+)'
+    - ' &fTăng phạm vi nổ của TNT của skill &aĐào Nổ'
+    - '&7⚔ &aChống Khủng Bô &7(LV: 100+)'
+    - ' &fGiảm sát thương từ vụ nổ TNT'
+  ID: 278
+  POSITION-X: 5
+  POSITION-Y: 3 
+  
+Alchemy:
+  COMMAND: ''
+  KEEP-OPEN: true    
+  NAME: '&e&lLão Làng &b&l(/Alchemy)'  
+  LORE:
+    - '&7《 &b&lKỹ Năng Nội Tại &7》'  
+    - '&7⚔ &aLv càng cao, chế thuốc càng nhanh, Unlock công thức mới'
+    - ' &eLv100&f: Tạo ra thuốc &b(Vội Vàng) &fvới &aCà Rốt'
+    - ' &eLv250&f: Tạo ra thuốc &b(Hấp Thụ) &fvới &aThạch Anh nether'
+    - ' &eLv250&f: Tạo ra thuốc &b(Nhảy Cao) &fvới &aNấm Đỏ'
+    - ' &eLv350&f: Tạo ra thuốc &b(Tăng Máu) &fvới &aTáo'
+    - ' &eLv350&f: Tạo ra thuốc &b(Đói Nhanh) &fvới &aThịt Thối'
+    - ' &eLv500&f: Tạo ra thuốc &b(Buồn Nôn) &fvới &aNấm Nâu'
+    - ' &eLv500&f: Tạo ra thuốc &b(Mù Lòa) &fvới &aTúi Mực'
+    - ' &eLv750&f: Tạo ra thuốc &b(Bão Hòa) &fvới &aDương Xỉ'
+    - ' &eLv900&f: Tạo ra thuốc &b(Wither) &fvới &aKhoai Tây Độc'
+    - ' &eLv1000&f: Tạo ra thuốc &b(Giảm Dame) &fvới &aTáo Vàng Thường'
+    - '&7* &c&lLưu ý&f: Khi bạn chế nhưng công thức trên, &eGian Pha Thuốc'
+    - '&7* &fcủa bạn sẽ không chạy hiệu ứng chế thuốc, hay chờ'
+    - '&7* &ftới khi thuốc của bạn được chế thành công tránh'
+    - '&7* &fhiểu nhầm là một lỗi'
+  ID: 379
+  POSITION-X: 6
+  POSITION-Y: 3  
+  
+  
+Herbalism:
+  COMMAND: ''
+  KEEP-OPEN: true    
+  NAME: '&e&lNông Dân &b&l(/Herbalism)'  
+  LORE:
+    - '&7《 &b&lKỹ Năng Nội Tại &7》'  
+    - '&7⚔ &aThúc Đẩy'
+    - ' &fCó khả năng tăng tốc độ tăng trưởng của cây.'
+    - ' &fvà khả năng tự động trồng lại hạt giống.'
+    - ' &fKhi cần &bHạt Lúa Mì &fchuột phải vào các loại'
+    - ' &fđá có cơ hội biến đá thành các loại đá rêu.'
+    - '&7⚔ &aChuyển Hóa Đất'
+    - ' &cYêu Cầu: &fNấm đỏ và Nấm Nấu để thực hiện'
+    - ' &fcầm 1 trong 2 loại nấm chuột phải vào &eĐất'
+    - ' &fcó cơ hội biến đổi đất thành &eKhuẩn Ty Thể'
+    - '&7⚔ &aX2 Drops'
+    - ' &fCó cơ hội thấp khi thu hoạch sẽ nhân đôi sản lượng'
+    - '&7⚔ &aHồi Food'
+    - ' &fKhi ăn các thực phẩm được thu hoạch từ cây trồng'
+    - ' &fđộ đói của bạn sẽ tăng lên nhiều hơn'
+    - '&7⚔ &aTay Mền May Mắn'
+    - ' &fPhá bụi cây, hoa, chậu hoa bằng &bkiếm sẽ mang lại 1 số item'
+    - '&7《 &b&lKỹ Năng Chuột phải Kích hoạt &7》'
+    - '&7⚔ &aChuyển Hóa Ẩm'
+    - ' &fChuột phải kích hoạt khi cầm cuốc và thu hoạch cây trồng'
+    - ' &fsẽ tự động trồng lại và tăng tốc độ tăng trưởng lên x3'
+  ID: 295
+  POSITION-X: 7
+  POSITION-Y: 3     
+
+Axes:
+  COMMAND: ''
+  KEEP-OPEN: true    
+  NAME: '&e&lRìu Pháp &b&l(/Axes)'  
+  LORE:
+    - '&7《 &b&lKỹ Năng Nội Tại &7》'  
+    - '&7⚔ &aĐòn Chí Mạng'
+    - ' &fTấn công kẻ địch bằng Rìu có cơ hội gây sát thương chí mạng'
+    - '&7⚔ &aRìu pháp'
+    - ' &fGây thêm sát thương phụ thuộc vào Level của Axes'
+    - '&7⚔ &aPhá Giáp'
+    - ' &fTặng lượng sát thương của rìu gây lên áo giáp'
+    - '&7⚔ &aChấn Động'
+    - ' &fKhi tấn công, có cơ hội gây thêm sát thương có đẩy lùi kẻ địch'
+    - '&7《 &b&lKỹ Năng Chuột phải Kích hoạt &7》'
+    - '&7⚔ &aBổ Đầu'
+    - ' &fCầm rìu trên tay, chuột phải vào một khối rồi đánh kẻ thù sẽ'
+    - ' &fkích hoạt skill này khiến đòn đánh gây Dame AoE (diện rộng)'
+  ID: 279
+  POSITION-X: 7
+  POSITION-Y: 4   
+  
+Archery:
+  COMMAND: ''
+  KEEP-OPEN: true    
+  NAME: '&e&lCung Thuật &b&l(/Archery)'  
+  LORE:
+    - '&7《 &b&lKỹ Năng Nội Tại &7》'  
+    - '&7⚔ &aThu Hồi Mũi Tên'
+    - ' &fCó cơ hội nhặt lại mũi tên khi giết chết mob bằng cung'
+    - '&7⚔ &aChoáng'
+    - ' &fKhi bắn cung có cơ hội thấp gây &eBuồn nôn &fcho người chơi'
+    - '&7⚔ &aSuper Shot'
+    - ' &fTăng cơ hội bắn trúng đích và gây thêm sát thương'
+  ID: 261
+  POSITION-X: 6
+  POSITION-Y: 4  
+  
+Acrobatics:
+  COMMAND: ''
+  KEEP-OPEN: true    
+  NAME: '&e&lKhinh Công &b&l(/Acrobatics)'  
+  LORE:
+    - '&7《 &b&lKỹ Năng Nội Tại &7》'  
+    - '&7* &c&lLưu Ý:&f Skill này sẽ tăng cấp khi bạn ngã và mất máu'
+    - '&7* &fhoặc khi bạn né đòn của người khác bằng skill &aNé tránh.'
+    - '&7* &fKhi ủng của bạn được Enchant &bGiảm Sát Thương Khi Rơi'
+    - '&7* &fsẽ tăng thêm EXP khi ngã nếu mặc chiếu ủng đó vào.'
+    - '&7⚔ &aĐáp Đất'
+    - ' &fKhi ngã sẽ có cơ hội giảm dme nhận vào. Nếu trong khi'
+    - '&7+&f bạn ngã và giữ Shift, có x2 cơ hội giảm dame nhận vào'
+    - '&7⚔ &aNé Tránh'
+    - ' &fKhi bạn bị tấn công, có cơ hội né tránh giảm dame nhận vào'
+  ID: 313
+  POSITION-X: 4
+  POSITION-Y: 4
+
+111:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 4  
+  
+999:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 4   
+  
+5555:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 5   
+
+Smelting:
+  COMMAND: ''
+  KEEP-OPEN: true    
+  NAME: '&e&lNấu Chảy &b&l(/Smelting)'  
+  LORE:
+    - '&7《 &b&lKỹ Năng Nội Tại &7》'  
+    - '&7* &c&lLưu Ý:&f Đây là một Skill phụ, cấp của Skill tăng theo'
+    - '&7* &fhai Skill &aThần Mỏ&f và &aSửa chữa&f, 2 skill này có cấp'
+    - '&7* &fcàng cao thì skill &aSmelting&f của bạn cũng sẽ tăng theo,'
+    - '&7* &fngược lại khi nấu 1 cái gì đó sẽ 2 skill kia sẽ tăng cấp theo.'
+    - '&7⚔ &aTiết Kiệm Nhiên Liệu'
+    - ' &fTăng thời gian nguyên liệu cháy lâu hơn trong Lò nung'
+    - '&7⚔ &aTĂNG XP'
+    - ' &fLượng EXP bạn nhận được khi nấu cái gì đó trong lò nung sẽ tăng'
+  ID: 61
+  POSITION-X: 3
+  POSITION-Y: 4 
+  
+Excavation:
+  COMMAND: ''
+  KEEP-OPEN: true    
+  NAME: '&e&lChuột Chũi &b&l(/Excavation)'  
+  LORE:
+    - '&7《 &b&lKỹ Năng Nội Tại &7》'  
+    - '&7⚔ &aThợ Săn Kho Báu'
+    - ' &fKhi cầm xẻng đào một số block như đất, cát,...'
+    - ' &fsẽ có cơ hội rơi ra thêm vật phẩm đặc biệt.'
+    - ' &fVật phẩm rơi ra rất đa dạng và có tỉ lệ cao - thấp'
+    - '&7⚔ &aMáy Khoan Siêu Tốc'
+    - ' &fChuột phải kích hoạt khi cầm xẻng, sẽ cường hóa &bXẻng của bạn'
+    - ' &fTỷ lệ rơi x3 lần, 3x EXP, +tốc độ đào'
+  ID: 277
+  POSITION-X: 8
+  POSITION-Y: 3 
+  
+Sword:
+  COMMAND: ''
+  KEEP-OPEN: true    
+  NAME: '&e&lKiếm Pháp &b&l(/Sword)'  
+  LORE:
+    - '&7《 &b&lKỹ Năng Nội Tại &7》'  
+    - '&7⚔ &aChảy Máu'
+    - ' &fCó cơ hội khi bạn tấn công người chơi'
+    - ' &fhoặc mob thì nó sẽ chảy máu liên tục'
+    - ' &ftới khi hết hiệu ứng hoặc chết'
+    - '&7⚔ &aPhản Công'
+    - ' &fKhi bị tấn công có cơ hội phản lại 1 nửa sát thương'
+    - '&7⚔ &aĐòn Đánh Răng Cưa++'
+    - ' &fLàm đối phương chảy máu nặng'
+    - '&7《 &b&lKỹ Năng Chuột phải Kích hoạt &7》'
+    - '&7⚔ &aĐòn Đánh Răng Cưa'
+    - ' &fCầm kiếm trên tay, chuột phải vào một khối'
+    - ' &frồi đánh kẻ địch sẽ khiến kẻ thù bị chảy máu.'
+  ID: 276
+  POSITION-X: 5
+  POSITION-Y: 4 
+  
+1:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 1
+2:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 1
+3:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 1
+4:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 1
+5:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 1
+6:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 1
+7:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 1
+8:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 1
+9:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 1
+10:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 2
+11:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 2
+12:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 2
+13:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 2
+14:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 3
+15:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 2
+16:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 2
+17:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 2
+18:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 2
+19:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 3
+20:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 4
+21:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 4
+22:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 5
+23:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 5
+24:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 5
+25:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 5
+26:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 5
+27:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 5
+28:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 5
+29:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 5
+30:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 6
+31:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 6
+32:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 6
+33:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 6
+34:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 6
+35:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 6
+36:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 6
+37:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 8
+  POSITION-Y: 6
+38:
+  NAME: '&7*'
+  LORE:
+  - '&7'
+  ID: '160:7'
+  AMOUNT: 1
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 6

@@ -1,0 +1,124 @@
+# Advanced Sets
+# These sets are fully creatable, to create your own simply copy this file, rename it and edit it however you want!
+
+# ** Set Materials:
+# * LEATHER (change-able color)
+# * IRON
+# * GOLD
+# * CHAIN
+# * DIAMOND
+
+# ** Enchantment effects are supported - view enchantments.yml to see all effects available for sets.
+
+#  ** Set Events
+#    Change upon what event should sets trigger
+#    - EFFECT_STATIC : Gives permanent potion effect (as long as armor piece is worn)
+#    - ATTACK : Set Event run only when attacking another player
+#    - DEFENSE : Set Event run only when being attacked
+#    - DEFENSE_BOW : Set Event run only when player gets shot by a bow
+#    - MINING : Gives effects when block is mined
+#    - ATTACK_MOB : Gives effects when player attacks mob
+#    - KILL_MOB : Effects given when attacked mob is killed
+#    - BOW : Effects given when player is shot by another player
+#    - KILL_PLAYER : Effects given when attacker kills a player
+#    - DEATH : Runs when player dies due to another player.
+#    - RIGHT_CLICK : Runs when player right clicks held item
+#    - BOW_MOB : Effects given when mob is shot by player
+#    - FIRE : Effects given when player is on fire
+#    - EXPLOSION : Effects given when player gets hit by explosion
+#    - SWING : Enchant runs when player swings
+#    - FALL_DAMAGE : Set Event runs when player takes fall damage
+#    - DEFENSE_MOB : Set Event runs when mob attacks a player
+#    - SHIFT : Set Event runs when player toggles crouching (shifts)
+#    - ITEM_BREAK : Set Event runs when player toggles crouching (shifts)
+#    - CATCH_FISH : Set Event runs when player catches a fish
+# Set Events & Enchant types are intercompatible together
+
+# ** Creating set effects, this explains the system
+#events:
+#  <any of the effects from the list>:
+#    chance: <chance of effects activating, 1-100> (Optional)
+#    cooldown: <cooldown period after effects activate, in seconds> (Optional)
+#    effects: <effects are available in enchantments.yml>
+#    # E.g.: - 'INCREASED_DAMAGE:10'
+
+name: '&d&lSET &d&l↣&c&l❤&d&l↢ &d&lVALENTINE &d&l↣&c&l❤&d&l↢'
+material: DIAMOND
+settings:
+  equipped:
+    - '&a&l(!) &aKích hoạt &d&lSET &d&l↣&c&l❤&d&l↢ &d&lVALENTINE &d&l↣&c&l❤&d&l↢!'
+  unequipped:
+    - '&c&l(!) &cDừng kịch hoạt &d&lSET &d&l↣&c&l❤&d&l↢ &d&lVALENTINE &d&l↣&c&l❤&d&l↢!'
+items:
+  helmet:
+    name: '&d&l↣&c&l❤&d&l↢ &f&lMŨ &d&lVALENTINE &d&l↣&c&l❤&d&l↢'
+    lore:
+      - ''   
+      - '&d&l↣&c&l❤&d&l↢ &d&lVALENTINE &d&l&d&l↣&c&l❤&d&l↢'
+      - '&d* Giảm 25% damage'
+      - '&d* Hồi máu'      
+      - '&7&o(Mặc full Set Valentine để kích hoạt.)'  
+      - ''        
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:6"
+      - "unbreaking:5"
+      - "projectileprotection:4"
+      - "blastprotection:3"
+      - "fireprotection:2"
+  chestplate:
+    name: '&d&l&d&l↣&c&l❤&d&l↢ &f&lGIÁP &d&lVALENTINE &d&l&d&l↣&c&l❤&d&l↢'
+    lore:
+      - ''   
+      - '&d&l&d&l↣&c&l❤&d&l↢ &d&lVALENTINE &d&l&d&l↣&c&l❤&d&l↢'
+      - '&d* Giảm 25% damage' 
+      - '&d* Hồi máu'       
+      - '&7&o(Mặc full Set Valentine để kích hoạt.)'   
+      - ''       
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:6"
+      - "unbreaking:5"
+      - "projectileprotection:4"
+      - "blastprotection:3"
+      - "fireprotection:2"
+  leggings:
+    name: '&d&l&d&l↣&c&l❤&d&l↢ &f&lQUẦN &d&lVALENTINE &d&l&d&l↣&c&l❤&d&l↢'
+    lore:
+      - ''   
+      - '&d&l&d&l↣&c&l❤&d&l↢ &d&lVALENTINE &d&l&d&l↣&c&l❤&d&l↢'
+      - '&d* Giảm 25% damage'  
+      - '&d* Hồi máu'       
+      - '&7&o(Mặc full Set Valentine để kích hoạt.)'  
+      - ''        
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:6"
+      - "unbreaking:5"
+      - "projectileprotection:4"
+      - "blastprotection:3"
+      - "fireprotection:2"
+  boots:
+    name: '&d&l&d&l↣&c&l❤&d&l↢ &f&lỦNG &d&lVALENTINE &d&l&d&l↣&c&l❤&d&l↢'
+    lore:
+      - ''   
+      - '&d&l&d&l↣&c&l❤&d&l↢ &d&lVALENTINE &d&l&d&l↣&c&l❤&d&l↢'
+      - '&d* Giảm 25% damage' 
+      - '&d* Hồi máu'       
+      - '&7&o(Mặc full Set Valentine để kích hoạt.)'  
+      - ''     
+    enchants: # Supports AdvancedEnchantments CE
+      - "protection:6"
+      - "unbreaking:5"
+      - "projectileprotection:4"
+      - "blastprotection:3"
+      - "fireprotection:2"
+events:
+  DEFENSE:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:25'   
+  DEFENSE:
+    chance: 33
+    cooldown: 10
+    effects:
+      - 'POTION:HEAL:0:1'      
+      - 'WAIT:50'
+      - 'POTION:HEAL:0:1' 

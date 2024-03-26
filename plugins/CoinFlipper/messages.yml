@@ -1,0 +1,145 @@
+CMD_PLAYER_ONLY: Chỉ có thể dùng lệnh này khi là người chơi
+NO_PERMISSION: '&cBạn không có quyền dùng lệnh này!'
+PLAYER_NOT_FOUND: '&cKhông tìm thấy người chơi'
+DISABLED_IN_WORLD: '&cKhông thể cá cược ở thế giới này.'
+CMD_HELP: help
+CMD_GUI: gui
+CMD_STATS: stats
+CMD_ANIMATION: animation
+CMD_CLEAR: clear
+CMD_RELOAD: reload
+CMD_CONFIG: config
+CMD_CONVERT: convert
+CMD_HISTORY: history
+CONVERT_START: '&a[Cá Cược] Converting .yml stats to SQLite...'
+CONVERT_SUCCESS: '&a[Cá Cược] Hoàn thành'
+CONVERT_FAIL: '&c[Cá Cược] Converting failed. Please see console for more information.'
+HEADS: vang
+TAILS: kimcuong
+WRONG_MONEY: '&c%NUMBER% không phải là một số.'
+SYNTAX_L1: '&6Hướng dẫn cá cược'
+SYNTAX_L2: '&a/coinflip [số tiền] [heads/tails] &e- &eĐặt một ván cược'
+SYNTAX_L3: '&a/cf &e- &eMở menu cược'
+SYNTAX_L4: '&a/coinflip history &e- &eXem lịch sử cá cược'
+SYNTAX_L5: '&7Trò chơi nhân phẩm :D'
+SYNTAX_L6: '&7thua không cay.'
+# SYNTAX_L4: '&a/coinflipper stats &e- Xem thông số của bạn'
+# SYNTAX_L5: '&a/coinflipper animation &e- Tạo hoặc xóa một hoạt ảnh.'
+MIN_BET: '&cVui lòng cung cấp số tiền lớn hơn &a%MIN_BET%'
+MAX_BET: '&cVui lòng cung cấp số tiền nhỏ hơn &a%MAX_BET%'
+PLACE_TRIAL_PICKSIDE: '&cVui lòng chọn một trong hai. (heads/tails)'
+PLACE_SUCCESSFUL: '&aĐặt một ván cược thành công.'
+PLACE_FAILED_ALREADYGAME: '&cBạn không thể đặt quá nhiều ván cược cùng lúc.'
+PLACE_FAILED_MAXBETS: '&cChỉ có thể có %NUM% ván cược hoạt động cùng lúc.'
+PLACE_FAILED_NOMONEY: '&cRất tiếc, bạn không có đủ tiền.'
+PLACE_NOT_POSSIBLE_NOMONEY: '&cBạn phải có ít nhất &e%MINMON%$ &cđể đặt cước.'
+CLEAR_SUCCESSFUL: '&aĐã xóa bỏ toàn bộ ván cược'
+CLEAR_FAILED_NOBETS: '&cKhông có ván cược nào để xóa.'
+HELP_ITEM_L1: '&6&lHướng dẫn cá cược'
+HELP_ITEM_L2: '&eChuột trái để cược'
+HELP_ITEM_L3: '&eChuột phải để xóa ván cược'
+HELP_ITEM_L4: '&e''/cf help'' để biết thêm thông tin về lệnh.'
+CREATE: '&eTạo'
+MENU_HEAD_GAME: '&6Ván cược #%ID%'
+MENU_HEAD_PLAYER: '&2Người chơi: &a%PLAYER%'
+MENU_HEAD_MONEY: '&2Số tiền: &a%MONEY%'
+MENU_HEAD_TIMEREMAINING: '&2Thời gian còn lại: &a%HOURS% giờ, %MINUTES% phút'
+MENU_HEAD_SIDE: '&2Loại: &a%SIDE%'
+BET_REMOVE_SELF_CONFIRM: '&cChuột phải thêm một lần để xác nhận hủy ván cược.'
+BET_REMOVE_SELF_SUCCESSFUL: '&aHủy ván cược thành công.'
+BET_REMOVE_OTHER_CONFIRM: '&cChuột phải thêm một lần để xác nhận hủy ván cược của %PLAYER%.'
+BET_REMOVE_OTHER_SUCCESSFUL: '&aHủy ván cược của %PLAYER% thành công'
+BET_REMOVE_OTHER_NOTIFICATION: '&cVán cược của bạn đã bị hủy'
+BET_EXPIRE_REFUND: '&cVán cược của bạn đã hết hạn. Số tiền được hoàn lại là &e%MONEY%$'
+BET_CHALLENGE_CANTSELF: '&cBạn không thể cá cược với chính bản thân!'
+BET_CHALLENGE_ALREADYSPINNING: '&cVán cược này đã bắt đầu rồi.'
+BET_CHALLENGE_NOMONEY: '&cBạn không có đủ tiền để chơi ván cược này.'
+BET_TITLE_VICTORY: '&aChiến Thắng'
+BET_TITLE_LOSS: '&cThua'
+BET_WON: '&aBạn đã chiến thắng ván cược với &e%LOSER% &atrị giá &e%MONEY%$'
+BET_LOST: '&cBạn đã thua ván cược với &e%WINNER% &ctrị giá &e%MONEY%$'
+HIGH_GAME_BROADCAST: '&a%WINNER% &7đã thắng &c%LOSER% &7trong một ván cược trị giá &e%MONEY%$&7.'
+BET_TITLE_COMBAT: '&cĐang trong combat'
+BET_START_COMBAT: '&eMột ván cược đã bắt đầu khi bạn đang trong combat.'
+STATS_NOSTATS: '&cBạn không có thông số gì cả. Đăng nhập lại để có thông số.'
+STATS_STATS: '&6&lThông số của %PLAYER%'
+STATS_GAMESWON: '&2Đã chiến thắng: &a%AMOUNT%'
+STATS_GAMESLOST: '&2Đã thua: &a%AMOUNT%'
+STATS_WINPERCENTAGE: '&2Tỉ lệ thắng: &a%AMOUNT%%'
+STATS_MONEYWON: '&2Số tiền chiến thắng: &a%AMOUNT%'
+STATS_MONEYSPENT: '&2Số tiền bỏ ra: &a%AMOUNT%'
+STATS_MONEYEARNED: '&2Số tiền nhận được: &a%AMOUNT%'
+RELOAD_SUCCESS: '&aCoinFlipper Files reloaded successfully.'
+GUI_SELECTION: Chọn ván cược
+GUI_CONFIGURATOR: CoinFlipper Configurator
+GUI_GAME: Cá cược
+GUI_GAME_18: Cá cược
+CREATION_NAME: Tạo ván cược
+CREATION_MONEY: '&9&lSố tiền: &3%MONEY%'
+CREATION_SIDE: '&9&lMặt: &3%SIDE%'
+CREATION_BET: '&9&lĐặt cược'
+CREATION_MONEY_COLOR: '&3'
+CREATION_MONEY_T1: $1
+CREATION_MONEY_T2: $10
+CREATION_MONEY_T3: $100
+CREATION_MONEY_T4: $1000
+CREATION_MONEY_T5: $10000
+CREATION_MONEY_MAX: Đặt cược tối đa
+CREATION_MONEY_LEFTTOADD: '&aChuột trái để thêm vào'
+CREATION_MONEY_RIGHTTOREMOVE: '&cChuột phải để bỏ bớt.'
+CREATION_MONEY_CUSTOM: Số tiền tùy chỉnh
+CREATION_MONEY_CUSTOM_DESC: '&aHãy nhập số tiền'
+CREATION_MONEY_CUSTOM_SPEC: '&aVui lòng điền số tiền bạn sẽ đặt cược
+  Viết &c''exit'' &ađể hủy.'
+CREATION_MONEY_CUSTOM_NOMONEY: '&cBạn không đủ tiền.'
+CREATION_MONEY_CUSTOM_SUCCESS: '&aĐã đặt số tiền thành $%MONEY%'
+ANIMATION_CREATE_GIVENAME: '&eChọn một hoạt ảnh mới. Viết &c''exit'' &eđể hủy.'
+ANIMATION_CREATE_ALREADYEXISTS: '&cHoạt ảnh với tên %ANIMATION% đã tồn tại.'
+ANIMATION_CREATE_SUCCESS: '&aHoạt ảnh mới với tên %ANIMATION% đã được tạo.'
+ANIMATION_CLONE_GIVENAME: '&eVui lòng nhập tên.'
+ANIMATION_CLONE_SUCCESS: '&aĐã copy thành công hoạt ảnh.'
+ANIMATION_REMOVE_CANT_REMOVE_DEFAULT: '&cBạn không thể xóa hoạt ảnh mặc định.'
+ANIMATION_REMOVE_CANT_REMOVE_ALL: '&cBạn không thể xóa hoạt ảnh cuối cùng.'
+ANIMATION_REMOVE_SUCCESS: '&aThành công xóa hoạt ảnh %ANIMATION%.'
+ANIMATION_GUI_CREATE: '&a&lTạo'
+ANIMATION_GUI_DELETE: '&c&lXóa'
+ANIMATION_GUI_CLONE: '&9&lCopy'
+ANIMATION_GUI_DEFANIM: '&eHoạt ảnh mặc định'
+BACK: '&c&lTrở về'
+ANIMATION_FRAMEEDITOR_COPYLAST: '&dCopy khung cuối'
+ANIMATION_FRAMEEDITOR_P1HEAD: '&9Đầu người chơi 1'
+ANIMATION_FRAMEEDITOR_P2HEAD: '&9Đầu người chơi 2'
+ANIMATION_FRAMEEDITOR_WINNERHEAD: '&9Người chiến thắng'
+NEXT: '&6Tiếp theo'
+ANIMATION_FRAMEEDITOR_CURRENT: '&eKhung hiện tại: %FRAME%'
+PREVIOUS: '&6Trước đó'
+ANIMATION_ROLL_P1SKULL: '&9%PLAYER%'
+ANIMATION_ROLL_P2SKULL: '&9%PLAYER%'
+ANIMATION_ROLL_WINNERSKULL: '&b&lChiến thắng: &9%PLAYER%'
+ANIMATION_ROLL_ROLLING: Đang xoay...
+ANIMATION_ROLL_WINNERCHOSEN: '&aNgười chiến thắng đã được chọn.'
+INPUT_NOTNUM: '&cNhập một số'
+INPUT_NOTBOOLEAN: '&cPlease specify a boolean (true/false)'
+INPUT_NOTSOUND: Please specify a correct sound.
+INPUT_EMPTY: '&cYour input needs to have a lenght of over 0.'
+CONFIGURATOR_SPEC: '&aPleace specify the new value for %CVAR%. &aType ''exit'' to
+  exit.'
+CONFIGURATOR_EDIT_SUCCESSFUL: '&aSuccessfully changed value of &e%CVAR% &ato &e%VALUE%'
+CONFIGURATOR_MESSAGE_PREVIEW: '&ePlease preview new message for %CVAR%'
+CONFIGURATOR_MESSAGE_CONFIRM: '&a&lConfirm'
+CONFIGURATOR_MESSAGE_CHANGE: '&6&lChange'
+CONFIGURATOR_MESSAGE_CANCEL: '&c&lCancel'
+ERROR_UNDER_MIN: '&cVui lòng nhập số cao hơn &a%MIN_BET%'
+ERROR_OVER_MAX: '&cVui lòng nhập số thấp hơn &a%MAX_BET%'
+HISTORY_INVENTORY: 'Lịch sử cá cược của %player%'
+HISTORY_GAME: '&6Ván cược #%id%'
+HISTORY_TIME: '&2Thời gian: &a%time%'
+HISTORY_VICTORY: '&2Kết quả: &aTHẮNG'
+HISTORY_OPPONENT: '&2Đối thủ: &a%opponent%'
+HISTORY_LOSS: '&2Kết quả: &cTHUA'
+HISTORY_IN_POT: '&2Giá trị: &a%money%'
+HISTORY_MONEY_WON: '&2Số tiền thắng: &a%money%'
+HISTORY_MONEY_LOST: '&2Số tiền thua: &c%money%'
+HISTORY_TAX: '&2Thuế: &a%tax%%'
+GAMES_PLAYED_WHEN_OFFLINE: '&aAi đó đã đặt chơi ván cược của bạn khi bạn
+  không online.%newline%Kiểm tra kết quả bằng lệnh &e/cf history'

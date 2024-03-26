@@ -1,0 +1,26 @@
+location: world:18.5:132.76854:1657.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&c&lDungeon'
+    height: 0.3
+  - content: ' &fNơi đây đầy rẩy nguy hiểm nhưng cũng '
+    height: 0.3
+  - content: ' &flà nơi có nhiều cơ hội cày được'
+    height: 0.3
+  - content: ' &fđồ xịn và nhất là khi săn Boss!'
+    height: 0.3
+  - content: ' &fHãy để ý thông báo Boss mà ra đánh nhé'
+    height: 0.3
+  - content: ' &fnhiều phần quà hấp dẫn lắm đấy!'
+    height: 0.3
+  - content: '&f&nLệnh:&r &e/dungeon'
+    height: 0.3
+  - content: '&f&nLệnh:&r &e/ecraft &7(Trade đồ)'
+    height: 0.3
+  actions: {}

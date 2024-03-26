@@ -1,0 +1,11 @@
+command-blacklist:
+  - '/pv'
+  - '/vault'
+  - '/chest'
+  - '/playervaults'
+  - '/vc'
+# Thêm whitelist để cho dùng lệnh pvdel khi /xoapv
+command-whitelist:
+  - '/pvdel'
+# Sau 0.5 giây sẽ mở vault kể từ khi người chơi không mở inventory nào khác
+open-vault-delay: 0.5

@@ -1,0 +1,60 @@
+# default config.yml for ConsoleSpamFix
+# config version 1.8.1
+
+#Add here the messages you want to hide from your console and logs.
+#Each line represents a new message.
+#NOTE! You dont need to add the full message!
+#The plugin will hide all messages that contain the text added below.
+#  EXAMPLE:
+#
+#    Messages-To-Hide-Filter:
+#    - 'WARNING: unlocalizedName'
+#
+#  All messages that will appear in the server console that contain these words 'WARNING: unlocalizedName' will be hidden and they will not appear on logs or console.
+#  If you have large errors you dont have to type the full error. But the more words you add the more accurate will be and will not hide other messages that may contain the words added in the filter.
+
+Messages-To-Hide-Filter:
+  - 'for Matrix v7.7.14A generated an exception'
+  - 'java.lang.NoSuchMethodError: com.viaversion.viaversion.bukkit.platform.BukkitViaAPI.getPlayerVersion(Lorg/bukkit/entity/Player;)I'
+  - 'An error occurred in metadata handler MetadataRewriter1_14To1_13_2 for untracked entity type'
+  - 'Error:'
+  - 'Metadata'
+  - 'Could not pass event EntityDamageByEntityEvent to MythicMobs'
+  - 'Could not pass event EntityTargetLivingEntityEvent to MythicMobs'
+  - 'ERROR IN Protocol1_19To1_18_2 IN REMAP OF CHAT_MESSAGE'
+  - 'Skipping BlockEntity with id'
+#- 'as they do not have the'
+#- 'Stack trace'
+#- 'has no item'
+#- 'now has'
+#- 'has been modified for'
+#- 'ItemEditor'
+#- 'Giving'
+  - 'Plugin DeluxeMenus v1.13.3-Release generated an exception while executing task'
+  - '/congnap'
+  - '/hello'
+  - '/feed'
+  - '/sell all'
+  - '/fix all'
+  - '/fix'
+  - '/heal'
+  - '/eheal'
+  - '/q'
+  - '/condense'
+  - '/menu'
+  - '/is'
+#- 'Could not pass event EntityChangeBlockEvent to Quests v3.12-547bb09'
+#- '[ViaVersion] An error occurred in metadata handler'
+#- 'Task #11332 for MythicMobs v4.6.5-2800 generated an exception'
+#- 'An error occurred in metadata handler EntityPackets for untracked entity type:'
+#- 'Full metadata: Metadata'
+#- 'java.lang.ClassCastException'
+#- '[ViaVersion] ERROR'
+
+
+#Chat messages with color and format codes support.
+#Minecraft Color and Format Codes: http://minecraft.gamepedia.com/Formatting_codes    
+ChatMessages:
+    NoPermission: '&4[System] &cYou don''t have permission!'
+    CmdHelp: '&4[System] &cAvailable commands:&6 /csf reload'
+    CmdReload: '&2[System] &aConfig reload complete!'

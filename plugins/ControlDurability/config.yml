@@ -1,0 +1,20 @@
+#General Messages
+config-reloaded: '&7[&cCD&7] &aConfig Reloaded'
+not-a-player: '&cOnly in-game players can use this command.'
+no-permission: '&cYou don''t have permission to use this command.'
+description: '&7[&cCD&7] &aThis plugin is designed to allow you to control the durability loss of all items by a set amount get more information by using: &6/ControlDurability help or /CD help'
+usage-help: '&6Information on ControlDurability:'
+usage-reload: '&7[&cConfig Reload&7] &a/ControlDurability reload or /CD reload'
+usage-debug: '&7[&cDeBug Mode&7] &a/ControlDurability debug or /CD debug'
+usage-divider: '&7[&cDivider Value&7] &a%divider%'
+debug-enabled: '&7[&cCD&7] &6Debug &aenabled &6to disabled type /ControlDurability debug or /CD debug again'
+debug-disabled: '&7[&cCD&7] &6Debug &cdisabled &6to enable type /ControlDurability debug or /CD debug again'
+debug:
+  - '&7[&cDebug Mode&7]'
+  - '&6Item: &b%item%'
+  - '&6Original-damage: &c%damage-original%'
+  - '&6Lower-bound-damage: &c%damage-lower%'
+  - '&6Increased-damage-chance: &c%chance%%'
+  - '&6Inflicted-damage: &a%damage-end%'
+#Damage divider (This can be a decimal) - Default: 3
+damage-divider: 5

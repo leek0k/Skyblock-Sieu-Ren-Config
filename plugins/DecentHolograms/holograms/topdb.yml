@@ -1,0 +1,18 @@
+location: NewSpawn:17.500:146.000:-1800.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e&l[!] PHẦN THƯỞNG BẢO KÊ ĐỊA BÀN'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&6&l* &e&l1 Địa Bàn &b&lThưởng&7✎ &d30⛁'
+    height: 0.3
+  - content: '&7--------------'
+    height: 0.3
+  actions: {}

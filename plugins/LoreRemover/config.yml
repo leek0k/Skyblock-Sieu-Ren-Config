@@ -1,0 +1,12 @@
+auto-remove-filters:
+  - MẠ VÀNG
+  - (Thời gian bán)
+  - §7Vật phẩm sẽ giúp bạn đổi tên vật phẩm của mình.
+  - ◆.. §nChuột-trái§r
+  - '§0§o#Item menu'
+  - '§f**Mua Tại §f§o((/shopxu))'
+  - '&7 ◆.. &nChuột-trái&r '
+
+
+bypass-inventory-types:
+  - CHEST

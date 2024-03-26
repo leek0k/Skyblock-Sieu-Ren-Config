@@ -1,0 +1,11 @@
+name: youtuber
+permissions:
+- essentials.jails
+- essentials.togglejail
+- essentials.togglejail.offline
+- essentials.tp
+- essentials.tpo
+- essentials.vanish
+- weight.95
+parents:
+- vip6

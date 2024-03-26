@@ -1,0 +1,170 @@
+menu_title: '&c&lThợ Săn: &fXin chào! đây là dungeon 1.'
+open_command: 
+- de1khoidau  
+size: 36 #book_and_quill
+items:
+  'kinh':
+    material: 'IRON_FENCE'
+    slots: 
+      - '0-5'
+      - '9'
+      - '14'
+      - '18'
+      - '23'
+      - '27-32'
+    display_name: ''
+    lore:
+      - ''
+  'q':
+    material: 'book_and_quill'
+    slot: 16
+    priority: 1
+    display_name: '&7..&aNhiệm Vụ&7..'
+    lore:
+      - ' &7.&fTiêu diệt các ma hải tặc ở hoang đảo&7.'
+      - ' &7Nhận ngay vật phẩm &aNấm Ma Hải Tặc,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &4&l๑Kill 50 Ma hải tặc๑'
+      - ' &7khi đạt đủ 30 levels ((/q)).'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[player] q'
+      - '[close]'      
+  '1':
+    material: 'red_mushroom'
+    slot: 10
+    priority: 1
+    display_name: '&7..&aNguyên Liệu Cơ Bản&7..'
+    lore:
+      - ' &7.&fTiêu diệt các ma hải tặc ở hoang đảo&7.'
+      - ' &7Nhận ngay vật phẩm &aNấm Ma Hải Tặc,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &4&l๑Kill 50 Ma hải tặc๑'
+      - ' &7khi đạt đủ 30 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm từ nấm ma&7.'
+    # - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+      - ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open nguyenlieu %player_name%'
+      - '[close]'
+   #enchantments: 
+     #- KNOCKBACK;1
+   #hide_enchantments: true     
+  '2':
+    material: 'wood_sword'
+    slot: 11
+    priority: 1
+    display_name: '&7..&aVũ Khí&7..'
+    lore:
+      - ' &7.&fTiêu diệt các ma hải tặc ở hoang đảo&7.'
+      - ' &7Nhận ngay vật phẩm &aNấm Ma Hải Tặc,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &4&l๑Kill 50 Ma hải tặc๑'
+      - ' &7khi đạt đủ 30 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm từ nấm ma&7.'
+      - ' &7▫ &f⚔ &dVũ Khí &f⚔'
+     #- ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open kiemhiem %player_name%'
+      - '[close]'   
+
+  '3':
+    material: 'leather_chestplate'
+    slot: 12
+    priority: 1
+    display_name: '&7..&aGiáp&7..'
+    lore:
+      - ' &7.&fTiêu diệt các ma hải tặc ở hoang đảo&7.'
+      - ' &7Nhận ngay vật phẩm &aNấm Ma Hải Tặc,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &4&l๑Kill 50 Ma hải tặc๑'
+      - ' &7khi đạt đủ 30 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm từ nấm ma&7.'
+      - ' &7▫ &4☗ &cGiáp &4☗'
+     #- ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open sethiem %player_name%'
+      - '[close]'  
+  '4':
+    material: 'LOG'
+    slot: 13
+    data: 2
+    priority: 1
+    display_name: '&7..&a☘ &e&lHÒM RÌU MAY MẮN &7(Ngẫu nhiên X1) &a☘&7..'
+    lore:
+      - ' &7.&fTiêu diệt các ma hải tặc ở hoang đảo&7.'
+      - ' &7Nhận ngay vật phẩm &aNấm Ma Hải Tặc,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &4&l๑Kill 50 Ma hải tặc๑'
+      - ' &7khi đạt đủ 30 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm từ nấm ma&7.'
+      - ' &7▫ &2❖ &aHòm &2❖'
+     #- ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open homvatpham %player_name%'
+      - '[close]'
+  '4a':
+    material: 'SHIELD'
+    slot: 19
+    priority: 1
+    display_name: '&7..&e&lKhiên Ma Hải Tặc&7..'
+    lore:
+      - ' &7.&fTiêu diệt các ma hải tặc ở hoang đảo&7.'
+      - ' &7Nhận ngay vật phẩm &aNấm Ma Hải Tặc,..'
+      - ' &7Có thể dùng để chế tạo vật phẩm xịn'
+      - ' &7Nhận nhiệm vụ &4&l๑Kill 50 Ma hải tặc๑'
+      - ' &7khi đạt đủ 30 levels ((/q)).'
+      - ''
+      - '&7.&aChế tạo vật phẩm từ nấm ma&7.'
+      - ' &7▫ &8♡ &7Khiên &8♡'
+     #- ' &7▫ &f☉ &bNguyên Liệu &f☉'
+      - ' &7▫ &8((..........v.v.........))'
+      - ''
+      - ' &a[!] Ấn vào đây để mở menu chế tạo!'
+      - ''
+      - '&0&o#Item menu'
+    enchantments: 
+      - KNOCKBACK;1
+    hide_enchantments: true   
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[console] ecraft open shield %player_name%'
+      - '[close]'           
+
+
+  

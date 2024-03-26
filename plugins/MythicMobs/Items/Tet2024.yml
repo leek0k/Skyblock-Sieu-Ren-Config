@@ -1,0 +1,64 @@
+Tet2024-ManhLiXi:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    type: PAPER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §e§lMảnh Lì Xì §c§l2024
+      lore:
+      - §fRơi tại §8(( §a/dungeon tet §8))
+      enchants:
+        LUCK: 10
+Tet2024-BanhChung:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §2§lBánh Chưng §c§l2024
+      lore:
+      - §fGiết §cBoss §7Hắc Long §ftại §8(( §a/dungeon tet §8))
+      - ''
+      - §8§o(#10A9B)
+      enchants:
+        LUCK: 10
+      internal: H4sIAAAAAAAAAE2PT07CQByFfxpJauPWC1QXmkgy0D+0CxcgKNMwRaC0tMZFodN02imQ0hrLhbiAJ+BkTly5ey/f9xZPBpBBemXbGFe0kOCK70oKtx+K8qScT+b5tHu466C+NXhUPiW4ZDG0/qpY3SzymvP3cpcwTgXDMdyb+kaNzShpR3ovbmvUEilBZlu3el2VGjqKtEQGWYz2tKwYPVyDVNHvqi7pQQaACwlaXsRrCj+0sVG4SlG8svmmwYbo7gLxKc72Pbz1mvULNnAh+LhvTBrrn6tXka/zQLXTcDur14WHJuqc0/G8symWX2E205w3gsjRSwN3kAfdkUYK0kx9j4XZPHVc0hH8SLIcTYf9LvFHqlMQNfQdRobLo+MHKHQ5C1yMyNDJiXAdZlvJCj2LB/ALtJArd1IBAAA=
+Tet2024-BanhTet:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §2§lBánh Tét §c§l2024
+      lore:
+      - §fGiết §cBoss §7Bạo Long §ftại §8(( §a/dungeon tet §8))
+      - ''
+      - §8§o(#10A9C)
+      enchants:
+        LUCK: 10
+      internal: H4sIAAAAAAAAAE2PTW6CUBzE/21qQkm3vQDtok1K8pAPddGFVYuPCLQKKjRd8PGIwEMNQhUv5AV6Ak/W1666msz8ZhbDA/DAvabrGFek4OCKbkoCtx+C8CScT93zafNwJ6F+b/AofHJwmcbQ+rNsdTPLa0rfyk2SUsIYjuFea7dDJEmJiEgciUrYQWIXxZIYBEkSBloUkLbMA89GW1JWKdldA1eRQ1WXZMcDwAUHrXlAawLfpDGQv1yheGnQqMEa884MURtn2w5ez5twgDVcMD7ua5Om96+rVsFCpZ5srPz1ex0WczSRp5SMp1JUuF+2PkLWMD96i5FiHt2juTAPVuap5jCSTR0fLH1a+Jmr2Extx2tM3dz7Tq7YTpx7jlH4w5ffXLUyF9lOtPezVWbPjF6yRM/sAfwAbj+ZR1IBAAA=
+Tet2024-LiXi:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    type: CHEST
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §c[§c§lLÌ XÌ§c] §f#New Year 2024
+      lore:
+      - §7(Chúc mừng năm mới 2024)
+      - '§7 '
+      - §fĐây là quà máy chủ dành tặng
+      - §fcho bạn nhân dịp năm mới
+      - '§7 '
+      - §e§lCHUỘT PHẢI§7 để mở
+      enchants:
+        ARROW_INFINITE: 10
+      ItemFlags:
+      - HIDE_ENCHANTS
+      blockMaterial: CHEST

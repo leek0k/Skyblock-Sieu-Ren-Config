@@ -1,0 +1,15 @@
+DateFormat:
+  expires_at: "&7&l[&c&l到期时间&7&l]&c&l "
+  useful_life: "&7&l[&a&l使用时长&7&l]&c&l "
+  s: " &a&l秒"
+  m: " &a&l分"
+  h: " &a&l小时"
+  d: " &a&l天"
+Messages:
+  prefix: "&7[&b系统&7] &r"
+  expire: "&c你的物品到期了!"
+  expire_onjoin: "&c您背包中的 &e%amount% &c个物品已到期!"
+  config_reload: "&a配置文件已经重新载入!"
+  invalid_usage: "&c错误的指令用法! /ti set [数字] [日期格式] s:秒 m:分钟 h:小时 d:天"
+  time_set: "&a设置物品使用时长成功!"
+  no_item: "&c你手里没东西啊!"

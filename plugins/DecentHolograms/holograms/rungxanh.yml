@@ -1,0 +1,16 @@
+location: Rungxanh:-1076.5:66.362:-893.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&2&LKhu Rừng &6&lMine&f&lAhihi'
+    height: 0.3
+  - content: '&fFarm gỗ kiếm $ tại (/shop)'
+    height: 0.3
+  - content: '&7((Phục hồi mỗi 3 tiếng))'
+    height: 0.3
+  actions: {}

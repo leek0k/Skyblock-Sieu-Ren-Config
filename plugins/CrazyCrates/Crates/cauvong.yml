@@ -1,0 +1,469 @@
+Crate:
+  CrateType: QuickCrate
+  CrateName: '&8KHO BÁU . CẦU VỒNG'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 11
+  OpeningBroadCast: false
+  BroadCast: '%Prefix%&a&l%Player% &7is opening a &bSTORM CRATE&7.'
+  Item: '131'
+  Glowing: false
+  Name: '&8KHO BÁU . CẦU VỒNG'
+  Lore: #The lore of the item in the GUI.
+    - '&e/hombau&7 để mua Hòm Báu.' 
+    - '&r'
+    - '&7 ◆ &nChuột-trái&r &bđể mở Hòm Báu nếu bạn đã mua.'
+    - '&7 ◆ &nChuột-Phải&r &bđể xem qua vật phẩm trong Hòm.'
+    - '&r'
+    - '&7Bạn đang có &c&n%keys%&r &7◆ &b&nHòm Kim Cương&r &7◆.'  
+  Preview:
+    #Turn on and off the preview for this crate.
+    Toggle: true
+    #How many lines the previewChest should have. Including Header and Bottom (Between 3 and 6)
+    ChestLines: 6
+    Glass:
+      #Turn the glass boarder in the preview on and off.
+      Toggle: true
+      #The item that shows in the boarder. Can be glass or any other item.
+      Item: 'IRON_FENCE'  
+  PhysicalKey:
+    Name: '&b✿&f✿&b✿ &A&nChìa Khóa&r &d&lCẦU VỒNG&r &b✿&f✿&b✿' #Name of the Key.
+    Lore:
+    - '&r'
+    - '&7✿ &nChuột-trái&r &fđể mở &7✿&8Kho báu&r &d&lCẦU VỒNG&r&7✿'
+    - '&7✿ &nChuột-Phải&r &fđể xem qua vật phẩm trong'
+    Item: '337' #The item the key is.
+    Glowing: true #Makes the key look enchanted.
+  Prizes:
+    1:
+      DisplayName: '&a&lx1 | Pig Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 45
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'silkspawners give %player% Pig 1'
+        - 'src xuixeo add CauVong %player% 1'
+    2:
+      DisplayName: '&a&lx1 | Cow Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'silkspawners give %player% Cow 1'
+        - 'src xuixeo add CauVong %player% 1'
+    3:
+      DisplayName: '&a&lx1 | Chicken Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'silkspawners give %player% Chicken 1'
+        - 'src xuixeo add CauVong %player% 1'
+    4:
+      DisplayName: '&e&lx1 | Skeleton Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 30
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'silkspawners give %player% Skeleton 1'
+        - 'src xuixeo add CauVong %player% 1'
+    5:
+      DisplayName: '&e&lx1 | Creeper Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 25
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'silkspawners give %player% Creeper 1'
+        - 'src xuixeo add CauVong %player% 1'
+    6:
+      DisplayName: '&e&lx1 | Enderman Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'silkspawners give %player% Enderman 1'
+        - 'src xuixeo add CauVong %player% 1'
+    7:
+      DisplayName: '&6&lx1 | Ghast Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'silkspawners give %player% ghast 1'
+        - 'src xuixeo add CauVong %player% 1'
+    9:
+      DisplayName: '&a&l+$10,000'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 75
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'epicvouchers give %player% 10 1'
+        - 'src xuixeo add CauVong %player% 1'
+    10:
+      DisplayName: '&a&l+$20,000'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 60
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'epicvouchers give %player% 20 1'
+        - 'src xuixeo add CauVong %player% 1'
+    11:
+      DisplayName: '&a&l+$50,000'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 35
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'epicvouchers give %player% 50 1'
+        - 'src xuixeo add CauVong %player% 1'
+      Messages:           
+        - '&f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &a&l$50,000&r &f&ltừ &A&lKHO BÁU &d&lCẦU VỒNG'         
+    12:
+      DisplayName: '&a&l+$100,000'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'epicvouchers give %player% 100 1'
+        - 'src xuixeo add CauVong %player% 1'
+      Messages:           
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &a&l$100,000&r &f&ltừ &A&lKHO BÁU &d&lCẦU VỒNG'        
+    13:
+      DisplayName: '&e&lx20 | Golden Apples'
+      DisplayItem: '322'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 75
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'give %player% 322 20'
+        - 'src xuixeo add CauVong %player% 1'
+    14:
+      DisplayName: '&e&lx5 | God Apple'
+      DisplayItem: '322:1'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 65
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'give %player% 322:1 5'
+        - 'src xuixeo add CauVong %player% 1'
+    15:
+      DisplayName: '&7◆◆◆ &7&lVật phẩm THƯỜNG &7(Ngẫu nhiên x2) &7◆◆◆'
+      DisplayItem: '54'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 80
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'cr give to %player% thuong 1'
+        - 'src xuixeo add CauVong %player% 1'
+    16:
+      DisplayName: '&e◆◆◆ &e&lVật phẩm HIẾM &7(Ngẫu nhiên x2) &e◆◆◆'
+      DisplayItem: '54'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 60
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'cr give to %player% hiem 1'
+        - 'src xuixeo add CauVong %player% 1'
+    17:
+      DisplayName: '&e◆◆◆ &e&lVật phẩm HIẾM &e&l[&e2&e&l] &7(Ngẫu nhiên x2) &e◆◆◆'
+      DisplayItem: '54'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 55
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'cr give to %player% hiem2 1'
+        - 'src xuixeo add CauVong %player% 1'
+    18:
+      DisplayName: '&6◆◆◆ &6&lVật phẩm HUYỀN THOẠI &7(Ngẫu nhiên x2) &6◆◆◆'
+      DisplayItem: '54'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 15
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'cr give to %player% huyenthoai 1'
+        - 'src xuixeo add CauVong %player% 1'
+      Messages:           
+        - '&f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6◆◆◆ &6&lVật phẩm HUYỀN THOẠI &7(Ngẫu nhiên x2) &6◆◆◆&r &f&ltừ &A&lKHO BÁU &d&lCẦU VỒNG'    
+    1511111:
+      DisplayName: '&e&Lx1 | &5&L✧&D&L✧&5&l✧ &9&l&nHòm vật phẩm&r &d&lTRUYỀN THUYẾT &7(Ngẫu nhiên)&5&L✧&D&L✧&5&l✧'
+      DisplayItem: '120'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'cr give to %player% truyenthuyet 1'
+        - 'src xuixeo set CauVong %player% 0'
+      Messages:           
+        - '&f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 | &5&L✧&D&L✧&5&l✧ &9&l&nHòm vật phẩm&r &d&lTRUYỀN THUYẾT &7(Ngẫu nhiên)&5&L✧&D&L✧&5&l✧&r &f&ltừ &A&lKHO BÁU &d&lCẦU VỒNG'  
+    'sothuong':
+      DisplayName: '&7&lSỌ phép bị vỡ'
+      Lore:
+      - ''
+      - '&7 &l? &7Sát Thương'
+      - '&7 &l? &7Tốc Độ Đánh'
+      - '&7 &l? &7Tim'
+      - '&7 &l? &7Giáp'
+      - '&7&l (&7Ô lửa&7&l)'
+      - ''
+      - '&7◆ ◆ ◆ &7&lTHƯỜNG ◆ ◆ ◆'
+      - '&7* SỌ phép bị vỡ'
+      - ''
+      - '&7(Đặt lên Hotbar để kích hoạt!)'
+      DisplayItem: SKULL_ITEM:3
+      DisplayAmount: 1
+      MaxRange: 200
+      Firework: true
+      Glowing: false
+      Chance: 1
+      Player: 'http://textures.minecraft.net/texture/ab738fa05b27f18874e57d95b0b6c9fadd1b558894f82e0261ba1544e6fbbf1d'
+      Commands:
+      - 'cr open %player% sothuong'
+      - 'src xuixeo set CauVong %player% 0'
+      Messages:           
+      - '&f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &7&lSỌ phép bị vỡ &f&ltừ &A&lKHO BÁU &d&lCẦU VỒNG'          
+    'sohiem':
+      DisplayName: '&e&lSỌ phép bị nguyền rủa'
+      Lore:
+      - ''
+      - '&7 &l? &7Sát Thương'
+      - '&7 &l? &7Tốc Độ Đánh'
+      - '&7 &l? &7Tim'
+      - '&7 &l? &7Giáp'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - ''
+      - '&e◆ ◆ ◆ &e&lHIẾM &e◆ ◆ ◆'
+      - '&e* SỌ phép bị nguyền rủa'
+      - ''
+      - '&e(Đặt lên Hotbar để kích hoạt!)'
+      DisplayItem: SKULL_ITEM:3
+      DisplayAmount: 1
+      MaxRange: 400
+      Firework: true
+      Glowing: false
+      Chance: 1
+      Player: 'http://textures.minecraft.net/texture/b617855ff1268d959bd9f239384fe0431ebd751b2624619c555e9d471e9440'
+      Commands:
+      - 'cr open %player% sohiem'
+      - 'src xuixeo set CauVong %player% 0'
+      Messages:           
+      - '&f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&lSỌ phép bị nguyền rủa &f&ltừ &A&lKHO BÁU &d&lCẦU VỒNG'         
+    'sohuyenthoai':
+      DisplayName: '&6&lSỌ phép từ Chiến binh'
+      Lore:
+      - ''
+      - '&7 &l? &7Sát Thương'
+      - '&7 &l? &7Tốc Độ Đánh'
+      - '&7 &l? &7Tim'
+      - '&7 &l? &7Giáp'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - ''
+      - '&6◆ ◆ ◆ &6&lHUYỀN THOẠI &6◆ ◆ ◆'
+      - '&6* SỌ phép từ Chiến binh'
+      - ''
+      - '&6(Đặt lên Hotbar để kích hoạt!)'
+      DisplayItem: SKULL_ITEM:3
+      DisplayAmount: 1
+      MaxRange: 500
+      Firework: true
+      Glowing: false
+      Chance: 1
+      Player: 'http://textures.minecraft.net/texture/1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5'
+      Commands:
+      - 'cr open %player% sohuyenthoai'     
+      - 'src xuixeo set CauVong %player% 0'      
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &6&lSỌ phép từ Chiến binh &f&ltừ &A&lKHO BÁU &d&lCẦU VỒNG'       
+    'sotruyenthuyet':
+      DisplayName: '&5&l✧&d&l✧&5&l✧ &d&lSỌ phép từ Kiếm sĩ &r&5&l✧&d&l✧&5&l✧'
+      Lore:
+      - ''
+      - '&7 &l?? &7Sát Thương'
+      - '&7 &l?? &7Tốc Độ Đánh'
+      - '&7 &l?? &7Tim'
+      - '&7 &l?? &7Giáp'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - '&7&l (&7Ô lửa&7&l)'
+      - ''
+      - '&d◆ ◆ ◆ &d&lTRUYỀN THUYẾT &d◆ ◆ ◆'
+      - '&d* SỌ phép từ Kiếm Sĩ'
+      - ''
+      - '&d(Đặt lên Hotbar để kích hoạt!)'
+      DisplayItem: SKULL_ITEM:3
+      DisplayAmount: 1
+      MaxRange: 10000
+      Firework: true
+      Glowing: false
+      Chance: 1
+      Player: 'http://textures.minecraft.net/texture/db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65'
+      Commands:
+      - 'cr open %player% sotruyenthuyet'   
+      - 'src xuixeo set CauVong %player% 0'      
+      - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &5&l✧&d&l✧&5&l✧ &d&lSỌ phép từ Kiếm sĩ &r&5&l✧&d&l✧&5&l✧&r &f&ltừ &A&lKHO BÁU &d&lCẦU VỒNG'   
+    20:
+      DisplayName: '&e&lx128 | Experience Bottles'
+      DisplayItem: '384'
+      DisplayAmount: 64
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 75
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'give %player% 384 128'
+        - 'src xuixeo add CauVong %player% 1'
+    211:
+      DisplayName: '&e&lx1 | BEACON'
+      DisplayItem: '138'
+      DisplayAmount: 1
+      Lore:
+      - ' '
+      MaxRange: 100
+      Chance: 25
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'give %player% 138 1'
+        - 'src xuixeo add CauVong %player% 1'
+      Messages:           
+        - '&f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&lx1 | BEACON&r &f&ltừ &A&lKHO BÁU &d&lCẦU VỒNG'         
+    3222:
+      DisplayName: '&e&lx64 QUẶNG EMERALD'
+      DisplayItem: '388'
+      DisplayAmount: 64
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 65
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'give %player% 388 64'        
+        - 'src xuixeo add CauVong %player% 1'        
+    32222:
+      DisplayName: '&B&lx64 QUẶNG DIAMOND'
+      DisplayItem: '264'
+      DisplayAmount: 64
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 5
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'give %player% 264 64'     
+        - 'src xuixeo add CauVong %player% 1'
+    3123:
+      DisplayName: '&e&Lx1 MẢNH | Rank &8&l<&7&lTRÙM&8&l>'
+      DisplayItem: '409'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: true
+      Commands:
+        - 'src xuixeo set CauVong %player% 0'
+        - 'epicvouchers give %player% trum 1'        
+        - 'broadcast &f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &e&Lx1 MẢNH | Rank &8&l<&7&lTRÙM&8&l>&r &f&ltừ &A&lKHO BÁU &d&lCẦU VỒNG'                                     
+    elytra:
+      DisplayName: '&7&Lx1 &f&lCánh &7&lCứng'
+      Lore:
+      Commands:
+        - 'src xuixeo set CauVong %player% 0'
+        - 'give %player% elytra 1'
+      Messages:           
+        - '&f&lChúc mừng &e&l%Player%&r &f&lđã quay trúng &7&Lx1 &f&lCánh &7&lCứng&r &f&ltừ
+        &A&lKHO BÁU &d&lCẦU VỒNG'
+      Glowing: true
+      DisplayItem: ELYTRA
+      DisplayAmount: 1
+      MaxRange: 100
+      Chance: 2

@@ -1,0 +1,33 @@
+{
+  "ID": "SkillSieuHiem",
+  "Order": 9007199254740991,
+  "Name": "Siêu Hiếm",
+  "MobTypes": [
+    "CaveSpider",
+    "Slime"
+  ],
+  "Skills": {
+    "Life": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Health": "+8"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "%1>1<1": {
+          "Health": "+300",
+          "Timer": "+3"
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "%1>1<30": {
+          "Damage": "+6"
+        }
+      }
+    }
+  }
+}

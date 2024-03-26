@@ -1,0 +1,189 @@
+# Wiki
+# Placeholder
+# %custombooster_time_left_<booster-id>% - Thời gian còn lại của booster
+# %custombooster_value_<type>_<value>% - Tính toán giá trị theo booster placeholder
+# %custombooster_integrate_value_<type>_<value>% - Tính toán giá trị theo booster được tính hợp sẵn (vanilla-xp, alonso-xp, mythic-mobs-xp, mythic-mobs-alonso-xp, mythic-mobs-item)
+# Ví dụ: %custombooster_value_test-booster_100%
+# test-booster - Loại booster thuộc config PLACEHOLDER.TEST_BOOSTER
+#
+# Command - Permission: custombooster.command
+# /custombooster,cbooster give <player> <booster> - Kích hoạt booster cho người chơi - Permission: custombooster.command.give'
+# /cbooster giveall <booster> - Kích hoạt booster cho toàn bộ người chơi online - Permission: custombooster.command.giveall'
+# /cbooster giveglobal <booster> - Kích hoạt booster cho server - Permission: custombooster.command.giveglobal'
+# /cbooster take <player> <booster> - Tắt booster của người chơi - Permission: custombooster.command.take'
+# /cbooster takeall <booster> - Tắt booster của toàn bộ người chơi online - Permission: custombooster.command.takeall'
+# /cbooster takeglobal <booster> - Tắt booster của server - Permission: custombooster.command.takeglobal'
+# /cbooster open <name> <player> - Mở menu cho người chơi - Permission: custombooster.command.open'
+# /cbooster save - Lưu dữ liệu - Permission: custombooster.command.save'
+# /cbooster reload - Cài lại cấu hình - Permission: custombooster.command.reload'
+# /cbooster help - Xem hướng dẫn - Permission: custombooster.command.help'
+
+# Thời gian lưu dữ liệu người chơi (theo tick)
+save-player-data-interval: 6000
+
+# Thời gian cập nhật booster (theo tick)
+update-booster-interval: 10
+
+# Thời gian cập nhật action bar (theo tick)
+action-bar-interval: 20
+
+# Thời gian cập nhật boss bar (theo tick)
+boss-bar-interval: 10
+
+# Giới hạn cấp số nhân mà người chơi có thể đạt được
+limit-total-multiplier:
+  # Mặc định
+  DEFAULT: 10
+  VANILLA_XP: 10
+  ALONSO_XP: 10
+  MYTHIC_MOBS_XP: 10
+  MYTHIC_MOBS_ALONSO_XP: 10
+  MYTHIC_MOBS_ITEM: 10
+
+action-bar:
+  enable: true
+  expire: '&cBooster %display%&c đã hết hạn'
+  # Loại tiến trình hiển thị thời gian kích hoạt còn lại của booster
+  # BAR ,,,,,
+  # PERCENT 100%
+  progress-type: BAR
+  color:
+    HIGH: '&a'
+    MEDIUM: '&e'
+    LOW: '&c'
+    NONE: '&7'
+
+boss-bar:
+  enable: true
+
+# Danh sách booster
+boosters:
+  # Id booster (Không sử dụng "_" khi đặt tên id)
+  double-up-everything:
+    #start-time: '2021-01-01 00:00:00'
+    #end-time: '2021-01-01 00:00:00'
+    # Tên hiển thị
+    display: 'Nhân đôi mọi thứ (Cá nhân)'
+    # Action bar
+    action-bar:
+      enable: true
+      message: '&bx2 Tất cả %progress%'
+    boss-bar:
+      enable: true
+      # PINK , BLUE , RED , GREEN , YELLOW , PURPLE , WHITE
+      color: RED
+      # SOLID , SEGMENTED_6 , SEGMENTED_10 , SEGMENTED_12 , SEGMENTED_20
+      style: SOLID
+      message: '&bBooster x2 Tất cả - %time_left%'
+    # Thời gian hiệu lực (theo phút)
+    duration: 3600
+    # Lượng boost theo số nhân
+    multipliers:
+      # Kinh nghiệm rớt ra từ vanilla
+      VANILLA_XP: 2
+      # Kinh nghiệm rớt ra từ alonsolevels
+      ALONSO_XP: 2
+      # Kinh nghiệm rớt ra từ quái Mythic
+      MYTHIC_MOBS_XP: 2
+      # Kinh nghiệm rớt ra từ quái Mythic tích hợp AlonsoLevels
+      MYTHIC_MOBS_ALONSO_XP: 2
+      # Vật phẩm rớt ra từ quái Mythic
+      MYTHIC_MOBS_ITEM: 2
+      # Vật phẩm rớt ra từ ElementalGems
+      # Rớt từ quái
+      ELEMENTAL_GEMS_ENTITY: 2
+      # Rớt từ khối
+      ELEMENTAL_GEMS_BLOCK: 2
+      # Rớt từ câu cá
+      ELEMENTAL_GEMS_FISH: 2
+      # Giá bán vật phẩm từ ShopGUIPlus
+      SHOP_GUI_PLUS_SELL: 2
+      # Tính toán trong placeholder
+      PLACEHOLDER:
+        TEST_BOOSTER: 2
+        TEST_BOOSTER_2: 2
+    # Tùy chỉnh
+ #   options:
+ #     # Đối với booster liên quan MythicMobs
+ #     mythic-mobs:
+ #       # Không áp dụng booster đối với những mob có id bên dưới
+ #       blacklist:
+ #         mob:
+ #           - 'mob_id1'
+ #           - 'mob_id2'
+ #       drops:
+ #         # MMOITEMS:<TYPE>:<ID>:<MIN_AMOUNT>:<MAX_AMOUNT>:<CHANCE>
+ #         - 'MMOITEMS:MATERIAL:ESSENCE_TIER1_LEVEL1:1:5:0.1'
+ #         # MMOITEMS:<NAME>:<MIN_AMOUNT>:<MAX_AMOUNT>:<CHANCE>
+ #         - 'ITEMEDITOR:example:1:5:1'
+ #     # Đối với booster liên quan ShopGUIPlus
+ #     shop-gui-plus:
+ #       # Danh sách vật phẩm không áp dụng booster
+ #       # Định dạng: <SHOP_FILE_NAME>:<ITEM_ID>
+ #       sell-blacklist:
+ #         - 'blocks:1'
+ #   # Thông báo khi kích hoạt booster
+ #   message:
+ #     - '&aNhận được &3BOOSTER &bNhân đôi mọi thứ (Cá nhân)&a!'
+ #   # Âm thanh khi kích hoạt booster
+ #   sound: ENTITY_PLAYER_LEVELUP
+  xp-booster:
+    display: 'Nhân đôi kinh nghiệm (Cá nhân)'
+    action-bar:
+      enable: false
+      message: '&bx2 Tất cả %progress%'
+    boss-bar:
+      enable: true
+      # PINK , BLUE , RED , GREEN , YELLOW , PURPLE , WHITE
+      color: YELLOW
+      # SOLID , SEGMENTED_6 , SEGMENTED_10 , SEGMENTED_12 , SEGMENTED_20
+      style: SOLID
+      message: '&bBooster x2 EXP - %time_left%'
+    duration: 3600
+    multipliers:
+      VANILLA_XP: 2
+    exclude-boosters:
+      - 'global_vanilla_xp'
+    message:
+      - '&aNhận được &3BOOSTER &bNhân đôi kinh nghiệm (Cá nhân)&a!'
+    sound: ENTITY_PLAYER_LEVELUP
+  money-booster:
+    display: 'Nhân đôi kinh nghiệm (Cá nhân)'
+    action-bar:
+      enable: false
+      message: '&bx2 Tất cả %progress%'
+    boss-bar:
+      enable: true
+      # PINK , BLUE , RED , GREEN , YELLOW , PURPLE , WHITE
+      color: YELLOW
+      # SOLID , SEGMENTED_6 , SEGMENTED_10 , SEGMENTED_12 , SEGMENTED_20
+      style: SOLID
+      message: '&bBooster x2 tiền - %time_left%'
+    duration: 3600
+    multipliers:
+      SHOP_GUI_PLUS_SELL: 2
+    exclude-boosters:
+      - 'global_vanilla_xp'
+    message:
+      - '&aNhận được &3BOOSTER &bNhân đôi tiền bán từ shop (Cá nhân)&a!'
+    sound: ENTITY_PLAYER_LEVELUP
+  gem-booster:
+    display: 'Nhân đôi kinh nghiệm (Cá nhân)'
+    action-bar:
+      enable: false
+      message: '&bx2 Tất cả %progress%'
+    boss-bar:
+      enable: true
+      # PINK , BLUE , RED , GREEN , YELLOW , PURPLE , WHITE
+      color: YELLOW
+      # SOLID , SEGMENTED_6 , SEGMENTED_10 , SEGMENTED_12 , SEGMENTED_20
+      style: SOLID
+      message: '&bBooster x2 đá quý - %time_left%'
+    duration: 3600
+    multipliers:
+      ELEMENTAL_GEMS_ENTITY: 2
+    exclude-boosters:
+      - 'global_vanilla_xp'
+    message:
+      - '&aNhận được &3BOOSTER &bNhân đôi đá quý nhận được (Cá nhân)&a!'
+    sound: ENTITY_PLAYER_LEVELUP

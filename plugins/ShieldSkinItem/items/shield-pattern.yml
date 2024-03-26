@@ -1,0 +1,138 @@
+# Danh sách mẫu khiên lưu bằng lệnh /shieldskinitem save <pattern>
+list:
+  ShieldPattern1:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        display-name: '{"extra":[{"text":"Test"}],"text":""}'
+        internal: H4sIAAAAAAAAAFWPwU7DMBBEp0lKU1einPgAS9zID+RY6IELQmpvCKEldoOVxInirURU9d+xEyrAJ++OPfNGAALXu0+ja7WrjH1i3QgkiphS3Cp9oGPNmRv1rCNm3Vuspvdbq3SfYun8v8xSozEfVwLCeJvMMRVVisgo3DTG6qKnA+eTl0DMVAoslHFdTUOK5Dk43J2k/uKeZP56kuyvMpd77Vie3+4vszwjxtUjNVRqhDPD/KE9Wp4BKRYXyvUI81vNR/DQaawmgveAHcpv6raotpYND3sql0hfpppOeOvIG/7MiJyLQ1Ld9mPsHykuPtp/WoxkQy7grYFvb02lWmUBAAA=
+        blockMaterial: SHIELD
+  ShieldPattern2:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElMZ2ZgrGAAAiBdCaWrQDQHA1NmCgNbcEZmak4KJwNHQGJJSWpRXjEXUI6Fg4EdymdgKi5mZmB1zs/JLwJpA+qDSzEnJ+UTKceFoi8tB1kfF9BtLE6JxalA0/kZGABUFBN3xQAAAA==
+        blockMaterial: SHIELD
+  HoangDao:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAHWOsQqAIBRFL2llEn2U0d7QD1hURNYDfUt/n0ODDY6XwzlcDWh0xtFyDjcf/Ex2b6BGy7z6O2gAlUL9bQjmIFD25MhH1CJlc54VM2W15cdkmiwun9U2lyYlBKSxYY2vJPACQ0QnU9cAAAA=
+        blockMaterial: SHIELD
+  YeuTinh:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAHXMsQqAIBhF4QsWmkO+k9He0AuIWITiD2pDb59Dgw6Nhw+OBCRmHcj6NZarPLs5J4jNlOJSzBLAIMC/Bsv+ZhgXCpQqAa0dgRpTndnkfq1/cjAM2mRX7wp4AZJtlryhAAAA
+        blockMaterial: SHIELD
+  PhuThuy:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAHXOvQqAIBiF4YNfP+ZQ91S0N3QDFiWRKagN3X0ODRY0Hh4OvAIQqFtt5703YQvXKFUFPsgQFme8AFBwlM8GzZMl5J3V1kUqkRh7EU+JlJPJDR87/4wd7o9o1WkJByFrpV9iVQPcse+QOtcAAAA=
+        blockMaterial: SHIELD
+  DiaNguc:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAHXNsQqAIBgE4COTyiHfyWhv6AVUJCNL0H/p7XNocPG24+M4AQjMKkR7rQ+d9O76mDBumsilJwsAfMTwd3R3YuBLDDEVkajJ+yYZqgj1itnkmmYoVybB0CudXXku+QALia+lugAAAA==
+        blockMaterial: SHIELD
+  NeyuQ:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAH3NsQ5AQBCE4WFdcAXvRPQKL3DkIuLikr1tvD2FYimUky+T3wIWTRfisg+HbHJObq1RjU7E85EsAFOhfDZoYU8wfQyRbwK0zbwpy36s1ZZLUrcX0fwxQtG55O9wC1y2oInwvAAAAA==
+        blockMaterial: SHIELD
+  ShieldQuyMao:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAHXNvQqAIACF0UsmmYEPZbQ39AImFpE/oC69fQ4NOjReDpePAxxC2qDvxecrP5s6R7BV5WyiTxwAZRi+DaL3QEDnYEMsNKGyriHRkIu/L6cral7ksG2MoJcqmRIWwAuW78GEugAAAA==
+        blockMaterial: SHIELD
+  ShieldThuongMao:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52TgCEgsKUktyivmYmBgYOZgYIfyGZjTcvKZGVid83Pyi4BS3AzIciUlxTjlktDkmBlYnBKLU4FmMDIwAAAsYhpqhQAAAA==
+        blockMaterial: SHIELD
+  minh:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAHXOOw6AIBBF0af4pZA9Yewt3AASY4wICYyFu9fCYiwsJydz8yQg0WkX7D542uiazNqiGQ3REn2SAKoG9XtD2DkIlH1wIT4kwSy3kRE+NBMj9aX/4MGDGf8SaT9ZsYVAoU1ank0KuAHNEngQ1QAAAA==
+        blockMaterial: SHIELD
+  khienthienha:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAHXOOw6AIBAE0An4JcFDYewtvAASNUaEBLbx9lJYQOF0k5fdjAAEBmW9uSZHJz2LPnp0sybagosCQNOh/TrY6jnq0VsfktTIiK8UM5OF0b8xE7Kz4iW7zR/x3eZLJDgqpeOWVqW8Dqfy/tYAAAA=
+        blockMaterial: SHIELD
+  vietbua:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAE3MsQqAIBRG4b8sNAcfymhv6AVMRCJT0Lv09jk03PHwwdGAhrGp+HvLdNF7uLhA7Y4o1Nw0AKEg/8b4eIF5LanULgacTmIkOYlYHTMDgcm6FvpiAD5HBlwogwAAAA==
+        blockMaterial: SHIELD
+  dragonvn:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52TgCEgsKUktyivmYmBgYONgYIfyGZiTk/KZGVid83Pyi4BSzAzIcmUZRUhyDChyaTk49THlFiNpQzGSqaQESQrVxNz8LCQ5ZqBbWJwSi1OBrgICAHWjeKXXAAAA
+        blockMaterial: SHIELD
+  khiengiangsinh:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52TgCEgsKUktyivmYmBgYOFgYIfyGZiTi1KZGVid83Pyi4BSjAzIcsXZpUhy3ChyaTn5SHJMeOS4GJgZWJwSi1OB5gMBAMwzaSOhAAAA
+        blockMaterial: SHIELD
+  khien8thang3:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAAAHXOsRJEQBAE0D57Dhv4KOpygR9YDoVhquxc4O9tIJgNhFOvunssYFFWxP363WWWs3VTgbxxIsOxewvgkyO7b5iNF4O0ZuIjUAJtI7Gy0KJy9P89WSKk6BXFRLyyuLLv4jmDd+X8EN4qgAsZro7z2AAAAA==
+        blockMaterial: SHIELD

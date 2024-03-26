@@ -1,0 +1,248 @@
+#########################################################################################
+#                                                                                       #
+# Scyther, a premium resource by Norska#1933 [ID: 253886847690866688]                   #
+#                                                                                       #
+# Wiki: https://norska.dev/docs/welcome                                                 #
+# Support: https://norska.dev/discord                                                   #
+#                                                                                       #
+# You are editing the sounds.yml file of Scyther.                                       #
+#                                                                                       #
+#########################################################################################
+
+#########################################################################################
+#                                                                                       #
+# WARNING: PLEASE READ BEFORE CONFIGURING!                                              #
+#                                                                                       #
+# The plugin uses ENUM sound names, meaning you cannot use default sound names          #
+# To find the ENUM names, google the following: "<Server Version> ENUM Sounds>".        #
+#                                                                                       #
+# Do not open tickets regarding issues with sounds, they can be easily solved by using  #
+# names which are in ENUM form and are appropriate for YOUR base server version.        #
+#                                                                                       #
+#########################################################################################       
+
+sounds:
+      
+   EVENT_HOE_AUTOSELL:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_YES'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_HOE_AUTOCOLLECT:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_YES'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_HOE_LEVELUP:
+      enabled: true
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_HOE_BREAK:
+      enabled: true
+      sound: 'BLOCK_ANVIL_PLACE'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_SELL_BINDING_NOT_OWNER:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_HOE_NOPERMISSION:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_HOE_NOPERMISSION_AUTOCOLLECT:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_HOE_NOPERMISSION_AUTOSELL:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_HOE_NOPERMISSION_DIRTDIGGER:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_HOE_NOHARVEST_DIRTDIGGER:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_HOE_CROP_NOT_HARVESTABLE:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_HOE_CROP_NOT_RIPE:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_HOE_HARVEST_NO_CROP:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0
+      
+   ###############################
+   
+   EVENT_FULL_INVENTORY:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_PLING'
+      volume: 1.0
+      pitch: 1.0
+      
+   ###############################
+   
+   EVENT_HOE_DROPCONFIRM:
+      enabled: true
+      sound: 'BLOCK_ANVIL_PLACE'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_HOE_DROPSUCCESS:
+      enabled: true
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      volume: 1.0
+      pitch: 1.0
+      
+   ###############################
+   
+   COMMAND_HOE_SENDER_SUCCESS:
+      enabled: true
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_HOE_SENDER_SUCCESS_SILENT:
+      enabled: true
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_HOE_SENDER_SUCCESS_ALL:
+      enabled: true
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_HOE_SENDER_SUCCESS_ALL_SILENT:
+      enabled: true
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_HOE_RECEIVER_SUCCESS:
+      enabled: true
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      volume: 1.0
+      pitch: 1.0
+   
+   COMMAND_HOE_WRONGAMOUNT:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0    
+      
+   COMMAND_HOE_WRONGSELLMULTIPLIER:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0   
+          
+   COMMAND_HOE_WRONGDROPMULTIPLIER:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0   
+      
+   COMMAND_HOE_WRONGUSES:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0     
+      
+   COMMAND_HOE_NOTONLINE:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0 
+      
+   ###############################
+   
+   PATCHES_CANE_PLACEMENT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BASS'
+      volume: 1.0
+      pitch: 1.0 
+      
+   PATCHES_OFF_HAND_USE:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BASS'
+      volume: 1.0
+      pitch: 1.0 
+      
+   PATCHES_DISPENSER_NEARBY:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BASS'
+      volume: 1.0
+      pitch: 1.0 
+      
+   ###############################
+   
+   PERIODICAL_PAYOUT_SUMMARY:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_COW_BELL'
+      volume: 1.0
+      pitch: 1.0 
+      
+   ###############################
+   
+   HOOKS_MCMMO_PAYOUT_SUMMARY:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_COW_BELL'
+      volume: 1.0
+      pitch: 1.0 
+      
+   HOOKS_AURELIUMSKILLS_PAYOUT_SUMMARY:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_COW_BELL'
+      volume: 1.0
+      pitch: 1.0 
+      
+   HOOKS_IRIDIUMSKYBLOCK_NOPERMISSION:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0     
+
+   ###############################
+      
+   COMMAND_RELOAD:
+      enabled: true
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      volume: 1.0
+      pitch: 1.0  
+      
+   COMMAND_NOPERMISSION:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_NO'
+      volume: 1.0
+      pitch: 1.0   

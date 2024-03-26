@@ -1,0 +1,104 @@
+skillrong:
+  Cooldown: 10
+  Skills:
+  - message{msg="&5&l** &d&lSỨC MẠNH HẮC ÁM &7&l<&d&lBOSS&7&l>."} @PIR{r=300}
+  - delay 30
+  - message{msg="&e&l** &6&lCẦU LỬA &7&l<&6&l1&7&l>."} @PIR{r=300}
+  - potion{type=SLOW;d=60;level=1;} @PIR {r=300}
+  - delay 60
+  - potion{type=POISON;d=100;l=1} @PlayersInRadius{r=300}
+  - potion{type=CONFUSION;d=150;l=1} @PlayersInRadius{r=300}
+  - potion{type=BLINDNESS;d=150;l=1} @PlayersInRadius{r=300}
+  - delay 60
+  - message{msg="&5&l** &d&lSỨC MẠNH HẮC ÁM &7&l<&d&lBOSS&7&l>."} @PIR{r=300}
+  - delay 30
+  - message{msg="&e&l** &6&lCẦU LỬA &7&l<&6&l2&7&l>."} @PIR{r=300}
+  - potion{type=POISON;d=100;l=1} @PlayersInRadius{r=300}
+  - potion{type=CONFUSION;d=150;l=1} @PlayersInRadius{r=300}
+  - potion{type=BLINDNESS;d=150;l=1} @PlayersInRadius{r=300}
+  - delay 60
+  - message{msg="&5&l** &d&lSỨC MẠNH HẮC ÁM &7&l<&d&lBOSS&7&l>."} @PIR{r=300}
+  - delay 30
+  - message{msg="&e&l** &6&lCẦU LỬA &7&l<&6&l3&7&l>."} @PIR{r=300}
+  - potion{type=POISON;d=100;l=1} @PlayersInRadius{r=300}
+  - potion{type=CONFUSION;d=150;l=1} @PlayersInRadius{r=300}
+  - potion{type=BLINDNESS;d=150;l=1} @PlayersInRadius{r=300}
+  - delay 60
+  - message{msg="&5&l** &d&lSỨC MẠNH HẮC ÁM &7&l<&d&lBOSS&7&l>."} @PIR{r=300}
+  - delay 30
+  - message{msg="&e&l** &6&lCẦU LỬA &7&l<&d&lBOSS&7&l>."} @PIR{r=300}
+  - delay 60
+  - effect:particles{p=flame;vs=1;hs=5;a=20;s=1;}
+  - effect:particles{p=flame;vs=1;hs=5;a=20;s=1;}
+  - effect:particles{p=smoke;vs=1;hs=5;a=20;s=1;}
+  - effect:sound{s=entity.ghast.shoot;v=2;p=1;}
+  - damage{a=50;ignorearmor=true;} @PIR{r=300}
+  - ignite{d=101} @PIR{r=300}
+lightning:
+  Skills:
+  - effect:spin{duration=40;velocity=5} @self
+  - delay 30
+  - effect:lightning @Ring{radius=1;points=1}
+  - damage{a=20;ia=true} @PlayersInRadius{r=2}
+  - delay 2
+  - effect:lightning @Ring{radius=2;points=1}
+  - damage{a=20;ia=true} @PlayersInRadius{r=3}
+  - delay 2
+  - effect:lightning @Ring{radius=3;points=2}
+  - damage{a=20;ia=true} @PlayersInRadius{r=4}
+  - delay 2
+  - effect:lightning @Ring{radius=4;points=2}
+  - damage{a=20;ia=true} @PlayersInRadius{r=5}
+rongthienha:
+  Skills:
+  - command{c="ie give manhnangcap <target.name> 64"}    
+  - command{c="ie give manhnangcap <target.name> 64"}
+  - command{c="ie give manhnangcap <target.name> 64"}     
+  - command{c="exp give <target.name> 45750"}  
+  - command{c="give <target.name> emeraldblock 10"}  
+  - command{c="crazycrates give physical cauvong 14 <target.name>"}    
+  
+rongthienha2:
+  Skills:  
+  - command{c="cr give to <target.name> spawnerquai2 14"}    
+  
+rongthienha3:
+  Skills:  
+  - command{c="cr give to <target.name> tuiluaphep 2"}    
+heal:
+  Skills:
+  - effect:particles{particle=heart;a=10;y=1;hs=4;vs=1;s=1} @Self
+  - heal{a=4} @EntitiesInRadius{r=10;ignore=players,animals}  
+hoden:
+  Skills:
+  - potion{type=WEAKNESS;lvl=1;duration=100} @PlayersInRadius{r=8}
+  - potion{type=SLOW;lvl=4;duration=100} @PlayersInRadius{r=8}
+  - potion{type=BLINDNESS;lvl=1;duration=100} @PlayersInRadius{r=8}
+  - damage{amount=24;ia=true} @PlayersInRadius{r=8}
+  - effect:particles{particle=largesmoke;a=10;y=0.5;hs=2;vs=0.2;s=0.5} @Self
+  - delay 20
+  - damage{amount=15;ia=true} @PlayersInRadius{r=8}
+  - delay 20
+  - damage{amount=15;ia=true} @PlayersInRadius{r=8}
+  - delay 20
+  - damage{amount=15;ia=true} @PlayersInRadius{r=8}  
+samsetthienha:
+    Skills:
+    - lightning{d=80} @NearestPlayer{r=20}
+    - delay 6
+    - lightning{d=80} @NearestPlayer{r=20}
+    - delay 5
+    - lightning{d=80} @NearestPlayer{r=20}
+    - delay 4
+    - lightning{d=80} @NearestPlayer{r=20}
+    - delay 3
+    - lightning{d=80} @NearestPlayer{r=20}
+    - delay 2
+    - lightning{d=80} @NearestPlayer{r=20}  
+
+endercon:
+  Cooldown: 5
+  Skills:
+  - delay 70    
+  - message{m="&6&l** &0&lTRIỆU HỒI ENDERCON &6&l**";subtitle="";d=500} @PlayersInRadius{r=10}   
+  - summon{mob=endercon;amount=5;noise=1} @Self

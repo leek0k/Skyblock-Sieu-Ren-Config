@@ -1,0 +1,71 @@
+name: '&b&lSet &f&lGiáng Sinh'
+material: DIAMOND
+settings:
+  equipped:
+    - '&a&l(!) &aKích hoạt &b&lSet &f&lGiáng Sinh!'
+  unequipped:
+    - '&c&l(!) &cDừng kích hoạt &b&lSet &f&lGiáng Sinh!'
+items:
+  helmet:
+    name: '&b⁕&f⁕&b⁕ &b&lMŨ &f&lGIÁNG &f&lSINH &b⁕&f⁕&b⁕'
+    customModelData: 0
+    itemFlags: []
+    lore:
+      - ''
+      - '&b⁕&f⁕&b⁕ &f&lGIÁNG SINH &b⁕&f⁕&b⁕'
+      - '&f* Giảm 20% damage nhận vào.'
+      - '&f* Làm chậm 15% kẻ địch.'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+    enchants:
+      - "protection:6"
+      - "unbreaking:5"
+      - "respiration:3"
+  chestplate:
+    name: '&b⁕&f⁕&b⁕ &b&lGIÁP &f&lGIÁNG &f&lSINH &b⁕&f⁕&b⁕'
+    customModelData: 0
+    itemFlags: []
+    lore:
+      - ''
+      - '&b⁕&f⁕&b⁕ &f&lGIÁNG SINH &b⁕&f⁕&b⁕'
+      - '&f* Giảm 20% damage nhận vào.'
+      - '&f* Làm chậm 15% kẻ địch.'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+    enchants:
+      - "protection:6"
+      - "unbreaking:5"
+      - "fire_protection:2"
+  leggings:
+    name: '&b⁕&f⁕&b⁕ &b&lQUẦN &f&lGIÁNG &f&lSINH &b⁕&f⁕&b⁕'
+    customModelData: 0
+    itemFlags: []
+    lore:
+      - ''
+      - '&b⁕&f⁕&b⁕ &f&lGIÁNG SINH &b⁕&f⁕&b⁕'
+      - '&f* Giảm 20% damage nhận vào.'
+      - '&f* Làm chậm 15% kẻ địch.'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+    enchants:
+      - "protection:6"
+      - "unbreaking:5"
+      - "blast_protection:2"
+  boots:
+    name: '&b⁕&f⁕&b⁕ &b&lỦNG &f&lGIÁNG &f&lSINH &b⁕&f⁕&b⁕'
+    customModelData: 0
+    itemFlags: []
+    lore:
+      - ''
+      - '&b⁕&f⁕&b⁕ &f&lGIÁNG SINH &b⁕&f⁕&b⁕'
+      - '&f* Giảm 20% damage nhận vào.'
+      - '&f* Làm chậm 15% kẻ địch.'
+      - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+    enchants:
+      - "protection:6"
+      - "unbreaking:5"
+      - "projectile_protection:2"
+      - "feather_falling:2"
+events:
+  DEFENSE:
+    chance: 100
+    effects:
+      - 'DECREASE_DAMAGE:20'
+      - 'POTION:SLOW:0:60 %attacker%'

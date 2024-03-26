@@ -1,0 +1,19 @@
+requireSet: 'SetQuyMaoHuyenThoai'
+material: DIAMOND_AXE
+name: '&e&l★ &6&l★ &e&l★ &6&lRÌU THƯỢNG QUÝ MÃO &e&l★ &6&l★ &e&l★'
+lore:
+  - ''
+  - '&6&l◆ ◆ ◆ HUYỀN THOẠI &6(Quý Mão 2023) &l◆ ◆ ◆'
+  - '&6* Tăng 12% damage gây ra.'
+  - '&6&oVật phẩm sự kiện Tết Quý Mão 2023'
+  - '&7&o(Yêu cầu mang đủ Set để kích hoạt.)'
+  - ''
+enchants:
+  - 'sharpness:117'
+  - 'unbreaking:3'
+  - 'cuuthienmaohoai:1'
+events:
+  ATTACK:
+    chance: 55
+    effects:
+      - 'INCREASE_DAMAGE:12'

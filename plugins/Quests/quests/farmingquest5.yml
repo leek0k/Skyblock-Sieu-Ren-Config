@@ -1,0 +1,26 @@
+tasks:
+  mining:
+    type: "blockbreakcertain"
+    amount: 75
+    block: 142
+display:
+  name: "&a&nNhiệm vụ nông dân:&r &e#5"
+  lore-normal:
+  - "&r"
+  - "&6◆ &eNhiệm vụ:&r &7Thu hoạch 75 khoai tây."
+  - "&6◆ &eTiến trình:&r &7{mining:progress}/75 khoai tây."
+  - "&6◆ &eThưởng:&r &a2,000 $"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Đã kích hoạt nhiệm vụ."
+  type: "POTATO_ITEM"
+rewards:
+  - "eco give {player} 2000"
+options:
+  category: "farming"
+  requires: []
+  repeatable: false
+  cooldown:
+    enabled: false
+    time: 2880
+  sort-order: 5

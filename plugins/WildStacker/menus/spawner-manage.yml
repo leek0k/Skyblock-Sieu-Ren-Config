@@ -1,0 +1,73 @@
+###############################################
+##                                           ##
+##         WildStacker Configuration         ##
+##            Developed by Ome_R             ##
+##                                           ##
+###############################################
+
+# The title of the menu.
+title: 'Bảng Spawner'
+
+# The pattern of the menu.
+pattern:
+  - '& & & & & & & & &'
+  - '# & % & & & ^ & #'
+  - '# & & & ! & & & #'
+  - '& & & & & & & & &'
+
+# The slots of the amounts menu.
+amounts-menu: '^'
+# The slots for statistic items
+statistics: '%'
+# The slots of the upgrade menu.
+upgrade-menu: '!'
+
+# The items of the menu
+items:
+  '@':
+    type: STAINED_GLASS_PANE
+    data: 1
+    name: '&f'
+  '#':
+    type: STAINED_GLASS_PANE
+    data: 4
+    name: '&f'
+  '&':
+    type: STAINED_GLASS_PANE
+    data: 15
+    name: '&f'
+  '%':
+    type: BOOK
+    name: '&eThông Tin'
+    lore:
+    - '&7Thời gian Spawn&e: &f%ticks-left%s'
+    - '' 
+    - '&c! %failure-reason%'   
+  '^':
+    type: EMERALD
+    name: '&eTăng/Giảm số lượng Spawner'
+  '!':
+    type: BEACON
+    name: '&e&lNÂNG CẤP &6&lSPAWNER'
+    lore: 
+      - ''
+      - '&fNâng cấp &cSpawner &fđể có thể spawener'
+      - '&fnhanh hơn, tùy thuộc vào cấp độ bạn đã'
+      - '&fnâng cấp!'
+      - ''
+      - '&7Ấn vào đây để xem chi tiết.'
+
+# Sounds for items
+sounds:
+  '%':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2
+  '^':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2
+  '!':
+    type: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.2
+    pitch: 0.2

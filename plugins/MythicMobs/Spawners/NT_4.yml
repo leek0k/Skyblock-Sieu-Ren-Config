@@ -1,0 +1,24 @@
+NT_4:
+  MobName: NguoiTuyet
+  World: Mapgiangsinh
+  X: -985
+  Y: 63
+  Z: -724
+  Radius: 2
+  UseTimer: true
+  MaxMobs: 1
+  MobLevel: '1'
+  MobsPerSpawn: 2
+  Cooldown: 5
+  CooldownTimer: 2
+  Warmup: 0
+  WarmupTimer: 0
+  CheckForPlayers: true
+  ActivationRange: 15
+  LeashRange: 12
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  ShowFlames: false
+  Breakable: false
+  Conditions: []
+  ActiveMobs: 2

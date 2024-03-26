@@ -1,0 +1,92 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '{0} &n${1}'
+
+pattern:
+  - '& * M N O P Q R &'
+  - '% % S % % % % % %'
+
+items:
+  '%':
+    type: STAINED_GLASS_PANE
+    data: 11
+    name: '&f'
+  '&':
+    type: STAINED_GLASS_PANE
+    data: 9
+    name: '&f'
+  '^':
+    type: STAINED_GLASS_PANE
+    data: 3
+    name: '&f'
+  '*':
+    type: BOOK_AND_QUILL
+    name: '&e&lITEMS ->'    
+  'M':
+    block: HOPPER
+    type: HOPPER
+    name: '&e&l[!] &7Hopper'
+    lore:
+      - '&6&l* &e&lSố lượng &fx{0}'
+      - '&6&l* &e&lCấp: &f{2}✮'
+  'N':
+    block: BEACON
+    type: BEACON
+    name: '&e&l[!] &7Beacon'
+    lore:
+      - '&6&l* &e&lSố lượng &fx{0}'
+      - '&6&l* &e&lCấp: &f{2}✮'
+  'O':
+    block: IRON_BLOCK
+    type: IRON_BLOCK
+    name: '&e&l[!] &7Iron Block'
+    lore:
+      - '&6&l* &e&lSố lượng &fx{0}'
+      - '&6&l* &e&lCấp: &f{2}✮'
+  'P':
+    block: GOLD_BLOCK
+    type: GOLD_BLOCK
+    name: '&e&l[!] &7Gold Block'
+    lore:
+      - '&6&l* &e&lSố lượng &fx{0}'
+      - '&6&l* &e&lCấp: &f{2}✮'
+  'Q':
+    block: DIAMOND_BLOCK
+    type: DIAMOND_BLOCK
+    name: '&e&l[!] &7Diamond Block'
+    lore:
+      - '&6&l* &e&lSố lượng &fx{0}'
+      - '&6&l* &e&lCấp: &f{2}✮'
+  'R':
+    block: EMERALD_BLOCK
+    type: EMERALD_BLOCK
+    name: '&e&l[!] &7Emerald Block'
+    lore:
+      - '&6&l* &e&lSố lượng &fx{0}'
+      - '&6&l* &e&lCấp: &f{2}✮'
+  'S':
+    block: ENDER_PORTAL_FRAME
+    type: ENDER_PORTAL_FRAME
+    name: '&e&l[!] &7Bedrock'
+    lore:
+      - '&6&l* &e&lSố lượng &fx{0}'
+      - '&6&l* &e&lCấp: &f{2}✮'
+  'V':
+    block: CHEST
+    type: CHEST
+    name: '&e&l[!] &7Chest'
+    lore:
+      - '&6&l* &e&lSố lượng &fx{0}'
+      - '&6&l* &e&lCấp: &f{2}✮'
+  'W':
+    block: ENDER_PORTAL_FRAME
+    type: ENDER_PORTAL_FRAME
+    name: '&e&l[!] &7Trapped Chest'
+    lore:
+      - '&6&l* &e&lSố lượng &fx{0}'
+      - '&6&l* &e&lCấp: &f{2}✮'

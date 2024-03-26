@@ -1,0 +1,14 @@
+patterns:
+  - type: stat
+    stat: luck
+    value: 1
+    pattern:
+      start: 2
+      interval: 2
+  - type: stat
+    stat: wisdom
+    value: 3
+    pattern:
+      start: 3
+      interval: 2      
+levels:

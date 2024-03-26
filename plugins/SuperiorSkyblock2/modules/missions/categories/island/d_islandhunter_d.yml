@@ -1,0 +1,52 @@
+mission-file: ItemsMissions
+required-missions:
+- d_islandhunter_c
+island: false
+auto-reward: false
+rewards:
+  commands:
+  - eco give %player% 100000
+  - exp give %player% 1099
+  - is admin msg %player% &e&l$ | &7Hoàn thành thử thách!
+required-items:
+  '1':
+    types:
+    - ENDER_PEARL
+    amount: 576
+icons:
+  not-completed:
+    type: BLAZE_ROD
+    name: '&6&LTHỬ THÁCH: &c&lTHỢ SĂN &f&l#4'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l mắt ender &fđể FULL túi'
+    - ''
+    - '&7- &e$100.000 , 1099 Exp'
+    - ''
+    - '&6Thu thập: &7{1}/576'
+    - '&6Tiến trình: &7{0}%'
+    - '&c&l ✘ &7Chưa hoàn thành'
+    - ''
+    - '&a&l YÊU CẦU: &aHoàn thành &c&lTHỢ SĂN &f&l#4'
+  can-complete:
+    type: ENDER_PEARL
+    name: '&6&LTHỬ THÁCH: &c&lTHỢ SĂN &f&l#4'
+    lore:
+    - '&7&l[!] Yêu cầu:'
+    - '&fThu thập 10 STACKS&e&l mắt ender &fđể FULL túi'
+    - ''
+    - '&7- &e$100.000 , 1099 Exp'
+    - ''
+    - '&6Thu thập: &7576/576'
+    - '&6Tiến trình: &7100%'
+    - '&a&l ✔ &7Bạn đã có đủ điều kiện Click vào đây.'
+    enchants:
+      DURABILITY: 1
+    flags:
+    - HIDE_ENCHANTS
+  completed:
+    type: MAP
+    name: '&6&LTHỬ THÁCH: &c&lTHỢ SĂN &f&l#4'
+    lore:
+    - ''
+    - '&a&l ✔ &7Đã hoàn thành.'

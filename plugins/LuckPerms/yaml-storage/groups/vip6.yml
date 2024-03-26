@@ -1,0 +1,30 @@
+name: vip6
+permissions:
+- animatednames.group.Vip5:
+    value: false
+- animatednames.group.Vip6
+- chatcontrol.bypass.time.chat
+- chatcontrol.bypass.time.commands
+- chatsentinel.bypass.cooldown
+- chatsentinel.bypass.flood
+- chestcommands.open.batdiet.yml
+- chestcommands.open.shopdacbiet.yml
+- essentials.commandcooldowns.bypass
+- essentials.kits.batdiet
+- essentials.kits.batdiet2
+- essentials.kits.batdiet3
+- essentials.kits.batdiet4
+- essentials.kittycannon
+- essentials.teleport.cooldown.bypass.back
+- essentials.teleport.cooldown.bypass.tpa
+- essentials.teleport.timer.bypass
+- essentials.teleport.timer.bypass.back
+- essentials.teleport.timer.bypass.tpahere
+- essentials.teleport.timer.move
+- luckperms.user.parent.info
+- noflyzone.bypass
+- playerpoints.pay:
+    value: false
+- weight.6
+parents:
+- vip5

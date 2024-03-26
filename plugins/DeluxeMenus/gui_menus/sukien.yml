@@ -1,0 +1,43 @@
+file: xuixeomenu.yml
+menu_title: '&8&lXui Xẻo Shop'
+open_command: 
+- xuixeo
+open_commands:
+  - '[sound] ENTITY_CHICKEN_EGG'
+size: 18
+update_interval: 1
+open_requirement: 
+items:
+  'exit':
+    material: DOUBLE_PLANT
+    slot: 13
+    display_name: '&c&l[Thoát]'
+    lore:
+    - '&7Thoát menu'
+    click_commands:
+    - '[close]'
+  'help':
+    material: BOOK
+    slot: 2
+    display_name: '&2&lSự Kiện Build Nhận Mô Hình OnePiece'
+    lore:
+    - '&f| &7Sự kiện build công trình Tết Quý Mão 2023'
+    - '&f| &7nhận Mô Hình OnePiece.'
+    - '&f| &7(Kết thúc ngày 01/02/2023.)'
+    - '&f| '
+    - '&f| &7Click để truy cập'
+    click_commands:
+    - '[message] &2Sự kiện Build nhận mô hình OnePiece: &ahttps://www.facebook.com/MineAhihiVN/posts/pfbid02Rg4bP9W3st8mk2cv3Kb2yWtPGvj22sD4YwAUjdqXcsgXp2EYkCzWb2Ygk8ypgeicl'
+    - '[message] &2Kết thúc ngày 01/02/2023'
+  'trade':
+    material: WORKBENCH
+    slot: 6
+    display_name: '&c&lSự kiện cày vật phẩm Tết Quý Mão 2023'
+    lore:
+    - '&f| &7Sự kiện cày vật phẩm Tết Quý Mão 2023'
+    - '&f| &7cực xịn xò.'
+    - '&f| &7(Kết thúc ngày 28/02/2023.)'
+    - '&f| '
+    - '&f| &7Click để truy cập'
+    click_commands:
+    - '[openguimenu] events'

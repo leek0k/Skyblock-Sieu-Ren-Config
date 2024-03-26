@@ -1,0 +1,19 @@
+#Tắt tính năng của plugin ?
+FeatureDisabled: false
+
+#Danh sách các cổng dịch chuyển được phép chạy lệnh:
+# * Hỗ trợ các loại: END_PORTAL, NETHER_PORTAL, END_GATEWAY, ENDER_PEARL và CHORUS_FRUIT.
+Portals:
+- NETHER_PORTAL
+
+#Các câu lệnh sẽ được chạy khi người chơi bước vào cổng dịch chuyển:
+# * Có hỗ trợ tất cả placeholder trong PlaceholderAPI.
+#- '<câu lệnh không cần dấu / >' - chạy lệnh với quyền thông thường.
+#- 'OP: <câu lệnh không cần dấu / >' - chạy lệnh với quyền OP (thường bị delay vài mili giây, không khuyến khích sử dụng nhiều).
+#- 'CONSOLE: <câu lệnh không cần dấu / >' - chạy lệnh trên console.
+#- 'MESSAGE: <thông điệp>' - gửi thông điệp cho người sử dụng.
+#- 'SOUND: <âm thanh>' - chơi âm thanh.
+Commands:
+- 'CONSOLE: warp dianguc {player}'
+
+config-reloaded: '&8[&cEPC&8] &aTải lại cấu hình thành công!'

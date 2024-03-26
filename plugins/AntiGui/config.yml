@@ -1,0 +1,34 @@
+#Danh sách các item bị chặn:
+# * Có 2 kiểu sử dụng tuỳ chọn Lore:
+#  + Dùng kiểu danh sách, plugin sẽ kiểm tra tất cả lore trong item có trùng với danh sách
+#    được cấu hình hay không. Nếu đúng mới chặn, sai 1 ký tự nhỏ cũng sẽ không chặn.
+#    Ví dụ Lore kiểu danh sách:
+#      Lore:
+#      - 'line 1'
+#      - 'line 2'
+#  + Dùng kiểu chuỗi đơn, plugin sẽ kiểm tra chuỗi này có tồn tại trong lore của item hay
+#    không. Nếu đúng thì item đó sẽ bị chặn.
+#    Ví dụ Lore kiểu chuỗi đơn:
+#      Lore: 'hello world!'
+# * Có thể thêm / xoá những item bạn muốn.
+BlockedItems:
+  '1':
+    Materials:
+    - 'emerald:0'
+    - 'diamond:0'
+    HasMeta: #Nếu option này được sử dụng, những option phía dưới nó sẽ không hoạt động!
+      Enchanted: false
+      Name: true
+      Lore: true
+    Name: 'Tên item'
+    Name_Contains: 'ABC'
+    Lore_Contains: 'XYZ'
+    Lore:
+    - 'Danh sách lore.'
+  '2':
+    Name: 'Tên item 2'
+    Lore: 'Lore chuỗi đơn.'
+  '3':
+    Name: 'Tên item 3'
+    Lore:
+    - 'Danh sách lore.'

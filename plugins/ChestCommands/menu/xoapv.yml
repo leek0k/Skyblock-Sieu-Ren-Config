@@ -1,0 +1,249 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&8Dọn Pv (Vật phẩm cấm)'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'xoapv'
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note pling'
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+pv1:
+  COMMAND: 'op: pvdel {player} 1'
+  NAME: '&4&l! &c&lXóa Pv 1'
+  LORE:
+    - '&7Dọn sạch (/pv 1) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 1
+  POSITION-Y: 1
+  
+pv2:
+  COMMAND: 'op: pvdel {player} 2'
+  NAME: '&4&l! &c&lXóa Pv 2'
+  AMOUNT: 2   
+  LORE:
+    - '&7Dọn sạch (/pv 2) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 2
+  POSITION-Y: 1
+  
+pv3:
+  COMMAND: 'op: pvdel {player} 3'
+  NAME: '&4&l! &c&lXóa Pv 3'
+  AMOUNT: 3  
+  LORE:
+    - '&7Dọn sạch (/pv 3) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 3
+  POSITION-Y: 1
+  
+pv4:
+  COMMAND: 'op: pvdel {player} 4'
+  NAME: '&4&l! &c&lXóa Pv 4'
+  AMOUNT: 4   
+  LORE:
+    - '&7Dọn sạch (/pv 4) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 4
+  POSITION-Y: 1
+  
+pv5:
+  COMMAND: 'op: pvdel {player} 5'
+  NAME: '&4&l! &c&lXóa Pv 5'
+  AMOUNT: 5 
+  LORE:
+    - '&7Dọn sạch (/pv 5) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 5
+  POSITION-Y: 1
+
+pv6:
+  COMMAND: 'op: pvdel {player} 6'
+  NAME: '&4&l! &c&lXóa Pv 6'
+  AMOUNT: 6
+  LORE:
+    - '&7Dọn sạch (/pv 6) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 6
+  POSITION-Y: 1
+
+pv7:
+  COMMAND: 'op: pvdel {player} 7'
+  NAME: '&4&l! &c&lXóa Pv 7'
+  AMOUNT: 7
+  LORE:
+    - '&7Dọn sạch (/pv 7) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 7
+  POSITION-Y: 1
+
+pv8:
+  COMMAND: 'op: pvdel {player} 8'
+  NAME: '&4&l! &c&lXóa Pv 8'
+  AMOUNT: 8
+  LORE:
+    - '&7Dọn sạch (/pv 8) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 8
+  POSITION-Y: 1
+
+pv9:
+  COMMAND: 'op: pvdel {player} 9'
+  NAME: '&4&l! &c&lXóa Pv 9'
+  AMOUNT: 9
+  LORE:
+    - '&7Dọn sạch (/pv 9) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 9
+  POSITION-Y: 1
+
+pv10:
+  COMMAND: 'op: pvdel {player} 10'
+  NAME: '&4&l! &c&lXóa Pv 10'
+  AMOUNT: 10
+  LORE:
+    - '&7Dọn sạch (/pv 10) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 1
+  POSITION-Y: 2
+
+pv11:
+  COMMAND: 'op: pvdel {player} 11'
+  NAME: '&4&l! &c&lXóa Pv 11'
+  AMOUNT: 11
+  LORE:
+    - '&7Dọn sạch (/pv 11) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 2
+  POSITION-Y: 2
+
+pv12:
+  COMMAND: 'op: pvdel {player} 12'
+  NAME: '&4&l! &c&lXóa Pv 12'
+  AMOUNT: 12
+  LORE:
+    - '&7Dọn sạch (/pv 12) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 3
+  POSITION-Y: 2
+
+pv13:
+  COMMAND: 'op: pvdel {player} 13'
+  NAME: '&4&l! &c&lXóa Pv 13'
+  AMOUNT: 13
+  LORE:
+    - '&7Dọn sạch (/pv 13) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 4
+  POSITION-Y: 2
+
+pv14:
+  COMMAND: 'op: pvdel {player} 14'
+  NAME: '&4&l! &c&lXóa Pv 14'
+  AMOUNT: 14
+  LORE:
+    - '&7Dọn sạch (/pv 14) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 5
+  POSITION-Y: 2
+
+pv15:
+  COMMAND: 'op: pvdel {player} 15'
+  NAME: '&4&l! &c&lXóa Pv 15'
+  AMOUNT: 15
+  LORE:
+    - '&7Dọn sạch (/pv 15) của bạn'
+    - '&7Lấy hết vật phẩm của bạn ra để lại vật'
+    - '&7phẩm bị sv cấm rồi ấn vào đây để xóa!'
+    - ''
+    - '&0&o#Item menu'
+  ID: 166
+  POSITION-X: 6
+  POSITION-Y: 2
+return-to-main:
+  COMMAND: 'open:main-menu.yml'
+  NAME: '&6&l[arrow_left] Quay lại menu'
+  LORE:
+    - '&eNhấp vào để quay lại menu'  
+    - ''
+    - '&0&o#Item menu'
+  ID: '160:4' 
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 3   

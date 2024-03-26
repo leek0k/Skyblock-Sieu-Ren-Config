@@ -1,0 +1,17 @@
+{
+  "pairs": [
+    {
+      "killedByPlayer": false,
+      "chance": 100,
+      "items": [
+        {
+          "type": "IRON_INGOT",
+          "chance": 100,
+          "min": 2,
+          "max": 5,
+          "looting": true
+        }
+      ]
+    }
+  ]
+}

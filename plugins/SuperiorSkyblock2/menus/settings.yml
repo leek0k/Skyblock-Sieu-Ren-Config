@@ -1,0 +1,170 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+title: '&lTính năng đảo'
+
+pattern:
+  - '$ $ $ $ $ $ $ $ $'
+  - '$ @ @ @ @ @ @ @ $'
+  - '$ @ @ @ @ @ @ @ $'
+  - '$ @ @ @ @ @ @ @ $'
+  - '$ $ % $ * $ ^ $ $'
+
+slots: '@'
+previous-page: '%'
+current-page: '*'
+next-page: '^'
+
+items:
+  '$':
+    type: STAINED_GLASS_PANE
+    data: 3
+    name: '&f'
+  '%':
+    type: PAPER
+    name: '{0}Trang trước'
+  '*':
+    type: DOUBLE_PLANT
+    name: '&aTrang hiện tại'
+    lore:
+      - '&7Page {0}'
+  '^':
+    type: PAPER
+    name: '{0}Trang sau'
+
+settings:
+  always_day:
+    settings-enabled:
+      type: STAINED_CLAY
+      data: 4
+      name: '&6Trời sáng'
+      lore:
+        - '&7Chỉnh trời sáng cho đảo.'
+        - '&f(Click vào để bât/tắt)'
+        - '&7Tình trạng &aBẬT&7.'
+    settings-disabled:
+      type: STAINED_CLAY
+      data: 4
+      name: '&6Trời sáng mãi mãi'
+      lore:
+        - '&7Chỉnh trời sáng cho đảo.'
+        - '&f(Click vào để bât/tắt)'        
+        - '&7Tình trạng &CTẮT&7.'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  always_middle_day:
+    settings-enabled:
+      type: STAINED_CLAY
+      data: 1
+      name: '&6Buổi trưa'
+      lore:
+        - '&7Chỉnh buổi trưa cho đảo.'
+        - '&f(Click vào để bât/tắt)'        
+        - '&7Tình trạng &aBẬT&7.'
+    settings-disabled:
+      type: STAINED_CLAY
+      data: 1
+      name: '&6Buổi trưa'
+      lore:
+        - '&7Chỉnh buổi trưa cho đảo.'
+        - '&f(Click vào để bât/tắt)'        
+        - '&7Tình trạng &CTẮT&7.'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  always_night:
+    settings-enabled:
+      type: STAINED_CLAY
+      data: 3
+      name: '&6Buổi tối'
+      lore:
+        - '&7Chỉnh buổi tối cho đảo.'
+        - '&f(Click vào để bât/tắt)'        
+        - '&7Tình trạng &aBẬT&7.'
+    settings-disabled:
+      type: STAINED_CLAY
+      data: 3
+      name: '&6Buổi đêm'
+      lore:
+        - '&7Chỉnh buổi đêm cho đảo.'
+        - '&f(Click vào để bât/tắt)'        
+        - '&7Tình trạng &CTẮT&7.'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  always_middle_night:
+    settings-enabled:
+      type: STAINED_CLAY
+      data: 11
+      name: '&6Buổi đêm'
+      lore:
+        - '&7Chỉnh buổi đêm cho đảo.'
+        - '&f(Click vào để bât/tắt)'        
+        - '&7Tình trạng &aBẬT&7.'
+    settings-disabled:
+      type: STAINED_CLAY
+      data: 11
+      name: '&6Buổi đêm'
+      lore:
+        - '&7Chỉnh buổi đêm cho đảo.'
+        - '&f(Click vào để bât/tắt)'        
+        - '&7Tình trạng &CTẮT&7.'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  lava_flow:
+    settings-enabled:
+      type: LAVA_BUCKET
+      name: '&6Chảy Lava'
+      lore:
+        - '&7Bạn có muốn lava chảy ở đảo không?'
+        - '&f(Click vào để bât/tắt)'        
+        - '&7Tình trạng &aBẬT&7.'
+    settings-disabled:
+      type: LAVA_BUCKET
+      name: '&6Lava Flow'
+      lore:
+        - '&7Bạn có muốn lava chảy ở đảo không?'
+        - '&f(Click vào để bât/tắt)'        
+        - '&7Tình trạng &CTẮT&7.'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2
+
+  pvp:
+    settings-enabled:
+      type: DIAMOND_SWORD
+      name: '&6PvP'
+      lore:
+        - '&7Cho phép người chơi PvP trong đảo.'
+        - '(Chỉ Pvp được với người chơi thăm đảo)'
+        - '(Không thể PvP với người cùng Team)'
+        - '&f(Click vào để bât/tắt)'       
+        - '&7Tình trạng &aBẬT&7.'
+    settings-disabled:
+      type: DIAMOND_SWORD
+      name: '&6PvP'
+      lore:
+        - '&7Cho phép người chơi PvP trong đảo.'
+        - '(Chỉ Pvp được với người chơi thăm đảo)'
+        - '(Không thể PvP với người cùng Team)'
+        - '&f(Click vào để bât/tắt)'        
+        - '&7Tình trạng &CTẮT&7.'
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.2
+      pitch: 0.2

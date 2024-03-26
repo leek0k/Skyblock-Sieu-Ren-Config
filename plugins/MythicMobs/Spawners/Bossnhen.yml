@@ -1,0 +1,24 @@
+Bossnhen:
+  MobName: Bossmanhen
+  World: dugeon2
+  X: -1328
+  Y: 43
+  Z: -3206
+  Radius: 0
+  UseTimer: true
+  MaxMobs: 1
+  MobLevel: '1'
+  MobsPerSpawn: 1
+  Cooldown: 3600
+  CooldownTimer: 2947
+  Warmup: 0
+  WarmupTimer: 0
+  CheckForPlayers: false
+  ActivationRange: 40
+  LeashRange: 32
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  ShowFlames: false
+  Breakable: false
+  Conditions: []
+  ActiveMobs: 0

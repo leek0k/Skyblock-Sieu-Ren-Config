@@ -1,0 +1,26 @@
+# 
+#  /deathdrop save <ID>
+Worlds:
+- world
+Materials:
+- GOLDEN_APPLE
+- POTION
+- SPLASH_POTION
+- ENDER_PEARL
+DropItems:
+  dauthan:
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_NUGGET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2§l✦ §a§lĐậu thần
+      lore:
+      - ''
+      - §f§o((Hãy thử ăn 1 đậu xem!!))
+      enchants:
+        DURABILITY: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAONiYOBgEEktyEwuyy9NzkgtKraCMhjYUxJLSzIS8xgADrqc7CQAAAA=

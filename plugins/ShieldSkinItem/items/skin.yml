@@ -1,0 +1,187 @@
+# Vật phẩm sơn skin lên khiên
+list:
+  NeyuQ:
+    # Vật phẩm hiển thị
+    item:
+      type: MILK_BUCKET
+      glowing: true
+      display: '&f(Sơn Shield) &f&lNeyuQ Gang'
+      lore:
+      - '&c◆ ◆ &C&L◆ YOUTUBER ◆ &C◆ ◆'
+      - '&c* Tăng máu'
+      - '&c* Gia nhập NeyuQ Gang cùng các Fan'
+      - '&7&o((Giữ và thả lên khiêng để sử dụng!))'
+    # Mẫu khiên sẽ được sơn lên khi ép thành công
+    shield-pattern: NeyuQ
+    # Định dạng lại tên hiển thị, lore khi ép thành công
+    format:
+      display: '%display%'
+      lore:
+      - '&6*Skin: &f&lNeyuQ Gang &c(Youtuber)' # Lore mới
+      - '{lore}' # Lore cũ của khiên
+      # Đè enchant lên vật phẩm vừa sơn thành công
+      enchants:
+      - 'DURABILITY 3'
+      # Thêm enchant lên vật phẩm vừa sơn thành công
+      # add-enchants:
+      # - 'DURABILITY 1'
+      # Đè flags lên vật phẩm vừa sơn thành công
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+      # Thêm flags lên vật phẩm vừa sơn thành công
+      add-flags:
+      - 'HIDE_POTION_EFFECTS'
+    # Hỗ trợ ItemAbility
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 6.0
+  vietbua:
+    # Vật phẩm hiển thị
+    item:
+      type: MILK_BUCKET
+      glowing: true
+      display: '&f(Sơn Shield) &2&lViệt Bựa'
+      lore:
+      - '&c◆ ◆ &C&L◆ YOUTUBER ◆ &C◆ ◆'
+      - '&c* Tăng máu'
+      - '&c* Gia nhập Biệt Đội Việt Bựa'
+      - '&7&o((Giữ và thả lên khiêng để sử dụng!))'
+    # Mẫu khiên sẽ được sơn lên khi ép thành công
+    shield-pattern: vietbua
+    # Định dạng lại tên hiển thị, lore khi ép thành công
+    format:
+      display: '%display%'
+      lore:
+      - '&6*Skin: &2&lViệt Bựa &c(Youtuber)' # Lore mới
+      - '{lore}' # Lore cũ của khiên
+      # Đè enchant lên vật phẩm vừa sơn thành công
+      enchants:
+      - 'DURABILITY 3'
+      # Thêm enchant lên vật phẩm vừa sơn thành công
+      # add-enchants:
+      # - 'DURABILITY 1'
+      # Đè flags lên vật phẩm vừa sơn thành công
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+      # Thêm flags lên vật phẩm vừa sơn thành công
+      add-flags:
+      - 'HIDE_POTION_EFFECTS'
+    # Hỗ trợ ItemAbility
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 6.0
+  8thang3:
+    # Vật phẩm hiển thị
+    item:
+      type: MILK_BUCKET
+      glowing: true
+      display: '&f(Sơn Shield) &c&lQuốc Tế Phụ Nữ'
+      lore:
+      - '&c&l⊰♥⊱ ⊰♥⊱ ⊰♥⊱ QUỐC TẾ PHỤ NỮ &c&l⊰♥⊱ ⊰♥⊱ ⊰♥⊱'
+      - '&c* Tăng máu (10)'
+      - '&c* Tặng nó cho người phụ nữ bạn yêu quý nhất nào.'
+      - '&7&o((Giữ và thả lên khiêng để sử dụng!))'
+    # Mẫu khiên sẽ được sơn lên khi ép thành công
+    shield-pattern: khien8thang3
+    # Định dạng lại tên hiển thị, lore khi ép thành công
+    format:
+      display: '%display%'
+      lore:
+      - '&6*Skin: &c&l⊰♥⊱ ⊰♥⊱ ⊰♥⊱ QUỐC TẾ PHỤ NỮ &c&l⊰♥⊱ ⊰♥⊱ ⊰♥⊱' # Lore mới
+      - '{lore}' # Lore cũ của khiên
+      # Thêm enchant lên vật phẩm vừa sơn thành công
+      # add-enchants:
+      # - 'DURABILITY 1'
+      # Đè flags lên vật phẩm vừa sơn thành công
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+      # Thêm flags lên vật phẩm vừa sơn thành công
+      add-flags:
+      - 'HIDE_POTION_EFFECTS'
+    # Hỗ trợ ItemAbility
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 10.0
+  dragonvn:
+    # Vật phẩm hiển thị
+    item:
+      type: MILK_BUCKET
+      glowing: true
+      display: '&f(Sơn Shield) &c&lDragonVN'
+      lore:
+      - '&c◆ ◆ &C&L◆ YOUTUBER ◆ &C◆ ◆'
+      - '&c* Tăng máu'
+      - '&c* Gia nhập Biệt Đội DragonVN'
+      - '&7&o((Giữ và thả lên khiêng để sử dụng!))'
+    # Mẫu khiên sẽ được sơn lên khi ép thành công
+    shield-pattern: dragonvn
+    # Định dạng lại tên hiển thị, lore khi ép thành công
+    format:
+      display: '%display%'
+      lore:
+      - '&6*Skin: &c&lDragonVN &c(Youtuber)' # Lore mới
+      - '{lore}' # Lore cũ của khiên
+      # Đè enchant lên vật phẩm vừa sơn thành công
+      enchants:
+      - 'DURABILITY 3'
+      # Thêm enchant lên vật phẩm vừa sơn thành công
+      # add-enchants:
+      # - 'DURABILITY 1'
+      # Đè flags lên vật phẩm vừa sơn thành công
+      flags:
+      - 'HIDE_POTION_EFFECTS'
+      # Thêm flags lên vật phẩm vừa sơn thành công
+      add-flags:
+      - 'HIDE_POTION_EFFECTS'
+    # Hỗ trợ ItemAbility
+    ItemAbility:
+      AbilityType: 'Ability'
+      Abilities:
+        Ability:
+          '0':
+            Type: 'MaxHealth'
+            Operator: 0
+            Value: 6.0                      
+  EnderSkinWithNoAbility:
+    # Vật phẩm hiển thị
+    item:
+      type: FIREWORK_CHARGE
+      glowing: true
+      display: '&dBột sơn khiên 2'
+      lore:
+      - '&7Dùng để sơn khiên'
+    # Mẫu khiên sẽ được sơn lên khi ép thành công
+    shield-pattern: ShieldPattern2
+    # Định dạng lại tên hiển thị, lore khi ép thành công
+    format:
+      display: '%display%'
+      lore:
+      - '&6&lSkin sọ' # Lore mới
+      - '{lore}' # Lore cũ của khiên
+      # Đè enchant lên vật phẩm vừa sơn thành công
+      #enchants:
+      #- 'DURABILITY 1'
+      # Thêm enchant lên vật phẩm vừa sơn thành công
+      #add-enchants:
+      #- 'DURABILITY 1'
+      # Đè flags lên vật phẩm vừa sơn thành công
+      #flags:
+      #- 'HIDE_POTION_EFFECTS'
+      # Thêm flags lên vật phẩm vừa sơn thành công
+      #add-flags:
+      #- 'HIDE_POTION_EFFECTS'

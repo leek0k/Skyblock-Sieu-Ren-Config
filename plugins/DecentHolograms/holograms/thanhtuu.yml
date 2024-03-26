@@ -1,0 +1,18 @@
+location: NewSpawn:50.5:147.500:-1818.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e&lChế tạo vật phẩm'
+    height: 0.3
+  - content: '&fSử dụng các nguyên liệu kiếm được'
+    height: 0.3
+  - content: '&fđể chế tạo các vật phẩm nâng sức mạnh bản thân'
+    height: 0.3
+  - content: '&f&nLệnh:&r &e/ecraft &7(Trade đồ)'
+    height: 0.3
+  actions: {}

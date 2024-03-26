@@ -1,0 +1,21 @@
+requireSet: ''
+material: BOW
+customModelData: 0
+itemFlags: []
+name: '&d&l↣&c&l❤&d&l↢ &f&lCUNG &d&lVALENTINE &d&l↣&c&l❤&d&l↢'
+lore:
+  - ''
+  - '&d&l↣&c&l❤&d&l↢ &d&lVALENTINE &d&l&d&l↣&c&l❤&d&l↢'
+  - '&0&o#Cungvalentine'
+enchants:
+  - 'power:65'
+  - 'unbreaking:4'
+  - 'flame:1'
+  - 'punch:2'
+  - 'infinity:1'
+  - 'buayeu:1'
+events:
+  ATTACK:
+    chance: 100
+    effects:
+      - 'INCREASE_DAMAGE:28'

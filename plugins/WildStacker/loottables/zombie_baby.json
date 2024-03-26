@@ -1,0 +1,21 @@
+{
+  "dropEquipment": false,
+  "exp":{
+    "min": 5,
+    "max": 8
+  },
+  "pairs": [
+    {
+      "chance": 100,
+      "items": [
+        {
+          "type": "ROTTEN_FLESH",
+          "chance": 100,
+          "min": 0,
+          "max": 2,
+          "looting": true
+        }
+      ]
+    }
+  ]
+}

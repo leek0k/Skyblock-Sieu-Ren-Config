@@ -6,6 +6,4 @@
 !/plugins/
 
 # Ignore File
-*.jar
-*.db
 userdata/
